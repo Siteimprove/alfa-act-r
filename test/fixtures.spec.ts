@@ -36,7 +36,11 @@ test(fixture, Rules.SIA_R12, "sc4-1-2-button-has-name");
 
 test(fixture, Rules.SIA_R13, "sc4-1-2-iframe-has-name");
 
-test(fixture, Rules.SIA_R14, "sc2-5-3-label-content-name-mismatch");
+test(fixture, Rules.SIA_R14, "sc2-5-3-label-content-name-mismatch", {
+  skip: [
+    "d920" // https://github.com/auto-wcag/auto-wcag/pull/452
+  ]
+});
 
 test(fixture, Rules.SIA_R16, "sc4-1-2-role-has-required-states-and-properties");
 
@@ -54,7 +58,8 @@ test(fixture, Rules.SIA_R20, "sc4-1-2-aria-attr-valid");
 
 test(fixture, Rules.SIA_R21, "sc4-1-2-role-attribute-has-valid-value", {
   skip: [
-    "2a72" // https://github.com/auto-wcag/auto-wcag/issues/474
+    "2a72", // https://github.com/auto-wcag/auto-wcag/issues/474
+    "f472" // https://github.com/auto-wcag/auto-wcag/pull/430
   ]
 });
 
