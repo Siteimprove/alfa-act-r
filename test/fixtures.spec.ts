@@ -52,7 +52,11 @@ test(fixture, Rules.SIA_R18, "sc4-1-2-aria-state-or-property-allowed", {
   ]
 });
 
-test(fixture, Rules.SIA_R19, "sc4-1-2-aria-state-or-property-has-valid-value");
+test(fixture, Rules.SIA_R19, "sc4-1-2-aria-state-or-property-has-valid-value", {
+  skip: [
+    "bd52" // https://github.com/auto-wcag/auto-wcag/pull/464
+  ]
+});
 
 test(fixture, Rules.SIA_R20, "sc4-1-2-aria-attr-valid");
 
