@@ -1,0 +1,5 @@
+{
+  "extends": "../tsconfig.json",
+  "files": ["fixtures.spec.ts", "helpers/fixture.ts"],
+  "references": [{ "path": "../vendor/alfa" }]
+}

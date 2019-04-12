@@ -1,0 +1,138 @@
+{
+  "id": "d008",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC2-4-6-descriptive-labels_failed_example_1.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "\"5cadddf1-4d\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:31:00 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "5730:6589:13B744:1B25A6:5CAF150C",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:21:00 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554978060.466448,VS0,VE109",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "5cdc95e44657a809ea8d46429f9462ba693d9de9",
+        "content-length": "77"
+      },
+      "body": "<label for=\"fname\">Menu</label>\n<input id=\"fname\" type=\"text\" name=\"fname\"/>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "label",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "for",
+                      "value": "fname"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Menu",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "input",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "fname"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "type",
+                      "value": "text"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "name",
+                      "value": "fname"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

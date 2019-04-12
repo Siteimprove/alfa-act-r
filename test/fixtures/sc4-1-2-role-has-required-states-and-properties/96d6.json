@@ -1,0 +1,108 @@
+{
+  "id": "96d6",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC4-1-2-role-has-required-states-and-properties_passed_example_6.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "\"5cadddf1-30\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:31:38 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "3FE4:48F7:16C33A:1F41F0:5CAF1532",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:21:38 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554978098.321207,VS0,VE83",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "b66b75100447b3427a76e45cc1090ed2cd6a3675",
+        "content-length": "48"
+      },
+      "body": "<div role=\"combobox\" aria-controls=\"foo\"></div>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "role",
+                      "value": "combobox"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-controls",
+                      "value": "foo"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

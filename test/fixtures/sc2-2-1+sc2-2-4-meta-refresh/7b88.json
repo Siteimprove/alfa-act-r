@@ -1,0 +1,118 @@
+{
+  "id": "7b88",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_failed_example_1.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "\"5cadddf1-39\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:30:47 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "7CF6:1500:5D2B4:7F416:5CAF14FF",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:20:47 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554978048.635762,VS0,VE92",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "5b6aa1357ae74b334d256629e5b3a706da185556",
+        "content-length": "57"
+      },
+      "body": "<head>\n\t<meta http-equiv=\"refresh\" content=\"30\">\n</head>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 3,
+                  "data": "\n\t",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "meta",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "http-equiv",
+                      "value": "refresh"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "content",
+                      "value": "30"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            },
+            {
+              "nodeType": 3,
+              "data": "\n",
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

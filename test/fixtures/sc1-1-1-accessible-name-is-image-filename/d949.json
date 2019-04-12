@@ -1,0 +1,113 @@
+{
+  "id": "d949",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC1-1-1-accessible-name-is-image-filename_inapplicable_example_4.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "\"5cadddf1-7b\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:29:33 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "8522:46DD:14FFF8:1CD316:5CAF14B5",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:19:47 GMT",
+        "via": "1.1 varnish",
+        "age": "14",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "HIT",
+        "x-cache-hits": "1",
+        "x-timer": "S1554977988.875002,VS0,VE0",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "8df9203140529ca36103adf10c688996d75e10a6",
+        "content-length": "123"
+      },
+      "body": "<img src=\"https://www.w3.org/WAI/demos/bad/after/img/teaser_right2.jpg\" alt=\"teaser_right2.jpg\" aria-label=\"modanna lily\">\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "img",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "https://www.w3.org/WAI/demos/bad/after/img/teaser_right2.jpg"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "alt",
+                      "value": "teaser_right2.jpg"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-label",
+                      "value": "modanna lily"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

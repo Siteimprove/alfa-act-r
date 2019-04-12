@@ -1,0 +1,113 @@
+{
+  "id": "e75c",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC2-5-3-label-content-name-mismatch_inapplicable_example_2.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "\"5cadddf1-39\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:31:02 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "AEC2:2BA2:15895E:1D9CDE:5CAF150E",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:21:03 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554978063.943028,VS0,VE92",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "3a5198ae5bd61a78fb273c3a477e3f210510ed12",
+        "content-length": "57"
+      },
+      "body": "<input type=\"email\" aria-label=\"E-mail\" value='Contact'>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "input",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "type",
+                      "value": "email"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-label",
+                      "value": "E-mail"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "value",
+                      "value": "Contact"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "id": "b411",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC1-2-1-video-only-description-track_inapplicable_example_2.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "W/\"5cadddf1-100\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:29:27 GMT",
+        "cache-control": "max-age=600",
+        "content-encoding": "gzip",
+        "x-github-request-id": "BC32:7914:15CC32:1DE2E4:5CAF14AE",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:20:07 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554978007.094103,VS0,VE91",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "ab77d4bf900f9780fbf871ea5f915c7d202e6b49",
+        "content-length": "145"
+      },
+      "body": "<video controls>\n  <source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\" />\n  <source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\" />\n  <track kind=\"descriptions\" src=\"rabbit-video-incorrect-descriptions.vtt\" />\n</video>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "video",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n  ",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "source",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "src",
+                          "value": "../test-assets/rabbit-video/silent.mp4"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "type",
+                          "value": "video/mp4"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n  ",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "source",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "src",
+                          "value": "../test-assets/rabbit-video/silent.webm"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "type",
+                          "value": "video/webm"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n  ",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "track",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "kind",
+                          "value": "descriptions"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "src",
+                          "value": "rabbit-video-incorrect-descriptions.vtt"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "76f7",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC3-1-1-html-lang-valid_passed_example_2.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "\"5cadddf1-15\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:31:06 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "2E04:09DA:A9E11:E8ED2:5CAF1511",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:21:06 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554978066.025096,VS0,VE95",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "2e556e9b1a08730892ed40f59cf76814e1fe73f3",
+        "content-length": "21"
+      },
+      "body": "<html xml:lang=\"fr\">\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [
+            {
+              "prefix": null,
+              "localName": "xml:lang",
+              "value": "fr"
+            }
+          ],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "c5b6",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_11.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "\"5cadddf1-bc\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:31:22 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "0A72:7CCF:C0A26:10948F:5CAF1522",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:21:22 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554978083.739495,VS0,VE86",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "d347c777f35bcea7c47c7230fb4dbc5c67d0ae2f",
+        "content-length": "188"
+      },
+      "body": "<div id=\"content1\">Lorem ipsum...</div>\n<div role=\"scrollbar\" aria-controls=\"content1 content2\" aria-orientation=\"vertical\" aria-valuemax=\"100\" aria-valuemin=\"0\" aria-valuenow=\"25\"></div>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "content1"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Lorem ipsum...",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "role",
+                      "value": "scrollbar"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-controls",
+                      "value": "content1 content2"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-orientation",
+                      "value": "vertical"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-valuemax",
+                      "value": "100"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-valuemin",
+                      "value": "0"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-valuenow",
+                      "value": "25"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

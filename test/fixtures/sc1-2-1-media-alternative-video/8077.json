@@ -1,0 +1,134 @@
+{
+  "id": "8077",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC1-2-1-media-alternative-video_inapplicable_example_1.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "W/\"5cadddf1-1d6\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:29:58 GMT",
+        "cache-control": "max-age=600",
+        "content-encoding": "gzip",
+        "x-github-request-id": "DBBA:4609:197C8:24225:5CAF14CE",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:19:58 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554977999.771494,VS0,VE97",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "3a64c8b8b7e694a09376e9631d000810777a6e32",
+        "content-length": "300"
+      },
+      "body": "<p>Not being able to use your computer because your mouse \n  doesn't work, is frustrating. Many people use only the keyboard to navigate \n  websites. Either through preference or circumstance. This is solved by keyboard compatibility. \n  Keyboard compatibility is described in WCAG.\n  See the video below to watch the same information again in video form.</p>\n<video src=\"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4\" controls>\n</video>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "p",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Not being able to use your computer because your mouse \n  doesn't work, is frustrating. Many people use only the keyboard to navigate \n  websites. Either through preference or circumstance. This is solved by keyboard compatibility. \n  Keyboard compatibility is described in WCAG.\n  See the video below to watch the same information again in video form.",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "video",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

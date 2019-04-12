@@ -1,0 +1,128 @@
+{
+  "id": "2dec",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC1-3-1-aria-hidden-focus_inapplicable_example_3.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "\"5cadddf1-31\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:30:33 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "AE12:48F7:16BC13:1F37DA:5CAF14F0",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:20:33 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554978033.401149,VS0,VE89",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "b6139536c64d5de31e7015d6d4979a32f76125a0",
+        "content-length": "49"
+      },
+      "body": "<div aria-hidden=\"yes\">\n\t<p>Some text</p>\n</div>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "aria-hidden",
+                      "value": "yes"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "p",
+                      "attributes": [],
+                      "shadowRoot": null,
+                      "childNodes": [
+                        {
+                          "nodeType": 3,
+                          "data": "Some text",
+                          "childNodes": []
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

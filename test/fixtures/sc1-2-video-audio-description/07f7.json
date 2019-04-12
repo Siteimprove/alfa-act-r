@@ -1,0 +1,3435 @@
+{
+  "id": "07f7",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/assets/SC1-2-video-audio-description_failed_example_3.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 10 Apr 2019 12:13:37 GMT",
+        "etag": "W/\"5cadddf1-460\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 11 Apr 2019 10:30:24 GMT",
+        "cache-control": "max-age=600",
+        "content-encoding": "gzip",
+        "x-github-request-id": "AD7E:7914:15D55A:1DEED9:5CAF14E8",
+        "accept-ranges": "bytes",
+        "date": "Thu, 11 Apr 2019 10:20:24 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21041-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1554978025.593997,VS0,VE112",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "a46bb550f639f6f904941474b63883c1d409dc9c",
+        "content-length": "359"
+      },
+      "body": "<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.min.css\">\n<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-skin/highlights-blue.css\">\n<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/transcript.css\">\n\n<figure id=\"ozplayer-1-container\" class=\"ozplayer-container\">\n  <div data-controls=\"stack\" class=\"ozplayer\" id=\"ozplayer-1\">\n    <video controls=\"controls\" preload=\"none\">\n      <source src=\"../test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n    </video>\n    <audio data-default=\"default\" preload=\"none\">\n      <source src=\"../test-assets/rabbit-video/incorrect-audio-description.mp3\" type=\"audio/mp3\"  />\n    </audio>\n  </div>\n</figure>\n\n<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/mediaelement.min.js\"></script>\n<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.free.js\"></script>\n<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-lang/en.js\"></script>\n<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/config.js\"></script>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "link",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "rel",
+                      "value": "stylesheet"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.min.css"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "link",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "rel",
+                      "value": "stylesheet"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-skin/highlights-blue.css"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "link",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "rel",
+                      "value": "stylesheet"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "https://ozplayer.global.ssl.fastly.net/3.3/transcript.css"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n\n",
+                  "childNodes": []
+                }
+              ]
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "figure",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "ozplayer-1-container"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "class",
+                      "value": "ozplayer-container"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n  ",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "div",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "data-controls",
+                          "value": "stack"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "class",
+                          "value": "ozplayer oz-stack"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "id",
+                          "value": "ozplayer-1"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": [
+                        {
+                          "nodeType": 1,
+                          "prefix": null,
+                          "localName": "ul",
+                          "attributes": [
+                            {
+                              "prefix": null,
+                              "localName": "class",
+                              "value": "oz-skip-links"
+                            }
+                          ],
+                          "shadowRoot": null,
+                          "childNodes": [
+                            {
+                              "nodeType": 1,
+                              "prefix": null,
+                              "localName": "li",
+                              "attributes": [
+                                {
+                                  "prefix": null,
+                                  "localName": "class",
+                                  "value": "oz-skip-video"
+                                }
+                              ],
+                              "shadowRoot": null,
+                              "childNodes": [
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "span",
+                                  "attributes": [],
+                                  "shadowRoot": null,
+                                  "childNodes": [
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "a",
+                                      "attributes": [
+                                        {
+                                          "prefix": null,
+                                          "localName": "href",
+                                          "value": "#ozplayer-1-skip-video"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "name",
+                                          "value": "video"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-label",
+                                          "value": "Skip video"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "tabindex",
+                                          "value": "0"
+                                        }
+                                      ],
+                                      "shadowRoot": null,
+                                      "childNodes": [
+                                        {
+                                          "nodeType": 1,
+                                          "prefix": null,
+                                          "localName": "span",
+                                          "attributes": [],
+                                          "shadowRoot": null,
+                                          "childNodes": [
+                                            {
+                                              "nodeType": 3,
+                                              "data": "Skip video",
+                                              "childNodes": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "nodeType": 3,
+                          "data": "\n    ",
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 1,
+                          "prefix": null,
+                          "localName": "a",
+                          "attributes": [
+                            {
+                              "prefix": null,
+                              "localName": "href",
+                              "value": "http://www.accessibilityoz.com.au/products/ozplayer/"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "class",
+                              "value": "oz-logo-bug"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "aria-label",
+                              "value": "About OzPlayer"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "tabindex",
+                              "value": "0"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "style",
+                              "value": "background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAAAYCAYAAAASy2hdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABPBJREFUeNrsWUFy2kAQlFx+gC4+R35B5IrvFi/AvMBwwcfACxxeABztC8oLwC8A7k5ZeQHK2QfrB8oM6SXjzUpaCTkVUkzVlIy0mtVuz/TMrB2nn72Szp2j/NNySupB/6q8vLyEdAnFrZh0dXZ2ljZgV0pCNpOcsQE9iw8FqJ3cOxkvMrh13Mk7AnRNlzGpb3ic0vMpbd6XmgDNTHbp2YouHeUE2lj3EIA60X7f8SYSYME7gcQAMc3yxvVIR6QRA4QhHNl3NG5Ww3yYA756tiS7nsXYgwBKiZd9ug9Jxw2CxFEyYIDIs1kjjhz+m+6dky7E8C7G1xGmT5eV/r4QdgPMf5ByUvCMo2tAYAUNgBTCHoMT6c+Zkkg7iLTd/PTeXl7P+Qd2FVjtQy4mysR7+kUTweVbr68in3F9LBnH0fUsipsu6RdQVp7DxBYFyJD0usCGdCoPY5WTLEwFB8Z5pkKFixQUMal23xd2k5x3fb4vx9Lv1YnlRm9zCwOW9YkW+05QIZrUwh0tYkwRkGgUeIX3lzk6s4ysBFWlTQ59xXqvSG/Ycej+MzZfjWMH2sCR3jAHj4WzBQbq34hv38COej4gfQXtd+VYtmkLlPJwH5vzTGDZ0lJV6pxqv2cFNjoVy/mFRQ5luSC7LdJzOFegOcUsp6UJTd+K4ugzInsk7Qh6b8NmG2NHosjyT2vQ2A607GlrkNE/dy+d1BK0sqiK6eNTMc9UA8/DRo1yeqAAXt1R1IIcGYBa80Tlr0ijpHUeABXakS7Aj3EvRdQq55fzeXAQHpcgsod1gNI3fps/+k/bCdsPl06npIReWdiNVTPM/GzwTq7sJgWOFIBaFvDKLqrNIvpbweNvQEEe3k323KM7fG+szbVryPUGXThthPbFOXGaE+bzawJMPxlItTFVZK2BNACAPcv3VVHQMlWbmnxFjyc93KsbSSI/BwXF1Sjv1KRO1beXgMoSbIDPidJi0/7IKUjmY1BIGc22yo6PDBu6xMZNBF2OEd3dPRhnd8U8MzgbU7N1Fd1kRLFHLoj6VjnPdhWkrKByNi2UdIF77O1Dm7M5pkuoLW2FiJ4Pmg1umH80sDcerWGOavA753QFEu+FTb+4L1AxqC0mgKKC/DTR6GRpODyVrQCP7WhVVlyQl/YVX5yIVKG6D2UOo9HwEKcxqaDymY1D1aE+RTsJVXpDJOAyD+fD1g7oxRNgrdAEx4K7fe0AdYBFMoUuTXmsziGugWLH4rumSPhteeykmlE4kg9gf2BsmJODJ8LGHGtWzuEJmm4kolJRkXAiv3AfqlVDoKyWVuWoPKCawASJP9byhOL50KCLguKlTBLREPdExN/he0JstLKrom2kVXVLgGpy2pFW5YWCalsGKk/2iSj+gK+XbORhR3m1CgvmZ3TeH7HwFLwdGSjA1zbFdHwUCxruOXbHXDHK9UiWwvD2LijtO0pjT1RoqRibiCZ1jXuhNoeDd1ropwKse431Sqd6LM7B/Swj3VLKvZMtSTP+v1T26X5JmjVxKPs/CjbeMRwhZaSbpucroj725In77TY+wmIEaS7P6rSiZNT0nHnUlwKg1REWo8zEWd0V2g8P+TSq0CfWjij2hOGt4x6jqFh6omjpopiYA6Tee0zobnMUR86D2zruf+XjIXVExaAtKjTYtagvrVjSHuV3NRf9rfl+CjAAZcZj0QHAg/8AAAAASUVORK5CYII=\");"
+                            }
+                          ],
+                          "shadowRoot": null,
+                          "childNodes": [
+                            {
+                              "nodeType": 1,
+                              "prefix": null,
+                              "localName": "small",
+                              "attributes": [
+                                {
+                                  "prefix": null,
+                                  "localName": "aria-hidden",
+                                  "value": "false"
+                                }
+                              ],
+                              "shadowRoot": null,
+                              "childNodes": [
+                                {
+                                  "nodeType": 3,
+                                  "data": "About OzPlayer",
+                                  "childNodes": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "nodeType": 1,
+                          "prefix": null,
+                          "localName": "p",
+                          "attributes": [
+                            {
+                              "prefix": null,
+                              "localName": "class",
+                              "value": "oz-indicator oz-loading"
+                            }
+                          ],
+                          "shadowRoot": null,
+                          "childNodes": [
+                            {
+                              "nodeType": 1,
+                              "prefix": null,
+                              "localName": "strong",
+                              "attributes": [],
+                              "shadowRoot": null,
+                              "childNodes": [
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "em",
+                                  "attributes": [
+                                    {
+                                      "prefix": null,
+                                      "localName": "aria-live",
+                                      "value": "assertive"
+                                    },
+                                    {
+                                      "prefix": null,
+                                      "localName": "aria-relevant",
+                                      "value": "additions text"
+                                    }
+                                  ],
+                                  "shadowRoot": null,
+                                  "childNodes": []
+                                }
+                              ]
+                            },
+                            {
+                              "nodeType": 1,
+                              "prefix": null,
+                              "localName": "span",
+                              "attributes": [],
+                              "shadowRoot": null,
+                              "childNodes": []
+                            }
+                          ]
+                        },
+                        {
+                          "nodeType": 1,
+                          "prefix": null,
+                          "localName": "video",
+                          "attributes": [
+                            {
+                              "prefix": null,
+                              "localName": "preload",
+                              "value": "none"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "src",
+                              "value": "../test-assets/rabbit-video/video.mp4"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "id",
+                              "value": "ozplayer-1-ozplayer-video"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "width",
+                              "value": "400"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "height",
+                              "value": "225"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "tabindex",
+                              "value": "-1"
+                            }
+                          ],
+                          "shadowRoot": null,
+                          "childNodes": [
+                            {
+                              "nodeType": 3,
+                              "data": "\n      ",
+                              "childNodes": []
+                            },
+                            {
+                              "nodeType": 1,
+                              "prefix": null,
+                              "localName": "source",
+                              "attributes": [
+                                {
+                                  "prefix": null,
+                                  "localName": "src",
+                                  "value": "../test-assets/rabbit-video/video.mp4"
+                                },
+                                {
+                                  "prefix": null,
+                                  "localName": "type",
+                                  "value": "video/mp4"
+                                }
+                              ],
+                              "shadowRoot": null,
+                              "childNodes": []
+                            },
+                            {
+                              "nodeType": 3,
+                              "data": "\n    ",
+                              "childNodes": []
+                            }
+                          ]
+                        },
+                        {
+                          "nodeType": 3,
+                          "data": "\n    ",
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 3,
+                          "data": "\n  ",
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 1,
+                          "prefix": null,
+                          "localName": "span",
+                          "attributes": [
+                            {
+                              "prefix": null,
+                              "localName": "class",
+                              "value": "oz-poster"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "aria-hidden",
+                              "value": "true"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "style",
+                              "value": "background-image: none; background-position: 50% 0%; background-size: 400px 225px;"
+                            }
+                          ],
+                          "shadowRoot": null,
+                          "childNodes": [
+                            {
+                              "nodeType": 1,
+                              "prefix": null,
+                              "localName": "span",
+                              "attributes": [],
+                              "shadowRoot": null,
+                              "childNodes": [
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "span",
+                                  "attributes": [],
+                                  "shadowRoot": null,
+                                  "childNodes": [
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "span",
+                                      "attributes": [],
+                                      "shadowRoot": null,
+                                      "childNodes": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "nodeType": 1,
+                          "prefix": null,
+                          "localName": "form",
+                          "attributes": [
+                            {
+                              "prefix": null,
+                              "localName": "class",
+                              "value": "oz-controls"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "action",
+                              "value": "#ozplayer-1-ozplayer-video"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "role",
+                              "value": "form"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "style",
+                              "value": "width: 400px;"
+                            }
+                          ],
+                          "shadowRoot": null,
+                          "childNodes": [
+                            {
+                              "nodeType": 1,
+                              "prefix": null,
+                              "localName": "fieldset",
+                              "attributes": [],
+                              "shadowRoot": null,
+                              "childNodes": [
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "span",
+                                  "attributes": [
+                                    {
+                                      "prefix": null,
+                                      "localName": "class",
+                                      "value": "oz-field oz-playpause oz-first-field"
+                                    }
+                                  ],
+                                  "shadowRoot": null,
+                                  "childNodes": [
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "button",
+                                      "attributes": [
+                                        {
+                                          "prefix": null,
+                                          "localName": "type",
+                                          "value": "button"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "name",
+                                          "value": "playpause"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "class",
+                                          "value": "oz-off"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-label",
+                                          "value": "Play"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-pressed",
+                                          "value": "false"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "role",
+                                          "value": "button"
+                                        }
+                                      ],
+                                      "shadowRoot": null,
+                                      "childNodes": [
+                                        {
+                                          "nodeType": 1,
+                                          "prefix": null,
+                                          "localName": "strong",
+                                          "attributes": [],
+                                          "shadowRoot": null,
+                                          "childNodes": [
+                                            {
+                                              "nodeType": 3,
+                                              "data": "Play",
+                                              "childNodes": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nodeType": 3,
+                                      "data": " ",
+                                      "childNodes": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "span",
+                                  "attributes": [
+                                    {
+                                      "prefix": null,
+                                      "localName": "class",
+                                      "value": "oz-field oz-seek oz-disabled"
+                                    },
+                                    {
+                                      "prefix": null,
+                                      "localName": "style",
+                                      "value": "width: 170px;"
+                                    }
+                                  ],
+                                  "shadowRoot": null,
+                                  "childNodes": [
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "input",
+                                      "attributes": [
+                                        {
+                                          "prefix": null,
+                                          "localName": "type",
+                                          "value": "range"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "name",
+                                          "value": "seek"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "id",
+                                          "value": "ozplayer-1-oz-seek"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "disabled",
+                                          "value": ""
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-hidden",
+                                          "value": "true"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "min",
+                                          "value": "0"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "max",
+                                          "value": "0"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "step",
+                                          "value": "1"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "value",
+                                          "value": "0"
+                                        }
+                                      ],
+                                      "shadowRoot": null,
+                                      "childNodes": []
+                                    },
+                                    {
+                                      "nodeType": 3,
+                                      "data": " ",
+                                      "childNodes": []
+                                    },
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "span",
+                                      "attributes": [
+                                        {
+                                          "prefix": null,
+                                          "localName": "class",
+                                          "value": "oz-slider oz-disabled"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "id",
+                                          "value": "ozplayer-1-oz-seek-slider"
+                                        }
+                                      ],
+                                      "shadowRoot": null,
+                                      "childNodes": [
+                                        {
+                                          "nodeType": 1,
+                                          "prefix": null,
+                                          "localName": "label",
+                                          "attributes": [
+                                            {
+                                              "prefix": null,
+                                              "localName": "class",
+                                              "value": "oz-slider-track"
+                                            },
+                                            {
+                                              "prefix": null,
+                                              "localName": "for",
+                                              "value": "ozplayer-1-oz-seek-slider-thumb"
+                                            }
+                                          ],
+                                          "shadowRoot": null,
+                                          "childNodes": [
+                                            {
+                                              "nodeType": 1,
+                                              "prefix": null,
+                                              "localName": "em",
+                                              "attributes": [
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "class",
+                                                  "value": "oz-slider-tooltip oz-hidden"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-hidden",
+                                                  "value": "true"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "style",
+                                                  "value": "left: -46px;"
+                                                }
+                                              ],
+                                              "shadowRoot": null,
+                                              "childNodes": [
+                                                {
+                                                  "nodeType": 3,
+                                                  "data": "Time = 00:00",
+                                                  "childNodes": []
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "nodeType": 1,
+                                              "prefix": null,
+                                              "localName": "button",
+                                              "attributes": [
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "type",
+                                                  "value": "button"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "role",
+                                                  "value": "slider"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "class",
+                                                  "value": "oz-slider-thumb"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "id",
+                                                  "value": "ozplayer-1-oz-seek-slider-thumb"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-valuemin",
+                                                  "value": "0"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-valuemax",
+                                                  "value": "0"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-orientation",
+                                                  "value": "horizontal"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "disabled",
+                                                  "value": ""
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-disabled",
+                                                  "value": "true"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-valuenow",
+                                                  "value": "0"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-valuetext",
+                                                  "value": "Time = 00:00"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "style",
+                                                  "value": "left: -16px;"
+                                                }
+                                              ],
+                                              "shadowRoot": null,
+                                              "childNodes": [
+                                                {
+                                                  "nodeType": 1,
+                                                  "prefix": null,
+                                                  "localName": "strong",
+                                                  "attributes": [],
+                                                  "shadowRoot": null,
+                                                  "childNodes": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "br",
+                                  "attributes": [],
+                                  "shadowRoot": null,
+                                  "childNodes": []
+                                },
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "span",
+                                  "attributes": [
+                                    {
+                                      "prefix": null,
+                                      "localName": "class",
+                                      "value": "oz-field oz-ad"
+                                    }
+                                  ],
+                                  "shadowRoot": null,
+                                  "childNodes": [
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "button",
+                                      "attributes": [
+                                        {
+                                          "prefix": null,
+                                          "localName": "type",
+                                          "value": "button"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "name",
+                                          "value": "ad"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "class",
+                                          "value": "oz-on"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-label",
+                                          "value": "Audio Descriptions are on"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-pressed",
+                                          "value": "true"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "role",
+                                          "value": "button"
+                                        }
+                                      ],
+                                      "shadowRoot": null,
+                                      "childNodes": [
+                                        {
+                                          "nodeType": 1,
+                                          "prefix": null,
+                                          "localName": "strong",
+                                          "attributes": [],
+                                          "shadowRoot": null,
+                                          "childNodes": [
+                                            {
+                                              "nodeType": 3,
+                                              "data": "AD (on)",
+                                              "childNodes": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nodeType": 3,
+                                      "data": " ",
+                                      "childNodes": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "br",
+                                  "attributes": [],
+                                  "shadowRoot": null,
+                                  "childNodes": []
+                                },
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "span",
+                                  "attributes": [
+                                    {
+                                      "prefix": null,
+                                      "localName": "class",
+                                      "value": "oz-field oz-mute"
+                                    }
+                                  ],
+                                  "shadowRoot": null,
+                                  "childNodes": [
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "button",
+                                      "attributes": [
+                                        {
+                                          "prefix": null,
+                                          "localName": "type",
+                                          "value": "button"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "name",
+                                          "value": "mute"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "class",
+                                          "value": "oz-off oz-high"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-label",
+                                          "value": "Mute"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-pressed",
+                                          "value": "false"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "role",
+                                          "value": "button"
+                                        }
+                                      ],
+                                      "shadowRoot": null,
+                                      "childNodes": [
+                                        {
+                                          "nodeType": 1,
+                                          "prefix": null,
+                                          "localName": "strong",
+                                          "attributes": [],
+                                          "shadowRoot": null,
+                                          "childNodes": [
+                                            {
+                                              "nodeType": 3,
+                                              "data": "Mute",
+                                              "childNodes": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nodeType": 3,
+                                      "data": " ",
+                                      "childNodes": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "span",
+                                  "attributes": [
+                                    {
+                                      "prefix": null,
+                                      "localName": "class",
+                                      "value": "oz-field oz-volume"
+                                    },
+                                    {
+                                      "prefix": null,
+                                      "localName": "style",
+                                      "value": "width: 102px;"
+                                    }
+                                  ],
+                                  "shadowRoot": null,
+                                  "childNodes": [
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "input",
+                                      "attributes": [
+                                        {
+                                          "prefix": null,
+                                          "localName": "type",
+                                          "value": "range"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "name",
+                                          "value": "volume"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "id",
+                                          "value": "ozplayer-1-oz-volume"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-hidden",
+                                          "value": "true"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "min",
+                                          "value": "0"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "max",
+                                          "value": "10"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "step",
+                                          "value": "1"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "value",
+                                          "value": "7"
+                                        }
+                                      ],
+                                      "shadowRoot": null,
+                                      "childNodes": []
+                                    },
+                                    {
+                                      "nodeType": 3,
+                                      "data": " ",
+                                      "childNodes": []
+                                    },
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "span",
+                                      "attributes": [
+                                        {
+                                          "prefix": null,
+                                          "localName": "class",
+                                          "value": "oz-slider"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "id",
+                                          "value": "ozplayer-1-oz-volume-slider"
+                                        }
+                                      ],
+                                      "shadowRoot": null,
+                                      "childNodes": [
+                                        {
+                                          "nodeType": 1,
+                                          "prefix": null,
+                                          "localName": "label",
+                                          "attributes": [
+                                            {
+                                              "prefix": null,
+                                              "localName": "class",
+                                              "value": "oz-slider-track"
+                                            },
+                                            {
+                                              "prefix": null,
+                                              "localName": "for",
+                                              "value": "ozplayer-1-oz-volume-slider-thumb"
+                                            }
+                                          ],
+                                          "shadowRoot": null,
+                                          "childNodes": [
+                                            {
+                                              "nodeType": 1,
+                                              "prefix": null,
+                                              "localName": "em",
+                                              "attributes": [
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "class",
+                                                  "value": "oz-slider-tooltip oz-hidden"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-hidden",
+                                                  "value": "true"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "style",
+                                                  "value": "left: 9px;"
+                                                }
+                                              ],
+                                              "shadowRoot": null,
+                                              "childNodes": [
+                                                {
+                                                  "nodeType": 3,
+                                                  "data": "Volume = 7",
+                                                  "childNodes": []
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "nodeType": 1,
+                                              "prefix": null,
+                                              "localName": "button",
+                                              "attributes": [
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "type",
+                                                  "value": "button"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "role",
+                                                  "value": "slider"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "class",
+                                                  "value": "oz-slider-thumb"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "id",
+                                                  "value": "ozplayer-1-oz-volume-slider-thumb"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-valuemin",
+                                                  "value": "0"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-valuemax",
+                                                  "value": "10"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-orientation",
+                                                  "value": "horizontal"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-disabled",
+                                                  "value": "false"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-valuenow",
+                                                  "value": "7"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "aria-valuetext",
+                                                  "value": "Volume = 7"
+                                                },
+                                                {
+                                                  "prefix": null,
+                                                  "localName": "style",
+                                                  "value": "left: 33px;"
+                                                }
+                                              ],
+                                              "shadowRoot": null,
+                                              "childNodes": [
+                                                {
+                                                  "nodeType": 1,
+                                                  "prefix": null,
+                                                  "localName": "strong",
+                                                  "attributes": [],
+                                                  "shadowRoot": null,
+                                                  "childNodes": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "br",
+                                  "attributes": [],
+                                  "shadowRoot": null,
+                                  "childNodes": []
+                                },
+                                {
+                                  "nodeType": 1,
+                                  "prefix": null,
+                                  "localName": "span",
+                                  "attributes": [
+                                    {
+                                      "prefix": null,
+                                      "localName": "class",
+                                      "value": "oz-field oz-fullscreen oz-last-field"
+                                    }
+                                  ],
+                                  "shadowRoot": null,
+                                  "childNodes": [
+                                    {
+                                      "nodeType": 1,
+                                      "prefix": null,
+                                      "localName": "button",
+                                      "attributes": [
+                                        {
+                                          "prefix": null,
+                                          "localName": "type",
+                                          "value": "button"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "name",
+                                          "value": "fullscreen"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "class",
+                                          "value": "oz-off"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-label",
+                                          "value": "Fullscreen"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "aria-pressed",
+                                          "value": "false"
+                                        },
+                                        {
+                                          "prefix": null,
+                                          "localName": "role",
+                                          "value": "button"
+                                        }
+                                      ],
+                                      "shadowRoot": null,
+                                      "childNodes": [
+                                        {
+                                          "nodeType": 1,
+                                          "prefix": null,
+                                          "localName": "strong",
+                                          "attributes": [],
+                                          "shadowRoot": null,
+                                          "childNodes": [
+                                            {
+                                              "nodeType": 3,
+                                              "data": "Full",
+                                              "childNodes": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "nodeType": 3,
+                                      "data": " ",
+                                      "childNodes": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "nodeType": 1,
+                          "prefix": null,
+                          "localName": "div",
+                          "attributes": [
+                            {
+                              "prefix": null,
+                              "localName": "class",
+                              "value": "oz-captions oz-disabled"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "data-cue",
+                              "value": ""
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "aria-live",
+                              "value": "polite"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "aria-atomic",
+                              "value": "true"
+                            },
+                            {
+                              "prefix": null,
+                              "localName": "aria-relevant",
+                              "value": "additions text"
+                            }
+                          ],
+                          "shadowRoot": null,
+                          "childNodes": []
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "a",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "class",
+                          "value": "oz-skip-anchor"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "tabindex",
+                          "value": "-1"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "name",
+                          "value": "ozplayer-1-skip-video"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "id",
+                          "value": "ozplayer-1-skip-video"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "script",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/mediaelement.min.js"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "script",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.free.js"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "script",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-lang/en.js"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "script",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "https://ozplayer.global.ssl.fastly.net/3.3/config.js"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": [
+        {
+          "disabled": false,
+          "cssRules": [
+            {
+              "type": 1,
+              "selectorText": ".ozplayer, .ozplayer .oz-poster, .ozplayer video, .ozplayer .me-plugin, .ozplayer .me-plugin embed, .ozplayer .me-plugin object, .ozplayer .me-plugin iframe, .ozplayer .ozplayer-fallback, .oz-message, .oz-captions, .oz-controls, .oz-controls fieldset",
+              "style": {
+                "cssText": "position: relative !important; z-index: 1 !important; float: none !important; margin: 0px !important; padding: 0px !important; visibility: visible !important; border-radius: 0px !important; box-shadow: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-skip-anchor",
+              "style": {
+                "cssText": "float: none !important; display: block !important; height: 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer",
+              "style": {
+                "cssText": "z-index: 65535 !important; overflow: visible !important; display: inline-block !important; margin: 0px !important; padding: 0px !important; border: 2px solid rgb(0, 0, 0) !important; text-align: left !important; background: rgb(0, 0, 0) !important; color: rgb(255, 255, 255) !important; cursor: default !important; user-select: none !important; -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-fullscreen",
+              "style": {
+                "cssText": "border: none !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": "html body .ozplayer",
+                  "style": {
+                    "cssText": "display: none !important;"
+                  }
+                }
+              ],
+              "conditionText": "print"
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-logo-bug, .oz-logo-bug:visited",
+              "style": {
+                "cssText": "background-image: none; position: absolute !important; right: 5px !important; top: 5px !important; z-index: 4250 !important; float: none !important; display: inline !important; visibility: visible !important; width: 120px !important; height: 34px !important; margin: 0px !important; padding: 0px !important; border: 2px solid transparent !important; border-radius: 2px !important; font: bold 12px/1.4 helvetica, arial, sans-serif !important; text-decoration: none !important; text-shadow: none !important; text-indent: 0px !important; letter-spacing: 0px !important; color: rgb(255, 255, 255) !important; background-repeat: no-repeat !important; background-position: 5px 5px !important; background-color: rgba(0, 0, 0, 0.55) !important; cursor: pointer !important; box-shadow: none !important; opacity: 1 !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-auto-hiding .oz-logo-bug, .oz-auto-hiding .oz-logo-bug:visited, .oz-auto-hidden .oz-logo-bug, .oz-auto-hidden .oz-logo-bug:visited",
+              "style": {
+                "cssText": "opacity: 0 !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-auto-hiding .oz-logo-bug, .oz-auto-hiding .oz-logo-bug:visited",
+              "style": {
+                "cssText": "transition: opacity 0.5s ease 0s !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-logo-bug, .oz-no-images .oz-logo-bug:visited",
+              "style": {
+                "cssText": "width: auto !important; height: auto !important; max-width: 120px !important; background-color: rgba(0, 0, 0, 0.75) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-logo-bug small",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-logo-bug small",
+              "style": {
+                "cssText": "float: right !important; display: inline-block !important; visibility: visible !important; padding: 8px 12px 7px !important; margin: 0px !important; border: none !important; border-radius: 2px !important; font-size: 1em !important; line-height: 1.4 !important; text-align: center !important; text-shadow: none !important; text-indent: 0px !important; letter-spacing: 0px !important; background: transparent !important; cursor: pointer !important; box-shadow: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-fullscreen .oz-logo-bug, .ozplayer.oz-fullscreen .oz-logo-bug:visited, .oz-no-images.oz-fullscreen .oz-logo-bug small",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-smallscreen .oz-logo-bug, .ozplayer.oz-smallscreen .oz-logo-bug:visited",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links, .ozplayer .oz-skip-links *",
+              "style": {
+                "cssText": "float: none !important; visibility: visible !important; margin: 0px !important; padding: 0px !important; list-style-type: none !important; font-size: 12px !important; line-height: 1.4 !important; border: none !important; border-radius: 0px !important; box-shadow: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links",
+              "style": {
+                "cssText": "position: absolute !important; left: 5px !important; top: 5px !important; z-index: 4250 !important; float: left !important; display: block !important; visibility: visible !important; max-width: 66% !important; opacity: 1 !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li, .ozplayer .oz-skip-links li a, .ozplayer .oz-skip-links li a:visited",
+              "style": {
+                "cssText": "display: block !important; float: left !important; margin: 0px !important; padding: 0px !important; border: none !important; font: bold 12px/1.4 helvetica, arial, sans-serif !important; text-decoration: none !important; text-align: left !important; text-shadow: none !important; text-indent: 0px !important; letter-spacing: 0px !important; color: rgb(255, 255, 255) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li",
+              "style": {
+                "cssText": "position: static !important; padding: 5px 0px 5px 5px !important; background-color: rgba(0, 0, 0, 0.55) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li:first-child",
+              "style": {
+                "cssText": "border-radius: 2px 0px 0px 2px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li:last-child",
+              "style": {
+                "cssText": "padding-right: 5px !important; border-radius: 0px 2px 2px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li:first-child:last-child",
+              "style": {
+                "cssText": "border-radius: 2px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li a, .ozplayer .oz-skip-links li a:visited",
+              "style": {
+                "cssText": "position: relative !important; z-index: 0 !important; height: 22px !important; border-radius: 2px !important; background: none no-repeat transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li a:hover, .ozplayer .oz-skip-links li a:focus, .ozplayer .oz-skip-links li a:active",
+              "style": {
+                "cssText": "z-index: 1000 !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li span",
+              "style": {
+                "cssText": "display: block !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-auto-hiding .oz-skip-links, .oz-auto-hidden .oz-skip-links",
+              "style": {
+                "cssText": "opacity: 0 !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".oz-auto-hiding .oz-skip-links, .oz-auto-hidden .oz-skip-links",
+                  "style": {
+                    "cssText": "filter: none !important;"
+                  }
+                }
+              ],
+              "conditionText": "only all"
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-auto-hiding .oz-skip-links",
+              "style": {
+                "cssText": "transition: opacity 0.5s ease 0s !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-fullscreen .oz-skip-links",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li.oz-skip-video a, .ozplayer .oz-skip-links li.oz-skip-video a:visited",
+              "style": {
+                "cssText": "width: 23px !important; background-position: 0px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li.oz-skip-video a:hover, .ozplayer .oz-skip-links li.oz-skip-video a:focus, .ozplayer .oz-skip-links li.oz-skip-video a:active",
+              "style": {
+                "cssText": "background-position: 0px -22px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li.oz-skip-transcript a, .ozplayer .oz-skip-links li.oz-skip-transcript a:visited",
+              "style": {
+                "cssText": "width: 32px !important; background-position: -28px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li.oz-skip-transcript a:hover, .ozplayer .oz-skip-links li.oz-skip-transcript a:focus, .ozplayer .oz-skip-links li.oz-skip-transcript a:active",
+              "style": {
+                "cssText": "background-position: -28px -22px !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".ozplayer .oz-skip-links li a, .ozplayer .oz-skip-links li a:visited",
+                  "style": {
+                    "cssText": "background-size: 100px 44px !important;"
+                  }
+                }
+              ],
+              "conditionText": "only all and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, not all"
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-no-images .oz-skip-links li",
+              "style": {
+                "cssText": "background-color: rgba(0, 0, 0, 0.75) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-no-images .oz-skip-links li a, .ozplayer.oz-no-images .oz-skip-links li a:visited",
+              "style": {
+                "cssText": "width: auto !important; height: auto !important; background-image: none !important; padding: 8px 8px 7px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li a span",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-skip-links li a span",
+              "style": {
+                "cssText": "display: inline-block !important; cursor: pointer !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-smallscreen .oz-skip-links",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer video",
+              "style": {
+                "cssText": "display: block; opacity: 1; z-index: 1000 !important; float: none !important; visibility: visible !important; min-width: 240px !important; min-height: 135px !important; border: none !important; border-radius: 0px !important; background: rgb(0, 0, 0) !important; color: rgb(255, 255, 255) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer video.oz-bsod::-webkit-media-controls",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .me-plugin",
+              "style": {
+                "cssText": "z-index: 1000 !important; float: none !important; visibility: visible !important; display: inline-block !important; min-width: 240px !important; min-height: 135px !important; border: none !important; border-radius: 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .me-plugin embed, .ozplayer .me-plugin object, .ozplayer .me-plugin iframe",
+              "style": {
+                "cssText": "margin-bottom: -5px !important; border: none !important; border-radius: 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer audio",
+              "style": {
+                "cssText": "width: 400px; z-index: 1000 !important; float: none !important; visibility: visible !important; min-width: 240px !important; border: none !important; border-radius: 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer video ~ audio",
+              "style": {
+                "cssText": "display: none !important; visibility: hidden !important; width: 0px !important; height: 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .ozplayer-fallback",
+              "style": {
+                "cssText": "float: none !important; display: inline-block !important; visibility: visible !important; background: rgb(255, 255, 255) !important; color: rgb(0, 0, 0) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-poster, .ozplayer .oz-poster *",
+              "style": {
+                "cssText": "float: none !important; visibility: visible !important; margin: 0px !important; padding: 0px !important; border: none !important; border-radius: 0px !important; box-shadow: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-poster",
+              "style": {
+                "cssText": "background-image: none; background-position: 0px 0px; position: absolute !important; left: 0px !important; top: 0px !important; z-index: 3000 !important; display: block !important; width: 100% !important; height: 100% !important; min-height: 135px !important; background-color: rgb(0, 0, 0) !important; background-repeat: no-repeat !important; cursor: pointer !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-poster.oz-disabled",
+              "style": {
+                "cssText": "cursor: default !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-poster span",
+              "style": {
+                "cssText": "position: absolute !important; left: 50% !important; top: 50% !important; display: block !important; width: 96px !important; height: 96px !important; margin: -64px 0px 0px -48px !important; background: none no-repeat !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-poster.oz-disabled span",
+              "style": {
+                "cssText": "visibility: hidden !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-poster span",
+              "style": {
+                "cssText": "outline: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-poster span span",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ":root .ozplayer .oz-poster span span",
+              "style": {
+                "cssText": "left: 0px !important; top: 0px !important; margin: 0px !important; display: block !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ":root .ozplayer .oz-poster > span",
+              "style": {
+                "cssText": "background-position: -96px -96px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ":root .ozplayer .oz-poster > span > span",
+              "style": {
+                "cssText": "border-radius: 39px !important; width: 78px !important; height: 78px !important; margin: 9px 0px 0px 9px !important; background-image: none !important; background-color: rgb(105, 105, 105) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ":root .ozplayer .oz-poster span span span",
+              "style": {
+                "cssText": "margin: -9px 0px 0px -9px !important; background-position: 0px -96px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ":root .ozplayer .oz-poster span:hover span span",
+              "style": {
+                "cssText": "background-position: 0px -192px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-poster span",
+              "style": {
+                "cssText": "width: 192px !important; height: 192px !important; margin: -128px 0px 0px -96px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ":root .oz-large .oz-poster > span",
+              "style": {
+                "cssText": "background-position: -192px -192px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ":root .oz-large .oz-poster > span > span",
+              "style": {
+                "cssText": "border-radius: 78px !important; width: 156px !important; height: 156px !important; margin: 18px 0px 0px 18px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ":root .oz-large .oz-poster span span span",
+              "style": {
+                "cssText": "margin: -18px 0px 0px -18px !important; background-position: 0px -192px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ":root .oz-large .oz-poster span:hover span span",
+              "style": {
+                "cssText": "background-position: 0px -384px !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".ozplayer .oz-poster span",
+                  "style": {
+                    "cssText": "background-size: 288px !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".oz-large .oz-poster span",
+                  "style": {
+                    "cssText": "background-size: 576px !important;"
+                  }
+                }
+              ],
+              "conditionText": "only all and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, not all"
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-no-images .oz-poster span, .oz-large.oz-no-images .oz-poster span",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-message",
+              "style": {
+                "cssText": "position: absolute !important; bottom: 0px !important; left: 0px !important; z-index: 6000 !important; width: 100% !important; border-top: 1px solid rgb(0, 0, 0) !important; font-size: 14px !important; line-height: 1.4 !important; text-align: center !important; background: rgb(0, 0, 0) !important; color: rgb(255, 255, 255) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-message span",
+              "style": {
+                "cssText": "display: block !important; padding: 5px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator, .oz-indicator *",
+              "style": {
+                "cssText": "float: none !important; visibility: visible !important; margin: 0px !important; padding: 0px !important; border: none !important; border-radius: 0px !important; font: bold 18px/1.4 \"lucida grande\", verdana, sans-serif !important; text-align: center !important; text-shadow: none !important; text-indent: 0px !important; letter-spacing: 0px !important; box-shadow: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator, .oz-indicator span",
+              "style": {
+                "cssText": "position: absolute !important; top: 0px !important; left: -10000px !important; z-index: 4000 !important; display: block !important; width: 100% !important; height: 100% !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator span",
+              "style": {
+                "cssText": "z-index: 1000 !important; background: rgb(0, 0, 0) !important; opacity: 0.36 !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator.oz-bsod span",
+              "style": {
+                "cssText": "opacity: 0.66 !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".oz-indicator span",
+                  "style": {
+                    "cssText": "filter: none !important;"
+                  }
+                }
+              ],
+              "conditionText": "only all"
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator.oz-visible, .oz-indicator.oz-visible span",
+              "style": {
+                "cssText": "left: 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio .oz-indicator.oz-visible, .oz-audio .oz-indicator.oz-visible span",
+              "style": {
+                "cssText": "left: -10000px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-indicator, .oz-large .oz-indicator *",
+              "style": {
+                "cssText": "font: bold 36px/1.4 \"lucida grande\", verdana, sans-serif !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator strong",
+              "style": {
+                "cssText": "background-position: 0px 0px; position: absolute !important; left: 50% !important; top: 50% !important; z-index: 2000 !important; display: block !important; width: 96px !important; height: 96px !important; margin: -64px 0px 0px -48px !important; background-color: transparent !important; background-image: none !important; background-repeat: no-repeat !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-indicator strong",
+              "style": {
+                "cssText": "width: 192px !important; height: 192px !important; margin: -128px 0px 0px -96px !important; font-size: 40px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator.oz-timeout strong",
+              "style": {
+                "cssText": "background-position: -96px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-indicator.oz-timeout strong",
+              "style": {
+                "cssText": "background-position: -192px 0px !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".oz-indicator.oz-timeout strong",
+                  "style": {
+                    "cssText": "background-size: 288px !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".oz-large .oz-indicator.oz-timeout strong",
+                  "style": {
+                    "cssText": "background-size: 576px !important;"
+                  }
+                }
+              ],
+              "conditionText": "only all and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, not all"
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-indicator.oz-timeout strong, .oz-large.oz-no-images .oz-indicator.oz-timeout strong",
+              "style": {
+                "cssText": "background-image: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator.oz-loading strong",
+              "style": {
+                "cssText": "width: 86px !important; height: 86px !important; margin: -59px 0px 0px -43px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-indicator.oz-loading strong",
+              "style": {
+                "cssText": "width: 172px !important; height: 172px !important; margin: -118px 0px 0px -86px !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".oz-indicator.oz-loading strong",
+                  "style": {
+                    "cssText": "background-size: 688px 86px !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".oz-large .oz-indicator.oz-loading strong",
+                  "style": {
+                    "cssText": "background-size: 1376px 172px !important;"
+                  }
+                }
+              ],
+              "conditionText": "only all and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, not all"
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-indicator.oz-loading strong, .oz-large.oz-no-images .oz-indicator.oz-loading strong",
+              "style": {
+                "cssText": "background-image: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator strong em",
+              "style": {
+                "cssText": "position: absolute !important; left: -10000px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-indicator strong em",
+              "style": {
+                "cssText": "position: static !important; background: rgb(0, 0, 0) !important; color: rgb(255, 255, 255) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large.oz-no-images .oz-indicator strong em",
+              "style": {
+                "cssText": "font: bold 36px/1.4 \"lucida grande\", verdana, sans-serif !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions",
+              "style": {
+                "cssText": "position: absolute !important; z-index: 4500 !important; bottom: 8% !important; left: 12% !important; width: 76% !important; height: auto !important; display: block !important; border: none !important; margin-bottom: 32px !important; font-size: 18px !important; line-height: 1.5 !important; text-align: center !important; cursor: default !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-stack.oz-auto-hidden .oz-captions",
+              "style": {
+                "cssText": "margin-bottom: 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions *",
+              "style": {
+                "cssText": "float: none !important; visibility: visible !important; margin: 0px !important; padding: 0px !important; border: none !important; border-radius: 0px !important; quotes: none !important; color: rgb(255, 255, 255) !important; cursor: default !important; box-shadow: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions ::before, .ozplayer .oz-captions ::after",
+              "style": {
+                "cssText": "content: \"\" !important; display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions.oz-disabled",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-captions",
+              "style": {
+                "cssText": "margin-bottom: 64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-smallscreen .oz-captions",
+              "style": {
+                "cssText": "left: 4% !important; width: 92% !important; font-size: 15px !important; line-height: 1.4 !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p",
+              "style": {
+                "cssText": "text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em, rgb(0, 0, 0) 0px 0px 0.25em !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p, .ozplayer .oz-captions p *",
+              "style": {
+                "cssText": "font: 18px/1.5 verdana, sans-serif !important; text-indent: 0px !important; letter-spacing: 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p.oz-captions-spacing",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p *",
+              "style": {
+                "cssText": "color: rgb(255, 255, 255) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p[data-voice-alt=\"true\"] *",
+              "style": {
+                "cssText": "color: rgb(255, 255, 0) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p i, .ozplayer .oz-captions p i *",
+              "style": {
+                "cssText": "font-style: italic !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p b, .ozplayer .oz-captions p b *",
+              "style": {
+                "cssText": "font-weight: bold !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p u, .ozplayer .oz-captions p u *",
+              "style": {
+                "cssText": "text-decoration: underline !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p u, .ozplayer .oz-captions p a",
+              "style": {
+                "cssText": "cursor: pointer !important; text-decoration: underline !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-captions p, .oz-large .oz-captions p *",
+              "style": {
+                "cssText": "font-size: 40px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p cite, .ozplayer .oz-captions p q",
+              "style": {
+                "cssText": "display: inline !important; padding: 0px 0.15em !important; border-radius: 0.125em !important; background: rgba(0, 0, 0, 0.65) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-captions p + p",
+              "style": {
+                "cssText": "margin-top: 0.25em !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-smallscreen .oz-captions p, .ozplayer.oz-smallscreen .oz-captions p *",
+              "style": {
+                "cssText": "font-size: 15px !important; line-height: 1.4 !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls",
+              "style": {
+                "cssText": "width: auto; z-index: 5000 !important; border: none !important; display: block !important; visibility: visible !important; height: 32px !important; background: transparent !important; font: 11px/1 \"lucida grande\", verdana, sans-serif !important; text-shadow: none !important; text-indent: 0px !important; letter-spacing: 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-controls",
+              "style": {
+                "cssText": "border-top: 2px solid transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls",
+              "style": {
+                "cssText": "height: 64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large.oz-no-images .oz-controls",
+              "style": {
+                "cssText": "border-top: 4px solid transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-stack .oz-controls",
+              "style": {
+                "cssText": "position: absolute !important; left: 0px !important; bottom: 0px !important; transform: none !important; opacity: 1 !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-stack.oz-auto-hiding .oz-controls",
+              "style": {
+                "cssText": "opacity: 0 !important; transition: opacity 0.5s ease 0s !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-stack.oz-auto-hidden .oz-controls",
+              "style": {
+                "cssText": "height: 0px !important; overflow: hidden !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-stack.oz-auto-hidden.oz-no-images .oz-controls",
+              "style": {
+                "cssText": "border-top: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls *",
+              "style": {
+                "cssText": "float: none !important; visibility: visible !important; margin: 0px !important; padding: 0px !important; border: none !important; border-radius: 0px !important; font-size: 11px !important; line-height: 1 !important; text-align: left !important; text-indent: 0px !important; letter-spacing: 0px !important; cursor: default !important; box-shadow: none !important; opacity: 1 !important; filter: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls *",
+              "style": {
+                "cssText": "font-size: 22px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls br",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls fieldset",
+              "style": {
+                "cssText": "display: block !important; visibility: visible !important; background: rgb(32, 32, 32) !important; color: rgb(255, 255, 255) !important; box-shadow: rgb(32, 32, 32) 0px -1px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-controls fieldset",
+              "style": {
+                "cssText": "background: rgb(0, 0, 0) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls fieldset",
+              "style": {
+                "cssText": "box-shadow: rgb(32, 32, 32) 0px -2px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls fieldset legend",
+              "style": {
+                "cssText": "position: absolute !important; left: -10000px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field",
+              "style": {
+                "cssText": "width: auto; position: static !important; z-index: 1000 !important; display: table-cell !important; white-space: nowrap !important; margin: 0px !important; padding: 0px !important; border: none !important; line-height: 0 !important; vertical-align: top !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-smallscreen .oz-controls .oz-field.oz-mute, .ozplayer.oz-smallscreen .oz-controls .oz-field.oz-volume",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field button",
+              "style": {
+                "cssText": "position: relative !important; display: inline-block !important; overflow: hidden !important; width: 32px !important; height: 32px !important; font: 11px/1 \"lucida grande\", verdana, sans-serif !important; text-shadow: none !important; text-indent: 0px !important; letter-spacing: 0px !important; color: rgb(255, 255, 255) !important; background: none no-repeat transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-field button",
+              "style": {
+                "cssText": "font-size: 22px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-controls .oz-field button, .oz-large.oz-no-images .oz-controls .oz-field button",
+              "style": {
+                "cssText": "width: auto !important; padding: 0px 0.5em !important; overflow: visible !important; background-image: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field button strong",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-controls .oz-field button strong",
+              "style": {
+                "cssText": "display: inline !important; font-size: 1em !important; line-height: 1.4 !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field.oz-disabled button",
+              "style": {
+                "cssText": "opacity: 0.51 !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".oz-controls .oz-field.oz-disabled button",
+                  "style": {
+                    "cssText": "filter: none !important;"
+                  }
+                }
+              ],
+              "conditionText": "only all"
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field button:focus",
+              "style": {
+                "cssText": "outline-offset: -5px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field button[role=\"link\"]",
+              "style": {
+                "cssText": "cursor: pointer !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-playpause button.oz-off, .oz-controls .oz-playpause.oz-disabled button.oz-off:hover, .oz-controls .oz-playpause.oz-disabled button.oz-off:focus, .oz-controls .oz-playpause.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: 0px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-playpause button.oz-off:hover, .oz-controls .oz-playpause button.oz-off:focus, .oz-controls .oz-playpause button.oz-off:active",
+              "style": {
+                "cssText": "background-position: 0px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-playpause button.oz-on, .oz-controls .oz-playpause.oz-disabled button.oz-on:hover, .oz-controls .oz-playpause.oz-disabled button.oz-on:focus, .oz-controls .oz-playpause.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -32px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-playpause button.oz-on:hover, .oz-controls .oz-playpause button.oz-on:focus, .oz-controls .oz-playpause button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -32px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-mute button.oz-on.oz-high, .oz-controls .oz-mute button.oz-on.oz-low, .oz-controls .oz-mute.oz-disabled button.oz-on.oz-high:hover, .oz-controls .oz-mute.oz-disabled button.oz-on.oz-low:hover, .oz-controls .oz-mute.oz-disabled button.oz-on.oz-high:focus, .oz-controls .oz-mute.oz-disabled button.oz-on.oz-low:focus, .oz-controls .oz-mute.oz-disabled button.oz-on.oz-high:active, .oz-controls .oz-mute.oz-disabled button.oz-on.oz-low:active",
+              "style": {
+                "cssText": "background-position: -128px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-mute button.oz-on.oz-high:hover, .oz-controls .oz-mute button.oz-on.oz-low:hover, .oz-controls .oz-mute button.oz-on.oz-high:focus, .oz-controls .oz-mute button.oz-on.oz-low:focus, .oz-controls .oz-mute button.oz-on.oz-high:active, .oz-controls .oz-mute button.oz-on.oz-low:active",
+              "style": {
+                "cssText": "background-position: -128px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-mute button.oz-off.oz-high, .oz-controls .oz-mute.oz-disabled button.oz-off.oz-high:hover, .oz-controls .oz-mute.oz-disabled button.oz-off.oz-high:focus, .oz-controls .oz-mute.oz-disabled button.oz-off.oz-high:active",
+              "style": {
+                "cssText": "background-position: -64px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-mute button.oz-off.oz-high:hover, .oz-controls .oz-mute button.oz-off.oz-high:focus, .oz-controls .oz-mute button.oz-off.oz-high:active",
+              "style": {
+                "cssText": "background-position: -64px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-mute button.oz-off.oz-low, .oz-controls .oz-mute.oz-disabled button.oz-off.oz-low:hover, .oz-controls .oz-mute.oz-disabled button.oz-off.oz-low:focus, .oz-controls .oz-mute.oz-disabled button.oz-off.oz-low:active",
+              "style": {
+                "cssText": "background-position: -96px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-mute button.oz-off.oz-low:hover, .oz-controls .oz-mute button.oz-off.oz-low:focus, .oz-controls .oz-mute button.oz-off.oz-low:active",
+              "style": {
+                "cssText": "background-position: -96px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-cc button.oz-off, .oz-controls .oz-cc.oz-disabled button.oz-off:hover, .oz-controls .oz-cc.oz-disabled button.oz-off:focus, .oz-controls .oz-cc.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -160px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-cc button.oz-off:hover, .oz-controls .oz-cc button.oz-off:focus, .oz-controls .oz-cc button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -160px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-cc button.oz-on, .oz-controls .oz-cc.oz-disabled button.oz-on:hover, .oz-controls .oz-cc.oz-disabled button.oz-on:focus, .oz-controls .oz-cc.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -192px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-cc button.oz-on:hover, .oz-controls .oz-cc button.oz-on:focus, .oz-controls .oz-cc button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -192px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio .oz-controls .oz-cc button.oz-off, .oz-audio .oz-controls .oz-cc.oz-disabled button.oz-off:hover, .oz-audio .oz-controls .oz-cc.oz-disabled button.oz-off:focus, .oz-audio .oz-controls .oz-cc.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -352px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio .oz-controls .oz-cc button.oz-off:hover, .oz-audio .oz-controls .oz-cc button.oz-off:focus, .oz-audio .oz-controls .oz-cc button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -352px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio .oz-controls .oz-cc button.oz-on, .oz-audio .oz-controls .oz-cc.oz-disabled button.oz-on:hover, .oz-audio .oz-controls .oz-cc.oz-disabled button.oz-on:focus, .oz-audio .oz-controls .oz-cc.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -384px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio .oz-controls .oz-cc button.oz-on:hover, .oz-audio .oz-controls .oz-cc button.oz-on:focus, .oz-audio .oz-controls .oz-cc button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -384px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-ad button.oz-off, .oz-controls .oz-ad.oz-disabled button.oz-off:hover, .oz-controls .oz-ad.oz-disabled button.oz-off:focus, .oz-controls .oz-ad.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -224px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-ad button.oz-off:hover, .oz-controls .oz-ad button.oz-off:focus, .oz-controls .oz-ad button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -224px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-ad button.oz-on, .oz-controls .oz-ad.oz-disabled button.oz-on:hover, .oz-controls .oz-ad.oz-disabled button.oz-on:focus, .oz-controls .oz-ad.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -256px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-ad button.oz-on:hover, .oz-controls .oz-ad button.oz-on:focus, .oz-controls .oz-ad button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -256px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-fullscreen button.oz-off, .oz-controls .oz-fullscreen.oz-disabled button.oz-off:hover, .oz-controls .oz-fullscreen.oz-disabled button.oz-off:focus, .oz-controls .oz-fullscreen.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -288px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-fullscreen button.oz-off:hover, .oz-controls .oz-fullscreen button.oz-off:focus, .oz-controls .oz-fullscreen button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -288px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-fullscreen button.oz-on, .oz-controls .oz-fullscreen.oz-disabled button.oz-on:hover, .oz-controls .oz-fullscreen.oz-disabled button.oz-on:focus, .oz-controls .oz-fullscreen.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -320px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-fullscreen button.oz-on:hover, .oz-controls .oz-fullscreen button.oz-on:focus, .oz-controls .oz-fullscreen button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -320px -32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-field button",
+              "style": {
+                "cssText": "width: 64px !important; height: 64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large.oz-no-images .oz-controls .oz-field button",
+              "style": {
+                "cssText": "width: auto !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-playpause button.oz-off, .oz-large .oz-playpause.oz-disabled button.oz-off:hover, .oz-large .oz-playpause.oz-disabled button.oz-off:focus, .oz-large .oz-playpause.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: 0px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-playpause button.oz-off:hover, .oz-large .oz-playpause button.oz-off:focus, .oz-large .oz-playpause button.oz-off:active",
+              "style": {
+                "cssText": "background-position: 0px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-playpause button.oz-on, .oz-large .oz-playpause.oz-disabled button.oz-on:hover, .oz-large .oz-playpause.oz-disabled button.oz-on:focus, .oz-large .oz-playpause.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -64px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-playpause button.oz-on:hover, .oz-large .oz-playpause button.oz-on:focus, .oz-large .oz-playpause button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -64px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-mute button.oz-on.oz-high, .oz-large .oz-mute button.oz-on.oz-low, .oz-large .oz-mute.oz-disabled button.oz-on.oz-high:hover, .oz-large .oz-mute.oz-disabled button.oz-on.oz-low:hover, .oz-large .oz-mute.oz-disabled button.oz-on.oz-high:focus, .oz-large .oz-mute.oz-disabled button.oz-on.oz-low:focus, .oz-large .oz-mute.oz-disabled button.oz-on.oz-high:active, .oz-large .oz-mute.oz-disabled button.oz-on.oz-low:active",
+              "style": {
+                "cssText": "background-position: -256px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-mute button.oz-on.oz-high:hover, .oz-large .oz-mute button.oz-on.oz-low:hover, .oz-large .oz-mute button.oz-on.oz-high:focus, .oz-large .oz-mute button.oz-on.oz-low:focus, .oz-large .oz-mute button.oz-on.oz-high:active, .oz-large .oz-mute button.oz-on.oz-low:active",
+              "style": {
+                "cssText": "background-position: -256px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-mute button.oz-off.oz-high, .oz-large .oz-mute.oz-disabled button.oz-off.oz-high:hover, .oz-large .oz-mute.oz-disabled button.oz-off.oz-high:focus, .oz-large .oz-mute.oz-disabled button.oz-off.oz-high:active",
+              "style": {
+                "cssText": "background-position: -128px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-mute button.oz-off.oz-high:hover, .oz-large .oz-mute button.oz-off.oz-high:focus, .oz-large .oz-mute button.oz-off.oz-high:active",
+              "style": {
+                "cssText": "background-position: -128px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-mute button.oz-off.oz-low, .oz-large .oz-mute.oz-disabled button.oz-off.oz-low:hover, .oz-large .oz-mute.oz-disabled button.oz-off.oz-low:focus, .oz-large .oz-mute.oz-disabled button.oz-off.oz-low:active",
+              "style": {
+                "cssText": "background-position: -192px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-mute button.oz-off.oz-low:hover, .oz-large .oz-mute button.oz-off.oz-low:focus, .oz-large .oz-mute button.oz-off.oz-low:active",
+              "style": {
+                "cssText": "background-position: -192px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-cc button.oz-off, .oz-large .oz-cc.oz-disabled button.oz-off:hover, .oz-large .oz-cc.oz-disabled button.oz-off:focus, .oz-large .oz-cc.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -320px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-cc button.oz-off:hover, .oz-large .oz-cc button.oz-off:focus, .oz-large .oz-cc button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -320px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-cc button.oz-on, .oz-large .oz-cc.oz-disabled button.oz-on:hover, .oz-large .oz-cc.oz-disabled button.oz-on:focus, .oz-large .oz-cc.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -384px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-cc button.oz-on:hover, .oz-large .oz-cc button.oz-on:focus, .oz-large .oz-cc button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -384px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio.oz-large .oz-cc button.oz-off, .oz-audio.oz-large .oz-cc.oz-disabled button.oz-off:hover, .oz-audio.oz-large .oz-cc.oz-disabled button.oz-off:focus, .oz-audio.oz-large .oz-cc.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -704px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio.oz-large .oz-cc button.oz-off:hover, .oz-audio.oz-large .oz-cc button.oz-off:focus, .oz-audio.oz-large .oz-cc button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -704px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio.oz-large .oz-cc button.oz-on, .oz-audio.oz-large .oz-cc.oz-disabled button.oz-on:hover, .oz-audio.oz-large .oz-cc.oz-disabled button.oz-on:focus, .oz-audio.oz-large .oz-cc.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -768px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio.oz-large .oz-cc button.oz-on:hover, .oz-audio.oz-large .oz-cc button.oz-on:focus, .oz-audio.oz-large .oz-cc button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -768px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-ad button.oz-off, .oz-large .oz-ad.oz-disabled button.oz-off:hover, .oz-large .oz-ad.oz-disabled button.oz-off:focus, .oz-large .oz-ad.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -448px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-ad button.oz-off:hover, .oz-large .oz-ad button.oz-off:focus, .oz-large .oz-ad button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -448px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-ad button.oz-on, .oz-large .oz-ad.oz-disabled button.oz-on:hover, .oz-large .oz-ad.oz-disabled button.oz-on:focus, .oz-large .oz-ad.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -512px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-ad button.oz-on:hover, .oz-large .oz-ad button.oz-on:focus, .oz-large .oz-ad button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -512px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-fullscreen button.oz-off, .oz-large .oz-fullscreen.oz-disabled button.oz-off:hover, .oz-large .oz-fullscreen.oz-disabled button.oz-off:focus, .oz-large .oz-fullscreen.oz-disabled button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -576px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-fullscreen button.oz-off:hover, .oz-large .oz-fullscreen button.oz-off:focus, .oz-large .oz-fullscreen button.oz-off:active",
+              "style": {
+                "cssText": "background-position: -576px -64px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-fullscreen button.oz-on, .oz-large .oz-fullscreen.oz-disabled button.oz-on:hover, .oz-large .oz-fullscreen.oz-disabled button.oz-on:focus, .oz-large .oz-fullscreen.oz-disabled button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -640px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-fullscreen button.oz-on:hover, .oz-large .oz-fullscreen button.oz-on:focus, .oz-large .oz-fullscreen button.oz-on:active",
+              "style": {
+                "cssText": "background-position: -640px -64px !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".oz-controls .oz-field button",
+                  "style": {
+                    "cssText": "background-size: 416px 64px !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".oz-large .oz-controls .oz-field button",
+                  "style": {
+                    "cssText": "background-size: 832px 128px !important;"
+                  }
+                }
+              ],
+              "conditionText": "only all and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, not all"
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field input",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-menu",
+              "style": {
+                "cssText": "right: 0px; max-width: none; max-height: none; position: absolute !important; top: auto !important; left: auto !important; bottom: 32px !important; display: block !important; white-space: nowrap !important; overflow: auto !important; box-sizing: border-box !important; margin: 0px 0px 5px !important; padding: 5px 0px !important; border: 1px solid rgb(32, 32, 32) !important; border-radius: 2px !important; background-color: rgb(32, 32, 32) !important; color: rgb(255, 255, 255) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-audio .oz-controls .oz-menu",
+              "style": {
+                "cssText": "top: 32px !important; bottom: auto !important; margin: 5px 0px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-menu[aria-hidden=\"true\"], .oz-controls .oz-menu[aria-hidden=\"true\"] *",
+              "style": {
+                "cssText": "visibility: hidden !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-menu",
+              "style": {
+                "cssText": "bottom: 64px !important; padding: 10px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-menuitem",
+              "style": {
+                "cssText": "display: table !important; width: 100% !important; box-sizing: border-box !important; padding: 5px 20px 5px 10px !important; font-size: 12px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-menuitem",
+              "style": {
+                "cssText": "padding: 10px 40px 10px 20px !important; font-size: 24px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-menuitem[aria-disabled=\"true\"]",
+              "style": {
+                "cssText": "color: rgb(137, 137, 137) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-menuitem[aria-hidden=\"true\"]",
+              "style": {
+                "cssText": "display: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-menuitem::before",
+              "style": {
+                "cssText": "content: \"\" !important; display: inline-block !important; width: 0.5em !important; margin: 0px 5px 0px 0px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-menuitem::before",
+              "style": {
+                "cssText": "margin-right: 10px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-menuitem[aria-checked=\"true\"]::before",
+              "style": {
+                "cssText": "content: \"•\" !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-slider",
+              "style": {
+                "cssText": "position: relative !important; display: block !important; float: left !important; width: 100% !important; height: auto !important; background: transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-slider .oz-slider-track",
+              "style": {
+                "cssText": "position: relative !important; float: none !important; display: block !important; width: auto !important; height: 6px !important; margin: 13px 16px !important; padding: 0px !important; border: none !important; background: rgb(81, 81, 81) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-slider-track .oz-timerange",
+              "style": {
+                "cssText": "position: absolute !important; z-index: 1000 !important; overflow: hidden !important; display: inline-block !important; height: 6px !important; background: rgba(255, 255, 255, 0.35) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-slider .oz-slider-track, .oz-slider-track .oz-timerange",
+              "style": {
+                "cssText": "border-radius: 4px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-controls .oz-slider .oz-slider-track",
+              "style": {
+                "cssText": "height: 4px !important; border-top: 1px solid transparent !important; border-bottom: 1px solid transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-slider-track .oz-timerange",
+              "style": {
+                "cssText": "height: 2px !important; border-top: 1px dashed transparent !important; border-bottom: 1px dashed transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-slider .oz-slider-track",
+              "style": {
+                "cssText": "height: 12px !important; margin: 26px 32px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-slider .oz-slider-track .oz-timerange",
+              "style": {
+                "cssText": "height: 12px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-slider .oz-slider-track, .oz-large .oz-slider-track .oz-timerange",
+              "style": {
+                "cssText": "border-radius: 8px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large.oz-no-images .oz-controls .oz-slider .oz-slider-track",
+              "style": {
+                "cssText": "height: 8px !important; border-top: 2px solid transparent !important; border-bottom: 2px solid transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large.oz-no-images .oz-controls .oz-slider-track .oz-timerange",
+              "style": {
+                "cssText": "height: 4px !important; border-top: 2px dashed transparent !important; border-bottom: 2px dashed transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-controls .oz-slider .oz-slider-thumb, .ozplayer .oz-controls .oz-slider .oz-slider-thumb:hover, .ozplayer .oz-controls .oz-slider .oz-slider-thumb:focus, .ozplayer .oz-controls .oz-slider .oz-slider-thumb:active",
+              "style": {
+                "cssText": "left: 0px; position: absolute !important; top: 0px !important; z-index: 2000 !important; overflow: hidden !important; display: inline-block !important; width: 32px !important; height: 32px !important; margin: -13px 0px 0px !important; padding: 0px !important; border: none !important; background: transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-controls .oz-slider.oz-disabled .oz-slider-thumb",
+              "style": {
+                "cssText": "opacity: 1 !important; filter: none !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-large .oz-controls .oz-slider .oz-slider-thumb, .ozplayer.oz-large .oz-controls .oz-slider .oz-slider-thumb:hover, .ozplayer.oz-large .oz-controls .oz-slider .oz-slider-thumb:focus, .ozplayer.oz-large .oz-controls .oz-slider .oz-slider-thumb:active",
+              "style": {
+                "cssText": "width: 64px !important; height: 64px !important; margin: -26px 0px 0px !important; background: transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-controls .oz-slider .oz-slider-thumb strong",
+              "style": {
+                "cssText": "overflow: hidden !important; display: block !important; width: 14px !important; height: 14px !important; margin: 0px 0px 0px 9px !important; border-radius: 7px !important; background: rgb(255, 255, 255) !important; box-shadow: rgb(48, 48, 48) 0px 0px 0px 1px, rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 0, 0) 0px 1px 2px 2px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-no-images .oz-controls .oz-slider .oz-slider-thumb strong",
+              "style": {
+                "cssText": "width: 12px !important; height: 12px !important; border: 1px solid transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-controls .oz-slider.oz-disabled .oz-slider-thumb strong, .ozplayer .oz-controls .oz-slider.oz-disabled .oz-slider-thumb:hover strong, .ozplayer .oz-controls .oz-slider.oz-disabled .oz-slider-thumb:focus strong, .ozplayer .oz-controls .oz-slider.oz-disabled .oz-slider-thumb:active strong",
+              "style": {
+                "cssText": "background: rgb(137, 137, 137) !important; box-shadow: rgb(48, 48, 48) 0px 0px 0px 1px, rgb(137, 137, 137) 0px 0px 0px 2px, rgb(0, 0, 0) 0px 1px 2px 2px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-large .oz-controls .oz-slider .oz-slider-thumb strong",
+              "style": {
+                "cssText": "width: 28px !important; height: 28px !important; margin: 0px 0px 0px 18px !important; border-radius: 14px !important; box-shadow: rgb(48, 48, 48) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px, rgb(0, 0, 0) 0px 2px 4px 4px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large.oz-no-images .oz-controls .oz-slider .oz-slider-thumb strong",
+              "style": {
+                "cssText": "width: 24px !important; height: 24px !important; border: 2px solid transparent !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer.oz-large .oz-controls .oz-slider.oz-disabled .oz-slider-thumb strong",
+              "style": {
+                "cssText": "box-shadow: rgb(48, 48, 48) 0px 0px 0px 2px, rgb(137, 137, 137) 0px 0px 0px 4px, rgb(0, 0, 0) 0px 2px 4px 4px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li .oz-button-tooltip, .oz-controls .oz-field .oz-button-tooltip, .oz-controls .oz-slider .oz-slider-tooltip",
+              "style": {
+                "cssText": "left: 0px; position: absolute !important; z-index: 3000 !important; bottom: 10px !important; float: none !important; visibility: visible !important; display: inline-block !important; padding: 0.2em 0.4em !important; margin: 0px 0px 7px !important; width: auto !important; white-space: nowrap !important; border: 1px solid rgb(180, 180, 180) !important; border-radius: 0.35em !important; font: 12px/1.3 \"lucida grande\", verdana, sans-serif !important; text-align: center !important; text-indent: 0px !important; letter-spacing: 0px !important; background: rgb(41, 41, 41) !important; color: rgb(255, 255, 255) !important; box-shadow: rgba(0, 0, 0, 0.65) 0px 0.1em 0.35em 0.05em !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field .oz-button-tooltip",
+              "style": {
+                "cssText": "bottom: 23px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li .oz-button-tooltip",
+              "style": {
+                "cssText": "bottom: -14px !important; margin: 0px 0px -7px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-slider .oz-slider-tooltip.oz-hidden",
+              "style": {
+                "cssText": "visibility: hidden !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-field .oz-button-tooltip, .oz-large .oz-controls .oz-slider .oz-slider-tooltip",
+              "style": {
+                "cssText": "bottom: 20px !important; margin-bottom: 13px !important; border-width: 2px !important; font-size: 24px !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-field .oz-button-tooltip",
+              "style": {
+                "cssText": "bottom: 46px !important;"
+              }
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "cssRules": [
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-skip-links li a, .ozplayer .oz-skip-links li a:visited",
+              "style": {
+                "cssText": "background-image: url(\"icons-white.png\") !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field button",
+              "style": {
+                "cssText": "background-image: url(\"buttons-white.png?v=3\") !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-controls .oz-field button",
+              "style": {
+                "cssText": "background-image: url(\"buttons-white-large.png?v=3\") !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer .oz-poster span, .oz-indicator.oz-timeout strong",
+              "style": {
+                "cssText": "background-image: url(\"overlays-white.png\") !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-poster span, .oz-large .oz-indicator.oz-timeout strong",
+              "style": {
+                "cssText": "background-image: url(\"overlays-white-large.png\") !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-indicator.oz-loading strong",
+              "style": {
+                "cssText": "background-image: url(\"loading.png\") !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-large .oz-indicator.oz-loading strong",
+              "style": {
+                "cssText": "background-image: url(\"loading-large.png\") !important;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".ozplayer .oz-skip-links li a, .ozplayer .oz-skip-links li a:visited",
+                  "style": {
+                    "cssText": "background-image: url(\"icons-white@2x.png\") !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".oz-controls .oz-field button",
+                  "style": {
+                    "cssText": "background-image: url(\"buttons-white-large.png?v=3\") !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".oz-large .oz-controls .oz-field button",
+                  "style": {
+                    "cssText": "background-image: url(\"buttons-white-large@2x.png?v=3\") !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".ozplayer .oz-poster span, .oz-indicator.oz-timeout strong",
+                  "style": {
+                    "cssText": "background-image: url(\"overlays-white-large.png\") !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".oz-large .oz-poster span, .oz-large .oz-indicator.oz-timeout strong",
+                  "style": {
+                    "cssText": "background-image: url(\"overlays-white-large@2x.png\") !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".oz-indicator.oz-loading strong",
+                  "style": {
+                    "cssText": "background-image: url(\"loading-large.png\") !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".oz-large .oz-indicator.oz-loading strong",
+                  "style": {
+                    "cssText": "background-image: url(\"loading-large@2x.png\") !important;"
+                  }
+                }
+              ],
+              "conditionText": "only all and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all, not all"
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field button:hover, .oz-controls .oz-field button:focus, .oz-controls .oz-field button:active, .oz-controls .oz-menuitem:hover, .oz-controls .oz-menuitem:focus, .ozplayer .oz-poster > span:hover > span, .ozplayer .oz-controls .oz-slider .oz-slider-thumb:hover strong, .ozplayer .oz-controls .oz-slider .oz-slider-thumb:focus strong, .ozplayer .oz-controls .oz-slider .oz-slider-thumb:active strong, .oz-no-images .oz-logo-bug:hover small, .oz-no-images .oz-logo-bug:focus small, .oz-no-images .oz-logo-bug:active small, .ozplayer .oz-skip-links li a:hover, .ozplayer .oz-skip-links li a:focus, .ozplayer .oz-skip-links li a:active, .ozplayer-expander summary:hover, .ozplayer-expander summary:focus, .ozplayer-expander summary:active",
+              "style": {
+                "cssText": "background-color: rgb(0, 102, 255) !important; color: rgb(255, 255, 255) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-controls .oz-field.oz-disabled button",
+              "style": {
+                "cssText": "background-color: transparent !important; color: rgb(255, 255, 255) !important;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".oz-logo-bug:hover, .oz-logo-bug:focus",
+              "style": {
+                "cssText": "border-color: rgb(0, 102, 255) !important;"
+              }
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "cssRules": [
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-expander",
+              "style": {
+                "cssText": "display: block; margin: 10px 0px 0px; width: 644px;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-expander summary",
+              "style": {
+                "cssText": "position: relative; z-index: 2000; display: block; padding: 3px 10px 5px; border: 2px solid rgb(16, 16, 16); background: rgb(32, 32, 32); color: rgb(255, 255, 255); cursor: default;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-expander summary span",
+              "style": {
+                "cssText": "display: inline-block; width: 1em; margin: 0px 0.6em 0px 0px; font-size: 0.8em;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript",
+              "style": {
+                "cssText": "position: relative; z-index: 1000; margin: 10px 0px 0px; padding: 4px 20px 16px; width: 600px; height: 9.5em; overflow-y: auto; resize: vertical; border: 2px solid rgb(16, 16, 16); text-align: left; background: rgb(245, 245, 245);"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-expander .ozplayer-transcript",
+              "style": {
+                "cssText": "margin-top: 0px; border-top: none;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript, .ozplayer-transcript *",
+              "style": {
+                "cssText": "color: rgb(51, 51, 51);"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript *",
+              "style": {
+                "cssText": "resize: none;"
+              }
+            },
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": ".ozplayer-expander .ozplayer-transcript",
+                  "style": {
+                    "cssText": "display: block !important;"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".ozplayer-expander summary, .ozplayer-transcript, .ozplayer-transcript *",
+                  "style": {
+                    "cssText": "background: rgb(255, 255, 255); color: rgb(0, 0, 0);"
+                  }
+                },
+                {
+                  "type": 1,
+                  "selectorText": ".ozplayer-transcript",
+                  "style": {
+                    "cssText": "height: auto; overflow-y: visible; resize: none;"
+                  }
+                }
+              ],
+              "conditionText": "print"
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript [data-kind=\"captions\"]",
+              "style": {
+                "cssText": "margin: 0px 0px 0px 40px; padding: 0px;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript [data-kind=\"transcript\"]",
+              "style": {
+                "cssText": "margin: 0px 0px 0px 12px; padding: 0px;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript p",
+              "style": {
+                "cssText": "padding: 12px 0px 0px; margin: 0px;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript p q",
+              "style": {
+                "cssText": "quotes: none;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript p q::before, .ozplayer-transcript p q::after",
+              "style": {
+                "cssText": "content: \"\"; display: none;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript p cite",
+              "style": {
+                "cssText": "display: inline-block; margin: 0px; padding: 0px; border: none; font-weight: bold; font-style: normal; text-transform: uppercase;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript p mark",
+              "style": {
+                "cssText": "position: relative; display: block; padding: 4px 8px; margin: -4px -8px; border: none; border-radius: 2px; text-decoration: none; background: rgb(255, 255, 204); color: rgb(0, 0, 0); box-shadow: rgb(170, 170, 170) 0px 0px 0px 1px;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript p mark abbr",
+              "style": {
+                "cssText": "position: absolute; display: block; padding: 0px; border: none; background: url(\"transcript-cue.png\") 0px 50% no-repeat; left: -16px; width: 16px; margin: 0px 0px 0px -4px; text-indent: -2em; overflow: hidden;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript p + p mark abbr",
+              "style": {
+                "cssText": "visibility: hidden;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript > p:last-child",
+              "style": {
+                "cssText": "padding-bottom: 16px; text-transform: uppercase;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": ".ozplayer-transcript > p:last-child *",
+              "style": {
+                "cssText": "text-transform: none;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}
