@@ -2,7 +2,7 @@ import * as path from "path";
 import * as fs from "fs";
 import { ExecutionContext } from "ava";
 
-import { Rule, audit } from "@siteimprove/alfa-act";
+import { Rule, Outcome, audit } from "@siteimprove/alfa-act";
 
 export interface FixtureOptions {
   skip?: Array<string>;
@@ -28,16 +28,17 @@ export function fixture(
       continue;
     }
 
+    const precedence: { [O in Outcome]: number } = {
+      [Outcome.Failed]: 3,
+      [Outcome.CantTell]: 2,
+      [Outcome.Passed]: 1,
+      [Outcome.Inapplicable]: 0
+    };
+
     const result = audit(test.aspects, [rule])
       .results.filter(result => result.rule === rule)
       .reduce((result, candidate) =>
-        result.outcome === "failed"
-          ? result
-          : candidate.outcome === "failed"
-          ? candidate
-          : result.outcome === "cantTell"
-          ? result
-          : candidate.outcome === "cantTell"
+        precedence[candidate.outcome] > precedence[result.outcome]
           ? candidate
           : result
       );
