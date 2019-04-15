@@ -25,10 +25,10 @@ export function fixture(
       JSON.parse(fs.readFileSync(path.join(directory, filename), "utf8"))
     );
 
+  t.plan(tests.length);
+
   for (const test of tests) {
-    if (options.skip && options.skip.includes(test.id)) {
-      continue;
-    }
+    const skip = options.skip && options.skip.includes(test.id);
 
     const precedence: { [O in Outcome]: number } = {
       [Outcome.Failed]: 3,
@@ -45,7 +45,7 @@ export function fixture(
           : result
       );
 
-    t.assert(test.outcome === result.outcome, test.id);
+    (skip ? t.assert.skip : t.assert)(test.outcome === result.outcome, test.id);
 
     t.context.results.push({
       aspects: test.aspects,
