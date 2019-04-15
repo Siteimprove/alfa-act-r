@@ -1,6 +1,18 @@
-import test from "ava";
+import ava, { TestInterface } from "ava";
 import { Rules } from "@siteimprove/alfa-wcag";
+import { Context } from "./helpers/context";
 import { fixture } from "./helpers/fixture";
+import { manifest } from "./helpers/manifest";
+
+const test = ava as TestInterface<Context>;
+
+test.before("Initialise context", t => {
+  t.context = { results: [] };
+});
+
+test.after("Write manifest", t => {
+  manifest(t.context, "test/manifest.json");
+});
 
 test(fixture, Rules.SIA_R1, "sc2-4-2-page-has-title");
 

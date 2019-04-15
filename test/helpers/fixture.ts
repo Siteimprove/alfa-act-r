@@ -4,12 +4,14 @@ import { ExecutionContext } from "ava";
 
 import { Rule, Outcome, audit } from "@siteimprove/alfa-act";
 
+import { Context } from "./context";
+
 export interface FixtureOptions {
   skip?: Array<string>;
 }
 
 export function fixture(
-  t: ExecutionContext,
+  t: ExecutionContext<Context>,
   rule: Rule<any, any>,
   fixture: string,
   options: FixtureOptions = {}
@@ -44,6 +46,11 @@ export function fixture(
       );
 
     t.assert(test.outcome === result.outcome, test.id);
+
+    t.context.results.push({
+      aspects: test.aspects,
+      result
+    });
   }
 }
 

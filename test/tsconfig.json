@@ -1,5 +1,10 @@
 {
   "extends": "../tsconfig.json",
-  "files": ["fixtures.spec.ts", "helpers/fixture.ts"],
+  "files": [
+    "fixtures.spec.ts",
+    "helpers/context.ts",
+    "helpers/fixture.ts",
+    "helpers/manifest.ts"
+  ],
   "references": [{ "path": "../vendor/alfa" }]
 }
