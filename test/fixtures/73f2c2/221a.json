@@ -1,0 +1,103 @@
+{
+  "id": "221a",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/73f2c2-inapplicable-example-1.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Tue, 16 Apr 2019 10:39:42 GMT",
+        "etag": "\"5cb5b0ee-2b\"",
+        "access-control-allow-origin": "*",
+        "expires": "Tue, 16 Apr 2019 10:52:52 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "5612:01B3:1FBE66:2A9048:5CB5B1AC",
+        "accept-ranges": "bytes",
+        "date": "Tue, 16 Apr 2019 11:20:02 GMT",
+        "via": "1.1 varnish",
+        "age": "149",
+        "x-served-by": "cache-ams21022-AMS",
+        "x-cache": "HIT",
+        "x-cache-hits": "1",
+        "x-timer": "S1555413603.770034,VS0,VE0",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "4d975d40619ac9184817e7e72d093a5710dce294",
+        "content-length": "43"
+      },
+      "body": "\n<button autocomplete=\"username\"></button>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "button",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "autocomplete",
+                      "value": "username"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ const makeDir = require("make-dir");
 
 const { Scraper } = require("@siteimprove/alfa-scrape");
 
-const tests = "https://auto-wcag.github.io/auto-wcag/exported-testcases/testcases.json";
+const tests = "https://act-rules.github.io/testcases.json";
 
 const out = path.join("test", "fixtures");
 

@@ -1,0 +1,77 @@
+{
+  "id": "a17b",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/b5c3f8-inapplicable-example-1.svg",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "image/svg+xml",
+        "last-modified": "Tue, 16 Apr 2019 10:39:42 GMT",
+        "etag": "\"5cb5b0ee-3a\"",
+        "access-control-allow-origin": "*",
+        "expires": "Tue, 16 Apr 2019 10:53:10 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "6308:264F:249A23:3118BB:5CB5B1BE",
+        "accept-ranges": "bytes",
+        "date": "Tue, 16 Apr 2019 11:20:13 GMT",
+        "via": "1.1 varnish",
+        "age": "143",
+        "x-served-by": "cache-ams21022-AMS",
+        "x-cache": "HIT",
+        "x-cache-hits": "1",
+        "x-timer": "S1555413613.001326,VS0,VE0",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "a748f11d829835cb8c9458702031e764cc357a45",
+        "content-length": "58"
+      },
+      "body": "\n<svg xmlns=\"http://www.w3.org/2000/svg\" lang=\"en\"></svg>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "svg",
+          "attributes": [
+            {
+              "prefix": null,
+              "localName": "xmlns",
+              "value": "http://www.w3.org/2000/svg"
+            },
+            {
+              "prefix": null,
+              "localName": "lang",
+              "value": "en"
+            }
+          ],
+          "shadowRoot": null,
+          "childNodes": []
+        }
+      ],
+      "compatMode": "CSS1Compat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

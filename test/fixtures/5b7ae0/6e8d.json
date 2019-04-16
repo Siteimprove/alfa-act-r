@@ -1,0 +1,100 @@
+{
+  "id": "6e8d",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/5b7ae0-failed-example-1.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Tue, 16 Apr 2019 10:39:42 GMT",
+        "etag": "\"5cb5b0ee-27\"",
+        "access-control-allow-origin": "*",
+        "expires": "Tue, 16 Apr 2019 10:53:11 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "13BC:481F:21764B:2CAD06:5CB5B1BF",
+        "accept-ranges": "bytes",
+        "date": "Tue, 16 Apr 2019 11:20:13 GMT",
+        "via": "1.1 varnish",
+        "age": "143",
+        "x-served-by": "cache-ams21022-AMS",
+        "x-cache": "HIT",
+        "x-cache-hits": "1",
+        "x-timer": "S1555413614.665858,VS0,VE0",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "629f3f80bfe72f85b15219690296bb4b4fdd5f23",
+        "content-length": "39"
+      },
+      "body": "\n<html lang=\"fr\" xml:lang=\"en\"></html>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [
+            {
+              "prefix": null,
+              "localName": "lang",
+              "value": "fr"
+            },
+            {
+              "prefix": null,
+              "localName": "xml:lang",
+              "value": "en"
+            }
+          ],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

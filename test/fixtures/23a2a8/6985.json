@@ -1,0 +1,132 @@
+{
+  "id": "6985",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/23a2a8-inapplicable-example-1.svg",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "image/svg+xml",
+        "last-modified": "Tue, 16 Apr 2019 10:39:42 GMT",
+        "etag": "\"5cb5b0ee-9c\"",
+        "access-control-allow-origin": "*",
+        "expires": "Tue, 16 Apr 2019 10:53:20 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "5010:7D38:11AF38:17BB2F:5CB5B1C8",
+        "accept-ranges": "bytes",
+        "date": "Tue, 16 Apr 2019 11:20:18 GMT",
+        "via": "1.1 varnish",
+        "age": "140",
+        "x-served-by": "cache-ams21022-AMS",
+        "x-cache": "HIT",
+        "x-cache-hits": "1",
+        "x-timer": "S1555413619.736501,VS0,VE0",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "928a4d4e9fe85d95e491709867cfccdd6c086f81",
+        "content-length": "156"
+      },
+      "body": "\n<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100\" height=\"100\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" />\n</svg>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "svg",
+          "attributes": [
+            {
+              "prefix": null,
+              "localName": "xmlns",
+              "value": "http://www.w3.org/2000/svg"
+            },
+            {
+              "prefix": null,
+              "localName": "width",
+              "value": "100"
+            },
+            {
+              "prefix": null,
+              "localName": "height",
+              "value": "100"
+            }
+          ],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 3,
+              "data": "\n  ",
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "circle",
+              "attributes": [
+                {
+                  "prefix": null,
+                  "localName": "cx",
+                  "value": "50"
+                },
+                {
+                  "prefix": null,
+                  "localName": "cy",
+                  "value": "50"
+                },
+                {
+                  "prefix": null,
+                  "localName": "r",
+                  "value": "40"
+                },
+                {
+                  "prefix": null,
+                  "localName": "stroke",
+                  "value": "green"
+                },
+                {
+                  "prefix": null,
+                  "localName": "stroke-width",
+                  "value": "4"
+                },
+                {
+                  "prefix": null,
+                  "localName": "fill",
+                  "value": "yellow"
+                }
+              ],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 3,
+              "data": "\n",
+              "childNodes": []
+            }
+          ]
+        }
+      ],
+      "compatMode": "CSS1Compat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": "c31c",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/9eb3f6-passed-example-2.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Tue, 16 Apr 2019 10:39:42 GMT",
+        "etag": "\"5cb5b0ee-70\"",
+        "access-control-allow-origin": "*",
+        "expires": "Tue, 16 Apr 2019 10:52:58 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "CDD4:4A00:7047A:97CB1:5CB5B1B2",
+        "accept-ranges": "bytes",
+        "date": "Tue, 16 Apr 2019 11:20:06 GMT",
+        "via": "1.1 varnish",
+        "age": "147",
+        "x-served-by": "cache-ams21022-AMS",
+        "x-cache": "HIT",
+        "x-cache-hits": "1",
+        "x-timer": "S1555413606.241532,VS0,VE0",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "20579d0cb1f76eb7fee34778725232c9a2ed2ee0",
+        "content-length": "112"
+      },
+      "body": "\n<a href=\"https://www.w3.org/WAI/demos/bad/img/w3c.png\" download>Download <img src=\"w3c.png\" alt=\"w3c.png\"></a>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "https://www.w3.org/WAI/demos/bad/img/w3c.png"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "download",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Download ",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "img",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "src",
+                          "value": "w3c.png"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "alt",
+                          "value": "w3c.png"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

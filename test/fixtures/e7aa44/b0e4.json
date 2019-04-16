@@ -1,0 +1,158 @@
+{
+  "id": "b0e4",
+  "outcome": "fail",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e7aa44-fail-example-2.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Tue, 16 Apr 2019 10:39:42 GMT",
+        "etag": "W/\"5cb5b0ee-271\"",
+        "access-control-allow-origin": "*",
+        "expires": "Tue, 16 Apr 2019 10:54:06 GMT",
+        "cache-control": "max-age=600",
+        "content-encoding": "gzip",
+        "x-github-request-id": "4E1A:7279:1EA6ED:291C56:5CB5B1F5",
+        "accept-ranges": "bytes",
+        "date": "Tue, 16 Apr 2019 11:20:43 GMT",
+        "via": "1.1 varnish",
+        "age": "123",
+        "x-served-by": "cache-ams21022-AMS",
+        "x-cache": "HIT",
+        "x-cache-hits": "1",
+        "x-timer": "S1555413643.130343,VS0,VE0",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "ecfc071b6731db91105a731d42100e16619e7555",
+        "content-length": "375"
+      },
+      "body": "\n<p style=\"display: none;\">\n\tA part of a speech by John F. Kennedy: We choose to go to the moon in this\n\tdecade and do the other things, not because they are easy, but because they\n\tare hard, because that goal will serve to organize and measure the best of our\n\tenergies and skills, because that challenge is one that we are willing to\n\taccept, one we are unwilling to postpone, and one which we intend to win, and\n\tthe others, too.\n</p>\n<p>\n\tYou can also listen to the audio file below to hear the above part of the\n\tspeech.\n</p>\n<audio\n\tdata-rule-target\n\tsrc=\"../test-assets/moon-audio/moon-speech.mp3\"\n\tcontrols\n></audio>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "p",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "style",
+                      "value": "display: none;"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tA part of a speech by John F. Kennedy: We choose to go to the moon in this\n\tdecade and do the other things, not because they are easy, but because they\n\tare hard, because that goal will serve to organize and measure the best of our\n\tenergies and skills, because that challenge is one that we are willing to\n\taccept, one we are unwilling to postpone, and one which we intend to win, and\n\tthe others, too.\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "p",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tYou can also listen to the audio file below to hear the above part of the\n\tspeech.\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "audio",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "data-rule-target",
+                      "value": ""
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/moon-audio/moon-speech.mp3"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

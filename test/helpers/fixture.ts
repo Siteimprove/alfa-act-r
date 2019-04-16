@@ -45,7 +45,11 @@ export function fixture(
           : result
       );
 
-    (skip ? t.assert.skip : t.assert)(test.outcome === result.outcome, test.id);
+    if (skip) {
+      t.assert.skip(test.outcome === result.outcome, test.id);
+    } else {
+      t.assert(test.outcome === result.outcome, test.id);
+    }
 
     t.context.results.push({
       aspects: test.aspects,
