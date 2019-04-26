@@ -1,0 +1,128 @@
+{
+  "id": "7dd7",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e086e5-fea54a84d60e88f318fa2e588e670e56af75c011.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-51\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:55:37 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "81E8:456B:16A168:1E6577:5CC2C52F",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:45:37 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268337.359257,VS0,VE82",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "89057e5811f1e7477c7600aeeb7f76706c7e87b0",
+        "content-length": "81"
+      },
+      "body": "\n<div id=\"country\">Country</div>\n<textarea aria-labelledby=\"country\"></textarea>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "country"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Country",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "textarea",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "aria-labelledby",
+                      "value": "country"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

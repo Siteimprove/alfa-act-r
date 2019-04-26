@@ -1,0 +1,201 @@
+{
+  "id": "79db",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/bf051a-f6f9ba66749037008e9b8e483bf8797c1a76f9fa.svg",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "image/svg+xml",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-34\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:56:18 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "C486:4143:751BE9:9B36DE:5CC2C55A",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:46:18 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268379.813674,VS0,VE88",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "0bad60f76e4a51d49a757ac1d6621ae71a1677d1",
+        "content-length": "52"
+      },
+      "body": "\n<svg xmlns=\"http://www.w3.org/2000/svg\" lang=\"fr\">\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "style",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "html, body { height: 100% } parsererror + svg { width: 100%; height: 100% }",
+                      "childNodes": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "parsererror",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "style",
+                      "value": "display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "h3",
+                      "attributes": [],
+                      "shadowRoot": null,
+                      "childNodes": [
+                        {
+                          "nodeType": 3,
+                          "data": "This page contains the following errors:",
+                          "childNodes": []
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "div",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "style",
+                          "value": "font-family:monospace;font-size:12px"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": [
+                        {
+                          "nodeType": 3,
+                          "data": "error on line 2 at column 51: Extra content at the end of the document\n",
+                          "childNodes": []
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "h3",
+                      "attributes": [],
+                      "shadowRoot": null,
+                      "childNodes": [
+                        {
+                          "nodeType": 3,
+                          "data": "Below is a rendering of the page up to the first error.",
+                          "childNodes": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "svg",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "xmlns",
+                      "value": "http://www.w3.org/2000/svg"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "lang",
+                      "value": "fr"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "CSS1Compat",
+      "styleSheets": [
+        {
+          "disabled": false,
+          "cssRules": [
+            {
+              "type": 1,
+              "selectorText": "html, body",
+              "style": {
+                "cssText": "height: 100%;"
+              }
+            },
+            {
+              "type": 1,
+              "selectorText": "parsererror + svg",
+              "style": {
+                "cssText": "width: 100%; height: 100%;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

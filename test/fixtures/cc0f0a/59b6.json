@@ -1,0 +1,143 @@
+{
+  "id": "59b6",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/cc0f0a-d3d69cae8f46a82b10ad203101542c8e4abfc314.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-a2\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:55:40 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "0B12:38A7:A865A:E5771:5CC2C533",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:45:40 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268340.433301,VS0,VE84",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "dfc500b2f54e5f07639e28160d9dd4db9e0fafe0",
+        "content-length": "162"
+      },
+      "body": "\n<p id=\"label_fname\" style=\"position: absolute; top: -9999px; left: -9999px;\">\n\tFirst name:\n</p>\n<input aria-labelledby=\"label_fname\" type=\"text\" name=\"fname\" />\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "p",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "label_fname"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "style",
+                      "value": "position: absolute; top: -9999px; left: -9999px;"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tFirst name:\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "input",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "aria-labelledby",
+                      "value": "label_fname"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "type",
+                      "value": "text"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "name",
+                      "value": "fname"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

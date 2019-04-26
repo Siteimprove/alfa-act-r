@@ -1,0 +1,162 @@
+{
+  "id": "4866",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/1ea59c-662df90a9b519c793ed4060a4e2fc648ed188ff6.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-c6\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:56:51 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "2186:4588:3A83EC:4DA876:5CC2C57B",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:46:51 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268411.318206,VS0,VE85",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "c67bc3a202ff2d265263b13d849f45175966ab99",
+        "content-length": "198"
+      },
+      "body": "\n<video controls style=\"display: none;\">\n\t<source src=\"../test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t<source src=\"../test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n</video>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "video",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": ""
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "style",
+                      "value": "display: none;"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "source",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "src",
+                          "value": "../test-assets/rabbit-video/video.mp4"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "type",
+                          "value": "video/mp4"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "source",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "src",
+                          "value": "../test-assets/rabbit-video/video.webm"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "type",
+                          "value": "video/webm"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "0914",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e086e5-52b7a12fea954b3fcf0187267ba3b76267dc2400.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-59\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:55:37 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "F18A:6CAA:7D1CE2:A5B789:5CC2C530",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:45:37 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268337.097873,VS0,VE96",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "9548891320faf0dfb95e12d5b824f571082e43ee",
+        "content-length": "89"
+      },
+      "body": "\n<label for=\"country\">Country</label>\n<select id=\"country\">\n\t<option></option>\n</select>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "label",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "for",
+                      "value": "country"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Country",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "select",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "country"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "option",
+                      "attributes": [],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

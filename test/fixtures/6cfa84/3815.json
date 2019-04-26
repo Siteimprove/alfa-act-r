@@ -1,0 +1,114 @@
+{
+  "id": "3815",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/6cfa84-67784ff95d4fd496d9e2139cf855b3bfab19fb49.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-32\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:56:34 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "8206:70CC:72715C:97B69C:5CC2C569",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:46:34 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268395.525687,VS0,VE88",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "e9d52784fb86c91b67cd15826ce678da6a7ec3f6",
+        "content-length": "50"
+      },
+      "body": "\n<p tabindex=\"0\" aria-hidden=\"true\">Some text</p>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "p",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "tabindex",
+                      "value": "0"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-hidden",
+                      "value": "true"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Some text",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

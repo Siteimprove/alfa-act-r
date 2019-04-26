@@ -1,0 +1,103 @@
+{
+  "id": "1be7",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/2779a5-a0fb39dac79555bc721c3cf0a5c586887ceebf54.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-5b\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:55:43 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "72CC:2A02:16285C:1DF1BB:5CC2C537",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:45:43 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268344.741587,VS0,VE96",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "a0bf2abd4af12cbefe6323cc99737f8f25ac687c",
+        "content-length": "91"
+      },
+      "body": "\n<html>\n\t<iframe src=\"../test-assets/sc2-4-2-title-page-with-title.html\"></iframe>\n</html>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "iframe",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/sc2-4-2-title-page-with-title.html"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

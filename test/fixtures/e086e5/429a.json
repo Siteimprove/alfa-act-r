@@ -1,0 +1,133 @@
+{
+  "id": "429a",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e086e5-934b30a38e189d724737ca32902a7d2da45b72f4.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-53\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:55:38 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "28E8:14C9:6E632D:92E9D8:5CC2C532",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:45:38 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268338.490356,VS0,VE105",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "fd537aa716eef2d5b7a6fd6d248128b8b9b962bf",
+        "content-length": "83"
+      },
+      "body": "\n<label for=\"lastname\">first name</label>\n<div role=\"textbox\" id=\"lastname\"></div>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "label",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "for",
+                      "value": "lastname"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "first name",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "role",
+                      "value": "textbox"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "lastname"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

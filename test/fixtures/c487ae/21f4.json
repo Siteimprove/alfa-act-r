@@ -1,0 +1,114 @@
+{
+  "id": "21f4",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/c487ae-73382a76a584102a6a3bc0f1886d280eb8b78ce2.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-4b\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:56:01 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "A5F0:288A:76603B:9D3AFF:5CC2C549",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:46:01 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268361.334628,VS0,VE81",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "d2c52c6a20f40125b6cb06c4dd745f744bb08b96",
+        "content-length": "75"
+      },
+      "body": "\n<a href=\"http://www.w3.org/WAI\" style=\"visibility: hidden;\">Some text</a>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "http://www.w3.org/WAI"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "style",
+                      "value": "visibility: hidden;"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Some text",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

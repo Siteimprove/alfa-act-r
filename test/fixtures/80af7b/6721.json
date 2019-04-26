@@ -1,0 +1,144 @@
+{
+  "id": "6721",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/80af7b-260116f282e6b2306a085c21122974d1c6712d05.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-ce\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:56:06 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "468C:456E:3CBCD6:50AB8F:5CC2C54E",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:46:06 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268366.374640,VS0,VE91",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "10b6c01a9f2d5d1e7f0db204ddcb523b73aa3b78",
+        "content-length": "206"
+      },
+      "body": "\n<button class=\"target\" onblur=\"setTimeout(() => this.nextSibling.focus(), 10)\">\n\tButton1\n</button>\n<button\n\tclass=\"target\"\n\tonblur=\"setTimeout(() => this.previousSibling.focus(), 10)\"\n>\n\tButton2\n</button>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "button",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "class",
+                      "value": "target"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "onblur",
+                      "value": "setTimeout(() => this.nextSibling.focus(), 10)"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tButton1\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "button",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "class",
+                      "value": "target"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "onblur",
+                      "value": "setTimeout(() => this.previousSibling.focus(), 10)"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tButton2\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

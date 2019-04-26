@@ -18,7 +18,7 @@ test(fixture, Rules.SIA_R1, "2779a5");
 
 test(fixture, Rules.SIA_R2, "23a2a8", {
   skip: [
-    "49ed" // https://github.com/act-rules/act-rules.github.io/issues/446
+    "b53f" // https://github.com/act-rules/act-rules.github.io/issues/446
   ]
 });
 
@@ -28,7 +28,7 @@ test(fixture, Rules.SIA_R4, "b5c3f8");
 
 test(fixture, Rules.SIA_R5, "bf051a", {
   skip: [
-    "5fd0" // https://github.com/act-rules/act-rules.github.io/pull/477
+    "490c" // https://github.com/act-rules/act-rules.github.io/pull/477
   ]
 });
 
@@ -36,7 +36,7 @@ test(fixture, Rules.SIA_R6, "5b7ae0");
 
 test(fixture, Rules.SIA_R7, "de46e4", {
   skip: [
-    "2b25" // https://github.com/act-rules/act-rules.github.io/pull/477
+    "a4ed" // https://github.com/act-rules/act-rules.github.io/pull/477
   ]
 });
 
@@ -48,7 +48,7 @@ test(fixture, Rules.SIA_R10, "73f2c2");
 
 test(fixture, Rules.SIA_R11, "c487ae", {
   skip: [
-    "6eb2" // https://github.com/act-rules/act-rules.github.io/issues/473
+    "f306" // https://github.com/act-rules/act-rules.github.io/issues/473
   ]
 });
 
@@ -58,7 +58,7 @@ test(fixture, Rules.SIA_R13, "cae760");
 
 test(fixture, Rules.SIA_R14, "2ee8b8", {
   skip: [
-    "e1a7" // https://github.com/act-rules/act-rules.github.io/pull/452
+    "2ada" // https://github.com/act-rules/act-rules.github.io/pull/452
   ]
 });
 
@@ -68,13 +68,13 @@ test(fixture, Rules.SIA_R17, "6cfa84");
 
 test(fixture, Rules.SIA_R18, "5c01ea", {
   skip: [
-    "7279" // https://github.com/act-rules/act-rules.github.io/issues/475
+    "9dff" // https://github.com/act-rules/act-rules.github.io/issues/475
   ]
 });
 
 test(fixture, Rules.SIA_R19, "6a7281", {
   skip: [
-    "7c86" // https://github.com/act-rules/act-rules.github.io/pull/464
+    "b9fd" // https://github.com/act-rules/act-rules.github.io/pull/464
   ]
 });
 
@@ -82,8 +82,8 @@ test(fixture, Rules.SIA_R20, "5f99a7");
 
 test(fixture, Rules.SIA_R21, "674b10", {
   skip: [
-    "1016", // https://github.com/act-rules/act-rules.github.io/issues/474
-    "7a76" // https://github.com/act-rules/act-rules.github.io/pull/430
+    "799c", // https://github.com/act-rules/act-rules.github.io/issues/474
+    "1c07" // https://github.com/act-rules/act-rules.github.io/pull/430
   ]
 });
 

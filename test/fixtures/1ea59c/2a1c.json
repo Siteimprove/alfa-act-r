@@ -1,0 +1,157 @@
+{
+  "id": "2a1c",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/1ea59c-1ca97800693ab4e4cd83e4cc141113f25bfb900c.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-eb\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:56:49 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "DEF2:2267:1B6DFC:24BE49:5CC2C579",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:46:49 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268410.591884,VS0,VE110",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "92f3fa83b892411e5457938c7b5742632149b223",
+        "content-length": "235"
+      },
+      "body": "\n<video controls>\n\t<source\n\t\tsrc=\"../test-assets/rabbit-video/video-with-incorrect-voiceover.mp4\"\n\t\ttype=\"video/mp4\"\n\t/>\n\t<source\n\t\tsrc=\"../test-assets/rabbit-video/video-with-incorrect-voiceover.webm\"\n\t\ttype=\"video/webm\"\n\t/>\n</video>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "video",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "source",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "src",
+                          "value": "../test-assets/rabbit-video/video-with-incorrect-voiceover.mp4"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "type",
+                          "value": "video/mp4"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "source",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "src",
+                          "value": "../test-assets/rabbit-video/video-with-incorrect-voiceover.webm"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "type",
+                          "value": "video/webm"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

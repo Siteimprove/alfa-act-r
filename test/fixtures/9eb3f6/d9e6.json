@@ -1,0 +1,108 @@
+{
+  "id": "d9e6",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/9eb3f6-458ae1885e68aaf2660ff66f81b057ae9efd9310.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3738.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 24 Apr 2019 09:16:40 GMT",
+        "etag": "\"5cc02978-40\"",
+        "access-control-allow-origin": "*",
+        "expires": "Fri, 26 Apr 2019 08:55:34 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "4034:226D:6E4F94:92B5C2:5CC2C52E",
+        "accept-ranges": "bytes",
+        "date": "Fri, 26 Apr 2019 08:45:34 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21035-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1556268334.419343,VS0,VE95",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "36bb9845d46aa76762a743d4abf62deb2b08f9f6",
+        "content-length": "64"
+      },
+      "body": "\n<img src=\"https://www.w3.org/WAI/demos/bad/img/w3c\" alt=\"w3c\">\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "img",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "https://www.w3.org/WAI/demos/bad/img/w3c"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "alt",
+                      "value": "w3c"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}
