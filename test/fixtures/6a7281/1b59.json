@@ -1,0 +1,108 @@
+{
+  "id": "1b59",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/6a7281/0ea64cfd885be25607a0fe34acb4079d3439c1c6.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-3e\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:37:14 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "C9F2:1312:C8274E:1044634:5CD94681",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:30:05 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743405.942762,VS0,VE94",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "df56657ad7b73a25c84967a1ce8285327d4c9578",
+        "content-length": "62"
+      },
+      "body": "\n<div role=\"textbox\" aria-errormessage=\"error1 error2\"></div>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "role",
+                      "value": "textbox"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-errormessage",
+                      "value": "error1 error2"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

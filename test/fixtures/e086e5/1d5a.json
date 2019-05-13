@@ -1,0 +1,114 @@
+{
+  "id": "1d5a",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e086e5/a55d1bea3f609e2b972a03ed07f77cf958b72024.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-43\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:37:37 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "2B02:1310:6A699C:8A60CB:5CD94698",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:30:25 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743425.117432,VS0,VE104",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "9e5be425eb5137c9cf8bd87724e6386688ab7d43",
+        "content-length": "67"
+      },
+      "body": "\n<div aria-labelledby=\"non-existing\" role=\"combobox\">England</div>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "aria-labelledby",
+                      "value": "non-existing"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "role",
+                      "value": "combobox"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "England",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

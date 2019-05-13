@@ -1,0 +1,133 @@
+{
+  "id": "6826",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/2eb176/dee84a0871b29dd4da990dc8a7088a044b59044e.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-a4\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:48 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "D7F8:6F79:B9B980:F0B5B2:5CD946DF",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:29 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743489.485216,VS0,VE97",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "d49fbe7a92a146ed11400c4d5157613081fd5274",
+        "content-length": "164"
+      },
+      "body": "\n<audio src=\"../test-assets/moon-audio/moon-speech.mp3\" autoplay></audio>\n<a href=\"/test-assets/moon-audio/moon-speech-incorrect-transcript.html\"\n\t>Transcript</a\n>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "audio",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/moon-audio/moon-speech.mp3"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "autoplay",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "/test-assets/moon-audio/moon-speech-incorrect-transcript.html"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Transcript",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

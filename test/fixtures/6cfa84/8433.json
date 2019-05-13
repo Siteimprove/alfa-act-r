@@ -1,0 +1,114 @@
+{
+  "id": "8433",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/6cfa84/69bdf98fd12aeb0a2608112a8f5d9c76dbe75aa9.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-38\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:43 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "99CA:5953:BAA745:F2788B:5CD946DB",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:25 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743485.047594,VS0,VE101",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "6fad906729d9a015b31c6bf5a24099b70dacff7b",
+        "content-length": "56"
+      },
+      "body": "\n<button tabindex=\"-1\" aria-hidden>Some button</button>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "button",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "tabindex",
+                      "value": "-1"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-hidden",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Some button",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

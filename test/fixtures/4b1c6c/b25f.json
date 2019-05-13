@@ -1,0 +1,144 @@
+{
+  "id": "b25f",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/4b1c6c/5d4906c36185c8098872c4904be0d88c82321540.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-de\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:40:42 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "8854:604A:BBE4BB:F3EFD5:5CD94751",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:30:42 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743442.243068,VS0,VE87",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "58b79179f889136ac2e382c74620dfcb1fe6a74a",
+        "content-length": "222"
+      },
+      "body": "\n<iframe\n\ttitle=\"advertising\"\n\tsrc=\"../test-assets/iframe-unique-name-4b1c6c/advertising-one.html\"\n>\n</iframe>\n\n<iframe\n\ttitle=\"advertising\"\n\tsrc=\"../test-assets/iframe-unique-name-4b1c6c/advertising-two.html\"\n>\n</iframe>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "iframe",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "title",
+                      "value": "advertising"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/iframe-unique-name-4b1c6c/advertising-one.html"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "iframe",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "title",
+                      "value": "advertising"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/iframe-unique-name-4b1c6c/advertising-two.html"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

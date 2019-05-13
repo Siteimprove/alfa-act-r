@@ -1,0 +1,128 @@
+{
+  "id": "05cf",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/f51b46/eaa33e02e27fbbfd4608095359354b9e0618162c.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "W/\"5cd4138a-1d2\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:39:04 GMT",
+        "cache-control": "max-age=600",
+        "content-encoding": "gzip",
+        "x-github-request-id": "4658:5953:BAAFFA:F2824E:5CD946F0",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:42 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743502.472195,VS0,VE95",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "533da8257bae9f548a69186db87d2050357e960d",
+        "content-length": "306"
+      },
+      "body": "\n<p>\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying\n\tthe following text: Web accessibility perspectives. Keyboard compatibility.\n\tNot being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either\n\tthrough preference or circumstance.\n</p>\n<video\n\tsrc=\"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4\"\n\tcontrols\n></video>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "p",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying\n\tthe following text: Web accessibility perspectives. Keyboard compatibility.\n\tNot being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either\n\tthrough preference or circumstance.\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "video",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

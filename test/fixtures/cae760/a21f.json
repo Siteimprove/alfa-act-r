@@ -1,0 +1,114 @@
+{
+  "id": "a21f",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/cae760/20e1a154c4105da62958aefccaef425c245ffa04.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-7e\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:51 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "AA60:1786:B317F2:EA4033:5CD946E2",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:32 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743492.332733,VS0,VE90",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "884bfee8c79a07cabc924b42a55005bb3cd8b6c7",
+        "content-length": "126"
+      },
+      "body": "\n<iframe\n\taria-label=\"Advertisement of tours to Great Wall of China\"\n\tsrc=\"../test-assets/SC4-1-2-frame-doc.html\"\n>\n</iframe>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "iframe",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "aria-label",
+                      "value": "Advertisement of tours to Great Wall of China"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/SC4-1-2-frame-doc.html"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

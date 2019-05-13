@@ -1,0 +1,113 @@
+{
+  "id": "40ad",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e6952f/e13e0fdf574212d3cc43de457781afc1847378fc.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-41\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:45 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "DC26:4D06:33EED9:43C474:5CD946DD",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:26 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743487.867652,VS0,VE93",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "aedb0b9bc4b065da6c8efd3babe0e9a828f6017f",
+        "content-length": "65"
+      },
+      "body": "\n<input type=\"checkbox\" disabled=\"disabled\" disabled readonly />\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "input",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "type",
+                      "value": "checkbox"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "disabled",
+                      "value": "disabled"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "readonly",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

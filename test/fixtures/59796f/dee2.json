@@ -1,0 +1,118 @@
+{
+  "id": "dee2",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/59796f/48e5a8f7cb212b2f7605487e139f262545caca89.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-46\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:01 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "08CC:5F2E:B9DA6C:F2B770:5CD946B1",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:30:48 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743449.870857,VS0,VE85",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "248a3b16850935c512ec77df79cfcb8ac0bb0507",
+        "content-length": "70"
+      },
+      "body": "\n<input type=\"image\" name=\"submit\" src=\"button.gif\" title=\"Submit\" />\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "input",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "type",
+                      "value": "image"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "name",
+                      "value": "submit"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "button.gif"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "title",
+                      "value": "Submit"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

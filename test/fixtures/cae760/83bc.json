@@ -1,0 +1,114 @@
+{
+  "id": "83bc",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/cae760/2fe9c48c7d392d621c857638c9b4f7b0b0138587.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-5b\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:54 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "EA12:0181:5EB74F:7C018A:5CD946E6",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:34 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743495.860907,VS0,VE133",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "dc0d75467c4d70d128053e324363d787ab3bbdbe",
+        "content-length": "91"
+      },
+      "body": "\n<iframe alt=\"List of Contributors\" src=\"../test-assets/SC4-1-2-frame-doc.html\">\n</iframe>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "iframe",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "alt",
+                      "value": "List of Contributors"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/SC4-1-2-frame-doc.html"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

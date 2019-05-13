@@ -1,0 +1,113 @@
+{
+  "id": "c6f6",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/9eb3f6/525b35a0c77703d90a7fab82011edf22cd656f76.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-73\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:37:34 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "D696:7DBF:CA6FF3:106B247:5CD94695",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:30:22 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743423.636246,VS0,VE90",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "5a01e6837e132ef1bfdfd4fdbf36ddc6c514ef51",
+        "content-length": "115"
+      },
+      "body": "\n<input\n\ttype=\"image\"\n\tsrc=\"https://www.w3.org/WAI/demos/bad/before/img/top_weather.gif\"\n\talt=\"top_weather.gif\"\n/>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "input",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "type",
+                      "value": "image"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "https://www.w3.org/WAI/demos/bad/before/img/top_weather.gif"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "alt",
+                      "value": "top_weather.gif"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

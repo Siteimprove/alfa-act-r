@@ -1,0 +1,143 @@
+{
+  "id": "9321",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/cc0f0a/2e7f4fc1b1e56b8f884c40559d1349cff3b9eb79.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-6b\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:37:40 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "4658:5953:BA9120:F25F46:5CD9469C",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:30:28 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743428.491322,VS0,VE95",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "c91989bf4e4469707a5e1838e7ee7d5583788241",
+        "content-length": "107"
+      },
+      "body": "\n<label for=\"fname\" style:\"display:none;\">First name:</label>\n<input id=\"fname\" type=\"text\" name=\"fname\"/>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "label",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "for",
+                      "value": "fname"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "style:\"display:none;\"",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "First name:",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "input",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "fname"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "type",
+                      "value": "text"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "name",
+                      "value": "fname"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

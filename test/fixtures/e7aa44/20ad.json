@@ -1,0 +1,133 @@
+{
+  "id": "20ad",
+  "outcome": "pass",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e7aa44/330bb872da356cbfcf3320a39b4ca2ce5b128fa3.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "W/\"5cd4138a-205\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:49 GMT",
+        "cache-control": "max-age=600",
+        "content-encoding": "gzip",
+        "x-github-request-id": "D7FA:1786:B31799:EA3FBD:5CD946E0",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:30 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743491.621871,VS0,VE88",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "b4f96735a1747ef343277c657567ebded8801c91",
+        "content-length": "317"
+      },
+      "body": "\n<audio\n\tdata-rule-target\n\tsrc=\"../test-assets/moon-audio/moon-speech.mp3\"\n\tcontrols\n></audio>\n<p>\n\tThe above audio contains the following speech: We choose to go to the moon in\n\tthis decade and do the other things, not because they are easy, but because\n\tthey are hard, because that goal will serve to organize and measure the best\n\tof our energies and skills, because that challenge is one that we are willing\n\tto accept, one we are unwilling to postpone, and one which we intend to win,\n\tand the others, too.\n</p>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "audio",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "data-rule-target",
+                      "value": ""
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/moon-audio/moon-speech.mp3"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "p",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tThe above audio contains the following speech: We choose to go to the moon in\n\tthis decade and do the other things, not because they are easy, but because\n\tthey are hard, because that goal will serve to organize and measure the best\n\tof our energies and skills, because that challenge is one that we are willing\n\tto accept, one we are unwilling to postpone, and one which we intend to win,\n\tand the others, too.\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

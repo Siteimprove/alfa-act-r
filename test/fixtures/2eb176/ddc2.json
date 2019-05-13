@@ -1,0 +1,128 @@
+{
+  "id": "ddc2",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/2eb176/27464c597a3c6c7ef7c6e0675da65bd4afaa6aa7.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "W/\"5cd4138a-1f2\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:47 GMT",
+        "cache-control": "max-age=600",
+        "content-encoding": "gzip",
+        "x-github-request-id": "475C:29F7:D6F239:1182C9B:5CD946DB",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:28 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743489.550956,VS0,VE104",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "e51a5aeb270937a142713796bbac2afaea8e1981",
+        "content-length": "303"
+      },
+      "body": "\n<audio src=\"../test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n<p>\n\tThe above audio contains the following speech: We choose to go to the cheese\n\tin this decade and do the other things, not because they are easy, but because\n\tthey are hard, because that goal will serve to organize and measure the best\n\tof our energies and skills, because that challenge is one that we are willing\n\tto accept, one we are unwilling to postpone, and one which we intend to win,\n\tand the others, too.\n</p>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "audio",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "../test-assets/moon-audio/moon-speech.mp3"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "p",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tThe above audio contains the following speech: We choose to go to the cheese\n\tin this decade and do the other things, not because they are easy, but because\n\tthey are hard, because that goal will serve to organize and measure the best\n\tof our energies and skills, because that challenge is one that we are willing\n\tto accept, one we are unwilling to postpone, and one which we intend to win,\n\tand the others, too.\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "id": "54aa",
+  "outcome": "failed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e6952f/af32dfe602a8afdc786535b84f8893e38c7e7781.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-4f\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:46 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "1D04:768E:695A0D:890479:5CD946DE",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:27 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743487.039013,VS0,VE100",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "ec026095d7eb5385467747e93d31bda6a80bdf3a",
+        "content-length": "79"
+      },
+      "body": "\n<svg>\n\t<line x1=\"0\" y1=\"0\" x1=\"200\" y1=\"200\" style=\"stroke-width:2\" />\n</svg>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "svg",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "line",
+                      "attributes": [
+                        {
+                          "prefix": null,
+                          "localName": "x1",
+                          "value": "0"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "y1",
+                          "value": "0"
+                        },
+                        {
+                          "prefix": null,
+                          "localName": "style",
+                          "value": "stroke-width:2"
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "235b",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e6952f/96fa91a155d36434a6e4b8ebb65b608b852dd501.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-55\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:38:46 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "30EA:053A:C0E226:FA4D97:5CD946DE",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:31:27 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743487.199190,VS0,VE110",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "0920a0cbdd66b0d91d67b13d8252a58d02e4b314",
+        "content-length": "85"
+      },
+      "body": "\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<earl:TestResult rdf:about=\"#result\"></earl>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 8,
+          "data": "?xml version=\"1.0\" encoding=\"UTF-8\"?",
+          "childNodes": []
+        },
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "earl:testresult",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "rdf:about",
+                      "value": "#result"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

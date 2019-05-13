@@ -1,0 +1,131 @@
+{
+  "id": "0abe",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/c4a8a4/aa75f943fdbf4055f9ae736cd2551b346d459147.svg",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "image/svg+xml",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-8c\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:37:32 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "B92A:1FAE:B2D08F:E86185:5CD94694",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:30:21 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743421.016387,VS0,VE107",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "473fde44e4a481d3f58186ce5a2c02349527c00e",
+        "content-length": "140"
+      },
+      "body": "\n<svg xmlns=\"http://www.w3.org/2000/svg\">\n  <title>This is a circle</title>\n  <circle cx=\"150\" cy=\"75\" r=\"50\" fill=\"green\"></circle>\n</svg>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "svg",
+          "attributes": [
+            {
+              "prefix": null,
+              "localName": "xmlns",
+              "value": "http://www.w3.org/2000/svg"
+            }
+          ],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 3,
+              "data": "\n  ",
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "title",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 3,
+                  "data": "This is a circle",
+                  "childNodes": []
+                }
+              ]
+            },
+            {
+              "nodeType": 3,
+              "data": "\n  ",
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "circle",
+              "attributes": [
+                {
+                  "prefix": null,
+                  "localName": "cx",
+                  "value": "150"
+                },
+                {
+                  "prefix": null,
+                  "localName": "cy",
+                  "value": "75"
+                },
+                {
+                  "prefix": null,
+                  "localName": "r",
+                  "value": "50"
+                },
+                {
+                  "prefix": null,
+                  "localName": "fill",
+                  "value": "green"
+                }
+              ],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 3,
+              "data": "\n",
+              "childNodes": []
+            }
+          ]
+        }
+      ],
+      "compatMode": "CSS1Compat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

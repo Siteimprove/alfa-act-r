@@ -1,0 +1,128 @@
+{
+  "id": "2eff",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/5f99a7/a8c22b201d4e664bc428a3110d8cd5e04edc6657.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-75\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:37:05 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "E17E:5591:68776E:88BD7D:5CD94679",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:29:57 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743397.974702,VS0,VE94",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "bb2c864e1ab1452ba81fe78e22abc498928495b7",
+        "content-length": "117"
+      },
+      "body": "\n<input\n\trole=\"spinbutton\"\n\taria-valuemax=\"100\"\n\taria-valuemin=\"0\"\n\taria-valuenow=\"25\"\n\ttype=\"number\"\n\tvalue=\"25\"\n/>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "input",
+                  "attributes": [
+                    {
+                      "prefix": null,
+                      "localName": "role",
+                      "value": "spinbutton"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-valuemax",
+                      "value": "100"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-valuemin",
+                      "value": "0"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "aria-valuenow",
+                      "value": "25"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "type",
+                      "value": "number"
+                    },
+                    {
+                      "prefix": null,
+                      "localName": "value",
+                      "value": "25"
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

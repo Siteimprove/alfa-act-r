@@ -1,0 +1,97 @@
+{
+  "id": "5cd1",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/2779a5/af48a346ab1ee73d2b043e6346cadfad60d36aa4.svg",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "image/svg+xml",
+        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
+        "etag": "\"5cd4138a-51\"",
+        "access-control-allow-origin": "*",
+        "expires": "Mon, 13 May 2019 10:37:44 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "964C:4D31:CAEFDC:1080CBF:5CD9469F",
+        "accept-ranges": "bytes",
+        "date": "Mon, 13 May 2019 10:30:31 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21051-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1557743432.548617,VS0,VE100",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "103c3178c5d675d00d38fce214b7f28e42f7fdaf",
+        "content-length": "81"
+      },
+      "body": "\n<svg xmlns=\"http://www.w3.org/2000/svg\">\n  <title>This is an SVG</title>\n</svg>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "svg",
+          "attributes": [
+            {
+              "prefix": null,
+              "localName": "xmlns",
+              "value": "http://www.w3.org/2000/svg"
+            }
+          ],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 3,
+              "data": "\n  ",
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "title",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 3,
+                  "data": "This is an SVG",
+                  "childNodes": []
+                }
+              ]
+            },
+            {
+              "nodeType": 3,
+              "data": "\n",
+              "childNodes": []
+            }
+          ]
+        }
+      ],
+      "compatMode": "CSS1Compat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}
