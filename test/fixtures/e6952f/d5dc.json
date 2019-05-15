@@ -16,22 +16,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "\"5cd4138a-38\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "\"5cdbd526-38\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:46 GMT",
+        "expires": "Wed, 15 May 2019 09:13:26 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "D834:7687:2A6ACA:37B41B:5CD946DE",
+        "x-github-request-id": "8852:461B:23A0CD:2DCD7B:5CDBD5DD",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:27 GMT",
+        "date": "Wed, 15 May 2019 09:11:39 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743487.376334,VS0,VE121",
+        "x-timer": "S1557911499.338306,VS0,VE91",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "63f077a26fdd4e8160347be9d1d245bfa15481a7",
+        "x-fastly-request-id": "b89908a91ab9853ada96fe9f6183e8de02d2b6b7",
         "content-length": "56"
       },
       "body": "\nvar foo = '<img src=\"image.jpg\" alt=\"\" alt=\"image\" />'\n"
@@ -72,14 +72,18 @@
                   "localName": "img",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "image.jpg"
+                      "value": "image.jpg",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "alt",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

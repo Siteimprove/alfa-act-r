@@ -2,13 +2,31 @@ import * as path from "path";
 import * as fs from "fs";
 import { ExecutionContext } from "ava";
 
-import { Rule, Result, Outcome, audit } from "@siteimprove/alfa-act";
+import {
+  Answer,
+  Rule,
+  Result,
+  Outcome,
+  QuestionType,
+  audit
+} from "@siteimprove/alfa-act";
 import { Seq } from "@siteimprove/alfa-collection";
+import { evaluate } from "@siteimprove/alfa-xpath";
 
 import { Context } from "./context";
 
+export interface FixtureAnswer {
+  target: string;
+  type: "boolean";
+  question: string;
+  answer: boolean;
+}
+
 export interface FixtureOptions {
   skip?: Array<string>;
+  answers?: {
+    [fixture: string]: Array<FixtureAnswer>;
+  };
 }
 
 export function fixture(
@@ -29,6 +47,26 @@ export function fixture(
   t.plan(tests.length);
 
   for (const test of tests) {
+    const answers: Array<Answer<QuestionType, any, any>> = (options.answers ===
+    undefined
+      ? []
+      : options.answers[test.id] === undefined
+      ? []
+      : options.answers[test.id]
+    ).map(answer => {
+      const aspect = test.aspects.document;
+      const [target] = evaluate(aspect, aspect, answer.target);
+
+      return {
+        type: answer.type as QuestionType,
+        id: answer.question,
+        rule,
+        aspect,
+        target,
+        answer: answer.answer
+      };
+    });
+
     const skip = options.skip && options.skip.includes(test.id);
 
     const precedence: { [O in Outcome]: number } = {
@@ -38,7 +76,7 @@ export function fixture(
       [Outcome.Inapplicable]: 0
     };
 
-    const result = Seq(audit(test.aspects, [rule]).results)
+    const result = Seq(audit(test.aspects, [rule], answers).results)
       .filter(result => result.rule === rule)
       .reduce<Result<any, any>>((result, candidate) =>
         precedence[candidate.outcome] > precedence[result.outcome]

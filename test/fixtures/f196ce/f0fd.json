@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-108\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-108\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:34 GMT",
+        "expires": "Wed, 15 May 2019 09:13:15 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "4EB4:768E:695920:89034A:5CD946D2",
+        "x-github-request-id": "5EA8:2627:24CD3C:2F5AA8:5CDBD5D2",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:17 GMT",
+        "date": "Wed, 15 May 2019 09:11:28 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743478.608387,VS0,VE94",
+        "x-timer": "S1557911489.566089,VS0,VE88",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "28224369c1170126fd3f6824953018f27fe50fc1",
+        "x-fastly-request-id": "20edcefe558bedacd396e04a4227b05cb84b6c23",
         "content-length": "145"
       },
       "body": "\n<video controls>\n\t<source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\" />\n\t<source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\" />\n\t<track\n\t\tkind=\"descriptions\"\n\t\tsrc=\"../test-assets/rabbit-video/descriptions.vtt\"\n\t/>\n</video>\n"
@@ -68,9 +68,11 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -86,14 +88,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/silent.mp4"
+                          "value": "../test-assets/rabbit-video/silent.mp4",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/mp4"
+                          "value": "video/mp4",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -110,14 +116,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/silent.webm"
+                          "value": "../test-assets/rabbit-video/silent.webm",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/webm"
+                          "value": "video/webm",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -134,14 +144,18 @@
                       "localName": "track",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "kind",
-                          "value": "descriptions"
+                          "value": "descriptions",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/descriptions.vtt"
+                          "value": "../test-assets/rabbit-video/descriptions.vtt",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,

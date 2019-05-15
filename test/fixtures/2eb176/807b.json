@@ -16,22 +16,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "\"5cd4138a-a4\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "\"5cdbd526-a4\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:47 GMT",
+        "expires": "Wed, 15 May 2019 09:13:27 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "475C:29F7:D6F248:1182DAD:5CD946DF",
+        "x-github-request-id": "8854:0FB4:227D85:2C7569:5CDBD5DF",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:29 GMT",
+        "date": "Wed, 15 May 2019 09:11:40 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743489.913302,VS0,VE89",
+        "x-timer": "S1557911501.894843,VS0,VE97",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "a881a185ba763acfa4f16febddd1a9b6deb553d2",
+        "x-fastly-request-id": "d3f8bde33d923b646af2bf2c9db16a3f187e3743",
         "content-length": "164"
       },
       "body": "\n<audio src=\"../test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n<a href=\"/test-assets/moon-audio/moon-speech-incorrect-transcript.html\"\n\t>Transcript</a\n>\n"
@@ -67,14 +67,18 @@
                   "localName": "audio",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/moon-audio/moon-speech.mp3"
+                      "value": "../test-assets/moon-audio/moon-speech.mp3",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -91,9 +95,11 @@
                   "localName": "a",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "/test-assets/moon-audio/moon-speech-incorrect-transcript.html"
+                      "value": "/test-assets/moon-audio/moon-speech-incorrect-transcript.html",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

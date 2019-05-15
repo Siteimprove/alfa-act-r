@@ -16,22 +16,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "\"5cd4138a-d9\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "\"5cdbd526-d9\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:39:04 GMT",
+        "expires": "Wed, 15 May 2019 09:13:46 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "30EA:053A:C0E44A:FA508A:5CD946F0",
+        "x-github-request-id": "C8C8:7108:1FB62B:28E558:5CDBD5F2",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:42 GMT",
+        "date": "Wed, 15 May 2019 09:11:58 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743502.237039,VS0,VE97",
+        "x-timer": "S1557911518.095677,VS0,VE85",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "a083c4a87005dff104d947f7a767c8b3ec65d26f",
+        "x-fastly-request-id": "e347ae980b5e9c98ed5d46848cca6013e4035c99",
         "content-length": "217"
       },
       "body": "\n<video\n\tsrc=\"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4\"\n\tcontrols\n>\n\t<track\n\t\tsrc=\"/test-assets/perspective-video/perspective-incorrect-caption.vtt\"\n\t\tkind=\"captions\"\n\t/>\n</video>\n"
@@ -67,14 +67,18 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4"
+                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -90,14 +94,18 @@
                       "localName": "track",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "/test-assets/perspective-video/perspective-incorrect-caption.vtt"
+                          "value": "/test-assets/perspective-video/perspective-incorrect-caption.vtt",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "kind",
-                          "value": "captions"
+                          "value": "captions",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,

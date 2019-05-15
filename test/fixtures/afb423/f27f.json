@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-154\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-154\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:37:18 GMT",
+        "expires": "Wed, 15 May 2019 09:11:40 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "99CA:5953:BA8D24:F25A74:5CD94686",
+        "x-github-request-id": "48FA:66A9:22D897:2CB78F:5CDBD573",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:30:08 GMT",
+        "date": "Wed, 15 May 2019 09:10:00 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743409.742759,VS0,VE85",
+        "x-timer": "S1557911401.678580,VS0,VE90",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "0751b9c2573f7444c437e11244dba6f8b3fcd74d",
+        "x-fastly-request-id": "fd614d4c2e017a67bdf6cfe0837ec9d4eec51fd3",
         "content-length": "233"
       },
       "body": "\n<p>\n\tA part of a speech by John F. Kennedy: We choose to go to the moon in this\n\tdecade and do the other things, not because they are easy, but because they\n\tare hard.\n</p>\n<p>\n\tYou can also listen to the audio file below to hear the above part of the\n\tspeech.\n</p>\n<audio src=\"../test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n"
@@ -106,14 +106,18 @@
                   "localName": "audio",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/moon-audio/moon-speech.mp3"
+                      "value": "../test-assets/moon-audio/moon-speech.mp3",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

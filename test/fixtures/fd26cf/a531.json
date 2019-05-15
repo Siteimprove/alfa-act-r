@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-1f3\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-1f3\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:39 GMT",
+        "expires": "Wed, 15 May 2019 09:13:19 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "0C30:29F7:D6F0B8:1182BBF:5CD946D7",
+        "x-github-request-id": "11E8:1B6A:122BB7:174502:5CDBD5D6",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:21 GMT",
+        "date": "Wed, 15 May 2019 09:11:33 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743482.710793,VS0,VE87",
+        "x-timer": "S1557911493.005682,VS0,VE97",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "ef49b1b1f0c5750b9fa22ce42bde82e68dfe28c8",
+        "x-fastly-request-id": "fd1751eca99d7313bc763748159a41d1246cf962",
         "content-length": "332"
       },
       "body": "\n<p>\n\tNot being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either\n\tthrough preference or circumstance. This is solved by keyboard compatibility.\n\tKeyboard compatibility is described in WCAG.\n</p>\n<p style=\"display: none;\">\n\tSee the video below to watch the same information again in video form.\n</p>\n<video\n\tsrc=\"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4\"\n\tcontrols\n></video>\n"
@@ -87,9 +87,11 @@
                   "localName": "p",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "style",
-                      "value": "display: none;"
+                      "value": "display: none;",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -112,14 +114,18 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"
+                      "value": "../test-assets/perspective-video/perspective-video-with-captions-silent.mp4",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

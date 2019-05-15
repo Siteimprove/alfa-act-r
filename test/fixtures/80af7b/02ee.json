@@ -16,22 +16,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "\"5cd4138a-6f\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "\"5cdbd526-6f\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:15 GMT",
+        "expires": "Wed, 15 May 2019 09:12:53 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "DC3A:017D:D03BE1:10E3A40:5CD946BF",
+        "x-github-request-id": "9B3A:7549:1FC55D:28E41F:5CDBD5BC",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:01 GMT",
+        "date": "Wed, 15 May 2019 09:11:08 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743461.160866,VS0,VE98",
+        "x-timer": "S1557911469.779196,VS0,VE80",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "d2b08b103f7d2e2b1686ac759cb98d264467b8cb",
+        "x-fastly-request-id": "63d0aa0a81b2b83a9d6da6a250778ecb43752520",
         "content-length": "111"
       },
       "body": "\n<a href=\"#\">Link 1</a>\n<button class=\"target\" onblur=\"setTimeout(() => this.focus(), 10)\">\n\tButton1\n</button>\n"
@@ -67,9 +67,11 @@
                   "localName": "a",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "#"
+                      "value": "#",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -92,14 +94,18 @@
                   "localName": "button",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "class",
-                      "value": "target"
+                      "value": "target",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "onblur",
-                      "value": "setTimeout(() => this.focus(), 10)"
+                      "value": "setTimeout(() => this.focus(), 10)",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

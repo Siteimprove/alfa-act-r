@@ -16,22 +16,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "\"5cd4138a-d7\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "\"5cdbd526-d7\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:58 GMT",
+        "expires": "Wed, 15 May 2019 09:13:38 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "D834:7687:2A6B5E:37B4CD:5CD946EA",
+        "x-github-request-id": "8852:461B:23A2C2:2DD049:5CDBD5EA",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:37 GMT",
+        "date": "Wed, 15 May 2019 09:11:54 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743498.710210,VS0,VE89",
+        "x-timer": "S1557911514.922048,VS0,VE85",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "69f8fc5d714d40e6207f0beac6e602c41f81ecc7",
+        "x-fastly-request-id": "59b3a6a016db81c17877cd1968137eb0c32ec924",
         "content-length": "215"
       },
       "body": "\n<video controls>\n\t<source\n\t\tsrc=\"../test-assets/rabbit-video/video-with-voiceover.mp4\"\n\t\ttype=\"video/mp4\"\n\t/>\n\t<source\n\t\tsrc=\"../test-assets/rabbit-video/video-with-voiceover.webm\"\n\t\ttype=\"video/webm\"\n\t/>\n</video>\n"
@@ -67,9 +67,11 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -85,14 +87,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video-with-voiceover.mp4"
+                          "value": "../test-assets/rabbit-video/video-with-voiceover.mp4",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/mp4"
+                          "value": "video/mp4",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -109,14 +115,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video-with-voiceover.webm"
+                          "value": "../test-assets/rabbit-video/video-with-voiceover.webm",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/webm"
+                          "value": "video/webm",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,

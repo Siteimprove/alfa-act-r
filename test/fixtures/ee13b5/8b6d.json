@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-12c\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-12c\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:39:07 GMT",
+        "expires": "Wed, 15 May 2019 09:13:49 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "C78E:7DBF:CA8298:106C9B8:5CD946F3",
+        "x-github-request-id": "9CA0:3C8D:1EDC49:27C499:5CDBD5F4",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:45 GMT",
+        "date": "Wed, 15 May 2019 09:12:01 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743505.921232,VS0,VE85",
+        "x-timer": "S1557911521.134694,VS0,VE87",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "0c4ee3150098ee450abc58b74bff4d0b8d4e73bf",
+        "x-fastly-request-id": "3c7c2b838fe4aee1ec1e638b8a96f3d9c63be5e9",
         "content-length": "173"
       },
       "body": "\n<video controls style=\"display: none;\" data-rule-target>\n  <source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/test-assets/rabbit-video-transcript.html\">Transcript</p>\n"
@@ -68,19 +68,25 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "style",
-                      "value": "display: none;"
+                      "value": "display: none;",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "data-rule-target",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -96,14 +102,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/silent.mp4"
+                          "value": "../test-assets/rabbit-video/silent.mp4",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/mp4"
+                          "value": "video/mp4",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -120,14 +130,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/silent.webm"
+                          "value": "../test-assets/rabbit-video/silent.webm",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/webm"
+                          "value": "video/webm",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -151,9 +165,11 @@
                   "localName": "a",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "/test-assets/rabbit-video-transcript.html"
+                      "value": "/test-assets/rabbit-video-transcript.html",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

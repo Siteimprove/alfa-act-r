@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-2f5\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-2f5\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:17 GMT",
+        "expires": "Wed, 15 May 2019 09:12:56 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "DC26:4D06:33ED6F:43C2A5:5CD946C1",
+        "x-github-request-id": "55B0:461B:239BAE:2DC681:5CDBD5C0",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:03 GMT",
+        "date": "Wed, 15 May 2019 09:11:11 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743464.632610,VS0,VE121",
+        "x-timer": "S1557911471.403848,VS0,VE113",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "3a3fb4b29faa6399bdd927185009db04acab37aa",
+        "x-fastly-request-id": "df3f26f1102dc1b45f914edd4b527a1d29b06448",
         "content-length": "390"
       },
       "body": "\n<script>\n\tvar trapOn = false\n\n\tfunction showHelpText() {\n\t\tdocument.getElementById('helptext').innerHTML =\n\t\t\t'<p>Press the M-key to Exit</p>'\n\t}\n</script>\n\n<div\n\tonkeydown=\"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)\"\n>\n\t<a id=\"link1\" href=\"#\">Link 1</a>\n\t<button\n\t\tid=\"btn1\"\n\t\tonblur=\"(function(e){trapOn=true; document.getElementById('helpLink').focus();})(event)\"\n\t>\n\t\tButton 1\n\t</button>\n\t<a id=\"helpLink\" href=\"#\" onclick=\"showHelpText()\"\n\t\t>How to go the next element</a\n\t>\n\t<div id=\"helptext\"></div>\n\t<button\n\t\tid=\"btn2\"\n\t\tclass=\"target\"\n\t\tonblur=\"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)\"\n\t>\n\t\tButton 2\n\t</button>\n</div>\n<a id=\"link2\" href=\"#\">Link 2</a>\n"
@@ -88,9 +88,11 @@
                   "localName": "div",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "onkeydown",
-                      "value": "(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"
+                      "value": "(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -106,14 +108,18 @@
                       "localName": "a",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "id",
-                          "value": "link1"
+                          "value": "link1",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "href",
-                          "value": "#"
+                          "value": "#",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -136,14 +142,18 @@
                       "localName": "button",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "id",
-                          "value": "btn1"
+                          "value": "btn1",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "onblur",
-                          "value": "(function(e){trapOn=true; document.getElementById('helpLink').focus();})(event)"
+                          "value": "(function(e){trapOn=true; document.getElementById('helpLink').focus();})(event)",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -166,19 +176,25 @@
                       "localName": "a",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "id",
-                          "value": "helpLink"
+                          "value": "helpLink",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "href",
-                          "value": "#"
+                          "value": "#",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "onclick",
-                          "value": "showHelpText()"
+                          "value": "showHelpText()",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -201,9 +217,11 @@
                       "localName": "div",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "id",
-                          "value": "helptext"
+                          "value": "helptext",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -220,19 +238,25 @@
                       "localName": "button",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "id",
-                          "value": "btn2"
+                          "value": "btn2",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "class",
-                          "value": "target"
+                          "value": "target",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "onblur",
-                          "value": "(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"
+                          "value": "(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -262,14 +286,18 @@
                   "localName": "a",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "id",
-                      "value": "link2"
+                      "value": "link2",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "#"
+                      "value": "#",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

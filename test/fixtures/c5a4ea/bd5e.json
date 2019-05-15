@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-100\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-100\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:39:16 GMT",
+        "expires": "Wed, 15 May 2019 09:13:58 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "F71E:768E:695BD5:8906DE:5CD946FC",
+        "x-github-request-id": "0BA0:097A:2352F6:2DA9DB:5CDBD5FE",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:53 GMT",
+        "date": "Wed, 15 May 2019 09:12:09 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743513.223504,VS0,VE89",
+        "x-timer": "S1557911529.972003,VS0,VE106",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "920945de1c1ceadcebfdcd9f1d313e3d70bfe08d",
+        "x-fastly-request-id": "1fea13f38eee080c3df724c78164678e63f1322d",
         "content-length": "147"
       },
       "body": "\n<video controls>\n  <source src=\"../test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n  <source src=\"../test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n</video>\n<a href=\"../test-assets/rabbit-video/incorrect-transcript.html\">Transcript</p>\n"
@@ -68,9 +68,11 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -86,14 +88,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video.mp4"
+                          "value": "../test-assets/rabbit-video/video.mp4",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/mp4"
+                          "value": "video/mp4",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -110,14 +116,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video.webm"
+                          "value": "../test-assets/rabbit-video/video.webm",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/webm"
+                          "value": "video/webm",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -141,9 +151,11 @@
                   "localName": "a",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "../test-assets/rabbit-video/incorrect-transcript.html"
+                      "value": "../test-assets/rabbit-video/incorrect-transcript.html",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

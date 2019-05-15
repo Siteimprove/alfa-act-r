@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-198\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-198\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:39:06 GMT",
+        "expires": "Wed, 15 May 2019 09:13:48 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "99CA:5953:BAB0BF:F28327:5CD946F2",
+        "x-github-request-id": "FEE6:48BB:120C01:173504:5CDBD5F4",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:44 GMT",
+        "date": "Wed, 15 May 2019 09:12:00 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743504.483530,VS0,VE87",
+        "x-timer": "S1557911520.264398,VS0,VE86",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "9a4c463a411c129d5464dbb97c73b688ff0f07a6",
+        "x-fastly-request-id": "76ffee841447e8c35c9eda7142b2cbdd1716a598",
         "content-length": "254"
       },
       "body": "\n<video controls data-rule-target>\n  <source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\"></source>\n</video>\n<p style=\"text-indent: -9999px;\">The above video shows a giant fat rabbit climbing out of a hole in the ground.\nHe stretches, yaws, and then starts walking.\nThen he stops to scratch his bottom.</p>\n"
@@ -68,14 +68,18 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "data-rule-target",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -91,14 +95,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/silent.mp4"
+                          "value": "../test-assets/rabbit-video/silent.mp4",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/mp4"
+                          "value": "video/mp4",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -115,14 +123,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/silent.webm"
+                          "value": "../test-assets/rabbit-video/silent.webm",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/webm"
+                          "value": "video/webm",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -146,9 +158,11 @@
                   "localName": "p",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "style",
-                      "value": "text-indent: -9999px;"
+                      "value": "text-indent: -9999px;",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

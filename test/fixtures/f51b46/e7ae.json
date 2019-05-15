@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-1f4\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-1f4\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:39:05 GMT",
+        "expires": "Wed, 15 May 2019 09:13:46 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "72FA:7F6D:66CDE4:86E6BD:5CD946F0",
+        "x-github-request-id": "B266:6979:24357B:2EB326:5CDBD5F2",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:42 GMT",
+        "date": "Wed, 15 May 2019 09:11:58 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743503.816072,VS0,VE102",
+        "x-timer": "S1557911519.501562,VS0,VE96",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "94aa43efe3d5788f25094f27d34026f077cef60d",
+        "x-fastly-request-id": "4b96b4e6eb0ed0b9bb30632a3d3714e33c7a9f18",
         "content-length": "326"
       },
       "body": "\n<p id=\"text\">\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying\n\tthe following text: Web accessibility perspectives. Keyboard compatibility.\n\tNot being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either\n\tthrough preference or circumstance.\n</p>\n<video\n\tsrc=\"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4\"\n\tcontrols\n\tariadescribedby=\"text\"\n></video>\n"
@@ -68,9 +68,11 @@
                   "localName": "p",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "id",
-                      "value": "text"
+                      "value": "text",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -93,19 +95,25 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4"
+                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "ariadescribedby",
-                      "value": "text"
+                      "value": "text",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

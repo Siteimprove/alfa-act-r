@@ -16,22 +16,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "\"5cd4138a-eb\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "\"5cdbd526-eb\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:39:01 GMT",
+        "expires": "Wed, 15 May 2019 09:13:42 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "93B0:799A:D8481C:119A7E6:5CD946ED",
+        "x-github-request-id": "4AA4:6978:11C537:16BBEE:5CDBD5ED",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:38 GMT",
+        "date": "Wed, 15 May 2019 09:11:54 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743499.668953,VS0,VE96",
+        "x-timer": "S1557911515.849201,VS0,VE84",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "5afdef6a09778505cbc632b74de0acdf9a3d036c",
+        "x-fastly-request-id": "078ef10db446c7c527b5dec2005f9cb403e63647",
         "content-length": "235"
       },
       "body": "\n<video controls>\n\t<source\n\t\tsrc=\"../test-assets/rabbit-video/video-with-incorrect-voiceover.mp4\"\n\t\ttype=\"video/mp4\"\n\t/>\n\t<source\n\t\tsrc=\"../test-assets/rabbit-video/video-with-incorrect-voiceover.webm\"\n\t\ttype=\"video/webm\"\n\t/>\n</video>\n"
@@ -67,9 +67,11 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -85,14 +87,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video-with-incorrect-voiceover.mp4"
+                          "value": "../test-assets/rabbit-video/video-with-incorrect-voiceover.mp4",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/mp4"
+                          "value": "video/mp4",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,
@@ -109,14 +115,18 @@
                       "localName": "source",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video-with-incorrect-voiceover.webm"
+                          "value": "../test-assets/rabbit-video/video-with-incorrect-voiceover.webm",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "type",
-                          "value": "video/webm"
+                          "value": "video/webm",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,

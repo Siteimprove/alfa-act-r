@@ -47,7 +47,25 @@ test(fixture, Rules.SIA_R13, "cae760");
 test(fixture, Rules.SIA_R14, "2ee8b8", {
   skip: [
     "87c5" // https://github.com/act-rules/act-rules.github.io/pull/452
-  ]
+  ],
+  answers: {
+    "0643": [
+      {
+        target: "//div",
+        type: "boolean",
+        question: "is-human-language",
+        answer: true
+      }
+    ],
+    "924a": [
+      {
+        target: "//button",
+        type: "boolean",
+        question: "is-human-language",
+        answer: true
+      }
+    ]
+  }
 });
 
 test(fixture, Rules.SIA_R16, "4e8ab6");
@@ -64,10 +82,6 @@ test(fixture, Rules.SIA_R19, "6a7281", {
 
 test(fixture, Rules.SIA_R20, "5f99a7");
 
-test(fixture, Rules.SIA_R21, "674b10", {
-  skip: [
-    "9492" // https://github.com/act-rules/act-rules.github.io/pull/430
-  ]
-});
+test(fixture, Rules.SIA_R21, "674b10");
 
 test(fixture, Rules.SIA_R28, "59796f");

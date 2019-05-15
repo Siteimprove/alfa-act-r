@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-20b\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-20b\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:16 GMT",
+        "expires": "Wed, 15 May 2019 09:12:54 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "418A:29F4:5C4CFA:78679B:5CD946BF",
+        "x-github-request-id": "FF7E:64BD:12A919:17E1B4:5CDBD5BE",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:02 GMT",
+        "date": "Wed, 15 May 2019 09:11:09 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743462.063625,VS0,VE92",
+        "x-timer": "S1557911470.670608,VS0,VE96",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "1c2a0a06854fee2682db60af8582ace5efeef8ed",
+        "x-fastly-request-id": "a8d13b05f9988a1c45c16608e88c00a8230b111c",
         "content-length": "284"
       },
       "body": "\n<script>\n\tvar trapOn = false\n</script>\n\n<p>Go to the next element</p>\n<a id=\"link1\" href=\"#\">Link 1</a>\n<button\n\tid=\"btn1\"\n\tonblur=\"(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)\"\n>\n\tButton 1\n</button>\n<button\n\tid=\"btn2\"\n\tclass=\"target\"\n\tonkeydown=\"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)\"\n\tonblur=\"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)\"\n>\n\tButton 2\n</button>\n<a id=\"link2\" href=\"#\">Link 2</a>\n"
@@ -107,14 +107,18 @@
                   "localName": "a",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "id",
-                      "value": "link1"
+                      "value": "link1",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "#"
+                      "value": "#",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -137,14 +141,18 @@
                   "localName": "button",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "id",
-                      "value": "btn1"
+                      "value": "btn1",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "onblur",
-                      "value": "(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)"
+                      "value": "(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -167,24 +175,32 @@
                   "localName": "button",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "id",
-                      "value": "btn2"
+                      "value": "btn2",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "class",
-                      "value": "target"
+                      "value": "target",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "onkeydown",
-                      "value": "(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"
+                      "value": "(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "onblur",
-                      "value": "(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"
+                      "value": "(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -207,14 +223,18 @@
                   "localName": "a",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "id",
-                      "value": "link2"
+                      "value": "link2",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "#"
+                      "value": "#",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

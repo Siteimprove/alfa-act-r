@@ -16,22 +16,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "\"5cd4138a-b6\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "\"5cdbd526-b6\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:19 GMT",
+        "expires": "Wed, 15 May 2019 09:12:58 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "CBDA:604A:BBD05B:F3D4E5:5CD946C0",
+        "x-github-request-id": "609A:7F50:24F06A:2FA83D:5CDBD5C2",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:05 GMT",
+        "date": "Wed, 15 May 2019 09:11:13 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743466.860505,VS0,VE90",
+        "x-timer": "S1557911474.615501,VS0,VE96",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "e77da937b3aaaa1cb307e0394ee571316eac1671",
+        "x-fastly-request-id": "ad01eac28eab5f519e6c1cdb1ea732c2f1d586f2",
         "content-length": "182"
       },
       "body": "\n<button onblur=\"setTimeout(() => this.focus(), 10)\">Button 1</button>\n<button class=\"target\">Button 2</button>\n<button onblur=\"setTimeout(() => this.focus(), 10)\">Button 3</button>\n"
@@ -67,9 +67,11 @@
                   "localName": "button",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "onblur",
-                      "value": "setTimeout(() => this.focus(), 10)"
+                      "value": "setTimeout(() => this.focus(), 10)",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -92,9 +94,11 @@
                   "localName": "button",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "class",
-                      "value": "target"
+                      "value": "target",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -117,9 +121,11 @@
                   "localName": "button",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "onblur",
-                      "value": "setTimeout(() => this.focus(), 10)"
+                      "value": "setTimeout(() => this.focus(), 10)",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

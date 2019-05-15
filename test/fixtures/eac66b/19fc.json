@@ -16,22 +16,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "\"5cd4138a-b5\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "\"5cdbd526-b5\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:35 GMT",
+        "expires": "Wed, 15 May 2019 09:13:15 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "66CA:4122:BE8D89:F645FC:5CD946D3",
+        "x-github-request-id": "23B0:1AA7:225AAA:2C6553:5CDBD5D3",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:18 GMT",
+        "date": "Wed, 15 May 2019 09:11:28 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743478.918205,VS0,VE88",
+        "x-timer": "S1557911489.828174,VS0,VE83",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "23e583cebfa416560426208d16df240820d78971",
+        "x-fastly-request-id": "def4aceec7179e501e6260660bc7451ef7b53f96",
         "content-length": "181"
       },
       "body": "\n<video src=\"../test-assets/perspective-video/perspective-video.mp4\" controls>\n\t<track\n\t\tsrc=\"/test-assets/perspective-video/perspective-caption.vtt\"\n\t\tkind=\"captions\"\n\t/>\n</video>\n"
@@ -67,14 +67,18 @@
                   "localName": "video",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-video.mp4"
+                      "value": "../test-assets/perspective-video/perspective-video.mp4",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -90,14 +94,18 @@
                       "localName": "track",
                       "attributes": [
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "/test-assets/perspective-video/perspective-caption.vtt"
+                          "value": "/test-assets/perspective-video/perspective-caption.vtt",
+                          "childNodes": []
                         },
                         {
+                          "nodeType": 2,
                           "prefix": null,
                           "localName": "kind",
-                          "value": "captions"
+                          "value": "captions",
+                          "childNodes": []
                         }
                       ],
                       "shadowRoot": null,

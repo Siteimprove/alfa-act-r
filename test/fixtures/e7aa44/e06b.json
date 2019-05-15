@@ -16,23 +16,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "W/\"5cd4138a-25a\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "W/\"5cdbd526-25a\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:41:30 GMT",
+        "expires": "Wed, 15 May 2019 09:13:28 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "3F30:458F:6923B5:8989F3:5CD94782",
+        "x-github-request-id": "5938:50DB:1211B7:1734EE:5CDBD5E0",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:30 GMT",
+        "date": "Wed, 15 May 2019 09:11:42 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743491.837422,VS0,VE93",
+        "x-timer": "S1557911503.902919,VS0,VE82",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "fbd975d90a1f6766c9f53a4f81749107d4b888d0",
+        "x-fastly-request-id": "bb40090f94a4180a2bf3fe11a919320d8ed08ee2",
         "content-length": "356"
       },
       "body": "\n<p>\n\tA part of a speech by John F. Kennedy: We choose to go to the moon in this\n\tdecade and do the other things, not because they are easy, but because they\n\tare hard, because that goal will serve to organize and measure the best of our\n\tenergies and skills, because that challenge is one that we are willing to\n\taccept, one we are unwilling to postpone, and one which we intend to win, and\n\tthe others, too.\n</p>\n<p>\n\tYou can also listen to the audio file below to hear the above part of the\n\tspeech.\n</p>\n<audio\n\tdata-rule-target\n\tsrc=\"../test-assets/moon-audio/moon-speech.mp3\"\n\tcontrols\n></audio>\n"
@@ -106,19 +106,25 @@
                   "localName": "audio",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "data-rule-target",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/moon-audio/moon-speech.mp3"
+                      "value": "../test-assets/moon-audio/moon-speech.mp3",
+                      "childNodes": []
                     },
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": ""
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,

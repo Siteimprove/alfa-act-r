@@ -16,22 +16,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Thu, 09 May 2019 11:48:26 GMT",
-        "etag": "\"5cd4138a-40\"",
+        "last-modified": "Wed, 15 May 2019 09:00:22 GMT",
+        "etag": "\"5cdbd526-40\"",
         "access-control-allow-origin": "*",
-        "expires": "Mon, 13 May 2019 10:38:18 GMT",
+        "expires": "Wed, 15 May 2019 09:12:57 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "D584:7F6E:B0E47A:E75451:5CD946C2",
+        "x-github-request-id": "344E:4D38:84924:AA919:5CDBD5BF",
         "accept-ranges": "bytes",
-        "date": "Mon, 13 May 2019 10:31:04 GMT",
+        "date": "Wed, 15 May 2019 09:11:12 GMT",
         "via": "1.1 varnish",
         "age": "0",
-        "x-served-by": "cache-ams21051-AMS",
+        "x-served-by": "cache-ams21040-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1557743465.749867,VS0,VE94",
+        "x-timer": "S1557911473.666849,VS0,VE106",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "f6d40de6d87018aa83e94de90fac0a728de9e9b8",
+        "x-fastly-request-id": "67d52975084a853149bb6872c469fa5ec6e1c013",
         "content-length": "64"
       },
       "body": "\n<a href=\"#\">Link 1</a> <button class=\"target\">Button1</button>\n"
@@ -67,9 +67,11 @@
                   "localName": "a",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "#"
+                      "value": "#",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -92,9 +94,11 @@
                   "localName": "button",
                   "attributes": [
                     {
+                      "nodeType": 2,
                       "prefix": null,
                       "localName": "class",
-                      "value": "target"
+                      "value": "target",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
