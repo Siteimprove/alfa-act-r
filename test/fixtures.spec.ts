@@ -154,3 +154,125 @@ test(fixture, Rules.SIA_R20, "5f99a7");
 test(fixture, Rules.SIA_R21, "674b10");
 
 test(fixture, Rules.SIA_R28, "59796f");
+
+test(fixture, Rules.SIA_R41, "b20e66", {
+  skip: [
+    // Implementation of SVG AAM is missing
+    "7990",
+    "a9b3"
+  ],
+  answers: {
+    "0f28": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "162b": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "1a61": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "22b8": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "23cd": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "47d9": [
+      {
+        target: "//span",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "54d5": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "6ed0": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "78a4": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "791c": [
+      {
+        target: "//span",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "7990": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "8be5": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    a9b3: [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    c5fe: [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ]
+  }
+});

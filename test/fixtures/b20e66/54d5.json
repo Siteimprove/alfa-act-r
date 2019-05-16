@@ -1,0 +1,138 @@
+{
+  "id": "54d5",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/b20e66/ee2b638d803b131259d9a261f153037081cb6004.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 15 May 2019 14:47:10 GMT",
+        "etag": "\"5cdc266e-5d\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 16 May 2019 12:29:24 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "6D48:0FB6:1088E5:1576A6:5CDD554B",
+        "accept-ranges": "bytes",
+        "date": "Thu, 16 May 2019 12:19:24 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21033-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1558009164.414423,VS0,VE83",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "d5388a1ae5f3ec678594a5e09f0376b459b34487",
+        "content-length": "93"
+      },
+      "body": "\n<a href=\"/test-assets/6cbcbe/\">Contact us</a> \n<a href=\"/test-assets/6cbcbe\">Contact us</a>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "/test-assets/6cbcbe/",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Contact us",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": " \n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "/test-assets/6cbcbe",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Contact us",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

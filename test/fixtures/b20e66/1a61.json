@@ -1,0 +1,138 @@
+{
+  "id": "1a61",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/b20e66/57122bcddcfa4d74b487acd9d79cfe36a4463e34.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 15 May 2019 14:47:10 GMT",
+        "etag": "\"5cdc266e-74\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 16 May 2019 12:29:23 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "D0A8:66A9:5B2849:76256C:5CDD554B",
+        "accept-ranges": "bytes",
+        "date": "Thu, 16 May 2019 12:19:23 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21033-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1558009164.894428,VS0,VE101",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "2c199ce0dac15afb96a7bb103187f9feb3419571",
+        "content-length": "116"
+      },
+      "body": "\n<a href=\"/test-assets/6cbcbe/index.html\">Contact us</a>\n<a href=\"/test-assets/6cbcbe/redirect.html\">Contact us</a>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "/test-assets/6cbcbe/index.html",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Contact us",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "/test-assets/6cbcbe/redirect.html",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Contact us",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

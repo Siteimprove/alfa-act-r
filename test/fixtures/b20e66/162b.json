@@ -1,0 +1,138 @@
+{
+  "id": "162b",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/b20e66/d72bc964be6eaadaf769d37bf3df88b631cb971b.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Wed, 15 May 2019 14:47:10 GMT",
+        "etag": "\"5cdc266e-83\"",
+        "access-control-allow-origin": "*",
+        "expires": "Thu, 16 May 2019 12:29:24 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "21A2:3301:56FEC9:70E88F:5CDD554C",
+        "accept-ranges": "bytes",
+        "date": "Thu, 16 May 2019 12:19:24 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21033-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1558009164.217780,VS0,VE104",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "0a7f37b0b6f90cb4b62c393cccdcbb665cec01a1",
+        "content-length": "131"
+      },
+      "body": "\n<a href=\"/test-assets/6cbcbe/about/contact.html\">Contact us</a>\n<a href=\"/test-assets/6cbcbe/careers/contact.html\">Contact us</a>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "/test-assets/6cbcbe/about/contact.html",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Contact us",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "/test-assets/6cbcbe/careers/contact.html",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Contact us",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}
