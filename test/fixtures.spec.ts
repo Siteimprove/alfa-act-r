@@ -156,11 +156,6 @@ test(fixture, Rules.SIA_R21, "674b10");
 test(fixture, Rules.SIA_R28, "59796f");
 
 test(fixture, Rules.SIA_R41, "b20e66", {
-  skip: [
-    // Implementation of SVG AAM is missing
-    "7990",
-    "a9b3"
-  ],
   answers: {
     "0f28": [
       {
