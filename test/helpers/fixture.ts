@@ -47,22 +47,21 @@ export function fixture(
   t.plan(tests.length);
 
   for (const test of tests) {
-    const answers: Array<Answer<QuestionType, any, any>> = (options.answers ===
-    undefined
+    const answers: Array<Answer<any, any>> = (options.answers === undefined
       ? []
       : options.answers[test.id] === undefined
       ? []
       : options.answers[test.id]
     ).map(answer => {
       const aspect = test.aspects.document;
-      const [target] = evaluate(aspect, aspect, answer.target);
+      const target = [...evaluate(aspect, aspect, answer.target)];
 
       return {
         type: answer.type as QuestionType,
         id: answer.question,
         rule,
         aspect,
-        target,
+        target: target.length === 1 ? target[0] : target,
         answer: answer.answer
       };
     });

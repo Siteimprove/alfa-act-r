@@ -68,6 +68,75 @@ test(fixture, Rules.SIA_R14, "2ee8b8", {
   }
 });
 
+test(fixture, Rules.SIA_R15, "4b1c6c", {
+  answers: {
+    "1b96": [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "1fb0": [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "2f4e": [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "3e23": [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    aa27: [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    b25f: [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    f98c: [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    fceb: [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ]
+  }
+});
+
 test(fixture, Rules.SIA_R16, "4e8ab6");
 
 test(fixture, Rules.SIA_R17, "6cfa84");
