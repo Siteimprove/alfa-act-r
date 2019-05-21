@@ -54,7 +54,9 @@ export function fixture(
       : options.answers[test.id]
     ).map(answer => {
       const aspect = test.aspects.document;
-      const target = [...evaluate(aspect, aspect, answer.target)];
+      const target = [
+        ...evaluate(aspect, aspect, answer.target, { composed: true })
+      ];
 
       return {
         type: answer.type as QuestionType,
