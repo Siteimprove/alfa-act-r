@@ -7,7 +7,9 @@
       "url": "https://act-rules.github.io/testcases/ee13b5/f1617dfa171a57c4c5c5779f92207ecb5971e2df.html",
       "headers": {
         "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1"
       }
     },
     "response": {
@@ -16,23 +18,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Wed, 15 May 2019 14:47:10 GMT",
-        "etag": "W/\"5cdc266e-113\"",
+        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
+        "etag": "W/\"5cffb5ae-113\"",
         "access-control-allow-origin": "*",
-        "expires": "Thu, 16 May 2019 12:30:32 GMT",
+        "expires": "Wed, 12 Jun 2019 08:42:36 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "661E:6977:1173D9:16A05D:5CDD558E",
+        "x-github-request-id": "E2C0:358D:81381:AC757:5D00B8A3",
         "accept-ranges": "bytes",
-        "date": "Thu, 16 May 2019 12:20:32 GMT",
+        "date": "Wed, 12 Jun 2019 08:32:36 GMT",
         "via": "1.1 varnish",
         "age": "0",
         "x-served-by": "cache-ams21033-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1558009232.073413,VS0,VE106",
+        "x-timer": "S1560328356.174827,VS0,VE90",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "0518eb5295b9017bdecb0d8b1f2bb5984c9a14d6",
+        "x-fastly-request-id": "6f12f5b00c3fa8c8fa61e09228807e73acfbd5b7",
         "content-length": "157"
       },
       "body": "\n<video controls data-rule-target>\n  <source src=\"../test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/test-assets/rabbit-video-transcript.html\">Transcript</p>\n"

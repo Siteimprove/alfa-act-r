@@ -1,0 +1,168 @@
+{
+  "id": "2dfb",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/b20e66/4467f23cea1151fbe214a513d2b509a9c58166f9.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
+        "etag": "\"5cffb5ae-d8\"",
+        "access-control-allow-origin": "*",
+        "expires": "Wed, 12 Jun 2019 08:41:34 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "BA78:748A:128EAF:18BBA6:5D00B866",
+        "accept-ranges": "bytes",
+        "date": "Wed, 12 Jun 2019 08:31:34 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21033-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1560328295.652703,VS0,VE94",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "5e16d49b5ffa09474b912682c09ec4c2aea462cb",
+        "content-length": "216"
+      },
+      "body": "\n<span\n\trole=\"link\"\n\ttabindex=\"0\"\n\tonclick=\"location='/test-assets/6cbcbe/index.html'\"\n>\n\tLink text\n</span>\n\n<span\n\trole=\"link\"\n\ttabindex=\"0\"\n\tonclick=\"location='/test-assets/6cbcbe/index.html'\"\n>\n\tLink text\n</span>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "span",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "role",
+                      "value": "link",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "tabindex",
+                      "value": "0",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "onclick",
+                      "value": "location='/test-assets/6cbcbe/index.html'",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tLink text\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "span",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "role",
+                      "value": "link",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "tabindex",
+                      "value": "0",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "onclick",
+                      "value": "location='/test-assets/6cbcbe/index.html'",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tLink text\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "id": "63b6",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/c487ae/7473bd4f47f697555617e0084cc5bdf5b3591eee.html",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1"
+      }
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "status": "200",
+        "server": "GitHub.com",
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
+        "etag": "\"5cffb5ae-eb\"",
+        "access-control-allow-origin": "*",
+        "expires": "Wed, 12 Jun 2019 08:41:29 GMT",
+        "cache-control": "max-age=600",
+        "x-github-request-id": "8480:79BF:204134:2AFF31:5D00B861",
+        "accept-ranges": "bytes",
+        "date": "Wed, 12 Jun 2019 08:31:29 GMT",
+        "via": "1.1 varnish",
+        "age": "0",
+        "x-served-by": "cache-ams21033-AMS",
+        "x-cache": "MISS",
+        "x-cache-hits": "0",
+        "x-timer": "S1560328290.545565,VS0,VE80",
+        "vary": "Accept-Encoding",
+        "x-fastly-request-id": "83884ac74ea3f1f25f171f63ea92d5a21fc7eeda",
+        "content-length": "235"
+      },
+      "body": "\n<html>\n\t<style>\n\t\t.offScreenLink {\n\t\t\tposition: absolute;\n\t\t\tleft: -9999px;\n\t\t\ttop: -9999px;\n\t\t}\n\t</style>\n\t<body>\n\t\t<a class=\"offScreenLink\" href=\"http://www.w3.org/WAI\"\n\t\t\t>Web Accessibility Initiative (WAI)</a\n\t\t>\n\t</body>\n</html>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "style",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t\t.offScreenLink {\n\t\t\tposition: absolute;\n\t\t\tleft: -9999px;\n\t\t\ttop: -9999px;\n\t\t}\n\t",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n\t",
+                  "childNodes": []
+                }
+              ]
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 3,
+                  "data": "\n\t\t",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "class",
+                      "value": "offScreenLink",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "http://www.w3.org/WAI",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Web Accessibility Initiative (WAI)",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n\t\n\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": [
+        {
+          "disabled": false,
+          "cssRules": [
+            {
+              "type": 1,
+              "selectorText": ".offScreenLink",
+              "style": {
+                "cssText": "position: absolute; left: -9999px; top: -9999px;"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

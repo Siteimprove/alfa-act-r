@@ -1,5 +1,5 @@
 import ava, { TestInterface } from "ava";
-import { Rules } from "@siteimprove/alfa-wcag";
+import { Rules } from "@siteimprove/alfa-rules";
 import { Context } from "./helpers/context";
 import { fixture } from "./helpers/fixture";
 import { manifest } from "./helpers/manifest";
@@ -157,15 +157,7 @@ test(fixture, Rules.SIA_R28, "59796f");
 
 test(fixture, Rules.SIA_R41, "b20e66", {
   answers: {
-    "0f28": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
-    "162b": [
+    d70e: [
       {
         target: "//a",
         type: "boolean",
@@ -173,79 +165,7 @@ test(fixture, Rules.SIA_R41, "b20e66", {
         answer: true
       }
     ],
-    "1a61": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "22b8": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "23cd": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
-    "47d9": [
-      {
-        target: "//span",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
-    "54d5": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "6ed0": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "78a4": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "791c": [
-      {
-        target: "//span",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "7990": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "8be5": [
+    c5fe: [
       {
         target: "//a",
         type: "boolean",
@@ -261,9 +181,137 @@ test(fixture, Rules.SIA_R41, "b20e66", {
         answer: false
       }
     ],
-    c5fe: [
+    "8be5": [
       {
         target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "791c": [
+      {
+        target: "//span",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "78a4": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "6ed0": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "54d5": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "47d9": [
+      {
+        target: "//span",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "3ceb": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "3934": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "2dfb": [
+      {
+        target: "//span",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "2b97": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "23cd": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "22b8": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "1a61": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "162b": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "0f28": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "0b97": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "0b09": [
+      {
+        target: "//span",
         type: "boolean",
         question: "embed-equivalent-resources",
         answer: false

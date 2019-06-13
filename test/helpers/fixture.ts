@@ -86,9 +86,14 @@ export function fixture(
       );
 
     if (skip) {
-      t.assert.skip(test.outcome === result.outcome, test.id);
+      t.is.skip(test.outcome, result.outcome, test.id);
     } else {
-      t.assert(test.outcome === result.outcome, test.id);
+      t.is(test.outcome, result.outcome, test.id);
+
+      if (test.outcome !== result.outcome) {
+        t.log("Result", result);
+        t.log("Test", test);
+      }
     }
 
     t.context.results.push({

@@ -7,7 +7,9 @@
       "url": "https://act-rules.github.io/testcases/80af7b/49eb23fe84cdb0800aea8fe2c3e967a21e3f8e3c.html",
       "headers": {
         "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1"
       }
     },
     "response": {
@@ -16,23 +18,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Wed, 15 May 2019 14:47:10 GMT",
-        "etag": "W/\"5cdc266e-20c\"",
+        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
+        "etag": "W/\"5cffb5ae-20c\"",
         "access-control-allow-origin": "*",
-        "expires": "Thu, 16 May 2019 12:29:32 GMT",
+        "expires": "Wed, 12 Jun 2019 08:41:41 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "2A9C:780D:5F61BB:7BDEA1:5CDD5553",
+        "x-github-request-id": "3674:0C0E:126F1B:1862F5:5D00B86D",
         "accept-ranges": "bytes",
-        "date": "Thu, 16 May 2019 12:19:32 GMT",
+        "date": "Wed, 12 Jun 2019 08:31:41 GMT",
         "via": "1.1 varnish",
         "age": "0",
         "x-served-by": "cache-ams21033-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1558009172.056006,VS0,VE89",
+        "x-timer": "S1560328302.625654,VS0,VE93",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "45e1f2b81e087e06168e03b479673b9e737ce932",
+        "x-fastly-request-id": "fa4d5401fedef8c5646b7748836b6e476b1a1371",
         "content-length": "286"
       },
       "body": "\n<script>\n\tvar trapOn = false\n</script>\n\n<a id=\"link1\" href=\"#\">Link 1</a>\n<button\n\tid=\"btn1\"\n\tonblur=\"(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)\"\n>\n\tButton 1\n</button>\n<p>Press the M-key to Exit</p>\n<button\n\tid=\"btn2\"\n\tclass=\"target\"\n\tonkeydown=\"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)\"\n\tonblur=\"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)\"\n>\n\tButton 2\n</button>\n<a id=\"link2\" href=\"#\">Link 2</a>\n"

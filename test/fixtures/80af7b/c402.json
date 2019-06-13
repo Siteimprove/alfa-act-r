@@ -7,7 +7,9 @@
       "url": "https://act-rules.github.io/testcases/80af7b/260116f282e6b2306a085c21122974d1c6712d05.html",
       "headers": {
         "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1"
       }
     },
     "response": {
@@ -16,22 +18,22 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Wed, 15 May 2019 14:47:10 GMT",
-        "etag": "\"5cdc266e-ce\"",
+        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
+        "etag": "\"5cffb5ae-ce\"",
         "access-control-allow-origin": "*",
-        "expires": "Thu, 16 May 2019 12:29:32 GMT",
+        "expires": "Wed, 12 Jun 2019 08:41:43 GMT",
         "cache-control": "max-age=600",
-        "x-github-request-id": "D4D0:262A:2C2061:395544:5CDD5554",
+        "x-github-request-id": "93CC:183A:22F070:2E3D62:5D00B86E",
         "accept-ranges": "bytes",
-        "date": "Thu, 16 May 2019 12:19:32 GMT",
+        "date": "Wed, 12 Jun 2019 08:31:43 GMT",
         "via": "1.1 varnish",
         "age": "0",
         "x-served-by": "cache-ams21033-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1558009173.746389,VS0,VE97",
+        "x-timer": "S1560328303.954381,VS0,VE97",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "2a8c3eb47d5cc729469fb9bb656658c6d6b8f764",
+        "x-fastly-request-id": "0b9d16307459fc31ca3a4fd0564f0db3b96a2593",
         "content-length": "206"
       },
       "body": "\n<button class=\"target\" onblur=\"setTimeout(() => this.nextSibling.focus(), 10)\">\n\tButton1\n</button>\n<button\n\tclass=\"target\"\n\tonblur=\"setTimeout(() => this.previousSibling.focus(), 10)\"\n>\n\tButton2\n</button>\n"

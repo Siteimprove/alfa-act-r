@@ -1,16 +1,9 @@
 {
+  "extends": "./vendor/alfa/tsconfig.json",
   "compilerOptions": {
-    "composite": true,
-    "incremental": true,
     "lib": ["esnext"],
-    "module": "commonjs",
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "types": ["node"]
   },
   "files": [],
   "references": [{ "path": "test" }]

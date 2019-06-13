@@ -7,7 +7,9 @@
       "url": "https://act-rules.github.io/testcases/afb423/302bebc32e887e89e6b8c1d174a9a1f0dda3c41e.html",
       "headers": {
         "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1"
       }
     },
     "response": {
@@ -16,23 +18,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Wed, 15 May 2019 14:47:10 GMT",
-        "etag": "W/\"5cdc266e-245\"",
+        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
+        "etag": "W/\"5cffb5ae-245\"",
         "access-control-allow-origin": "*",
-        "expires": "Thu, 16 May 2019 12:28:24 GMT",
+        "expires": "Wed, 12 Jun 2019 08:40:37 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "62EC:4D3A:53014E:6B91F0:5CDD550F",
+        "x-github-request-id": "2CA0:3B97:20F4B7:2BD444:5D00B82D",
         "accept-ranges": "bytes",
-        "date": "Thu, 16 May 2019 12:18:24 GMT",
+        "date": "Wed, 12 Jun 2019 08:30:38 GMT",
         "via": "1.1 varnish",
         "age": "0",
         "x-served-by": "cache-ams21033-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1558009105.795373,VS0,VE92",
+        "x-timer": "S1560328238.931469,VS0,VE81",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "f265dc72415f8e013a5c1efd2c439f15bae59f9c",
+        "x-fastly-request-id": "dcadd78c8b0eaf2a3151588a4115505e059d3083",
         "content-length": "343"
       },
       "body": "\n<p>\n\tA part of a speech by John F. Kennedy: We choose to go to the moon in this\n\tdecade and do the other things, not because they are easy, but because they\n\tare hard, because that goal will serve to organize and measure the best of our\n\tenergies and skills, because that challenge is one that we are willing to\n\taccept, one we are unwilling to postpone, and one which we intend to win, and\n\tthe others, too.\n</p>\n<p>\n\tYou can also listen to the audio file below to hear the above part of the\n\tspeech.\n</p>\n<audio src=\"../test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n"

@@ -7,7 +7,9 @@
       "url": "https://act-rules.github.io/testcases/1a02b0/9bdae7edd80be9fa7cb4e99f9002425d1dbb0595.html",
       "headers": {
         "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/75.0.3765.0 Safari/537.36"
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
+        "sec-fetch-mode": "navigate",
+        "sec-fetch-user": "?1"
       }
     },
     "response": {
@@ -16,23 +18,23 @@
         "status": "200",
         "server": "GitHub.com",
         "content-type": "text/html; charset=utf-8",
-        "last-modified": "Wed, 15 May 2019 14:47:10 GMT",
-        "etag": "W/\"5cdc266e-167\"",
+        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
+        "etag": "W/\"5cffb5ae-167\"",
         "access-control-allow-origin": "*",
-        "expires": "Thu, 16 May 2019 12:30:24 GMT",
+        "expires": "Wed, 12 Jun 2019 08:42:31 GMT",
         "cache-control": "max-age=600",
         "content-encoding": "gzip",
-        "x-github-request-id": "3F6C:6E72:5D5481:7948B7:5CDD5588",
+        "x-github-request-id": "E682:2A7D:7ACCA:A572C:5D00B89F",
         "accept-ranges": "bytes",
-        "date": "Thu, 16 May 2019 12:20:24 GMT",
+        "date": "Wed, 12 Jun 2019 08:32:31 GMT",
         "via": "1.1 varnish",
         "age": "0",
         "x-served-by": "cache-ams21033-AMS",
         "x-cache": "MISS",
         "x-cache-hits": "0",
-        "x-timer": "S1558009224.429716,VS0,VE89",
+        "x-timer": "S1560328351.327543,VS0,VE88",
         "vary": "Accept-Encoding",
-        "x-fastly-request-id": "c9cb27759df0119a2c9fb7f1219584b6b695e0da",
+        "x-fastly-request-id": "eea03485a756a662f392693c5ac69914df25db36",
         "content-length": "221"
       },
       "body": "\n<video controls>\n  <source src=\"../test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<p>The above video shows a giant fat rabbit climbing out of a hole in the ground.\nHe stretches, yaws, and then starts walking.\nThen he stops to scratch his bottom.</p>\n"
