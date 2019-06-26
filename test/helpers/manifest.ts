@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-import { toJson } from "@siteimprove/alfa-act";
+import { toJSON } from "@siteimprove/alfa-act";
 import { List } from "@siteimprove/alfa-json-ld";
 
 import { Context } from "./context";
@@ -9,7 +9,7 @@ export function manifest(context: Context, out: string) {
   const graph: List = [];
 
   for (const { aspects, result } of context.results) {
-    graph.push(...toJson([result], aspects));
+    graph.push(...toJSON([result], aspects));
   }
 
   const seen = new Set<string>();

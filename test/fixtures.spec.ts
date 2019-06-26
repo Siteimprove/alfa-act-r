@@ -157,86 +157,6 @@ test(fixture, Rules.SIA_R28, "59796f");
 
 test(fixture, Rules.SIA_R41, "b20e66", {
   answers: {
-    d70e: [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    c5fe: [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
-    a9b3: [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
-    "8be5": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
-    "791c": [
-      {
-        target: "//span",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "78a4": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "6ed0": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "54d5": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "47d9": [
-      {
-        target: "//span",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
-    "3ceb": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
     "3934": [
       {
         target: "//a",
@@ -245,55 +165,7 @@ test(fixture, Rules.SIA_R41, "b20e66", {
         answer: false
       }
     ],
-    "2dfb": [
-      {
-        target: "//span",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
     "2b97": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
-    "23cd": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false
-      }
-    ],
-    "22b8": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "1a61": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "162b": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    "0f28": [
       {
         target: "//a",
         type: "boolean",
@@ -309,12 +181,84 @@ test(fixture, Rules.SIA_R41, "b20e66", {
         answer: false
       }
     ],
-    "0b09": [
+    c419: [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    bdd1: [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "9120": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "7e0f": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: false
+      }
+    ],
+    "71e3": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "62c5": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "4aab": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "4632": [
+      {
+        target: "//a",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "457e": [
       {
         target: "//span",
         type: "boolean",
         question: "embed-equivalent-resources",
         answer: false
+      }
+    ],
+    "1065": [
+      {
+        target: "//span",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
       }
     ]
   }
