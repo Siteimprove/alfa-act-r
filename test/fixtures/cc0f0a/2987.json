@@ -1,0 +1,151 @@
+{
+  "id": "2987",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/cc0f0a/787e385cdc6e3096c763ce2eb5a0a1a5dfd791e7.html",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "body": "\n<div style=\"display:none\">\n  <p id=\"bad_label\">menu</p>\n  <input aria-labelledby=\"bad_label\" type=\"text\" name=\"fname\"/>\n</div>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "style",
+                      "value": "display:none",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n  ",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "p",
+                      "attributes": [
+                        {
+                          "nodeType": 2,
+                          "prefix": null,
+                          "localName": "id",
+                          "value": "bad_label",
+                          "childNodes": []
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": [
+                        {
+                          "nodeType": 3,
+                          "data": "menu",
+                          "childNodes": []
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n  ",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "input",
+                      "attributes": [
+                        {
+                          "nodeType": 2,
+                          "prefix": null,
+                          "localName": "aria-labelledby",
+                          "value": "bad_label",
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 2,
+                          "prefix": null,
+                          "localName": "type",
+                          "value": "text",
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 2,
+                          "prefix": null,
+                          "localName": "name",
+                          "value": "fname",
+                          "childNodes": []
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

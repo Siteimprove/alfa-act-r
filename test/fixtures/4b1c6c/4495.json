@@ -5,37 +5,12 @@
     "request": {
       "method": "GET",
       "url": "https://act-rules.github.io/testcases/4b1c6c/cf639f071ad5e77c1951f90445021baf064a8c6a.html",
-      "headers": {
-        "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
-        "sec-fetch-mode": "navigate",
-        "sec-fetch-user": "?1"
-      }
+      "headers": {}
     },
     "response": {
       "status": 200,
       "headers": {
-        "status": "200",
-        "server": "GitHub.com",
-        "content-type": "text/html; charset=utf-8",
-        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
-        "etag": "W/\"5cffb5ae-10c\"",
-        "access-control-allow-origin": "*",
-        "expires": "Wed, 12 Jun 2019 08:41:19 GMT",
-        "cache-control": "max-age=600",
-        "content-encoding": "gzip",
-        "x-github-request-id": "36F4:2475:224763:2D63A2:5D00B857",
-        "accept-ranges": "bytes",
-        "date": "Wed, 12 Jun 2019 08:31:19 GMT",
-        "via": "1.1 varnish",
-        "age": "0",
-        "x-served-by": "cache-ams21033-AMS",
-        "x-cache": "MISS",
-        "x-cache-hits": "0",
-        "x-timer": "S1560328279.492673,VS0,VE84",
-        "vary": "Accept-Encoding",
-        "x-fastly-request-id": "cc30762232f1b4f88a0487f72d002c1623bdd480",
-        "content-length": "148"
+        "content-type": "text/html; charset=utf-8"
       },
       "body": "\n<iframe\n\taria-label=\"List of Contributors to Repository 1\"\n\tsrc=\"../test-assets/iframe-unique-name-4b1c6c/page-one.html\"\n>\n</iframe>\n\n<iframe\n\taria-label=\"List of Contributors to Repository 2\"\n\tsrc=\"../test-assets/iframe-unique-name-4b1c6c/page-two.html\"\n>\n</iframe>\n"
     },

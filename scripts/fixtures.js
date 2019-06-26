@@ -6,6 +6,8 @@ const makeDir = require("make-dir");
 
 const { Scraper } = require("@siteimprove/alfa-scrape");
 
+const headers = require("./helpers/headers");
+
 const tests = "https://act-rules.github.io/testcases.json";
 
 const out = path.join("test", "fixtures");
@@ -49,6 +51,9 @@ async function fetch(tests, out) {
       console.time(filename);
 
       const aspects = await scraper.scrape(url, { timeout: 10000 });
+
+      headers.filter(aspects.request.headers);
+      headers.filter(aspects.response.headers);
 
       const fixture = JSON.stringify(
         {

@@ -5,36 +5,12 @@
     "request": {
       "method": "GET",
       "url": "https://act-rules.github.io/testcases/3ea0c8/9a11d581d79358cc96921ebd6cc7108fe5eb8a57.html",
-      "headers": {
-        "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
-        "sec-fetch-mode": "navigate",
-        "sec-fetch-user": "?1"
-      }
+      "headers": {}
     },
     "response": {
       "status": 200,
       "headers": {
-        "status": "200",
-        "server": "GitHub.com",
-        "content-type": "text/html; charset=utf-8",
-        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
-        "etag": "\"5cffb5ae-c6\"",
-        "access-control-allow-origin": "*",
-        "expires": "Wed, 12 Jun 2019 08:41:11 GMT",
-        "cache-control": "max-age=600",
-        "x-github-request-id": "1D8A:652E:22C4C9:2E0EC6:5D00B84F",
-        "accept-ranges": "bytes",
-        "date": "Wed, 12 Jun 2019 08:31:11 GMT",
-        "via": "1.1 varnish",
-        "age": "0",
-        "x-served-by": "cache-ams21033-AMS",
-        "x-cache": "MISS",
-        "x-cache-hits": "0",
-        "x-timer": "S1560328272.753388,VS0,VE93",
-        "vary": "Accept-Encoding",
-        "x-fastly-request-id": "398f4d99cc3d4cea6b7836ed7b9127082448ad12",
-        "content-length": "198"
+        "content-type": "text/html; charset=utf-8"
       },
       "body": "\n<div id=\"my-elm\"></div>\n<script>\n\tvar myElm = document.getElementById('my-elm')\n\tvar shadow = myElm.attachShadow({ mode: 'open' })\n\tshadow.innerHTML = '<b id=\"my-elm\" ><slot></slot></b>'\n</script>\n"
     },

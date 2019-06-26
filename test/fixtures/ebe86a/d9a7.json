@@ -5,37 +5,12 @@
     "request": {
       "method": "GET",
       "url": "https://act-rules.github.io/testcases/ebe86a/f2a0849ce3be1d93b1fb46ca24c48d81e2e10830.html",
-      "headers": {
-        "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
-        "sec-fetch-mode": "navigate",
-        "sec-fetch-user": "?1"
-      }
+      "headers": {}
     },
     "response": {
       "status": 200,
       "headers": {
-        "status": "200",
-        "server": "GitHub.com",
-        "content-type": "text/html; charset=utf-8",
-        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
-        "etag": "W/\"5cffb5ae-20c\"",
-        "access-control-allow-origin": "*",
-        "expires": "Wed, 12 Jun 2019 08:41:44 GMT",
-        "cache-control": "max-age=600",
-        "content-encoding": "gzip",
-        "x-github-request-id": "5BE8:6CDB:22A734:2DECEF:5D00B870",
-        "accept-ranges": "bytes",
-        "date": "Wed, 12 Jun 2019 08:31:44 GMT",
-        "via": "1.1 varnish",
-        "age": "0",
-        "x-served-by": "cache-ams21033-AMS",
-        "x-cache": "MISS",
-        "x-cache-hits": "0",
-        "x-timer": "S1560328305.851899,VS0,VE89",
-        "vary": "Accept-Encoding",
-        "x-fastly-request-id": "06b735937a8f666e3bd313c44f2bc7c7e78c238b",
-        "content-length": "286"
+        "content-type": "text/html; charset=utf-8"
       },
       "body": "\n<script>\n\tvar trapOn = false\n</script>\n\n<p>Press the M-key to Exit</p>\n<a id=\"link1\" href=\"#\">Link 1</a>\n<button\n\tid=\"btn1\"\n\tonblur=\"(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)\"\n>\n\tButton 1\n</button>\n<button\n\tid=\"btn2\"\n\tclass=\"target\"\n\tonkeydown=\"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)\"\n\tonblur=\"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)\"\n>\n\tButton 2\n</button>\n<a id=\"link2\" href=\"#\">Link 2</a>\n"
     },

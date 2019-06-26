@@ -5,37 +5,12 @@
     "request": {
       "method": "GET",
       "url": "https://act-rules.github.io/testcases/f196ce/0b9c1590c8c4cdf28a33d1ec94eeaa2c15a7c87c.html",
-      "headers": {
-        "upgrade-insecure-requests": "1",
-        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/76.0.3803.0 Safari/537.36",
-        "sec-fetch-mode": "navigate",
-        "sec-fetch-user": "?1"
-      }
+      "headers": {}
     },
     "response": {
       "status": 200,
       "headers": {
-        "status": "200",
-        "server": "GitHub.com",
-        "content-type": "text/html; charset=utf-8",
-        "last-modified": "Tue, 11 Jun 2019 14:07:42 GMT",
-        "etag": "W/\"5cffb5ae-108\"",
-        "access-control-allow-origin": "*",
-        "expires": "Wed, 12 Jun 2019 08:42:04 GMT",
-        "cache-control": "max-age=600",
-        "content-encoding": "gzip",
-        "x-github-request-id": "FBB0:38F1:230C88:2E9A89:5D00B884",
-        "accept-ranges": "bytes",
-        "date": "Wed, 12 Jun 2019 08:32:04 GMT",
-        "via": "1.1 varnish",
-        "age": "0",
-        "x-served-by": "cache-ams21033-AMS",
-        "x-cache": "MISS",
-        "x-cache-hits": "0",
-        "x-timer": "S1560328325.597535,VS0,VE82",
-        "vary": "Accept-Encoding",
-        "x-fastly-request-id": "2fbd69405f570487f82beaa41d40533949d27388",
-        "content-length": "145"
+        "content-type": "text/html; charset=utf-8"
       },
       "body": "\n<video controls>\n\t<source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\" />\n\t<source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\" />\n\t<track\n\t\tkind=\"descriptions\"\n\t\tsrc=\"../test-assets/rabbit-video/descriptions.vtt\"\n\t/>\n</video>\n"
     },

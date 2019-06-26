@@ -1,0 +1,119 @@
+{
+  "id": "c81a",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/9eb3f6/b59a4f8e74efb991834ccca17073145e005dd4df.html",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "body": "\n<a href=\"https://www.w3.org/WAI/demos/bad/img/w3c.png\" download\n\t>Download <img src=\"https://www.w3.org/WAI/demos/bad/img/w3c.png\" alt=\"w3c.png\"\n/></a>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "a",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "href",
+                      "value": "https://www.w3.org/WAI/demos/bad/img/w3c.png",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "download",
+                      "value": "",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Download ",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "img",
+                      "attributes": [
+                        {
+                          "nodeType": 2,
+                          "prefix": null,
+                          "localName": "src",
+                          "value": "https://www.w3.org/WAI/demos/bad/img/w3c.png",
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 2,
+                          "prefix": null,
+                          "localName": "alt",
+                          "value": "w3c.png",
+                          "childNodes": []
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}
