@@ -3,6 +3,7 @@ const fs = require("fs");
 const crypto = require("crypto");
 const axios = require("axios");
 const makeDir = require("make-dir");
+const del = require("del");
 
 const { Scraper } = require("@siteimprove/alfa-scrape");
 
@@ -12,7 +13,7 @@ const tests = "https://act-rules.github.io/testcases.json";
 
 const out = path.join("test", "fixtures");
 
-fetch(tests, out);
+del([out]).then(() => fetch(tests, out));
 
 async function fetch(tests, out) {
   const { data } = await axios.get(tests);
