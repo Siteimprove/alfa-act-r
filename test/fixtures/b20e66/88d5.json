@@ -1,0 +1,240 @@
+{
+  "id": "88d5",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/b20e66/3957955737bb33a637f77ca7a689d1b2165a357e.html",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "body": "\n<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\t<a href=\"http://facebook.com\" aria-label=\"Follow us\">\n\t\t<circle cx=\"50\" cy=\"40\" r=\"35\" />\n\t</a>\n\n\t<a href=\"http://facebook.com\">\n\t\t<text x=\"50\" y=\"90\" text-anchor=\"middle\">\n\t\t\tFollow us\n\t\t</text>\n\t</a>\n</svg>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "svg",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "viewBox",
+                      "value": "0 0 100 100",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "xmlns",
+                      "value": "http://www.w3.org/2000/svg",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": "xmlns",
+                      "localName": "xlink",
+                      "value": "http://www.w3.org/1999/xlink",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "a",
+                      "attributes": [
+                        {
+                          "nodeType": 2,
+                          "prefix": null,
+                          "localName": "href",
+                          "value": "http://facebook.com",
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 2,
+                          "prefix": null,
+                          "localName": "aria-label",
+                          "value": "Follow us",
+                          "childNodes": []
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": [
+                        {
+                          "nodeType": 3,
+                          "data": "\n\t\t",
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 1,
+                          "prefix": null,
+                          "localName": "circle",
+                          "attributes": [
+                            {
+                              "nodeType": 2,
+                              "prefix": null,
+                              "localName": "cx",
+                              "value": "50",
+                              "childNodes": []
+                            },
+                            {
+                              "nodeType": 2,
+                              "prefix": null,
+                              "localName": "cy",
+                              "value": "40",
+                              "childNodes": []
+                            },
+                            {
+                              "nodeType": 2,
+                              "prefix": null,
+                              "localName": "r",
+                              "value": "35",
+                              "childNodes": []
+                            }
+                          ],
+                          "shadowRoot": null,
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 3,
+                          "data": "\n\t",
+                          "childNodes": []
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n\n\t",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 1,
+                      "prefix": null,
+                      "localName": "a",
+                      "attributes": [
+                        {
+                          "nodeType": 2,
+                          "prefix": null,
+                          "localName": "href",
+                          "value": "http://facebook.com",
+                          "childNodes": []
+                        }
+                      ],
+                      "shadowRoot": null,
+                      "childNodes": [
+                        {
+                          "nodeType": 3,
+                          "data": "\n\t\t",
+                          "childNodes": []
+                        },
+                        {
+                          "nodeType": 1,
+                          "prefix": null,
+                          "localName": "text",
+                          "attributes": [
+                            {
+                              "nodeType": 2,
+                              "prefix": null,
+                              "localName": "x",
+                              "value": "50",
+                              "childNodes": []
+                            },
+                            {
+                              "nodeType": 2,
+                              "prefix": null,
+                              "localName": "y",
+                              "value": "90",
+                              "childNodes": []
+                            },
+                            {
+                              "nodeType": 2,
+                              "prefix": null,
+                              "localName": "text-anchor",
+                              "value": "middle",
+                              "childNodes": []
+                            }
+                          ],
+                          "shadowRoot": null,
+                          "childNodes": [
+                            {
+                              "nodeType": 3,
+                              "data": "\n\t\t\tFollow us\n\t\t",
+                              "childNodes": []
+                            }
+                          ]
+                        },
+                        {
+                          "nodeType": 3,
+                          "data": "\n\t",
+                          "childNodes": []
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "compatMode": "BackCompat",
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

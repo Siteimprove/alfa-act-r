@@ -70,7 +70,7 @@ test(fixture, Rules.SIA_R14, "2ee8b8", {
 
 test(fixture, Rules.SIA_R15, "4b1c6c", {
   answers: {
-    "1b96": [
+    "303d": [
       {
         target: "//iframe",
         type: "boolean",
@@ -78,7 +78,7 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: false
       }
     ],
-    "1fb0": [
+    d7c0: [
       {
         target: "//iframe",
         type: "boolean",
@@ -86,7 +86,7 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: true
       }
     ],
-    "2f4e": [
+    "6375": [
       {
         target: "//iframe",
         type: "boolean",
@@ -94,7 +94,7 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: false
       }
     ],
-    "3e23": [
+    "231d": [
       {
         target: "//iframe",
         type: "boolean",
@@ -102,7 +102,7 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: true
       }
     ],
-    aa27: [
+    f8e4: [
       {
         target: "//iframe",
         type: "boolean",
@@ -110,7 +110,7 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: true
       }
     ],
-    b25f: [
+    e484: [
       {
         target: "//iframe",
         type: "boolean",
@@ -118,7 +118,7 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: true
       }
     ],
-    f98c: [
+    d813: [
       {
         target: "//iframe",
         type: "boolean",
@@ -126,7 +126,7 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: false
       }
     ],
-    fceb: [
+    df76: [
       {
         target: "//iframe",
         type: "boolean",
@@ -144,9 +144,7 @@ test(fixture, Rules.SIA_R17, "6cfa84");
 test(fixture, Rules.SIA_R18, "5c01ea");
 
 test(fixture, Rules.SIA_R19, "6a7281", {
-  skip: [
-    "77b8" // https://github.com/act-rules/act-rules.github.io/pull/464
-  ]
+  skip: ["ad99", "8afd", "5569"]
 });
 
 test(fixture, Rules.SIA_R20, "5f99a7");
@@ -157,7 +155,7 @@ test(fixture, Rules.SIA_R28, "59796f");
 
 test(fixture, Rules.SIA_R41, "b20e66", {
   answers: {
-    "3934": [
+    "5fa9": [
       {
         target: "//a",
         type: "boolean",
@@ -165,7 +163,7 @@ test(fixture, Rules.SIA_R41, "b20e66", {
         answer: false
       }
     ],
-    "2b97": [
+    d7ca: [
       {
         target: "//a",
         type: "boolean",

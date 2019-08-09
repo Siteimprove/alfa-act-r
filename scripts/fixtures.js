@@ -63,7 +63,7 @@ async function fetch(tests, out) {
           aspects
         },
         null,
-        "  "
+        2
       );
 
       fs.writeFileSync(path.join(directory, filename), fixture + "\n");
@@ -78,5 +78,8 @@ async function fetch(tests, out) {
 }
 
 function digest(data) {
-  return crypto.createHash("sha256").update(data).digest("hex");
+  return crypto
+    .createHash("sha256")
+    .update(data)
+    .digest("hex");
 }
