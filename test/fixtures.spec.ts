@@ -144,7 +144,9 @@ test(fixture, Rules.SIA_R17, "6cfa84");
 test(fixture, Rules.SIA_R18, "5c01ea");
 
 test(fixture, Rules.SIA_R19, "6a7281", {
-  skip: ["ad99", "8afd", "5569"]
+  skip: [
+    "5569" // https://github.com/act-rules/act-rules.github.io/pull/745
+  ]
 });
 
 test(fixture, Rules.SIA_R20, "5f99a7");
