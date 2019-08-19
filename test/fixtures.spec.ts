@@ -155,6 +155,43 @@ test(fixture, Rules.SIA_R21, "674b10");
 
 test(fixture, Rules.SIA_R28, "59796f");
 
+test(fixture, Rules.SIA_R39, "9eb3f6", {
+  answers: {
+    d6c3: [
+      {
+        target: "//img",
+        type: "boolean",
+        question: "name-describes-image",
+        answer: true
+      }
+    ],
+    c81a: [
+      {
+        target: "//img",
+        type: "boolean",
+        question: "name-describes-image",
+        answer: true
+      }
+    ],
+    "5d41": [
+      {
+        target: "//input",
+        type: "boolean",
+        question: "name-describes-image",
+        answer: false
+      }
+    ],
+    "4f63": [
+      {
+        target: "//img",
+        type: "boolean",
+        question: "name-describes-image",
+        answer: false
+      }
+    ]
+  }
+});
+
 test(fixture, Rules.SIA_R41, "b20e66", {
   answers: {
     "5fa9": [
