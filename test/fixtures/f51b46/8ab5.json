@@ -1,10 +1,10 @@
 {
-  "id": "d846",
-  "outcome": "inapplicable",
+  "id": "8ab5",
+  "outcome": "failed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/c3232f/c0d446934e85f435d8ba5a65c7d35bafda2cd6e3.html",
+      "url": "https://act-rules.github.io/testcases/f51b46/b3ad7af077813267615e4064011afd1c8a87dd1b.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<p>\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n</p>\n<video\n\tdata-rule-target\n\tsrc=\"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4\"\n\tcontrols\n></video>\n"
+      "body": "\n<p>\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying the following text: Web accessibility\n\tperspectives. Keyboard compatibility. Not being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either through preference or circumstance.\n</p>\n<video src=\"../test-assets/perspective-video/perspective-video.mp4\" controls></video>\n"
     },
     "document": {
       "nodeType": 9,
@@ -48,7 +48,7 @@
                   "childNodes": [
                     {
                       "nodeType": 3,
-                      "data": "\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n",
+                      "data": "\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying the following text: Web accessibility\n\tperspectives. Keyboard compatibility. Not being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either through preference or circumstance.\n",
                       "childNodes": []
                     }
                   ]
@@ -66,15 +66,8 @@
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "data-rule-target",
-                      "value": "",
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 2,
-                      "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4",
+                      "value": "../test-assets/perspective-video/perspective-video.mp4",
                       "childNodes": []
                     },
                     {

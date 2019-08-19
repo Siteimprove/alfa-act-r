@@ -1,10 +1,10 @@
 {
-  "id": "0647",
-  "outcome": "fail",
+  "id": "3c17",
+  "outcome": "pass",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/ab4d13/7aca25f7ef14f4ede8276ab1731b710fffeb8e19.html",
+      "url": "https://act-rules.github.io/testcases/c5a4ea/9f0a2ddb83df141290e96b0c6aa08bd42a7090ec.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<p style=\"display: none;\">\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n</p>\n<video src=\"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4\" controls></video>\n"
+      "body": "\n<p>\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n</p>\n<video src=\"../test-assets/perspective-video/perspective-video.mp4\" controls></video>\n"
     },
     "document": {
       "nodeType": 9,
@@ -43,15 +43,7 @@
                   "nodeType": 1,
                   "prefix": null,
                   "localName": "p",
-                  "attributes": [
-                    {
-                      "nodeType": 2,
-                      "prefix": null,
-                      "localName": "style",
-                      "value": "display: none;",
-                      "childNodes": []
-                    }
-                  ],
+                  "attributes": [],
                   "shadowRoot": null,
                   "childNodes": [
                     {
@@ -75,7 +67,7 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4",
+                      "value": "../test-assets/perspective-video/perspective-video.mp4",
                       "childNodes": []
                     },
                     {

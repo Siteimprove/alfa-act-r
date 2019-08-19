@@ -1,10 +1,10 @@
 {
-  "id": "2c43",
-  "outcome": "fail",
+  "id": "e3e1",
+  "outcome": "failed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/c5a4ea/b37bd02cc52bb56976865c88d6678ab065e06f1b.html",
+      "url": "https://act-rules.github.io/testcases/f51b46/dadb5e42e386218f04b47873c7e4aa438d50b126.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<p>\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Either through preference or\n\tcircumstance. This is solved by keyboard compatibility. Keyboard compatibility is described in WCAG. See the video\n\tbelow to watch the same information again in video form.\n</p>\n<video src=\"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4\" controls></video>\n"
+      "body": "\n<p id=\"text\">\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying the following text: Web accessibility\n\tperspectives. Keyboard compatibility. Not being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either through preference or circumstance.\n</p>\n<video\n\tsrc=\"../test-assets/perspective-video/perspective-video.mp4\"\n\tcontrols\n\tariadescribedby=\"text\"\n></video>\n"
     },
     "document": {
       "nodeType": 9,
@@ -43,12 +43,20 @@
                   "nodeType": 1,
                   "prefix": null,
                   "localName": "p",
-                  "attributes": [],
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "text",
+                      "childNodes": []
+                    }
+                  ],
                   "shadowRoot": null,
                   "childNodes": [
                     {
                       "nodeType": 3,
-                      "data": "\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Either through preference or\n\tcircumstance. This is solved by keyboard compatibility. Keyboard compatibility is described in WCAG. See the video\n\tbelow to watch the same information again in video form.\n",
+                      "data": "\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying the following text: Web accessibility\n\tperspectives. Keyboard compatibility. Not being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either through preference or circumstance.\n",
                       "childNodes": []
                     }
                   ]
@@ -67,7 +75,7 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4",
+                      "value": "../test-assets/perspective-video/perspective-video.mp4",
                       "childNodes": []
                     },
                     {
@@ -75,6 +83,13 @@
                       "prefix": null,
                       "localName": "controls",
                       "value": "",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "ariadescribedby",
+                      "value": "text",
                       "childNodes": []
                     }
                   ],

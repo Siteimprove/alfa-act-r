@@ -1,10 +1,10 @@
 {
-  "id": "3981",
-  "outcome": "pass",
+  "id": "b96e",
+  "outcome": "inapplicable",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/1ec09b/19e591fcae3d5f70dceded9403e1a45c872561f3.html",
+      "url": "https://act-rules.github.io/testcases/c3232f/b456752c9e1502e74b2b5343a1c2ba02de177bbb.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<p>\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n</p>\n<video src=\"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4\" controls></video>\n"
+      "body": "\n<p>\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n</p>\n<video\n\tdata-rule-target\n\tsrc=\"../test-assets/perspective-video/perspective-video.mp4\"\n\tcontrols\n></video>\n"
     },
     "document": {
       "nodeType": 9,
@@ -66,8 +66,15 @@
                     {
                       "nodeType": 2,
                       "prefix": null,
+                      "localName": "data-rule-target",
+                      "value": "",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4",
+                      "value": "../test-assets/perspective-video/perspective-video.mp4",
                       "childNodes": []
                     },
                     {

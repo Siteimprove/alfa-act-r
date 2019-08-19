@@ -1,10 +1,10 @@
 {
-  "id": "2f2d",
-  "outcome": "failed",
+  "id": "8829",
+  "outcome": "inapplicable",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/f51b46/bb0c4210055fbd85d287f2f0e1320306df2dd945.html",
+      "url": "https://act-rules.github.io/testcases/fd26cf/3aadc7aa7bdc9f584cb295fd942e302c5fc5f485.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<video src=\"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4\" controls>\n\t<track src=\"/test-assets/perspective-video/perspective-incorrect-caption.vtt\" kind=\"captions\" />\n</video>\n"
+      "body": "\n<p>\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n</p>\n<video src=\"../test-assets/perspective-video/perspective-video.mp4\" controls></video>\n"
     },
     "document": {
       "nodeType": 9,
@@ -42,13 +42,32 @@
                 {
                   "nodeType": 1,
                   "prefix": null,
+                  "localName": "p",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
                   "localName": "video",
                   "attributes": [
                     {
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4",
+                      "value": "../test-assets/perspective-video/perspective-video.mp4",
                       "childNodes": []
                     },
                     {
@@ -60,41 +79,7 @@
                     }
                   ],
                   "shadowRoot": null,
-                  "childNodes": [
-                    {
-                      "nodeType": 3,
-                      "data": "\n\t",
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 1,
-                      "prefix": null,
-                      "localName": "track",
-                      "attributes": [
-                        {
-                          "nodeType": 2,
-                          "prefix": null,
-                          "localName": "src",
-                          "value": "/test-assets/perspective-video/perspective-incorrect-caption.vtt",
-                          "childNodes": []
-                        },
-                        {
-                          "nodeType": 2,
-                          "prefix": null,
-                          "localName": "kind",
-                          "value": "captions",
-                          "childNodes": []
-                        }
-                      ],
-                      "shadowRoot": null,
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 3,
-                      "data": "\n",
-                      "childNodes": []
-                    }
-                  ]
+                  "childNodes": []
                 },
                 {
                   "nodeType": 3,
