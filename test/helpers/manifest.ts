@@ -32,5 +32,5 @@ export function manifest(context: Context, out: string) {
     }
   }
 
-  fs.writeFileSync(out, JSON.stringify(graph, null, "  "));
+  fs.writeFileSync(out, JSON.stringify(graph, null, 2));
 }
