@@ -1,10 +1,10 @@
 {
-  "id": "b1fd",
+  "id": "add5",
   "outcome": "inapplicable",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/97a4e1/65cb12c42a8d46b2075f669dcabcceb0db074df8.html",
+      "url": "https://act-rules.github.io/testcases/59796f/7c635bd92a10272be1d00dedecec994ff5e55756.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<input type=\"image\" value=\"download\" />\n"
+      "body": "\n<input type=\"button\" value=\"My button\" />\n"
     },
     "document": {
       "nodeType": 9,
@@ -48,14 +48,14 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "type",
-                      "value": "image",
+                      "value": "button",
                       "childNodes": []
                     },
                     {
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "value",
-                      "value": "download",
+                      "value": "My button",
                       "childNodes": []
                     }
                   ],

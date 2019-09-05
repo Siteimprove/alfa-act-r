@@ -1,10 +1,10 @@
 {
-  "id": "9044",
-  "outcome": "passed",
+  "id": "d26a",
+  "outcome": "inapplicable",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/674b10/8682c4d2ef41c931ee4c0cee251f319c872adcb3.html",
+      "url": "https://act-rules.github.io/testcases/9eb3f6/2c2d8b081bc8908ee21605c2aa420a9e90a39307.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<img role=\"img xyz\" src=\"\" />\n"
+      "body": "\n<img role=\"presentation\" alt=\"\" />\n"
     },
     "document": {
       "nodeType": 9,
@@ -48,13 +48,13 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "role",
-                      "value": "img xyz",
+                      "value": "presentation",
                       "childNodes": []
                     },
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "src",
+                      "localName": "alt",
                       "value": "",
                       "childNodes": []
                     }

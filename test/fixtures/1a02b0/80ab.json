@@ -1,10 +1,10 @@
 {
-  "id": "9cf4",
-  "outcome": "pass",
+  "id": "80ab",
+  "outcome": "inapplicable",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/ee13b5/faeb4622697dc73d6eefdb9728c0372dc9aee15e.html",
+      "url": "https://act-rules.github.io/testcases/1a02b0/bbaf73e868cedca12d4e4a3ce311e16feecbaf6b.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<video controls data-rule-target>\n  <source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/test-assets/rabbit-video-transcript.html\">Transcript</p>\n"
+      "body": "\n<video controls>\n  <source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"../test-assets/rabbit-video/transcript.html\">Transcript</a>\n"
     },
     "document": {
       "nodeType": 9,
@@ -48,13 +48,6 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "controls",
-                      "value": "",
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 2,
-                      "prefix": null,
-                      "localName": "data-rule-target",
                       "value": "",
                       "childNodes": []
                     }
@@ -138,7 +131,7 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "/test-assets/rabbit-video-transcript.html",
+                      "value": "../test-assets/rabbit-video/transcript.html",
                       "childNodes": []
                     }
                   ],
@@ -148,21 +141,13 @@
                       "nodeType": 3,
                       "data": "Transcript",
                       "childNodes": []
-                    },
-                    {
-                      "nodeType": 1,
-                      "prefix": null,
-                      "localName": "p",
-                      "attributes": [],
-                      "shadowRoot": null,
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 3,
-                      "data": "\n",
-                      "childNodes": []
                     }
                   ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
                 }
               ]
             }

@@ -1,10 +1,10 @@
 {
-  "id": "b96e",
+  "id": "e70e",
   "outcome": "inapplicable",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/c3232f/b456752c9e1502e74b2b5343a1c2ba02de177bbb.html",
+      "url": "https://act-rules.github.io/testcases/97a4e1/18536a16b216da886cf45842e7a16ffebf80af8c.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<p>\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n</p>\n<video\n\tdata-rule-target\n\tsrc=\"../test-assets/perspective-video/perspective-video.mp4\"\n\tcontrols\n></video>\n"
+      "body": "\n<input type=\"image\" value=\"download\" alt=\"Download\" />\n"
     },
     "document": {
       "nodeType": 9,
@@ -42,46 +42,27 @@
                 {
                   "nodeType": 1,
                   "prefix": null,
-                  "localName": "p",
-                  "attributes": [],
-                  "shadowRoot": null,
-                  "childNodes": [
-                    {
-                      "nodeType": 3,
-                      "data": "\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n",
-                      "childNodes": []
-                    }
-                  ]
-                },
-                {
-                  "nodeType": 3,
-                  "data": "\n",
-                  "childNodes": []
-                },
-                {
-                  "nodeType": 1,
-                  "prefix": null,
-                  "localName": "video",
+                  "localName": "input",
                   "attributes": [
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "data-rule-target",
-                      "value": "",
+                      "localName": "type",
+                      "value": "image",
                       "childNodes": []
                     },
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-video.mp4",
+                      "localName": "value",
+                      "value": "download",
                       "childNodes": []
                     },
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "controls",
-                      "value": "",
+                      "localName": "alt",
+                      "value": "Download",
                       "childNodes": []
                     }
                   ],

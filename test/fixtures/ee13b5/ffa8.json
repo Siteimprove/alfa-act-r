@@ -1,10 +1,10 @@
 {
-  "id": "d177",
-  "outcome": "fail",
+  "id": "ffa8",
+  "outcome": "passed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/ee13b5/0863f345271c01f3d8f8c7c727b7b66ebf5723dc.html",
+      "url": "https://act-rules.github.io/testcases/ee13b5/87bd850d61a40bdbaaf7a62d8b03509111065b7c.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<video controls data-rule-target>\n  <source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/test-assets/rabbit-video-incorrect-transcript.html\">Transcript</p>\n"
+      "body": "\n<video controls data-rule-target>\n  <source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/test-assets/rabbit-video-transcript.html\">Transcript</a>\n"
     },
     "document": {
       "nodeType": 9,
@@ -138,7 +138,7 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "/test-assets/rabbit-video-incorrect-transcript.html",
+                      "value": "/test-assets/rabbit-video-transcript.html",
                       "childNodes": []
                     }
                   ],
@@ -148,21 +148,13 @@
                       "nodeType": 3,
                       "data": "Transcript",
                       "childNodes": []
-                    },
-                    {
-                      "nodeType": 1,
-                      "prefix": null,
-                      "localName": "p",
-                      "attributes": [],
-                      "shadowRoot": null,
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 3,
-                      "data": "\n",
-                      "childNodes": []
                     }
                   ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
                 }
               ]
             }

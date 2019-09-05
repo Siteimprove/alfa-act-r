@@ -1,10 +1,10 @@
 {
-  "id": "fcd4",
-  "outcome": "inapplicable",
+  "id": "5e07",
+  "outcome": "failed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/ee13b5/f1617dfa171a57c4c5c5779f92207ecb5971e2df.html",
+      "url": "https://act-rules.github.io/testcases/c3232f/bd82c3b519fba43df6673bc11fd17acc9cf41175.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<video controls data-rule-target>\n  <source src=\"../test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/test-assets/rabbit-video-transcript.html\">Transcript</p>\n"
+      "body": "\n<video controls data-rule-target>\n  <source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/test-assets/rabbit-video-incorrect-transcript.html\">Transcript</a>\n"
     },
     "document": {
       "nodeType": 9,
@@ -75,7 +75,7 @@
                           "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video.mp4",
+                          "value": "../test-assets/rabbit-video/silent.mp4",
                           "childNodes": []
                         },
                         {
@@ -103,7 +103,7 @@
                           "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video.webm",
+                          "value": "../test-assets/rabbit-video/silent.webm",
                           "childNodes": []
                         },
                         {
@@ -138,7 +138,7 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "/test-assets/rabbit-video-transcript.html",
+                      "value": "/test-assets/rabbit-video-incorrect-transcript.html",
                       "childNodes": []
                     }
                   ],
@@ -148,21 +148,13 @@
                       "nodeType": 3,
                       "data": "Transcript",
                       "childNodes": []
-                    },
-                    {
-                      "nodeType": 1,
-                      "prefix": null,
-                      "localName": "p",
-                      "attributes": [],
-                      "shadowRoot": null,
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 3,
-                      "data": "\n",
-                      "childNodes": []
                     }
                   ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
                 }
               ]
             }

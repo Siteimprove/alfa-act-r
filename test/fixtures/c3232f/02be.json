@@ -1,10 +1,10 @@
 {
-  "id": "52f6",
-  "outcome": "failed",
+  "id": "02be",
+  "outcome": "inapplicable",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/80af7b/41d6dd943f795bde3276372c5f28c450e1004e78.html",
+      "url": "https://act-rules.github.io/testcases/c3232f/05df5feae896923ff7319e6843765253d33f3685.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<button class=\"target\" onblur=\"setTimeout(() => this.nextSibling.focus(), 10)\">\n\tButton1\n</button>\n<button class=\"target\" onblur=\"setTimeout(() => this.previousSibling.focus(), 10)\">\n\tButton2\n</button>\n"
+      "body": "\n<p>\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n</p>\n<video data-rule-target src=\"../test-assets/perspective-video/perspective-video.mp4\" controls></video>\n"
     },
     "document": {
       "nodeType": 9,
@@ -42,28 +42,13 @@
                 {
                   "nodeType": 1,
                   "prefix": null,
-                  "localName": "button",
-                  "attributes": [
-                    {
-                      "nodeType": 2,
-                      "prefix": null,
-                      "localName": "class",
-                      "value": "target",
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 2,
-                      "prefix": null,
-                      "localName": "onblur",
-                      "value": "setTimeout(() => this.nextSibling.focus(), 10)",
-                      "childNodes": []
-                    }
-                  ],
+                  "localName": "p",
+                  "attributes": [],
                   "shadowRoot": null,
                   "childNodes": [
                     {
                       "nodeType": 3,
-                      "data": "\n\tButton1\n",
+                      "data": "\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the keyboard\n\tto navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility. Keyboard\n\tcompatibility is described in WCAG. See the video below to watch the same information again in video form.\n",
                       "childNodes": []
                     }
                   ]
@@ -76,31 +61,32 @@
                 {
                   "nodeType": 1,
                   "prefix": null,
-                  "localName": "button",
+                  "localName": "video",
                   "attributes": [
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "class",
-                      "value": "target",
+                      "localName": "data-rule-target",
+                      "value": "",
                       "childNodes": []
                     },
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "onblur",
-                      "value": "setTimeout(() => this.previousSibling.focus(), 10)",
+                      "localName": "src",
+                      "value": "../test-assets/perspective-video/perspective-video.mp4",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": "",
                       "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
-                  "childNodes": [
-                    {
-                      "nodeType": 3,
-                      "data": "\n\tButton2\n",
-                      "childNodes": []
-                    }
-                  ]
+                  "childNodes": []
                 },
                 {
                   "nodeType": 3,

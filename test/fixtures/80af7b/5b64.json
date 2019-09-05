@@ -1,10 +1,10 @@
 {
-  "id": "e3e1",
+  "id": "5b64",
   "outcome": "failed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/f51b46/dadb5e42e386218f04b47873c7e4aa438d50b126.html",
+      "url": "https://act-rules.github.io/testcases/80af7b/131e9069eb3c535e2d40602955546e822eb52201.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<p id=\"text\">\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying the following text: Web accessibility\n\tperspectives. Keyboard compatibility. Not being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either through preference or circumstance.\n</p>\n<video\n\tsrc=\"../test-assets/perspective-video/perspective-video.mp4\"\n\tcontrols\n\tariadescribedby=\"text\"\n></video>\n"
+      "body": "\n<button class=\"target\" onblur=\"setTimeout(() => this.nextElementSibling.focus(), 10)\">\n\tButton1\n</button>\n<button class=\"target\" onblur=\"setTimeout(() => this.previousElementSibling.focus(), 10)\">\n\tButton2\n</button>\n<button>\n\tButton3\n</button>\n"
     },
     "document": {
       "nodeType": 9,
@@ -42,13 +42,20 @@
                 {
                   "nodeType": 1,
                   "prefix": null,
-                  "localName": "p",
+                  "localName": "button",
                   "attributes": [
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "id",
-                      "value": "text",
+                      "localName": "class",
+                      "value": "target",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "onblur",
+                      "value": "setTimeout(() => this.nextElementSibling.focus(), 10)",
                       "childNodes": []
                     }
                   ],
@@ -56,7 +63,7 @@
                   "childNodes": [
                     {
                       "nodeType": 3,
-                      "data": "\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying the following text: Web accessibility\n\tperspectives. Keyboard compatibility. Not being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either through preference or circumstance.\n",
+                      "data": "\n\tButton1\n",
                       "childNodes": []
                     }
                   ]
@@ -69,32 +76,50 @@
                 {
                   "nodeType": 1,
                   "prefix": null,
-                  "localName": "video",
+                  "localName": "button",
                   "attributes": [
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "src",
-                      "value": "../test-assets/perspective-video/perspective-video.mp4",
+                      "localName": "class",
+                      "value": "target",
                       "childNodes": []
                     },
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "controls",
-                      "value": "",
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 2,
-                      "prefix": null,
-                      "localName": "ariadescribedby",
-                      "value": "text",
+                      "localName": "onblur",
+                      "value": "setTimeout(() => this.previousElementSibling.focus(), 10)",
                       "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tButton2\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
                   "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "button",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tButton3\n",
+                      "childNodes": []
+                    }
+                  ]
                 },
                 {
                   "nodeType": 3,

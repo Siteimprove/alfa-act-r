@@ -1,10 +1,10 @@
 {
-  "id": "b6a2",
-  "outcome": "pass",
+  "id": "c331",
+  "outcome": "passed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/c5a4ea/beb848e415ae516d09a19fdf6175fad0bae33af6.html",
+      "url": "https://act-rules.github.io/testcases/1a02b0/d30d0d808bb7c41faad0143de8e4896f8f706d3b.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<video controls>\n  <source src=\"../test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n  <source src=\"../test-assets/rabbit-video/video.webm\" type=\"video/webm\"/>\n</video>\n<a href=\"../test-assets/rabbit-video/transcript.html\">Transcript</p>\n"
+      "body": "\n<video controls>\n  <source src=\"../test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"../test-assets/rabbit-video/transcript.html\">Transcript</a>\n"
     },
     "document": {
       "nodeType": 9,
@@ -141,21 +141,13 @@
                       "nodeType": 3,
                       "data": "Transcript",
                       "childNodes": []
-                    },
-                    {
-                      "nodeType": 1,
-                      "prefix": null,
-                      "localName": "p",
-                      "attributes": [],
-                      "shadowRoot": null,
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 3,
-                      "data": "\n",
-                      "childNodes": []
                     }
                   ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
                 }
               ]
             }

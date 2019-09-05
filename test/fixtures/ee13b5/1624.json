@@ -1,10 +1,10 @@
 {
-  "id": "43c1",
-  "outcome": "passed",
+  "id": "1624",
+  "outcome": "failed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/1a02b0/53277692ccd38f9117bc9351e395768d28d634f1.html",
+      "url": "https://act-rules.github.io/testcases/ee13b5/3e1c65bb49c947526a9026270898b273082a87ec.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<video controls>\n  <source src=\"../test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"../test-assets/rabbit-video/transcript.html\">Transcript</p>\n"
+      "body": "\n<video controls data-rule-target>\n  <source src=\"../test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\"></source>\n  <source src=\"../test-assets/rabbit-video/silent.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/test-assets/rabbit-video-incorrect-transcript.html\">Transcript</a>\n"
     },
     "document": {
       "nodeType": 9,
@@ -50,6 +50,13 @@
                       "localName": "controls",
                       "value": "",
                       "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "data-rule-target",
+                      "value": "",
+                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
@@ -68,7 +75,7 @@
                           "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video.mp4",
+                          "value": "../test-assets/rabbit-video/silent.mp4",
                           "childNodes": []
                         },
                         {
@@ -96,7 +103,7 @@
                           "nodeType": 2,
                           "prefix": null,
                           "localName": "src",
-                          "value": "../test-assets/rabbit-video/video.webm",
+                          "value": "../test-assets/rabbit-video/silent.webm",
                           "childNodes": []
                         },
                         {
@@ -131,7 +138,7 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "../test-assets/rabbit-video/transcript.html",
+                      "value": "/test-assets/rabbit-video-incorrect-transcript.html",
                       "childNodes": []
                     }
                   ],
@@ -141,21 +148,13 @@
                       "nodeType": 3,
                       "data": "Transcript",
                       "childNodes": []
-                    },
-                    {
-                      "nodeType": 1,
-                      "prefix": null,
-                      "localName": "p",
-                      "attributes": [],
-                      "shadowRoot": null,
-                      "childNodes": []
-                    },
-                    {
-                      "nodeType": 3,
-                      "data": "\n",
-                      "childNodes": []
                     }
                   ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
                 }
               ]
             }

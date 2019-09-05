@@ -1,10 +1,10 @@
 {
-  "id": "33df",
-  "outcome": "inapplicable",
+  "id": "e70e",
+  "outcome": "passed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/9eb3f6/3ed17907a773005de3d8e127127ef7cc72d95686.html",
+      "url": "https://act-rules.github.io/testcases/674b10/53cbd389b01a11e2a8047931c41e16f13103d549.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<img role=\"presentation\" />\n"
+      "body": "\n<img role=\"img xyz\" src=\"https://developer.mozilla.org/static/img/favicon144.png\" alt=\"MDN logo\" />\n"
     },
     "document": {
       "nodeType": 9,
@@ -48,7 +48,21 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "role",
-                      "value": "presentation",
+                      "value": "img xyz",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "https://developer.mozilla.org/static/img/favicon144.png",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "alt",
+                      "value": "MDN logo",
                       "childNodes": []
                     }
                   ],

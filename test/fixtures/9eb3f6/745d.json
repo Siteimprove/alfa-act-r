@@ -1,10 +1,10 @@
 {
-  "id": "37e2",
+  "id": "745d",
   "outcome": "inapplicable",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/59796f/074ae6f9b4bf303291eae64dbffa0da5413310dc.html",
+      "url": "https://act-rules.github.io/testcases/9eb3f6/f9b9dad23c0ad60bef126ac4bba8a01b17a2d42f.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<input type=\"button\">My button</input>\n"
+      "body": "\n<img style=\"display:none;\" alt=\"\" />\n"
     },
     "document": {
       "nodeType": 9,
@@ -42,13 +42,20 @@
                 {
                   "nodeType": 1,
                   "prefix": null,
-                  "localName": "input",
+                  "localName": "img",
                   "attributes": [
                     {
                       "nodeType": 2,
                       "prefix": null,
-                      "localName": "type",
-                      "value": "button",
+                      "localName": "style",
+                      "value": "display:none;",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "alt",
+                      "value": "",
                       "childNodes": []
                     }
                   ],
@@ -57,7 +64,7 @@
                 },
                 {
                   "nodeType": 3,
-                  "data": "My button\n",
+                  "data": "\n",
                   "childNodes": []
                 }
               ]
