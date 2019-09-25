@@ -1,0 +1,593 @@
+{
+  "id": "422e",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/4b1c6c/8d8853da7cc4c5edba3c7c01ca2902b6d63bb0e5.html",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "body": "\n<iframe title=\"Contact us\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-one.html\"> </iframe>\n\n<iframe title=\"Contact us\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-three-same-as-page-one.html\"> </iframe>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "iframe",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "title",
+                      "value": "Contact us",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "/test-assets/iframe-unique-name-4b1c6c/page-one.html",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": " ",
+                      "childNodes": []
+                    }
+                  ],
+                  "contentDocument": {
+                    "nodeType": 9,
+                    "childNodes": [
+                      {
+                        "nodeType": 10,
+                        "name": "html",
+                        "publicId": "",
+                        "systemId": "",
+                        "childNodes": []
+                      },
+                      {
+                        "nodeType": 1,
+                        "prefix": null,
+                        "localName": "html",
+                        "attributes": [],
+                        "shadowRoot": null,
+                        "childNodes": [
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "head",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": [
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "meta",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "charset",
+                                    "value": "utf-8",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "meta",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "http-equiv",
+                                    "value": "X-UA-Compatible",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "content",
+                                    "value": "IE=edge",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "title",
+                                "attributes": [],
+                                "shadowRoot": null,
+                                "childNodes": [
+                                  {
+                                    "nodeType": 3,
+                                    "data": "Page One",
+                                    "childNodes": []
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "meta",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "name",
+                                    "value": "viewport",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "content",
+                                    "value": "width=device-width, initial-scale=1",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n\n",
+                                "childNodes": []
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": 3,
+                            "data": "\n",
+                            "childNodes": []
+                          },
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "body",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": [
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 8,
+                                "data": " Breadcrumb ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  Root > Page One\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "nav",
+                                "attributes": [],
+                                "shadowRoot": null,
+                                "childNodes": [
+                                  {
+                                    "nodeType": 3,
+                                    "data": "\n    ",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 1,
+                                    "prefix": null,
+                                    "localName": "ul",
+                                    "attributes": [],
+                                    "shadowRoot": null,
+                                    "childNodes": [
+                                      {
+                                        "nodeType": 3,
+                                        "data": "\n      ",
+                                        "childNodes": []
+                                      },
+                                      {
+                                        "nodeType": 1,
+                                        "prefix": null,
+                                        "localName": "li",
+                                        "attributes": [],
+                                        "shadowRoot": null,
+                                        "childNodes": [
+                                          {
+                                            "nodeType": 3,
+                                            "data": "Home",
+                                            "childNodes": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "nodeType": 3,
+                                        "data": "\n      ",
+                                        "childNodes": []
+                                      },
+                                      {
+                                        "nodeType": 1,
+                                        "prefix": null,
+                                        "localName": "li",
+                                        "attributes": [],
+                                        "shadowRoot": null,
+                                        "childNodes": [
+                                          {
+                                            "nodeType": 3,
+                                            "data": "Contact",
+                                            "childNodes": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "nodeType": 3,
+                                        "data": "\n    ",
+                                        "childNodes": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "nodeType": 3,
+                                    "data": "\n  ",
+                                    "childNodes": []
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n\n",
+                                "childNodes": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "styleSheets": []
+                  }
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "iframe",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "title",
+                      "value": "Contact us",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "/test-assets/iframe-unique-name-4b1c6c/page-three-same-as-page-one.html",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": " ",
+                      "childNodes": []
+                    }
+                  ],
+                  "contentDocument": {
+                    "nodeType": 9,
+                    "childNodes": [
+                      {
+                        "nodeType": 10,
+                        "name": "html",
+                        "publicId": "",
+                        "systemId": "",
+                        "childNodes": []
+                      },
+                      {
+                        "nodeType": 1,
+                        "prefix": null,
+                        "localName": "html",
+                        "attributes": [],
+                        "shadowRoot": null,
+                        "childNodes": [
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "head",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": [
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "meta",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "charset",
+                                    "value": "utf-8",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "meta",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "http-equiv",
+                                    "value": "X-UA-Compatible",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "content",
+                                    "value": "IE=edge",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "title",
+                                "attributes": [],
+                                "shadowRoot": null,
+                                "childNodes": [
+                                  {
+                                    "nodeType": 3,
+                                    "data": "Page One",
+                                    "childNodes": []
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "meta",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "name",
+                                    "value": "viewport",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "content",
+                                    "value": "width=device-width, initial-scale=1",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n\n",
+                                "childNodes": []
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": 3,
+                            "data": "\n",
+                            "childNodes": []
+                          },
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "body",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": [
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "nav",
+                                "attributes": [],
+                                "shadowRoot": null,
+                                "childNodes": [
+                                  {
+                                    "nodeType": 3,
+                                    "data": "\n    ",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 1,
+                                    "prefix": null,
+                                    "localName": "ul",
+                                    "attributes": [],
+                                    "shadowRoot": null,
+                                    "childNodes": [
+                                      {
+                                        "nodeType": 3,
+                                        "data": "\n      ",
+                                        "childNodes": []
+                                      },
+                                      {
+                                        "nodeType": 1,
+                                        "prefix": null,
+                                        "localName": "li",
+                                        "attributes": [],
+                                        "shadowRoot": null,
+                                        "childNodes": [
+                                          {
+                                            "nodeType": 3,
+                                            "data": "Home",
+                                            "childNodes": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "nodeType": 3,
+                                        "data": "\n      ",
+                                        "childNodes": []
+                                      },
+                                      {
+                                        "nodeType": 1,
+                                        "prefix": null,
+                                        "localName": "li",
+                                        "attributes": [],
+                                        "shadowRoot": null,
+                                        "childNodes": [
+                                          {
+                                            "nodeType": 3,
+                                            "data": "Contact",
+                                            "childNodes": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "nodeType": 3,
+                                        "data": "\n    ",
+                                        "childNodes": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "nodeType": 3,
+                                    "data": "\n  ",
+                                    "childNodes": []
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n\n",
+                                "childNodes": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "styleSheets": []
+                  }
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

@@ -26,7 +26,11 @@ test(fixture, Rules.SIA_R3, "3ea0c8");
 
 test(fixture, Rules.SIA_R4, "b5c3f8");
 
-test(fixture, Rules.SIA_R5, "bf051a");
+test(fixture, Rules.SIA_R5, "bf051a", {
+  skip: [
+    "373a" // https://github.com/act-rules/act-rules.github.io/pull/934
+  ]
+});
 
 test(fixture, Rules.SIA_R6, "5b7ae0");
 
@@ -70,7 +74,7 @@ test(fixture, Rules.SIA_R14, "2ee8b8", {
 
 test(fixture, Rules.SIA_R15, "4b1c6c", {
   answers: {
-    "303d": [
+    f589: [
       {
         target: "//iframe",
         type: "boolean",
@@ -78,7 +82,7 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: false
       }
     ],
-    d7c0: [
+    "9759": [
       {
         target: "//iframe",
         type: "boolean",
@@ -86,7 +90,39 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: true
       }
     ],
-    "6375": [
+    "49f6": [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "422e": [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "2bf0": [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "2750": [
+      {
+        target: "//iframe",
+        type: "boolean",
+        question: "embed-equivalent-resources",
+        answer: true
+      }
+    ],
+    "175f": [
       {
         target: "//iframe",
         type: "boolean",
@@ -94,44 +130,12 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
         answer: false
       }
     ],
-    "231d": [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    f8e4: [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    e484: [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
-      }
-    ],
-    d813: [
+    "13c2": [
       {
         target: "//iframe",
         type: "boolean",
         question: "embed-equivalent-resources",
         answer: false
-      }
-    ],
-    df76: [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true
       }
     ]
   }
@@ -300,3 +304,12 @@ test(fixture, Rules.SIA_R41, "b20e66", {
     ]
   }
 });
+
+test(fixture, Rules.SIA_R44, "b33eff", {
+  skip: [
+    "f722", // https://github.com/act-rules/act-rules.github.io/pull/942
+    "6d91"
+  ]
+});
+
+test(fixture, Rules.SIA_R47, "b4f0c3");

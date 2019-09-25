@@ -1,0 +1,453 @@
+{
+  "id": "f7d1",
+  "outcome": "inapplicable",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/4b1c6c/a3d6f56f0c388cad7192425a824e5dd9a87edb00.html",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "body": "\n<iframe id=\"level1-frame1\" title=\"List of Contributors\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-one.html\">\n</iframe>\n<iframe\n\tid=\"level1-frame2\"\n\ttitle=\"List of Contributors 2\"\n\tsrc=\"/test-assets/iframe-unique-name-4b1c6c/page-with-iframe.html\"\n>\n\t<!--\n  Content of document includes an iframe:\n  \n  <iframe id=\"level2-frame1\" title=\"List of Contributors\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-one.html\">\n  </iframe>\n  -->\n</iframe>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "iframe",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "level1-frame1",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "title",
+                      "value": "List of Contributors",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "/test-assets/iframe-unique-name-4b1c6c/page-one.html",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n",
+                      "childNodes": []
+                    }
+                  ],
+                  "contentDocument": {
+                    "nodeType": 9,
+                    "childNodes": [
+                      {
+                        "nodeType": 10,
+                        "name": "html",
+                        "publicId": "",
+                        "systemId": "",
+                        "childNodes": []
+                      },
+                      {
+                        "nodeType": 1,
+                        "prefix": null,
+                        "localName": "html",
+                        "attributes": [],
+                        "shadowRoot": null,
+                        "childNodes": [
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "head",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": [
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "meta",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "charset",
+                                    "value": "utf-8",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "meta",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "http-equiv",
+                                    "value": "X-UA-Compatible",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "content",
+                                    "value": "IE=edge",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "title",
+                                "attributes": [],
+                                "shadowRoot": null,
+                                "childNodes": [
+                                  {
+                                    "nodeType": 3,
+                                    "data": "Page One",
+                                    "childNodes": []
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "meta",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "name",
+                                    "value": "viewport",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "content",
+                                    "value": "width=device-width, initial-scale=1",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n\n",
+                                "childNodes": []
+                              }
+                            ]
+                          },
+                          {
+                            "nodeType": 3,
+                            "data": "\n",
+                            "childNodes": []
+                          },
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "body",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": [
+                              {
+                                "nodeType": 3,
+                                "data": "\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 8,
+                                "data": " Breadcrumb ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n  Root > Page One\n  ",
+                                "childNodes": []
+                              },
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "nav",
+                                "attributes": [],
+                                "shadowRoot": null,
+                                "childNodes": [
+                                  {
+                                    "nodeType": 3,
+                                    "data": "\n    ",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 1,
+                                    "prefix": null,
+                                    "localName": "ul",
+                                    "attributes": [],
+                                    "shadowRoot": null,
+                                    "childNodes": [
+                                      {
+                                        "nodeType": 3,
+                                        "data": "\n      ",
+                                        "childNodes": []
+                                      },
+                                      {
+                                        "nodeType": 1,
+                                        "prefix": null,
+                                        "localName": "li",
+                                        "attributes": [],
+                                        "shadowRoot": null,
+                                        "childNodes": [
+                                          {
+                                            "nodeType": 3,
+                                            "data": "Home",
+                                            "childNodes": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "nodeType": 3,
+                                        "data": "\n      ",
+                                        "childNodes": []
+                                      },
+                                      {
+                                        "nodeType": 1,
+                                        "prefix": null,
+                                        "localName": "li",
+                                        "attributes": [],
+                                        "shadowRoot": null,
+                                        "childNodes": [
+                                          {
+                                            "nodeType": 3,
+                                            "data": "Contact",
+                                            "childNodes": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "nodeType": 3,
+                                        "data": "\n    ",
+                                        "childNodes": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "nodeType": 3,
+                                    "data": "\n  ",
+                                    "childNodes": []
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n\n",
+                                "childNodes": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "styleSheets": []
+                  }
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "iframe",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "level1-frame2",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "title",
+                      "value": "List of Contributors 2",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "/test-assets/iframe-unique-name-4b1c6c/page-with-iframe.html",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\t<!--\n  Content of document includes an iframe:\n  \n  <iframe id=\"level2-frame1\" title=\"List of Contributors\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-one.html\">\n  ",
+                      "childNodes": []
+                    }
+                  ],
+                  "contentDocument": {
+                    "nodeType": 9,
+                    "childNodes": [
+                      {
+                        "nodeType": 1,
+                        "prefix": null,
+                        "localName": "html",
+                        "attributes": [],
+                        "shadowRoot": null,
+                        "childNodes": [
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "head",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": []
+                          },
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "body",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": [
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "iframe",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "id",
+                                    "value": "level2-frame1",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "title",
+                                    "value": "List of Contributors",
+                                    "childNodes": []
+                                  },
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "src",
+                                    "value": "/test-assets/iframe-unique-name/page-one.html",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": [
+                                  {
+                                    "nodeType": 3,
+                                    "data": " ",
+                                    "childNodes": []
+                                  }
+                                ]
+                              },
+                              {
+                                "nodeType": 3,
+                                "data": "\n",
+                                "childNodes": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "styleSheets": []
+                  }
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n  -->\n\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

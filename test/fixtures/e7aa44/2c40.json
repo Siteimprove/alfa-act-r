@@ -1,0 +1,115 @@
+{
+  "id": "2c40",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e7aa44/dc12fde101f79c833e6c85b7642116745f8bb576.html",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "body": "\n<audio data-rule-target src=\"/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n<p>\n\tThe above audio contains the following speech: We choose to go to the moon in this decade and do the other things, not\n\tbecause they are easy, but because they are hard, because that goal will serve to organize and measure the best of our\n\tenergies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone,\n\tand one which we intend to win, and the others, too.\n</p>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "audio",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "data-rule-target",
+                      "value": "",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "src",
+                      "value": "/test-assets/moon-audio/moon-speech.mp3",
+                      "childNodes": []
+                    },
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "controls",
+                      "value": "",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "p",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tThe above audio contains the following speech: We choose to go to the moon in this decade and do the other things, not\n\tbecause they are easy, but because they are hard, because that goal will serve to organize and measure the best of our\n\tenergies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone,\n\tand one which we intend to win, and the others, too.\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}
