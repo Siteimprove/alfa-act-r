@@ -147,11 +147,7 @@ test(fixture, Rules.SIA_R17, "6cfa84");
 
 test(fixture, Rules.SIA_R18, "5c01ea");
 
-test(fixture, Rules.SIA_R19, "6a7281", {
-  skip: [
-    "5569" // https://github.com/act-rules/act-rules.github.io/pull/745
-  ]
-});
+test(fixture, Rules.SIA_R19, "6a7281");
 
 test(fixture, Rules.SIA_R20, "5f99a7");
 
@@ -305,11 +301,6 @@ test(fixture, Rules.SIA_R41, "b20e66", {
   }
 });
 
-test(fixture, Rules.SIA_R44, "b33eff", {
-  skip: [
-    "f722", // https://github.com/act-rules/act-rules.github.io/pull/942
-    "6d91"
-  ]
-});
+test(fixture, Rules.SIA_R44, "b33eff");
 
 test(fixture, Rules.SIA_R47, "b4f0c3");

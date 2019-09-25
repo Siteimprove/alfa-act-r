@@ -1,10 +1,10 @@
 {
-  "id": "5569",
+  "id": "9f6d",
   "outcome": "inapplicable",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/6a7281/64d445158585196ed6368b7165b8d36919fe0349.html",
+      "url": "https://act-rules.github.io/testcases/6a7281/ae78affd9ba70da8f5c3ab5f3851167939e689a7.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<div role=\"checkbox\" aria-checked aria-label=\"Accept terms and conditions\"></div>\n"
+      "body": "\n<div role=\"checkbox\" aria-checked>Accept terms and conditions</div>\n"
     },
     "document": {
       "nodeType": 9,
@@ -57,17 +57,16 @@
                       "localName": "aria-checked",
                       "value": "",
                       "childNodes": []
-                    },
-                    {
-                      "nodeType": 2,
-                      "prefix": null,
-                      "localName": "aria-label",
-                      "value": "Accept terms and conditions",
-                      "childNodes": []
                     }
                   ],
                   "shadowRoot": null,
-                  "childNodes": []
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "Accept terms and conditions",
+                      "childNodes": []
+                    }
+                  ]
                 },
                 {
                   "nodeType": 3,

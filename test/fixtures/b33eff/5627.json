@@ -1,10 +1,10 @@
 {
-  "id": "6d91",
+  "id": "5627",
   "outcome": "failed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/b33eff/53e4a8847c1be808b34c1a723d24f4ab28d17485.html",
+      "url": "https://act-rules.github.io/testcases/b33eff/0ac7841fba568c64ef44aaf0817f51508603cf4a.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<link rel=\"stylesheet\" href=\"../test-assets/b33eff/style.css\" />\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>\n"
+      "body": "\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<link rel=\"stylesheet\" href=\"/test-assets/b33eff/style.css\" />\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>\n"
     },
     "document": {
       "nodeType": 9,
@@ -79,7 +79,7 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "href",
-                      "value": "../test-assets/b33eff/style.css",
+                      "value": "/test-assets/b33eff/style.css",
                       "childNodes": []
                     }
                   ],
@@ -115,7 +115,26 @@
           ]
         }
       ],
-      "styleSheets": []
+      "styleSheets": [
+        {
+          "disabled": false,
+          "cssRules": [
+            {
+              "type": 4,
+              "cssRules": [
+                {
+                  "type": 1,
+                  "selectorText": "html",
+                  "style": {
+                    "cssText": "transform: rotate(1.5708rad);"
+                  }
+                }
+              ],
+              "conditionText": "(orientation: portrait)"
+            }
+          ]
+        }
+      ]
     },
     "device": {
       "type": "screen",
