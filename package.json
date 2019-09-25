@@ -5,10 +5,10 @@
     "vendor/alfa/packages/*"
   ],
   "scripts": {
-    "fixtures": "node scripts/fixtures",
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "test": "ava"
+    "test": "ava",
+    "fixtures": "node scripts/fixtures.js"
   },
   "devDependencies": {
     "@types/node": "^12.0.8",
