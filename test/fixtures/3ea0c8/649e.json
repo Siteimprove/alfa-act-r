@@ -1,0 +1,144 @@
+{
+  "id": "649e",
+  "outcome": "passed",
+  "aspects": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/3ea0c8/9976a79f227212ff02ea4285ca45840358380c49.html",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "body": "\n<div id=\"my-elt\"></div>\n<div id=\"host\"></div>\n<script>\n\tvar host = document.getElementById('host')\n\tvar shadow = host.attachShadow({ mode: 'open' })\n\tshadow.innerHTML = '<b id=\"my-elt\"></b>'\n</script>\n"
+    },
+    "document": {
+      "nodeType": 9,
+      "childNodes": [
+        {
+          "nodeType": 1,
+          "prefix": null,
+          "localName": "html",
+          "attributes": [],
+          "shadowRoot": null,
+          "childNodes": [
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "head",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": []
+            },
+            {
+              "nodeType": 1,
+              "prefix": null,
+              "localName": "body",
+              "attributes": [],
+              "shadowRoot": null,
+              "childNodes": [
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "my-elt",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "div",
+                  "attributes": [
+                    {
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "id",
+                      "value": "host",
+                      "childNodes": []
+                    }
+                  ],
+                  "shadowRoot": {
+                    "nodeType": 11,
+                    "childNodes": [
+                      {
+                        "nodeType": 1,
+                        "prefix": null,
+                        "localName": "b",
+                        "attributes": [
+                          {
+                            "nodeType": 2,
+                            "prefix": null,
+                            "localName": "id",
+                            "value": "my-elt",
+                            "childNodes": []
+                          }
+                        ],
+                        "shadowRoot": null,
+                        "childNodes": []
+                      }
+                    ],
+                    "mode": "open",
+                    "styleSheets": []
+                  },
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                },
+                {
+                  "nodeType": 1,
+                  "prefix": null,
+                  "localName": "script",
+                  "attributes": [],
+                  "shadowRoot": null,
+                  "childNodes": [
+                    {
+                      "nodeType": 3,
+                      "data": "\n\tvar host = document.getElementById('host')\n\tvar shadow = host.attachShadow({ mode: 'open' })\n\tshadow.innerHTML = '<b id=\"my-elt\"></b>'\n",
+                      "childNodes": []
+                    }
+                  ]
+                },
+                {
+                  "nodeType": 3,
+                  "data": "\n",
+                  "childNodes": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "styleSheets": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1
+      }
+    }
+  }
+}

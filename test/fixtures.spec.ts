@@ -68,6 +68,14 @@ test(fixture, Rules.SIA_R14, "2ee8b8", {
         question: "is-human-language",
         answer: true
       }
+    ],
+    "87c5": [
+      {
+        target: "//button",
+        type: "boolean",
+        question: "is-human-language",
+        answer: false
+      }
     ]
   }
 });

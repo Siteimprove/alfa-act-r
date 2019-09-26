@@ -1,10 +1,10 @@
 {
-  "id": "ad79",
+  "id": "705b",
   "outcome": "passed",
   "aspects": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/3ea0c8/9a11d581d79358cc96921ebd6cc7108fe5eb8a57.html",
+      "url": "https://act-rules.github.io/testcases/3ea0c8/e796a3abd41c4ec8d7d4e507914324c3f27d0e1e.html",
       "headers": {}
     },
     "response": {
@@ -12,7 +12,7 @@
       "headers": {
         "content-type": "text/html; charset=utf-8"
       },
-      "body": "\n<div id=\"my-elm\"></div>\n<script>\n\tvar myElm = document.getElementById('my-elm')\n\tvar shadow = myElm.attachShadow({ mode: 'open' })\n\tshadow.innerHTML = '<b id=\"my-elm\" ><slot></slot></b>'\n</script>\n"
+      "body": "\n<div id=\"my-elt\"></div>\n<iframe srcdoc=\"<span id='my-elt'></span>\"></iframe>\n"
     },
     "document": {
       "nodeType": 9,
@@ -48,42 +48,11 @@
                       "nodeType": 2,
                       "prefix": null,
                       "localName": "id",
-                      "value": "my-elm",
+                      "value": "my-elt",
                       "childNodes": []
                     }
                   ],
-                  "shadowRoot": {
-                    "nodeType": 11,
-                    "childNodes": [
-                      {
-                        "nodeType": 1,
-                        "prefix": null,
-                        "localName": "b",
-                        "attributes": [
-                          {
-                            "nodeType": 2,
-                            "prefix": null,
-                            "localName": "id",
-                            "value": "my-elm",
-                            "childNodes": []
-                          }
-                        ],
-                        "shadowRoot": null,
-                        "childNodes": [
-                          {
-                            "nodeType": 1,
-                            "prefix": null,
-                            "localName": "slot",
-                            "attributes": [],
-                            "shadowRoot": null,
-                            "childNodes": []
-                          }
-                        ]
-                      }
-                    ],
-                    "mode": "open",
-                    "styleSheets": []
-                  },
+                  "shadowRoot": null,
                   "childNodes": []
                 },
                 {
@@ -94,16 +63,66 @@
                 {
                   "nodeType": 1,
                   "prefix": null,
-                  "localName": "script",
-                  "attributes": [],
-                  "shadowRoot": null,
-                  "childNodes": [
+                  "localName": "iframe",
+                  "attributes": [
                     {
-                      "nodeType": 3,
-                      "data": "\n\tvar myElm = document.getElementById('my-elm')\n\tvar shadow = myElm.attachShadow({ mode: 'open' })\n\tshadow.innerHTML = '<b id=\"my-elm\" ><slot></slot></b>'\n",
+                      "nodeType": 2,
+                      "prefix": null,
+                      "localName": "srcdoc",
+                      "value": "<span id='my-elt'></span>",
                       "childNodes": []
                     }
-                  ]
+                  ],
+                  "shadowRoot": null,
+                  "childNodes": [],
+                  "contentDocument": {
+                    "nodeType": 9,
+                    "childNodes": [
+                      {
+                        "nodeType": 1,
+                        "prefix": null,
+                        "localName": "html",
+                        "attributes": [],
+                        "shadowRoot": null,
+                        "childNodes": [
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "head",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": []
+                          },
+                          {
+                            "nodeType": 1,
+                            "prefix": null,
+                            "localName": "body",
+                            "attributes": [],
+                            "shadowRoot": null,
+                            "childNodes": [
+                              {
+                                "nodeType": 1,
+                                "prefix": null,
+                                "localName": "span",
+                                "attributes": [
+                                  {
+                                    "nodeType": 2,
+                                    "prefix": null,
+                                    "localName": "id",
+                                    "value": "my-elt",
+                                    "childNodes": []
+                                  }
+                                ],
+                                "shadowRoot": null,
+                                "childNodes": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "styleSheets": []
+                  }
                 },
                 {
                   "nodeType": 3,
