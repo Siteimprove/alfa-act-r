@@ -7,48 +7,60 @@ import { manifest } from "./helpers/manifest";
 const test = ava as TestInterface<Context>;
 
 test.before("Initialise context", t => {
-  t.context = { results: [] };
+  t.context = { outcomes: [] };
 });
 
 test.after("Write manifest", t => {
   manifest(t.context, "test/manifest.json");
 });
 
-test(fixture, Rules.SIA_R1, "2779a5");
+test(fixture, Rules.get("R1"), "2779a5");
 
-test(fixture, Rules.SIA_R2, "23a2a8", {
+test(fixture, Rules.get("R2"), "23a2a8", {
   skip: [
-    "61f3" // https://github.com/act-rules/act-rules.github.io/issues/446
+    "6efce7" // https://github.com/act-rules/act-rules.github.io/issues/446
   ]
 });
 
-test(fixture, Rules.SIA_R3, "3ea0c8");
+test(fixture, Rules.get("R3"), "3ea0c8");
 
-test(fixture, Rules.SIA_R4, "b5c3f8");
+test(fixture, Rules.get("R4"), "b5c3f8", {
+  skip: [
+    "936156" // Open issue, should be HTML
+  ]
+});
 
-test(fixture, Rules.SIA_R5, "bf051a", {
+test(fixture, Rules.get("R5"), "bf051a", {
   skip: [
     "373a" // https://github.com/act-rules/act-rules.github.io/pull/934
   ]
 });
 
-test(fixture, Rules.SIA_R6, "5b7ae0");
+test(fixture, Rules.get("R6"), "5b7ae0");
 
-test(fixture, Rules.SIA_R7, "de46e4");
+test(fixture, Rules.get("R7"), "de46e4");
 
-test(fixture, Rules.SIA_R8, "e086e5");
+test(fixture, Rules.get("R8"), "e086e5");
 
-test(fixture, Rules.SIA_R9, "bc659a");
+test(fixture, Rules.get("R9"), "bc659a");
 
-test(fixture, Rules.SIA_R10, "73f2c2");
+test(fixture, Rules.get("R10"), "73f2c2", {
+  skip: [
+    "1e955a" // Open issue, has widget role and so is applicable
+  ]
+});
 
-test(fixture, Rules.SIA_R11, "c487ae");
+test(fixture, Rules.get("R11"), "c487ae");
 
-test(fixture, Rules.SIA_R12, "97a4e1");
+test(fixture, Rules.get("R12"), "97a4e1", {
+  skip: [
+    "25bc5e" // Open issue, summary is not button per https://w3c.github.io/html-aam/#el-summary
+  ]
+});
 
-test(fixture, Rules.SIA_R13, "cae760");
+test(fixture, Rules.get("R13"), "cae760");
 
-test(fixture, Rules.SIA_R14, "2ee8b8", {
+test.skip(fixture, Rules.get("R14"), "2ee8b8", {
   skip: [
     "87c5" // https://github.com/act-rules/act-rules.github.io/pull/452
   ],
@@ -80,7 +92,7 @@ test(fixture, Rules.SIA_R14, "2ee8b8", {
   }
 });
 
-test(fixture, Rules.SIA_R15, "4b1c6c", {
+test.skip(fixture, Rules.get("R15"), "4b1c6c", {
   answers: {
     f589: [
       {
@@ -149,21 +161,25 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
   }
 });
 
-test(fixture, Rules.SIA_R16, "4e8ab6");
+test(fixture, Rules.get("R16"), "4e8ab6", {
+  skip: [
+    "7bda65" // Open issue, does not need to be in accessibility tree
+  ]
+});
 
-test(fixture, Rules.SIA_R17, "6cfa84");
+test(fixture, Rules.get("R17"), "6cfa84");
 
-test(fixture, Rules.SIA_R18, "5c01ea");
+test(fixture, Rules.get("R18"), "5c01ea");
 
-test(fixture, Rules.SIA_R19, "6a7281");
+test(fixture, Rules.get("R19"), "6a7281");
 
-test(fixture, Rules.SIA_R20, "5f99a7");
+test(fixture, Rules.get("R20"), "5f99a7");
 
-test(fixture, Rules.SIA_R21, "674b10");
+test(fixture, Rules.get("R21"), "674b10");
 
-test(fixture, Rules.SIA_R28, "59796f");
+test(fixture, Rules.get("R28"), "59796f");
 
-test(fixture, Rules.SIA_R39, "9eb3f6", {
+test.skip(fixture, Rules.get("R39"), "9eb3f6", {
   answers: {
     d6c3: [
       {
@@ -200,7 +216,7 @@ test(fixture, Rules.SIA_R39, "9eb3f6", {
   }
 });
 
-test(fixture, Rules.SIA_R41, "b20e66", {
+test.skip(fixture, Rules.get("R41"), "b20e66", {
   answers: {
     "5fa9": [
       {
@@ -309,6 +325,6 @@ test(fixture, Rules.SIA_R41, "b20e66", {
   }
 });
 
-test(fixture, Rules.SIA_R44, "b33eff");
+test.skip(fixture, Rules.get("R44"), "b33eff");
 
-test(fixture, Rules.SIA_R47, "b4f0c3");
+test(fixture, Rules.get("R47"), "b4f0c3");

@@ -1,5 +1,6 @@
-import { Aspect, Aspects, Target, Result } from "@siteimprove/alfa-act";
+import { Outcome } from "@siteimprove/alfa-act";
+import { Page } from "@siteimprove/alfa-web";
 
 export interface Context {
-  results: Array<{ aspects: Aspects; result: Result<Aspect, Target> }>;
+  outcomes: Array<Outcome<Page, unknown>>;
 }

@@ -1,0 +1,122 @@
+{
+  "id": "86adce",
+  "outcome": "failed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/c5a4ea/4e54c820ef620adc2937d2e3735a8d5ade0a96ae.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "status": 200,
+      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "body": "<!DOCTYPE html> <p>\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Either through preference or\n\tcircumstance. This is solved by keyboard compatibility. Keyboard compatibility is described in WCAG. See the video\n\tbelow to watch the same information again in video form.\n</p>\n<video src=\"/test-assets/perspective-video/perspective-video.mp4\" controls></video>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": [],
+          "children": [
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": [],
+              "children": [],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": [],
+              "children": [
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\tNot being able to use your computer because your mouse doesn't work, is frustrating. Either through preference or\n\tcircumstance. This is solved by keyboard compatibility. Keyboard compatibility is described in WCAG. See the video\n\tbelow to watch the same information again in video form.\n"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "video",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "/test-assets/perspective-video/perspective-video.mp4"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "style": [],
+                  "children": [],
+                  "shadow": null,
+                  "content": null
+                }
+              ],
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      }
+    }
+  }
+}

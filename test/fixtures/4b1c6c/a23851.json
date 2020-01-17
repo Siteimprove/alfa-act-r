@@ -1,0 +1,198 @@
+{
+  "id": "a23851",
+  "outcome": "inapplicable",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/4b1c6c/c93b4684fc5cadd2ed94846c96da9e862e7bcbdb.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "status": 200,
+      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "body": "<!DOCTYPE html> <div id=\"desc-for-title\">List of Contributors</div>\n<iframe aria-labelledby=\"desc-for-title\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-one.html\"> </iframe>\n\n<div id=\"desc-for-title1\">List of Reviewers</div>\n<iframe aria-labelledby=\"desc-for-title1\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-two.html\"> </iframe>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": [],
+          "children": [
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": [],
+              "children": [],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": [],
+              "children": [
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "desc-for-title"
+                    }
+                  ],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "List of Contributors"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "iframe",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-labelledby",
+                      "value": "desc-for-title"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "/test-assets/iframe-unique-name-4b1c6c/page-one.html"
+                    }
+                  ],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": " "
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n"
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "desc-for-title1"
+                    }
+                  ],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "List of Reviewers"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "iframe",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-labelledby",
+                      "value": "desc-for-title1"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "/test-assets/iframe-unique-name-4b1c6c/page-two.html"
+                    }
+                  ],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": " "
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                }
+              ],
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      }
+    }
+  }
+}

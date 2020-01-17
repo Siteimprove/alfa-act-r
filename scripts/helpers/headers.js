@@ -1,11 +1,11 @@
 const whitelist = require("./headers.json");
 
+/**
+ * @param {Iterable<[string, string]>} headers
+ * @return {Iterable<[string, string]>}
+ */
 function filter(headers) {
-  for (const header in headers) {
-    if (!whitelist.includes(header)) {
-      delete headers[header];
-    }
-  }
+  return [...headers].filter(([header]) => whitelist.includes(header));
 }
 
 exports.filter = filter;
