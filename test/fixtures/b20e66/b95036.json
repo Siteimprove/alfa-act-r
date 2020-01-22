@@ -9,6 +9,7 @@
       "body": ""
     },
     "response": {
+      "url": "https://act-rules.github.io/testcases/b20e66/b07430cf93197d7758985a59f8051756cf635f24.html",
       "status": 200,
       "headers": [["content-type", "text/html; charset=utf-8"]],
       "body": "<!DOCTYPE html> <a href=\"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html\">Contact us</a>\nall the time.\n\n<div id=\"host\">\n\t<span\n\t\t><a href=\"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html\"\n\t\t\t>Contact us</a\n\t\t>\n\t\tfrom the light.</span\n\t>\n</div>\n\n<script>\n\tconst host = document.getElementById('host')\n\tconst shadowRoot = host.attachShadow({ mode: 'open' })\n\n\tshadowRoot.innerHTML =\n\t\t'<a href=\"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html\">Contact us</a> from the shadow.'\n</script>"

@@ -9,6 +9,7 @@
       "body": ""
     },
     "response": {
+      "url": "https://act-rules.github.io/testcases/4b1c6c/4aba2ac4b984819ae29adc7be3d38a04b5391a42.html",
       "status": 200,
       "headers": [["content-type", "text/html; charset=utf-8"]],
       "body": "<!DOCTYPE html> <iframe id=\"always\" title=\"List of Contributors\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-one.html\"> </iframe>\n\n<div id=\"host\">\n\t<iframe id=\"light\" title=\"List of Contributors\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-two.html\"> </iframe>\n</div>\n\n<script>\n\tconst host = document.getElementById('host')\n\tconst shadowRoot = host.attachShadow({ mode: 'open' })\n\tshadowRoot.innerHTML =\n\t\t'<iframe id=\"shadow\" title=\"List of Contributors\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-one.html\"> </iframe>'\n</script>"

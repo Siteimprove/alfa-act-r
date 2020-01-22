@@ -9,6 +9,7 @@
       "body": ""
     },
     "response": {
+      "url": "https://act-rules.github.io/testcases/ff89c9/f4035ae5c598ec28d2321348b31e7e363c96c668.html",
       "status": 200,
       "headers": [["content-type", "text/html; charset=utf-8"]],
       "body": "<!DOCTYPE html> <div role=\"list\" aria-owns=\"item\"></div>\n\n<div id=\"host\"></div>\n\n<script>\n\tconst host = document.querySelector('#host')\n\tconst root = host.attachShadow({ mode: 'open' })\n\troot.innerHTML = '<div id=\"item\" role=\"listitem\">List item 1</div>'\n</script>"

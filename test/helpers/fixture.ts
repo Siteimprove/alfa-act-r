@@ -42,9 +42,11 @@ export async function fixture(
   t.plan(tests.length);
 
   for (const test of tests) {
+    const page = Page.from(test.page);
+
     const skip = options.skip && options.skip.includes(test.id);
 
-    const outcome = await Audit.of(Page.from(test.page))
+    const outcome = await Audit.of(page)
       .add(rule.get())
       .evaluate()
       .map(outcomes =>
@@ -85,7 +87,7 @@ export async function fixture(
       }
     }
 
-    t.context.outcomes.push(outcome);
+    t.context.outcomes.push([page, outcome]);
   }
 }
 

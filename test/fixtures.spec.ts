@@ -46,7 +46,8 @@ test(fixture, Rules.get("R9"), "bc659a");
 
 test(fixture, Rules.get("R10"), "73f2c2", {
   skip: [
-    "1e955a" // Open issue, has widget role and so is applicable
+    "1e955a", // Open issue, has widget role and so is applicable
+    "cd5127" // Alfa does not yet consider off-screened elements as hidden
   ]
 });
 
@@ -163,7 +164,11 @@ test.skip(fixture, Rules.get("R15"), "4b1c6c", {
 
 test(fixture, Rules.get("R16"), "4e8ab6", {
   skip: [
-    "7bda65" // Open issue, does not need to be in accessibility tree
+    "7bda65", // Open issue, does not need to be in accessibility tree
+
+    // Alfa intentionally diverges on these cases
+    "232ffb",
+    "cc955b"
   ]
 });
 
@@ -171,7 +176,11 @@ test(fixture, Rules.get("R17"), "6cfa84");
 
 test(fixture, Rules.get("R18"), "5c01ea");
 
-test(fixture, Rules.get("R19"), "6a7281");
+test(fixture, Rules.get("R19"), "6a7281", {
+  skip: [
+    "0a0ff1" // Alfa does not yet check ID and ID reference attributes
+  ]
+});
 
 test(fixture, Rules.get("R20"), "5f99a7");
 
