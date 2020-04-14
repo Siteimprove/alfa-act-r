@@ -6,6 +6,7 @@ import { ExecutionContext } from "ava";
 import { Audit, Rule, Outcome } from "@siteimprove/alfa-act";
 import { Option } from "@siteimprove/alfa-option";
 import { Page } from "@siteimprove/alfa-web";
+
 import * as xpath from "@siteimprove/alfa-xpath";
 
 import { Context } from "./context";
@@ -19,6 +20,7 @@ export interface FixtureAnswer {
 
 export interface FixtureOptions {
   skip?: Array<string>;
+  only?: Array<string>;
   answers?: {
     [fixture: string]: Array<FixtureAnswer>;
   };
@@ -26,7 +28,7 @@ export interface FixtureOptions {
 
 export async function fixture(
   t: ExecutionContext<Context>,
-  rule: Option<Rule<Page, unknown>>,
+  rule: Option<Rule<Page, unknown, any>>,
   fixture: string,
   options: FixtureOptions = {}
 ): Promise<void> {
@@ -94,7 +96,7 @@ export async function fixture(
 export namespace fixture {
   export function title(
     title: string = "",
-    rule: Rule<any, any>,
+    rule: Rule<any, any, any>,
     fixture: string,
     options?: FixtureOptions
   ): string {

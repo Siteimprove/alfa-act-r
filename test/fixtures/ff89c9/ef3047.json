@@ -96,7 +96,44 @@
                   ],
                   "style": [],
                   "children": [],
-                  "shadow": null,
+                  "shadow": {
+                    "type": "shadow",
+                    "children": [
+                      {
+                        "type": "element",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "prefix": null,
+                        "name": "div",
+                        "attributes": [
+                          {
+                            "type": "attribute",
+                            "namespace": null,
+                            "prefix": null,
+                            "name": "id",
+                            "value": "item"
+                          },
+                          {
+                            "type": "attribute",
+                            "namespace": null,
+                            "prefix": null,
+                            "name": "role",
+                            "value": "listitem"
+                          }
+                        ],
+                        "style": [],
+                        "children": [
+                          {
+                            "type": "text",
+                            "data": "List item 1"
+                          }
+                        ],
+                        "shadow": null,
+                        "content": null
+                      }
+                    ],
+                    "mode": "open",
+                    "style": []
+                  },
                   "content": null
                 },
                 {

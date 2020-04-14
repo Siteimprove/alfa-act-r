@@ -95,7 +95,75 @@
                   "style": [],
                   "children": [],
                   "shadow": null,
-                  "content": null
+                  "content": {
+                    "type": "document",
+                    "children": [
+                      {
+                        "type": "element",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "prefix": null,
+                        "name": "html",
+                        "attributes": [],
+                        "style": [],
+                        "children": [
+                          {
+                            "type": "element",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "prefix": null,
+                            "name": "head",
+                            "attributes": [],
+                            "style": [],
+                            "children": [],
+                            "shadow": null,
+                            "content": null
+                          },
+                          {
+                            "type": "element",
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "prefix": null,
+                            "name": "body",
+                            "attributes": [],
+                            "style": [],
+                            "children": [
+                              {
+                                "type": "element",
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "prefix": null,
+                                "name": "a",
+                                "attributes": [
+                                  {
+                                    "type": "attribute",
+                                    "namespace": null,
+                                    "prefix": null,
+                                    "name": "href",
+                                    "value": "/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html"
+                                  }
+                                ],
+                                "style": [],
+                                "children": [
+                                  {
+                                    "type": "text",
+                                    "data": "Contact us"
+                                  }
+                                ],
+                                "shadow": null,
+                                "content": null
+                              },
+                              {
+                                "type": "text",
+                                "data": " from the iframe"
+                              }
+                            ],
+                            "shadow": null,
+                            "content": null
+                          }
+                        ],
+                        "shadow": null,
+                        "content": null
+                      }
+                    ],
+                    "style": []
+                  }
                 }
               ],
               "shadow": null,
