@@ -1,6 +1,5 @@
 import * as fs from "fs";
 
-import { toJSON } from "@siteimprove/alfa-act";
 import { List } from "@siteimprove/alfa-json-ld";
 
 import { Context } from "./context";
@@ -8,28 +7,18 @@ import { Context } from "./context";
 export function manifest(context: Context, out: string) {
   const graph: List = [];
 
-  for (const { aspects, result } of context.results) {
-    graph.push(...toJSON([result], aspects));
-  }
+  for (const [page, outcome] of context.outcomes) {
+    const subject = page.toEARL();
 
-  const seen = new Set<string>();
+    graph.push(subject);
 
-  for (let i = 0, n = graph.length; i < n; i++) {
-    const node = graph[i];
+    const assertion = outcome.toEARL();
 
-    if (node !== null && typeof node === "object") {
-      const id = node["@id"];
+    assertion["earl:subject"] = {
+      "@id": subject["@id"]
+    };
 
-      if (id !== undefined && typeof id === "string") {
-        if (seen.has(id)) {
-          graph.splice(i, 1);
-          i--;
-          n--;
-        } else {
-          seen.add(id);
-        }
-      }
-    }
+    graph.push(assertion);
   }
 
   fs.writeFileSync(out, JSON.stringify(graph, null, 2));

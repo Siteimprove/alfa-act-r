@@ -1,0 +1,113 @@
+{
+  "id": "8ff0b1",
+  "outcome": "inapplicable",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/bc4a75/e21d0d46c0b0ff778e6600b9417a9f061c40a34d.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://act-rules.github.io/testcases/bc4a75/e21d0d46c0b0ff778e6600b9417a9f061c40a34d.html",
+      "status": 200,
+      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "body": "<!DOCTYPE html> <ul>\n\t<li>Item 1</li>\n</ul>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": [],
+          "children": [
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": [],
+              "children": [],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": [],
+              "children": [
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "ul",
+                  "attributes": [],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "li",
+                      "attributes": [],
+                      "style": [],
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Item 1"
+                        }
+                      ],
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                }
+              ],
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      }
+    }
+  }
+}

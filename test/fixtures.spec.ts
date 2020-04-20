@@ -7,50 +7,79 @@ import { manifest } from "./helpers/manifest";
 const test = ava as TestInterface<Context>;
 
 test.before("Initialise context", t => {
-  t.context = { results: [] };
+  t.context = { outcomes: [] };
 });
 
 test.after("Write manifest", t => {
   manifest(t.context, "test/manifest.json");
 });
 
-test(fixture, Rules.SIA_R1, "2779a5");
+test(fixture, Rules.get("R1"), "2779a5");
 
-test(fixture, Rules.SIA_R2, "23a2a8", {
+test(fixture, Rules.get("R2"), "23a2a8", {
   skip: [
-    "61f3" // https://github.com/act-rules/act-rules.github.io/issues/446
+    // Alfa intentionally diverges on these cases
+    // -> Presentational <img> elements are not applicable
+    "cf095f",
+    "383c36",
+    "329274"
   ]
 });
 
-test(fixture, Rules.SIA_R3, "3ea0c8");
+test(fixture, Rules.get("R3"), "3ea0c8");
 
-test(fixture, Rules.SIA_R4, "b5c3f8");
-
-test(fixture, Rules.SIA_R5, "bf051a", {
+test(fixture, Rules.get("R4"), "b5c3f8", {
   skip: [
-    "373a" // https://github.com/act-rules/act-rules.github.io/pull/934
+    // Open issue, should be HTML and not XML
+    "936156"
   ]
 });
 
-test(fixture, Rules.SIA_R6, "5b7ae0");
-
-test(fixture, Rules.SIA_R7, "de46e4");
-
-test(fixture, Rules.SIA_R8, "e086e5");
-
-test(fixture, Rules.SIA_R9, "bc659a");
-
-test(fixture, Rules.SIA_R10, "73f2c2");
-
-test(fixture, Rules.SIA_R11, "c487ae");
-
-test(fixture, Rules.SIA_R12, "97a4e1");
-
-test(fixture, Rules.SIA_R13, "cae760");
-
-test(fixture, Rules.SIA_R14, "2ee8b8", {
+test(fixture, Rules.get("R5"), "bf051a", {
   skip: [
-    "87c5" // https://github.com/act-rules/act-rules.github.io/pull/452
+    // https://github.com/act-rules/act-rules.github.io/pull/934
+    "373a"
+  ]
+});
+
+test(fixture, Rules.get("R6"), "5b7ae0");
+
+test(fixture, Rules.get("R7"), "de46e4");
+
+test(fixture, Rules.get("R8"), "e086e5");
+
+test(fixture, Rules.get("R9"), "bc659a");
+
+test(fixture, Rules.get("R10"), "73f2c2", {
+  skip: [
+    // Open issue, has widget role and so is applicable
+    "1e955a",
+
+    // Alfa does not yet consider off-screened elements as hidden
+    "cd5127"
+  ]
+});
+
+test(fixture, Rules.get("R11"), "c487ae");
+
+test(fixture, Rules.get("R12"), "97a4e1", {
+  skip: [
+    // Open issue, summary is not button per https://w3c.github.io/html-aam/#el-summary
+    "25bc5e"
+  ]
+});
+
+test(fixture, Rules.get("R13"), "cae760", {
+  skip: [
+    // https://github.com/act-rules/act-rules.github.io/issues/1170
+    "d4947f"
+  ]
+});
+
+test.skip(fixture, Rules.get("R14"), "2ee8b8", {
+  skip: [
+    // https://github.com/act-rules/act-rules.github.io/pull/452
+    "87c5"
   ],
   answers: {
     "0643": [
@@ -80,7 +109,7 @@ test(fixture, Rules.SIA_R14, "2ee8b8", {
   }
 });
 
-test(fixture, Rules.SIA_R15, "4b1c6c", {
+test.skip(fixture, Rules.get("R15"), "4b1c6c", {
   answers: {
     f589: [
       {
@@ -149,21 +178,39 @@ test(fixture, Rules.SIA_R15, "4b1c6c", {
   }
 });
 
-test(fixture, Rules.SIA_R16, "4e8ab6");
+test(fixture, Rules.get("R16"), "4e8ab6", {
+  skip: [
+    // Open issue, does not need to be in accessibility tree
+    "7bda65",
 
-test(fixture, Rules.SIA_R17, "6cfa84");
+    // Alfa intentionally diverges on these cases
+    // -> R16 is also applicable to native elements with implicit semantics
+    "232ffb",
+    "cc955b",
+    // -> `combobox` only requires `aria-controls` when expanded
+    "2940fd",
+    "e6b6fc"
+  ]
+});
 
-test(fixture, Rules.SIA_R18, "5c01ea");
+test(fixture, Rules.get("R17"), "6cfa84");
 
-test(fixture, Rules.SIA_R19, "6a7281");
+test(fixture, Rules.get("R18"), "5c01ea");
 
-test(fixture, Rules.SIA_R20, "5f99a7");
+test(fixture, Rules.get("R19"), "6a7281", {
+  skip: [
+    // Alfa does not yet check ID and ID reference attributes
+    "0a0ff1"
+  ]
+});
 
-test(fixture, Rules.SIA_R21, "674b10");
+test(fixture, Rules.get("R20"), "5f99a7");
 
-test(fixture, Rules.SIA_R28, "59796f");
+test(fixture, Rules.get("R21"), "674b10");
 
-test(fixture, Rules.SIA_R39, "9eb3f6", {
+test(fixture, Rules.get("R28"), "59796f");
+
+test.skip(fixture, Rules.get("R39"), "9eb3f6", {
   answers: {
     d6c3: [
       {
@@ -200,7 +247,7 @@ test(fixture, Rules.SIA_R39, "9eb3f6", {
   }
 });
 
-test(fixture, Rules.SIA_R41, "b20e66", {
+test.skip(fixture, Rules.get("R41"), "b20e66", {
   answers: {
     "5fa9": [
       {
@@ -309,6 +356,45 @@ test(fixture, Rules.SIA_R41, "b20e66", {
   }
 });
 
-test(fixture, Rules.SIA_R44, "b33eff");
+test(fixture, Rules.get("R42"), "ff89c9", {
+  skip: [
+    // https://github.com/Siteimprove/alfa/issues/173
+    "fadda3",
+    "46205c",
 
-test(fixture, Rules.SIA_R47, "b4f0c3");
+    // Alfa intentionally diverges on these cases
+    "997565",
+    "5a9eba"
+  ]
+});
+
+test(fixture, Rules.get("R43"), "7d6734", {
+  skip: [
+    // Need to investigate these cases
+    "f9ea1e",
+    "33c47e"
+  ]
+});
+
+test(fixture, Rules.get("R44"), "b33eff");
+
+test(fixture, Rules.get("R47"), "b4f0c3");
+
+test(fixture, Rules.get("R64"), "ffd0e9");
+
+// test.only(fixture, Rules.get("R69"), "afw4f7", {
+//   skip: [
+//     // https://github.com/act-rules/act-rules.github.io/issues/1168
+//     "a7c03f",
+
+//     // Alfa does not yet account for `text-shadow`
+//     "3805f1",
+
+//     // Alfa does not yet consider off-screened elements as hidden
+//     "97803e",
+
+//     // Alfa intentionally diverges on these cases
+//     // -> Alfa assumes that non-human language text is marked as presentational
+//     "2f71bb"
+//   ]
+// });

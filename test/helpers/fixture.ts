@@ -1,17 +1,13 @@
 import * as path from "path";
 import * as fs from "fs";
+
 import { ExecutionContext } from "ava";
 
-import {
-  Answer,
-  Rule,
-  Result,
-  Outcome,
-  QuestionType,
-  audit
-} from "@siteimprove/alfa-act";
-import { Seq } from "@siteimprove/alfa-collection";
-import { evaluate } from "@siteimprove/alfa-xpath";
+import { Audit, Rule, Outcome } from "@siteimprove/alfa-act";
+import { Option } from "@siteimprove/alfa-option";
+import { Page } from "@siteimprove/alfa-web";
+
+import * as xpath from "@siteimprove/alfa-xpath";
 
 import { Context } from "./context";
 
@@ -24,17 +20,18 @@ export interface FixtureAnswer {
 
 export interface FixtureOptions {
   skip?: Array<string>;
+  only?: Array<string>;
   answers?: {
     [fixture: string]: Array<FixtureAnswer>;
   };
 }
 
-export function fixture(
+export async function fixture(
   t: ExecutionContext<Context>,
-  rule: Rule<any, any>,
+  rule: Option<Rule<Page, unknown, any>>,
   fixture: string,
   options: FixtureOptions = {}
-): void {
+): Promise<void> {
   const directory = path.join("test", "fixtures", fixture);
 
   const tests = fs
@@ -47,66 +44,59 @@ export function fixture(
   t.plan(tests.length);
 
   for (const test of tests) {
-    const answers: Array<Answer<any, any>> = (options.answers === undefined
-      ? []
-      : options.answers[test.id] === undefined
-      ? []
-      : options.answers[test.id]
-    ).map(answer => {
-      const aspect = test.aspects.document;
-      const target = [
-        ...evaluate(aspect, aspect, answer.target, { composed: true })
-      ];
-
-      return {
-        type: answer.type as QuestionType,
-        id: answer.question,
-        rule,
-        aspect,
-        target: target.length === 1 ? target[0] : target,
-        answer: answer.answer
-      };
-    });
+    const page = Page.from(test.page);
 
     const skip = options.skip && options.skip.includes(test.id);
 
-    const precedence: { [O in Outcome]: number } = {
-      [Outcome.Failed]: 3,
-      [Outcome.CantTell]: 2,
-      [Outcome.Passed]: 1,
-      [Outcome.Inapplicable]: 0
-    };
+    const outcome = await Audit.of(page)
+      .add(rule.get())
+      .evaluate()
+      .map(outcomes =>
+        [...outcomes]
+          .filter(outcome => outcome.rule === rule.get())
+          .reduce((outcome, candidate) => {
+            if (Outcome.isFailed(outcome)) {
+              return outcome;
+            }
 
-    const result = Seq(audit(test.aspects, [rule], answers).results)
-      .filter(result => result.rule === rule)
-      .reduce<Result<any, any>>((result, candidate) =>
-        precedence[candidate.outcome] > precedence[result.outcome]
-          ? candidate
-          : result
+            if (Outcome.isFailed(candidate)) {
+              return candidate;
+            }
+
+            if (Outcome.isPassed(outcome)) {
+              return outcome;
+            }
+
+            if (Outcome.isPassed(candidate)) {
+              return candidate;
+            }
+
+            return outcome;
+          })
       );
 
-    if (skip) {
-      t.is.skip(test.outcome, result.outcome, test.id);
-    } else {
-      t.is(test.outcome, result.outcome, test.id);
+    const expected = test.outcome;
+    const actual = outcome.toJSON().outcome;
 
-      if (test.outcome !== result.outcome) {
-        t.log("Result", result);
+    if (skip) {
+      t.is.skip(expected, actual, test.id);
+    } else {
+      t.is(expected, actual, test.id);
+
+      if (expected !== actual) {
+        t.log("Outcome", outcome.toJSON());
         t.log("Test", test);
       }
     }
 
-    t.context.results.push({
-      aspects: test.aspects,
-      result
-    });
+    t.context.outcomes.push([page, outcome]);
   }
 }
 
 export namespace fixture {
   export function title(
     title: string = "",
-    rule: Rule<any, any>,
+    rule: Rule<any, any, any>,
     fixture: string,
     options?: FixtureOptions
   ): string {

@@ -5,7 +5,7 @@ const axios = require("axios");
 const makeDir = require("make-dir");
 const del = require("del");
 
-const { Scraper } = require("@siteimprove/alfa-scrape");
+const { Scraper } = require("@siteimprove/alfa-scraper");
 
 const headers = require("./helpers/headers");
 
@@ -24,7 +24,7 @@ async function fetch(tests, out) {
     const directory = path.join(out, test.ruleId).toLowerCase();
     const url = new URL(test.url).href;
 
-    const id = digest(url).substring(0, 4);
+    const id = digest(url).substring(0, 6);
     const filename = id + ".json";
 
     test = {
@@ -41,7 +41,7 @@ async function fetch(tests, out) {
     }
   }
 
-  const scraper = new Scraper();
+  const scraper = await Scraper.of();
 
   for (const [directory, { tests }] of rules) {
     console.group(directory);
@@ -51,18 +51,20 @@ async function fetch(tests, out) {
     for (const { id, filename, url, outcome } of tests) {
       console.time(filename);
 
-      const aspects = await scraper.scrape(url, { timeout: 10000 });
+      const page = await scraper
+        .scrape(url, { timeout: 10000 })
+        .then(page => page.toJSON());
 
-      headers.filter(aspects.request.headers);
-      headers.filter(aspects.response.headers);
+      page.request.headers = headers.filter(page.request.headers);
+      page.response.headers = headers.filter(page.response.headers);
 
       const fixture = JSON.stringify(
         {
           id,
           outcome,
-          aspects
+          page
         },
-        null,
+        undefined,
         2
       );
 
