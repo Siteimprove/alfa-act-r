@@ -6,11 +6,11 @@ import { manifest } from "./helpers/manifest";
 
 const test = ava as TestInterface<Context>;
 
-test.before("Initialise context", t => {
+test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
 });
 
-test.after("Write manifest", t => {
+test.after("Write manifest", (t) => {
   manifest(t.context, "test/manifest.json");
 });
 
@@ -22,8 +22,8 @@ test(fixture, Rules.get("R2"), "23a2a8", {
     // -> Presentational <img> elements are not applicable
     "cf095f",
     "383c36",
-    "329274"
-  ]
+    "329274",
+  ],
 });
 
 test(fixture, Rules.get("R3"), "3ea0c8");
@@ -31,15 +31,15 @@ test(fixture, Rules.get("R3"), "3ea0c8");
 test(fixture, Rules.get("R4"), "b5c3f8", {
   skip: [
     // Open issue, should be HTML and not XML
-    "936156"
-  ]
+    "936156",
+  ],
 });
 
 test(fixture, Rules.get("R5"), "bf051a", {
   skip: [
     // https://github.com/act-rules/act-rules.github.io/pull/934
-    "373a"
-  ]
+    "373a",
+  ],
 });
 
 test(fixture, Rules.get("R6"), "5b7ae0");
@@ -56,8 +56,8 @@ test(fixture, Rules.get("R10"), "73f2c2", {
     "1e955a",
 
     // Alfa does not yet consider off-screened elements as hidden
-    "cd5127"
-  ]
+    "cd5127",
+  ],
 });
 
 test(fixture, Rules.get("R11"), "c487ae");
@@ -65,21 +65,22 @@ test(fixture, Rules.get("R11"), "c487ae");
 test(fixture, Rules.get("R12"), "97a4e1", {
   skip: [
     // Open issue, summary is not button per https://w3c.github.io/html-aam/#el-summary
-    "25bc5e"
-  ]
+    "25bc5e",
+  ],
 });
 
 test(fixture, Rules.get("R13"), "cae760", {
   skip: [
     // https://github.com/act-rules/act-rules.github.io/issues/1170
-    "d4947f"
-  ]
+    "d4947f",
+    "b39305",
+  ],
 });
 
 test.skip(fixture, Rules.get("R14"), "2ee8b8", {
   skip: [
     // https://github.com/act-rules/act-rules.github.io/pull/452
-    "87c5"
+    "87c5",
   ],
   answers: {
     "0643": [
@@ -87,26 +88,26 @@ test.skip(fixture, Rules.get("R14"), "2ee8b8", {
         target: "//div",
         type: "boolean",
         question: "is-human-language",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "924a": [
       {
         target: "//button",
         type: "boolean",
         question: "is-human-language",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "87c5": [
       {
         target: "//button",
         type: "boolean",
         question: "is-human-language",
-        answer: false
-      }
-    ]
-  }
+        answer: false,
+      },
+    ],
+  },
 });
 
 test.skip(fixture, Rules.get("R15"), "4b1c6c", {
@@ -116,66 +117,66 @@ test.skip(fixture, Rules.get("R15"), "4b1c6c", {
         target: "//iframe",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: false
-      }
+        answer: false,
+      },
     ],
     "9759": [
       {
         target: "//iframe",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "49f6": [
       {
         target: "//iframe",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "422e": [
       {
         target: "//iframe",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "2bf0": [
       {
         target: "//iframe",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "2750": [
       {
         target: "//iframe",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "175f": [
       {
         target: "//iframe",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: false
-      }
+        answer: false,
+      },
     ],
     "13c2": [
       {
         target: "//iframe",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: false
-      }
-    ]
-  }
+        answer: false,
+      },
+    ],
+  },
 });
 
 test(fixture, Rules.get("R16"), "4e8ab6", {
@@ -189,8 +190,8 @@ test(fixture, Rules.get("R16"), "4e8ab6", {
     "cc955b",
     // -> `combobox` only requires `aria-controls` when expanded
     "2940fd",
-    "e6b6fc"
-  ]
+    "e6b6fc",
+  ],
 });
 
 test(fixture, Rules.get("R17"), "6cfa84");
@@ -200,8 +201,8 @@ test(fixture, Rules.get("R18"), "5c01ea");
 test(fixture, Rules.get("R19"), "6a7281", {
   skip: [
     // Alfa does not yet check ID and ID reference attributes
-    "0a0ff1"
-  ]
+    "0a0ff1",
+  ],
 });
 
 test(fixture, Rules.get("R20"), "5f99a7");
@@ -217,34 +218,34 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
         target: "//img",
         type: "boolean",
         question: "name-describes-image",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     c81a: [
       {
         target: "//img",
         type: "boolean",
         question: "name-describes-image",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "5d41": [
       {
         target: "//input",
         type: "boolean",
         question: "name-describes-image",
-        answer: false
-      }
+        answer: false,
+      },
     ],
     "4f63": [
       {
         target: "//img",
         type: "boolean",
         question: "name-describes-image",
-        answer: false
-      }
-    ]
-  }
+        answer: false,
+      },
+    ],
+  },
 });
 
 test.skip(fixture, Rules.get("R41"), "b20e66", {
@@ -254,106 +255,106 @@ test.skip(fixture, Rules.get("R41"), "b20e66", {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: false
-      }
+        answer: false,
+      },
     ],
     d7ca: [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: false
-      }
+        answer: false,
+      },
     ],
     "0b97": [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: false
-      }
+        answer: false,
+      },
     ],
     c419: [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     bdd1: [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: false
-      }
+        answer: false,
+      },
     ],
     "9120": [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "7e0f": [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: false
-      }
+        answer: false,
+      },
     ],
     "71e3": [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "62c5": [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "4aab": [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "4632": [
       {
         target: "//a",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
+        answer: true,
+      },
     ],
     "457e": [
       {
         target: "//span",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: false
-      }
+        answer: false,
+      },
     ],
     "1065": [
       {
         target: "//span",
         type: "boolean",
         question: "embed-equivalent-resources",
-        answer: true
-      }
-    ]
-  }
+        answer: true,
+      },
+    ],
+  },
 });
 
 test(fixture, Rules.get("R42"), "ff89c9", {
@@ -364,19 +365,23 @@ test(fixture, Rules.get("R42"), "ff89c9", {
 
     // Alfa intentionally diverges on these cases
     "997565",
-    "5a9eba"
-  ]
+    "5a9eba",
+  ],
 });
 
 test(fixture, Rules.get("R43"), "7d6734", {
   skip: [
     // Need to investigate these cases
     "f9ea1e",
-    "33c47e"
-  ]
+    "33c47e",
+  ],
 });
 
 test(fixture, Rules.get("R44"), "b33eff");
+
+test.skip(fixture, Rules.get("R45"), "a25f45");
+
+test.skip(fixture, Rules.get("R46"), "d0f69e");
 
 test(fixture, Rules.get("R47"), "b4f0c3");
 

@@ -1,19 +1,25 @@
 name: Integrate
-on: [push]
+on:
+  push:
+    branches:
+      - "*"
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+	node-version: [12]
     steps:
-    - uses: actions/checkout@v1
-      with:
-        submodules: true
-    - uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install -g yarn
-    - run: yarn install
-    - run: yarn build
-    - run: yarn test
+      - uses: actions/checkout@v1
+	with:
+	  submodules: true
+      - uses: actions/setup-node@v1
+	with:
+	  node-version: ${{ matrix.node-version }}
+      - uses: actions/cache@v1
+	with:
+	  path: .cache/yarn
+	  key: yarn-${{ hashFiles('yarn.lock') }}
+      - run: yarn install --ignore-platform --cache-folder .cache/yarn
+      - run: yarn build
+      - run: yarn test
