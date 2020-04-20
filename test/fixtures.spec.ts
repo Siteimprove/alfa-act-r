@@ -379,9 +379,9 @@ test(fixture, Rules.get("R43"), "7d6734", {
 
 test(fixture, Rules.get("R44"), "b33eff");
 
-test.skip(fixture, Rules.get("R45"), "a25f45");
+test(fixture, Rules.get("R45"), "a25f45");
 
-test.skip(fixture, Rules.get("R46"), "d0f69e");
+test(fixture, Rules.get("R46"), "d0f69e");
 
 test(fixture, Rules.get("R47"), "b4f0c3");
 
