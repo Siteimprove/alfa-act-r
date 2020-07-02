@@ -52,8 +52,8 @@ async function fetch(tests, out) {
       console.time(filename);
 
       const page = await scraper
-	.scrape(url)
-	.then((page) => page.get().toJSON());
+        .scrape(url)
+        .then((page) => page.get().toJSON());
 
       page.request.headers = headers.filter(page.request.headers);
       page.response.headers = headers.filter(page.response.headers);
@@ -62,7 +62,7 @@ async function fetch(tests, out) {
         {
           id,
           outcome,
-	  page,
+          page,
         },
         undefined,
         2
