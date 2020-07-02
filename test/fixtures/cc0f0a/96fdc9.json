@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/cc0f0a/157786f62350f04201614e3b4b6b741a1ec41b8b.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<label for=\"fname\">First name:</label>\n\t<p id=\"fname\"></p>\n</html>"
     },
     "document": {
@@ -130,7 +135,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

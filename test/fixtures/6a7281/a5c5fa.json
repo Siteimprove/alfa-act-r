@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/6a7281/23f69af205f3c0032d60d64288fe96c59e2b0fa2.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"textbox\" aria-errormessage=\"my-error\" aria-label=\"A textbox\"></div>"
     },
     "document": {
@@ -104,7 +109,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

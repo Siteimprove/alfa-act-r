@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/cae760/b52cbe5f0131e309dcad4c4dd4116cbebd6a74b3.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <button>take me somewhere</button>"
     },
     "document": {
@@ -87,7 +92,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

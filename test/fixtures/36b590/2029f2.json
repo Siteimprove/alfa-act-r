@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/36b590/55e841b9dc05acb848210f0f9b7a958cee658f5b.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <form>\n\t<label for=\"age\">Age (years)</label>\n\t<input type=\"number\" id=\"age\" />\n\t<input type=\"button\" value=\"Submit\" />\n</form>"
     },
     "document": {
@@ -175,7 +180,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

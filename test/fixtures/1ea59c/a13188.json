@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/1ea59c/e874973a89bd0284c1bda121f38f7465faac6c72.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.min.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-skin/highlights-blue.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/transcript.css\" />\n\n\t<figure id=\"ozplayer-1-container\" class=\"ozplayer-container\">\n\t\t<div data-controls=\"stack\" class=\"ozplayer\" id=\"ozplayer-1\">\n\t\t\t<video controls=\"controls\" preload=\"none\">\n\t\t\t\t<source src=\"/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t</video>\n\t\t\t<audio data-default=\"default\" preload=\"none\">\n\t\t\t\t<source src=\"/test-assets/rabbit-video/incorrect-audio-description.mp3\" type=\"audio/mp3\" />\n\t\t\t</audio>\n\t\t</div>\n\t</figure>\n\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/mediaelement.min.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.free.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-lang/en.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/config.js\"></script>\n</html>"
     },
     "document": {
@@ -408,7 +413,7 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "class",
-                              "value": "oz-indicator"
+                              "value": "oz-indicator oz-loading"
                             }
                           ],
                           "style": [],
@@ -11795,7 +11800,8 @@
               ]
             }
           ],
-          "disabled": false
+          "disabled": false,
+          "condition": null
         },
         {
           "rules": [
@@ -12018,7 +12024,8 @@
               ]
             }
           ],
-          "disabled": false
+          "disabled": false,
+          "condition": null
         },
         {
           "rules": [
@@ -13455,7 +13462,8 @@
               ]
             }
           ],
-          "disabled": false
+          "disabled": false,
+          "condition": null
         }
       ]
     },
@@ -13469,7 +13477,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

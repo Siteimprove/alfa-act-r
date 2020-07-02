@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/36b590/8b142ff253acfebc90e4b93dc78a1137d0527ee9.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <form>\n\t<div id=\"error\">Please fill the field correctly.</div>\n\t<label for=\"age\">Age (years)</label>\n\t<input type=\"number\" id=\"age\" />\n\t<label for=\"name\">Name</label>\n\t<input type=\"text\" id=\"name\" />\n\t<input type=\"button\" value=\"Submit\" />\n</form>"
     },
     "document": {
@@ -261,7 +266,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

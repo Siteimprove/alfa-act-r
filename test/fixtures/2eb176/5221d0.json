@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/2eb176/fb66537a8b4f876e10fbd155d06b24581098de05.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<audio src=\"/test-assets/moon-audio/moon-speech.mp3\" controls style=\"display: none;\"></audio>\n</html>"
     },
     "document": {
@@ -122,7 +127,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

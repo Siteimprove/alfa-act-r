@@ -11,18 +11,17 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5b7ae0/24fd835bb3314fafe0c822f640869bb93dae23d3.xhtml",
       "status": 200,
-      "headers": [["content-type", "application/xhtml+xml"]],
-      "body": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\"> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n<html lang=\"en\" xml:lang=\"en\"></html>"
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "application/xhtml+xml"
+        }
+      ],
+      "body": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n<html lang=\"en\" xml:lang=\"en\"></html>"
     },
     "document": {
       "type": "document",
       "children": [
-        {
-          "type": "type",
-          "name": "html",
-          "publicId": "-//W3C//DTD XHTML 1.1//EN",
-          "systemId": "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"
-        },
         {
           "type": "element",
           "namespace": "http://www.w3.org/1999/xhtml",
@@ -35,6 +34,42 @@
               "type": "element",
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": [],
+              "children": [
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "style",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "xml-viewer-style"
+                    }
+                  ],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "/* Copyright 2014 The Chromium Authors. All rights reserved.\n * Use of this source code is governed by a BSD-style license that can be\n * found in the LICENSE file.\n */\n\ndiv.header {\n    border-bottom: 2px solid black;\n    padding-bottom: 5px;\n    margin: 10px;\n}\n\ndiv.collapsible > div.hidden {\n    display:none;\n}\n\n.pretty-print {\n    margin-top: 1em;\n    margin-left: 20px;\n    font-family: monospace;\n    font-size: 13px;\n}\n\n#webkit-xml-viewer-source-xml {\n    display: none;\n}\n\n.collapsible-content {\n    margin-left: 1em;\n}\n.comment {\n    white-space: pre;\n}\n\n.button {\n    -webkit-user-select: none;\n    cursor: pointer;\n    display: inline-block;\n    margin-left: -10px;\n    width: 10px;\n    background-repeat: no-repeat;\n    background-position: left top;\n    vertical-align: bottom;\n}\n\n.collapse-button {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L8 0 L4 7 Z'/></svg>\");\n    height: 10px;\n}\n\n.expand-button {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L0 8 L7 4 Z'/></svg>\");\n    height: 10px;\n}\n"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                }
+              ],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
               "name": "body",
               "attributes": [],
               "style": [],
@@ -43,180 +78,111 @@
                   "type": "element",
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "parsererror",
+                  "name": "div",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "style",
-                      "value": "display: block; white-space: pre; border: 2px solid #c77; padding: 0 1em 0 1em; margin: 1em; background-color: #fdd; color: black"
+                      "name": "id",
+                      "value": "webkit-xml-viewer-source-xml"
                     }
                   ],
-                  "style": [
+                  "style": [],
+                  "children": [
                     {
-                      "name": "display",
-                      "value": "block",
-                      "important": false
-                    },
-                    {
-                      "name": "white-space",
-                      "value": "pre",
-                      "important": false
-                    },
-                    {
-                      "name": "border-top-width",
-                      "value": "2px",
-                      "important": false
-                    },
-                    {
-                      "name": "border-right-width",
-                      "value": "2px",
-                      "important": false
-                    },
-                    {
-                      "name": "border-bottom-width",
-                      "value": "2px",
-                      "important": false
-                    },
-                    {
-                      "name": "border-left-width",
-                      "value": "2px",
-                      "important": false
-                    },
-                    {
-                      "name": "border-top-style",
-                      "value": "solid",
-                      "important": false
-                    },
-                    {
-                      "name": "border-right-style",
-                      "value": "solid",
-                      "important": false
-                    },
-                    {
-                      "name": "border-bottom-style",
-                      "value": "solid",
-                      "important": false
-                    },
-                    {
-                      "name": "border-left-style",
-                      "value": "solid",
-                      "important": false
-                    },
-                    {
-                      "name": "border-top-color",
-                      "value": "rgb(204, 119, 119)",
-                      "important": false
-                    },
-                    {
-                      "name": "border-right-color",
-                      "value": "rgb(204, 119, 119)",
-                      "important": false
-                    },
-                    {
-                      "name": "border-bottom-color",
-                      "value": "rgb(204, 119, 119)",
-                      "important": false
-                    },
-                    {
-                      "name": "border-left-color",
-                      "value": "rgb(204, 119, 119)",
-                      "important": false
-                    },
-                    {
-                      "name": "border-image-source",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "border-image-slice",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "border-image-width",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "border-image-outset",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "border-image-repeat",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-top",
-                      "value": "0px",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-right",
-                      "value": "1em",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-bottom",
-                      "value": "0px",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-left",
-                      "value": "1em",
-                      "important": false
-                    },
-                    {
-                      "name": "margin-top",
-                      "value": "1em",
-                      "important": false
-                    },
-                    {
-                      "name": "margin-right",
-                      "value": "1em",
-                      "important": false
-                    },
-                    {
-                      "name": "margin-bottom",
-                      "value": "1em",
-                      "important": false
-                    },
-                    {
-                      "name": "margin-left",
-                      "value": "1em",
-                      "important": false
-                    },
-                    {
-                      "name": "background-color",
-                      "value": "rgb(255, 221, 221)",
-                      "important": false
-                    },
-                    {
-                      "name": "color",
-                      "value": "black",
-                      "important": false
+                      "type": "element",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "html",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "lang",
+                          "value": "en"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": "http://www.w3.org/XML/1998/namespace",
+                          "prefix": "xml",
+                          "name": "lang",
+                          "value": "en"
+                        }
+                      ],
+                      "style": null,
+                      "children": [],
+                      "shadow": null,
+                      "content": null
                     }
                   ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "class",
+                      "value": "header"
+                    }
+                  ],
+                  "style": [],
                   "children": [
                     {
                       "type": "element",
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "h3",
+                      "name": "span",
                       "attributes": [],
                       "style": [],
                       "children": [
                         {
                           "type": "text",
-                          "data": "This page contains the following errors:"
+                          "data": "This XML file does not appear to have any style information associated with it. The document tree is shown below."
                         }
                       ],
                       "shadow": null,
                       "content": null
                     },
+                    {
+                      "type": "element",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "br",
+                      "attributes": [],
+                      "style": [],
+                      "children": [],
+                      "shadow": null,
+                      "content": null
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "class",
+                      "value": "pretty-print"
+                    }
+                  ],
+                  "style": [],
+                  "children": [
                     {
                       "type": "element",
                       "namespace": "http://www.w3.org/1999/xhtml",
@@ -227,42 +193,199 @@
                           "type": "attribute",
                           "namespace": null,
                           "prefix": null,
-                          "name": "style",
-                          "value": "font-family:monospace;font-size:12px"
+                          "name": "class",
+                          "value": "line"
                         }
                       ],
-                      "style": [
-                        {
-                          "name": "font-family",
-                          "value": "monospace",
-                          "important": false
-                        },
-                        {
-                          "name": "font-size",
-                          "value": "12px",
-                          "important": false
-                        }
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "error on line 1 at column 100: StartTag: invalid element name\n"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "h3",
-                      "attributes": [],
                       "style": [],
                       "children": [
                         {
-                          "type": "text",
-                          "data": "Below is a rendering of the page up to the first error."
+                          "type": "element",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "span",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "html-tag"
+                            }
+                          ],
+                          "style": [],
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "<html"
+                            },
+                            {
+                              "type": "element",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "span",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "html-attribute"
+                                }
+                              ],
+                              "style": [],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": " "
+                                },
+                                {
+                                  "type": "element",
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "html-attribute-name"
+                                    }
+                                  ],
+                                  "style": [],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "lang"
+                                    }
+                                  ],
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "=\""
+                                },
+                                {
+                                  "type": "element",
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "html-attribute-value"
+                                    }
+                                  ],
+                                  "style": [],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "en"
+                                    }
+                                  ],
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\""
+                                }
+                              ],
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "element",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "span",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "html-attribute"
+                                }
+                              ],
+                              "style": [],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": " "
+                                },
+                                {
+                                  "type": "element",
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "html-attribute-name"
+                                    }
+                                  ],
+                                  "style": [],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "xml:lang"
+                                    }
+                                  ],
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "=\""
+                                },
+                                {
+                                  "type": "element",
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "html-attribute-value"
+                                    }
+                                  ],
+                                  "style": [],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "en"
+                                    }
+                                  ],
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\""
+                                }
+                              ],
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "/>"
+                            }
+                          ],
+                          "shadow": null,
+                          "content": null
                         }
                       ],
                       "shadow": null,
@@ -281,7 +404,308 @@
           "content": null
         }
       ],
-      "style": []
+      "style": [
+        {
+          "rules": [
+            {
+              "type": "style",
+              "selector": "div.header",
+              "style": [
+                {
+                  "name": "border-bottom-width",
+                  "value": "2px",
+                  "important": false
+                },
+                {
+                  "name": "border-bottom-style",
+                  "value": "solid",
+                  "important": false
+                },
+                {
+                  "name": "border-bottom-color",
+                  "value": "black",
+                  "important": false
+                },
+                {
+                  "name": "padding-bottom",
+                  "value": "5px",
+                  "important": false
+                },
+                {
+                  "name": "margin-top",
+                  "value": "10px",
+                  "important": false
+                },
+                {
+                  "name": "margin-right",
+                  "value": "10px",
+                  "important": false
+                },
+                {
+                  "name": "margin-bottom",
+                  "value": "10px",
+                  "important": false
+                },
+                {
+                  "name": "margin-left",
+                  "value": "10px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "div.collapsible > div.hidden",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "none",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".pretty-print",
+              "style": [
+                {
+                  "name": "margin-top",
+                  "value": "1em",
+                  "important": false
+                },
+                {
+                  "name": "margin-left",
+                  "value": "20px",
+                  "important": false
+                },
+                {
+                  "name": "font-family",
+                  "value": "monospace",
+                  "important": false
+                },
+                {
+                  "name": "font-size",
+                  "value": "13px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "#webkit-xml-viewer-source-xml",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "none",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".collapsible-content",
+              "style": [
+                {
+                  "name": "margin-left",
+                  "value": "1em",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".comment",
+              "style": [
+                {
+                  "name": "white-space",
+                  "value": "pre",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".button",
+              "style": [
+                {
+                  "name": "user-select",
+                  "value": "none",
+                  "important": false
+                },
+                {
+                  "name": "cursor",
+                  "value": "pointer",
+                  "important": false
+                },
+                {
+                  "name": "display",
+                  "value": "inline-block",
+                  "important": false
+                },
+                {
+                  "name": "margin-left",
+                  "value": "-10px",
+                  "important": false
+                },
+                {
+                  "name": "width",
+                  "value": "10px",
+                  "important": false
+                },
+                {
+                  "name": "background-repeat-x",
+                  "value": "no-repeat",
+                  "important": false
+                },
+                {
+                  "name": "background-repeat-y",
+                  "value": "no-repeat",
+                  "important": false
+                },
+                {
+                  "name": "background-position-x",
+                  "value": "left",
+                  "important": false
+                },
+                {
+                  "name": "background-position-y",
+                  "value": "top",
+                  "important": false
+                },
+                {
+                  "name": "vertical-align",
+                  "value": "bottom",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".collapse-button",
+              "style": [
+                {
+                  "name": "background-image",
+                  "value": "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L8 0 L4 7 Z'/></svg>\")",
+                  "important": false
+                },
+                {
+                  "name": "background-position-x",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-position-y",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-size",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-repeat-x",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-repeat-y",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-attachment",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-origin",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-clip",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-color",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "height",
+                  "value": "10px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".expand-button",
+              "style": [
+                {
+                  "name": "background-image",
+                  "value": "url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L0 8 L7 4 Z'/></svg>\")",
+                  "important": false
+                },
+                {
+                  "name": "background-position-x",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-position-y",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-size",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-repeat-x",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-repeat-y",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-attachment",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-origin",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-clip",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-color",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "height",
+                  "value": "10px",
+                  "important": false
+                }
+              ]
+            }
+          ],
+          "disabled": false,
+          "condition": null
+        }
+      ]
     },
     "device": {
       "type": "screen",
@@ -293,7 +717,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

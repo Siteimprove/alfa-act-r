@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/cc0f0a/94d3003abb03281265a5423caf07d3dc4cc2a190.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<label>Menu<input id=\"fname\" type=\"text\" name=\"fname\"/></label>\n</html>"
     },
     "document": {
@@ -132,7 +137,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

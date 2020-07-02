@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5effbb/f29d1450d6a5f9dbe127b65ce545b2090f25a7e6.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0\" y=\"0\">\n\t<a href=\"#main\">\n\t\t<text x=\"20\" y=\"20\">\n\t\t\tGo\n\t\t</text>\n\t</a>\n</svg>\n\n<main>\n\t<p id=\"main\">This is the main content.</p>\n</main>"
     },
     "document": {
@@ -220,7 +225,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/36b590/4977fdb6035d541f22c46e26dcdcf5f2b00ae370.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <form>\n\t<fieldset>\n\t\t<legend>Shipping</legend>\n\t\t<label for=\"shippingName\">Name</label>\n\t\t<input type=\"text\" id=\"shippingName\" required />\n\t\t<label for=\"shippingAddress\">Address</label>\n\t\t<input type=\"text\" id=\"shippingAddress\" required />\n\t</fieldset>\n\t<fieldset>\n\t\t<legend>Billing</legend>\n\t\t<label for=\"billingName\">Name</label>\n\t\t<input type=\"text\" id=\"billingName\" />\n\t\t<label for=\"billingAddress\">Address</label>\n\t\t<input type=\"text\" id=\"billingAddress\" />\n\t</fieldset>\n\t<span id=\"error\">All required fields must be filled.<br />Please fill Name.<br />Please fill Address</span><br />\n\t<input type=\"button\" value=\"Submit\" />\n</form>"
     },
     "document": {
@@ -512,7 +517,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

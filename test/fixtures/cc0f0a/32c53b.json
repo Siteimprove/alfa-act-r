@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/cc0f0a/bc1e857a7e34736ddf5451ef48362bbf507da4f6.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<h2 style=\"position: absolute; top: -9999px; left: -9999px;\">Shipping address</h2>\n\t<input aria-label=\"Name\" id=\"shipping-name\" type=\"text\" name=\"name\" />\n\t<input aria-label=\"Street\" id=\"shipping-street\" type=\"text\" name=\"street\" />\n\n\t<h2 style=\"position: absolute; top: -9999px; left: -9999px;\">Billing address</h2>\n\t<input aria-label=\"Name\" id=\"billing-name\" type=\"text\" name=\"name\" />\n\t<input aria-label=\"Street\" id=\"billing-street\" type=\"text\" name=\"street\" />\n</html>"
     },
     "document": {
@@ -343,7 +348,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

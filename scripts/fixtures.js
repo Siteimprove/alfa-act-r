@@ -31,7 +31,7 @@ async function fetch(tests, out) {
       id,
       filename,
       url,
-      outcome: test.expected
+      outcome: test.expected,
     };
 
     if (rules.has(directory)) {
@@ -52,8 +52,8 @@ async function fetch(tests, out) {
       console.time(filename);
 
       const page = await scraper
-        .scrape(url, { timeout: 10000 })
-        .then(page => page.toJSON());
+	.scrape(url)
+	.then((page) => page.get().toJSON());
 
       page.request.headers = headers.filter(page.request.headers);
       page.response.headers = headers.filter(page.response.headers);
@@ -62,7 +62,7 @@ async function fetch(tests, out) {
         {
           id,
           outcome,
-          page
+	  page,
         },
         undefined,
         2
@@ -80,8 +80,5 @@ async function fetch(tests, out) {
 }
 
 function digest(data) {
-  return crypto
-    .createHash("sha256")
-    .update(data)
-    .digest("hex");
+  return crypto.createHash("sha256").update(data).digest("hex");
 }

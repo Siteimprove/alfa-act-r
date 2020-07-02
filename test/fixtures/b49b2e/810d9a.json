@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/b49b2e/aee358f45b40658fcc5c42d12a6df82dbdf94e0c.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<h1>A</h1>\n\t<dl>\n\t\t<dt>airplane</dt>\n\t\t<dd>\n\t\t\ta powered flying vehicle with fixed wings and a weight greater than that of the air it displaces.\n\t\t</dd>\n\t\t<dt>apple</dt>\n\t\t<dd>\n\t\t\tthe round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.\n\t\t</dd>\n\t</dl>\n</html>"
     },
     "document": {
@@ -199,7 +204,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

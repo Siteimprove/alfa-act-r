@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/b49b2e/4b060cc7f719b34e7976b45850c9dd2ba47a8a2e.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<span role=\"heading\" aria-level=\"1\" style=\"position: absolute; top: -9999px; left: -9999px;\">Opening Hours</span>\n\t<p style=\"position: absolute; top: -9999px; left: -9999px;\">\n\t\tWe are open Monday through Friday from 10 to 16\n\t</p>\n</html>"
     },
     "document": {
@@ -181,7 +186,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

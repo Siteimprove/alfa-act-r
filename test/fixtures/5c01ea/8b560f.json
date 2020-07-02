@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5c01ea/418c85f3819d61b73d185b81f7c032d2b60a3b3c.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"checkbox\" aria-checked=\"false\">My checkbox</div>"
     },
     "document": {
@@ -102,7 +107,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

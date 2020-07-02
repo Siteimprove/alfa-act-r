@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/afw4f7/9573b85ae25b158899fcba32685475efe8e97a96.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <label id=\"my_pets_name\" style=\"color:#888; background: white;\">\n\tMy pet's name\n</label>\n<div\n\trole=\"textbox\"\n\taria-labelledby=\"my_pets_name\"\n\taria-disabled=\"true\"\n\tstyle=\"height:20px; width:100px; border:1px solid black;\"\n>\n\ttest\n</div>"
     },
     "document": {
@@ -303,7 +308,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

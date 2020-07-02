@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/bc4a75/18b5ebff3cc85d3497d22088d1179390759f3aaa.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"list\">\n\t<li>Item 1</li>\n\t<span role=\"link\">Item 2</span>\n</div>"
     },
     "document": {
@@ -143,7 +148,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

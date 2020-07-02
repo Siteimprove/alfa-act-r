@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/2ee8b8/3eb1c8196fecb3bf85ef375b77022a9f7ee0f5d4.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div>E-mail</div>\n<input type=\"email\" aria-label=\"E-mail\" value=\"Contact\" />"
     },
     "document": {
@@ -124,7 +129,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/eac66b/5b1d323a1d169c63e0b85ef92ebe9be6ad66da05.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<video src=\"/test-assets/perspective-video/perspective-video.mp4\" controls></video>\n</html>"
     },
     "document": {
@@ -109,7 +114,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/80af7b/57d69a8eef7213a7199305b274b307c2c294b362.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <script>\n\tvar trapOn = false\n\n\tfunction showHelpText() {\n\t\tdocument.getElementById('helptext').innerHTML = '<p>Press the M-key to Exit</p>'\n\t}\n</script>\n\n<div onkeydown=\"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)\">\n\t<a id=\"link1\" href=\"#\">Link 1</a>\n\t<button id=\"btn1\" onblur=\"(function(e){trapOn=true; document.getElementById('helpLink').focus();})(event)\">\n\t\tButton 1\n\t</button>\n\t<a id=\"helpLink\" href=\"#\" onclick=\"showHelpText()\">How to go the next element</a>\n\t<div id=\"helptext\"></div>\n\t<button id=\"btn2\" onblur=\"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)\">\n\t\tButton 2\n\t</button>\n</div>\n<a id=\"link2\" href=\"#\">Link 2</a>"
     },
     "document": {
@@ -321,7 +326,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

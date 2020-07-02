@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/bf051a/059ada2b641d9bc6989b2c0c69809311f65f2a39.svg",
       "status": 200,
-      "headers": [["content-type", "image/svg+xml"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "image/svg+xml"
+        }
+      ],
       "body": "<svg xmlns=\"http://www.w3.org/2000/svg\" lang=\"fr\"></svg>"
     },
     "document": {
@@ -56,7 +61,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

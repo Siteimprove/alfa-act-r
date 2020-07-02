@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/afb423/c028911c12b611c095a49cdb1a2bf2c263a049c1.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<p>\n\t\tA part of a speech by John F. Kennedy: We choose to go to the moon in this decade and do the other things, not\n\t\tbecause they are easy, but because they are hard.\n\t</p>\n\t<p>\n\t\tYou can also listen to the audio file below to hear the above part of the speech.\n\t</p>\n\t<audio src=\"/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n</html>"
     },
     "document": {
@@ -149,7 +154,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

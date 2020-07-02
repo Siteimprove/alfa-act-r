@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/b33eff/d9f524c9369fd6c6ed1bb899083dea2a1c42b497.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<link rel=\"stylesheet\" href=\"/test-assets/b33eff/style.css\" />\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
     },
     "document": {
@@ -151,7 +156,8 @@
               "condition": "(orientation: portrait)"
             }
           ],
-          "disabled": false
+          "disabled": false,
+          "condition": null
         }
       ]
     },
@@ -165,7 +171,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

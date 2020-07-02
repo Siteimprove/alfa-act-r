@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/cc0f0a/43548ef28fac9a7964a4a1d964df4aff6113053e.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<label>First name: <input style=\"position: absolute; top: -9999px; left: -9999px;\" type=\"text\" name=\"fname\"/></label>\n</html>"
     },
     "document": {
@@ -148,7 +153,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/e086e5/14b18b1ef2e54db1569a2945cd6238d7cc776e92.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div aria-label=\" \" role=\"combobox\">England</div>"
     },
     "document": {
@@ -102,7 +107,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

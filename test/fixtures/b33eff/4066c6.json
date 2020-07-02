@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/b33eff/854339b7645d255ae92a05ac4fbc6b06824e718c.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\thtml {\n\t\t\t\tfont-size: 22px;\n\t\t\t}\n\t\t\t@media (min-width: 30em) {\n\t\t\t\tfont-size: 100%;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
     },
     "document": {
@@ -140,7 +145,8 @@
               "condition": "(min-width: 30em)"
             }
           ],
-          "disabled": false
+          "disabled": false,
+          "condition": null
         }
       ]
     },
@@ -154,7 +160,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/de46e4/e0a8e368d7aba4e94771903d5e994766f6548348.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html>\n\t<body>\n\t\t<article lang=\" \">\n\t\t\tThe quick brown fox jumped over the lazy dog\n\t\t</article>\n\t</body>\n</html>"
     },
     "document": {
@@ -103,7 +108,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

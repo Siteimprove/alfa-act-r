@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5effbb/75db8879bf7db22dcb4455dd0ebc7e244fdde2ae.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"link\" tabindex=\"0\" onclick=\"document.location+='#main'\">More</div>\n\n<main>\n\t<p id=\"main\">This is the main content.</p>\n</main>"
     },
     "document": {
@@ -157,7 +162,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

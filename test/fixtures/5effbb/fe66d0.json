@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5effbb/5e67cab9c6586318a6186eeca1ac536542e5e437.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <p>See the description of <a href=\"#desc\">this product</a>.</p>\n\n<p id=\"desc\">This product consists of several web pages.</p>"
     },
     "document": {
@@ -143,7 +148,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

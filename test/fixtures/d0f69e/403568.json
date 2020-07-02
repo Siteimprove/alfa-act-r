@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/d0f69e/875afbae421429b342a8057de08a511668b91a40.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"grid\">\n\t<div role=\"row\">\n\t\t<div role=\"columnheader\">Col A</div>\n\t\t<div role=\"columnheader\">Col B</div>\n\t</div>\n\t<div role=\"row\">\n\t\t<div role=\"gridcell\">1A</div>\n\t</div>\n\t<div role=\"row\">\n\t\t<div role=\"gridcell\">2A</div>\n\t</div>\n</div>"
     },
     "document": {
@@ -291,7 +296,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

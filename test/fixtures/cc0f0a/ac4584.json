@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/cc0f0a/2a3113551e8b6285b44b1495356235222b75542f.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<p id=\"label_fname\">First name:</p>\n\t<input aria-labelledby=\"label_fname\" type=\"text\" name=\"fname\" />\n</html>"
     },
     "document": {
@@ -144,7 +149,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/afw4f7/3501cb7303834d272bc333b973995e9a9ae0f0e8.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <p style=\"color: #000; font-size:18pt; background: #666;\">\n\tSome text in a human language\n</p>"
     },
     "document": {
@@ -156,7 +161,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

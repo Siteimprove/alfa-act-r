@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/cae760/82a527fd05059a55364d744bd9ea588f8e9c88ea.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div id=\"frame-title-helper\">Watch highlights of the Worldcup</div>\n<iframe aria-labelledby=\"frame-title-helper\" src=\"/test-assets/SC4-1-2-frame-doc.html\"> </iframe>"
     },
     "document": {
@@ -190,7 +195,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

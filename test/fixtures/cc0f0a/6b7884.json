@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/cc0f0a/d4d6cdf8ad02ff5770cba8490a592f254f15a620.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<h2>Shipping address</h2>\n\t<label>Name<input id=\"shipping-name\" type=\"text\" name=\"name\"/></label>\n\t<label>Street<input id=\"shipping-street\" type=\"text\" name=\"street\"/></label>\n\n\t<h2>Billing address</h2>\n\t<label>Name<input id=\"billing-name\" type=\"text\" name=\"name\"/></label>\n\t<label>Street<input id=\"billing-street\" type=\"text\" name=\"street\"/></label>\n</html>"
     },
     "document": {
@@ -331,7 +336,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

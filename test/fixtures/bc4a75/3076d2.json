@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/bc4a75/f856c5c937245a233973c5d5aea15995355226d9.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <ul role=\"tablist\">\n\t<li role=\"tab\">Tab 1</li>\n\t<li role=\"tab\">Tab 2</li>\n</ul>"
     },
     "document": {
@@ -151,7 +156,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/97a4e1/769ced9081ad29edae23727078f6fde475906222.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html>\n\t<style>\n\t\t.notInPage {\n\t\t\tposition: absolute;\n\t\t\tleft: -9999px;\n\t\t\ttop: -9999px;\n\t\t}\n\t</style>\n\t<body>\n\t\t<button class=\"notInPage\" value=\"delete\"></button>\n\t</body>\n</html>"
     },
     "document": {
@@ -139,7 +144,8 @@
               ]
             }
           ],
-          "disabled": false
+          "disabled": false,
+          "condition": null
         }
       ]
     },
@@ -153,7 +159,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

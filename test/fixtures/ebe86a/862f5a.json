@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/ebe86a/9a205d950d471919832196b28acc0a870c3797b6.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <script>\n\tvar trapOn = false\n</script>\n\n<a id=\"link1\" href=\"#\">Link 1</a>\n<button id=\"btn1\" onblur=\"(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)\">\n\tButton 1\n</button>\n<button\n\tid=\"btn2\"\n\tonkeydown=\"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)\"\n\tonblur=\"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)\"\n>\n\tButton 2\n</button>\n<a id=\"link2\" href=\"#\">Link 2</a>"
     },
     "document": {
@@ -235,7 +240,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5effbb/3bb1986371e1ad785428f87c89a1dd7071604ee0.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <p>\n\tThe W3C held a workshop on June 9-10, 2005 at DERI Innsbruck (Austria), to gather information about potential\n\tstandardization work on Semantics in Web Services.\n</p>\n\n<p><a href=\"https://www.w3.org/2005/04/FSWS/workshop-report.html\">Workshop</a></p>"
     },
     "document": {
@@ -127,7 +132,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

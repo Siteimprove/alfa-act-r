@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/d0f69e/e5e54061f15bde0d4a46b819d0490262313c0949.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <table>\n\t<tr>\n\t\t<th aria-hidden=\"true\">Column A</th>\n\t</tr>\n\t<tr>\n\t\t<td>Cell A</td>\n\t</tr>\n</table>"
     },
     "document": {
@@ -187,7 +192,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

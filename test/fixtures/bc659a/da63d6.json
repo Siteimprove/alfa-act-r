@@ -4,15 +4,20 @@
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://act-rules.github.io/testcases/bc659a/4e240e644f898d98b844fc6a8b9eabb8a127c916.html",
+      "url": "http://example.com/",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://act-rules.github.io/testcases/bc659a/4e240e644f898d98b844fc6a8b9eabb8a127c916.html",
+      "url": "http://example.com/",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
-      "body": "<!DOCTYPE html> <head>\n\t<meta http-equiv=\"refresh\" content=\"0; http://example.com\" />\n\t<meta http-equiv=\"refresh\" content=\"5; http://example.com\" />\n</head>"
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=UTF-8"
+        }
+      ],
+      "body": "<!doctype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <style type=\"text/css\">\n    body {\n        background-color: #f0f0f2;\n        margin: 0;\n        padding: 0;\n        font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        \n    }\n    div {\n        width: 600px;\n        margin: 5em auto;\n        padding: 2em;\n        background-color: #fdfdff;\n        border-radius: 0.5em;\n        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);\n    }\n    a:link, a:visited {\n        color: #38488f;\n        text-decoration: none;\n    }\n    @media (max-width: 700px) {\n        div {\n            margin: 0 auto;\n            width: auto;\n        }\n    }\n    </style>    \n</head>\n\n<body>\n<div>\n    <h1>Example Domain</h1>\n    <p>This domain is for use in illustrative examples in documents. You may use this\n    domain in literature without prior coordination or asking for permission.</p>\n    <p><a href=\"https://www.iana.org/domains/example\">More information...</a></p>\n</div>\n</body>\n</html>\n"
     },
     "document": {
       "type": "document",
@@ -41,7 +46,50 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n    "
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Example Domain"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n    "
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "meta",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "charset",
+                      "value": "utf-8"
+                    }
+                  ],
+                  "style": [],
+                  "children": [],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n    "
                 },
                 {
                   "type": "element",
@@ -54,14 +102,14 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "http-equiv",
-                      "value": "refresh"
+                      "value": "Content-type"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
                       "name": "content",
-                      "value": "0; http://example.com"
+                      "value": "text/html; charset=utf-8"
                     }
                   ],
                   "style": [],
@@ -71,7 +119,7 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n    "
                 },
                 {
                   "type": "element",
@@ -83,15 +131,15 @@
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "http-equiv",
-                      "value": "refresh"
+                      "name": "name",
+                      "value": "viewport"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
                       "name": "content",
-                      "value": "5; http://example.com"
+                      "value": "width=device-width, initial-scale=1"
                     }
                   ],
                   "style": [],
@@ -101,11 +149,43 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n    "
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "style",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "type",
+                      "value": "text/css"
+                    }
+                  ],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n    body {\n        background-color: #f0f0f2;\n        margin: 0;\n        padding: 0;\n        font-family: -apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n        \n    }\n    div {\n        width: 600px;\n        margin: 5em auto;\n        padding: 2em;\n        background-color: #fdfdff;\n        border-radius: 0.5em;\n        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);\n    }\n    a:link, a:visited {\n        color: #38488f;\n        text-decoration: none;\n    }\n    @media (max-width: 700px) {\n        div {\n            margin: 0 auto;\n            width: auto;\n        }\n    }\n    "
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "    \n"
                 }
               ],
               "shadow": null,
               "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n\n"
             },
             {
               "type": "element",
@@ -114,7 +194,112 @@
               "name": "body",
               "attributes": [],
               "style": [],
-              "children": [],
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n    "
+                    },
+                    {
+                      "type": "element",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "h1",
+                      "attributes": [],
+                      "style": [],
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Example Domain"
+                        }
+                      ],
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n    "
+                    },
+                    {
+                      "type": "element",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": [],
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "This domain is for use in illustrative examples in documents. You may use this\n    domain in literature without prior coordination or asking for permission."
+                        }
+                      ],
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n    "
+                    },
+                    {
+                      "type": "element",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": [],
+                      "children": [
+                        {
+                          "type": "element",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "a",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "href",
+                              "value": "https://www.iana.org/domains/example"
+                            }
+                          ],
+                          "style": [],
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "More information..."
+                            }
+                          ],
+                          "shadow": null,
+                          "content": null
+                        }
+                      ],
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n\n"
+                }
+              ],
               "shadow": null,
               "content": null
             }
@@ -123,7 +308,214 @@
           "content": null
         }
       ],
-      "style": []
+      "style": [
+        {
+          "rules": [
+            {
+              "type": "style",
+              "selector": "body",
+              "style": [
+                {
+                  "name": "background-color",
+                  "value": "rgb(240, 240, 242)",
+                  "important": false
+                },
+                {
+                  "name": "margin-top",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "margin-right",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "margin-bottom",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "margin-left",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "padding-top",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "padding-right",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "padding-bottom",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "padding-left",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "font-family",
+                  "value": "-apple-system, system-ui, BlinkMacSystemFont, \"Segoe UI\", \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "div",
+              "style": [
+                {
+                  "name": "width",
+                  "value": "600px",
+                  "important": false
+                },
+                {
+                  "name": "margin-top",
+                  "value": "5em",
+                  "important": false
+                },
+                {
+                  "name": "margin-right",
+                  "value": "auto",
+                  "important": false
+                },
+                {
+                  "name": "margin-bottom",
+                  "value": "5em",
+                  "important": false
+                },
+                {
+                  "name": "margin-left",
+                  "value": "auto",
+                  "important": false
+                },
+                {
+                  "name": "padding-top",
+                  "value": "2em",
+                  "important": false
+                },
+                {
+                  "name": "padding-right",
+                  "value": "2em",
+                  "important": false
+                },
+                {
+                  "name": "padding-bottom",
+                  "value": "2em",
+                  "important": false
+                },
+                {
+                  "name": "padding-left",
+                  "value": "2em",
+                  "important": false
+                },
+                {
+                  "name": "background-color",
+                  "value": "rgb(253, 253, 255)",
+                  "important": false
+                },
+                {
+                  "name": "border-top-left-radius",
+                  "value": "0.5em",
+                  "important": false
+                },
+                {
+                  "name": "border-top-right-radius",
+                  "value": "0.5em",
+                  "important": false
+                },
+                {
+                  "name": "border-bottom-right-radius",
+                  "value": "0.5em",
+                  "important": false
+                },
+                {
+                  "name": "border-bottom-left-radius",
+                  "value": "0.5em",
+                  "important": false
+                },
+                {
+                  "name": "box-shadow",
+                  "value": "rgba(0, 0, 0, 0.02) 2px 3px 7px 2px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "a:link, a:visited",
+              "style": [
+                {
+                  "name": "color",
+                  "value": "rgb(56, 72, 143)",
+                  "important": false
+                },
+                {
+                  "name": "text-decoration-line",
+                  "value": "none",
+                  "important": false
+                },
+                {
+                  "name": "text-decoration-style",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "text-decoration-color",
+                  "value": "initial",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "media",
+              "rules": [
+                {
+                  "type": "style",
+                  "selector": "div",
+                  "style": [
+                    {
+                      "name": "margin-top",
+                      "value": "0px",
+                      "important": false
+                    },
+                    {
+                      "name": "margin-right",
+                      "value": "auto",
+                      "important": false
+                    },
+                    {
+                      "name": "margin-bottom",
+                      "value": "0px",
+                      "important": false
+                    },
+                    {
+                      "name": "margin-left",
+                      "value": "auto",
+                      "important": false
+                    },
+                    {
+                      "name": "width",
+                      "value": "auto",
+                      "important": false
+                    }
+                  ]
+                }
+              ],
+              "condition": "(max-width: 700px)"
+            }
+          ],
+          "disabled": false,
+          "condition": null
+        }
+      ]
     },
     "device": {
       "type": "screen",
@@ -135,7 +527,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

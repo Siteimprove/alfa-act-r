@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/ffd0e9/40cdb61e90c0625bbdb387c69146aae445c09260.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <h1>ACT rules</h1>"
     },
     "document": {
@@ -87,7 +92,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

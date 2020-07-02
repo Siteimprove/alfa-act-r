@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/36b590/78deab9c61239f5d696f3b287affdac3aeed1955.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <form>\n\t<h2 id=\"error\">\n\t\tName and color cannot be left unfilled. Please complete all required fields.\n\t</h2>\n\t<fieldset>\n\t\t<legend>Your data</legend>\n\t\t<label for=\"name\">Name (required)</label>\n\t\t<input type=\"text\" id=\"name\" required />\n\t\t<br />\n\t\t<label for=\"address\">Address</label>\n\t\t<input type=\"text\" id=\"address\" />\n\t</fieldset>\n\t<fieldset>\n\t\t<legend>Pick a color (required)</legend>\n\t\t<label><input type=\"radio\" name=\"color\" value=\"blue\" required />Blue</label>\n\t\t<label><input type=\"radio\" name=\"color\" value=\"yellow\" />Yellow</label>\n\t</fieldset>\n\t<input type=\"button\" value=\"Submit\" aria-describedby=\"error\" />\n</form>"
     },
     "document": {
@@ -483,7 +488,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

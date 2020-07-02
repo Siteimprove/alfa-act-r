@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/b4f0c3/5279bbeb99fcae99b30471a30680db5fd5f9d676.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html>\n\t<head>\n\t\t<title>Simple page showing random text</title>\n\t\t<meta name=\"viewport\" content=\"maximum-scale=6.0\" />\n\t</head>\n\t<body>\n\t\t<p>\n\t\t\tLorem ipsum\n\t\t</p>\n\t</body>\n</html>"
     },
     "document": {
@@ -154,7 +159,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

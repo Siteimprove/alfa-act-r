@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/afw4f7/772b21825f272c3983e4c8e55757209e41200a08.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <fieldset disabled style=\"color:#888; background: white;\">\n\t<label>\n\t\tMy name\n\t\t<input />\n\t</label>\n</fieldset>"
     },
     "document": {
@@ -193,7 +198,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -16,15 +16,7 @@ test.after("Write manifest", (t) => {
 
 test(fixture, Rules.get("R1"), "2779a5");
 
-test(fixture, Rules.get("R2"), "23a2a8", {
-  skip: [
-    // Alfa intentionally diverges on these cases
-    // -> Presentational <img> elements are not applicable
-    "cf095f",
-    "383c36",
-    "329274",
-  ],
-});
+test(fixture, Rules.get("R2"), "23a2a8");
 
 test(fixture, Rules.get("R3"), "3ea0c8");
 
@@ -35,12 +27,7 @@ test(fixture, Rules.get("R4"), "b5c3f8", {
   ],
 });
 
-test(fixture, Rules.get("R5"), "bf051a", {
-  skip: [
-    // https://github.com/act-rules/act-rules.github.io/pull/934
-    "373a",
-  ],
-});
+test(fixture, Rules.get("R5"), "bf051a");
 
 test(fixture, Rules.get("R6"), "5b7ae0");
 
@@ -50,24 +37,11 @@ test(fixture, Rules.get("R8"), "e086e5");
 
 test(fixture, Rules.get("R9"), "bc659a");
 
-test(fixture, Rules.get("R10"), "73f2c2", {
-  skip: [
-    // Open issue, has widget role and so is applicable
-    "1e955a",
-
-    // Alfa does not yet consider off-screened elements as hidden
-    "cd5127",
-  ],
-});
+test(fixture, Rules.get("R10"), "73f2c2");
 
 test(fixture, Rules.get("R11"), "c487ae");
 
-test(fixture, Rules.get("R12"), "97a4e1", {
-  skip: [
-    // Open issue, summary is not button per https://w3c.github.io/html-aam/#el-summary
-    "25bc5e",
-  ],
-});
+test(fixture, Rules.get("R12"), "97a4e1");
 
 test(fixture, Rules.get("R13"), "cae760", {
   skip: [
@@ -78,10 +52,6 @@ test(fixture, Rules.get("R13"), "cae760", {
 });
 
 test.skip(fixture, Rules.get("R14"), "2ee8b8", {
-  skip: [
-    // https://github.com/act-rules/act-rules.github.io/pull/452
-    "87c5",
-  ],
   answers: {
     "0643": [
       {
@@ -185,12 +155,9 @@ test(fixture, Rules.get("R16"), "4e8ab6", {
     "7bda65",
 
     // Alfa intentionally diverges on these cases
-    // -> R16 is also applicable to native elements with implicit semantics
-    "232ffb",
-    "cc955b",
     // -> `combobox` only requires `aria-controls` when expanded
-    "2940fd",
-    "e6b6fc",
+    "cbd158",
+    "a37a51",
   ],
 });
 
@@ -207,7 +174,12 @@ test(fixture, Rules.get("R19"), "6a7281", {
 
 test(fixture, Rules.get("R20"), "5f99a7");
 
-test(fixture, Rules.get("R21"), "674b10");
+test(fixture, Rules.get("R21"), "674b10", {
+  skip: [
+    // Alfa requires that all roles be valid.
+    "4d0167",
+  ],
+});
 
 test(fixture, Rules.get("R28"), "59796f");
 
@@ -381,25 +353,59 @@ test(fixture, Rules.get("R44"), "b33eff");
 
 test(fixture, Rules.get("R45"), "a25f45");
 
-test(fixture, Rules.get("R46"), "d0f69e");
+test(fixture, Rules.get("R46"), "d0f69e", {
+  skip: [
+    // Alfa does not yet consider ARIA grids
+    "403568",
+  ],
+});
 
 test(fixture, Rules.get("R47"), "b4f0c3");
 
+test(fixture, Rules.get("R63"), "8fc3b6");
+
 test(fixture, Rules.get("R64"), "ffd0e9");
 
-// test.only(fixture, Rules.get("R69"), "afw4f7", {
-//   skip: [
-//     // https://github.com/act-rules/act-rules.github.io/issues/1168
-//     "a7c03f",
+test(fixture, Rules.get("R69"), "afw4f7", {
+  skip: [
+    // Alfa does not yet account for `text-shadow`
+    "3805f1",
 
-//     // Alfa does not yet account for `text-shadow`
-//     "3805f1",
+    // Alfa does not yet consider off-screened elements as hidden
+    "97803e",
 
-//     // Alfa does not yet consider off-screened elements as hidden
-//     "97803e",
+    // Alfa intentionally diverges on these cases
+    // -> Alfa assumes that non-human language text is marked as presentational
+    "2f71bb",
 
-//     // Alfa intentionally diverges on these cases
-//     // -> Alfa assumes that non-human language text is marked as presentational
-//     "2f71bb"
-//   ]
-// });
+    // Alfa does not yet ignore disabled widget labels
+    "78bb66",
+    "448c66",
+
+    // Alfa does not yet disregard impossible foreground/background combinations
+    "55f4c4",
+  ],
+});
+
+test(fixture, Rules.get("R83"), "59br37", {
+  skip: [
+    "dc1edd",
+
+    // Alfa doesn't check the media query yet
+    "c0dbe9",
+
+    // Investigate
+    "ff1278",
+  ],
+});
+
+test(fixture, Rules.get("R84"), "0ssw9k", {
+  skip: [
+    // Alfa does not yet consider empty elements invisible
+    "363aef",
+
+    // Alfa intentionally diverges on these cases
+    // -> Alfa does not consider the exact layout when determining scrollability
+    "86c515",
+  ],
+});

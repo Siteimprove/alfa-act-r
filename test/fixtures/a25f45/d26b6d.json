@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/a25f45/a94873974601333ff15523c51145f056d8e3af87.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html>\n\t<style>\n\t\t.notInPage {\n\t\t\tposition: absolute;\n\t\t\tleft: -9999px;\n\t\t\ttop: -9999px;\n\t\t}\n\t</style>\n\t<table class=\"notInPage\">\n\t\t<tr>\n\t\t\t<td id=\"header1\">Project Status</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td headers=\"header1\">15%</td>\n\t\t</tr>\n\t</table>\n</html>"
     },
     "document": {
@@ -241,7 +246,8 @@
               ]
             }
           ],
-          "disabled": false
+          "disabled": false,
+          "condition": null
         }
       ]
     },
@@ -255,7 +261,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

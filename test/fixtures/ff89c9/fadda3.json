@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/ff89c9/0a2837a63aa0fc85f5434b40d1f1ddad09ce2ed9.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"list\" aria-owns=\"item\">\n\t<div role=\"navigation\">\n\t\t<div id=\"item\" role=\"listitem\">List item 1</div>\n\t</div>\n</div>"
     },
     "document": {
@@ -165,7 +170,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

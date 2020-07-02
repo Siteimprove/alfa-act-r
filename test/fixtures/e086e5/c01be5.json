@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/e086e5/1547b7ef694cffb1d6c097c593fedcc5c4a9a18a.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <label>\n\tfirst name\n\t<div role=\"textbox\"></div>\n</label>"
     },
     "document": {
@@ -110,7 +115,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

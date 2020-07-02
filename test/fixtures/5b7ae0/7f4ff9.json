@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5b7ae0/d0c97864c4b9c98a3b0bd4c45d7c5866625c572a.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"fr-CA\" xml:lang=\"en-CA\"></html>"
     },
     "document": {
@@ -85,7 +90,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

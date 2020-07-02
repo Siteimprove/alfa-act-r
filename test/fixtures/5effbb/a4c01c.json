@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5effbb/970cf7f07cc3acd3d99ac57f73f5e622df0fe19b.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <table>\n\t<tr>\n\t\t<th colspan=\"3\">Ulysses</th>\n\t</tr>\n\t<tr>\n\t\t<td><a href=\"https://www.gutenberg.org/files/4300/4300-h/4300-h.htm\">HTML</a></td>\n\t\t<td>\n\t\t\t<a href=\"https://www.gutenberg.org/ebooks/4300.epub.images?session_id=04cd710372888de8d8d322215cdfe8ce5b0f8d73\"\n\t\t\t\t>EPUB</a\n\t\t\t>\n\t\t</td>\n\t\t<td><a href=\"https://www.gutenberg.org/files/4300/4300-0.txt\">Plain text</a></td>\n\t</tr>\n</table>"
     },
     "document": {
@@ -295,7 +300,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

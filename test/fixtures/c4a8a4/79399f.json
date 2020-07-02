@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/c4a8a4/23ecf6c48bb8c1619c59cdbc5fe2e6def8f80d6e.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<head>\n\t\t<title>Clementine harvesting season</title>\n\t\t<title>Second title is ignored</title>\n\t</head>\n\t<body>\n\t\t<p>\n\t\t\tClementines will be ready to harvest from late October through February.\n\t\t</p>\n\t</body>\n</html>"
     },
     "document": {
@@ -152,7 +157,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

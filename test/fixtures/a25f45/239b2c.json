@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/a25f45/4c7ecdda09a93d361c292de91d2f89f751dabde2.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <table>\n\t<tr>\n\t\t<th colspan=\"2\" id=\"header1\">Projects</th>\n\t\t<th colspan=\"2\" id=\"header2\">Exams</th>\n\t</tr>\n\t<tr>\n\t\t<th id=\"e1\" headers=\"header1\">1</th>\n\t\t<th id=\"e2\" headers=\"header1\">2</th>\n\t\t<th id=\"p1\" headers=\"header2\">1</th>\n\t\t<th id=\"p2\" headers=\"header2\">2</th>\n\t</tr>\n\t<tr>\n\t\t<td colspan=\"2\" headers=\"header1 e1 e2\">15%</td>\n\t\t<td headers=\"header2 p1\">15%</td>\n\t\t<td headers=\"header2 p2\">45%</td>\n\t</tr>\n</table>"
     },
     "document": {
@@ -460,7 +465,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

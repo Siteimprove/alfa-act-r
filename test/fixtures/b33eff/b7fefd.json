@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/b33eff/0b666d5ff3fdd05eaa94a197ca5f52bbabaf4b23.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t</head>\n\t<body>\n\t\tI am a page with no styles\n\t</body>\n</html>"
     },
     "document": {
@@ -112,7 +117,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

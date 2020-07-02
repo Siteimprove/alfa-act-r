@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/3ea0c8/0f5326024cf93cc21bc950e7c9c9639be89a66a7.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div id=\"my-div1\">This is my first element</div>\n<div id=\"my-div2\">This is my second element</div>\n<svg id=\"my-div3\">This is my third element</svg>"
     },
     "document": {
@@ -151,7 +156,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

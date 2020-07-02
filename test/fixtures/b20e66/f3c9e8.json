@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/b20e66/75fdbf448cf08e3306d992c2c42029e145d1f07b.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<a href=\"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html\">Contact us</a>\n\t<a href=\"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html\">Contact us</a>\n</html>"
     },
     "document": {
@@ -135,7 +140,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

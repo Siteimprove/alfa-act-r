@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/cae760/b70efcaf2f5e6a539e78a2cdc4b2e3a8b8adf827.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <iframe tabindex=\"-1\" role=\"presentation\" src=\"/test-assets/SC4-1-2-frame-doc.html\"> </iframe>"
     },
     "document": {
@@ -169,7 +174,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

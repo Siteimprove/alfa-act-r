@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/d0f69e/166d899fcda47760741b83dbfe93d2ecc2806e7f.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"table\">\n\t<div role=\"rowgroup\">\n\t\t<div role=\"row\">\n\t\t\t<span role=\"columnheader\">Month</span>\n\t\t\t<span role=\"columnheader\">Top Temperature</span>\n\t\t</div>\n\t</div>\n\t<div role=\"rowgroup\">\n\t\t<div role=\"row\">\n\t\t\t<span role=\"cell\">July</span>\n\t\t\t<span role=\"cell\">40 C</span>\n\t\t</div>\n\t\t<div role=\"row\">\n\t\t\t<span role=\"cell\">August</span>\n\t\t\t<span role=\"cell\">45 C</span>\n\t\t</div>\n\t</div>\n</div>"
     },
     "document": {
@@ -403,7 +408,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/bc4a75/80742d95918966bec09da9c44a2650c7cb35f7ba.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"menu\">\n\t<li role=\"none\"></li>\n\t<li role=\"menuitem\">Item 1</li>\n\t<div role=\"menuitemradio\">Item 2</div>\n\t<div role=\"menuitemcheckbox\">Item 3</div>\n</div>"
     },
     "document": {
@@ -202,7 +207,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

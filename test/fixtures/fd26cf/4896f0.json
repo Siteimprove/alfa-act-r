@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/fd26cf/e34172389d155178ac2f3aeb62afe154421bae6e.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<p>\n\t\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the\n\t\tkeyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.\n\t\tKeyboard compatibility is described in WCAG. See the video below to watch the same information again in video form.\n\t</p>\n\t<video\n\t\tsrc=\"/test-assets/perspective-video/perspective-video-with-captions-silent.mp4\"\n\t\tcontrols\n\t\tstyle=\"display: none;\"\n\t></video>\n</html>"
     },
     "document": {
@@ -142,7 +147,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

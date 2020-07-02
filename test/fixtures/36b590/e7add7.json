@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/36b590/fa48ce6a3b0c47beb6f92cfa601759f27d893086.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <form>\n\t<label for=\"age\">Age (years)</label>\n\t<input type=\"number\" id=\"age\" aria-describedby=\"error\" value=\"0\" />\n\t<span id=\"error\">Invalid value for age. Age must be at least 1.</span><br />\n\t<input type=\"button\" value=\"Submit\" />\n</form>"
     },
     "document": {
@@ -228,7 +233,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

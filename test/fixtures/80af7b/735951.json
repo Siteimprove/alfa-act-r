@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/80af7b/f4c9fd61be712b081a0f4324ca20c6338005bc0b.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <button type=\"button\" style=\"display:none;\">Click Me!</button>"
     },
     "document": {
@@ -108,7 +113,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

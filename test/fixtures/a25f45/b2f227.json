@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/a25f45/cf152e4f1f83863272aeb9809601677935a57e6b.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"table\">\n\t<div role=\"row\">\n\t\t<div role=\"columnheader\" id=\"header1\">Projects</div>\n\t\t<div role=\"columnheader\" id=\"header2\">Exams</div>\n\t</div>\n\t<div role=\"row\">\n\t\t<div role=\"cell\" headers=\"header2\">15%</div>\n\t\t<div role=\"cell\" headers=\"header1\">15%</div>\n\t</div>\n</div>"
     },
     "document": {
@@ -291,7 +296,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

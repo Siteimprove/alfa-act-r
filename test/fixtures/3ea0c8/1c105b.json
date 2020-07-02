@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/3ea0c8/c14899be89e4086b94e241ddd989e73e5c3a222e.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div id=\"my-elt\"></div>\n<div id=\"host\"></div>\n<script>\n\tvar host = document.getElementById('host')\n\tvar shadow = host.attachShadow({ mode: 'open' })\n\tshadow.innerHTML = '<b id=\"my-elt\"></b>'\n</script>"
     },
     "document": {
@@ -158,7 +163,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/2ee8b8/060681f077880448a5d8e1ebcb7532d99fdb411d.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <button aria-label=\"the full\">The full label</button>"
     },
     "document": {
@@ -95,7 +100,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

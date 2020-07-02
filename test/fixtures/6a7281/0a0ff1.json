@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/6a7281/bfe8367fb26e19599d339e70d79d7fdc665ea866.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div\n\trole=\"scrollbar\"\n\taria-controls=\"content1\"\n\taria-orientation=\"vertical\"\n\taria-valuemax=\"100\"\n\taria-valuemin=\"0\"\n\taria-valuenow=\"25\"\n></div>"
     },
     "document": {
@@ -125,7 +130,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

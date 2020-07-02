@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/b20e66/c69b83e4f7fee81d4629a08909068b7843034fb9.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<a>Link text</a>\n\t<area aria-label=\"Link text\" />\n</html>"
     },
     "document": {
@@ -122,7 +127,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

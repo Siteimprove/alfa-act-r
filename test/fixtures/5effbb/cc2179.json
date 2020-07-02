@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5effbb/d876314b6053a53e45138b7a1aabc4dbdb431bdd.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <a href=\"#main\"><img src=\"/test-assets/5effbb/main.png\" alt=\"Go to the main content\"/></a>\n\n<main>\n\t<p id=\"main\">This is the main content.</p>\n</main>"
     },
     "document": {
@@ -165,7 +170,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "e90706",
-  "outcome": "failed",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/674b10/c6e80108a6b09b606569dabc910e358f120b9bcb.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <input type=\"text\" role=\" \" />"
     },
     "document": {
@@ -97,7 +102,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

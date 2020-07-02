@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/b20e66/cd9434a0686a8bb4657bbc01c40336f7e23c2342.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<svg viewBox=\"0 0 100 100\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n\t\t<a href=\"http://facebook.com\" aria-label=\"Follow us\">\n\t\t\t<circle cx=\"50\" cy=\"40\" r=\"35\" />\n\t\t</a>\n\n\t\t<a href=\"http://facebook.com\">\n\t\t\t<text x=\"50\" y=\"90\" text-anchor=\"middle\">\n\t\t\t\tFollow us\n\t\t\t</text>\n\t\t</a>\n\t</svg>\n</html>"
     },
     "document": {
@@ -263,7 +268,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

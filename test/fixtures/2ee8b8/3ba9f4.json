@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/2ee8b8/d99c16137d8c09932a14875a1b68cd8d0313623a.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <a href=\"//w3.org\" aria-label=\"W3C homepage\">\n\t<img src=\"/test-assets/shared/w3c-logo.png\" alt=\"w3c logo\" />\n</a>"
     },
     "document": {
@@ -132,7 +137,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

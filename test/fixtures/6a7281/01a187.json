@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/6a7281/2568fcdeefbba2bb1d9932f8ed5490c03264b0cd.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"dialog\" aria-dropeffect=\"invalid move\"></div>"
     },
     "document": {
@@ -97,7 +102,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

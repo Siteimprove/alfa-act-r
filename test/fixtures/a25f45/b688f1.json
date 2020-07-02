@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/a25f45/9950efbcae11c6a74d285355e65f3010de06b0f1.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <table>\n\t<tr>\n\t\t<th id=\"name\" colspan=\"2\">Name</th>\n\t</tr>\n\t<tr>\n\t\t<th headers=\"name\">Firstname</th>\n\t\t<th headers=\"name\">Lastname</th>\n\t</tr>\n</table>"
     },
     "document": {
@@ -230,7 +235,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

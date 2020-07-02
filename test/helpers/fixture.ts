@@ -7,8 +7,6 @@ import { Audit, Rule, Outcome } from "@siteimprove/alfa-act";
 import { Option } from "@siteimprove/alfa-option";
 import { Page } from "@siteimprove/alfa-web";
 
-import * as xpath from "@siteimprove/alfa-xpath";
-
 import { Context } from "./context";
 
 export interface FixtureAnswer {
@@ -36,8 +34,8 @@ export async function fixture(
 
   const tests = fs
     .readdirSync(directory)
-    .filter(filename => filename.endsWith(".json"))
-    .map(filename =>
+    .filter((filename) => filename.endsWith(".json"))
+    .map((filename) =>
       JSON.parse(fs.readFileSync(path.join(directory, filename), "utf8"))
     );
 
@@ -48,12 +46,11 @@ export async function fixture(
 
     const skip = options.skip && options.skip.includes(test.id);
 
-    const outcome = await Audit.of(page)
-      .add(rule.get())
+    const outcome = await Audit.of(page, [rule.get()])
       .evaluate()
-      .map(outcomes =>
+      .map((outcomes) =>
         [...outcomes]
-          .filter(outcome => outcome.rule === rule.get())
+          .filter((outcome) => outcome.rule === rule.get())
           .reduce((outcome, candidate) => {
             if (Outcome.isFailed(outcome)) {
               return outcome;
@@ -78,12 +75,24 @@ export async function fixture(
     const expected = test.outcome;
     const actual = outcome.toJSON().outcome;
 
-    if (skip) {
-      t.is.skip(expected, actual, test.id);
-    } else {
-      t.is(expected, actual, test.id);
+    let passes = false;
 
-      if (expected !== actual) {
+    // https://act-rules.github.io/pages/implementations/mapping/#automated-mapping
+    switch (expected) {
+      case "passed":
+      case "inapplicable":
+        passes = actual !== "failed";
+        break;
+      case "failed":
+        passes = actual === "failed" || actual === "cantTell";
+    }
+
+    if (skip) {
+      t.true.skip(passes, test.id);
+    } else {
+      t.true(passes, test.id);
+
+      if (!passes) {
         t.log("Outcome", outcome.toJSON());
         t.log("Test", test);
       }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/73f2c2/9e17d4a989c9b64b023cb56b2e12aba1189969fe.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <select autocomplete=\"bday-month\">\n\t<option>January</option>\n\t<option>...</option>\n</select>"
     },
     "document": {
@@ -135,7 +140,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

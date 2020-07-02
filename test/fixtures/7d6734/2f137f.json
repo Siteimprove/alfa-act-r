@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/7d6734/114be98c8b9af5e15b6694283669cd1ef1c8677b.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <p>How many circles are there?</p>\n<svg xmlns=\"https://www.w3.org/2000/svg\">\n\t<circle\n\t\trole=\"graphics-symbol\"\n\t\tcx=\"50\"\n\t\tcy=\"50\"\n\t\tr=\"40\"\n\t\tstroke=\"green\"\n\t\tstroke-width=\"4\"\n\t\tfill=\"yellow\"\n\t\taria-label=\"1 circle\"\n\t></circle>\n</svg>"
     },
     "document": {
@@ -187,7 +192,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/73f2c2/7c1fb95fbb6b6e251704787a96290e48aea337d7.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <textarea autocomplete=\"Street-Address\"></textarea>"
     },
     "document": {
@@ -90,7 +95,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

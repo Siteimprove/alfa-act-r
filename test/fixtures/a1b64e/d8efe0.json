@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/a1b64e/e9b44a92dbc034a87e0710dd295bb2e2514e605b.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <button onblur=\"setTimeout(() => this.focus(), 10)\">Button 1</button>\n<button>Button 2</button>\n<button onblur=\"setTimeout(() => this.focus(), 10)\">Button 3</button>"
     },
     "document": {
@@ -143,7 +148,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

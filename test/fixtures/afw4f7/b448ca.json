@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/afw4f7/a5c79e86ea2603cd0873f0d00e9cf8b4a19340cf.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <p style=\"color: #333; background: #FFF;\">\n\tHelvetica is a widely used sans-serif typeface developed in 1957 by Max Miedinger and Eduard Hoffmann.\n</p>\n<p style=\"font-family: helvetica; background: #EEE; color: #777;\" aria-hidden=\"true\">\n\tThe quick brown fox jumps over the lazy dog.\n</p>"
     },
     "document": {
@@ -247,7 +252,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

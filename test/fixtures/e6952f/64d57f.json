@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/e6952f/bf1af088ce6938b5cf96fd481b2c15d7e040bb8b.xml",
       "status": 200,
-      "headers": [["content-type", "application/xml"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "application/xml"
+        }
+      ],
       "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rdf:RDF\n  xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n  xmlns:earl=\"http://www.w3.org/ns/earl#\">\n  <earl:TestResult rdf:about=\"#result\"></earl:TestResult>\n</rdf:RDF>"
     },
     "document": {
@@ -1334,7 +1339,8 @@
               ]
             }
           ],
-          "disabled": false
+          "disabled": false,
+          "condition": null
         }
       ]
     },
@@ -1348,7 +1354,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

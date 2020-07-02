@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/4b1c6c/c24ff2ab92e810c1339603c454603ee202f03927.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<object title=\"List of Contributors\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-one.html\"> </object>\n\n\t<object aria-label=\"List of Contributors Clone\" src=\"/test-assets/iframe-unique-name-4b1c6c/page-two.html\"> </object>\n</html>"
     },
     "document": {
@@ -149,7 +154,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/3ea0c8/c4a04f0e727601ca5defcfa316e36b3e50326024.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div id=\"my-div\">This is my first element</div>"
     },
     "document": {
@@ -95,7 +100,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

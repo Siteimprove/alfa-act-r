@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/ff89c9/782e8b881c5e19cc50eb03527f0e7b95d898b84e.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div id=\"host\" role=\"list\"></div>\n\n<script>\n\tconst host = document.querySelector('#host')\n\tconst root = host.attachShadow({ mode: 'open' })\n\troot.innerHTML = '<div role=\"listitem\">List item 1</div>'\n</script>"
     },
     "document": {
@@ -147,7 +152,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/674b10/3033b4372396c7f9c947532a6c9a7e4d8a3b43f8.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <input type=\"text\" role=\"invalid role\" />"
     },
     "document": {
@@ -97,7 +102,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

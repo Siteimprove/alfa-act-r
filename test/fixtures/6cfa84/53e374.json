@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/6cfa84/a8370a7c4e710e4dcece674a415c6dd4d4e69382.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div aria-hidden=\"true\">\n\t<button tabindex=\"-2\">Some button</button>\n</div>"
     },
     "document": {
@@ -123,7 +128,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5effbb/064d2d8664a3c53a268fc24f5ba33ea4bb777e48.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <table>\n\t<tr>\n\t\t<th colspan=\"3\">Books</th>\n\t</tr>\n\t<tr>\n\t\t<td>Ulysses</td>\n\t\t<td><a href=\"https://www.gutenberg.org/files/4300/4300-h/4300-h.htm\">Download</a></td>\n\t\t<td>1.61MB</td>\n\t</tr>\n</table>"
     },
     "document": {
@@ -247,7 +252,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

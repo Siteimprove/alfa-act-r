@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/5effbb/b476205199c222e357cdfd5930562da3c31b6ec3.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <h2 id=\"rule\">Button has accessible name</h2>\n<ul>\n\t<li><a href=\"https://act-rules.github.io/rules/97a4e1#applicability\" aria-describedby=\"rule\">Applicability</a></li>\n\t<li><a href=\"https://act-rules.github.io/rules/97a4e1#expectation\" aria-describedby=\"rule\">Expectation</a></li>\n</ul>"
     },
     "document": {
@@ -209,7 +214,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }

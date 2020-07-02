@@ -11,7 +11,12 @@
     "response": {
       "url": "https://act-rules.github.io/testcases/afw4f7/54ecd88ef15080bb65a4ab322fda9f3316527fe3.html",
       "status": 200,
-      "headers": [["content-type", "text/html; charset=utf-8"]],
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
       "body": "<!DOCTYPE html> <div role=\"group\" aria-disabled=\"true\" style=\"color:#888; background: white;\">\n\t<label>\n\t\tMy name\n\t\t<input />\n\t</label>\n</div>"
     },
     "document": {
@@ -200,7 +205,11 @@
       "display": {
         "resolution": 1,
         "scan": "progressive"
-      }
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
     }
   }
 }
