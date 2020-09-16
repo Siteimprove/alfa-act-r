@@ -41,7 +41,13 @@ test(fixture, Rules.get("R10"), "73f2c2");
 
 test(fixture, Rules.get("R11"), "c487ae");
 
-test(fixture, Rules.get("R12"), "97a4e1");
+test(fixture, Rules.get("R12"), "97a4e1", {
+  skip: [
+    // Accessible name of `<input>` is not correctly computed
+    // @see https://github.com/Siteimprove/alfa/issues/365
+    "3ff55e",
+  ],
+});
 
 test(fixture, Rules.get("R13"), "cae760", {
   skip: [
@@ -163,7 +169,14 @@ test(fixture, Rules.get("R16"), "4e8ab6", {
 
 test(fixture, Rules.get("R17"), "6cfa84");
 
-test(fixture, Rules.get("R18"), "5c01ea");
+test(fixture, Rules.get("R18"), "5c01ea", {
+  skip: [
+    // aria-expanded is not allowed on complementary in ARIA 1.2
+    // These test cases have been removed upstream, but I'm not fetching new cases now…
+    "9cae55",
+    "b47bcb",
+  ],
+});
 
 test(fixture, Rules.get("R19"), "6a7281", {
   skip: [
@@ -181,7 +194,13 @@ test(fixture, Rules.get("R21"), "674b10", {
   ],
 });
 
-test(fixture, Rules.get("R28"), "59796f");
+test(fixture, Rules.get("R28"), "59796f", {
+  skip: [
+    // Alfa fas accidentally dropped support of alt for image button
+    // @see https://github.com/Siteimprove/alfa/issues/365
+    "8c729d",
+  ],
+});
 
 test.skip(fixture, Rules.get("R39"), "9eb3f6", {
   answers: {
@@ -338,6 +357,9 @@ test(fixture, Rules.get("R42"), "ff89c9", {
     // Alfa intentionally diverges on these cases
     "997565",
     "5a9eba",
+
+    // Role from ARIA DPUB which the ACT rule explicitly ignore, but Alfa doesn't
+    "64371f",
   ],
 });
 
@@ -357,14 +379,32 @@ test(fixture, Rules.get("R46"), "d0f69e", {
   skip: [
     // Alfa does not yet consider ARIA grids
     "403568",
+
+    // Likely a bug in Alfa due to isPerceivable checking descendants and not just the node.
+    // @see https://github.com/Siteimprove/alfa/issues/390
+    "1bca3d",
   ],
 });
 
 test(fixture, Rules.get("R47"), "b4f0c3");
 
-test(fixture, Rules.get("R63"), "8fc3b6");
+test(fixture, Rules.get("R63"), "8fc3b6", {
+  skip: [
+    // Alfa doesn't detect the `<object>` as focusable and exclude it from the accessibility tree
+    // @see https://github.com/Siteimprove/alfa/issues/388
+    "a95d8c",
+    "e7887e",
+  ],
+});
 
-test(fixture, Rules.get("R64"), "ffd0e9");
+test(fixture, Rules.get("R64"), "ffd0e9", {
+  skip: [
+    // Alfa default to other step when finding an aria-labelledby with existing but empty IDref
+    // @see https://github.com/Siteimprove/alfa/issues/389
+    "37e8ba",
+    "ae7bea",
+  ],
+});
 
 test(fixture, Rules.get("R69"), "afw4f7", {
   skip: [
