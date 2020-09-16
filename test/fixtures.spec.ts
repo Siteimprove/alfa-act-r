@@ -46,6 +46,7 @@ test(fixture, Rules.get("R12"), "97a4e1", {
     // Accessible name of `<input>` is not correctly computed
     // @see https://github.com/Siteimprove/alfa/issues/365
     "3ff55e",
+    "4bc6a1",
   ],
 });
 
