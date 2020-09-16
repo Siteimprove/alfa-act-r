@@ -46,7 +46,7 @@ export async function fixture(
 
     const skip = options.skip && options.skip.includes(test.id);
 
-    const outcome = await Audit.of(page, [rule.get()])
+    const outcome = await Audit.of<Page, unknown, unknown>(page, [rule.get()])
       .evaluate()
       .map((outcomes) =>
         [...outcomes]
