@@ -41,19 +41,11 @@ test(fixture, Rules.get("R10"), "73f2c2");
 
 test(fixture, Rules.get("R11"), "c487ae");
 
-test(fixture, Rules.get("R12"), "97a4e1", {
-  skip: [
-    // Accessible name of `<input>` is not correctly computed
-    // @see https://github.com/Siteimprove/alfa/issues/365
-    "3ff55e",
-    "4bc6a1",
-  ],
-});
+test(fixture, Rules.get("R12"), "97a4e1");
 
 test(fixture, Rules.get("R13"), "cae760", {
   skip: [
     // https://github.com/act-rules/act-rules.github.io/issues/1170
-    "d4947f",
     "b39305",
   ],
 });
@@ -154,19 +146,15 @@ test.skip(fixture, Rules.get("R15"), "4b1c6c", {
       },
     ],
   },
-});
-
-test(fixture, Rules.get("R16"), "4e8ab6", {
   skip: [
-    // Open issue, does not need to be in accessibility tree
-    "7bda65",
-
-    // Alfa intentionally diverges on these cases
-    // -> `combobox` only requires `aria-controls` when expanded
-    "cbd158",
-    "a37a51",
+    // bug in Alfa
+    // ACT rule consider <iframe> in the same HTML page, Alfa only in the same document tree.
+    // Thus, nested iframes are considered all together by ACT rule, not by Alfa
+    "b327b8",
   ],
 });
+
+test(fixture, Rules.get("R16"), "4e8ab6");
 
 test(fixture, Rules.get("R17"), "6cfa84");
 
@@ -197,9 +185,11 @@ test(fixture, Rules.get("R21"), "674b10", {
 
 test(fixture, Rules.get("R28"), "59796f", {
   skip: [
-    // Alfa fas accidentally dropped support of alt for image button
-    // @see https://github.com/Siteimprove/alfa/issues/365
-    "8c729d",
+    // Image button have default accessible name, thus the rule should never fail
+    // @see https://github.com/act-rules/act-rules.github.io/issues/1457
+    "027548",
+    "db01f7",
+    "ecd48a",
   ],
 });
 
@@ -238,6 +228,10 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
       },
     ],
   },
+  skip: [
+    // Alfa doesn't look into sources set out of the <img> element (sibling <source>, <scrset>)
+    "3fcd49",
+  ],
 });
 
 test.skip(fixture, Rules.get("R41"), "b20e66", {
@@ -351,26 +345,12 @@ test.skip(fixture, Rules.get("R41"), "b20e66", {
 
 test(fixture, Rules.get("R42"), "ff89c9", {
   skip: [
-    // https://github.com/Siteimprove/alfa/issues/173
-    "fadda3",
-    "46205c",
-
-    // Alfa intentionally diverges on these cases
-    "997565",
-    "5a9eba",
-
     // Role from ARIA DPUB which the ACT rule explicitly ignore, but Alfa doesn't
     "64371f",
   ],
 });
 
-test(fixture, Rules.get("R43"), "7d6734", {
-  skip: [
-    // Need to investigate these cases
-    "f9ea1e",
-    "33c47e",
-  ],
-});
+test(fixture, Rules.get("R43"), "7d6734");
 
 test(fixture, Rules.get("R44"), "b33eff");
 
@@ -380,23 +360,12 @@ test(fixture, Rules.get("R46"), "d0f69e", {
   skip: [
     // Alfa does not yet consider ARIA grids
     "403568",
-
-    // Likely a bug in Alfa due to isPerceivable checking descendants and not just the node.
-    // @see https://github.com/Siteimprove/alfa/issues/390
-    "1bca3d",
   ],
 });
 
 test(fixture, Rules.get("R47"), "b4f0c3");
 
-test(fixture, Rules.get("R63"), "8fc3b6", {
-  skip: [
-    // Alfa doesn't detect the `<object>` as focusable and exclude it from the accessibility tree
-    // @see https://github.com/Siteimprove/alfa/issues/388
-    "a95d8c",
-    "e7887e",
-  ],
-});
+test(fixture, Rules.get("R63"), "8fc3b6");
 
 test(fixture, Rules.get("R64"), "ffd0e9", {
   skip: [
@@ -411,9 +380,6 @@ test(fixture, Rules.get("R69"), "afw4f7", {
   skip: [
     // Alfa does not yet account for `text-shadow`
     "3805f1",
-
-    // Alfa does not yet consider off-screened elements as hidden
-    "97803e",
 
     // Alfa intentionally diverges on these cases
     // -> Alfa assumes that non-human language text is marked as presentational
@@ -430,12 +396,11 @@ test(fixture, Rules.get("R69"), "afw4f7", {
 
 test(fixture, Rules.get("R83"), "59br37", {
   skip: [
-    "dc1edd",
-
     // Alfa doesn't check the media query yet
     "c0dbe9",
 
     // Investigate
+    "dc1edd",
     "ff1278",
   ],
 });
