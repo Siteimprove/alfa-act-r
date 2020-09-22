@@ -200,6 +200,11 @@ test(fixture, Rules.get("R28"), "59796f", {
     // Alfa fas accidentally dropped support of alt for image button
     // @see https://github.com/Siteimprove/alfa/issues/365
     "8c729d",
+    // Image button have default accessible name, thus the rule should never fail
+    // @see https://github.com/act-rules/act-rules.github.io/issues/1457
+    "027548",
+    "db01f7",
+    "ecd48a",
   ],
 });
 
