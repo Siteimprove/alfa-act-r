@@ -46,7 +46,6 @@ test(fixture, Rules.get("R12"), "97a4e1");
 test(fixture, Rules.get("R13"), "cae760", {
   skip: [
     // https://github.com/act-rules/act-rules.github.io/issues/1170
-    "d4947f",
     "b39305",
   ],
 });
@@ -147,19 +146,15 @@ test.skip(fixture, Rules.get("R15"), "4b1c6c", {
       },
     ],
   },
-});
-
-test(fixture, Rules.get("R16"), "4e8ab6", {
   skip: [
-    // Open issue, does not need to be in accessibility tree
-    "7bda65",
-
-    // Alfa intentionally diverges on these cases
-    // -> `combobox` only requires `aria-controls` when expanded
-    "cbd158",
-    "a37a51",
+    // bug in Alfa
+    // ACT rule consider <iframe> in the same HTML page, Alfa only in the same document tree.
+    // Thus, nested iframes are considered all together by ACT rule, not by Alfa
+    "b327b8",
   ],
 });
+
+test(fixture, Rules.get("R16"), "4e8ab6");
 
 test(fixture, Rules.get("R17"), "6cfa84");
 
@@ -233,6 +228,10 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
       },
     ],
   },
+  skip: [
+    // Alfa doesn't look into sources set out of the <img> element (sibling <source>, <scrset>)
+    "3fcd49",
+  ],
 });
 
 test.skip(fixture, Rules.get("R41"), "b20e66", {
@@ -346,22 +345,12 @@ test.skip(fixture, Rules.get("R41"), "b20e66", {
 
 test(fixture, Rules.get("R42"), "ff89c9", {
   skip: [
-    // Alfa intentionally diverges on these cases
-    "997565",
-    "5a9eba",
-
     // Role from ARIA DPUB which the ACT rule explicitly ignore, but Alfa doesn't
     "64371f",
   ],
 });
 
-test(fixture, Rules.get("R43"), "7d6734", {
-  skip: [
-    // Need to investigate these cases
-    "f9ea1e",
-    "33c47e",
-  ],
-});
+test(fixture, Rules.get("R43"), "7d6734");
 
 test(fixture, Rules.get("R44"), "b33eff");
 
@@ -392,9 +381,6 @@ test(fixture, Rules.get("R69"), "afw4f7", {
     // Alfa does not yet account for `text-shadow`
     "3805f1",
 
-    // Alfa does not yet consider off-screened elements as hidden
-    "97803e",
-
     // Alfa intentionally diverges on these cases
     // -> Alfa assumes that non-human language text is marked as presentational
     "2f71bb",
@@ -410,12 +396,11 @@ test(fixture, Rules.get("R69"), "afw4f7", {
 
 test(fixture, Rules.get("R83"), "59br37", {
   skip: [
-    "dc1edd",
-
     // Alfa doesn't check the media query yet
     "c0dbe9",
 
     // Investigate
+    "dc1edd",
     "ff1278",
   ],
 });
