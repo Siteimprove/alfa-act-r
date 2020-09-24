@@ -56,7 +56,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "/* Copyright 2014 The Chromium Authors. All rights reserved.\n * Use of this source code is governed by a BSD-style license that can be\n * found in the LICENSE file.\n */\n\ndiv.header {\n    border-bottom: 2px solid black;\n    padding-bottom: 5px;\n    margin: 10px;\n}\n\ndiv.collapsible > div.hidden {\n    display:none;\n}\n\n.pretty-print {\n    margin-top: 1em;\n    margin-left: 20px;\n    font-family: monospace;\n    font-size: 13px;\n}\n\n#webkit-xml-viewer-source-xml {\n    display: none;\n}\n\n.collapsible-content {\n    margin-left: 1em;\n}\n.comment {\n    white-space: pre;\n}\n\n.button {\n    -webkit-user-select: none;\n    cursor: pointer;\n    display: inline-block;\n    margin-left: -10px;\n    width: 10px;\n    background-repeat: no-repeat;\n    background-position: left top;\n    vertical-align: bottom;\n}\n\n.collapse-button {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L8 0 L4 7 Z'/></svg>\");\n    height: 10px;\n}\n\n.expand-button {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L0 8 L7 4 Z'/></svg>\");\n    height: 10px;\n}\n"
+                      "data": "/* Copyright 2014 The Chromium Authors. All rights reserved.\n * Use of this source code is governed by a BSD-style license that can be\n * found in the LICENSE file.\n */\n\ndiv.header {\n    border-bottom: 2px solid black;\n    padding-bottom: 5px;\n    margin: 10px;\n}\n\ndiv.folder > div.hidden {\n    display:none;\n}\n\ndiv.folder > span.hidden {\n    display:none;\n}\n\n.pretty-print {\n    margin-top: 1em;\n    margin-left: 20px;\n    font-family: monospace;\n    font-size: 13px;\n}\n\n#webkit-xml-viewer-source-xml {\n    display: none;\n}\n\n.opened {\n    margin-left: 1em;\n}\n\n.comment {\n    white-space: pre;\n}\n\n.folder-button {\n    -webkit-user-select: none;\n    cursor: pointer;\n    display: inline-block;\n    margin-left: -10px;\n    width: 10px;\n    background-repeat: no-repeat;\n    background-position: left top;\n    vertical-align: bottom;\n}\n\n.fold {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L8 0 L4 7 Z'/></svg>\");\n    height: 10px;\n}\n\n.open {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L0 8 L7 4 Z'/></svg>\");\n    height: 10px;\n}\n"
                     }
                   ],
                   "shadow": null,
@@ -222,14 +222,14 @@
                           "namespace": null,
                           "prefix": null,
                           "name": "class",
-                          "value": "collapsible"
+                          "value": "folder"
                         },
                         {
                           "type": "attribute",
                           "namespace": null,
                           "prefix": null,
                           "name": "id",
-                          "value": "collapsible0"
+                          "value": "folder0"
                         }
                       ],
                       "style": [],
@@ -245,7 +245,7 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "class",
-                              "value": "expanded"
+                              "value": "line"
                             }
                           ],
                           "style": [],
@@ -254,226 +254,18 @@
                               "type": "element",
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
-                              "name": "div",
+                              "name": "span",
                               "attributes": [
                                 {
                                   "type": "attribute",
                                   "namespace": null,
                                   "prefix": null,
                                   "name": "class",
-                                  "value": "line"
+                                  "value": "folder-button fold"
                                 }
                               ],
                               "style": [],
-                              "children": [
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "span",
-                                  "attributes": [
-                                    {
-                                      "type": "attribute",
-                                      "namespace": null,
-                                      "prefix": null,
-                                      "name": "class",
-                                      "value": "button collapse-button"
-                                    }
-                                  ],
-                                  "style": [],
-                                  "children": [],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "span",
-                                  "attributes": [
-                                    {
-                                      "type": "attribute",
-                                      "namespace": null,
-                                      "prefix": null,
-                                      "name": "class",
-                                      "value": "html-tag"
-                                    }
-                                  ],
-                                  "style": [],
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "data": "<rdf:RDF"
-                                    },
-                                    {
-                                      "type": "element",
-                                      "namespace": "http://www.w3.org/1999/xhtml",
-                                      "prefix": null,
-                                      "name": "span",
-                                      "attributes": [
-                                        {
-                                          "type": "attribute",
-                                          "namespace": null,
-                                          "prefix": null,
-                                          "name": "class",
-                                          "value": "html-attribute"
-                                        }
-                                      ],
-                                      "style": [],
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "data": " "
-                                        },
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "span",
-                                          "attributes": [
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "class",
-                                              "value": "html-attribute-name"
-                                            }
-                                          ],
-                                          "style": [],
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "xmlns:rdf"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        },
-                                        {
-                                          "type": "text",
-                                          "data": "=\""
-                                        },
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "span",
-                                          "attributes": [
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "class",
-                                              "value": "html-attribute-value"
-                                            }
-                                          ],
-                                          "style": [],
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        },
-                                        {
-                                          "type": "text",
-                                          "data": "\""
-                                        }
-                                      ],
-                                      "shadow": null,
-                                      "content": null
-                                    },
-                                    {
-                                      "type": "element",
-                                      "namespace": "http://www.w3.org/1999/xhtml",
-                                      "prefix": null,
-                                      "name": "span",
-                                      "attributes": [
-                                        {
-                                          "type": "attribute",
-                                          "namespace": null,
-                                          "prefix": null,
-                                          "name": "class",
-                                          "value": "html-attribute"
-                                        }
-                                      ],
-                                      "style": [],
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "data": " "
-                                        },
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "span",
-                                          "attributes": [
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "class",
-                                              "value": "html-attribute-name"
-                                            }
-                                          ],
-                                          "style": [],
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "xmlns:earl"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        },
-                                        {
-                                          "type": "text",
-                                          "data": "=\""
-                                        },
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "span",
-                                          "attributes": [
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "class",
-                                              "value": "html-attribute-value"
-                                            }
-                                          ],
-                                          "style": [],
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "http://www.w3.org/ns/earl#"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        },
-                                        {
-                                          "type": "text",
-                                          "data": "\""
-                                        }
-                                      ],
-                                      "shadow": null,
-                                      "content": null
-                                    },
-                                    {
-                                      "type": "text",
-                                      "data": ">"
-                                    }
-                                  ],
-                                  "shadow": null,
-                                  "content": null
-                                }
-                              ],
+                              "children": [],
                               "shadow": null,
                               "content": null
                             },
@@ -481,18 +273,22 @@
                               "type": "element",
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
-                              "name": "div",
+                              "name": "span",
                               "attributes": [
                                 {
                                   "type": "attribute",
                                   "namespace": null,
                                   "prefix": null,
                                   "name": "class",
-                                  "value": "collapsible-content"
+                                  "value": "html-tag"
                                 }
                               ],
                               "style": [],
                               "children": [
+                                {
+                                  "type": "text",
+                                  "data": "<rdf:RDF"
+                                },
                                 {
                                   "type": "element",
                                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -504,35 +300,15 @@
                                       "namespace": null,
                                       "prefix": null,
                                       "name": "class",
-                                      "value": "text"
+                                      "value": "html-attribute"
                                     }
                                   ],
                                   "style": [],
                                   "children": [
                                     {
                                       "type": "text",
-                                      "data": "\n  "
-                                    }
-                                  ],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "div",
-                                  "attributes": [
-                                    {
-                                      "type": "attribute",
-                                      "namespace": null,
-                                      "prefix": null,
-                                      "name": "class",
-                                      "value": "line"
-                                    }
-                                  ],
-                                  "style": [],
-                                  "children": [
+                                      "data": " "
+                                    },
                                     {
                                       "type": "element",
                                       "namespace": "http://www.w3.org/1999/xhtml",
@@ -544,102 +320,50 @@
                                           "namespace": null,
                                           "prefix": null,
                                           "name": "class",
-                                          "value": "html-tag"
+                                          "value": "html-attribute-name"
                                         }
                                       ],
                                       "style": [],
                                       "children": [
                                         {
                                           "type": "text",
-                                          "data": "<earl:TestResult"
-                                        },
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "span",
-                                          "attributes": [
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "class",
-                                              "value": "html-attribute"
-                                            }
-                                          ],
-                                          "style": [],
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": " "
-                                            },
-                                            {
-                                              "type": "element",
-                                              "namespace": "http://www.w3.org/1999/xhtml",
-                                              "prefix": null,
-                                              "name": "span",
-                                              "attributes": [
-                                                {
-                                                  "type": "attribute",
-                                                  "namespace": null,
-                                                  "prefix": null,
-                                                  "name": "class",
-                                                  "value": "html-attribute-name"
-                                                }
-                                              ],
-                                              "style": [],
-                                              "children": [
-                                                {
-                                                  "type": "text",
-                                                  "data": "rdf:about"
-                                                }
-                                              ],
-                                              "shadow": null,
-                                              "content": null
-                                            },
-                                            {
-                                              "type": "text",
-                                              "data": "=\""
-                                            },
-                                            {
-                                              "type": "element",
-                                              "namespace": "http://www.w3.org/1999/xhtml",
-                                              "prefix": null,
-                                              "name": "span",
-                                              "attributes": [
-                                                {
-                                                  "type": "attribute",
-                                                  "namespace": null,
-                                                  "prefix": null,
-                                                  "name": "class",
-                                                  "value": "html-attribute-value"
-                                                }
-                                              ],
-                                              "style": [],
-                                              "children": [
-                                                {
-                                                  "type": "text",
-                                                  "data": "#result"
-                                                }
-                                              ],
-                                              "shadow": null,
-                                              "content": null
-                                            },
-                                            {
-                                              "type": "text",
-                                              "data": "\""
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        },
-                                        {
-                                          "type": "text",
-                                          "data": "/>"
+                                          "data": "xmlns:rdf"
                                         }
                                       ],
                                       "shadow": null,
                                       "content": null
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "=\""
+                                    },
+                                    {
+                                      "type": "element",
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "span",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "html-attribute-value"
+                                        }
+                                      ],
+                                      "style": [],
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        }
+                                      ],
+                                      "shadow": null,
+                                      "content": null
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\""
                                     }
                                   ],
                                   "shadow": null,
@@ -656,66 +380,78 @@
                                       "namespace": null,
                                       "prefix": null,
                                       "name": "class",
-                                      "value": "text"
+                                      "value": "html-attribute"
                                     }
                                   ],
                                   "style": [],
                                   "children": [
                                     {
                                       "type": "text",
-                                      "data": "\n"
-                                    }
-                                  ],
-                                  "shadow": null,
-                                  "content": null
-                                }
-                              ],
-                              "shadow": null,
-                              "content": null
-                            },
-                            {
-                              "type": "element",
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "div",
-                              "attributes": [
-                                {
-                                  "type": "attribute",
-                                  "namespace": null,
-                                  "prefix": null,
-                                  "name": "class",
-                                  "value": "line"
-                                }
-                              ],
-                              "style": [],
-                              "children": [
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "span",
-                                  "attributes": [
+                                      "data": " "
+                                    },
                                     {
-                                      "type": "attribute",
-                                      "namespace": null,
+                                      "type": "element",
+                                      "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
-                                      "name": "class",
-                                      "value": "html-tag"
-                                    }
-                                  ],
-                                  "style": [],
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "data": "</rdf:RDF"
+                                      "name": "span",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "html-attribute-name"
+                                        }
+                                      ],
+                                      "style": [],
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "xmlns:earl"
+                                        }
+                                      ],
+                                      "shadow": null,
+                                      "content": null
                                     },
                                     {
                                       "type": "text",
-                                      "data": ">"
+                                      "data": "=\""
+                                    },
+                                    {
+                                      "type": "element",
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "span",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "html-attribute-value"
+                                        }
+                                      ],
+                                      "style": [],
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "http://www.w3.org/ns/earl#"
+                                        }
+                                      ],
+                                      "shadow": null,
+                                      "content": null
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\""
                                     }
                                   ],
                                   "shadow": null,
                                   "content": null
+                                },
+                                {
+                                  "type": "text",
+                                  "data": ">"
                                 }
                               ],
                               "shadow": null,
@@ -736,11 +472,27 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "class",
-                              "value": "collapsed hidden"
+                              "value": "opened"
                             }
                           ],
                           "style": [],
                           "children": [
+                            {
+                              "type": "element",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "span",
+                              "attributes": [],
+                              "style": [],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "\n  "
+                                }
+                              ],
+                              "shadow": null,
+                              "content": null
+                            },
                             {
                               "type": "element",
                               "namespace": "http://www.w3.org/1999/xhtml",
@@ -768,25 +520,6 @@
                                       "namespace": null,
                                       "prefix": null,
                                       "name": "class",
-                                      "value": "button expand-button"
-                                    }
-                                  ],
-                                  "style": [],
-                                  "children": [],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "span",
-                                  "attributes": [
-                                    {
-                                      "type": "attribute",
-                                      "namespace": null,
-                                      "prefix": null,
-                                      "name": "class",
                                       "value": "html-tag"
                                     }
                                   ],
@@ -794,7 +527,7 @@
                                   "children": [
                                     {
                                       "type": "text",
-                                      "data": "<rdf:RDF"
+                                      "data": "<earl:TestResult"
                                     },
                                     {
                                       "type": "element",
@@ -834,7 +567,7 @@
                                           "children": [
                                             {
                                               "type": "text",
-                                              "data": "xmlns:rdf"
+                                              "data": "rdf:about"
                                             }
                                           ],
                                           "shadow": null,
@@ -862,87 +595,7 @@
                                           "children": [
                                             {
                                               "type": "text",
-                                              "data": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        },
-                                        {
-                                          "type": "text",
-                                          "data": "\""
-                                        }
-                                      ],
-                                      "shadow": null,
-                                      "content": null
-                                    },
-                                    {
-                                      "type": "element",
-                                      "namespace": "http://www.w3.org/1999/xhtml",
-                                      "prefix": null,
-                                      "name": "span",
-                                      "attributes": [
-                                        {
-                                          "type": "attribute",
-                                          "namespace": null,
-                                          "prefix": null,
-                                          "name": "class",
-                                          "value": "html-attribute"
-                                        }
-                                      ],
-                                      "style": [],
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "data": " "
-                                        },
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "span",
-                                          "attributes": [
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "class",
-                                              "value": "html-attribute-name"
-                                            }
-                                          ],
-                                          "style": [],
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "xmlns:earl"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        },
-                                        {
-                                          "type": "text",
-                                          "data": "=\""
-                                        },
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "span",
-                                          "attributes": [
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "class",
-                                              "value": "html-attribute-value"
-                                            }
-                                          ],
-                                          "style": [],
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "http://www.w3.org/ns/earl#"
+                                              "data": "#result"
                                             }
                                           ],
                                           "shadow": null,
@@ -958,63 +611,99 @@
                                     },
                                     {
                                       "type": "text",
-                                      "data": ">"
+                                      "data": "/>"
                                     }
                                   ],
                                   "shadow": null,
                                   "content": null
+                                }
+                              ],
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "element",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "span",
+                              "attributes": [],
+                              "style": [],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "\n"
+                                }
+                              ],
+                              "shadow": null,
+                              "content": null
+                            }
+                          ],
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "element",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "span",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "folded hidden"
+                            }
+                          ],
+                          "style": [],
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "..."
+                            }
+                          ],
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "element",
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "div",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "line"
+                            }
+                          ],
+                          "style": [],
+                          "children": [
+                            {
+                              "type": "element",
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "span",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "html-tag"
+                                }
+                              ],
+                              "style": [],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "</rdf:RDF"
                                 },
                                 {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "span",
-                                  "attributes": [
-                                    {
-                                      "type": "attribute",
-                                      "namespace": null,
-                                      "prefix": null,
-                                      "name": "class",
-                                      "value": "text"
-                                    }
-                                  ],
-                                  "style": [],
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "data": "..."
-                                    }
-                                  ],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "span",
-                                  "attributes": [
-                                    {
-                                      "type": "attribute",
-                                      "namespace": null,
-                                      "prefix": null,
-                                      "name": "class",
-                                      "value": "html-tag"
-                                    }
-                                  ],
-                                  "style": [],
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "data": "</rdf:RDF"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "data": ">"
-                                    }
-                                  ],
-                                  "shadow": null,
-                                  "content": null
+                                  "type": "text",
+                                  "data": ">"
                                 }
                               ],
                               "shadow": null,
@@ -1092,7 +781,18 @@
             },
             {
               "type": "style",
-              "selector": "div.collapsible > div.hidden",
+              "selector": "div.folder > div.hidden",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "none",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "div.folder > span.hidden",
               "style": [
                 {
                   "name": "display",
@@ -1140,7 +840,7 @@
             },
             {
               "type": "style",
-              "selector": ".collapsible-content",
+              "selector": ".opened",
               "style": [
                 {
                   "name": "margin-left",
@@ -1162,7 +862,7 @@
             },
             {
               "type": "style",
-              "selector": ".button",
+              "selector": ".folder-button",
               "style": [
                 {
                   "name": "user-select",
@@ -1218,7 +918,7 @@
             },
             {
               "type": "style",
-              "selector": ".collapse-button",
+              "selector": ".fold",
               "style": [
                 {
                   "name": "background-image",
@@ -1279,7 +979,7 @@
             },
             {
               "type": "style",
-              "selector": ".expand-button",
+              "selector": ".open",
               "style": [
                 {
                   "name": "background-image",
