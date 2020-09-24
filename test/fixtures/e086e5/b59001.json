@@ -1,0 +1,218 @@
+{
+  "id": "b59001",
+  "outcome": "passed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/e086e5/5797606738d1d693408ce8fb6b72569b6e1d8f4c.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://act-rules.github.io/testcases/e086e5/5797606738d1d693408ce8fb6b72569b6e1d8f4c.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html> <label for=\"country\">Country</label>\n<select id=\"country\">\n\t<option>England</option>\n\t<option>Scotland</option>\n\t<option>Wales</option>\n\t<option>Northern Ireland</option>\n</select>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": [],
+          "children": [
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": [],
+              "children": [],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": [],
+              "children": [
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "label",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "for",
+                      "value": "country"
+                    }
+                  ],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Country"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "select",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "country"
+                    }
+                  ],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "option",
+                      "attributes": [],
+                      "style": [],
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "England"
+                        }
+                      ],
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "option",
+                      "attributes": [],
+                      "style": [],
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Scotland"
+                        }
+                      ],
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "option",
+                      "attributes": [],
+                      "style": [],
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Wales"
+                        }
+                      ],
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "option",
+                      "attributes": [],
+                      "style": [],
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Northern Ireland"
+                        }
+                      ],
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                }
+              ],
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}
