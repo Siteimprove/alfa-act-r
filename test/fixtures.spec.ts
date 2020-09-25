@@ -182,7 +182,6 @@ test(fixture, Rules.get("R20"), "5f99a7");
 test(fixture, Rules.get("R21"), "674b10", {
   skip: [
     // Alfa requires that all roles be valid.
-    "4d0167",
     "afc56c",
   ],
 });
@@ -414,7 +413,6 @@ test(fixture, Rules.get("R45"), "a25f45");
 test(fixture, Rules.get("R46"), "d0f69e", {
   skip: [
     // Alfa does not yet consider ARIA grids
-    "403568",
     "d2fa5e",
   ],
 });
