@@ -47,6 +47,9 @@ test(fixture, Rules.get("R13"), "cae760", {
   skip: [
     // https://github.com/act-rules/act-rules.github.io/issues/1170
     "b39305",
+    // Alfa consider all iframe, not restricting to sequential tab navigation
+    // and isTabbable actually skip iframe as they redirect focus.
+    "4a1aa5",
   ],
 });
 
@@ -180,6 +183,7 @@ test(fixture, Rules.get("R21"), "674b10", {
   skip: [
     // Alfa requires that all roles be valid.
     "4d0167",
+    "afc56c",
   ],
 });
 
@@ -411,6 +415,7 @@ test(fixture, Rules.get("R46"), "d0f69e", {
   skip: [
     // Alfa does not yet consider ARIA grids
     "403568",
+    "d2fa5e",
   ],
 });
 
