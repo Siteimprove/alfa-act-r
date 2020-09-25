@@ -466,7 +466,14 @@ test(fixture, Rules.get("R64"), "ffd0e9", {
 
 // R67 is Siteimprove only
 
-test(fixture, Rules.get("R68"), "bc4a75");
+test(fixture, Rules.get("R68"), "bc4a75", {
+  skip: [
+    // https://github.com/Siteimprove/alfa/pull/418
+    "10d9a0",
+    // Investigate
+    "519aae",
+  ],
+});
 
 test(fixture, Rules.get("R69"), "afw4f7", {
   skip: [
