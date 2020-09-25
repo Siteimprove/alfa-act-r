@@ -45,8 +45,6 @@ test(fixture, Rules.get("R12"), "97a4e1");
 
 test(fixture, Rules.get("R13"), "cae760", {
   skip: [
-    // https://github.com/act-rules/act-rules.github.io/issues/1170
-    "b39305",
     // Alfa consider all iframe, not restricting to sequential tab navigation
     // and isTabbable actually skip iframe as they redirect focus.
     "4a1aa5",
