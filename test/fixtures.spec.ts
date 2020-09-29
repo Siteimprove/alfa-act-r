@@ -45,8 +45,9 @@ test(fixture, Rules.get("R12"), "97a4e1");
 
 test(fixture, Rules.get("R13"), "cae760", {
   skip: [
-    // https://github.com/act-rules/act-rules.github.io/issues/1170
-    "b39305",
+    // Alfa consider all iframe, not restricting to sequential tab navigation
+    // and isTabbable actually skip iframe as they redirect focus.
+    "4a1aa5",
   ],
 });
 
@@ -179,9 +180,27 @@ test(fixture, Rules.get("R20"), "5f99a7");
 test(fixture, Rules.get("R21"), "674b10", {
   skip: [
     // Alfa requires that all roles be valid.
-    "4d0167",
+    "afc56c",
   ],
 });
+
+// R22 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R22"), "f51b46");
+
+// R23 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R23"), "2eb176");
+
+// R24 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R24"), "1a02b0");
+
+// R25 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R25"), "1ea59c");
+
+// R26 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R26"), "fd26cf");
+
+// R27 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R27"), "eac66b");
 
 test(fixture, Rules.get("R28"), "59796f", {
   skip: [
@@ -193,6 +212,37 @@ test(fixture, Rules.get("R28"), "59796f", {
   ],
 });
 
+// R29 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R29"), "afb423");
+
+// R30 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R30"), "e7aa44");
+
+// R31 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R31"), "ab4d13");
+
+// R32 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R32"), "d7ba54");
+
+// R33 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R33"), "ee13b5");
+
+// R34 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R34"), "ac7dc6");
+
+// R35 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R35"), "c3232f");
+
+// R36 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R36"), "f196ce");
+
+// R37 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R37"), "1ec09b");
+
+// R38 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R38"), "c5a4ea");
+
+// R39 always has questions in expectation, review flow not currently handled
 test.skip(fixture, Rules.get("R39"), "9eb3f6", {
   answers: {
     d6c3: [
@@ -233,6 +283,8 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
     "3fcd49",
   ],
 });
+
+// R40 is Siteimprove rule
 
 test.skip(fixture, Rules.get("R41"), "b20e66", {
   answers: {
@@ -359,11 +411,44 @@ test(fixture, Rules.get("R45"), "a25f45");
 test(fixture, Rules.get("R46"), "d0f69e", {
   skip: [
     // Alfa does not yet consider ARIA grids
-    "403568",
+    "d2fa5e",
   ],
 });
 
 test(fixture, Rules.get("R47"), "b4f0c3");
+
+// R48 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R48"), "aaa1bf");
+
+// R49 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R49"), "4c31df");
+
+// R50 has questions in applicability, review flow not currently handled
+test.skip(fixture, Rules.get("R50"), "80f0bf");
+
+// R51 is Siteimprove only
+
+// R52 is Siteimprove only
+
+// R53 is Siteimprove only
+
+// R54 is Siteimprove only
+
+// R55 is Siteimprove only
+
+// R56 is Siteimprove only
+
+// R57 is Siteimprove only
+
+// R58 is not implemented yet
+
+// R59 is Siteimprove only
+
+// R60 is Siteimprove only
+
+// R61 is Siteimprove only
+
+// R62 is not implemented yet
 
 test(fixture, Rules.get("R63"), "8fc3b6");
 
@@ -373,6 +458,21 @@ test(fixture, Rules.get("R64"), "ffd0e9", {
     // @see https://github.com/Siteimprove/alfa/issues/389
     "37e8ba",
     "ae7bea",
+  ],
+});
+
+// R65 is not implemented yet
+
+// R66 is not implemented yet
+
+// R67 is Siteimprove only
+
+test(fixture, Rules.get("R68"), "bc4a75", {
+  skip: [
+    // https://github.com/Siteimprove/alfa/pull/418
+    "10d9a0",
+    // Investigate
+    "519aae",
   ],
 });
 
@@ -393,6 +493,34 @@ test(fixture, Rules.get("R69"), "afw4f7", {
     "55f4c4",
   ],
 });
+
+// R70 is Siteimprove only
+
+// R71 is Siteimprove only
+
+// R72 is Siteimprove only
+
+// R73 is Siteimprove only
+
+// R74 is Siteimprove only
+
+// R75 is Siteimprove only
+
+// R76 is Siteimprove only
+
+// R77 is Siteimprove only
+
+// R78 is Siteimprove only
+
+// R79 is Siteimprove only
+
+// R80 is Siteimprove only
+
+// R81 has questions in expectation, review flow not currently handled
+test.skip(fixture, Rules.get("R81"), "fd3a94");
+
+// R82 always has questions in expectation, review flow not currently handled
+test.skip(fixture, Rules.get("R82"), "36b590");
 
 test(fixture, Rules.get("R83"), "59br37", {
   skip: [
@@ -415,3 +543,7 @@ test(fixture, Rules.get("R84"), "0ssw9k", {
     "86c515",
   ],
 });
+
+// R85 is Siteimprove only
+
+test(fixture, Rules.get("R86"), "46ca7f");
