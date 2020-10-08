@@ -398,6 +398,7 @@ test.skip(fixture, Rules.get("R41"), "b20e66", {
 test(fixture, Rules.get("R42"), "ff89c9", {
   skip: [
     // Role from ARIA DPUB which the ACT rule explicitly ignore, but Alfa doesn't
+    // @see https://github.com/act-rules/act-rules.github.io/pull/1473
     "64371f",
   ],
 });
