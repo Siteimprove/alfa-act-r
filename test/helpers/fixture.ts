@@ -17,8 +17,12 @@ export interface FixtureAnswer {
 }
 
 export interface FixtureOptions {
+  // Alfa is known to not match the implementation mapping
   skip?: Array<string>;
-  only?: Array<string>;
+  // The test is known to need an oracle
+  needOracle?: Array<string>;
+  // Alfa is known to have a Inapplicable/Passed discrepancy with ACT-R
+  nonStrict?: Array<string>;
   answers?: {
     [fixture: string]: Array<FixtureAnswer>;
   };
@@ -44,7 +48,11 @@ export async function fixture(
   for (const test of tests) {
     const page = Page.from(test.page);
 
-    const skip = options.skip && options.skip.includes(test.id);
+    const skip = options.skip !== undefined && options.skip.includes(test.id);
+    const needOracle =
+      options.needOracle !== undefined && options.needOracle.includes(test.id);
+    const nonStrict =
+      options.nonStrict !== undefined && options.nonStrict.includes(test.id);
 
     const outcome = await Audit.of<Page, unknown, unknown>(page, [rule.get()])
       .evaluate()
@@ -75,27 +83,31 @@ export async function fixture(
     const expected = test.outcome;
     const actual = outcome.toJSON().outcome;
 
-    let passes = false;
+    const result = mapping(actual, expected);
 
-    // https://act-rules.github.io/pages/implementations/mapping/#automated-mapping
-    switch (expected) {
-      case "passed":
-      case "inapplicable":
-        passes = actual !== "failed";
+    switch (result) {
+      case "ok": // Alfa and ACT-R perfectly agree
+        t.pass(test.id);
+        // Display warnings if the case was registered as imperfect match
+        // if (skip) {
+        //   console.warn(`Test case ${test.id} is incorrectly marked as skipped`)
+        // }
+        // if (needOracle) {
+        //   console.warn(`Test case ${test.id} is incorrectly marked as needing an oracle`)
+        // }
         break;
-      case "failed":
-        passes = actual === "failed" || actual === "cantTell";
-    }
-
-    if (skip) {
-      t.true.skip(passes, test.id);
-    } else {
-      t.true(passes, test.id);
-
-      if (!passes) {
-        t.log("Outcome", outcome.toJSON());
-        t.log("Test", test);
-      }
+      case "error":
+        if (skip) {
+          t.fail.skip(test.id);
+        } else {
+          t.fail(test.id);
+          t.log("Outcome", outcome.toJSON());
+          t.log("Test", test);
+        }
+        break;
+      case "nonStrict":
+      case "needOracle":
+        t.pass(test.id);
     }
 
     t.context.outcomes.push([page, outcome]);
@@ -111,4 +123,44 @@ export namespace fixture {
   ): string {
     return fixture;
   }
+}
+
+/**
+ * @see https://act-rules.github.io/pages/implementations/mapping/#automated-mapping
+ */
+function mapping(actual: string, expected: string): string {
+  switch (actual) {
+    case "cantTell":
+      return "needOracle";
+    case "inapplicable":
+      switch (expected) {
+        case "inapplicable":
+          return "ok";
+        case "passed":
+          return "nonStrict";
+        case "failed":
+          return "error";
+      }
+      return "";
+    case "passed":
+      switch (expected) {
+        case "passed":
+          return "ok";
+        case "inapplicable":
+          return "nonStrict";
+        case "failed":
+          return "error";
+      }
+      return "";
+    case "failed":
+      switch (expected) {
+        case "inapplicable":
+        case "passed":
+          return "error";
+        case "failed":
+          return "ok";
+      }
+      return "";
+  }
+  return "";
 }
