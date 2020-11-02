@@ -54,6 +54,12 @@ export async function fixture(
     const nonStrict =
       options.nonStrict !== undefined && options.nonStrict.includes(test.id);
 
+    if (skip === needOracle ? skip : nonStrict) {
+      console.warn(
+        `At most one of skip, needOracle, and nonStrict should be set for ${test.id}.`
+      );
+    }
+
     const outcome = await Audit.of<Page, unknown, unknown>(page, [rule.get()])
       .evaluate()
       .map((outcomes) =>
@@ -89,12 +95,21 @@ export async function fixture(
       case "ok": // Alfa and ACT-R perfectly agree
         t.pass(test.id);
         // Display warnings if the case was registered as imperfect match
-        // if (skip) {
-        //   console.warn(`Test case ${test.id} is incorrectly marked as skipped`)
-        // }
-        // if (needOracle) {
-        //   console.warn(`Test case ${test.id} is incorrectly marked as needing an oracle`)
-        // }
+        if (skip) {
+          console.warn(
+            `Test case ${test.id} matches but is incorrectly marked as skipped`
+          );
+        }
+        if (needOracle) {
+          console.warn(
+            `Test case ${test.id} matches but is incorrectly marked as needing an oracle`
+          );
+        }
+        if (nonStrict) {
+          console.warn(
+            `Test case ${test.id} matches but is incorrectly marked as not strict`
+          );
+        }
         break;
       case "error":
         if (skip) {
@@ -106,8 +121,23 @@ export async function fixture(
         }
         break;
       case "nonStrict":
+        t.pass(test.id);
+        if (!nonStrict) {
+          console.warn(
+            `Test case ${test.id} doesn't match perfectly, investigate and mark as nonStrict.`
+          );
+        }
+        break;
       case "needOracle":
         t.pass(test.id);
+        if (!needOracle) {
+          console.warn(
+            `Test case ${test.id} has no or incomplete oracle, mark as needOracle.`
+          );
+        }
+        break;
+      default:
+        t.fail("This should never happen.");
     }
 
     t.context.outcomes.push([page, outcome]);
