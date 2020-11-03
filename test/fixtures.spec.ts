@@ -37,7 +37,14 @@ test(fixture, Rules.get("R8"), "e086e5");
 
 test(fixture, Rules.get("R9"), "bc659a");
 
-test(fixture, Rules.get("R10"), "73f2c2");
+test(fixture, Rules.get("R10"), "73f2c2", {
+  lax: [
+    // Alfa does not set aria-disabled to true when disabled is set ?
+    // Or rule is looking at literal aria-disabled attribute, not value of the property.
+    // @see https://github.com/Siteimprove/alfa/issues/516
+    "319279",
+  ],
+});
 
 test(fixture, Rules.get("R11"), "c487ae");
 
@@ -490,6 +497,10 @@ test(fixture, Rules.get("R69"), "afw4f7", {
 
     // Alfa does not yet disregard impossible foreground/background combinations
     "55f4c4",
+  ],
+  lax: [
+    // Alfa does not consider off screen text as invisible
+    "97803e",
   ],
   manual: ["599d91", "455f4c"],
 });
