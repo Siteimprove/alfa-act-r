@@ -156,6 +156,17 @@ export async function fixture(
   }
 }
 
+export namespace fixture {
+  export function title(
+    title: string = "",
+    rule: Rule<any, any, any>,
+    fixture: string,
+    options?: FixtureOptions
+  ): string {
+    return fixture;
+  }
+}
+
 /**
  * @see https://act-rules.github.io/pages/implementations/mapping/#automated-mapping
  *
