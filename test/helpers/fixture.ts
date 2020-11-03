@@ -53,11 +53,11 @@ export async function fixture(
       options.needOracle !== undefined && options.needOracle.includes(test.id);
     const nonStrict =
       options.nonStrict !== undefined && options.nonStrict.includes(test.id);
-    const testID = `${fixture}/${test.id}`;
+    const testID = `${fixture} / ${test.id}`;
 
     if (skip === needOracle ? skip : nonStrict) {
       console.warn(
-        `At most one of skip, needOracle, and nonStrict should be set for ${test.id}.`
+        `At most one of skip, needOracle, and nonStrict should be set for ${testID}.`
       );
     }
 
