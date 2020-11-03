@@ -51,12 +51,11 @@ export async function fixture(
     const page = Page.from(test.page);
 
     const skip = options.skip && options.skip.includes(test.id);
-    const needOracle =
-      options.needOracle && options.needOracle.includes(test.id);
-    const nonStrict = options.nonStrict && options.nonStrict.includes(test.id);
+    const manual = options.manual && options.manual.includes(test.id);
+    const lax = options.lax && options.lax.includes(test.id);
     const testID = `${fixture} / ${test.id}`;
 
-    if (skip === needOracle ? skip : nonStrict) {
+    if (skip === manual ? skip : lax) {
       t.log(
         `At most one of skip, needOracle, and nonStrict should be set for ${testID}.`
       );
@@ -102,15 +101,13 @@ export async function fixture(
             `Test case ${testID} matches but is incorrectly marked as skipped`
           );
         }
-        if (needOracle) {
+        if (manual) {
           t.log(
-            `Test case ${testID} matches but is incorrectly marked as needing an oracle`
+            `Test case ${testID} matches but is incorrectly marked as manual`
           );
         }
-        if (nonStrict) {
-          t.log(
-            `Test case ${testID} matches but is incorrectly marked as not strict`
-          );
+        if (lax) {
+          t.log(`Test case ${testID} matches but is incorrectly marked as lax`);
         }
         break;
       case "error":
@@ -122,10 +119,10 @@ export async function fixture(
           t.log("Test", test);
         }
         break;
-      case "nonStrict":
+      case "lax":
         // If the case is known to be a non strict match between Alfa and ACT-R, everything is fine.
         // Otherwise, emit a warning or an error depending on test mode.
-        if (!nonStrict) {
+        if (!lax) {
           if (strict) {
             t.fail(test.id);
             t.log("Outcome", outcome.toJSON());
@@ -133,20 +130,20 @@ export async function fixture(
           } else {
             t.pass(test.id);
             t.log(
-              `Test case ${testID} doesn't match perfectly, investigate and mark as nonStrict.`
+              `Test case ${testID} doesn't match perfectly, investigate and mark as lax.`
             );
           }
         } else {
           t.pass(test.id);
         }
         break;
-      case "needOracle":
+      case "manual":
         // If the case is known to need an oracle, everything is fine.
         // Otherwise, emit a warning.
         t.pass(test.id);
-        if (!needOracle) {
+        if (!manual) {
           t.log(
-            `Test case ${testID} has no or incomplete oracle, mark as needOracle.`
+            `Test case ${testID} has no or incomplete oracle, mark as manual.`
           );
         }
         break;
@@ -170,31 +167,31 @@ export namespace fixture {
 /**
  * @see https://act-rules.github.io/pages/implementations/mapping/#automated-mapping
  *
- *  ACT result -> | Inapplicable     | Passed           | Failed
- *  ALFA ↓        |                  |                  |
- *  --------------+------------------+------------------+-------------
- *  Inapplicable  | OK (strict)      | OK (not strict)  | Error
- *                |                  | Warning          |
- *  --------------+------------------+------------------+-------------
- *  Passed        | OK (not strict)  | OK (strict)      | Error
- *                | Warning          |                  |
- *  --------------+------------------+------------------+-------------
- *  Failed        | Error            | Error            | OK (strict)
- *  --------------+------------------+------------------+-------------
- *  CantTell      | OK (need oracle) | OK (need oracle) | OK (need oracle)
- *                | Warning          | Warning          | Warning
+ *  ACT result -> | Inapplicable | Passed      | Failed
+ *  ALFA ↓        |              |             |
+ *  --------------+--------------+-------------+-------------
+ *  Inapplicable  | OK (strict)  | OK (lax)    | Error
+ *                |              | Warning     |
+ *  --------------+--------------+-------------+-------------
+ *  Passed        | OK (lax)     | OK (strict) | Error
+ *                | Warning      |             |
+ *  --------------+--------------+-------------+-------------
+ *  Failed        | Error        | Error       | OK (strict)
+ *  --------------+--------------+-------------+-------------
+ *  CantTell      | OK (manual)  | OK (manual) | OK (manual)
+ *                | Warning      | Warning     | Warning
  */
 function mapping(
   actual: string,
   expected: string
-): "ok" | "error" | "nonStrict" | "needOracle" {
+): "ok" | "error" | "lax" | "manual" {
   switch (actual) {
     case "inapplicable":
       switch (expected) {
         case "inapplicable":
           return "ok";
         case "passed":
-          return "nonStrict";
+          return "lax";
         case "failed":
           return "error";
       }
@@ -204,7 +201,7 @@ function mapping(
         case "passed":
           return "ok";
         case "inapplicable":
-          return "nonStrict";
+          return "lax";
         case "failed":
           return "error";
       }
@@ -219,7 +216,7 @@ function mapping(
       }
       return "error";
     case "cantTell":
-      return "needOracle";
+      return "manual";
   }
   return "error";
 }

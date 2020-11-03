@@ -493,7 +493,7 @@ test(fixture, Rules.get("R69"), "afw4f7", {
     // Alfa does not yet disregard impossible foreground/background combinations
     "55f4c4",
   ],
-  needOracle: ["599d91", "455f4c"],
+  manual: ["599d91", "455f4c"],
 });
 
 // R70 is Siteimprove only
