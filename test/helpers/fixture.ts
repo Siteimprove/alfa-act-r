@@ -20,15 +20,15 @@ export interface FixtureOptions {
   // Alfa is known to not match the implementation mapping
   skip?: Array<string>;
   // The test is known to need an oracle
-  needOracle?: Array<string>;
+  manual?: Array<string>;
   // Alfa is known to have a Inapplicable/Passed discrepancy with ACT-R
-  nonStrict?: Array<string>;
+  lax?: Array<string>;
   answers?: {
     [fixture: string]: Array<FixtureAnswer>;
   };
 }
 
-const strict = process.argv[2] === "--strict";
+const strict = process.argv.slice(2).includes("--strict");
 
 export async function fixture(
   t: ExecutionContext<Context>,
@@ -57,7 +57,7 @@ export async function fixture(
     const testID = `${fixture} / ${test.id}`;
 
     if (skip === needOracle ? skip : nonStrict) {
-      console.warn(
+      t.log(
         `At most one of skip, needOracle, and nonStrict should be set for ${testID}.`
       );
     }
@@ -98,17 +98,17 @@ export async function fixture(
         t.pass(test.id);
         // Display warnings if the case was registered as imperfect match
         if (skip) {
-          console.warn(
+          t.log(
             `Test case ${testID} matches but is incorrectly marked as skipped`
           );
         }
         if (needOracle) {
-          console.warn(
+          t.log(
             `Test case ${testID} matches but is incorrectly marked as needing an oracle`
           );
         }
         if (nonStrict) {
-          console.warn(
+          t.log(
             `Test case ${testID} matches but is incorrectly marked as not strict`
           );
         }
@@ -132,7 +132,7 @@ export async function fixture(
             t.log("Test", test);
           } else {
             t.pass(test.id);
-            console.warn(
+            t.log(
               `Test case ${testID} doesn't match perfectly, investigate and mark as nonStrict.`
             );
           }
@@ -145,7 +145,7 @@ export async function fixture(
         // Otherwise, emit a warning.
         t.pass(test.id);
         if (!needOracle) {
-          console.warn(
+          t.log(
             `Test case ${testID} has no or incomplete oracle, mark as needOracle.`
           );
         }
