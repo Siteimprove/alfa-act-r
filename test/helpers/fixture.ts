@@ -50,11 +50,10 @@ export async function fixture(
   for (const test of tests) {
     const page = Page.from(test.page);
 
-    const skip = options.skip !== undefined && options.skip.includes(test.id);
+    const skip = options.skip && options.skip.includes(test.id);
     const needOracle =
-      options.needOracle !== undefined && options.needOracle.includes(test.id);
-    const nonStrict =
-      options.nonStrict !== undefined && options.nonStrict.includes(test.id);
+      options.needOracle && options.needOracle.includes(test.id);
+    const nonStrict = options.nonStrict && options.nonStrict.includes(test.id);
     const testID = `${fixture} / ${test.id}`;
 
     if (skip === needOracle ? skip : nonStrict) {
