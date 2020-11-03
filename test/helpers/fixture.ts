@@ -151,22 +151,9 @@ export async function fixture(
           );
         }
         break;
-      default:
-        t.fail("This should never happen.");
     }
 
     t.context.outcomes.push([page, outcome]);
-  }
-}
-
-export namespace fixture {
-  export function title(
-    title: string = "",
-    rule: Rule<any, any, any>,
-    fixture: string,
-    options?: FixtureOptions
-  ): string {
-    return fixture;
   }
 }
 
@@ -187,7 +174,10 @@ export namespace fixture {
  *  CantTell      | OK (need oracle) | OK (need oracle) | OK (need oracle)
  *                | Warning          | Warning          | Warning
  */
-function mapping(actual: string, expected: string): string {
+function mapping(
+  actual: string,
+  expected: string
+): "ok" | "error" | "nonStrict" | "needOracle" {
   switch (actual) {
     case "inapplicable":
       switch (expected) {
@@ -198,7 +188,7 @@ function mapping(actual: string, expected: string): string {
         case "failed":
           return "error";
       }
-      return "";
+      return "error";
     case "passed":
       switch (expected) {
         case "passed":
@@ -208,7 +198,7 @@ function mapping(actual: string, expected: string): string {
         case "failed":
           return "error";
       }
-      return "";
+      return "error";
     case "failed":
       switch (expected) {
         case "inapplicable":
@@ -217,9 +207,9 @@ function mapping(actual: string, expected: string): string {
         case "failed":
           return "ok";
       }
-      return "";
+      return "error";
     case "cantTell":
       return "needOracle";
   }
-  return "";
+  return "error";
 }
