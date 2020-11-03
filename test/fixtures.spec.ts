@@ -530,7 +530,7 @@ test(fixture, Rules.get("R83"), "59br37", {
     // Investigate
     "dc1edd",
 
-    // Investigate. Bug in Alfa?
+    // Alfa does not have a default value for line-height, so "normal" stays so.
     "202900",
     "765e61",
   ],
