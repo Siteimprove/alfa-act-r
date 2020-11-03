@@ -28,6 +28,8 @@ export interface FixtureOptions {
   };
 }
 
+const strict = process.argv[2] === "--strict";
+
 export async function fixture(
   t: ExecutionContext<Context>,
   rule: Option<Rule<Page, unknown, any>>,
@@ -122,14 +124,26 @@ export async function fixture(
         }
         break;
       case "nonStrict":
-        t.pass(test.id);
+        // If the case is known to be a non strict match between Alfa and ACT-R, everything is fine.
+        // Otherwise, emit a warning or an error depending on test mode.
         if (!nonStrict) {
-          console.warn(
-            `Test case ${testID} doesn't match perfectly, investigate and mark as nonStrict.`
-          );
+          if (strict) {
+            t.fail(test.id);
+            t.log("Outcome", outcome.toJSON());
+            t.log("Test", test);
+          } else {
+            t.pass(test.id);
+            console.warn(
+              `Test case ${testID} doesn't match perfectly, investigate and mark as nonStrict.`
+            );
+          }
+        } else {
+          t.pass(test.id);
         }
         break;
       case "needOracle":
+        // If the case is known to need an oracle, everything is fine.
+        // Otherwise, emit a warning.
         t.pass(test.id);
         if (!needOracle) {
           console.warn(
@@ -175,8 +189,6 @@ export namespace fixture {
  */
 function mapping(actual: string, expected: string): string {
   switch (actual) {
-    case "cantTell":
-      return "needOracle";
     case "inapplicable":
       switch (expected) {
         case "inapplicable":
@@ -206,6 +218,8 @@ function mapping(actual: string, expected: string): string {
           return "ok";
       }
       return "";
+    case "cantTell":
+      return "needOracle";
   }
   return "";
 }
