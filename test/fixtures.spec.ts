@@ -470,8 +470,6 @@ test(fixture, Rules.get("R64"), "ffd0e9", {
 
 test(fixture, Rules.get("R68"), "bc4a75", {
   skip: [
-    // https://github.com/Siteimprove/alfa/pull/418
-    "10d9a0",
     // Investigate
     "519aae",
   ],
@@ -531,7 +529,10 @@ test(fixture, Rules.get("R83"), "59br37", {
 
     // Investigate
     "dc1edd",
-    "ff1278",
+
+    // Investigate. Bug in Alfa?
+    "202900",
+    "765e61",
   ],
 });
 
