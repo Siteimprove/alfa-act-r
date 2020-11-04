@@ -50,14 +50,15 @@ export async function fixture(
   for (const test of tests) {
     const page = Page.from(test.page);
 
-    const skip = options.skip && options.skip.includes(test.id);
-    const manual = options.manual && options.manual.includes(test.id);
-    const lax = options.lax && options.lax.includes(test.id);
+    const skip = options.skip !== undefined && options.skip.includes(test.id);
+    const manual =
+      options.manual !== undefined && options.manual.includes(test.id);
+    const lax = options.lax !== undefined && options.lax.includes(test.id);
     const testID = `${fixture} / ${test.id}`;
 
     if (skip === manual ? skip : lax) {
       t.log(
-        `At most one of skip, needOracle, and nonStrict should be set for ${testID}.`
+        `At most one of skip, manual, and lax should be set for ${testID}.`
       );
     }
 
