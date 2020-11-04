@@ -44,7 +44,15 @@ test(fixture, Rules.get("R7"), "de46e4");
 
 test(fixture, Rules.get("R8"), "e086e5");
 
-test(fixture, Rules.get("R9"), "bc659a");
+test(fixture, Rules.get("R9"), "bc659a", {
+  lax: [
+    // Due to the nature of the examples, we do get a "304 Not Modified" response with empty body
+    // when trying to fetch it (instant redirect…)
+    // Thus, we can't really test it with this framework since our GET is going to be redirected every single time.
+    "0ccdca",
+    "da63d6",
+  ],
+});
 
 test(fixture, Rules.get("R10"), "73f2c2", {
   lax: [
@@ -417,18 +425,36 @@ test(fixture, Rules.get("R42"), "ff89c9", {
     // @see https://github.com/act-rules/act-rules.github.io/pull/1473
     "64371f",
   ],
+  lax: [
+    // Alfa does consider elements whose role is implicit or explicit=implicit
+    "997565",
+    "5a9eba",
+  ],
 });
 
 test(fixture, Rules.get("R43"), "7d6734");
 
 test(fixture, Rules.get("R44"), "b33eff");
 
-test(fixture, Rules.get("R45"), "a25f45");
+test(fixture, Rules.get("R45"), "a25f45", {
+  lax: [
+    // Alfa does not consider off-screen elements as invisible
+    // @see https://github.com/Siteimprove/alfa/issues/519
+    "d26b6d",
+    // Alfa target table with content in the AT, ACT only looks whether the table element is in the AT
+    // bug?
+    "b55e57",
+  ],
+});
 
 test(fixture, Rules.get("R46"), "d0f69e", {
   skip: [
     // Alfa does not yet consider ARIA grids
     "d2fa5e",
+  ],
+  lax: [
+    // Alfa does not consider ARIA tables
+    "30ecbb",
   ],
 });
 
@@ -513,6 +539,7 @@ test(fixture, Rules.get("R69"), "afw4f7", {
   ],
   lax: [
     // Alfa does not consider off screen text as invisible
+    // @see https://github.com/Siteimprove/alfa/issues/519
     "97803e",
   ],
   manual: ["599d91", "455f4c"],
