@@ -191,14 +191,7 @@ test(fixture, Rules.get("R16"), "4e8ab6", {
 
 test(fixture, Rules.get("R17"), "6cfa84");
 
-test(fixture, Rules.get("R18"), "5c01ea", {
-  skip: [
-    // aria-expanded is not allowed on complementary in ARIA 1.2
-    // These test cases have been removed upstream, but I'm not fetching new cases now…
-    "9cae55",
-    "b47bcb",
-  ],
-});
+test(fixture, Rules.get("R18"), "5c01ea");
 
 test(fixture, Rules.get("R19"), "6a7281", {
   skip: [
