@@ -16,7 +16,16 @@ test.after("Write manifest", (t) => {
 
 test(fixture, Rules.get("R1"), "2779a5");
 
-test(fixture, Rules.get("R2"), "23a2a8");
+test(fixture, Rules.get("R2"), "23a2a8", {
+  lax: [
+    // Alfa intentionally ignores <img> elements that do not have a role of img
+    // in order to ignore presentational images.
+    "5c5409",
+    "3e791a",
+    "3986eb",
+    "01839a",
+  ],
+});
 
 test(fixture, Rules.get("R3"), "3ea0c8");
 
