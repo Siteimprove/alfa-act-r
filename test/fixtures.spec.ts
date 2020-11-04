@@ -489,6 +489,10 @@ test(fixture, Rules.get("R68"), "bc4a75", {
     // Investigate
     "519aae",
   ],
+  lax: [
+    // Alfa intentionally applies to elements whose role is implicit
+    "8ff0b1",
+  ],
 });
 
 test(fixture, Rules.get("R69"), "afw4f7", {
