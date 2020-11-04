@@ -38,6 +38,14 @@ export async function fixture(
 ): Promise<void> {
   const directory = path.join("test", "fixtures", fixture);
 
+  const flags: Array<string> = (options.skip || [])
+    .concat(options.lax || [])
+    .concat(options.manual || []);
+  const seen: { [id: string]: boolean } = {};
+  for (const flag of flags) {
+    seen[flag] = false;
+  }
+
   const tests = fs
     .readdirSync(directory)
     .filter((filename) => filename.endsWith(".json"))
@@ -61,6 +69,8 @@ export async function fixture(
         `At most one of skip, manual, and lax should be set for ${testID}.`
       );
     }
+
+    seen[test.id] = true;
 
     const outcome = await Audit.of<Page, unknown, unknown>(page, [rule.get()])
       .evaluate()
@@ -151,6 +161,15 @@ export async function fixture(
     }
 
     t.context.outcomes.push([page, outcome]);
+  }
+
+  const notSeen = Object.entries(seen)
+    .filter(([_, value]) => !value)
+    .map(([id, _]) => id);
+  if (notSeen.length > 0) {
+    t.log(
+      `Test cases ${fixture} / [${notSeen}] have been deleted upstream. Remove flags.`
+    );
   }
 }
 
