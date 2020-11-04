@@ -443,7 +443,7 @@ test(fixture, Rules.get("R45"), "a25f45", {
     // @see https://github.com/Siteimprove/alfa/issues/519
     "d26b6d",
     // Alfa target table with content in the AT, ACT only looks whether the table element is in the AT
-    // bug?
+    // @see https://github.com/Siteimprove/alfa/issues/521
     "b55e57",
   ],
 });
