@@ -179,7 +179,15 @@ test.skip(fixture, Rules.get("R15"), "4b1c6c", {
   ],
 });
 
-test(fixture, Rules.get("R16"), "4e8ab6");
+test(fixture, Rules.get("R16"), "4e8ab6", {
+  lax: [
+    // Alfa voluntarily considers elements whose implicit and explicit roles are the same
+    "cc955b",
+    // Alfa considers elements that are not included in the accessibility tree
+    // @see https://github.com/Siteimprove/alfa/issues/523
+    "7bda65",
+  ],
+});
 
 test(fixture, Rules.get("R17"), "6cfa84");
 
@@ -493,7 +501,13 @@ test.skip(fixture, Rules.get("R50"), "80f0bf");
 
 // R62 is not implemented yet
 
-test(fixture, Rules.get("R63"), "8fc3b6");
+test(fixture, Rules.get("R63"), "8fc3b6", {
+  lax: [
+    // Alfa does not look at the MIME type of embedded content
+    // @see https://github.com/Siteimprove/alfa/issues/522
+    "e0af01",
+  ],
+});
 
 test(fixture, Rules.get("R64"), "ffd0e9", {
   skip: [
@@ -595,7 +609,14 @@ test(fixture, Rules.get("R84"), "0ssw9k", {
 
     // Alfa intentionally diverges on these cases
     // -> Alfa does not consider the exact layout when determining scrollability
+    // @see https://github.com/Siteimprove/alfa/issues/183
     "86c515",
+  ],
+  lax: [
+    // Alfa does not consider the exact layout when determining scrollability
+    // so elements that are big enough are incorrectly deemed scrollable
+    // @see https://github.com/Siteimprove/alfa/issues/183
+    "30bc26",
   ],
 });
 
