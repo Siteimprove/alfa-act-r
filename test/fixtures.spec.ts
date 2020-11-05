@@ -77,7 +77,7 @@ test(fixture, Rules.get("R13"), "cae760", {
 
 test(fixture, Rules.get("R14"), "2ee8b8", {
   manual: ["4a03b2", "83f0a2", "99b880", "a10b38", "f484cc"],
-  answers: {
+  /*answers: {
     "0643": [
       {
         target: "//div",
@@ -102,7 +102,7 @@ test(fixture, Rules.get("R14"), "2ee8b8", {
         answer: false,
       },
     ],
-  },
+  },*/
 });
 
 test(fixture, Rules.get("R15"), "4b1c6c", {
@@ -117,7 +117,7 @@ test(fixture, Rules.get("R15"), "4b1c6c", {
     "dcea4b",
     "dcfbcd",
   ],
-  answers: {
+  /*answers: {
     f589: [
       {
         target: "//iframe",
@@ -182,7 +182,7 @@ test(fixture, Rules.get("R15"), "4b1c6c", {
         answer: false,
       },
     ],
-  },
+  },*/
 });
 
 test(fixture, Rules.get("R16"), "4e8ab6", {
@@ -275,7 +275,7 @@ test.skip(fixture, Rules.get("R38"), "c5a4ea");
 
 // R39 always has questions in expectation, review flow not currently handled
 test.skip(fixture, Rules.get("R39"), "9eb3f6", {
-  answers: {
+  /*answers: {
     d6c3: [
       {
         target: "//img",
@@ -308,7 +308,7 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
         answer: false,
       },
     ],
-  },
+  },*/
   skip: [
     // Alfa doesn't look into sources set out of the <img> element (sibling <source>, <scrset>)
     "3fcd49",
@@ -318,7 +318,7 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
 // R40 is Siteimprove rule
 
 test.skip(fixture, Rules.get("R41"), "b20e66", {
-  answers: {
+  /*answers: {
     "5fa9": [
       {
         target: "//a",
@@ -423,7 +423,7 @@ test.skip(fixture, Rules.get("R41"), "b20e66", {
         answer: true,
       },
     ],
-  },
+  },*/
 });
 
 test(fixture, Rules.get("R42"), "ff89c9", {
