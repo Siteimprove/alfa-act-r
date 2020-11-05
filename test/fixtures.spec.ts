@@ -75,7 +75,8 @@ test(fixture, Rules.get("R13"), "cae760", {
   ],
 });
 
-test.skip(fixture, Rules.get("R14"), "2ee8b8", {
+test(fixture, Rules.get("R14"), "2ee8b8", {
+  manual: ["4a03b2", "83f0a2", "99b880", "a10b38", "f484cc"],
   answers: {
     "0643": [
       {
@@ -104,7 +105,18 @@ test.skip(fixture, Rules.get("R14"), "2ee8b8", {
   },
 });
 
-test.skip(fixture, Rules.get("R15"), "4b1c6c", {
+test(fixture, Rules.get("R15"), "4b1c6c", {
+  manual: [
+    "2117bf",
+    "451ee6",
+    "60a5c4",
+    "6d2e33",
+    "71c7ed",
+    "b327b8",
+    "d992b2",
+    "dcea4b",
+    "dcfbcd",
+  ],
   answers: {
     f589: [
       {
@@ -171,12 +183,6 @@ test.skip(fixture, Rules.get("R15"), "4b1c6c", {
       },
     ],
   },
-  skip: [
-    // bug in Alfa
-    // ACT rule consider <iframe> in the same HTML page, Alfa only in the same document tree.
-    // Thus, nested iframes are considered all together by ACT rule, not by Alfa
-    "b327b8",
-  ],
 });
 
 test(fixture, Rules.get("R16"), "4e8ab6", {
