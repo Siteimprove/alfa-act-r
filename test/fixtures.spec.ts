@@ -16,7 +16,16 @@ test.after("Write manifest", (t) => {
 
 test(fixture, Rules.get("R1"), "2779a5");
 
-test(fixture, Rules.get("R2"), "23a2a8");
+test(fixture, Rules.get("R2"), "23a2a8", {
+  lax: [
+    // Alfa intentionally ignores <img> elements that do not have a role of img
+    // in order to ignore presentational images.
+    "5c5409",
+    "3e791a",
+    "3986eb",
+    "01839a",
+  ],
+});
 
 test(fixture, Rules.get("R3"), "3ea0c8");
 
@@ -35,9 +44,24 @@ test(fixture, Rules.get("R7"), "de46e4");
 
 test(fixture, Rules.get("R8"), "e086e5");
 
-test(fixture, Rules.get("R9"), "bc659a");
+test(fixture, Rules.get("R9"), "bc659a", {
+  lax: [
+    // Due to the nature of the examples, we do get a "304 Not Modified" response with empty body
+    // when trying to fetch it (instant redirect…)
+    // Thus, we can't really test it with this framework since our GET is going to be redirected every single time.
+    "0ccdca",
+    "da63d6",
+  ],
+});
 
-test(fixture, Rules.get("R10"), "73f2c2");
+test(fixture, Rules.get("R10"), "73f2c2", {
+  lax: [
+    // Alfa does not set aria-disabled to true when disabled is set ?
+    // Or rule is looking at literal aria-disabled attribute, not value of the property.
+    // @see https://github.com/Siteimprove/alfa/issues/516
+    "319279",
+  ],
+});
 
 test(fixture, Rules.get("R11"), "c487ae");
 
@@ -155,18 +179,19 @@ test.skip(fixture, Rules.get("R15"), "4b1c6c", {
   ],
 });
 
-test(fixture, Rules.get("R16"), "4e8ab6");
+test(fixture, Rules.get("R16"), "4e8ab6", {
+  lax: [
+    // Alfa voluntarily considers elements whose implicit and explicit roles are the same
+    "cc955b",
+    // Alfa considers elements that are not included in the accessibility tree
+    // @see https://github.com/Siteimprove/alfa/issues/523
+    "7bda65",
+  ],
+});
 
 test(fixture, Rules.get("R17"), "6cfa84");
 
-test(fixture, Rules.get("R18"), "5c01ea", {
-  skip: [
-    // aria-expanded is not allowed on complementary in ARIA 1.2
-    // These test cases have been removed upstream, but I'm not fetching new cases now…
-    "9cae55",
-    "b47bcb",
-  ],
-});
+test(fixture, Rules.get("R18"), "5c01ea");
 
 test(fixture, Rules.get("R19"), "6a7281", {
   skip: [
@@ -401,18 +426,36 @@ test(fixture, Rules.get("R42"), "ff89c9", {
     // @see https://github.com/act-rules/act-rules.github.io/pull/1473
     "64371f",
   ],
+  lax: [
+    // Alfa does consider elements whose role is implicit or explicit=implicit
+    "997565",
+    "5a9eba",
+  ],
 });
 
 test(fixture, Rules.get("R43"), "7d6734");
 
 test(fixture, Rules.get("R44"), "b33eff");
 
-test(fixture, Rules.get("R45"), "a25f45");
+test(fixture, Rules.get("R45"), "a25f45", {
+  lax: [
+    // Alfa does not consider off-screen elements as invisible
+    // @see https://github.com/Siteimprove/alfa/issues/519
+    "d26b6d",
+    // Alfa target table with content in the AT, ACT only looks whether the table element is in the AT
+    // @see https://github.com/Siteimprove/alfa/issues/521
+    "b55e57",
+  ],
+});
 
 test(fixture, Rules.get("R46"), "d0f69e", {
   skip: [
     // Alfa does not yet consider ARIA grids
     "d2fa5e",
+  ],
+  lax: [
+    // Alfa does not consider ARIA tables
+    "30ecbb",
   ],
 });
 
@@ -451,7 +494,13 @@ test.skip(fixture, Rules.get("R50"), "80f0bf");
 
 // R62 is not implemented yet
 
-test(fixture, Rules.get("R63"), "8fc3b6");
+test(fixture, Rules.get("R63"), "8fc3b6", {
+  lax: [
+    // Alfa does not look at the MIME type of embedded content
+    // @see https://github.com/Siteimprove/alfa/issues/522
+    "e0af01",
+  ],
+});
 
 test(fixture, Rules.get("R64"), "ffd0e9", {
   skip: [
@@ -470,10 +519,12 @@ test(fixture, Rules.get("R64"), "ffd0e9", {
 
 test(fixture, Rules.get("R68"), "bc4a75", {
   skip: [
-    // https://github.com/Siteimprove/alfa/pull/418
-    "10d9a0",
     // Investigate
     "519aae",
+  ],
+  lax: [
+    // Alfa intentionally applies to elements whose role is implicit
+    "8ff0b1",
   ],
 });
 
@@ -493,6 +544,12 @@ test(fixture, Rules.get("R69"), "afw4f7", {
     // Alfa does not yet disregard impossible foreground/background combinations
     "55f4c4",
   ],
+  lax: [
+    // Alfa does not consider off screen text as invisible
+    // @see https://github.com/Siteimprove/alfa/issues/519
+    "97803e",
+  ],
+  manual: ["599d91", "455f4c"],
 });
 
 // R70 is Siteimprove only
@@ -530,7 +587,11 @@ test(fixture, Rules.get("R83"), "59br37", {
 
     // Investigate
     "dc1edd",
-    "ff1278",
+
+    // Alfa does not have a default value for line-height, so "normal" stays so.
+    // @see https://github.com/Siteimprove/alfa/issues/515
+    "202900",
+    "765e61",
   ],
 });
 
@@ -541,7 +602,14 @@ test(fixture, Rules.get("R84"), "0ssw9k", {
 
     // Alfa intentionally diverges on these cases
     // -> Alfa does not consider the exact layout when determining scrollability
+    // @see https://github.com/Siteimprove/alfa/issues/183
     "86c515",
+  ],
+  lax: [
+    // Alfa does not consider the exact layout when determining scrollability
+    // so elements that are big enough are incorrectly deemed scrollable
+    // @see https://github.com/Siteimprove/alfa/issues/183
+    "30bc26",
   ],
 });
 

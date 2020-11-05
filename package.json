@@ -8,6 +8,7 @@
     "build": "tsc --build",
     "clean": "tsc --build --clean",
     "test": "ava",
+    "strict": "ava -- --strict",
     "fixtures": "node scripts/fixtures.js"
   },
   "devDependencies": {
@@ -35,8 +36,7 @@
   },
   "lint-staged": {
     "*.{ts,md,json,yaml}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
