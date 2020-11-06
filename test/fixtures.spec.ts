@@ -75,8 +75,9 @@ test(fixture, Rules.get("R13"), "cae760", {
   ],
 });
 
-test.skip(fixture, Rules.get("R14"), "2ee8b8", {
-  answers: {
+test(fixture, Rules.get("R14"), "2ee8b8", {
+  manual: ["4a03b2", "83f0a2", "99b880", "a10b38", "f484cc"],
+  /*answers: {
     "0643": [
       {
         target: "//div",
@@ -101,11 +102,22 @@ test.skip(fixture, Rules.get("R14"), "2ee8b8", {
         answer: false,
       },
     ],
-  },
+  },*/
 });
 
-test.skip(fixture, Rules.get("R15"), "4b1c6c", {
-  answers: {
+test(fixture, Rules.get("R15"), "4b1c6c", {
+  manual: [
+    "2117bf",
+    "451ee6",
+    "60a5c4",
+    "6d2e33",
+    "71c7ed",
+    "b327b8",
+    "d992b2",
+    "dcea4b",
+    "dcfbcd",
+  ],
+  /*answers: {
     f589: [
       {
         target: "//iframe",
@@ -170,13 +182,7 @@ test.skip(fixture, Rules.get("R15"), "4b1c6c", {
         answer: false,
       },
     ],
-  },
-  skip: [
-    // bug in Alfa
-    // ACT rule consider <iframe> in the same HTML page, Alfa only in the same document tree.
-    // Thus, nested iframes are considered all together by ACT rule, not by Alfa
-    "b327b8",
-  ],
+  },*/
 });
 
 test(fixture, Rules.get("R16"), "4e8ab6", {
@@ -267,9 +273,9 @@ test.skip(fixture, Rules.get("R37"), "1ec09b");
 // R38 has questions in applicability, review flow not currently handled
 test.skip(fixture, Rules.get("R38"), "c5a4ea");
 
-// R39 always has questions in expectation, review flow not currently handled
+// R39 always has questions in each expectation, review flow not currently handled
 test.skip(fixture, Rules.get("R39"), "9eb3f6", {
-  answers: {
+  /*answers: {
     d6c3: [
       {
         target: "//img",
@@ -302,7 +308,7 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
         answer: false,
       },
     ],
-  },
+  },*/
   skip: [
     // Alfa doesn't look into sources set out of the <img> element (sibling <source>, <scrset>)
     "3fcd49",
@@ -311,8 +317,36 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
 
 // R40 is Siteimprove rule
 
-test.skip(fixture, Rules.get("R41"), "b20e66", {
-  answers: {
+test(fixture, Rules.get("R41"), "b20e66", {
+  skip: [
+    // Alfa only looks at href attribute, so fails on JS links. May be improved by
+    // @see https://github.com/Siteimprove/alfa/issues/420
+    // (will ask question in that case)
+    "ee8a59",
+    // Problem with using text element to give name in SVG? Investigate.
+    "ad30f3",
+  ],
+  manual: [
+    "159d2a",
+    "17248e",
+    "2115df",
+    "39e44d",
+    "3d43c8",
+    "75dbc7",
+    "badef6",
+    "c11dc7",
+    "e61946",
+    "f3c9e8",
+  ],
+  lax: [
+    // Problem with using text element to give name in SVG? Investigate.
+    "58adab",
+    // Looks like there is a problem with links in iframes and shadow tree. Weird. Comeback after
+    // @see https://github.com/Siteimprove/alfa/issues/420
+    "b95036",
+    "d1cc3c",
+  ],
+  /*answers: {
     "5fa9": [
       {
         target: "//a",
@@ -417,15 +451,10 @@ test.skip(fixture, Rules.get("R41"), "b20e66", {
         answer: true,
       },
     ],
-  },
+  },*/
 });
 
 test(fixture, Rules.get("R42"), "ff89c9", {
-  skip: [
-    // Role from ARIA DPUB which the ACT rule explicitly ignore, but Alfa doesn't
-    // @see https://github.com/act-rules/act-rules.github.io/pull/1473
-    "64371f",
-  ],
   lax: [
     // Alfa does consider elements whose role is implicit or explicit=implicit
     "997565",
@@ -502,14 +531,7 @@ test(fixture, Rules.get("R63"), "8fc3b6", {
   ],
 });
 
-test(fixture, Rules.get("R64"), "ffd0e9", {
-  skip: [
-    // Alfa default to other step when finding an aria-labelledby with existing but empty IDref
-    // @see https://github.com/Siteimprove/alfa/issues/389
-    "37e8ba",
-    "ae7bea",
-  ],
-});
+test(fixture, Rules.get("R64"), "ffd0e9");
 
 // R65 is not implemented yet
 
@@ -575,7 +597,26 @@ test(fixture, Rules.get("R69"), "afw4f7", {
 // R80 is Siteimprove only
 
 // R81 has questions in expectation, review flow not currently handled
-test.skip(fixture, Rules.get("R81"), "fd3a94");
+test(fixture, Rules.get("R81"), "fd3a94", {
+  skip: [
+    // Alfa only looks at href attribute, so fails on JS links. May be improved by
+    // @see https://github.com/Siteimprove/alfa/issues/420
+    // (will ask question in that case)
+    "ae6e0e",
+    // Problem with using text element to give name in SVG? Investigate.
+    "a3c812",
+  ],
+  manual: [
+    "062e21",
+    "11abbc",
+    "3cece5",
+    "7ee3df",
+    "84e058",
+    "d1d5bf",
+    "d9b934",
+    "e45c4f",
+  ],
+});
 
 // R82 always has questions in expectation, review flow not currently handled
 test.skip(fixture, Rules.get("R82"), "36b590");
