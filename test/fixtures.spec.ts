@@ -609,7 +609,26 @@ test(fixture, Rules.get("R69"), "afw4f7", {
 // R80 is Siteimprove only
 
 // R81 has questions in expectation, review flow not currently handled
-test.skip(fixture, Rules.get("R81"), "fd3a94");
+test(fixture, Rules.get("R81"), "fd3a94", {
+  skip: [
+    // Alfa only looks at href attribute, so fails on JS links. May be improved by
+    // @see https://github.com/Siteimprove/alfa/issues/420
+    // (will ask question in that case)
+    "ae6e0e",
+    // Problem with using text element to give name in SVG? Investigate.
+    "a3c812",
+  ],
+  manual: [
+    "062e21",
+    "11abbc",
+    "3cece5",
+    "7ee3df",
+    "84e058",
+    "d1d5bf",
+    "d9b934",
+    "e45c4f",
+  ],
+});
 
 // R82 always has questions in expectation, review flow not currently handled
 test.skip(fixture, Rules.get("R82"), "36b590");
