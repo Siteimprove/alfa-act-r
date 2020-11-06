@@ -455,11 +455,6 @@ test(fixture, Rules.get("R41"), "b20e66", {
 });
 
 test(fixture, Rules.get("R42"), "ff89c9", {
-  skip: [
-    // Role from ARIA DPUB which the ACT rule explicitly ignore, but Alfa doesn't
-    // @see https://github.com/act-rules/act-rules.github.io/pull/1473
-    "64371f",
-  ],
   lax: [
     // Alfa does consider elements whose role is implicit or explicit=implicit
     "997565",
@@ -536,14 +531,7 @@ test(fixture, Rules.get("R63"), "8fc3b6", {
   ],
 });
 
-test(fixture, Rules.get("R64"), "ffd0e9", {
-  skip: [
-    // Alfa default to other step when finding an aria-labelledby with existing but empty IDref
-    // @see https://github.com/Siteimprove/alfa/issues/389
-    "37e8ba",
-    "ae7bea",
-  ],
-});
+test(fixture, Rules.get("R64"), "ffd0e9");
 
 // R65 is not implemented yet
 
