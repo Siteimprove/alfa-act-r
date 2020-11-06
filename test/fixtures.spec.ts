@@ -319,8 +319,9 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
 
 test(fixture, Rules.get("R41"), "b20e66", {
   skip: [
-    // Alfa only looks at href attribute, so fails on JS links. Should be fixed after
+    // Alfa only looks at href attribute, so fails on JS links. May be improved by
     // @see https://github.com/Siteimprove/alfa/issues/420
+    // (will ask question in that case)
     "ee8a59",
     // Problem with using text element to give name in SVG? Investigate.
     "ad30f3",
@@ -336,6 +337,14 @@ test(fixture, Rules.get("R41"), "b20e66", {
     "c11dc7",
     "e61946",
     "f3c9e8",
+  ],
+  lax: [
+    // Problem with using text element to give name in SVG? Investigate.
+    "58adab",
+    // Looks like there is a problem with links in iframes and shadow tree. Weird. Comeback after
+    // @see https://github.com/Siteimprove/alfa/issues/420
+    "b95036",
+    "d1cc3c",
   ],
   /*answers: {
     "5fa9": [
