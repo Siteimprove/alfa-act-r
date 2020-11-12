@@ -58,7 +58,7 @@ test(fixture, Rules.get("R10"), "73f2c2", {
   lax: [
     // Alfa does not set aria-disabled to true when disabled is set ?
     // Or rule is looking at literal aria-disabled attribute, not value of the property.
-    // @see https://github.com/Siteimprove/alfa/issues/516
+    // https://github.com/Siteimprove/alfa/issues/516
     "319279",
   ],
 });
@@ -77,32 +77,6 @@ test(fixture, Rules.get("R13"), "cae760", {
 
 test(fixture, Rules.get("R14"), "2ee8b8", {
   manual: ["4a03b2", "83f0a2", "99b880", "a10b38", "f484cc"],
-  /*answers: {
-    "0643": [
-      {
-        target: "//div",
-        type: "boolean",
-        question: "is-human-language",
-        answer: true,
-      },
-    ],
-    "924a": [
-      {
-        target: "//button",
-        type: "boolean",
-        question: "is-human-language",
-        answer: true,
-      },
-    ],
-    "87c5": [
-      {
-        target: "//button",
-        type: "boolean",
-        question: "is-human-language",
-        answer: false,
-      },
-    ],
-  },*/
 });
 
 test(fixture, Rules.get("R15"), "4b1c6c", {
@@ -117,72 +91,6 @@ test(fixture, Rules.get("R15"), "4b1c6c", {
     "dcea4b",
     "dcfbcd",
   ],
-  /*answers: {
-    f589: [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false,
-      },
-    ],
-    "9759": [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "49f6": [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "422e": [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "2bf0": [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "2750": [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "175f": [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false,
-      },
-    ],
-    "13c2": [
-      {
-        target: "//iframe",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false,
-      },
-    ],
-  },*/
 });
 
 test(fixture, Rules.get("R16"), "4e8ab6", {
@@ -190,7 +98,7 @@ test(fixture, Rules.get("R16"), "4e8ab6", {
     // Alfa voluntarily considers elements whose implicit and explicit roles are the same
     "cc955b",
     // Alfa considers elements that are not included in the accessibility tree
-    // @see https://github.com/Siteimprove/alfa/issues/523
+    // https://github.com/Siteimprove/alfa/issues/523
     "7bda65",
   ],
 });
@@ -236,7 +144,7 @@ test.skip(fixture, Rules.get("R27"), "eac66b");
 test(fixture, Rules.get("R28"), "59796f", {
   skip: [
     // Image button have default accessible name, thus the rule should never fail
-    // @see https://github.com/act-rules/act-rules.github.io/issues/1457
+    // https://github.com/act-rules/act-rules.github.io/issues/1457
     "027548",
     "db01f7",
     "ecd48a",
@@ -275,40 +183,6 @@ test.skip(fixture, Rules.get("R38"), "c5a4ea");
 
 // R39 always has questions in each expectation, review flow not currently handled
 test.skip(fixture, Rules.get("R39"), "9eb3f6", {
-  /*answers: {
-    d6c3: [
-      {
-        target: "//img",
-        type: "boolean",
-        question: "name-describes-image",
-        answer: true,
-      },
-    ],
-    c81a: [
-      {
-        target: "//img",
-        type: "boolean",
-        question: "name-describes-image",
-        answer: true,
-      },
-    ],
-    "5d41": [
-      {
-        target: "//input",
-        type: "boolean",
-        question: "name-describes-image",
-        answer: false,
-      },
-    ],
-    "4f63": [
-      {
-        target: "//img",
-        type: "boolean",
-        question: "name-describes-image",
-        answer: false,
-      },
-    ],
-  },*/
   skip: [
     // Alfa doesn't look into sources set out of the <img> element (sibling <source>, <scrset>)
     "3fcd49",
@@ -320,7 +194,7 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
 test(fixture, Rules.get("R41"), "b20e66", {
   skip: [
     // Alfa only looks at href attribute, so fails on JS links. May be improved by
-    // @see https://github.com/Siteimprove/alfa/issues/420
+    // https://github.com/Siteimprove/alfa/issues/420
     // (will ask question in that case)
     "ee8a59",
     // Problem with using text element to give name in SVG? Investigate.
@@ -342,116 +216,10 @@ test(fixture, Rules.get("R41"), "b20e66", {
     // Problem with using text element to give name in SVG? Investigate.
     "58adab",
     // Looks like there is a problem with links in iframes and shadow tree. Weird. Comeback after
-    // @see https://github.com/Siteimprove/alfa/issues/420
+    // https://github.com/Siteimprove/alfa/issues/420
     "b95036",
     "d1cc3c",
   ],
-  /*answers: {
-    "5fa9": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false,
-      },
-    ],
-    d7ca: [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false,
-      },
-    ],
-    "0b97": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false,
-      },
-    ],
-    c419: [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    bdd1: [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false,
-      },
-    ],
-    "9120": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "7e0f": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false,
-      },
-    ],
-    "71e3": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "62c5": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "4aab": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "4632": [
-      {
-        target: "//a",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-    "457e": [
-      {
-        target: "//span",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: false,
-      },
-    ],
-    "1065": [
-      {
-        target: "//span",
-        type: "boolean",
-        question: "embed-equivalent-resources",
-        answer: true,
-      },
-    ],
-  },*/
 });
 
 test(fixture, Rules.get("R42"), "ff89c9", {
@@ -469,10 +237,10 @@ test(fixture, Rules.get("R44"), "b33eff");
 test(fixture, Rules.get("R45"), "a25f45", {
   lax: [
     // Alfa does not consider off-screen elements as invisible
-    // @see https://github.com/Siteimprove/alfa/issues/519
+    // https://github.com/Siteimprove/alfa/issues/519
     "d26b6d",
     // Alfa target table with content in the AT, ACT only looks whether the table element is in the AT
-    // @see https://github.com/Siteimprove/alfa/issues/521
+    // https://github.com/Siteimprove/alfa/issues/521
     "b55e57",
   ],
 });
@@ -521,19 +289,21 @@ test.skip(fixture, Rules.get("R50"), "80f0bf");
 
 // R61 is Siteimprove only
 
-// R62 is not implemented yet
+test.skip(fixture, Rules.get("R62"), "be4d0c");
 
 test(fixture, Rules.get("R63"), "8fc3b6", {
   lax: [
     // Alfa does not look at the MIME type of embedded content
-    // @see https://github.com/Siteimprove/alfa/issues/522
+    // https://github.com/Siteimprove/alfa/issues/522
     "e0af01",
   ],
 });
 
 test(fixture, Rules.get("R64"), "ffd0e9");
 
-// R65 is not implemented yet
+test(fixture, Rules.get("R65"), "oj04fd", {
+  manual: ["31b4ec", "32e6a0"],
+});
 
 // R66 is not implemented yet
 
@@ -568,7 +338,7 @@ test(fixture, Rules.get("R69"), "afw4f7", {
   ],
   lax: [
     // Alfa does not consider off screen text as invisible
-    // @see https://github.com/Siteimprove/alfa/issues/519
+    // https://github.com/Siteimprove/alfa/issues/519
     "97803e",
   ],
   manual: ["599d91", "455f4c"],
@@ -600,7 +370,7 @@ test(fixture, Rules.get("R69"), "afw4f7", {
 test(fixture, Rules.get("R81"), "fd3a94", {
   skip: [
     // Alfa only looks at href attribute, so fails on JS links. May be improved by
-    // @see https://github.com/Siteimprove/alfa/issues/420
+    // https://github.com/Siteimprove/alfa/issues/420
     // (will ask question in that case)
     "ae6e0e",
     // Problem with using text element to give name in SVG? Investigate.
@@ -630,7 +400,7 @@ test(fixture, Rules.get("R83"), "59br37", {
     "dc1edd",
 
     // Alfa does not have a default value for line-height, so "normal" stays so.
-    // @see https://github.com/Siteimprove/alfa/issues/515
+    // https://github.com/Siteimprove/alfa/issues/515
     "202900",
     "765e61",
   ],
@@ -643,13 +413,13 @@ test(fixture, Rules.get("R84"), "0ssw9k", {
 
     // Alfa intentionally diverges on these cases
     // -> Alfa does not consider the exact layout when determining scrollability
-    // @see https://github.com/Siteimprove/alfa/issues/183
+    // https://github.com/Siteimprove/alfa/issues/183
     "86c515",
   ],
   lax: [
     // Alfa does not consider the exact layout when determining scrollability
     // so elements that are big enough are incorrectly deemed scrollable
-    // @see https://github.com/Siteimprove/alfa/issues/183
+    // https://github.com/Siteimprove/alfa/issues/183
     "30bc26",
   ],
 });
@@ -657,3 +427,5 @@ test(fixture, Rules.get("R84"), "0ssw9k", {
 // R85 is Siteimprove only
 
 test(fixture, Rules.get("R86"), "46ca7f");
+
+test.skip(fixture, Rules.get("R87"), "8a213c");
