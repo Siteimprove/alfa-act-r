@@ -54,14 +54,7 @@ test(fixture, Rules.get("R9"), "bc659a", {
   ],
 });
 
-test(fixture, Rules.get("R10"), "73f2c2", {
-  lax: [
-    // Alfa does not set aria-disabled to true when disabled is set ?
-    // Or rule is looking at literal aria-disabled attribute, not value of the property.
-    // https://github.com/Siteimprove/alfa/issues/516
-    "319279",
-  ],
-});
+test(fixture, Rules.get("R10"), "73f2c2");
 
 test(fixture, Rules.get("R11"), "c487ae");
 
@@ -97,9 +90,6 @@ test(fixture, Rules.get("R16"), "4e8ab6", {
   lax: [
     // Alfa voluntarily considers elements whose implicit and explicit roles are the same
     "cc955b",
-    // Alfa considers elements that are not included in the accessibility tree
-    // https://github.com/Siteimprove/alfa/issues/523
-    "7bda65",
   ],
 });
 
@@ -239,9 +229,6 @@ test(fixture, Rules.get("R45"), "a25f45", {
     // Alfa does not consider off-screen elements as invisible
     // https://github.com/Siteimprove/alfa/issues/519
     "d26b6d",
-    // Alfa target table with content in the AT, ACT only looks whether the table element is in the AT
-    // https://github.com/Siteimprove/alfa/issues/521
-    "b55e57",
   ],
 });
 
