@@ -40,7 +40,13 @@ test(fixture, Rules.get("R5"), "bf051a");
 
 test(fixture, Rules.get("R6"), "5b7ae0");
 
-test(fixture, Rules.get("R7"), "de46e4");
+test(fixture, Rules.get("R7"), "de46e4", {
+  skip: [
+    // Alfa doesn't ignore fully invisible text
+    // @see https://github.com/Siteimprove/alfa/issues/623
+    "1cf916",
+  ],
+});
 
 test(fixture, Rules.get("R8"), "e086e5");
 
@@ -54,7 +60,13 @@ test(fixture, Rules.get("R9"), "bc659a", {
   ],
 });
 
-test(fixture, Rules.get("R10"), "73f2c2");
+test(fixture, Rules.get("R10"), "73f2c2", {
+  lax: [
+    // Alfa consider empty text area as invisible…
+    // @see https://github.com/Siteimprove/alfa/pull/624
+    "c6aa8a",
+  ],
+});
 
 test(fixture, Rules.get("R11"), "c487ae");
 
@@ -183,10 +195,6 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
 
 test(fixture, Rules.get("R41"), "b20e66", {
   skip: [
-    // Alfa only looks at href attribute, so fails on JS links. May be improved by
-    // https://github.com/Siteimprove/alfa/issues/420
-    // (will ask question in that case)
-    "ee8a59",
     // Problem with using text element to give name in SVG? Investigate.
     "ad30f3",
   ],
@@ -199,7 +207,9 @@ test(fixture, Rules.get("R41"), "b20e66", {
     "75dbc7",
     "badef6",
     "c11dc7",
+    "ce3767",
     "e61946",
+    "ee8a59",
     "f3c9e8",
   ],
   lax: [
@@ -226,9 +236,9 @@ test(fixture, Rules.get("R44"), "b33eff");
 
 test(fixture, Rules.get("R45"), "a25f45", {
   lax: [
-    // Alfa does not consider off-screen elements as invisible
-    // https://github.com/Siteimprove/alfa/issues/519
-    "d26b6d",
+    // Alfa does not consider content out of page as invisible
+    // @see https://github.com/Siteimprove/alfa/issues/519
+    "6a4d43",
   ],
 });
 
@@ -356,10 +366,6 @@ test(fixture, Rules.get("R69"), "afw4f7", {
 // R81 has questions in expectation, review flow not currently handled
 test(fixture, Rules.get("R81"), "fd3a94", {
   skip: [
-    // Alfa only looks at href attribute, so fails on JS links. May be improved by
-    // https://github.com/Siteimprove/alfa/issues/420
-    // (will ask question in that case)
-    "ae6e0e",
     // Problem with using text element to give name in SVG? Investigate.
     "a3c812",
   ],
@@ -369,6 +375,8 @@ test(fixture, Rules.get("R81"), "fd3a94", {
     "3cece5",
     "7ee3df",
     "84e058",
+    "8aa46a",
+    "ae6e0e",
     "d1d5bf",
     "d9b934",
     "e45c4f",
@@ -383,21 +391,17 @@ test(fixture, Rules.get("R83"), "59br37", {
     // Alfa doesn't check the media query yet
     "c0dbe9",
 
+    // Alfa doesn't see the innermost ancestor handling the overflow
+    // @see https://github.com/Siteimprove/alfa/issues/622
+    "ff1278",
+
     // Investigate
     "dc1edd",
-
-    // Alfa does not have a default value for line-height, so "normal" stays so.
-    // https://github.com/Siteimprove/alfa/issues/515
-    "202900",
-    "765e61",
   ],
 });
 
 test(fixture, Rules.get("R84"), "0ssw9k", {
   skip: [
-    // Alfa does not yet consider empty elements invisible
-    "363aef",
-
     // Alfa intentionally diverges on these cases
     // -> Alfa does not consider the exact layout when determining scrollability
     // https://github.com/Siteimprove/alfa/issues/183
