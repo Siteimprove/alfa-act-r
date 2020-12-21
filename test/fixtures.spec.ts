@@ -419,4 +419,20 @@ test(fixture, Rules.get("R84"), "0ssw9k", {
 
 test(fixture, Rules.get("R86"), "46ca7f");
 
+// not merged upstream yet
 test.skip(fixture, Rules.get("R87"), "8a213c");
+
+// not implemented, not merged upstream yet
+// test.skip(fixture, Rules.get("R88"), "nqzcj8");
+
+// R89 not written yet
+
+test(fixture, Rules.get("R90"), "307n5z");
+
+// R91-93 not merged upstream yet
+test.skip(fixture, Rules.get("R91"), "24afc2");
+test.skip(fixture, Rules.get("R92"), "9e45ec");
+test.skip(fixture, Rules.get("R93"), "78fd32");
+
+// R94 is not merged upstream yet
+test.skip(fixture, Rules.get("R94"), "m6b1q3");
