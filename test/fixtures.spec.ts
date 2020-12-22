@@ -60,13 +60,7 @@ test(fixture, Rules.get("R9"), "bc659a", {
   ],
 });
 
-test(fixture, Rules.get("R10"), "73f2c2", {
-  lax: [
-    // Alfa consider empty text area as invisible…
-    // @see https://github.com/Siteimprove/alfa/pull/624
-    "c6aa8a",
-  ],
-});
+test(fixture, Rules.get("R10"), "73f2c2");
 
 test(fixture, Rules.get("R11"), "c487ae");
 
