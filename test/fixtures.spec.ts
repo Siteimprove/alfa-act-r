@@ -423,9 +423,19 @@ test.skip(fixture, Rules.get("R87"), "8a213c");
 
 test(fixture, Rules.get("R90"), "307n5z");
 
-test(fixture, Rules.get("R91"), "24afc2");
+test(fixture, Rules.get("R91"), "24afc2", {
+  skip: [
+    // Alfa doesn't consider top: -999em as invisible
+    "ebc223",
+  ],
+});
 
-test(fixture, Rules.get("R92"), "9e45ec");
+test(fixture, Rules.get("R92"), "9e45ec", {
+  skip: [
+    // Alfa doesn't consider top: -999em as invisible
+    "221c82",
+  ],
+});
 
 test(fixture, Rules.get("R93"), "78fd32", {
   skip: [
