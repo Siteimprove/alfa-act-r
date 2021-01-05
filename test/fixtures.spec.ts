@@ -423,10 +423,15 @@ test.skip(fixture, Rules.get("R87"), "8a213c");
 
 test(fixture, Rules.get("R90"), "307n5z");
 
-// R91-93 not merged upstream yet
-test.skip(fixture, Rules.get("R91"), "24afc2");
-test.skip(fixture, Rules.get("R92"), "9e45ec");
-test.skip(fixture, Rules.get("R93"), "78fd32");
+test(fixture, Rules.get("R91"), "24afc2");
 
-// R94 is not merged upstream yet
-test.skip(fixture, Rules.get("R94"), "m6b1q3");
+test(fixture, Rules.get("R92"), "9e45ec");
+
+test(fixture, Rules.get("R93"), "78fd32", {
+  skip: [
+    // Alfa doesn't consider top: -999em as invisible
+    "716ddf",
+  ],
+});
+
+test(fixture, Rules.get("R94"), "m6b1q3");
