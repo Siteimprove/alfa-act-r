@@ -75,7 +75,13 @@ test(fixture, Rules.get("R13"), "cae760", {
 });
 
 test(fixture, Rules.get("R14"), "2ee8b8", {
-  manual: ["4a03b2", "83f0a2", "99b880", "a10b38", "f484cc"],
+  skip: [
+    // The text 'X' is considered as non-text content by the rule, not by Alfa
+    "a10b38",
+    // the text is rendered as icon (non-text) due to the Material Icons fonts
+    // but Alfa ignores it
+    "f484cc",
+  ],
 });
 
 test(fixture, Rules.get("R15"), "4b1c6c", {
@@ -188,10 +194,6 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
 // R40 is Siteimprove rule
 
 test(fixture, Rules.get("R41"), "b20e66", {
-  skip: [
-    // Problem with using text element to give name in SVG? Investigate.
-    "ad30f3",
-  ],
   manual: [
     "159d2a",
     "17248e",
@@ -199,6 +201,7 @@ test(fixture, Rules.get("R41"), "b20e66", {
     "39e44d",
     "3d43c8",
     "75dbc7",
+    "ad30f3",
     "badef6",
     "c11dc7",
     "ce3767",
@@ -207,8 +210,6 @@ test(fixture, Rules.get("R41"), "b20e66", {
     "f3c9e8",
   ],
   lax: [
-    // Problem with using text element to give name in SVG? Investigate.
-    "58adab",
     // Looks like there is a problem with links in iframes and shadow tree. Weird. Comeback after
     // https://github.com/Siteimprove/alfa/issues/420
     "b95036",
@@ -359,10 +360,6 @@ test(fixture, Rules.get("R69"), "afw4f7", {
 
 // R81 has questions in expectation, review flow not currently handled
 test(fixture, Rules.get("R81"), "fd3a94", {
-  skip: [
-    // Problem with using text element to give name in SVG? Investigate.
-    "a3c812",
-  ],
   manual: [
     "062e21",
     "11abbc",
@@ -370,6 +367,7 @@ test(fixture, Rules.get("R81"), "fd3a94", {
     "7ee3df",
     "84e058",
     "8aa46a",
+    "a3c812",
     "ae6e0e",
     "d1d5bf",
     "d9b934",
