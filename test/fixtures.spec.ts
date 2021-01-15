@@ -40,7 +40,13 @@ test(fixture, Rules.get("R5"), "bf051a");
 
 test(fixture, Rules.get("R6"), "5b7ae0");
 
-test(fixture, Rules.get("R7"), "de46e4");
+test(fixture, Rules.get("R7"), "de46e4", {
+  skip: [
+    // Alfa doesn't ignore fully invisible text
+    // @see https://github.com/Siteimprove/alfa/issues/623
+    "1cf916",
+  ],
+});
 
 test(fixture, Rules.get("R8"), "e086e5");
 
@@ -69,7 +75,13 @@ test(fixture, Rules.get("R13"), "cae760", {
 });
 
 test(fixture, Rules.get("R14"), "2ee8b8", {
-  manual: ["4a03b2", "83f0a2", "99b880", "a10b38", "f484cc"],
+  skip: [
+    // The text 'X' is considered as non-text content by the rule, not by Alfa
+    "a10b38",
+    // the text is rendered as icon (non-text) due to the Material Icons fonts
+    // but Alfa ignores it
+    "f484cc",
+  ],
 });
 
 test(fixture, Rules.get("R15"), "4b1c6c", {
@@ -182,14 +194,6 @@ test.skip(fixture, Rules.get("R39"), "9eb3f6", {
 // R40 is Siteimprove rule
 
 test(fixture, Rules.get("R41"), "b20e66", {
-  skip: [
-    // Alfa only looks at href attribute, so fails on JS links. May be improved by
-    // https://github.com/Siteimprove/alfa/issues/420
-    // (will ask question in that case)
-    "ee8a59",
-    // Problem with using text element to give name in SVG? Investigate.
-    "ad30f3",
-  ],
   manual: [
     "159d2a",
     "17248e",
@@ -197,14 +201,15 @@ test(fixture, Rules.get("R41"), "b20e66", {
     "39e44d",
     "3d43c8",
     "75dbc7",
+    "ad30f3",
     "badef6",
     "c11dc7",
+    "ce3767",
     "e61946",
+    "ee8a59",
     "f3c9e8",
   ],
   lax: [
-    // Problem with using text element to give name in SVG? Investigate.
-    "58adab",
     // Looks like there is a problem with links in iframes and shadow tree. Weird. Comeback after
     // https://github.com/Siteimprove/alfa/issues/420
     "b95036",
@@ -226,9 +231,9 @@ test(fixture, Rules.get("R44"), "b33eff");
 
 test(fixture, Rules.get("R45"), "a25f45", {
   lax: [
-    // Alfa does not consider off-screen elements as invisible
-    // https://github.com/Siteimprove/alfa/issues/519
-    "d26b6d",
+    // Alfa does not consider content out of page as invisible
+    // @see https://github.com/Siteimprove/alfa/issues/519
+    "6a4d43",
   ],
 });
 
@@ -355,20 +360,15 @@ test(fixture, Rules.get("R69"), "afw4f7", {
 
 // R81 has questions in expectation, review flow not currently handled
 test(fixture, Rules.get("R81"), "fd3a94", {
-  skip: [
-    // Alfa only looks at href attribute, so fails on JS links. May be improved by
-    // https://github.com/Siteimprove/alfa/issues/420
-    // (will ask question in that case)
-    "ae6e0e",
-    // Problem with using text element to give name in SVG? Investigate.
-    "a3c812",
-  ],
   manual: [
     "062e21",
     "11abbc",
     "3cece5",
     "7ee3df",
     "84e058",
+    "8aa46a",
+    "a3c812",
+    "ae6e0e",
     "d1d5bf",
     "d9b934",
     "e45c4f",
@@ -383,21 +383,17 @@ test(fixture, Rules.get("R83"), "59br37", {
     // Alfa doesn't check the media query yet
     "c0dbe9",
 
+    // Alfa doesn't see the innermost ancestor handling the overflow
+    // @see https://github.com/Siteimprove/alfa/issues/622
+    "ff1278",
+
     // Investigate
     "dc1edd",
-
-    // Alfa does not have a default value for line-height, so "normal" stays so.
-    // https://github.com/Siteimprove/alfa/issues/515
-    "202900",
-    "765e61",
   ],
 });
 
 test(fixture, Rules.get("R84"), "0ssw9k", {
   skip: [
-    // Alfa does not yet consider empty elements invisible
-    "363aef",
-
     // Alfa intentionally diverges on these cases
     // -> Alfa does not consider the exact layout when determining scrollability
     // https://github.com/Siteimprove/alfa/issues/183
@@ -415,4 +411,41 @@ test(fixture, Rules.get("R84"), "0ssw9k", {
 
 test(fixture, Rules.get("R86"), "46ca7f");
 
+// not merged upstream yet
 test.skip(fixture, Rules.get("R87"), "8a213c");
+
+// not implemented, not merged upstream yet
+// test.skip(fixture, Rules.get("R88"), "nqzcj8");
+
+// R89 not written yet
+
+test(fixture, Rules.get("R90"), "307n5z");
+
+test(fixture, Rules.get("R91"), "24afc2", {
+  skip: [
+    // Alfa doesn't consider top: -999em as invisible
+    "ebc223",
+  ],
+});
+
+test(fixture, Rules.get("R92"), "9e45ec", {
+  skip: [
+    // Alfa doesn't consider top: -999em as invisible
+    "221c82",
+  ],
+});
+
+test(fixture, Rules.get("R93"), "78fd32", {
+  skip: [
+    // Alfa doesn't consider top: -999em as invisible
+    "716ddf",
+  ],
+});
+
+test(fixture, Rules.get("R94"), "m6b1q3");
+
+// not merged upstream yet
+test.skip(fixture, Rules.get("R95"), "akn7bn");
+
+// not implemented, not merged upstream yet
+// test.skip(fixture, Rules.get("R96"), "bisz58");
