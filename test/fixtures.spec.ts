@@ -445,3 +445,9 @@ test(fixture, Rules.get("R93"), "78fd32", {
 });
 
 test(fixture, Rules.get("R94"), "m6b1q3");
+
+// not merged upstream yet
+test.skip(fixture, Rules.get("R95"), "akn7bn");
+
+// not implemented, not merged upstream yet
+// test.skip(fixture, Rules.get("R96"), "bisz58");
