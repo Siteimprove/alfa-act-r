@@ -229,13 +229,7 @@ test(fixture, Rules.get("R43"), "7d6734");
 
 test(fixture, Rules.get("R44"), "b33eff");
 
-test(fixture, Rules.get("R45"), "a25f45", {
-  lax: [
-    // Alfa does not consider content out of page as invisible
-    // @see https://github.com/Siteimprove/alfa/issues/519
-    "6a4d43",
-  ],
-});
+test(fixture, Rules.get("R45"), "a25f45");
 
 test(fixture, Rules.get("R46"), "d0f69e", {
   skip: [
@@ -411,10 +405,10 @@ test(fixture, Rules.get("R84"), "0ssw9k", {
 
 test(fixture, Rules.get("R86"), "46ca7f");
 
-// not merged upstream yet
+// Not merged upstream
 test.skip(fixture, Rules.get("R87"), "8a213c");
 
-// not implemented, not merged upstream yet
+// Not implemented, not merged upstream
 // test.skip(fixture, Rules.get("R88"), "nqzcj8");
 
 // R89 not written yet
@@ -444,8 +438,8 @@ test(fixture, Rules.get("R93"), "78fd32", {
 
 test(fixture, Rules.get("R94"), "m6b1q3");
 
-// not merged upstream yet
+// Not merged upstream
 test.skip(fixture, Rules.get("R95"), "akn7bn");
 
-// not implemented, not merged upstream yet
-// test.skip(fixture, Rules.get("R96"), "bisz58");
+// Not merged upstream
+test.skip(fixture, Rules.get("R96"), "bisz58");
