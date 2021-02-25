@@ -14,8 +14,10 @@ export function manifest(context: Context, out: string) {
 
     const assertion = outcome.toEARL();
 
+    assertion["earl:test"] = outcome.rule.toEARL();
+
     assertion["earl:subject"] = {
-      "@id": subject["@id"]
+      "@id": subject["@id"],
     };
 
     graph.push(assertion);
