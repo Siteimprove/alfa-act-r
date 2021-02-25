@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12]
+        node-version: [14]
     steps:
       - uses: actions/checkout@v1
         with:
@@ -23,3 +23,7 @@ jobs:
       - run: yarn install --frozen-lockfile --ignore-platform --cache-folder .cache/yarn
       - run: yarn build
       - run: yarn test
+      - uses: actions/upload-artifact@v2
+        with:
+          name: manifest.json
+          path: test/manifest.json
