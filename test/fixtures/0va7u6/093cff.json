@@ -1,0 +1,132 @@
+{
+  "id": "093cff",
+  "outcome": "passed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/0va7u6/6685213ba1e67946fad8971aa0029d4bfbd62e69.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://act-rules.github.io/testcases/0va7u6/6685213ba1e67946fad8971aa0029d4bfbd62e69.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html> <p>\n\tThe following image is a close up of the cover of a Classic Comics book titled \"Ivanhoe\" illustrating a font that\n\tlooks like an old Gothic style font.\n</p>\n<img\n\tsrc=\"/test-assets/0va7u6/ivanhoe.png\"\n\talt=\"The word Ivanhoe written in a style that resembles old medieval letters. The letter I is colored to resemble copper. The remaining letters are black. The background is yellow.\"\n/>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": [],
+          "children": [
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": [],
+              "children": [],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": [],
+              "children": [
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [],
+                  "style": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\tThe following image is a close up of the cover of a Classic Comics book titled \"Ivanhoe\" illustrating a font that\n\tlooks like an old Gothic style font.\n"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "img",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "/test-assets/0va7u6/ivanhoe.png"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "alt",
+                      "value": "The word Ivanhoe written in a style that resembles old medieval letters. The letter I is colored to resemble copper. The remaining letters are black. The background is yellow."
+                    }
+                  ],
+                  "style": [],
+                  "children": [],
+                  "shadow": null,
+                  "content": null
+                }
+              ],
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}

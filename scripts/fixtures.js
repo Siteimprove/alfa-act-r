@@ -51,24 +51,31 @@ async function fetch(tests, out) {
     for (const { id, filename, url, outcome } of tests) {
       console.time(filename);
 
-      const page = await scraper
+      const result = await scraper
         .scrape(url)
-        .then((page) => page.get().toJSON());
+        .then((page) => page.map((page) => page.toJSON()));
 
-      page.request.headers = headers.filter(page.request.headers);
-      page.response.headers = headers.filter(page.response.headers);
+      if (result.isErr()) {
+        console.error("%s: %s (%s)", filename, result.getErr(), url);
+        process.exitCode = 1;
+      }
 
-      const fixture = JSON.stringify(
-        {
-          id,
-          outcome,
-          page,
-        },
-        undefined,
-        2
-      );
+      for (const page of result) {
+        page.request.headers = headers.filter(page.request.headers);
+        page.response.headers = headers.filter(page.response.headers);
 
-      fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+        const fixture = JSON.stringify(
+          {
+            id,
+            outcome,
+            page,
+          },
+          undefined,
+          2
+        );
+
+        fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+      }
 
       console.timeEnd(filename);
     }

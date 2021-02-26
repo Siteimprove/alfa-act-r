@@ -43,7 +43,7 @@ test(fixture, Rules.get("R6"), "5b7ae0");
 test(fixture, Rules.get("R7"), "de46e4", {
   skip: [
     // Alfa doesn't ignore fully invisible text
-    // @see https://github.com/Siteimprove/alfa/issues/623
+    // https://github.com/Siteimprove/alfa/issues/623
     "1cf916",
   ],
 });
@@ -52,11 +52,9 @@ test(fixture, Rules.get("R8"), "e086e5");
 
 test(fixture, Rules.get("R9"), "bc659a", {
   lax: [
-    // Due to the nature of the examples, we do get a "304 Not Modified" response with empty body
-    // when trying to fetch it (instant redirect…)
-    // Thus, we can't really test it with this framework since our GET is going to be redirected every single time.
+    // These cases can't currently be tested due to instant redirects.
     "0ccdca",
-    "da63d6",
+    "d15d71",
   ],
 });
 
@@ -121,7 +119,12 @@ test(fixture, Rules.get("R20"), "5f99a7");
 test(fixture, Rules.get("R21"), "674b10", {
   skip: [
     // Alfa requires that all roles be valid.
-    "afc56c",
+    "b4705a",
+
+    // Element is not included in the accessibility tree
+    // https://github.com/act-rules/act-rules.github.io/issues/1551
+    "fc25ff",
+    "2784c9",
   ],
 });
 
@@ -291,7 +294,7 @@ test(fixture, Rules.get("R65"), "oj04fd", {
   manual: ["31b4ec", "32e6a0"],
 });
 
-// R66 is not implemented yet
+test.skip(fixture, Rules.get("R66"), "09o5cg");
 
 // R67 is Siteimprove only
 
