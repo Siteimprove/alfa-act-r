@@ -305,7 +305,7 @@ test.skip(fixture, Rules.get("R66"), "09o5cg");
 
 test(fixture, Rules.get("R68"), "bc4a75", {
   skip: [
-    // Investigate
+    // https://github.com/act-rules/act-rules.github.io/issues/1552
     "519aae",
   ],
   lax: [
