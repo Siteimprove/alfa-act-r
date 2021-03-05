@@ -101,6 +101,11 @@ test(fixture, Rules.get("R16"), "4e8ab6", {
     // Alfa voluntarily considers elements whose implicit and explicit roles are the same
     "cc955b",
   ],
+  skip: [
+    // `combobox` only requires `aria-expanded` in the latest draft of ARIA.
+    "a37a51",
+    "cbd158",
+  ],
 });
 
 test(fixture, Rules.get("R17"), "6cfa84");
@@ -376,15 +381,21 @@ test(fixture, Rules.get("R81"), "fd3a94", {
 test.skip(fixture, Rules.get("R82"), "36b590");
 
 test(fixture, Rules.get("R83"), "59br37", {
+  lax: ["ff1278"],
   skip: [
-    // Alfa doesn't check the media query yet
+    // Alfa assumes that the text scale can be configured by the user, which
+    // would cause text clipping for this case.
+    "74d207",
+
+    // Alfa assumes that inline heights are controlled via JavaScript.
+    "202900",
+    "765e61",
+
+    // Alfa does not test the cases at the specified media query.
     "c0dbe9",
 
-    // Alfa doesn't see the innermost ancestor handling the overflow
-    // @see https://github.com/Siteimprove/alfa/issues/622
-    "ff1278",
-
-    // Investigate
+    // Alfa does not consider the exact layout of the page.
+    // https://github.com/Siteimprove/alfa/issues/183
     "dc1edd",
   ],
 });
