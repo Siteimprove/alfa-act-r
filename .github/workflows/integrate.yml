@@ -15,8 +15,6 @@ jobs:
     name: Build
     steps:
       - uses: actions/checkout@v1
-        with:
-          submodules: true
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
@@ -29,5 +27,5 @@ jobs:
       - run: yarn test
       - uses: actions/upload-artifact@v2
         with:
-          name: manifest.json
-          path: test/manifest.json
+          name: report.json
+          path: test/report.json

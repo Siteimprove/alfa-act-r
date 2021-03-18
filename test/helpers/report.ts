@@ -4,7 +4,7 @@ import { List } from "@siteimprove/alfa-json-ld";
 
 import { Context } from "./context";
 
-export function manifest(context: Context, out: string) {
+export function report(context: Context, out: string) {
   const graph: List = [];
 
   for (const [page, outcome] of context.outcomes) {

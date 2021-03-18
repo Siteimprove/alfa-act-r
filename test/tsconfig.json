@@ -1,10 +1,11 @@
 {
+  "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../tsconfig.json",
   "files": [
     "fixtures.spec.ts",
     "helpers/context.ts",
     "helpers/fixture.ts",
-    "helpers/manifest.ts"
+    "helpers/report.ts"
   ],
-  "references": [{ "path": "../vendor/alfa/packages" }]
+  "references": []
 }

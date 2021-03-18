@@ -1,8 +1,12 @@
+import * as path from "path";
+
 import ava, { TestInterface } from "ava";
+
 import { Rules } from "@siteimprove/alfa-rules";
+
 import { Context } from "./helpers/context";
 import { fixture } from "./helpers/fixture";
-import { manifest } from "./helpers/manifest";
+import { report } from "./helpers/report";
 
 const test = ava as TestInterface<Context>;
 
@@ -10,8 +14,8 @@ test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
 });
 
-test.after("Write manifest", (t) => {
-  manifest(t.context, "test/manifest.json");
+test.after("Write report", (t) => {
+  report(t.context, path.join(__dirname, "report.json"));
 });
 
 test(fixture, Rules.get("R1"), "2779a5");
