@@ -1,11 +1,11 @@
 import * as fs from "fs";
 
-import { List } from "@siteimprove/alfa-json-ld";
+import { Document } from "@siteimprove/alfa-json-ld";
 
 import { Context } from "./context";
 
 export function report(context: Context, out: string) {
-  const graph: List = [];
+  const graph: Array<Document> = [];
 
   for (const [page, outcome] of context.outcomes) {
     const subject = page.toEARL();
