@@ -49,6 +49,10 @@ test(fixture, Rules.get("R7"), "de46e4", {
     // Alfa doesn't ignore fully invisible text
     // https://github.com/Siteimprove/alfa/issues/623
     "1cf916",
+    // Alfa doesn't ignore whitespace only text
+    // https://github.com/Siteimprove/alfa/issues/892
+    "1e2f61",
+    "c3d132",
   ],
 });
 
@@ -62,7 +66,13 @@ test(fixture, Rules.get("R9"), "bc659a", {
   ],
 });
 
-test(fixture, Rules.get("R10"), "73f2c2");
+test(fixture, Rules.get("R10"), "73f2c2", {
+  skip: [
+    // Alfa still cares about autocomplete being appropriate for their type
+    // https://github.com/Siteimprove/alfa/issues/891
+    "169326",
+  ]
+});
 
 test(fixture, Rules.get("R11"), "c487ae");
 
@@ -114,7 +124,13 @@ test(fixture, Rules.get("R16"), "4e8ab6", {
 
 test(fixture, Rules.get("R17"), "6cfa84");
 
-test(fixture, Rules.get("R18"), "5c01ea");
+test(fixture, Rules.get("R18"), "5c01ea", {
+  skip: [
+    // Alfa doesn't accept attirbutes allowed by ARIA in HTML
+    // https://github.com/Siteimprove/alfa/issues/856
+    "e625b3"
+  ]
+});
 
 test(fixture, Rules.get("R19"), "6a7281", {
   skip: [
@@ -369,9 +385,9 @@ test(fixture, Rules.get("R81"), "fd3a94", {
   manual: [
     "062e21",
     "11abbc",
+    "2b877f",
     "3cece5",
-    "7ee3df",
-    "84e058",
+    "4c180b",
     "8aa46a",
     "a3c812",
     "ae6e0e",
