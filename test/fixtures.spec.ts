@@ -46,11 +46,9 @@ test(fixture, Rules.get("R6"), "5b7ae0");
 
 test(fixture, Rules.get("R7"), "de46e4", {
   skip: [
-    // Alfa doesn't ignore fully invisible text
-    // https://github.com/Siteimprove/alfa/issues/623
-    "1cf916",
     // Alfa doesn't ignore whitespace only text
     // https://github.com/Siteimprove/alfa/issues/892
+    "1cf916",
     "1e2f61",
     "c3d132",
   ],
@@ -67,6 +65,11 @@ test(fixture, Rules.get("R9"), "bc659a", {
 });
 
 test(fixture, Rules.get("R10"), "73f2c2", {
+  lax: [
+    // Alfa still check `autocomplete="off"`
+    // https://github.com/Siteimprove/alfa/issues/891
+    "3b3f29",
+  ],
   skip: [
     // Alfa still cares about autocomplete being appropriate for their type
     // https://github.com/Siteimprove/alfa/issues/891
@@ -126,7 +129,7 @@ test(fixture, Rules.get("R17"), "6cfa84");
 
 test(fixture, Rules.get("R18"), "5c01ea", {
   skip: [
-    // Alfa doesn't accept attirbutes allowed by ARIA in HTML
+    // Alfa doesn't accept attributes allowed by ARIA in HTML
     // https://github.com/Siteimprove/alfa/issues/856
     "e625b3"
   ]
@@ -146,8 +149,8 @@ test(fixture, Rules.get("R21"), "674b10", {
     // Alfa requires that all roles be valid.
     "b4705a",
 
-    // Element is not included in the accessibility tree
-    // https://github.com/act-rules/act-rules.github.io/issues/1551
+    // Alfa still breaks on containers with incorrect roles
+    // https://github.com/Siteimprove/alfa/issues/895
     "fc25ff",
     "2784c9",
   ],
@@ -238,8 +241,7 @@ test(fixture, Rules.get("R41"), "b20e66", {
     "f3c9e8",
   ],
   lax: [
-    // Looks like there is a problem with links in iframes and shadow tree. Weird. Comeback after
-    // https://github.com/Siteimprove/alfa/issues/420
+    // Looks like there is a problem with links in iframes and shadow tree. Weird.
     "b95036",
     "d1cc3c",
   ],
@@ -296,6 +298,7 @@ test.skip(fixture, Rules.get("R50"), "80f0bf");
 // R57 is Siteimprove only
 
 // R58 is not implemented yet
+// test(fixture, Rules.get("R58"), "cf77f2");
 
 // R59 is Siteimprove only
 
@@ -303,6 +306,7 @@ test.skip(fixture, Rules.get("R50"), "80f0bf");
 
 // R61 is Siteimprove only
 
+// Not yet merged in ACT rules
 test.skip(fixture, Rules.get("R62"), "be4d0c");
 
 test(fixture, Rules.get("R63"), "8fc3b6", {
@@ -337,6 +341,7 @@ test(fixture, Rules.get("R68"), "bc4a75", {
 test(fixture, Rules.get("R69"), "afw4f7", {
   skip: [
     // Alfa does not yet account for `text-shadow`
+    // https://github.com/Siteimprove/alfa/issues/743
     "3805f1",
 
     // Alfa intentionally diverges on these cases
@@ -351,8 +356,7 @@ test(fixture, Rules.get("R69"), "afw4f7", {
     "55f4c4",
   ],
   lax: [
-    // Alfa does not consider off screen text as invisible
-    // https://github.com/Siteimprove/alfa/issues/519
+    // Alfa does not consider vertically off screen text as invisible
     "97803e",
   ],
   manual: ["599d91", "455f4c"],
@@ -445,7 +449,7 @@ test.skip(fixture, Rules.get("R87"), "8a213c");
 // Not implemented, not merged upstream
 // test.skip(fixture, Rules.get("R88"), "nqzcj8");
 
-// R89 not written yet
+// R89 not implemented
 
 test(fixture, Rules.get("R90"), "307n5z");
 
@@ -472,8 +476,49 @@ test(fixture, Rules.get("R93"), "78fd32", {
 
 test(fixture, Rules.get("R94"), "m6b1q3");
 
-// Not merged upstream
-test.skip(fixture, Rules.get("R95"), "akn7bn");
+test(fixture, Rules.get("R95"), "akn7bn", {
+  skip: [
+    // The 1×1 iframe is visible, its content isn't.
+    // Alfa does consider the descendant of visible 1×1 elements as visible.
+    "fab3ad",
+  ]
+});
 
 // Not merged upstream
-test.skip(fixture, Rules.get("R96"), "bisz58");
+test(fixture, Rules.get("R96"), "bisz58", {
+  lax: [
+    // These cases can't currently be tested due to instant redirects.
+    "17033b",
+    "f52fc0"
+  ]
+});
+
+// R97 is not implemented yet (part of R58)
+// test(fixture, Rules.get("R97"), "3e12e1");
+
+// R98 is not implemented yet (part of R58)
+// test(fixture, Rules.get("R98"), "047fe0");
+
+// R99 is not implemented yet (part of R58)
+// test(fixture, Rules.get("R99"), "b40fd1");
+
+// R100 is not implemented yet (part of R58)
+// test(fixture, Rules.get("R100"), "ye5d6e");
+
+// R101 is not implemented and not merged in ACT rules
+// test(fixture, Rules.get("R101"), "r18umj");
+
+// R102 is not implemented and not merged in ACT rules
+// test(fixture, Rules.get("R101"), "kh5ids");
+
+// R103 is SI only
+
+// R104 is SI only
+
+// R105 is SI only
+
+// R106 is SI only
+
+// R107 is SI only
+
+// R108 is SI only
