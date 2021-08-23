@@ -30,12 +30,13 @@ export interface FixtureOptions {
 
 const strict = process.argv.slice(2).includes("--strict");
 
-export async function fixture(
-  t: ExecutionContext<Context>,
-  rule: Option<Rule<Page, unknown, any>>,
-  fixture: string,
+export async function fixture<T, Q, S>(
+  t: ExecutionContext<Context<Page, T, Q, S>>,
+  rule: Option<Rule<Page, T, Q, S>>,
   options: FixtureOptions = {}
 ): Promise<void> {
+  const fixture = t.title;
+
   const directory = path.join("test", "fixtures", fixture);
 
   const flags: Array<string> = (options.skip || [])
@@ -72,7 +73,7 @@ export async function fixture(
 
     seen[test.id] = true;
 
-    const outcome = await Audit.of<Page, unknown, unknown>(page, [rule.get()])
+    const outcome = await Audit.of(page, [rule.get()])
       .evaluate()
       .map((outcomes) =>
         [...outcomes]
@@ -170,17 +171,6 @@ export async function fixture(
     t.log(
       `Test cases ${fixture} / [${notSeen}] have been deleted upstream. Remove flags.`
     );
-  }
-}
-
-export namespace fixture {
-  export function title(
-    title: string = "",
-    rule: Rule<any, any, any>,
-    fixture: string,
-    options?: FixtureOptions
-  ): string {
-    return fixture;
   }
 }
 
