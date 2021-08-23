@@ -343,7 +343,24 @@ test("oj04fd", (t) =>
     manual: ["31b4ec", "32e6a0"],
   }));
 
-test.skip("09o5cg", (t) => fixture(t, Rules.get("R66")));
+test("09o5cg", (t) => fixture(t, Rules.get("R66"), {
+  manual: [
+    "90eef0", "bbaefc"
+  ],
+  skip: [
+    // Alfa assumes that non-human language text is marked as presentational
+    "25f0d3",
+    // Alfa does not yet ignore disabled widget labels
+    "7b6814",
+    "fb6c57",
+    // Alfa does not yet disregard impossible foreground/background combinations
+    '0627ba',
+  ],
+  lax: [
+    // Alfa does not consider vertically off screen text as invisible
+    "357b41",
+  ],
+}));
 
 // R67 is Siteimprove only
 
@@ -362,10 +379,6 @@ test("bc4a75", (t) =>
 test("afw4f7", (t) =>
   fixture(t, Rules.get("R69"), {
     skip: [
-      // Alfa does not yet account for `text-shadow`
-      // https://github.com/Siteimprove/alfa/issues/743
-      "3805f1",
-
       // Alfa intentionally diverges on these cases
       // -> Alfa assumes that non-human language text is marked as presentational
       "2f71bb",
@@ -374,15 +387,15 @@ test("afw4f7", (t) =>
       "78bb66",
       "448c66",
 
-      // Alfa does not yet disregard impossible foreground/background combinations
-      "55f4c4",
-    ],
-    lax: [
-      // Alfa does not consider vertically off screen text as invisible
-      "97803e",
-    ],
-    manual: ["599d91", "455f4c"],
-  }));
+    // Alfa does not yet disregard impossible foreground/background combinations
+    "55f4c4",
+  ],
+  lax: [
+    // Alfa does not consider vertically off screen text as invisible
+    "97803e",
+  ],
+  manual: ["3805f1", "455f4c", "599d91"],
+}));
 
 // R70 is Siteimprove only
 
