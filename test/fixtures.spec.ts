@@ -50,11 +50,14 @@ test("5b7ae0", (t) => fixture(t, Rules.get("R6")));
 test("de46e4", (t) =>
   fixture(t, Rules.get("R7"), {
     skip: [
-      // Alfa doesn't ignore whitespace only text
-      // https://github.com/Siteimprove/alfa/issues/892
-      "1cf916",
-      "1e2f61",
-      "c3d132",
+      // Alfa doesn't consider accessible names
+      // https://github.com/Siteimprove/alfa/issues/893
+      "5b0f86",
+    ],
+    lax: [
+      // Alfa doesn't consider accessible names
+      // https://github.com/Siteimprove/alfa/issues/893
+      "26bed4",
     ],
   }));
 
@@ -69,19 +72,7 @@ test("bc659a", (t) =>
     ],
   }));
 
-test("73f2c2", (t) =>
-  fixture(t, Rules.get("R10"), {
-    lax: [
-      // Alfa still check `autocomplete="off"`
-      // https://github.com/Siteimprove/alfa/issues/891
-      "3b3f29",
-    ],
-    skip: [
-      // Alfa still cares about autocomplete being appropriate for their type
-      // https://github.com/Siteimprove/alfa/issues/891
-      "169326",
-    ],
-  }));
+test("73f2c2", (t) => fixture(t, Rules.get("R10")));
 
 test("c487ae", (t) => fixture(t, Rules.get("R11")));
 
@@ -161,11 +152,6 @@ test("674b10", (t) =>
     skip: [
       // Alfa requires that all roles be valid.
       "b4705a",
-
-      // Alfa still breaks on containers with incorrect roles
-      // https://github.com/Siteimprove/alfa/issues/895
-      "fc25ff",
-      "2784c9",
     ],
   }));
 
@@ -343,24 +329,19 @@ test("oj04fd", (t) =>
     manual: ["31b4ec", "32e6a0"],
   }));
 
-test("09o5cg", (t) => fixture(t, Rules.get("R66"), {
-  manual: [
-    "90eef0", "bbaefc"
-  ],
-  skip: [
-    // Alfa assumes that non-human language text is marked as presentational
-    "25f0d3",
-    // Alfa does not yet ignore disabled widget labels
-    "7b6814",
-    "fb6c57",
-    // Alfa does not yet disregard impossible foreground/background combinations
-    '0627ba',
-  ],
-  lax: [
-    // Alfa does not consider vertically off screen text as invisible
-    "357b41",
-  ],
-}));
+test("09o5cg", (t) =>
+  fixture(t, Rules.get("R66"), {
+    manual: ["90eef0", "bbaefc", "357b41"],
+    skip: [
+      // Alfa assumes that non-human language text is marked as presentational
+      "25f0d3",
+      // Alfa does not yet ignore disabled widget labels
+      "7b6814",
+      "fb6c57",
+      // Alfa does not yet disregard impossible foreground/background combinations
+      "0627ba",
+    ],
+  }));
 
 // R67 is Siteimprove only
 
@@ -387,15 +368,11 @@ test("afw4f7", (t) =>
       "78bb66",
       "448c66",
 
-    // Alfa does not yet disregard impossible foreground/background combinations
-    "55f4c4",
-  ],
-  lax: [
-    // Alfa does not consider vertically off screen text as invisible
-    "97803e",
-  ],
-  manual: ["3805f1", "455f4c", "599d91"],
-}));
+      // Alfa does not yet disregard impossible foreground/background combinations
+      "55f4c4",
+    ],
+    manual: ["3805f1", "455f4c", "599d91", "97803e"],
+  }));
 
 // R70 is Siteimprove only
 
@@ -442,7 +419,6 @@ test.skip("36b590", (t) => fixture(t, Rules.get("R82")));
 
 test("59br37", (t) =>
   fixture(t, Rules.get("R83"), {
-    lax: ["ff1278"],
     skip: [
       // Alfa assumes that the text scale can be configured by the user, which
       // would cause text clipping for this case.
@@ -468,6 +444,9 @@ test("0ssw9k", (t) =>
       // -> Alfa does not consider the exact layout when determining scrollability
       // https://github.com/Siteimprove/alfa/issues/183
       "86c515",
+      // Alfa assumes that any element with dimensions is visible, without looking
+      // at content.
+      "363aef",
     ],
     lax: [
       // Alfa does not consider the exact layout when determining scrollability
