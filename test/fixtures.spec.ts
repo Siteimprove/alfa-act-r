@@ -173,16 +173,7 @@ test.skip("fd26cf", (t) => fixture(t, Rules.get("R26")));
 // R27 has questions in applicability, review flow not currently handled
 test.skip("eac66b", (t) => fixture(t, Rules.get("R27")));
 
-test("59796f", (t) =>
-  fixture(t, Rules.get("R28"), {
-    skip: [
-      // Image button have default accessible name, thus the rule should never fail
-      // https://github.com/act-rules/act-rules.github.io/issues/1457
-      "027548",
-      "db01f7",
-      "ecd48a",
-    ],
-  }));
+test("59796f", (t) => fixture(t, Rules.get("R28")));
 
 // R29 has questions in applicability, review flow not currently handled
 test.skip("afb423", (t) => fixture(t, Rules.get("R29")));
