@@ -9,7 +9,9 @@ import { Context } from "./helpers/context";
 import { fixture } from "./helpers/fixture";
 import { report } from "./helpers/report";
 
-const test = ava as TestInterface<Context<Page, unknown, Question, unknown>>;
+const test = ava as TestInterface<
+  Context<Page, unknown, Question.Metadata, unknown>
+>;
 
 test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
@@ -406,7 +408,8 @@ test("fd3a94", (t) =>
   }));
 
 // R82 always has questions in expectation, review flow not currently handled
-test.skip("36b590", (t) => fixture(t, Rules.get("R82")));
+// R82 is experimental
+// test.skip("36b590", (t) => fixture(t, Rules.get("R82")));
 
 test("59br37", (t) =>
   fixture(t, Rules.get("R83"), {
@@ -535,3 +538,7 @@ test("bisz58", (t) =>
 // R107 is SI only
 
 // R108 is SI only
+
+// R109 always has questions in expectation, review flow not currently handled
+// R109 is experimental
+// test.skip("ucwvc8", (t) => fixture(t, Rules.get("R109")));
