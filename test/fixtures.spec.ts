@@ -49,19 +49,7 @@ test("bf051a", (t) => fixture(t, Rules.get("R5")));
 
 test("5b7ae0", (t) => fixture(t, Rules.get("R6")));
 
-test("de46e4", (t) =>
-  fixture(t, Rules.get("R7"), {
-    skip: [
-      // Alfa doesn't consider accessible names
-      // https://github.com/Siteimprove/alfa/issues/893
-      "5b0f86",
-    ],
-    lax: [
-      // Alfa doesn't consider accessible names
-      // https://github.com/Siteimprove/alfa/issues/893
-      "26bed4",
-    ],
-  }));
+test("de46e4", (t) => fixture(t, Rules.get("R7")));
 
 test("e086e5", (t) => fixture(t, Rules.get("R8")));
 
@@ -76,7 +64,19 @@ test("bc659a", (t) =>
 
 test("73f2c2", (t) => fixture(t, Rules.get("R10")));
 
-test("c487ae", (t) => fixture(t, Rules.get("R11")));
+test("c487ae", (t) =>
+  fixture(t, Rules.get("R11"), {
+    skip: [
+      // Alfa target links, not inheriting links
+      // https://github.com/Siteimprove/alfa/issues/1103
+      "38b081",
+    ],
+    lax: [
+      // Alfa target links, not inheriting links
+      // https://github.com/Siteimprove/alfa/issues/1103
+      "73611a",
+    ],
+  }));
 
 test("97a4e1", (t) => fixture(t, Rules.get("R12")));
 
@@ -128,7 +128,16 @@ test("4e8ab6", (t) =>
     ],
   }));
 
-test("6cfa84", (t) => fixture(t, Rules.get("R17")));
+test("6cfa84", (t) =>
+  fixture(t, Rules.get("R17"), {
+    skip: [
+      // Alfa does not consider whether an element redirects focus or not
+      "9cc5d1",
+      // Alfa does not consider element with tabindex=-1 as focusable
+      // https://github.com/Siteimprove/sanshikan/issues/219 (item 4)
+      "8eefa9",
+    ],
+  }));
 
 test("5c01ea", (t) =>
   fixture(t, Rules.get("R18"), {
@@ -343,6 +352,10 @@ test("bc4a75", (t) =>
     skip: [
       // https://github.com/act-rules/act-rules.github.io/issues/1552
       "519aae",
+      // Alfa accepts children that are not "required owned element" as this
+      // is a common case and unclear what ARIA really mean
+      // https://github.com/act-rules/act-rules.github.io/issues/1426
+      "77c1ef",
     ],
     lax: [
       // Alfa intentionally applies to elements whose role is implicit
@@ -437,7 +450,7 @@ test("0ssw9k", (t) =>
       // Alfa intentionally diverges on these cases
       // -> Alfa does not consider the exact layout when determining scrollability
       // https://github.com/Siteimprove/alfa/issues/183
-      "86c515",
+      "a7b9ec",
       // Alfa assumes that any element with dimensions is visible, without looking
       // at content.
       "363aef",
@@ -483,8 +496,12 @@ test("9e45ec", (t) =>
 test("78fd32", (t) =>
   fixture(t, Rules.get("R93"), {
     skip: [
-      // Alfa doesn't consider top: -999em as invisible
-      "716ddf",
+      // Alfa does not consider `top: -999em` as offscreen.
+      "6df14f",
+      // Alfa does not have a layout system and does not detect that the text
+      // is in a wide scrolling element; instead it considers that any element
+      // with a role of paragraph is a block of text.
+      "2e016f",
     ],
   }));
 
