@@ -1,6 +1,6 @@
 import * as path from "path";
 
-import ava, { TestInterface } from "ava";
+import ava, { TestFn } from "ava";
 
 import { Question, Rules } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
@@ -9,9 +9,7 @@ import { Context } from "./helpers/context";
 import { fixture } from "./helpers/fixture";
 import { report } from "./helpers/report";
 
-const test = ava as TestInterface<
-  Context<Page, unknown, Question.Metadata, unknown>
->;
+const test = ava as TestFn<Context<Page, unknown, Question.Metadata, unknown>>;
 
 test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
@@ -64,19 +62,7 @@ test("bc659a", (t) =>
 
 test("73f2c2", (t) => fixture(t, Rules.get("R10")));
 
-test("c487ae", (t) =>
-  fixture(t, Rules.get("R11"), {
-    skip: [
-      // Alfa target links, not inheriting links
-      // https://github.com/Siteimprove/alfa/issues/1103
-      "38b081",
-    ],
-    lax: [
-      // Alfa target links, not inheriting links
-      // https://github.com/Siteimprove/alfa/issues/1103
-      "73611a",
-    ],
-  }));
+test("c487ae", (t) => fixture(t, Rules.get("R11")));
 
 test("97a4e1", (t) => fixture(t, Rules.get("R12")));
 
@@ -139,14 +125,7 @@ test("6cfa84", (t) =>
     ],
   }));
 
-test("5c01ea", (t) =>
-  fixture(t, Rules.get("R18"), {
-    skip: [
-      // Alfa doesn't accept attributes allowed by ARIA in HTML
-      // https://github.com/Siteimprove/alfa/issues/856
-      "e625b3",
-    ],
-  }));
+test("5c01ea", (t) => fixture(t, Rules.get("R18")));
 
 test("6a7281", (t) =>
   fixture(t, Rules.get("R19"), {
