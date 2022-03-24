@@ -1,6 +1,6 @@
 import * as path from "path";
 
-import ava, { TestInterface } from "ava";
+import ava, { TestFn } from "ava";
 
 import { Question, Rules } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
@@ -9,9 +9,7 @@ import { Context } from "./helpers/context";
 import { fixture } from "./helpers/fixture";
 import { report } from "./helpers/report";
 
-const test = ava as TestInterface<
-  Context<Page, unknown, Question.Metadata, unknown>
->;
+const test = ava as TestFn<Context<Page, unknown, Question.Metadata, unknown>>;
 
 test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
