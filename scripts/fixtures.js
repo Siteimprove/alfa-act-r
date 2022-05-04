@@ -10,6 +10,7 @@ const { Scraper } = require("@siteimprove/alfa-scraper");
 const headers = require("./helpers/headers");
 
 const tests = "https://act-rules.github.io/testcases.json";
+// const tests = "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json";
 
 const out = path.join("test", "fixtures");
 
