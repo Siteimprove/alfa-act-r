@@ -37,7 +37,7 @@ export async function fixture<T, Q, S>(
 ): Promise<void> {
   const fixture = t.title;
 
-  const directory = path.join("test", "fixtures", fixture);
+  const directory = path.join("test", "fixtures", "act-r", fixture);
 
   const flags: Array<string> = (options.skip || [])
     .concat(options.lax || [])
