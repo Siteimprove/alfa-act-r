@@ -1,0 +1,115 @@
+{
+  "id": "9ff391",
+  "outcome": "inapplicable",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/af5a9930957786829ada7dfc1be62df3e41b28e5.js",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/af5a9930957786829ada7dfc1be62df3e41b28e5.js",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "application/javascript; charset=utf-8"
+        }
+      ],
+      "body": "var foo = '<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png\" alt=\"W3C logo\" />'"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "element",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
+          "children": [
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "children": [],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "children": [
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "pre",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "style",
+                      "value": "word-wrap: break-word; white-space: pre-wrap;"
+                    }
+                  ],
+                  "style": [
+                    {
+                      "name": "overflow-wrap",
+                      "value": "break-word",
+                      "important": false
+                    },
+                    {
+                      "name": "white-space",
+                      "value": "pre-wrap",
+                      "important": false
+                    }
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "var foo = '<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png\" alt=\"W3C logo\" />'"
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                }
+              ],
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "fce55b",
+  "outcome": "inapplicable",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "image/svg+xml"
+        }
+      ],
+      "body": "<svg xmlns=\"http://www.w3.org/2000/svg\">\n  <title>This is an SVG</title>\n</svg>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "element",
+          "namespace": "http://www.w3.org/2000/svg",
+          "prefix": null,
+          "name": "svg",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": "http://www.w3.org/2000/xmlns/",
+              "prefix": null,
+              "name": "xmlns",
+              "value": "http://www.w3.org/2000/svg"
+            }
+          ],
+          "style": null,
+          "children": [
+            {
+              "type": "text",
+              "data": "\n  "
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/2000/svg",
+              "prefix": null,
+              "name": "title",
+              "attributes": [],
+              "style": null,
+              "children": [
+                {
+                  "type": "text",
+                  "data": "This is an SVG"
+                }
+              ],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n"
+            }
+          ],
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}

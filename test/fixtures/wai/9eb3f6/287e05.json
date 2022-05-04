@@ -1,0 +1,124 @@
+{
+  "id": "287e05",
+  "outcome": "failed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5ca9a034544ae02b83dba27ed9beb61626c8eedf.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5ca9a034544ae02b83dba27ed9beb61626c8eedf.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg\" alt=\"nyhavn.jpeg\" />\n</html>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
+          "children": [
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "children": [],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "children": [
+                {
+                  "type": "element",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "img",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "alt",
+                      "value": "nyhavn.jpeg"
+                    }
+                  ],
+                  "style": null,
+                  "children": [],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}
