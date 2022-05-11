@@ -30,148 +30,154 @@ export interface FixtureOptions {
 
 const strict = process.argv.slice(2).includes("--strict");
 
-export async function fixture<T, Q, S>(
+export function fixture(
+  dir: string
+): <T, Q, S>(
   t: ExecutionContext<Context<Page, T, Q, S>>,
   rule: Option<Rule<Page, T, Q, S>>,
-  options: FixtureOptions = {}
-): Promise<void> {
-  const fixture = t.title;
+  options?: FixtureOptions
+) => Promise<void> {
+  return async (t, rule, options = {}) => {
+    const fixture = t.title;
 
-  const directory = path.join("test", "fixtures", "act-r", fixture);
+    const directory = path.join("test", "fixtures", dir, fixture);
 
-  const flags: Array<string> = (options.skip || [])
-    .concat(options.lax || [])
-    .concat(options.manual || []);
-  const seen: { [id: string]: boolean } = {};
-  for (const flag of flags) {
-    seen[flag] = false;
-  }
-
-  const tests = fs
-    .readdirSync(directory)
-    .filter((filename) => filename.endsWith(".json"))
-    .map((filename) =>
-      JSON.parse(fs.readFileSync(path.join(directory, filename), "utf8"))
-    );
-
-  t.plan(tests.length);
-
-  for (const test of tests) {
-    const page = Page.from(test.page);
-
-    const skip = options.skip !== undefined && options.skip.includes(test.id);
-    const manual =
-      options.manual !== undefined && options.manual.includes(test.id);
-    const lax = options.lax !== undefined && options.lax.includes(test.id);
-    const testID = `${fixture} / ${test.id}`;
-
-    if (skip === manual ? skip : lax) {
-      t.log(
-        `At most one of skip, manual, and lax should be set for ${testID}.`
-      );
+    const flags: Array<string> = (options.skip || [])
+      .concat(options.lax || [])
+      .concat(options.manual || []);
+    const seen: { [id: string]: boolean } = {};
+    for (const flag of flags) {
+      seen[flag] = false;
     }
 
-    seen[test.id] = true;
-
-    const outcome = await Audit.of(page, [rule.get()])
-      .evaluate()
-      .map((outcomes) =>
-        [...outcomes]
-          .filter((outcome) => outcome.rule === rule.get())
-          .reduce((outcome, candidate) => {
-            if (Outcome.isFailed(outcome)) {
-              return outcome;
-            }
-
-            if (Outcome.isFailed(candidate)) {
-              return candidate;
-            }
-
-            if (Outcome.isPassed(outcome)) {
-              return outcome;
-            }
-
-            if (Outcome.isPassed(candidate)) {
-              return candidate;
-            }
-
-            return outcome;
-          })
+    const tests = fs
+      .readdirSync(directory)
+      .filter((filename) => filename.endsWith(".json"))
+      .map((filename) =>
+        JSON.parse(fs.readFileSync(path.join(directory, filename), "utf8"))
       );
 
-    const expected = test.outcome;
-    const actual = outcome.toJSON().outcome;
+    t.plan(tests.length);
 
-    const result = mapping(actual, expected);
+    for (const test of tests) {
+      const page = Page.from(test.page);
 
-    switch (result) {
-      case "ok": // Alfa and ACT-R perfectly agree
-        t.pass(test.id);
-        // Display warnings if the case was registered as imperfect match
-        if (skip) {
-          t.log(
-            `Test case ${testID} matches but is incorrectly marked as skipped`
-          );
-        }
-        if (manual) {
-          t.log(
-            `Test case ${testID} matches but is incorrectly marked as manual`
-          );
-        }
-        if (lax) {
-          t.log(`Test case ${testID} matches but is incorrectly marked as lax`);
-        }
-        break;
-      case "error":
-        if (skip) {
-          t.fail.skip(test.id);
-        } else {
-          t.fail(test.id);
-          t.log("Outcome", outcome.toJSON());
-          t.log("Test", test);
-        }
-        break;
-      case "lax":
-        // If the case is known to be a non strict match between Alfa and ACT-R, everything is fine.
-        // Otherwise, emit a warning or an error depending on test mode.
-        if (!lax) {
-          if (strict) {
+      const skip = options.skip !== undefined && options.skip.includes(test.id);
+      const manual =
+        options.manual !== undefined && options.manual.includes(test.id);
+      const lax = options.lax !== undefined && options.lax.includes(test.id);
+      const testID = `${fixture} / ${test.id}`;
+
+      if (skip === manual ? skip : lax) {
+        t.log(
+          `At most one of skip, manual, and lax should be set for ${testID}.`
+        );
+      }
+
+      seen[test.id] = true;
+
+      const outcome = await Audit.of(page, [rule.get()])
+        .evaluate()
+        .map((outcomes) =>
+          [...outcomes]
+            .filter((outcome) => outcome.rule === rule.get())
+            .reduce((outcome, candidate) => {
+              if (Outcome.isFailed(outcome)) {
+                return outcome;
+              }
+
+              if (Outcome.isFailed(candidate)) {
+                return candidate;
+              }
+
+              if (Outcome.isPassed(outcome)) {
+                return outcome;
+              }
+
+              if (Outcome.isPassed(candidate)) {
+                return candidate;
+              }
+
+              return outcome;
+            })
+        );
+
+      const expected = test.outcome;
+      const actual = outcome.toJSON().outcome;
+
+      const result = mapping(actual, expected);
+
+      switch (result) {
+        case "ok": // Alfa and ACT-R perfectly agree
+          t.pass(test.id);
+          // Display warnings if the case was registered as imperfect match
+          if (skip) {
+            t.log(
+              `Test case ${testID} matches but is incorrectly marked as skipped`
+            );
+          }
+          if (manual) {
+            t.log(
+              `Test case ${testID} matches but is incorrectly marked as manual`
+            );
+          }
+          if (lax) {
+            t.log(
+              `Test case ${testID} matches but is incorrectly marked as lax`
+            );
+          }
+          break;
+        case "error":
+          if (skip) {
+            t.fail.skip(test.id);
+          } else {
             t.fail(test.id);
             t.log("Outcome", outcome.toJSON());
             t.log("Test", test);
+          }
+          break;
+        case "lax":
+          // If the case is known to be a non strict match between Alfa and ACT-R, everything is fine.
+          // Otherwise, emit a warning or an error depending on test mode.
+          if (!lax) {
+            if (strict) {
+              t.fail(test.id);
+              t.log("Outcome", outcome.toJSON());
+              t.log("Test", test);
+            } else {
+              t.pass(test.id);
+              t.log(
+                `Test case ${testID} doesn't match perfectly, investigate and mark as lax.`
+              );
+            }
           } else {
             t.pass(test.id);
+          }
+          break;
+        case "manual":
+          // If the case is known to need an oracle, everything is fine.
+          // Otherwise, emit a warning.
+          t.pass(test.id);
+          if (!manual) {
             t.log(
-              `Test case ${testID} doesn't match perfectly, investigate and mark as lax.`
+              `Test case ${testID} has no or incomplete oracle, mark as manual.`
             );
           }
-        } else {
-          t.pass(test.id);
-        }
-        break;
-      case "manual":
-        // If the case is known to need an oracle, everything is fine.
-        // Otherwise, emit a warning.
-        t.pass(test.id);
-        if (!manual) {
-          t.log(
-            `Test case ${testID} has no or incomplete oracle, mark as manual.`
-          );
-        }
-        break;
+          break;
+      }
+
+      t.context.outcomes.push([page, outcome]);
     }
 
-    t.context.outcomes.push([page, outcome]);
-  }
-
-  const notSeen = Object.entries(seen)
-    .filter(([_, value]) => !value)
-    .map(([id, _]) => id);
-  if (notSeen.length > 0) {
-    t.log(
-      `Test cases ${fixture} / [${notSeen}] have been deleted upstream. Remove flags.`
-    );
-  }
+    const notSeen = Object.entries(seen)
+      .filter(([_, value]) => !value)
+      .map(([id, _]) => id);
+    if (notSeen.length > 0) {
+      t.log(
+        `Test cases ${fixture} / [${notSeen}] have been deleted upstream. Remove flags.`
+      );
+    }
+  };
 }
 
 /**
