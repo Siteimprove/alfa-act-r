@@ -14,22 +14,22 @@ const testCases = {
     tests: "https://act-rules.github.io/testcases.json",
     out: path.join("test", "fixtures", "act-r"),
   },
-  wai: {
+  w3c: {
     tests:
       "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json",
-    out: path.join("test", "fixtures", "wai"),
+    out: path.join("test", "fixtures", "w3c"),
   },
 };
 
-// If no extra argument is provided, download both ACT and WAI cases
+// If no extra argument is provided, download both ACT and W3C cases
 // #1: node; #2 : this file; #3-…: actual arguments
 const fetchACT =
   process.argv.length < 3 || process.argv.slice(2).includes("act-r");
-const fetchWAI =
-  process.argv.length < 3 || process.argv.slice(2).includes("wai");
+const fetchW3C =
+  process.argv.length < 3 || process.argv.slice(2).includes("w3c");
 
-if (!fetchACT && !fetchWAI) {
-  console.error('Wrong argument, use either "act-r", or "wai", or none');
+if (!fetchACT && !fetchW3C) {
+  console.error('Wrong argument, use either "act-r", or "w3c", or none');
   process.exit(1);
 }
 
@@ -38,9 +38,9 @@ if (fetchACT) {
   cleanAndFetch("act-r");
 }
 
-if (fetchWAI) {
-  console.log("Fetching WAI test cases");
-  cleanAndFetch("wai");
+if (fetchW3C) {
+  console.log("Fetching W3C test cases");
+  cleanAndFetch("w3c");
 }
 
 async function cleanAndFetch(source) {
