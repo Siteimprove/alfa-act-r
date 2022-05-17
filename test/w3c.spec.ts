@@ -17,7 +17,7 @@ test.before("Initialise context", (t) => {
 });
 
 test.after("Write report", (t) => {
-  report(t.context, path.join(__dirname, "..", "reports", "alfa-wai.json"));
+  report(t.context, path.join(__dirname, "..", "reports", "alfa-w3c.json"));
 });
 
 test("2779a5", (t) => fixture(t, Rules.get("R1")));
