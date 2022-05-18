@@ -231,311 +231,314 @@ test("b20e66", (t) =>
     ],
   }));
 
-// test("ff89c9", (t) =>
-//   fixture(t, Rules.get("R42"), {
-//     lax: [
-//       // Alfa does consider elements whose role is implicit or explicit=implicit
-//       "997565",
-//       "5a9eba",
-//     ],
-//   }));
-//
-// test("7d6734", (t) => fixture(t, Rules.get("R43")));
-//
-// test("b33eff", (t) => fixture(t, Rules.get("R44")));
-//
-// test("a25f45", (t) => fixture(t, Rules.get("R45")));
-//
-// test("d0f69e", (t) =>
-//   fixture(t, Rules.get("R46"), {
-//     skip: [
-//       // Alfa does not yet consider ARIA grids
-//       "d2fa5e",
-//     ],
-//     lax: [
-//       // Alfa does not consider ARIA tables
-//       "30ecbb",
-//     ],
-//   }));
-//
-// test("b4f0c3", (t) => fixture(t, Rules.get("R47")));
-//
-// // R48 has questions in applicability, review flow not currently handled
-// test.skip("aaa1bf", (t) => fixture(t, Rules.get("R48")));
-//
-// // R49 has questions in applicability, review flow not currently handled
-// test.skip("4c31df", (t) => fixture(t, Rules.get("R49")));
-//
-// // R50 has questions in applicability, review flow not currently handled
-// test.skip("80f0bf", (t) => fixture(t, Rules.get("R50")));
-//
-// // R51 is Siteimprove only
-//
-// // R52 is Siteimprove only
-//
-// // R53 is Siteimprove only
-//
-// // R54 is Siteimprove only
-//
-// // R55 is Siteimprove only
-//
-// // R56 is Siteimprove only
-//
-// // R57 is Siteimprove only
-//
-// // R58 is not implemented yet
-// // test("cf77f2", t => fixture(t, Rules.get("R58")));
-//
-// // R59 is Siteimprove only
-//
-// // R60 is Siteimprove only
-//
-// // R61 is Siteimprove only
-//
-// // Not yet merged in ACT rules
-// test.skip("be4d0c", (t) => fixture(t, Rules.get("R62")));
-//
-// test("8fc3b6", (t) =>
-//   fixture(t, Rules.get("R63"), {
-//     lax: [
-//       // Alfa does not look at the MIME type of embedded content
-//       // https://github.com/Siteimprove/alfa/issues/522
-//       "e0af01",
-//     ],
-//   }));
-//
-// test("ffd0e9", (t) => fixture(t, Rules.get("R64")));
-//
-// test("oj04fd", (t) =>
-//   fixture(t, Rules.get("R65"), {
-//     manual: ["31b4ec", "32e6a0"],
-//   }));
-//
-// test("09o5cg", (t) =>
-//   fixture(t, Rules.get("R66"), {
-//     manual: ["90eef0", "bbaefc", "357b41"],
-//     skip: [
-//       // Alfa assumes that non-human language text is marked as presentational
-//       "25f0d3",
-//       // Alfa does not yet ignore disabled widget labels
-//       "7b6814",
-//       "fb6c57",
-//       // Alfa does not yet disregard impossible foreground/background combinations
-//       "0627ba",
-//     ],
-//   }));
-//
-// // R67 is Siteimprove only
-//
-// test("bc4a75", (t) =>
-//   fixture(t, Rules.get("R68"), {
-//     skip: [
-//       // https://github.com/act-rules/act-rules.github.io/issues/1552
-//       "519aae",
-//       // Alfa accepts children that are not "required owned element" as this
-//       // is a common case and unclear what ARIA really mean
-//       // https://github.com/act-rules/act-rules.github.io/issues/1426
-//       "77c1ef",
-//     ],
-//     lax: [
-//       // Alfa intentionally applies to elements whose role is implicit
-//       "8ff0b1",
-//     ],
-//   }));
-//
-// test("afw4f7", (t) =>
-//   fixture(t, Rules.get("R69"), {
-//     skip: [
-//       // Alfa intentionally diverges on these cases
-//       // -> Alfa assumes that non-human language text is marked as presentational
-//       "2f71bb",
-//
-//       // Alfa does not yet ignore disabled widget labels
-//       "78bb66",
-//       "448c66",
-//
-//       // Alfa does not yet disregard impossible foreground/background combinations
-//       "55f4c4",
-//     ],
-//     manual: ["3805f1", "455f4c", "599d91", "97803e"],
-//   }));
-//
-// // R70 is Siteimprove only
-//
-// // R71 is Siteimprove only
-//
-// // R72 is Siteimprove only
-//
-// // R73 is Siteimprove only
-//
-// // R74 is Siteimprove only
-//
-// // R75 is Siteimprove only
-//
-// // R76 is Siteimprove only
-//
-// // R77 is Siteimprove only
-//
-// // R78 is Siteimprove only
-//
-// // R79 is Siteimprove only
-//
-// // R80 is Siteimprove only
-//
-// // R81 has questions in expectation, review flow not currently handled
-// test("fd3a94", (t) =>
-//   fixture(t, Rules.get("R81"), {
-//     manual: [
-//       "062e21",
-//       "11abbc",
-//       "2b877f",
-//       "3cece5",
-//       "4c180b",
-//       "8aa46a",
-//       "a3c812",
-//       "ae6e0e",
-//       "d1d5bf",
-//       "d9b934",
-//       "e45c4f",
-//     ],
-//   }));
-//
-// // R82 always has questions in expectation, review flow not currently handled
-// // R82 is experimental
-// // test.skip("36b590", (t) => fixture(t, Rules.get("R82")));
-//
-// test("59br37", (t) =>
-//   fixture(t, Rules.get("R83"), {
-//     skip: [
-//       // Alfa assumes that the text scale can be configured by the user, which
-//       // would cause text clipping for this case.
-//       "74d207",
-//
-//       // Alfa assumes that inline heights are controlled via JavaScript.
-//       "202900",
-//       "765e61",
-//
-//       // Alfa does not test the cases at the specified media query.
-//       "c0dbe9",
-//
-//       // Alfa does not consider the exact layout of the page.
-//       // https://github.com/Siteimprove/alfa/issues/183
-//       "dc1edd",
-//     ],
-//   }));
-//
-// test("0ssw9k", (t) =>
-//   fixture(t, Rules.get("R84"), {
-//     skip: [
-//       // Alfa intentionally diverges on these cases
-//       // -> Alfa does not consider the exact layout when determining scrollability
-//       // https://github.com/Siteimprove/alfa/issues/183
-//       "a7b9ec",
-//       // Alfa assumes that any element with dimensions is visible, without looking
-//       // at content.
-//       "363aef",
-//     ],
-//     lax: [
-//       // Alfa does not consider the exact layout when determining scrollability
-//       // so elements that are big enough are incorrectly deemed scrollable
-//       // https://github.com/Siteimprove/alfa/issues/183
-//       "30bc26",
-//     ],
-//   }));
-//
-// // R85 is Siteimprove only
-//
-// test("46ca7f", (t) => fixture(t, Rules.get("R86")));
-//
-// // Not merged upstream
-// test.skip("8a213c", (t) => fixture(t, Rules.get("R87")));
-//
-// // Not implemented, not merged upstream
-// // test.skip("nqzcj8", t => fixture(t, Rules.get("R88")));
-//
-// // R89 not implemented
-//
-// test("307n5z", (t) => fixture(t, Rules.get("R90")));
-//
-// test("24afc2", (t) =>
-//   fixture(t, Rules.get("R91"), {
-//     skip: [
-//       // Alfa doesn't consider top: -999em as invisible
-//       "ebc223",
-//     ],
-//   }));
-//
-// test("9e45ec", (t) =>
-//   fixture(t, Rules.get("R92"), {
-//     skip: [
-//       // Alfa doesn't consider top: -999em as invisible
-//       "221c82",
-//     ],
-//   }));
-//
-// test("78fd32", (t) =>
-//   fixture(t, Rules.get("R93"), {
-//     skip: [
-//       // Alfa does not consider `top: -999em` as offscreen.
-//       "6df14f",
-//       // Alfa does not have a layout system and does not detect that the text
-//       // is in a wide scrolling element; instead it considers that any element
-//       // with a role of paragraph is a block of text.
-//       "2e016f",
-//     ],
-//   }));
-//
-// test("m6b1q3", (t) => fixture(t, Rules.get("R94")));
-//
-// test("akn7bn", (t) =>
-//   fixture(t, Rules.get("R95"), {
-//     skip: [
-//       // The 1×1 iframe is visible, its content isn't.
-//       // Alfa does consider the descendant of visible 1×1 elements as visible.
-//       "fab3ad",
-//     ],
-//   }));
-//
-// // Not merged upstream
-// test("bisz58", (t) =>
-//   fixture(t, Rules.get("R96"), {
-//     lax: [
-//       // These cases can't currently be tested due to instant redirects.
-//       "17033b",
-//       "f52fc0",
-//     ],
-//   }));
-//
-// // R97 is not implemented yet (part of R58)
-// // test("3e12e1", t => fixture(t, Rules.get("R97")));
-//
-// // R98 is not implemented yet (part of R58)
-// // test("047fe0", t => fixture(t, Rules.get("R98")));
-//
-// // R99 is not implemented yet (part of R58)
-// // test("b40fd1", t => fixture(t, Rules.get("R99")));
-//
-// // R100 is not implemented yet (part of R58)
-// // test("ye5d6e", t => fixture(t, Rules.get("R100")));
-//
-// // R101 is not implemented and not merged in ACT rules
-// // test("r18umj", t => fixture(t, Rules.get("R101")));
-//
-// // R102 is not implemented and not merged in ACT rules
-// // test("kh5ids", t => fixture(t, Rules.get("R101")));
-//
-// // R103 is SI only
-//
-// // R104 is SI only
-//
-// // R105 is SI only
-//
-// // R106 is SI only
-//
-// // R107 is SI only
-//
-// // R108 is SI only
-//
-// // R109 always has questions in expectation, review flow not currently handled
-// // R109 is experimental
-// // test.skip("ucwvc8", (t) => fixture(t, Rules.get("R109")));
+test("ff89c9", (t) =>
+  fixture(t, Rules.get("R42"), {
+    lax: [
+      // Alfa does consider elements whose role is implicit or explicit=implicit
+      "29e934",
+      "e61001",
+    ],
+  }));
+
+test("7d6734", (t) => fixture(t, Rules.get("R43")));
+
+test("b33eff", (t) => fixture(t, Rules.get("R44")));
+
+test("a25f45", (t) => fixture(t, Rules.get("R45")));
+
+test("d0f69e", (t) =>
+  fixture(t, Rules.get("R46"), {
+    skip: [
+      // Alfa does not yet consider ARIA grids
+      "08a84b",
+    ],
+    lax: [
+      // Alfa does not consider ARIA tables
+      "a56128",
+    ],
+  }));
+
+test("b4f0c3", (t) => fixture(t, Rules.get("R47")));
+
+// R48 has questions in applicability, review flow not currently handled
+test.skip("aaa1bf", (t) => fixture(t, Rules.get("R48")));
+
+// R49 has questions in applicability, review flow not currently handled
+test.skip("4c31df", (t) => fixture(t, Rules.get("R49")));
+
+// R50 has questions in applicability, review flow not currently handled
+test.skip("80f0bf", (t) => fixture(t, Rules.get("R50")));
+
+// R51 is Siteimprove only
+
+// R52 is Siteimprove only
+
+// R53 is Siteimprove only
+
+// R54 is Siteimprove only
+
+// R55 is Siteimprove only
+
+// R56 is Siteimprove only
+
+// R57 is Siteimprove only
+
+// R58 is not implemented yet
+// test("cf77f2", t => fixture(t, Rules.get("R58")));
+
+// R59 is Siteimprove only
+
+// R60 is Siteimprove only
+
+// R61 is Siteimprove only
+
+// Not yet merged in ACT rules
+test.skip("be4d0c", (t) => fixture(t, Rules.get("R62")));
+
+test("8fc3b6", (t) =>
+  fixture(t, Rules.get("R63"), {
+    lax: [
+      // Alfa does not look at the MIME type of embedded content
+      // https://github.com/Siteimprove/alfa/issues/522
+      "990a0a",
+    ],
+  }));
+
+test("ffd0e9", (t) => fixture(t, Rules.get("R64")));
+
+test("oj04fd", (t) =>
+  fixture(t, Rules.get("R65"), {
+    manual: ["c80b3c", "df041e"],
+  }));
+
+test("09o5cg", (t) =>
+  fixture(t, Rules.get("R66"), {
+    manual: ["2eeb7d", "939e0b", "d3cb8b"],
+    skip: [
+      // Alfa assumes that non-human language text is marked as presentational
+      "e778ed",
+      // Alfa does not yet ignore disabled widget labels
+      // https://github.com/Siteimprove/alfa/issues/1149
+      "09a8df",
+      "834aa8",
+      "e8c11e",
+    ],
+  }));
+
+// R67 is Siteimprove only
+
+test("bc4a75", (t) =>
+  fixture(t, Rules.get("R68"), {
+    skip: [
+      // Alfa requires at least one element with a correct role, this test case is
+      // wonky due to mix of HTML and ARIA that browsers parses by repairing the
+      // HTML.
+      // https://github.com/act-rules/act-rules.github.io/issues/1552
+      "09d813",
+      // Alfa accepts children that are not "required owned element" as this
+      // is a common case and unclear what ARIA really mean
+      // https://github.com/act-rules/act-rules.github.io/issues/1426
+      "6120d9",
+    ],
+    lax: [
+      // Alfa intentionally applies to elements whose role is implicit
+      "d6a643",
+    ],
+  }));
+
+test("afw4f7", (t) =>
+  fixture(t, Rules.get("R69"), {
+    skip: [
+      // Alfa intentionally diverges on these cases
+      // -> Alfa assumes that non-human language text is marked as presentational
+      "12198b",
+
+      // Alfa does not yet ignore disabled widget labels
+      // https://github.com/Siteimprove/alfa/issues/1149
+      "6bba8b",
+      "7527da",
+
+      // Alfa does not yet disregard impossible foreground/background combinations
+      "92452d",
+    ],
+    manual: ["0616f2", "7004f1", "e5c024", "fb7365"],
+  }));
+
+// R70 is Siteimprove only
+
+// R71 is Siteimprove only
+
+// R72 is Siteimprove only
+
+// R73 is Siteimprove only
+
+// R74 is Siteimprove only
+
+// R75 is Siteimprove only
+
+// R76 is Siteimprove only
+
+// R77 is Siteimprove only
+
+// R78 is Siteimprove only
+
+// R79 is Siteimprove only
+
+// R80 is Siteimprove only
+
+// R81 has questions in expectation, review flow not currently handled
+test("fd3a94", (t) =>
+  fixture(t, Rules.get("R81"), {
+    manual: [
+      "0492e8",
+      "10c991",
+      "144556",
+      "52a268",
+      "65aaf1",
+      "75e59a",
+      "8d6fa9",
+      "b7dc66",
+      "c16600",
+      "ce860d",
+      "e0ec0a",
+    ],
+  }));
+
+// R82 always has questions in expectation, review flow not currently handled
+// R82 is experimental, so should be imported from elsewhere
+// test.skip("36b590", (t) => fixture(t, Rules.get("R82")));
+
+test("59br37", (t) =>
+  fixture(t, Rules.get("R83"), {
+    skip: [
+      // Alfa assumes that the text scale can be configured by the user, which
+      // would cause text clipping for this case.
+      "155c46",
+
+      // Alfa assumes that inline heights are controlled via JavaScript.
+      "146ced",
+      "a735e7",
+
+      // Alfa does not test the cases at the specified media query.
+      "892465",
+
+      // Alfa does not consider the exact layout of the page.
+      // https://github.com/Siteimprove/alfa/issues/183
+      "26a642",
+    ],
+  }));
+
+test("0ssw9k", (t) =>
+  fixture(t, Rules.get("R84"), {
+    skip: [
+      // Alfa intentionally diverges on these cases
+      // -> Alfa does not consider the exact layout when determining scrollability
+      // https://github.com/Siteimprove/alfa/issues/183
+      "b35c89",
+      // Alfa assumes that any element with dimensions is visible, without looking
+      // at content.
+      "2ead59",
+    ],
+    lax: [
+      // Alfa does not consider the exact layout when determining scrollability
+      // so elements that are big enough are incorrectly deemed scrollable
+      // https://github.com/Siteimprove/alfa/issues/183
+      "977af1",
+    ],
+  }));
+
+// R85 is Siteimprove only
+
+test("46ca7f", (t) => fixture(t, Rules.get("R86")));
+
+// Not merged upstream
+test.skip("8a213c", (t) => fixture(t, Rules.get("R87")));
+
+// Not implemented, not merged upstream
+// test.skip("nqzcj8", t => fixture(t, Rules.get("R88")));
+
+// R89 not implemented
+
+test("307n5z", (t) => fixture(t, Rules.get("R90")));
+
+test("24afc2", (t) =>
+  fixture(t, Rules.get("R91"), {
+    skip: [
+      // Alfa doesn't consider top: -999em as invisible
+      "e69989",
+    ],
+  }));
+
+test("9e45ec", (t) =>
+  fixture(t, Rules.get("R92"), {
+    skip: [
+      // Alfa doesn't consider top: -999em as invisible
+      "9cbf79",
+    ],
+  }));
+
+test("78fd32", (t) =>
+  fixture(t, Rules.get("R93"), {
+    skip: [
+      // Alfa does not consider `top: -999em` as offscreen.
+      "f56e26",
+      // Alfa does not have a layout system and does not detect that the text
+      // is in a wide scrolling element; instead it considers that any element
+      // with a role of paragraph is a block of text.
+      "61778d",
+    ],
+  }));
+
+test("m6b1q3", (t) => fixture(t, Rules.get("R94")));
+
+test("akn7bn", (t) =>
+  fixture(t, Rules.get("R95"), {
+    skip: [
+      // The 1×1 iframe is visible, its content isn't.
+      // Alfa does consider the descendant of visible 1×1 elements as visible.
+      "90818c",
+    ],
+  }));
+
+test("bisz58", (t) =>
+  fixture(t, Rules.get("R96"), {
+    lax: [
+      // These cases can't currently be tested due to instant redirects.
+      "12f9c8",
+      "b894f3",
+    ],
+  }));
+
+// R97 is not implemented yet (part of R58)
+// test("3e12e1", t => fixture(t, Rules.get("R97")));
+
+// R98 is not implemented yet (part of R58)
+// test("047fe0", t => fixture(t, Rules.get("R98")));
+
+// R99 is not implemented yet (part of R58)
+// test("b40fd1", t => fixture(t, Rules.get("R99")));
+
+// R100 is not implemented yet (part of R58)
+// test("ye5d6e", t => fixture(t, Rules.get("R100")));
+
+// R101 is not implemented and not merged in ACT rules
+// test("r18umj", t => fixture(t, Rules.get("R101")));
+
+// R102 is not implemented and not merged in ACT rules
+// test("kh5ids", t => fixture(t, Rules.get("R101")));
+
+// R103 is SI only
+
+// R104 is SI only
+
+// R105 is SI only
+
+// R106 is SI only
+
+// R107 is SI only
+
+// R108 is SI only
+
+// R109 always has questions in expectation, review flow not currently handled
+// R109 is experimental
+// test.skip("ucwvc8", (t) => fixture(t, Rules.get("R109")));
