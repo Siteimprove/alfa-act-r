@@ -9,12 +9,44 @@ const { Scraper } = require("@siteimprove/alfa-scraper");
 
 const headers = require("./helpers/headers");
 
-const tests = "https://act-rules.github.io/testcases.json";
-// const tests = "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json";
+const testCases = {
+  "act-r": {
+    tests: "https://act-rules.github.io/testcases.json",
+    out: path.join("test", "fixtures", "act-r"),
+  },
+  w3c: {
+    tests:
+      "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json",
+    out: path.join("test", "fixtures", "w3c"),
+  },
+};
 
-const out = path.join("test", "fixtures");
+// If no extra argument is provided, download both ACT and W3C cases
+// #1: node; #2 : this file; #3-…: actual arguments
+const fetchACT =
+  process.argv.length < 3 || process.argv.slice(2).includes("act-r");
+const fetchW3C =
+  process.argv.length < 3 || process.argv.slice(2).includes("w3c");
 
-del([out]).then(() => fetch(tests, out));
+if (!fetchACT && !fetchW3C) {
+  console.error('Wrong argument, use either "act-r", or "w3c", or none');
+  process.exit(1);
+}
+
+if (fetchACT) {
+  console.log("Fetching ACT-R test cases");
+  cleanAndFetch("act-r");
+}
+
+if (fetchW3C) {
+  console.log("Fetching W3C test cases");
+  cleanAndFetch("w3c");
+}
+
+async function cleanAndFetch(source) {
+  const { tests, out } = testCases[source];
+  del([out]).then(() => fetch(tests, out));
+}
 
 async function fetch(tests, out) {
   const { data } = await axios.get(tests);

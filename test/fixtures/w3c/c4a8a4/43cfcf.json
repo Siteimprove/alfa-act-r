@@ -1,0 +1,133 @@
+{
+  "id": "43cfcf",
+  "outcome": "inapplicable",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/85469fd266d3e8706f551dcd65261709311123d0.svg",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/85469fd266d3e8706f551dcd65261709311123d0.svg",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "image/svg+xml"
+        }
+      ],
+      "body": "<svg xmlns=\"http://www.w3.org/2000/svg\">\n  <title>This is a circle</title>\n  <circle cx=\"150\" cy=\"75\" r=\"50\" fill=\"green\"></circle>\n</svg>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "element",
+          "namespace": "http://www.w3.org/2000/svg",
+          "prefix": null,
+          "name": "svg",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": "http://www.w3.org/2000/xmlns/",
+              "prefix": null,
+              "name": "xmlns",
+              "value": "http://www.w3.org/2000/svg"
+            }
+          ],
+          "style": null,
+          "children": [
+            {
+              "type": "text",
+              "data": "\n  "
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/2000/svg",
+              "prefix": null,
+              "name": "title",
+              "attributes": [],
+              "style": null,
+              "children": [
+                {
+                  "type": "text",
+                  "data": "This is a circle"
+                }
+              ],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n  "
+            },
+            {
+              "type": "element",
+              "namespace": "http://www.w3.org/2000/svg",
+              "prefix": null,
+              "name": "circle",
+              "attributes": [
+                {
+                  "type": "attribute",
+                  "namespace": null,
+                  "prefix": null,
+                  "name": "cx",
+                  "value": "150"
+                },
+                {
+                  "type": "attribute",
+                  "namespace": null,
+                  "prefix": null,
+                  "name": "cy",
+                  "value": "75"
+                },
+                {
+                  "type": "attribute",
+                  "namespace": null,
+                  "prefix": null,
+                  "name": "r",
+                  "value": "50"
+                },
+                {
+                  "type": "attribute",
+                  "namespace": null,
+                  "prefix": null,
+                  "name": "fill",
+                  "value": "green"
+                }
+              ],
+              "style": null,
+              "children": [],
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n"
+            }
+          ],
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}
