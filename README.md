@@ -33,6 +33,6 @@ To run Alfa against the test cases:
 $ yarn test ["**/act-r*" | "**/w3c*"]
 ```
 
-If non argument is provided, both will be tested. The selection is done automatically by `ava` (the testing library) using glob patterns… 
+If no argument is provided, both will be tested. The selection is done automatically by `ava` (the testing library) using glob patterns… 
 
 This generates a report for each set of test cases. Committing the report and pushing it upstream will update the implementation report on the corresponding website.
