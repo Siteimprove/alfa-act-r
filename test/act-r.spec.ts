@@ -119,10 +119,7 @@ test("6cfa84", (t) =>
   fixture(t, Rules.get("R17"), {
     skip: [
       // Alfa does not consider whether an element redirects focus or not
-      "9cc5d1",
-      // Alfa does not consider element with tabindex=-1 as focusable
-      // https://github.com/Siteimprove/sanshikan/issues/219 (item 4)
-      "8eefa9",
+      "294bef",
     ],
   }));
 
@@ -258,7 +255,15 @@ test("d0f69e", (t) =>
     ],
   }));
 
-test("b4f0c3", (t) => fixture(t, Rules.get("R47")));
+test("b4f0c3", (t) =>
+  fixture(t, Rules.get("R47"), {
+    lax: [
+      // https://github.com/Siteimprove/sanshikan/issues/219
+      // https://github.com/act-rules/act-rules.github.io/pull/1835
+      "4b58ab",
+      "deb43e",
+    ],
+  }));
 
 // R48 has questions in applicability, review flow not currently handled
 test.skip("aaa1bf", (t) => fixture(t, Rules.get("R48")));
@@ -330,8 +335,6 @@ test("09o5cg", (t) =>
 test("bc4a75", (t) =>
   fixture(t, Rules.get("R68"), {
     skip: [
-      // https://github.com/act-rules/act-rules.github.io/issues/1552
-      "519aae",
       // Alfa accepts children that are not "required owned element" as this
       // is a common case and unclear what ARIA really mean
       // https://github.com/act-rules/act-rules.github.io/issues/1426
@@ -385,18 +388,23 @@ test("afw4f7", (t) =>
 // R81 has questions in expectation, review flow not currently handled
 test("fd3a94", (t) =>
   fixture(t, Rules.get("R81"), {
+    lax: [
+      // https://github.com/Siteimprove/alfa/issues/767
+      "8bfeb5",
+    ],
     manual: [
       "062e21",
       "11abbc",
+      "2814b9",
       "2b877f",
+      "2e0157",
       "3cece5",
-      "4c180b",
       "8aa46a",
       "a3c812",
       "ae6e0e",
-      "d1d5bf",
       "d9b934",
       "e45c4f",
+      "ff6a1b",
     ],
   }));
 
@@ -414,6 +422,7 @@ test("59br37", (t) =>
       // Alfa assumes that inline heights are controlled via JavaScript.
       "202900",
       "765e61",
+      "f4c86d",
 
       // Alfa does not test the cases at the specified media query.
       "c0dbe9",

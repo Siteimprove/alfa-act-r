@@ -125,10 +125,7 @@ test("6cfa84", (t) =>
   fixture(t, Rules.get("R17"), {
     skip: [
       // Alfa does not consider whether an element redirects focus or not
-      "c555cd",
-      // Alfa does not consider element with tabindex=-1 as focusable
-      // https://github.com/Siteimprove/sanshikan/issues/219 (item 4)
-      "eb0e58",
+      "cc8937",
     ],
   }));
 
@@ -258,7 +255,15 @@ test("d0f69e", (t) =>
     ],
   }));
 
-test("b4f0c3", (t) => fixture(t, Rules.get("R47")));
+test("b4f0c3", (t) =>
+  fixture(t, Rules.get("R47"), {
+    lax: [
+      // https://github.com/Siteimprove/sanshikan/issues/219
+      // https://github.com/act-rules/act-rules.github.io/pull/1835
+      "21b278",
+      "b36fb3",
+    ],
+  }));
 
 // R48 has questions in applicability, review flow not currently handled
 test.skip("aaa1bf", (t) => fixture(t, Rules.get("R48")));
@@ -330,11 +335,6 @@ test("09o5cg", (t) =>
 test("bc4a75", (t) =>
   fixture(t, Rules.get("R68"), {
     skip: [
-      // Alfa requires at least one element with a correct role, this test case is
-      // wonky due to mix of HTML and ARIA that browsers parses by repairing the
-      // HTML.
-      // https://github.com/act-rules/act-rules.github.io/issues/1552
-      "09d813",
       // Alfa accepts children that are not "required owned element" as this
       // is a common case and unclear what ARIA really mean
       // https://github.com/act-rules/act-rules.github.io/issues/1426
@@ -390,17 +390,18 @@ test("afw4f7", (t) =>
 test("fd3a94", (t) =>
   fixture(t, Rules.get("R81"), {
     manual: [
-      "0492e8",
       "10c991",
       "144556",
-      "52a268",
+      "5041c9",
       "65aaf1",
       "75e59a",
+      "80824c",
       "8d6fa9",
       "b7dc66",
       "c16600",
       "ce860d",
       "e0ec0a",
+      "e9979a",
     ],
   }));
 
@@ -418,6 +419,7 @@ test("59br37", (t) =>
       // Alfa assumes that inline heights are controlled via JavaScript.
       "146ced",
       "a735e7",
+      "c051af",
 
       // Alfa does not test the cases at the specified media query.
       "892465",
