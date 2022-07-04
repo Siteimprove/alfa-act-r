@@ -30,19 +30,9 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -50,17 +40,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "style",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "\n\t\tbutton {\n\t\t\tcolor: #000;\n\t\t}\n\t\tbutton:hover {\n\t\t\tcursor: pointer;\n\t\t\tcursor: pointer;\n\t\t\tbackground-color: grey;\n\t\t\tcolor: white;\n\t\t}\n\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "style",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -69,6 +59,11 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -78,11 +73,6 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -90,19 +80,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "id",
-                      "value": "video-container"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -118,26 +95,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "video",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "id",
-                          "value": "video"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "autoplay",
-                          "value": ""
-                        }
-                      ],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -145,6 +102,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "source",
@@ -165,7 +123,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         },
@@ -175,6 +132,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "source",
@@ -195,7 +153,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         },
@@ -204,6 +161,26 @@
                           "data": "\n\t\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "video",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "id",
+                          "value": "video"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "autoplay",
+                          "value": ""
+                        }
+                      ],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -221,19 +198,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "div",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "id",
-                          "value": "video-controls"
-                        }
-                      ],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -241,6 +205,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "button",
@@ -268,7 +233,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         },
@@ -278,6 +242,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "button",
@@ -298,7 +263,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         },
@@ -307,6 +271,19 @@
                           "data": "\n\t\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "id",
+                          "value": "video-controls"
+                        }
+                      ],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -315,6 +292,19 @@
                       "data": "\n\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "video-container"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -324,6 +314,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "script",
@@ -337,7 +328,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -346,10 +336,20 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

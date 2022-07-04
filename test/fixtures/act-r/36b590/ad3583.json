@@ -30,38 +30,23 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "form",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -69,11 +54,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "fieldset",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -81,17 +61,17 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "legend",
-                          "attributes": [],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
                               "data": "Shipping"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "legend",
+                          "attributes": [],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -101,25 +81,25 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "label",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "for",
-                              "value": "shippingName"
-                            }
-                          ],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
                               "data": "Name"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "label",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "for",
+                              "value": "shippingName"
+                            }
+                          ],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -129,6 +109,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "input",
@@ -156,7 +137,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         },
@@ -166,6 +146,12 @@
                         },
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "Address"
+                            }
+                          ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "label",
@@ -179,12 +165,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "Address"
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         },
@@ -194,6 +174,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "input",
@@ -221,7 +202,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         },
@@ -230,6 +210,11 @@
                           "data": "\n\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "fieldset",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -239,11 +224,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "fieldset",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -251,17 +231,17 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "legend",
-                          "attributes": [],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
                               "data": "Billing"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "legend",
+                          "attributes": [],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -271,25 +251,25 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "label",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "for",
-                              "value": "billingName"
-                            }
-                          ],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
                               "data": "Name"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "label",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "for",
+                              "value": "billingName"
+                            }
+                          ],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -299,6 +279,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "input",
@@ -319,7 +300,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         },
@@ -329,6 +309,12 @@
                         },
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "Address"
+                            }
+                          ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "label",
@@ -342,12 +328,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "Address"
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         },
@@ -357,6 +337,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "input",
@@ -377,7 +358,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         },
@@ -386,6 +366,11 @@
                           "data": "\n\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "fieldset",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -395,6 +380,42 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "All required fields must be filled."
+                        },
+                        {
+                          "type": "element",
+                          "children": [],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "br",
+                          "attributes": [],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "Please fill Name."
+                        },
+                        {
+                          "type": "element",
+                          "children": [],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "br",
+                          "attributes": [],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "Please fill Address"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "span",
@@ -408,53 +429,17 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "All required fields must be filled."
-                        },
-                        {
-                          "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "br",
-                          "attributes": [],
-                          "style": null,
-                          "children": [],
-                          "shadow": null,
-                          "content": null
-                        },
-                        {
-                          "type": "text",
-                          "data": "Please fill Name."
-                        },
-                        {
-                          "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "br",
-                          "attributes": [],
-                          "style": null,
-                          "children": [],
-                          "shadow": null,
-                          "content": null
-                        },
-                        {
-                          "type": "text",
-                          "data": "Please fill Address"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "br",
                       "attributes": [],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     },
@@ -464,6 +449,7 @@
                     },
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "input",
@@ -484,7 +470,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     },
@@ -493,14 +478,29 @@
                       "data": "\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "form",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

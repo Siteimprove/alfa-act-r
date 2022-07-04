@@ -30,33 +30,29 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\tThe Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test rules.\n\t\tThese test rules can be used for developing automated testing tools and manual testing methodologies. It provides a\n\t\tcommon format that allows any party involved in accessibility testing to document and share their testing procedures\n\t\tin a robust and understandable manner. This enables transparency and harmonization of testing methods, including\n\t\tmethods implemented by accessibility test tools.\n\t"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "p",
@@ -70,12 +66,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t\tThe Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test rules.\n\t\tThese test rules can be used for developing automated testing tools and manual testing methodologies. It provides a\n\t\tcommon format that allows any party involved in accessibility testing to document and share their testing procedures\n\t\tin a robust and understandable manner. This enables transparency and harmonization of testing methods, including\n\t\tmethods implemented by accessibility test tools.\n\t"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -84,10 +74,20 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

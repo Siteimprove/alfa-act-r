@@ -30,33 +30,24 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "object",
@@ -70,29 +61,19 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": {
                     "type": "document",
                     "children": [
                       {
                         "type": "element",
-                        "namespace": "http://www.w3.org/1999/xhtml",
-                        "prefix": null,
-                        "name": "html",
-                        "attributes": [],
-                        "style": null,
                         "children": [
                           {
                             "type": "element",
-                            "namespace": "http://www.w3.org/1999/xhtml",
-                            "prefix": null,
-                            "name": "head",
-                            "attributes": [],
-                            "style": null,
                             "children": [
                               {
                                 "type": "element",
+                                "children": [],
                                 "namespace": "http://www.w3.org/1999/xhtml",
                                 "prefix": null,
                                 "name": "meta",
@@ -113,24 +94,51 @@
                                   }
                                 ],
                                 "style": null,
-                                "children": [],
                                 "shadow": null,
                                 "content": null
                               }
                             ],
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "prefix": null,
+                            "name": "head",
+                            "attributes": [],
+                            "style": null,
                             "shadow": null,
                             "content": null
                           },
                           {
                             "type": "element",
-                            "namespace": "http://www.w3.org/1999/xhtml",
-                            "prefix": null,
-                            "name": "body",
-                            "attributes": [],
-                            "style": null,
                             "children": [
                               {
                                 "type": "element",
+                                "children": [
+                                  {
+                                    "type": "element",
+                                    "children": [],
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "prefix": null,
+                                    "name": "source",
+                                    "attributes": [
+                                      {
+                                        "type": "attribute",
+                                        "namespace": null,
+                                        "prefix": null,
+                                        "name": "src",
+                                        "value": "https://act-rules.github.io/test-assets/moon-audio/moon-speech.mp3"
+                                      },
+                                      {
+                                        "type": "attribute",
+                                        "namespace": null,
+                                        "prefix": null,
+                                        "name": "type",
+                                        "value": "audio/mp3"
+                                      }
+                                    ],
+                                    "style": null,
+                                    "shadow": null,
+                                    "content": null
+                                  }
+                                ],
                                 "namespace": "http://www.w3.org/1999/xhtml",
                                 "prefix": null,
                                 "name": "video",
@@ -158,42 +166,24 @@
                                   }
                                 ],
                                 "style": null,
-                                "children": [
-                                  {
-                                    "type": "element",
-                                    "namespace": "http://www.w3.org/1999/xhtml",
-                                    "prefix": null,
-                                    "name": "source",
-                                    "attributes": [
-                                      {
-                                        "type": "attribute",
-                                        "namespace": null,
-                                        "prefix": null,
-                                        "name": "src",
-                                        "value": "https://act-rules.github.io/test-assets/moon-audio/moon-speech.mp3"
-                                      },
-                                      {
-                                        "type": "attribute",
-                                        "namespace": null,
-                                        "prefix": null,
-                                        "name": "type",
-                                        "value": "audio/mp3"
-                                      }
-                                    ],
-                                    "style": null,
-                                    "children": [],
-                                    "shadow": null,
-                                    "content": null
-                                  }
-                                ],
                                 "shadow": null,
                                 "content": null
                               }
                             ],
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "prefix": null,
+                            "name": "body",
+                            "attributes": [],
+                            "style": null,
                             "shadow": null,
                             "content": null
                           }
                         ],
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "prefix": null,
+                        "name": "html",
+                        "attributes": [],
+                        "style": null,
                         "shadow": null,
                         "content": null
                       }
@@ -202,10 +192,20 @@
                   }
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

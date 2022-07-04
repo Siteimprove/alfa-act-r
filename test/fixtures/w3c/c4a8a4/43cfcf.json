@@ -24,19 +24,6 @@
       "children": [
         {
           "type": "element",
-          "namespace": "http://www.w3.org/2000/svg",
-          "prefix": null,
-          "name": "svg",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": "http://www.w3.org/2000/xmlns/",
-              "prefix": null,
-              "name": "xmlns",
-              "value": "http://www.w3.org/2000/svg"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "text",
@@ -44,17 +31,17 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/2000/svg",
-              "prefix": null,
-              "name": "title",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
                   "data": "This is a circle"
                 }
               ],
+              "namespace": "http://www.w3.org/2000/svg",
+              "prefix": null,
+              "name": "title",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -64,6 +51,7 @@
             },
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/2000/svg",
               "prefix": null,
               "name": "circle",
@@ -98,7 +86,6 @@
                 }
               ],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
@@ -107,6 +94,19 @@
               "data": "\n"
             }
           ],
+          "namespace": "http://www.w3.org/2000/svg",
+          "prefix": null,
+          "name": "svg",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": "http://www.w3.org/2000/xmlns/",
+              "prefix": null,
+              "name": "xmlns",
+              "value": "http://www.w3.org/2000/svg"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

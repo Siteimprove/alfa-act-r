@@ -30,44 +30,34 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "p",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Happy new year!"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -77,26 +67,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/2000/svg",
-                  "prefix": null,
-                  "name": "svg",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "height",
-                      "value": "200"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": "http://www.w3.org/2000/xmlns/",
-                      "prefix": null,
-                      "name": "xmlns",
-                      "value": "http://www.w3.org/2000/svg"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -104,6 +74,7 @@
                     },
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": "http://www.w3.org/2000/svg",
                       "prefix": null,
                       "name": "polygon",
@@ -124,7 +95,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     },
@@ -133,14 +103,44 @@
                       "data": "\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/2000/svg",
+                  "prefix": null,
+                  "name": "svg",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "height",
+                      "value": "200"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": "http://www.w3.org/2000/xmlns/",
+                      "prefix": null,
+                      "name": "xmlns",
+                      "value": "http://www.w3.org/2000/svg"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

@@ -30,27 +30,9 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -58,17 +40,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Passed Example 4"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -77,6 +59,11 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -86,11 +73,6 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -98,6 +80,12 @@
                 },
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Go to the main content."
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "p",
@@ -111,12 +99,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Go to the main content."
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -126,6 +108,83 @@
                 },
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t"
+                        },
+                        {
+                          "type": "element",
+                          "children": [],
+                          "namespace": "http://www.w3.org/2000/svg",
+                          "prefix": null,
+                          "name": "path",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "style",
+                              "value": "fill:#1E201D;"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "d",
+                              "value": "M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111\n\t\t\t\tC0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587\n\t\t\t\tc0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"
+                            }
+                          ],
+                          "style": [
+                            {
+                              "name": "fill",
+                              "value": "rgb(30, 32, 29)",
+                              "important": false
+                            }
+                          ],
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\t\t"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/2000/svg",
+                      "prefix": null,
+                      "name": "a",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "href",
+                          "value": "#main"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "aria-labelledby",
+                          "value": "instructions"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/2000/svg",
                   "prefix": null,
                   "name": "svg",
@@ -153,83 +212,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/2000/svg",
-                      "prefix": null,
-                      "name": "a",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "href",
-                          "value": "#main"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "aria-labelledby",
-                          "value": "instructions"
-                        }
-                      ],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "\n\t\t\t"
-                        },
-                        {
-                          "type": "element",
-                          "namespace": "http://www.w3.org/2000/svg",
-                          "prefix": null,
-                          "name": "path",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "style",
-                              "value": "fill:#1E201D;"
-                            },
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "d",
-                              "value": "M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111\n\t\t\t\tC0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587\n\t\t\t\tc0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"
-                            }
-                          ],
-                          "style": [
-                            {
-                              "name": "fill",
-                              "value": "rgb(30, 32, 29)",
-                              "important": false
-                            }
-                          ],
-                          "children": [],
-                          "shadow": null,
-                          "content": null
-                        },
-                        {
-                          "type": "text",
-                          "data": "\n\t\t"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -239,11 +221,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "main",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -251,6 +228,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "This is the main content."
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "p",
@@ -264,12 +247,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "This is the main content."
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -278,6 +255,11 @@
                       "data": "\n\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "main",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -286,10 +268,28 @@
                   "data": "\n\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

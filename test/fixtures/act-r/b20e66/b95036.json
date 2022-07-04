@@ -30,33 +30,29 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Contact us"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "a",
@@ -70,12 +66,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Contact us"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -85,19 +75,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "id",
-                      "value": "host"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -105,14 +82,15 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "span",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "Contact us"
+                            }
+                          ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "a",
@@ -126,12 +104,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "Contact us"
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         },
@@ -140,6 +112,11 @@
                           "data": "\n\t\tfrom the light."
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "span",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -148,11 +125,30 @@
                       "data": "\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "host"
+                    }
+                  ],
+                  "style": null,
                   "shadow": {
                     "type": "shadow",
                     "children": [
                       {
                         "type": "element",
+                        "children": [
+                          {
+                            "type": "text",
+                            "data": "Contact us"
+                          }
+                        ],
                         "namespace": "http://www.w3.org/1999/xhtml",
                         "prefix": null,
                         "name": "a",
@@ -166,12 +162,6 @@
                           }
                         ],
                         "style": null,
-                        "children": [
-                          {
-                            "type": "text",
-                            "data": "Contact us"
-                          }
-                        ],
                         "shadow": null,
                         "content": null
                       },
@@ -191,25 +181,35 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "script",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "\n\tconst host = document.getElementById('host')\n\tconst shadowRoot = host.attachShadow({ mode: 'open' })\n\n\tshadowRoot.innerHTML =\n\t\t'<a href=\"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html\">Contact us</a> from the shadow.'\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "script",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

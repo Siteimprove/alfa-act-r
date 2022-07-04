@@ -30,44 +30,34 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "p",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "How many circles are there?"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -77,40 +67,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/2000/svg",
-                  "prefix": null,
-                  "name": "svg",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": "http://www.w3.org/2000/xmlns/",
-                      "prefix": null,
-                      "name": "xmlns",
-                      "value": "http://www.w3.org/2000/svg"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "role",
-                      "value": "img"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "width",
-                      "value": "100"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "height",
-                      "value": "100"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -118,6 +74,7 @@
                     },
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": "http://www.w3.org/2000/svg",
                       "prefix": null,
                       "name": "circle",
@@ -152,7 +109,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     },
@@ -162,6 +118,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t1 circle\n\t"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/2000/svg",
                       "prefix": null,
                       "name": "text",
@@ -196,12 +158,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "\n\t\t1 circle\n\t"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -210,14 +166,58 @@
                       "data": "\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/2000/svg",
+                  "prefix": null,
+                  "name": "svg",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": "http://www.w3.org/2000/xmlns/",
+                      "prefix": null,
+                      "name": "xmlns",
+                      "value": "http://www.w3.org/2000/svg"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "img"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "width",
+                      "value": "100"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "height",
+                      "value": "100"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

@@ -30,33 +30,24 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "p",
@@ -133,12 +124,17 @@
                       "important": false
                     }
                   ],
-                  "children": [],
                   "shadow": {
                     "type": "shadow",
                     "children": [
                       {
                         "type": "element",
+                        "children": [
+                          {
+                            "type": "text",
+                            "data": "Some text in English"
+                          }
+                        ],
                         "namespace": "http://www.w3.org/1999/xhtml",
                         "prefix": null,
                         "name": "span",
@@ -158,12 +154,6 @@
                             "important": false
                           }
                         ],
-                        "children": [
-                          {
-                            "type": "text",
-                            "data": "Some text in English"
-                          }
-                        ],
                         "shadow": null,
                         "content": null
                       }
@@ -179,25 +169,35 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "script",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "\n\tconst shadowRoot = document.getElementById('p').attachShadow({ mode: 'open' })\n\tshadowRoot.innerHTML = '<span style=\"color: #333;\">Some text in English</span>'\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "script",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

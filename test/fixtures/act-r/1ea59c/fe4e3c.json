@@ -30,30 +30,13 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "link",
@@ -74,7 +57,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -84,6 +66,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "link",
@@ -104,7 +87,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -114,6 +96,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "link",
@@ -134,7 +117,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -143,39 +125,19 @@
                   "data": "\n\n\t"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "figure",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "id",
-                      "value": "ozplayer-1-container"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "class",
-                      "value": "ozplayer-container"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -183,76 +145,36 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "div",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "data-controls",
-                          "value": "stack"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "class",
-                          "value": "ozplayer oz-stack"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "id",
-                          "value": "ozplayer-1"
-                        }
-                      ],
-                      "style": null,
                       "children": [
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "ul",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "class",
-                              "value": "oz-skip-links"
-                            }
-                          ],
-                          "style": null,
                           "children": [
                             {
                               "type": "element",
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "li",
-                              "attributes": [
-                                {
-                                  "type": "attribute",
-                                  "namespace": null,
-                                  "prefix": null,
-                                  "name": "class",
-                                  "value": "oz-skip-video"
-                                }
-                              ],
-                              "style": null,
                               "children": [
                                 {
                                   "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "span",
-                                  "attributes": [],
-                                  "style": null,
                                   "children": [
                                     {
                                       "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "Skip video"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "span",
+                                          "attributes": [],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null
+                                        }
+                                      ],
                                       "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
                                       "name": "a",
@@ -287,36 +209,49 @@
                                         }
                                       ],
                                       "style": null,
-                                      "children": [
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "span",
-                                          "attributes": [],
-                                          "style": null,
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "Skip video"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        }
-                                      ],
                                       "shadow": null,
                                       "content": null
                                     }
                                   ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [],
+                                  "style": null,
                                   "shadow": null,
                                   "content": null
                                 }
                               ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "li",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "oz-skip-video"
+                                }
+                              ],
+                              "style": null,
                               "shadow": null,
                               "content": null
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "ul",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "oz-skip-links"
+                            }
+                          ],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -326,6 +261,32 @@
                         },
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "About OzPlayer"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "small",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "aria-hidden",
+                                  "value": "false"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            }
+                          ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "a",
@@ -373,61 +334,18 @@
                               "important": false
                             }
                           ],
-                          "children": [
-                            {
-                              "type": "element",
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "small",
-                              "attributes": [
-                                {
-                                  "type": "attribute",
-                                  "namespace": null,
-                                  "prefix": null,
-                                  "name": "aria-hidden",
-                                  "value": "false"
-                                }
-                              ],
-                              "style": null,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "data": "About OzPlayer"
-                                }
-                              ],
-                              "shadow": null,
-                              "content": null
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "p",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "class",
-                              "value": "oz-indicator"
-                            }
-                          ],
-                          "style": null,
                           "children": [
                             {
                               "type": "element",
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "strong",
-                              "attributes": [],
-                              "style": null,
                               "children": [
                                 {
                                   "type": "element",
+                                  "children": [],
                                   "namespace": "http://www.w3.org/1999/xhtml",
                                   "prefix": null,
                                   "name": "em",
@@ -448,31 +366,84 @@
                                     }
                                   ],
                                   "style": null,
-                                  "children": [],
                                   "shadow": null,
                                   "content": null
                                 }
                               ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "strong",
+                              "attributes": [],
+                              "style": null,
                               "shadow": null,
                               "content": null
                             },
                             {
                               "type": "element",
+                              "children": [],
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
                               "name": "span",
                               "attributes": [],
                               "style": null,
-                              "children": [],
                               "shadow": null,
                               "content": null
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "p",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "oz-indicator oz-loading"
+                            }
+                          ],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\t"
+                            },
+                            {
+                              "type": "element",
+                              "children": [],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "source",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "src",
+                                  "value": "/test-assets/rabbit-video/video.mp4"
+                                },
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "type",
+                                  "value": "video/mp4"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t"
+                            }
+                          ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "video",
@@ -521,42 +492,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "\n\t\t\t\t"
-                            },
-                            {
-                              "type": "element",
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "source",
-                              "attributes": [
-                                {
-                                  "type": "attribute",
-                                  "namespace": null,
-                                  "prefix": null,
-                                  "name": "src",
-                                  "value": "/test-assets/rabbit-video/video.mp4"
-                                },
-                                {
-                                  "type": "attribute",
-                                  "namespace": null,
-                                  "prefix": null,
-                                  "name": "type",
-                                  "value": "video/mp4"
-                                }
-                              ],
-                              "style": null,
-                              "children": [],
-                              "shadow": null,
-                              "content": null
-                            },
-                            {
-                              "type": "text",
-                              "data": "\n\t\t\t"
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         },
@@ -570,6 +505,43 @@
                         },
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "element",
+                                      "children": [],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "span",
+                                      "attributes": [],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "span",
+                              "attributes": [],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            }
+                          ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "span",
@@ -618,115 +590,38 @@
                               "important": false
                             }
                           ],
-                          "children": [
-                            {
-                              "type": "element",
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "span",
-                              "attributes": [],
-                              "style": null,
-                              "children": [
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "span",
-                                  "attributes": [],
-                                  "style": null,
-                                  "children": [
-                                    {
-                                      "type": "element",
-                                      "namespace": "http://www.w3.org/1999/xhtml",
-                                      "prefix": null,
-                                      "name": "span",
-                                      "attributes": [],
-                                      "style": null,
-                                      "children": [],
-                                      "shadow": null,
-                                      "content": null
-                                    }
-                                  ],
-                                  "shadow": null,
-                                  "content": null
-                                }
-                              ],
-                              "shadow": null,
-                              "content": null
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "form",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "class",
-                              "value": "oz-controls"
-                            },
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "action",
-                              "value": "#ozplayer-1-ozplayer-video"
-                            },
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "role",
-                              "value": "form"
-                            },
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "style",
-                              "value": "width: 400px;"
-                            }
-                          ],
-                          "style": [
-                            {
-                              "name": "width",
-                              "value": "400px",
-                              "important": false
-                            }
-                          ],
                           "children": [
                             {
                               "type": "element",
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "fieldset",
-                              "attributes": [],
-                              "style": null,
                               "children": [
                                 {
                                   "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "span",
-                                  "attributes": [
-                                    {
-                                      "type": "attribute",
-                                      "namespace": null,
-                                      "prefix": null,
-                                      "name": "class",
-                                      "value": "oz-field oz-playpause oz-first-field"
-                                    }
-                                  ],
-                                  "style": null,
                                   "children": [
                                     {
                                       "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "Play"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "strong",
+                                          "attributes": [],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null
+                                        }
+                                      ],
                                       "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
                                       "name": "button",
@@ -775,24 +670,6 @@
                                         }
                                       ],
                                       "style": null,
-                                      "children": [
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "strong",
-                                          "attributes": [],
-                                          "style": null,
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "Play"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        }
-                                      ],
                                       "shadow": null,
                                       "content": null
                                     },
@@ -801,11 +678,6 @@
                                       "data": " "
                                     }
                                   ],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
                                   "namespace": "http://www.w3.org/1999/xhtml",
                                   "prefix": null,
                                   "name": "span",
@@ -815,26 +687,19 @@
                                       "namespace": null,
                                       "prefix": null,
                                       "name": "class",
-                                      "value": "oz-field oz-seek oz-disabled"
-                                    },
-                                    {
-                                      "type": "attribute",
-                                      "namespace": null,
-                                      "prefix": null,
-                                      "name": "style",
-                                      "value": "width: 170px;"
+                                      "value": "oz-field oz-playpause oz-first-field"
                                     }
                                   ],
-                                  "style": [
-                                    {
-                                      "name": "width",
-                                      "value": "170px",
-                                      "important": false
-                                    }
-                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "element",
                                   "children": [
                                     {
                                       "type": "element",
+                                      "children": [],
                                       "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
                                       "name": "input",
@@ -904,7 +769,6 @@
                                         }
                                       ],
                                       "style": null,
-                                      "children": [],
                                       "shadow": null,
                                       "content": null
                                     },
@@ -914,52 +778,18 @@
                                     },
                                     {
                                       "type": "element",
-                                      "namespace": "http://www.w3.org/1999/xhtml",
-                                      "prefix": null,
-                                      "name": "span",
-                                      "attributes": [
-                                        {
-                                          "type": "attribute",
-                                          "namespace": null,
-                                          "prefix": null,
-                                          "name": "class",
-                                          "value": "oz-slider oz-disabled"
-                                        },
-                                        {
-                                          "type": "attribute",
-                                          "namespace": null,
-                                          "prefix": null,
-                                          "name": "id",
-                                          "value": "ozplayer-1-oz-seek-slider"
-                                        }
-                                      ],
-                                      "style": null,
                                       "children": [
                                         {
                                           "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "label",
-                                          "attributes": [
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "class",
-                                              "value": "oz-slider-track"
-                                            },
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "for",
-                                              "value": "ozplayer-1-oz-seek-slider-thumb"
-                                            }
-                                          ],
-                                          "style": null,
                                           "children": [
                                             {
                                               "type": "element",
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "data": "Time = 00:00"
+                                                }
+                                              ],
                                               "namespace": "http://www.w3.org/1999/xhtml",
                                               "prefix": null,
                                               "name": "em",
@@ -993,17 +823,24 @@
                                                   "important": false
                                                 }
                                               ],
-                                              "children": [
-                                                {
-                                                  "type": "text",
-                                                  "data": "Time = 00:00"
-                                                }
-                                              ],
                                               "shadow": null,
                                               "content": null
                                             },
                                             {
                                               "type": "element",
+                                              "children": [
+                                                {
+                                                  "type": "element",
+                                                  "children": [],
+                                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                                  "prefix": null,
+                                                  "name": "strong",
+                                                  "attributes": [],
+                                                  "style": null,
+                                                  "shadow": null,
+                                                  "content": null
+                                                }
+                                              ],
                                               "namespace": "http://www.w3.org/1999/xhtml",
                                               "prefix": null,
                                               "name": "button",
@@ -1100,47 +937,58 @@
                                                   "important": false
                                                 }
                                               ],
-                                              "children": [
-                                                {
-                                                  "type": "element",
-                                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                                  "prefix": null,
-                                                  "name": "strong",
-                                                  "attributes": [],
-                                                  "style": null,
-                                                  "children": [],
-                                                  "shadow": null,
-                                                  "content": null
-                                                }
-                                              ],
                                               "shadow": null,
                                               "content": null
                                             }
                                           ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "label",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "oz-slider-track"
+                                            },
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "for",
+                                              "value": "ozplayer-1-oz-seek-slider-thumb"
+                                            }
+                                          ],
+                                          "style": null,
                                           "shadow": null,
                                           "content": null
                                         }
                                       ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "span",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "oz-slider oz-disabled"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "id",
+                                          "value": "ozplayer-1-oz-seek-slider"
+                                        }
+                                      ],
+                                      "style": null,
                                       "shadow": null,
                                       "content": null
                                     }
                                   ],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "br",
-                                  "attributes": [],
-                                  "style": null,
-                                  "children": [],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
                                   "namespace": "http://www.w3.org/1999/xhtml",
                                   "prefix": null,
                                   "name": "span",
@@ -1150,13 +998,60 @@
                                       "namespace": null,
                                       "prefix": null,
                                       "name": "class",
-                                      "value": "oz-field oz-ad"
+                                      "value": "oz-field oz-seek oz-disabled"
+                                    },
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "style",
+                                      "value": "width: 170px;"
                                     }
                                   ],
+                                  "style": [
+                                    {
+                                      "name": "width",
+                                      "value": "170px",
+                                      "important": false
+                                    }
+                                  ],
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "br",
+                                  "attributes": [],
                                   "style": null,
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "element",
                                   "children": [
                                     {
                                       "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "AD (on)"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "strong",
+                                          "attributes": [],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null
+                                        }
+                                      ],
                                       "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
                                       "name": "button",
@@ -1205,24 +1100,6 @@
                                         }
                                       ],
                                       "style": null,
-                                      "children": [
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "strong",
-                                          "attributes": [],
-                                          "style": null,
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "AD (on)"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        }
-                                      ],
                                       "shadow": null,
                                       "content": null
                                     },
@@ -1231,22 +1108,6 @@
                                       "data": " "
                                     }
                                   ],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "br",
-                                  "attributes": [],
-                                  "style": null,
-                                  "children": [],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
                                   "namespace": "http://www.w3.org/1999/xhtml",
                                   "prefix": null,
                                   "name": "span",
@@ -1256,13 +1117,47 @@
                                       "namespace": null,
                                       "prefix": null,
                                       "name": "class",
-                                      "value": "oz-field oz-mute"
+                                      "value": "oz-field oz-ad"
                                     }
                                   ],
                                   "style": null,
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "br",
+                                  "attributes": [],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "element",
                                   "children": [
                                     {
                                       "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "Mute"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "strong",
+                                          "attributes": [],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null
+                                        }
+                                      ],
                                       "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
                                       "name": "button",
@@ -1311,24 +1206,6 @@
                                         }
                                       ],
                                       "style": null,
-                                      "children": [
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "strong",
-                                          "attributes": [],
-                                          "style": null,
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "Mute"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        }
-                                      ],
                                       "shadow": null,
                                       "content": null
                                     },
@@ -1337,11 +1214,6 @@
                                       "data": " "
                                     }
                                   ],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
                                   "namespace": "http://www.w3.org/1999/xhtml",
                                   "prefix": null,
                                   "name": "span",
@@ -1351,26 +1223,19 @@
                                       "namespace": null,
                                       "prefix": null,
                                       "name": "class",
-                                      "value": "oz-field oz-volume"
-                                    },
-                                    {
-                                      "type": "attribute",
-                                      "namespace": null,
-                                      "prefix": null,
-                                      "name": "style",
-                                      "value": "width: 102px;"
+                                      "value": "oz-field oz-mute"
                                     }
                                   ],
-                                  "style": [
-                                    {
-                                      "name": "width",
-                                      "value": "102px",
-                                      "important": false
-                                    }
-                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "element",
                                   "children": [
                                     {
                                       "type": "element",
+                                      "children": [],
                                       "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
                                       "name": "input",
@@ -1433,7 +1298,6 @@
                                         }
                                       ],
                                       "style": null,
-                                      "children": [],
                                       "shadow": null,
                                       "content": null
                                     },
@@ -1443,52 +1307,18 @@
                                     },
                                     {
                                       "type": "element",
-                                      "namespace": "http://www.w3.org/1999/xhtml",
-                                      "prefix": null,
-                                      "name": "span",
-                                      "attributes": [
-                                        {
-                                          "type": "attribute",
-                                          "namespace": null,
-                                          "prefix": null,
-                                          "name": "class",
-                                          "value": "oz-slider"
-                                        },
-                                        {
-                                          "type": "attribute",
-                                          "namespace": null,
-                                          "prefix": null,
-                                          "name": "id",
-                                          "value": "ozplayer-1-oz-volume-slider"
-                                        }
-                                      ],
-                                      "style": null,
                                       "children": [
                                         {
                                           "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "label",
-                                          "attributes": [
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "class",
-                                              "value": "oz-slider-track"
-                                            },
-                                            {
-                                              "type": "attribute",
-                                              "namespace": null,
-                                              "prefix": null,
-                                              "name": "for",
-                                              "value": "ozplayer-1-oz-volume-slider-thumb"
-                                            }
-                                          ],
-                                          "style": null,
                                           "children": [
                                             {
                                               "type": "element",
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "data": "Volume = 7"
+                                                }
+                                              ],
                                               "namespace": "http://www.w3.org/1999/xhtml",
                                               "prefix": null,
                                               "name": "em",
@@ -1522,17 +1352,24 @@
                                                   "important": false
                                                 }
                                               ],
-                                              "children": [
-                                                {
-                                                  "type": "text",
-                                                  "data": "Volume = 7"
-                                                }
-                                              ],
                                               "shadow": null,
                                               "content": null
                                             },
                                             {
                                               "type": "element",
+                                              "children": [
+                                                {
+                                                  "type": "element",
+                                                  "children": [],
+                                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                                  "prefix": null,
+                                                  "name": "strong",
+                                                  "attributes": [],
+                                                  "style": null,
+                                                  "shadow": null,
+                                                  "content": null
+                                                }
+                                              ],
                                               "namespace": "http://www.w3.org/1999/xhtml",
                                               "prefix": null,
                                               "name": "button",
@@ -1622,47 +1459,58 @@
                                                   "important": false
                                                 }
                                               ],
-                                              "children": [
-                                                {
-                                                  "type": "element",
-                                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                                  "prefix": null,
-                                                  "name": "strong",
-                                                  "attributes": [],
-                                                  "style": null,
-                                                  "children": [],
-                                                  "shadow": null,
-                                                  "content": null
-                                                }
-                                              ],
                                               "shadow": null,
                                               "content": null
                                             }
                                           ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "label",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "oz-slider-track"
+                                            },
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "for",
+                                              "value": "ozplayer-1-oz-volume-slider-thumb"
+                                            }
+                                          ],
+                                          "style": null,
                                           "shadow": null,
                                           "content": null
                                         }
                                       ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "span",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "oz-slider"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "id",
+                                          "value": "ozplayer-1-oz-volume-slider"
+                                        }
+                                      ],
+                                      "style": null,
                                       "shadow": null,
                                       "content": null
                                     }
                                   ],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "br",
-                                  "attributes": [],
-                                  "style": null,
-                                  "children": [],
-                                  "shadow": null,
-                                  "content": null
-                                },
-                                {
-                                  "type": "element",
                                   "namespace": "http://www.w3.org/1999/xhtml",
                                   "prefix": null,
                                   "name": "span",
@@ -1672,13 +1520,60 @@
                                       "namespace": null,
                                       "prefix": null,
                                       "name": "class",
-                                      "value": "oz-field oz-fullscreen oz-last-field"
+                                      "value": "oz-field oz-volume"
+                                    },
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "style",
+                                      "value": "width: 102px;"
                                     }
                                   ],
+                                  "style": [
+                                    {
+                                      "name": "width",
+                                      "value": "102px",
+                                      "important": false
+                                    }
+                                  ],
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "br",
+                                  "attributes": [],
                                   "style": null,
+                                  "shadow": null,
+                                  "content": null
+                                },
+                                {
+                                  "type": "element",
                                   "children": [
                                     {
                                       "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "Full"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "strong",
+                                          "attributes": [],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null
+                                        }
+                                      ],
                                       "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
                                       "name": "button",
@@ -1727,24 +1622,6 @@
                                         }
                                       ],
                                       "style": null,
-                                      "children": [
-                                        {
-                                          "type": "element",
-                                          "namespace": "http://www.w3.org/1999/xhtml",
-                                          "prefix": null,
-                                          "name": "strong",
-                                          "attributes": [],
-                                          "style": null,
-                                          "children": [
-                                            {
-                                              "type": "text",
-                                              "data": "Full"
-                                            }
-                                          ],
-                                          "shadow": null,
-                                          "content": null
-                                        }
-                                      ],
                                       "shadow": null,
                                       "content": null
                                     },
@@ -1753,12 +1630,70 @@
                                       "data": " "
                                     }
                                   ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "oz-field oz-fullscreen oz-last-field"
+                                    }
+                                  ],
+                                  "style": null,
                                   "shadow": null,
                                   "content": null
                                 }
                               ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "fieldset",
+                              "attributes": [],
+                              "style": null,
                               "shadow": null,
                               "content": null
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "form",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "oz-controls"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "action",
+                              "value": "#ozplayer-1-ozplayer-video"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "role",
+                              "value": "form"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "style",
+                              "value": "width: 400px;"
+                            }
+                          ],
+                          "style": [
+                            {
+                              "name": "width",
+                              "value": "400px",
+                              "important": false
                             }
                           ],
                           "shadow": null,
@@ -1766,6 +1701,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "div",
@@ -1807,16 +1743,43 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "data-controls",
+                          "value": "stack"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "class",
+                          "value": "ozplayer oz-stack"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "id",
+                          "value": "ozplayer-1"
+                        }
+                      ],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "a",
@@ -1851,7 +1814,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     },
@@ -1860,6 +1822,26 @@
                       "data": "\n\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "figure",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "ozplayer-1-container"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "class",
+                      "value": "ozplayer-container"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -1869,6 +1851,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "script",
@@ -1882,7 +1865,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -1892,6 +1874,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "script",
@@ -1905,7 +1888,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -1915,6 +1897,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "script",
@@ -1928,7 +1911,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -1938,6 +1920,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "script",
@@ -1951,7 +1934,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -1960,10 +1942,28 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

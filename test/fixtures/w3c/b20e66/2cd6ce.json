@@ -30,68 +30,23 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/2000/svg",
-                  "prefix": null,
-                  "name": "svg",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "viewBox",
-                      "value": "0 0 100 100"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": "http://www.w3.org/2000/xmlns/",
-                      "prefix": null,
-                      "name": "xmlns",
-                      "value": "http://www.w3.org/2000/svg"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": "http://www.w3.org/2000/xmlns/",
-                      "prefix": "xmlns",
-                      "name": "xlink",
-                      "value": "http://www.w3.org/1999/xlink"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -99,26 +54,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/2000/svg",
-                      "prefix": null,
-                      "name": "a",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "href",
-                          "value": "https://act-rules.github.io/"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "aria-label",
-                          "value": "ACT rules"
-                        }
-                      ],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -126,6 +61,7 @@
                         },
                         {
                           "type": "element",
+                          "children": [],
                           "namespace": "http://www.w3.org/2000/svg",
                           "prefix": null,
                           "name": "circle",
@@ -153,7 +89,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [],
                           "shadow": null,
                           "content": null
                         },
@@ -162,15 +97,6 @@
                           "data": "\n\t\t"
                         }
                       ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\n\t\t"
-                    },
-                    {
-                      "type": "element",
                       "namespace": "http://www.w3.org/2000/svg",
                       "prefix": null,
                       "name": "a",
@@ -180,10 +106,26 @@
                           "namespace": null,
                           "prefix": null,
                           "name": "href",
-                          "value": "https://www.w3.org/community/act-r/"
+                          "value": "https://act-rules.github.io/"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "aria-label",
+                          "value": "ACT rules"
                         }
                       ],
                       "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\n\t\t"
+                    },
+                    {
+                      "type": "element",
                       "children": [
                         {
                           "type": "text",
@@ -191,6 +133,12 @@
                         },
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\tACT rules\n\t\t\t"
+                            }
+                          ],
                           "namespace": "http://www.w3.org/2000/svg",
                           "prefix": null,
                           "name": "text",
@@ -218,12 +166,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "\n\t\t\t\tACT rules\n\t\t\t"
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         },
@@ -232,6 +174,19 @@
                           "data": "\n\t\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/2000/svg",
+                      "prefix": null,
+                      "name": "a",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "href",
+                          "value": "https://www.w3.org/community/act-r/"
+                        }
+                      ],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -240,6 +195,33 @@
                       "data": "\n\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/2000/svg",
+                  "prefix": null,
+                  "name": "svg",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "viewBox",
+                      "value": "0 0 100 100"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": "http://www.w3.org/2000/xmlns/",
+                      "prefix": null,
+                      "name": "xmlns",
+                      "value": "http://www.w3.org/2000/svg"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": "http://www.w3.org/2000/xmlns/",
+                      "prefix": "xmlns",
+                      "name": "xlink",
+                      "value": "http://www.w3.org/1999/xlink"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -248,10 +230,28 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

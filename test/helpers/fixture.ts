@@ -109,22 +109,29 @@ export function fixture(
 
       switch (result) {
         case "ok": // Alfa and ACT-R perfectly agree
-          t.pass(test.id);
-          // Display warnings if the case was registered as imperfect match
-          if (skip) {
-            t.log(
-              `Test case ${testID} matches but is incorrectly marked as skipped`
-            );
-          }
-          if (manual) {
-            t.log(
-              `Test case ${testID} matches but is incorrectly marked as manual`
-            );
-          }
-          if (lax) {
-            t.log(
-              `Test case ${testID} matches but is incorrectly marked as lax`
-            );
+          // In strict mode for marked cases, fail and investigate why it is marked
+          if (strict && (skip || manual || lax)) {
+            t.fail(test.id);
+            t.log("Outcome", outcome.toJSON());
+            t.log("Test", test);
+          } else {
+            t.pass(test.id);
+            // Display warnings if the case was registered as imperfect match
+            if (skip) {
+              t.log(
+                `Test case ${testID} matches but is incorrectly marked as skipped`
+              );
+            }
+            if (manual) {
+              t.log(
+                `Test case ${testID} matches but is incorrectly marked as manual`
+              );
+            }
+            if (lax) {
+              t.log(
+                `Test case ${testID} matches but is incorrectly marked as lax`
+              );
+            }
           }
           break;
         case "error":

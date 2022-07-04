@@ -30,6 +30,55 @@
         },
         {
           "type": "element",
+          "children": [
+            {
+              "type": "element",
+              "children": [],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "I love ACT rules!"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            }
+          ],
           "namespace": "http://www.w3.org/1999/xhtml",
           "prefix": null,
           "name": "html",
@@ -43,55 +92,6 @@
             }
           ],
           "style": null,
-          "children": [
-            {
-              "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
-              "children": [],
-              "shadow": null,
-              "content": null
-            },
-            {
-              "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
-              "children": [
-                {
-                  "type": "text",
-                  "data": "\n\t\t"
-                },
-                {
-                  "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "p",
-                  "attributes": [],
-                  "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "I love ACT rules!"
-                    }
-                  ],
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n\t\n"
-                }
-              ],
-              "shadow": null,
-              "content": null
-            }
-          ],
           "shadow": null,
           "content": null
         }

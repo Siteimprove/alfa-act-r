@@ -24,6 +24,32 @@
       "children": [
         {
           "type": "element",
+          "children": [
+            {
+              "type": "text",
+              "data": "\n  "
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "This is an SVG"
+                }
+              ],
+              "namespace": "http://www.w3.org/2000/svg",
+              "prefix": null,
+              "name": "title",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n"
+            }
+          ],
           "namespace": "http://www.w3.org/2000/svg",
           "prefix": null,
           "name": "svg",
@@ -37,32 +63,6 @@
             }
           ],
           "style": null,
-          "children": [
-            {
-              "type": "text",
-              "data": "\n  "
-            },
-            {
-              "type": "element",
-              "namespace": "http://www.w3.org/2000/svg",
-              "prefix": null,
-              "name": "title",
-              "attributes": [],
-              "style": null,
-              "children": [
-                {
-                  "type": "text",
-                  "data": "This is an SVG"
-                }
-              ],
-              "shadow": null,
-              "content": null
-            },
-            {
-              "type": "text",
-              "data": "\n"
-            }
-          ],
           "shadow": null,
           "content": null
         }

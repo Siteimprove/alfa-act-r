@@ -30,33 +30,29 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Grocery List"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -70,12 +66,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Grocery List"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -85,6 +75,12 @@
                 },
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": " "
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "iframe",
@@ -105,56 +101,40 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": " "
-                    }
-                  ],
                   "shadow": null,
                   "content": {
                     "type": "document",
                     "children": [
                       {
                         "type": "element",
-                        "namespace": "http://www.w3.org/1999/xhtml",
-                        "prefix": null,
-                        "name": "html",
-                        "attributes": [],
-                        "style": null,
                         "children": [
                           {
                             "type": "element",
+                            "children": [],
                             "namespace": "http://www.w3.org/1999/xhtml",
                             "prefix": null,
                             "name": "head",
                             "attributes": [],
                             "style": null,
-                            "children": [],
                             "shadow": null,
                             "content": null
                           },
                           {
                             "type": "element",
-                            "namespace": "http://www.w3.org/1999/xhtml",
-                            "prefix": null,
-                            "name": "body",
-                            "attributes": [],
-                            "style": null,
                             "children": [
                               {
                                 "type": "element",
-                                "namespace": "http://www.w3.org/1999/xhtml",
-                                "prefix": null,
-                                "name": "h1",
-                                "attributes": [],
-                                "style": null,
                                 "children": [
                                   {
                                     "type": "text",
                                     "data": "~Grocery List"
                                   }
                                 ],
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "prefix": null,
+                                "name": "h1",
+                                "attributes": [],
+                                "style": null,
                                 "shadow": null,
                                 "content": null
                               },
@@ -164,11 +144,6 @@
                               },
                               {
                                 "type": "element",
-                                "namespace": "http://www.w3.org/1999/xhtml",
-                                "prefix": null,
-                                "name": "ul",
-                                "attributes": [],
-                                "style": null,
                                 "children": [
                                   {
                                     "type": "text",
@@ -176,17 +151,17 @@
                                   },
                                   {
                                     "type": "element",
-                                    "namespace": "http://www.w3.org/1999/xhtml",
-                                    "prefix": null,
-                                    "name": "li",
-                                    "attributes": [],
-                                    "style": null,
                                     "children": [
                                       {
                                         "type": "text",
                                         "data": "Pasta"
                                       }
                                     ],
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "prefix": null,
+                                    "name": "li",
+                                    "attributes": [],
+                                    "style": null,
                                     "shadow": null,
                                     "content": null
                                   },
@@ -196,17 +171,17 @@
                                   },
                                   {
                                     "type": "element",
-                                    "namespace": "http://www.w3.org/1999/xhtml",
-                                    "prefix": null,
-                                    "name": "li",
-                                    "attributes": [],
-                                    "style": null,
                                     "children": [
                                       {
                                         "type": "text",
                                         "data": "Rice"
                                       }
                                     ],
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "prefix": null,
+                                    "name": "li",
+                                    "attributes": [],
+                                    "style": null,
                                     "shadow": null,
                                     "content": null
                                   },
@@ -216,17 +191,17 @@
                                   },
                                   {
                                     "type": "element",
-                                    "namespace": "http://www.w3.org/1999/xhtml",
-                                    "prefix": null,
-                                    "name": "li",
-                                    "attributes": [],
-                                    "style": null,
                                     "children": [
                                       {
                                         "type": "text",
                                         "data": "Bread"
                                       }
                                     ],
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "prefix": null,
+                                    "name": "li",
+                                    "attributes": [],
+                                    "style": null,
                                     "shadow": null,
                                     "content": null
                                   },
@@ -236,17 +211,17 @@
                                   },
                                   {
                                     "type": "element",
-                                    "namespace": "http://www.w3.org/1999/xhtml",
-                                    "prefix": null,
-                                    "name": "li",
-                                    "attributes": [],
-                                    "style": null,
                                     "children": [
                                       {
                                         "type": "text",
                                         "data": "Unsweetened Granola"
                                       }
                                     ],
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "prefix": null,
+                                    "name": "li",
+                                    "attributes": [],
+                                    "style": null,
                                     "shadow": null,
                                     "content": null
                                   },
@@ -256,17 +231,17 @@
                                   },
                                   {
                                     "type": "element",
-                                    "namespace": "http://www.w3.org/1999/xhtml",
-                                    "prefix": null,
-                                    "name": "li",
-                                    "attributes": [],
-                                    "style": null,
                                     "children": [
                                       {
                                         "type": "text",
                                         "data": "Basil"
                                       }
                                     ],
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "prefix": null,
+                                    "name": "li",
+                                    "attributes": [],
+                                    "style": null,
                                     "shadow": null,
                                     "content": null
                                   },
@@ -276,17 +251,17 @@
                                   },
                                   {
                                     "type": "element",
-                                    "namespace": "http://www.w3.org/1999/xhtml",
-                                    "prefix": null,
-                                    "name": "li",
-                                    "attributes": [],
-                                    "style": null,
                                     "children": [
                                       {
                                         "type": "text",
                                         "data": "Honey"
                                       }
                                     ],
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "prefix": null,
+                                    "name": "li",
+                                    "attributes": [],
+                                    "style": null,
                                     "shadow": null,
                                     "content": null
                                   },
@@ -295,6 +270,11 @@
                                     "data": "\n"
                                   }
                                 ],
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "prefix": null,
+                                "name": "ul",
+                                "attributes": [],
+                                "style": null,
                                 "shadow": null,
                                 "content": null
                               },
@@ -303,10 +283,20 @@
                                 "data": "\n"
                               }
                             ],
+                            "namespace": "http://www.w3.org/1999/xhtml",
+                            "prefix": null,
+                            "name": "body",
+                            "attributes": [],
+                            "style": null,
                             "shadow": null,
                             "content": null
                           }
                         ],
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "prefix": null,
+                        "name": "html",
+                        "attributes": [],
+                        "style": null,
                         "shadow": null,
                         "content": null
                       }
@@ -315,10 +305,20 @@
                   }
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }
