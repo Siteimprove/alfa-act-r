@@ -30,33 +30,23 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "style",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "\n\tp {\n\t\tword-spacing: 0.1em !important;\n\t}\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "style",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -65,19 +55,25 @@
                   "data": "\n\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\tThe toy brought back fond memories of being lost in the rain forest.\n"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "p",
@@ -97,20 +93,24 @@
                       "important": false
                     }
                   ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\tThe toy brought back fond memories of being lost in the rain forest.\n"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

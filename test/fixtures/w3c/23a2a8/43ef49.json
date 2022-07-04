@@ -17,7 +17,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<div style=\"display: none\" id=\"img-label\">W3C logo</div>\n\t<div\n\t\trole=\"img\"\n\t\taria-labelledby=\"img-label\"\n\t\tstyle=\"width:72px; height:48px; background-image: url(/test-assets/shared/w3c-logo.png)\"\n\t></div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<div style=\"display: none\" id=\"img-label\">W3C logo</div>\n\t<div\n\t\trole=\"img\"\n\t\taria-labelledby=\"img-label\"\n\t\tstyle=\"width:72px; height:48px; background-image: url(/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png)\"\n\t></div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -30,27 +30,9 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -58,17 +40,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Passed Example 3"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -77,6 +59,11 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -86,11 +73,6 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -98,6 +80,12 @@
                 },
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "W3C logo"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -124,12 +112,6 @@
                       "important": false
                     }
                   ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "W3C logo"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -139,6 +121,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -162,7 +145,7 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "style",
-                      "value": "width:72px; height:48px; background-image: url(/test-assets/shared/w3c-logo.png)"
+                      "value": "width:72px; height:48px; background-image: url(/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png)"
                     }
                   ],
                   "style": [
@@ -178,11 +161,10 @@
                     },
                     {
                       "name": "background-image",
-                      "value": "url(\"/test-assets/shared/w3c-logo.png\")",
+                      "value": "url(\"/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png\")",
                       "important": false
                     }
                   ],
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -191,10 +173,28 @@
                   "data": "\n\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

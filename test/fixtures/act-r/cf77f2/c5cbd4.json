@@ -30,19 +30,9 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -50,17 +40,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Comparing translations of the Romance of the Three Kingdoms, Chapter one"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -69,6 +59,11 @@
                   "data": "\n\t"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -78,11 +73,6 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -90,19 +80,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "nav",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "id",
-                      "value": "local-navigation"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -110,6 +87,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Skip to local navigation"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "a",
@@ -123,12 +106,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Skip to local navigation"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -138,6 +115,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Skip to Brewitt-Taylor's translation"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "a",
@@ -151,12 +134,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Skip to Brewitt-Taylor's translation"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -166,6 +143,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Skip to Roberts' translation"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "a",
@@ -179,12 +162,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Skip to Roberts' translation"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -194,6 +171,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Skip to Yu's translation"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "a",
@@ -207,12 +190,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Skip to Yu's translation"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -222,6 +199,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Skip to information about the book"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "a",
@@ -235,12 +218,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Skip to information about the book"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -249,6 +226,19 @@
                       "data": "\n\t\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "nav",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "local-navigation"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -258,6 +248,32 @@
                 },
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "The Romance of the Three Kingdoms is a 14th century historical novel."
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "aside",
@@ -271,32 +287,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t\t\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "p",
-                      "attributes": [],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "The Romance of the Three Kingdoms is a 14th century historical novel."
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t\t"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -306,19 +296,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "id",
-                      "value": "main"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -326,6 +303,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t\tThree Heroes Swear Brotherhood in the Peach Garden (Translation by Charles Henry Brewitt-Taylor)\n\t\t\t"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "p",
@@ -339,12 +322,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "\n\t\t\t\tThree Heroes Swear Brotherhood in the Peach Garden (Translation by Charles Henry Brewitt-Taylor)\n\t\t\t"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -354,17 +331,17 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "p",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
                           "data": "\n\t\t\t\tThe world under heaven, after a long period of division, tends to unite; after a long period of union, tends to\n\t\t\t\tdivide.\n\t\t\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -374,6 +351,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Three Bold Spirits Plight Mutual Faith in the Peach Garden (Translation by Moss Roberts)"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "p",
@@ -387,12 +370,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Three Bold Spirits Plight Mutual Faith in the Peach Garden (Translation by Moss Roberts)"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -402,17 +379,17 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "p",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
                           "data": "The empire, long divided, must unite; long united, must divide. Thus it has ever been."
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -422,6 +399,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Three Heroes Swear Brotherhood at a Feast in the Peach Garden (Translation by Yu Sumei)"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "p",
@@ -435,12 +418,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Three Heroes Swear Brotherhood at a Feast in the Peach Garden (Translation by Yu Sumei)"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -450,17 +427,17 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "p",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
                           "data": "\n\t\t\t\tUnity succeeds division and division follows unity. One is bound to be replaced by the other after a long span\n\t\t\t\tof time.\n\t\t\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -470,6 +447,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Read Chapter 2"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "a",
@@ -483,12 +466,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Read Chapter 2"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -497,6 +474,19 @@
                       "data": "\n\t\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "main"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -505,10 +495,20 @@
                   "data": "\n\t\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

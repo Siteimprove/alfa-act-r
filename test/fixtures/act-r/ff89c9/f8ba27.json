@@ -30,33 +30,24 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -77,12 +68,17 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": {
                     "type": "shadow",
                     "children": [
                       {
                         "type": "element",
+                        "children": [
+                          {
+                            "type": "text",
+                            "data": "List item 1"
+                          }
+                        ],
                         "namespace": "http://www.w3.org/1999/xhtml",
                         "prefix": null,
                         "name": "div",
@@ -96,12 +92,6 @@
                           }
                         ],
                         "style": null,
-                        "children": [
-                          {
-                            "type": "text",
-                            "data": "List item 1"
-                          }
-                        ],
                         "shadow": null,
                         "content": null
                       },
@@ -111,6 +101,12 @@
                       },
                       {
                         "type": "element",
+                        "children": [
+                          {
+                            "type": "text",
+                            "data": "List item 2"
+                          }
+                        ],
                         "namespace": "http://www.w3.org/1999/xhtml",
                         "prefix": null,
                         "name": "div",
@@ -124,12 +120,6 @@
                           }
                         ],
                         "style": null,
-                        "children": [
-                          {
-                            "type": "text",
-                            "data": "List item 2"
-                          }
-                        ],
                         "shadow": null,
                         "content": null
                       }
@@ -145,25 +135,35 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "script",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "\n\tconst host = document.querySelector('#host')\n\tconst root = host.attachShadow({ mode: 'open' })\n\troot.innerHTML = '<div role=\"listitem\">List item 1</div> <div role=\"listitem\">List item 2</div>'\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "script",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

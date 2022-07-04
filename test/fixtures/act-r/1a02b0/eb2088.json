@@ -30,38 +30,20 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -69,19 +51,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "video",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "controls",
-                      "value": ""
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -89,6 +58,7 @@
                     },
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "source",
@@ -109,7 +79,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     },
@@ -119,6 +88,7 @@
                     },
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "source",
@@ -139,7 +109,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     },
@@ -148,6 +117,19 @@
                       "data": "\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "video",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -157,17 +139,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "p",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "The above video shows a giant fat dog climbing out of a hole in the ground.\nHe stretches, yaws, and then starts walking.\nThen he stops to scratch his bottom."
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -176,10 +158,28 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

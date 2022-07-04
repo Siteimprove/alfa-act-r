@@ -30,33 +30,113 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Volvo"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "option",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "value",
+                          "value": "volvo"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Saab"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "option",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "value",
+                          "value": "saab"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Opel"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "option",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "value",
+                          "value": "opel"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "select",
@@ -77,104 +157,24 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "option",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "value",
-                          "value": "volvo"
-                        }
-                      ],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Volvo"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "option",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "value",
-                          "value": "saab"
-                        }
-                      ],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Saab"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "option",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "value",
-                          "value": "opel"
-                        }
-                      ],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Opel"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

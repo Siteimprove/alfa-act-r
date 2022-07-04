@@ -30,33 +30,29 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Some text"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "a",
@@ -83,20 +79,24 @@
                       "important": false
                     }
                   ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Some text"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

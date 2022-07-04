@@ -24,22 +24,18 @@
       "children": [
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "/* Copyright 2014 The Chromium Authors. All rights reserved.\n * Use of this source code is governed by a BSD-style license that can be\n * found in the LICENSE file.\n */\n\n:root {\n  color-scheme: light dark;\n}\n\ndiv.header {\n    border-bottom: 2px solid black;\n    padding-bottom: 5px;\n    margin: 10px;\n}\n\n@media (prefers-color-scheme: dark) {\n  div.header {\n    border-bottom: 2px solid white;\n  }\n}\n\ndiv.folder > div.hidden {\n    display:none;\n}\n\ndiv.folder > span.hidden {\n    display:none;\n}\n\n.pretty-print {\n    margin-top: 1em;\n    margin-left: 20px;\n    font-family: monospace;\n    font-size: 13px;\n}\n\n#webkit-xml-viewer-source-xml {\n    display: none;\n}\n\n.opened {\n    margin-left: 1em;\n}\n\n.comment {\n    white-space: pre;\n}\n\n.folder-button {\n    user-select: none;\n    cursor: pointer;\n    display: inline-block;\n    margin-left: -10px;\n    width: 10px;\n    background-repeat: no-repeat;\n    background-position: left top;\n    vertical-align: bottom;\n}\n\n.fold {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L8 0 L4 7 Z'/></svg>\");\n    height: 10px;\n}\n\n.open {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L0 8 L7 4 Z'/></svg>\");\n    height: 10px;\n}\n"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "style",
@@ -53,45 +49,27 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "/* Copyright 2014 The Chromium Authors. All rights reserved.\n * Use of this source code is governed by a BSD-style license that can be\n * found in the LICENSE file.\n */\n\n:root {\n  color-scheme: light dark;\n}\n\ndiv.header {\n    border-bottom: 2px solid black;\n    padding-bottom: 5px;\n    margin: 10px;\n}\n\n@media (prefers-color-scheme: dark) {\n  div.header {\n    border-bottom: 2px solid white;\n  }\n}\n\ndiv.folder > div.hidden {\n    display:none;\n}\n\ndiv.folder > span.hidden {\n    display:none;\n}\n\n.pretty-print {\n    margin-top: 1em;\n    margin-left: 20px;\n    font-family: monospace;\n    font-size: 13px;\n}\n\n#webkit-xml-viewer-source-xml {\n    display: none;\n}\n\n.opened {\n    margin-left: 1em;\n}\n\n.comment {\n    white-space: pre;\n}\n\n.folder-button {\n    user-select: none;\n    cursor: pointer;\n    display: inline-block;\n    margin-left: -10px;\n    width: 10px;\n    background-repeat: no-repeat;\n    background-position: left top;\n    vertical-align: bottom;\n}\n\n.fold {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L8 0 L4 7 Z'/></svg>\");\n    height: 10px;\n}\n\n.open {\n    background: url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L0 8 L7 4 Z'/></svg>\");\n    height: 10px;\n}\n"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "id",
-                      "value": "webkit-xml-viewer-source-xml"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": null,
                       "prefix": null,
                       "name": "math",
@@ -105,16 +83,57 @@
                         }
                       ],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "webkit-xml-viewer-source-xml"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "This XML file does not appear to have any style information associated with it. The document tree is shown below."
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "span",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "element",
+                      "children": [],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "br",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -128,85 +147,17 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "span",
-                      "attributes": [],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "This XML file does not appear to have any style information associated with it. The document tree is shown below."
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "br",
-                      "attributes": [],
-                      "style": null,
-                      "children": [],
-                      "shadow": null,
-                      "content": null
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "class",
-                      "value": "pretty-print"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "div",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "class",
-                          "value": "line"
-                        }
-                      ],
-                      "style": null,
                       "children": [
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "span",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "class",
-                              "value": "html-tag"
-                            }
-                          ],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
@@ -214,19 +165,6 @@
                             },
                             {
                               "type": "element",
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "span",
-                              "attributes": [
-                                {
-                                  "type": "attribute",
-                                  "namespace": null,
-                                  "prefix": null,
-                                  "name": "class",
-                                  "value": "html-attribute"
-                                }
-                              ],
-                              "style": null,
                               "children": [
                                 {
                                   "type": "text",
@@ -234,6 +172,12 @@
                                 },
                                 {
                                   "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "xml:lang"
+                                    }
+                                  ],
                                   "namespace": "http://www.w3.org/1999/xhtml",
                                   "prefix": null,
                                   "name": "span",
@@ -247,12 +191,6 @@
                                     }
                                   ],
                                   "style": null,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "data": "xml:lang"
-                                    }
-                                  ],
                                   "shadow": null,
                                   "content": null
                                 },
@@ -262,6 +200,12 @@
                                 },
                                 {
                                   "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "en"
+                                    }
+                                  ],
                                   "namespace": "http://www.w3.org/1999/xhtml",
                                   "prefix": null,
                                   "name": "span",
@@ -275,12 +219,6 @@
                                     }
                                   ],
                                   "style": null,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "data": "en"
-                                    }
-                                  ],
                                   "shadow": null,
                                   "content": null
                                 },
@@ -289,6 +227,19 @@
                                   "data": "\""
                                 }
                               ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "span",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "html-attribute"
+                                }
+                              ],
+                              "style": null,
                               "shadow": null,
                               "content": null
                             },
@@ -297,22 +248,71 @@
                               "data": "/>"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "span",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "html-tag"
+                            }
+                          ],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "class",
+                          "value": "line"
+                        }
+                      ],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "class",
+                      "value": "pretty-print"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

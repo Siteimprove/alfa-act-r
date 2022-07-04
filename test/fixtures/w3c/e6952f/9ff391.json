@@ -24,33 +24,29 @@
       "children": [
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "var foo = '<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png\" alt=\"W3C logo\" />'"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "pre",
@@ -75,20 +71,24 @@
                       "important": false
                     }
                   ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "var foo = '<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png\" alt=\"W3C logo\" />'"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

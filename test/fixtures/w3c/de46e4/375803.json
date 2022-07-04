@@ -30,30 +30,20 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -61,19 +51,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "article",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "lang",
-                      "value": "English"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -81,6 +58,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "p",
@@ -105,12 +88,6 @@
                           "important": false
                         }
                       ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -119,6 +96,19 @@
                       "data": "\n\t\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "article",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "lang",
+                      "value": "English"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -127,10 +117,20 @@
                   "data": "\n\t\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

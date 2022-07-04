@@ -30,41 +30,77 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Click the box, for a surprise"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Howdy"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "button",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "onclick",
+                          "value": "alert('Surprise!')"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -84,60 +120,6 @@
                       "important": false
                     }
                   ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "p",
-                      "attributes": [],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Click the box, for a surprise"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "button",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "onclick",
-                          "value": "alert('Surprise!')"
-                        }
-                      ],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Howdy"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -146,10 +128,28 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

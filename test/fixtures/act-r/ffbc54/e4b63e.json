@@ -30,19 +30,9 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -50,17 +40,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Passed Example 3"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -70,6 +60,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "script",
@@ -83,7 +74,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -92,6 +82,11 @@
                   "data": "\n\t"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -101,19 +96,6 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [
-                {
-                  "type": "attribute",
-                  "namespace": null,
-                  "prefix": null,
-                  "name": "onload",
-                  "value": "registerShortcut({id: 'firstShortcut', shortcutKey: '+'}); registerShortcut({id: 'secondShortcut', shortcutKey: 'a'}); activateShortcuts();"
-                }
-              ],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -121,6 +103,12 @@
                 },
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Add to list (press \"+\" or \"a\" to add):"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "label",
@@ -134,12 +122,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Add to list (press \"+\" or \"a\" to add):"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -149,6 +131,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "input",
@@ -169,7 +152,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -179,11 +161,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -191,17 +168,17 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "div",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
                           "data": "Remap shortcut"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -211,11 +188,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "div",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -223,11 +195,6 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "label",
-                          "attributes": [],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
@@ -235,6 +202,7 @@
                             },
                             {
                               "type": "element",
+                              "children": [],
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
                               "name": "input",
@@ -262,7 +230,6 @@
                                 }
                               ],
                               "style": null,
-                              "children": [],
                               "shadow": null,
                               "content": null
                             },
@@ -271,6 +238,11 @@
                               "data": "\n\t\t\t\t\tUse \"ctrl\" key together with the \"+\" key\n\t\t\t\t"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "label",
+                          "attributes": [],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -280,11 +252,6 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "label",
-                          "attributes": [],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
@@ -292,6 +259,7 @@
                             },
                             {
                               "type": "element",
+                              "children": [],
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
                               "name": "input",
@@ -319,7 +287,6 @@
                                 }
                               ],
                               "style": null,
-                              "children": [],
                               "shadow": null,
                               "content": null
                             },
@@ -328,6 +295,11 @@
                               "data": "\n\t\t\t\t\tUse \"ctrl\" key together with the \"a\" key\n\t\t\t\t"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "label",
+                          "attributes": [],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -336,6 +308,11 @@
                           "data": "\n\t\t\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -344,41 +321,46 @@
                       "data": "\n\t\t"
                     }
                   ],
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n\t\t"
-                },
-                {
-                  "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "br",
-                  "attributes": [],
-                  "style": null,
-                  "children": [],
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n\t\t"
-                },
-                {
-                  "type": "element",
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
                   "attributes": [],
                   "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "br",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
                   "children": [
                     {
                       "type": "text",
                       "data": "\n\t\t\tTo do list\n\t\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -388,6 +370,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "ul",
@@ -401,7 +384,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -410,10 +392,28 @@
                   "data": "\n\t\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [
+                {
+                  "type": "attribute",
+                  "namespace": null,
+                  "prefix": null,
+                  "name": "onload",
+                  "value": "registerShortcut({id: 'firstShortcut', shortcutKey: '+'}); registerShortcut({id: 'secondShortcut', shortcutKey: 'a'}); activateShortcuts();"
+                }
+              ],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

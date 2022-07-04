@@ -30,33 +30,69 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "WCAG 2.1 Abstract"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "h1",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\tWeb Content Accessibility Guidelines (WCAG) 2.1 covers a wide range of recommendations for making Web content more\n\t\taccessible. Following these guidelines will make content more accessible to a wider range of people with\n\t\tdisabilities, including accommodations for blindness and low vision, deafness and hearing loss, limited movement,\n\t\tspeech disabilities, photosensitivity, and combinations of these, and some accommodation for learning disabilities\n\t\tand cognitive limitations; but will not address every user need for people with these disabilities. These guidelines\n\t\taddress accessibility of web content on desktops, laptops, tablets, and mobile devices. Following these guidelines\n\t\twill also often make Web content more usable to users in general.\n\t"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "section",
@@ -81,60 +117,24 @@
                       "important": false
                     }
                   ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "h1",
-                      "attributes": [],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "WCAG 2.1 Abstract"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "p",
-                      "attributes": [],
-                      "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "\n\t\tWeb Content Accessibility Guidelines (WCAG) 2.1 covers a wide range of recommendations for making Web content more\n\t\taccessible. Following these guidelines will make content more accessible to a wider range of people with\n\t\tdisabilities, including accommodations for blindness and low vision, deafness and hearing loss, limited movement,\n\t\tspeech disabilities, photosensitivity, and combinations of these, and some accommodation for learning disabilities\n\t\tand cognitive limitations; but will not address every user need for people with these disabilities. These guidelines\n\t\taddress accessibility of web content on desktops, laptops, tablets, and mobile devices. Following these guidelines\n\t\twill also often make Web content more usable to users in general.\n\t"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

@@ -30,52 +30,23 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "style",
-                      "value": "margin-left:-9999px;"
-                    }
-                  ],
-                  "style": [
-                    {
-                      "name": "margin-left",
-                      "value": "-9999px",
-                      "important": false
-                    }
-                  ],
                   "children": [
                     {
                       "type": "text",
@@ -83,6 +54,7 @@
                     },
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "img",
@@ -103,7 +75,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     },
@@ -112,14 +83,43 @@
                       "data": "\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "style",
+                      "value": "margin-left:-9999px;"
+                    }
+                  ],
+                  "style": [
+                    {
+                      "name": "margin-left",
+                      "value": "-9999px",
+                      "important": false
+                    }
+                  ],
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

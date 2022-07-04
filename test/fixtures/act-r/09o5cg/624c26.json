@@ -30,33 +30,68 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\tSome text in English\n\t"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "style",
+                          "value": "color: #000; opacity: .6"
+                        }
+                      ],
+                      "style": [
+                        {
+                          "name": "color",
+                          "value": "rgb(0, 0, 0)",
+                          "important": false
+                        },
+                        {
+                          "name": "opacity",
+                          "value": "0.6",
+                          "important": false
+                        }
+                      ],
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -121,59 +156,24 @@
                       "important": false
                     }
                   ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    },
-                    {
-                      "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "p",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "style",
-                          "value": "color: #000; opacity: .6"
-                        }
-                      ],
-                      "style": [
-                        {
-                          "name": "color",
-                          "value": "rgb(0, 0, 0)",
-                          "important": false
-                        },
-                        {
-                          "name": "opacity",
-                          "value": "0.6",
-                          "important": false
-                        }
-                      ],
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "\n\t\tSome text in English\n\t"
-                        }
-                      ],
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

@@ -30,19 +30,9 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -50,17 +40,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Failed Example 1"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -70,6 +60,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "script",
@@ -83,7 +74,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -93,17 +83,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "script",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "\n\t\t\tfunction activateSlider() {\n\t\t\t\twindow.addEventListener('deviceorientation', handleOrientation)\n\t\t\t}\n\t\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "script",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -112,6 +102,11 @@
                   "data": "\n\t"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -121,19 +116,6 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [
-                {
-                  "type": "attribute",
-                  "namespace": null,
-                  "prefix": null,
-                  "name": "onload",
-                  "value": "activateSlider();"
-                }
-              ],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -141,6 +123,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "pre",
@@ -154,7 +137,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -164,17 +146,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "h1",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Slider Motion Sensor Example"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "h1",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -184,17 +166,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "p",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "\n\t\t\tOpen this slider on a device with a motion sensor, such as a smart phone or tablet. Tilt the device to the right\n\t\t\tand left to adjust the slider value.\n\t\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -204,17 +186,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "p",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Note: This example may not work across all browsers."
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -224,11 +206,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -236,6 +213,7 @@
                     },
                     {
                       "type": "element",
+                      "children": [],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "input",
@@ -284,7 +262,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [],
                       "shadow": null,
                       "content": null
                     },
@@ -294,6 +271,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Increase Value"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "button",
@@ -314,12 +297,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Increase Value"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -329,19 +306,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "p",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "aria-live",
-                          "value": "polite"
-                        }
-                      ],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -349,6 +313,12 @@
                         },
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "50"
+                            }
+                          ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "span",
@@ -362,16 +332,23 @@
                             }
                           ],
                           "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "50"
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "aria-live",
+                          "value": "polite"
+                        }
+                      ],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -380,6 +357,11 @@
                       "data": "\n\t\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -388,10 +370,28 @@
                   "data": "\n\t\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [
+                {
+                  "type": "attribute",
+                  "namespace": null,
+                  "prefix": null,
+                  "name": "onload",
+                  "value": "activateSlider();"
+                }
+              ],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

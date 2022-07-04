@@ -30,53 +30,23 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "role",
-                      "value": "list"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "aria-owns",
-                      "value": "item1 item2"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -84,19 +54,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "div",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "role",
-                          "value": "navigation"
-                        }
-                      ],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -104,6 +61,12 @@
                         },
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "List item 1"
+                            }
+                          ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "div",
@@ -124,12 +87,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "List item 1"
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         },
@@ -139,6 +96,12 @@
                         },
                         {
                           "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "List item 2"
+                            }
+                          ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
                           "name": "div",
@@ -159,12 +122,6 @@
                             }
                           ],
                           "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "List item 2"
-                            }
-                          ],
                           "shadow": null,
                           "content": null
                         },
@@ -173,6 +130,19 @@
                           "data": "\n\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "role",
+                          "value": "navigation"
+                        }
+                      ],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -181,14 +151,44 @@
                       "data": "\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "list"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-owns",
+                      "value": "item1 item2"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

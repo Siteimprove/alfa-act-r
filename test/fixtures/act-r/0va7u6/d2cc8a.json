@@ -30,60 +30,23 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/2000/svg",
-                  "prefix": null,
-                  "name": "svg",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "width",
-                      "value": "2in"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "height",
-                      "value": "3in"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": "http://www.w3.org/2000/xmlns/",
-                      "prefix": null,
-                      "name": "xmlns",
-                      "value": "http://www.w3.org/2000/svg"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -91,6 +54,32 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t"
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "Fireworks in Paris"
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/2000/svg",
+                          "prefix": null,
+                          "name": "title",
+                          "attributes": [],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\t"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/2000/svg",
                       "prefix": null,
                       "name": "image",
@@ -132,32 +121,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "\n\t\t"
-                        },
-                        {
-                          "type": "element",
-                          "namespace": "http://www.w3.org/2000/svg",
-                          "prefix": null,
-                          "name": "title",
-                          "attributes": [],
-                          "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "Fireworks in Paris"
-                            }
-                          ],
-                          "shadow": null,
-                          "content": null
-                        },
-                        {
-                          "type": "text",
-                          "data": "\n\t"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -166,14 +129,51 @@
                       "data": "\n"
                     }
                   ],
+                  "namespace": "http://www.w3.org/2000/svg",
+                  "prefix": null,
+                  "name": "svg",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "width",
+                      "value": "2in"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "height",
+                      "value": "3in"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": "http://www.w3.org/2000/xmlns/",
+                      "prefix": null,
+                      "name": "xmlns",
+                      "value": "http://www.w3.org/2000/svg"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

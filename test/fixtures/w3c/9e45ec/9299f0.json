@@ -24,19 +24,6 @@
       "children": [
         {
           "type": "element",
-          "namespace": "http://www.w3.org/2000/svg",
-          "prefix": null,
-          "name": "svg",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": "http://www.w3.org/2000/xmlns/",
-              "prefix": null,
-              "name": "xmlns",
-              "value": "http://www.w3.org/2000/svg"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "text",
@@ -44,6 +31,12 @@
             },
             {
               "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "ACT rules"
+                }
+              ],
               "namespace": "http://www.w3.org/2000/svg",
               "prefix": null,
               "name": "text",
@@ -70,12 +63,6 @@
                   "important": false
                 }
               ],
-              "children": [
-                {
-                  "type": "text",
-                  "data": "ACT rules"
-                }
-              ],
               "shadow": null,
               "content": null
             },
@@ -84,6 +71,19 @@
               "data": "\n"
             }
           ],
+          "namespace": "http://www.w3.org/2000/svg",
+          "prefix": null,
+          "name": "svg",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": "http://www.w3.org/2000/xmlns/",
+              "prefix": null,
+              "name": "xmlns",
+              "value": "http://www.w3.org/2000/svg"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

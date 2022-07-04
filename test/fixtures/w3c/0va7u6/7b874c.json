@@ -30,27 +30,9 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -58,17 +40,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Inapplicable Example 2"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -77,6 +59,11 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -86,11 +73,6 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -98,19 +80,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/2000/svg",
-                  "prefix": null,
-                  "name": "svg",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": "http://www.w3.org/2000/xmlns/",
-                      "prefix": null,
-                      "name": "xmlns",
-                      "value": "http://www.w3.org/2000/svg"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -118,6 +87,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "My"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/2000/svg",
                       "prefix": null,
                       "name": "text",
@@ -138,12 +113,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "My"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -153,6 +122,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "cat"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/2000/svg",
                       "prefix": null,
                       "name": "text",
@@ -173,12 +148,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "cat"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -188,6 +157,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "is"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/2000/svg",
                       "prefix": null,
                       "name": "text",
@@ -208,12 +183,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "is"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -223,6 +192,12 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Grumpy!"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/2000/svg",
                       "prefix": null,
                       "name": "text",
@@ -243,12 +218,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Grumpy!"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -257,6 +226,19 @@
                       "data": "\n\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/2000/svg",
+                  "prefix": null,
+                  "name": "svg",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": "http://www.w3.org/2000/xmlns/",
+                      "prefix": null,
+                      "name": "xmlns",
+                      "value": "http://www.w3.org/2000/svg"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -265,10 +247,28 @@
                   "data": "\n\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

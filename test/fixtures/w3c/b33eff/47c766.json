@@ -30,6 +30,104 @@
         },
         {
           "type": "element",
+          "children": [
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Page with some content"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\ttransform: rotateZ(1turn);\n\t\t\t\t}\n\t\t\t}\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "style",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n\t"
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\tPage Content\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "main",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            }
+          ],
           "namespace": "http://www.w3.org/1999/xhtml",
           "prefix": null,
           "name": "html",
@@ -43,104 +141,6 @@
             }
           ],
           "style": null,
-          "children": [
-            {
-              "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
-              "children": [
-                {
-                  "type": "text",
-                  "data": "\n\t\t"
-                },
-                {
-                  "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Page with some content"
-                    }
-                  ],
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n\t\t"
-                },
-                {
-                  "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "style",
-                  "attributes": [],
-                  "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\ttransform: rotateZ(1turn);\n\t\t\t\t}\n\t\t\t}\n\t\t"
-                    }
-                  ],
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n\t"
-                }
-              ],
-              "shadow": null,
-              "content": null
-            },
-            {
-              "type": "text",
-              "data": "\n\t"
-            },
-            {
-              "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
-              "children": [
-                {
-                  "type": "text",
-                  "data": "\n\t\t"
-                },
-                {
-                  "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "main",
-                  "attributes": [],
-                  "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t\t\tPage Content\n\t\t"
-                    }
-                  ],
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n\t\n"
-                }
-              ],
-              "shadow": null,
-              "content": null
-            }
-          ],
           "shadow": null,
           "content": null
         }

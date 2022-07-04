@@ -30,27 +30,9 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -58,17 +40,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Failed example 2 9bd38c"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -78,6 +60,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "link",
@@ -105,7 +88,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 },
@@ -114,6 +96,11 @@
                   "data": "\n\t"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -123,11 +110,6 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -135,11 +117,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "nav",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -147,11 +124,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "ul",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -159,11 +131,6 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "li",
-                          "attributes": [],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
@@ -171,6 +138,12 @@
                             },
                             {
                               "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "W3C homepage"
+                                }
+                              ],
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
                               "name": "a",
@@ -184,12 +157,6 @@
                                 }
                               ],
                               "style": null,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "data": "W3C homepage"
-                                }
-                              ],
                               "shadow": null,
                               "content": null
                             },
@@ -198,6 +165,11 @@
                               "data": "\n\t\t\t\t"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "li",
+                          "attributes": [],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -207,11 +179,6 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "li",
-                          "attributes": [],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
@@ -219,6 +186,12 @@
                             },
                             {
                               "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "Standards"
+                                }
+                              ],
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
                               "name": "a",
@@ -232,12 +205,6 @@
                                 }
                               ],
                               "style": null,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "data": "Standards"
-                                }
-                              ],
                               "shadow": null,
                               "content": null
                             },
@@ -246,6 +213,11 @@
                               "data": "\n\t\t\t\t"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "li",
+                          "attributes": [],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -254,6 +226,11 @@
                           "data": "\n\t\t\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "ul",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -262,6 +239,11 @@
                       "data": "\n\t\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "nav",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -271,19 +253,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "div",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "class",
-                      "value": "col-container"
-                    }
-                  ],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -291,6 +260,32 @@
                     },
                     {
                       "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t\t"
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "Find the navigation on the right, for the non-essential links"
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "p",
+                          "attributes": [],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
                       "name": "div",
@@ -304,32 +299,6 @@
                         }
                       ],
                       "style": null,
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "\n\t\t\t\t"
-                        },
-                        {
-                          "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "p",
-                          "attributes": [],
-                          "style": null,
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "Find the navigation on the right, for the non-essential links"
-                            }
-                          ],
-                          "shadow": null,
-                          "content": null
-                        },
-                        {
-                          "type": "text",
-                          "data": "\n\t\t\t"
-                        }
-                      ],
                       "shadow": null,
                       "content": null
                     },
@@ -339,11 +308,6 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "nav",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "text",
@@ -351,19 +315,6 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "div",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "class",
-                              "value": "col"
-                            }
-                          ],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
@@ -371,11 +322,6 @@
                             },
                             {
                               "type": "element",
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "ul",
-                              "attributes": [],
-                              "style": null,
                               "children": [
                                 {
                                   "type": "text",
@@ -383,11 +329,6 @@
                                 },
                                 {
                                   "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "li",
-                                  "attributes": [],
-                                  "style": null,
                                   "children": [
                                     {
                                       "type": "text",
@@ -395,6 +336,12 @@
                                     },
                                     {
                                       "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "Contact"
+                                        }
+                                      ],
                                       "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
                                       "name": "a",
@@ -408,12 +355,6 @@
                                         }
                                       ],
                                       "style": null,
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "data": "Contact"
-                                        }
-                                      ],
                                       "shadow": null,
                                       "content": null
                                     },
@@ -422,6 +363,11 @@
                                       "data": "\n\t\t\t\t\t\t"
                                     }
                                   ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "li",
+                                  "attributes": [],
+                                  "style": null,
                                   "shadow": null,
                                   "content": null
                                 },
@@ -431,11 +377,6 @@
                                 },
                                 {
                                   "type": "element",
-                                  "namespace": "http://www.w3.org/1999/xhtml",
-                                  "prefix": null,
-                                  "name": "li",
-                                  "attributes": [],
-                                  "style": null,
                                   "children": [
                                     {
                                       "type": "text",
@@ -443,6 +384,12 @@
                                     },
                                     {
                                       "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "Help and FAQ"
+                                        }
+                                      ],
                                       "namespace": "http://www.w3.org/1999/xhtml",
                                       "prefix": null,
                                       "name": "a",
@@ -456,12 +403,6 @@
                                         }
                                       ],
                                       "style": null,
-                                      "children": [
-                                        {
-                                          "type": "text",
-                                          "data": "Help and FAQ"
-                                        }
-                                      ],
                                       "shadow": null,
                                       "content": null
                                     },
@@ -470,6 +411,11 @@
                                       "data": "\n\t\t\t\t\t\t"
                                     }
                                   ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "li",
+                                  "attributes": [],
+                                  "style": null,
                                   "shadow": null,
                                   "content": null
                                 },
@@ -478,6 +424,11 @@
                                   "data": "\n\t\t\t\t\t"
                                 }
                               ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "ul",
+                              "attributes": [],
+                              "style": null,
                               "shadow": null,
                               "content": null
                             },
@@ -486,6 +437,19 @@
                               "data": "\n\t\t\t\t"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "div",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "col"
+                            }
+                          ],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -494,6 +458,11 @@
                           "data": "\n\t\t\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "nav",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     },
@@ -502,6 +471,19 @@
                       "data": "\n\t\t"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "class",
+                      "value": "col-container"
+                    }
+                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -510,10 +492,28 @@
                   "data": "\n\t\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }

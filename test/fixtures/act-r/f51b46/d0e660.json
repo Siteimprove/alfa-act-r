@@ -30,33 +30,29 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [],
-          "style": null,
           "children": [
             {
               "type": "element",
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
               "attributes": [],
               "style": null,
-              "children": [],
               "shadow": null,
               "content": null
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying the following text: Web accessibility\n\tperspectives. Keyboard compatibility. Not being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either through preference or circumstance.\n"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "p",
@@ -70,12 +66,6 @@
                     }
                   ],
                   "style": null,
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\tThe video below shows a man working on a keyboard. A voiceover is heard saying the following text: Web accessibility\n\tperspectives. Keyboard compatibility. Not being able to use your computer because your mouse doesn't work, is\n\tfrustrating. Many people use only the keyboard to navigate websites. Either through preference or circumstance.\n"
-                    }
-                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -85,6 +75,7 @@
                 },
                 {
                   "type": "element",
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "video",
@@ -112,15 +103,24 @@
                     }
                   ],
                   "style": null,
-                  "children": [],
                   "shadow": null,
                   "content": null
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [],
+          "style": null,
           "shadow": null,
           "content": null
         }

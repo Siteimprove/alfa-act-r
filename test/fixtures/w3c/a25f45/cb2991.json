@@ -30,27 +30,9 @@
         },
         {
           "type": "element",
-          "namespace": "http://www.w3.org/1999/xhtml",
-          "prefix": null,
-          "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
-          "style": null,
           "children": [
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -58,17 +40,17 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
                       "data": "Passed Example 6"
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -77,6 +59,11 @@
                   "data": "\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             },
@@ -86,11 +73,6 @@
             },
             {
               "type": "element",
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "body",
-              "attributes": [],
-              "style": null,
               "children": [
                 {
                   "type": "text",
@@ -98,11 +80,6 @@
                 },
                 {
                   "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "table",
-                  "attributes": [],
-                  "style": null,
                   "children": [
                     {
                       "type": "text",
@@ -110,19 +87,9 @@
                     },
                     {
                       "type": "element",
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "tbody",
-                      "attributes": [],
-                      "style": null,
                       "children": [
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "tr",
-                          "attributes": [],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
@@ -130,6 +97,12 @@
                             },
                             {
                               "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "Name"
+                                }
+                              ],
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
                               "name": "th",
@@ -150,12 +123,6 @@
                                 }
                               ],
                               "style": null,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "data": "Name"
-                                }
-                              ],
                               "shadow": null,
                               "content": null
                             },
@@ -164,6 +131,11 @@
                               "data": "\n\t\t"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "tr",
+                          "attributes": [],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -173,11 +145,6 @@
                         },
                         {
                           "type": "element",
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "tr",
-                          "attributes": [],
-                          "style": null,
                           "children": [
                             {
                               "type": "text",
@@ -185,6 +152,12 @@
                             },
                             {
                               "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "Firstname"
+                                }
+                              ],
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
                               "name": "th",
@@ -198,12 +171,6 @@
                                 }
                               ],
                               "style": null,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "data": "Firstname"
-                                }
-                              ],
                               "shadow": null,
                               "content": null
                             },
@@ -213,6 +180,12 @@
                             },
                             {
                               "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "Lastname"
+                                }
+                              ],
                               "namespace": "http://www.w3.org/1999/xhtml",
                               "prefix": null,
                               "name": "th",
@@ -226,12 +199,6 @@
                                 }
                               ],
                               "style": null,
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "data": "Lastname"
-                                }
-                              ],
                               "shadow": null,
                               "content": null
                             },
@@ -240,6 +207,11 @@
                               "data": "\n\t\t"
                             }
                           ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "tr",
+                          "attributes": [],
+                          "style": null,
                           "shadow": null,
                           "content": null
                         },
@@ -248,10 +220,20 @@
                           "data": "\n\t"
                         }
                       ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "tbody",
+                      "attributes": [],
+                      "style": null,
                       "shadow": null,
                       "content": null
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "table",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
@@ -260,10 +242,28 @@
                   "data": "\n\n"
                 }
               ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
               "shadow": null,
               "content": null
             }
           ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
           "shadow": null,
           "content": null
         }
