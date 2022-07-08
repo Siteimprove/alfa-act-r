@@ -10,37 +10,37 @@ const { Scraper } = require("@siteimprove/alfa-scraper");
 const headers = require("./helpers/headers");
 
 const testCases = {
-  "act-r": {
+  old: {
     tests: "https://act-rules.github.io/testcases.json",
-    out: path.join("test", "fixtures", "act-r"),
+    out: path.join("test", "fixtures", "old"),
   },
-  w3c: {
+  new: {
     tests:
       "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json",
-    out: path.join("test", "fixtures", "w3c"),
+    out: path.join("test", "fixtures", "new"),
   },
 };
 
 // If no extra argument is provided, download both ACT and W3C cases
 // #1: node; #2 : this file; #3-…: actual arguments
 const fetchACT =
-  process.argv.length < 3 || process.argv.slice(2).includes("act-r");
+  process.argv.length < 3 || process.argv.slice(2).includes("old");
 const fetchW3C =
-  process.argv.length < 3 || process.argv.slice(2).includes("w3c");
+  process.argv.length < 3 || process.argv.slice(2).includes("new");
 
 if (!fetchACT && !fetchW3C) {
-  console.error('Wrong argument, use either "act-r", or "w3c", or none');
+  console.error('Wrong argument, use either "old", or "new", or none');
   process.exit(1);
 }
 
 if (fetchACT) {
-  console.log("Fetching ACT-R test cases");
-  cleanAndFetch("act-r");
+  console.log("Fetching ACT-R ('old') test cases");
+  cleanAndFetch("old");
 }
 
 if (fetchW3C) {
-  console.log("Fetching W3C test cases");
-  cleanAndFetch("w3c");
+  console.log("Fetching WAI ('new') test cases");
+  cleanAndFetch("new");
 }
 
 async function cleanAndFetch(source) {
