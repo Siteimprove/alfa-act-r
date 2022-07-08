@@ -1,8 +1,12 @@
 # Comparing Alfa with ACT-Rules and WAI test cases
 
+[Alfa](https://github.com/Siteimprove/alfa) is an automated accessibility checker developed by [Siteimprove](https://www.siteimprove.com/). 
+
 This repository runs Alfa against the official test cases from ACT Rules and WCAG 2 test rules.
 
-Because the ACT-R Community Group is in the process of moving its website from self-hosted (`"act-r"`) to the W3C website (`"w3c"`), we currently track two sets of test cases. 
+Because the ACT-R Community Group is in the process of moving its website from self-hosted (`"old"`) to the WAI website (`"new"`), we currently track two sets of test cases. 
+
+Neither Alfa nor Siteimprove are endorsed by the [W3C](https://www.w3.org/), the [Web Accessibility Initiative](https://www.w3.org/WAI/) or the ACT rules Community group.
 
 ## Installation
 
@@ -20,7 +24,7 @@ Installing Alfa packages need authentication to the Github repository for the `@
 To download the latest version of the test cases:
 
 ```shell
-$ yarn fixtures [act-r | w3c]
+$ yarn fixtures [old | new]
 ```
 
 If non argument is provided, both will be downloaded.
@@ -30,7 +34,7 @@ If non argument is provided, both will be downloaded.
 To run Alfa against the test cases:
 
 ```shell
-$ yarn test ["**/act-r*" | "**/w3c*"]
+$ yarn test ["**/old*" | "**/new*"]
 ```
 
 If no argument is provided, both will be tested. The selection is done automatically by `ava` (the testing library) using glob patterns… 

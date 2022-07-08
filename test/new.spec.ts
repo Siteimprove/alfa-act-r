@@ -9,7 +9,7 @@ import { Context } from "./helpers/context";
 import { fixture as factory } from "./helpers/fixture";
 import { report } from "./helpers/report";
 
-const fixture = factory("w3c");
+const fixture = factory("new");
 const test = ava as TestFn<Context<Page, unknown, Question.Metadata, unknown>>;
 
 test.before("Initialise context", (t) => {
@@ -17,7 +17,10 @@ test.before("Initialise context", (t) => {
 });
 
 test.after("Write report", (t) => {
-  report(t.context, path.join(__dirname, "..", "reports", "alfa-w3c.json"));
+  report(
+    t.context,
+    path.join(__dirname, "..", "reports", "alfa-report-new-test-cases.json")
+  );
 });
 
 test("2779a5", (t) => fixture(t, Rules.get("R1")));
