@@ -395,6 +395,11 @@ test("fd3a94", (t) =>
       "e0ec0a",
       "e9979a",
     ],
+    lax: [
+      // Alfa does not consider `<div>` in the link context
+      // https://github.com/Siteimprove/alfa/issues/767
+      "3efafe",
+    ],
   }));
 
 // R82 always has questions in expectation, review flow not currently handled
