@@ -75,50 +75,79 @@ async function fetch(tests, out) {
   }
 
   const scraper = await Scraper.of();
+  const errors = [];
 
   for (const [directory, { tests }] of rules) {
     console.group(directory);
 
     await makeDir(directory);
 
-    for (const { id, filename, url, outcome } of tests) {
-      console.time(filename);
-
-      const result = await scraper
-        .scrape(url)
-        .then((page) => page.map((page) => page.toJSON()));
-
-      if (result.isErr()) {
-        console.error("%s: %s (%s)", filename, result.getErr(), url);
-        process.exitCode = 1;
-      }
-
-      for (const page of result) {
-        page.request.headers = headers.filter(page.request.headers);
-        page.response.headers = headers.filter(page.response.headers);
-
-        const fixture = JSON.stringify(
-          {
-            id,
-            outcome,
-            page,
-          },
-          undefined,
-          2
-        );
-
-        fs.writeFileSync(path.join(directory, filename), fixture + "\n");
-      }
-
-      console.timeEnd(filename);
-    }
+    errors.push(...(await foo(scraper, directory, tests)));
 
     console.groupEnd(directory);
   }
 
   scraper.close();
+
+  if (errors.length > 0) {
+    console.group("Some files could not be fetched — retrying");
+    console.warn(errors);
+
+    const scraper = await Scraper.of();
+    const stillErrors = [];
+    for (const { directory, ...test } of errors) {
+      console.log(test);
+      stillErrors.push(...(await foo(scraper, directory, [test])));
+    }
+    scraper.close();
+
+    console.groupEnd("Some files could not be fetched — retrying");
+
+    if (stillErrors.length > 0) {
+      console.error("Still failing after two attempts");
+      console.error(stillErrors);
+      process.exitCode = 1;
+    }
+  }
 }
 
 function digest(data) {
   return crypto.createHash("sha256").update(data).digest("hex");
+}
+
+async function foo(scraper, directory, tests) {
+  const errors = [];
+  for (const { id, filename, url, outcome } of tests) {
+    console.time(filename);
+
+    const result = await scraper
+      .scrape(url)
+      .then((page) => page.map((page) => page.toJSON()));
+
+    if (result.isErr()) {
+      console.error("%s: %s (%s)", filename, result.getErr(), url);
+      errors.push({ directory, id, filename, url, outcome });
+    }
+
+    for (const page of result) {
+      page.request.headers = headers.filter(page.request.headers);
+      page.response.headers = headers.filter(page.response.headers);
+
+      const fixture = JSON.stringify(
+        {
+          id,
+          outcome,
+          page,
+        },
+        undefined,
+        2
+      );
+
+      fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+    }
+
+    console.timeEnd(filename);
+  }
+
+  return errors;
 }
