@@ -107,10 +107,6 @@ test("4b1c6c", (t) =>
 
 test("4e8ab6", (t) =>
   fixture(t, Rules.get("R16"), {
-    lax: [
-      // Alfa voluntarily considers elements whose implicit and explicit roles are the same
-      "cc955b",
-    ],
     skip: [
       // `combobox` only requires `aria-expanded` in the latest draft of ARIA.
       "a37a51",
@@ -325,9 +321,6 @@ test("09o5cg", (t) =>
     skip: [
       // Alfa assumes that non-human language text is marked as presentational
       "25f0d3",
-      // Alfa does not yet ignore disabled widget labels
-      "7b6814",
-      "fb6c57",
       // Alfa does not yet disregard impossible foreground/background combinations
       "0627ba",
     ],
@@ -355,10 +348,6 @@ test("afw4f7", (t) =>
       // Alfa intentionally diverges on these cases
       // -> Alfa assumes that non-human language text is marked as presentational
       "2f71bb",
-
-      // Alfa does not yet ignore disabled widget labels
-      "78bb66",
-      "448c66",
 
       // Alfa does not yet disregard impossible foreground/background combinations
       "55f4c4",
