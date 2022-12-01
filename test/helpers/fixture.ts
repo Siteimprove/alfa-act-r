@@ -38,6 +38,10 @@ export function fixture(
   options?: FixtureOptions
 ) => Promise<void> {
   return async (t, rule, options = {}) => {
+    if (!rule.isSome()) {
+      return;
+    }
+
     const fixture = t.title;
 
     const directory = path.join("test", "fixtures", dir, fixture);
