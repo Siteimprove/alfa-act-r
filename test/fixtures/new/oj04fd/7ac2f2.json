@@ -1,0 +1,343 @@
+{
+  "id": "7ac2f2",
+  "outcome": "failed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/f1c9efb4c8d1b5f7870c693bce2e6ca046dd768d.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/f1c9efb4c8d1b5f7870c693bce2e6ca046dd768d.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<link rel=\"stylesheet\" href=\"/WAI/content-assets/wcag-act-rules/test-assets/focus-visible-oj04fd/styles.css\" />\n\t<a class=\"no-focus-default\" href=\"https://act-rules.github.io/\">ACT rules</a>\n</body>\n</html>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "children": [
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Failed Example 1"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n"
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "link",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "rel",
+                      "value": "stylesheet"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "href",
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/focus-visible-oj04fd/styles.css"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "ACT rules"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "a",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "class",
+                      "value": "no-focus-default"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "href",
+                      "value": "https://act-rules.github.io/"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": [
+        {
+          "rules": [
+            {
+              "type": "style",
+              "selector": ".indicator",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "inline-block",
+                  "important": false
+                },
+                {
+                  "name": "width",
+                  "value": "1em",
+                  "important": false
+                },
+                {
+                  "name": "height",
+                  "value": "1em",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".solid.active",
+              "style": [
+                {
+                  "name": "background-color",
+                  "value": "navy",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".border.active",
+              "style": [
+                {
+                  "name": "border-top-width",
+                  "value": "medium",
+                  "important": false
+                },
+                {
+                  "name": "border-right-width",
+                  "value": "medium",
+                  "important": false
+                },
+                {
+                  "name": "border-bottom-width",
+                  "value": "medium",
+                  "important": false
+                },
+                {
+                  "name": "border-left-width",
+                  "value": "medium",
+                  "important": false
+                },
+                {
+                  "name": "border-top-style",
+                  "value": "solid",
+                  "important": false
+                },
+                {
+                  "name": "border-right-style",
+                  "value": "solid",
+                  "important": false
+                },
+                {
+                  "name": "border-bottom-style",
+                  "value": "solid",
+                  "important": false
+                },
+                {
+                  "name": "border-left-style",
+                  "value": "solid",
+                  "important": false
+                },
+                {
+                  "name": "border-top-color",
+                  "value": "navy",
+                  "important": false
+                },
+                {
+                  "name": "border-right-color",
+                  "value": "navy",
+                  "important": false
+                },
+                {
+                  "name": "border-bottom-color",
+                  "value": "navy",
+                  "important": false
+                },
+                {
+                  "name": "border-left-color",
+                  "value": "navy",
+                  "important": false
+                },
+                {
+                  "name": "border-image-source",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "border-image-slice",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "border-image-width",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "border-image-outset",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "border-image-repeat",
+                  "value": "initial",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".no-focus-default:focus",
+              "style": [
+                {
+                  "name": "outline-color",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "outline-style",
+                  "value": "none",
+                  "important": false
+                },
+                {
+                  "name": "outline-width",
+                  "value": "initial",
+                  "important": false
+                }
+              ]
+            }
+          ],
+          "disabled": false,
+          "condition": null
+        }
+      ]
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}
