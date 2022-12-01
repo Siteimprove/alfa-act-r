@@ -220,11 +220,6 @@ test("b20e66", (t) =>
       "b52fce",
       "ee0f09",
     ],
-    lax: [
-      // Looks like there is a problem with links in iframes and shadow tree. Weird.
-      "a9b0f8",
-      "c3b405",
-    ],
   }));
 
 test("ff89c9", (t) =>
@@ -466,6 +461,13 @@ test("24afc2", (t) =>
       // Alfa doesn't consider top: -999em as invisible
       "e69989",
     ],
+    lax: [
+      // Alfa has adopted newer version of rule, targeting the text nodes
+      "636658",
+      "684f60",
+      "6a1af0",
+      "b61b09",
+    ],
   }));
 
 test("9e45ec", (t) =>
@@ -473,6 +475,13 @@ test("9e45ec", (t) =>
     skip: [
       // Alfa doesn't consider top: -999em as invisible
       "9cbf79",
+    ],
+    lax: [
+      // Alfa has adopted newer version of rule, targeting the text nodes
+      "290162",
+      "98534d",
+      "ab16a8",
+      "cd8394",
     ],
   }));
 
@@ -485,6 +494,13 @@ test("78fd32", (t) =>
       // is in a wide scrolling element; instead it considers that any element
       // with a role of paragraph is a block of text.
       "61778d",
+    ],
+    lax: [
+      // Alfa has adopted newer version of rule, targeting the text nodes
+      "4e240d",
+      "55c5d4",
+      "c6d6cd",
+      "d155ad",
     ],
   }));
 
