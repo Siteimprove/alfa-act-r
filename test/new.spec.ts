@@ -115,8 +115,7 @@ test("4e8ab6", (t) =>
   fixture(t, Rules.get("R16"), {
     skip: [
       // `combobox` requires only `aria-expanded` in ARIA 1.3 which Alfa follows.
-      "21e659",
-      "c003e9",
+      "d61580",
     ],
   }));
 
@@ -124,11 +123,18 @@ test("6cfa84", (t) =>
   fixture(t, Rules.get("R17"), {
     skip: [
       // Alfa does not consider whether an element redirects focus or not
-      "cc8937",
+      "ea3fa4",
     ],
   }));
 
-test("5c01ea", (t) => fixture(t, Rules.get("R18")));
+test("5c01ea", (t) =>
+  fixture(t, Rules.get("R18"), {
+    skip: [
+      // Alfa does not support prohibited attributes
+      // https://github.com/Siteimprove/alfa/issues/1205
+      "33995b",
+    ],
+  }));
 
 test("6a7281", (t) =>
   fixture(t, Rules.get("R19"), {
@@ -252,10 +258,9 @@ test("d0f69e", (t) =>
 test("b4f0c3", (t) =>
   fixture(t, Rules.get("R47"), {
     lax: [
-      // https://github.com/Siteimprove/sanshikan/issues/219
-      // https://github.com/act-rules/act-rules.github.io/pull/1835
-      "21b278",
-      "b36fb3",
+      // ACt rules is not clear in its definition
+      // https://github.com/act-rules/act-rules.github.io/issues/1982
+      "ee8640",
     ],
   }));
 
@@ -296,10 +301,20 @@ test.skip("be4d0c", (t) => fixture(t, Rules.get("R62")));
 
 test("8fc3b6", (t) =>
   fixture(t, Rules.get("R63"), {
+    skip: [
+      // Alfa does not look at the MIME type of embedded content
+      // https://github.com/Siteimprove/alfa/issues/522
+      "a2ba3a",
+      // Alfa is too strict in its inclusion in the accessibility tree check
+      // https://github.com/Siteimprove/alfa/issues/1285
+      "cfa8a2",
+    ],
     lax: [
       // Alfa does not look at the MIME type of embedded content
       // https://github.com/Siteimprove/alfa/issues/522
       "990a0a",
+      // Alfa does not check the presence of an explicit role
+      "6d6a37",
     ],
   }));
 
@@ -307,12 +322,12 @@ test("ffd0e9", (t) => fixture(t, Rules.get("R64")));
 
 test("oj04fd", (t) =>
   fixture(t, Rules.get("R65"), {
-    manual: ["c80b3c", "df041e"],
+    manual: ["7ac2f2", "c80b3c", "f228e7"],
   }));
 
 test("09o5cg", (t) =>
   fixture(t, Rules.get("R66"), {
-    manual: ["2eeb7d", "939e0b", "d3cb8b"],
+    manual: ["2b137a", "2eeb7d", "939e0b"],
     skip: [
       // Alfa assumes that non-human language text is marked as presentational
       "e778ed",
@@ -330,6 +345,7 @@ test("bc4a75", (t) =>
       // Alfa accepts children that are not "required owned element" as this
       // is a common case and unclear what ARIA really mean
       // https://github.com/act-rules/act-rules.github.io/issues/1426
+      "4af645",
       "6120d9",
     ],
     lax: [
@@ -348,7 +364,7 @@ test("afw4f7", (t) =>
       // Alfa does not yet disregard impossible foreground/background combinations
       "92452d",
     ],
-    manual: ["0616f2", "7004f1", "e5c024", "fb7365"],
+    manual: ["0616f2", "416921", "7004f1", "e5c024"],
   }));
 
 // R70 is Siteimprove only
@@ -520,7 +536,7 @@ test("bisz58", (t) =>
     lax: [
       // These cases can't currently be tested due to instant redirects.
       "12f9c8",
-      "b894f3",
+      "e6fbb9",
     ],
   }));
 

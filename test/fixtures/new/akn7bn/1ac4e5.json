@@ -1,6 +1,6 @@
 {
   "id": "1ac4e5",
-  "outcome": "passed",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
@@ -17,7 +17,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<iframe tabindex=\"-1\" srcdoc=\"<h1>Hello world</h1>\"></iframe>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<iframe tabindex=\"-1\" srcdoc=\"<h1>Hello world</h1>\"></iframe>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -43,7 +43,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 1"
+                      "data": "Inapplicable Example 1"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
