@@ -3726,7 +3726,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "letter-spacing is less than 0.12 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -3812,7 +3812,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "word-spacing is at least 0.16 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -4050,17 +4050,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The iframe contains no interactive element",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/iframe[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/akn7bn/524d02eed5b71e279febb083f70c463f99318806.html"
@@ -6670,7 +6660,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
         }
       },
       "subject": {
@@ -8006,7 +7996,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "word-spacing is less than 0.16 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -8254,7 +8244,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The iframe contains some interactive element",
+        "info": "The iframe has a negative tabindex",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -10990,17 +10980,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `<meta>` element does not restrict the ability to zoom",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/head[1]/meta[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/b4f0c3/e4de67808dbc7c2dd303d83ad99ed303141305fc.html"
@@ -12066,7 +12046,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "letter-spacing is less than 0.12 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -12228,7 +12208,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "line-height is less than 1.5 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -12400,17 +12380,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The iframe contains no interactive element",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/iframe[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/akn7bn/9f51cc873f37c786f03e13d96f00a44b77d965ae.html"
@@ -16408,7 +16378,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "line-height is less than 1.5 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -16570,7 +16540,17 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The iframe has no negative tabindex",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/iframe[1]"
+        }
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/akn7bn/04a4eca0f7fe8fb25d070e83cee67a44eca7ae19.html"
@@ -19122,7 +19102,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
         }
       },
       "subject": {
@@ -20362,7 +20342,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "letter-spacing is at least 0.12 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -20448,7 +20428,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "word-spacing is at least 0.16 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -20534,7 +20514,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "line-height is less than 1.5 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -20706,17 +20686,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The iframe contains no interactive element",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/iframe[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/akn7bn/4cee29f54888120f0b99fb7a1a4646556a0d10a0.html"
@@ -23307,7 +23277,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/@headers"
         }
       },
       "subject": {
@@ -23482,17 +23452,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `<meta>` element does not restrict the ability to zoom",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/head[1]/meta[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/b4f0c3/42bfbd40933a0aa7954e841ec0b239de643e8d2a.html"
@@ -23771,7 +23731,17 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The element has a visible focus indicator",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/a[1]"
+        }
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/oj04fd/1a1e6674b96c4cbdedc55801679fe0c06c248fac.html"
@@ -24872,7 +24842,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The iframe contains some interactive element",
+        "info": "The iframe has a negative tabindex",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -27956,7 +27926,17 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The element has a visible focus indicator",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/a[1]"
+        }
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/oj04fd/0a492595c81007ffe1ff2ca2a4a57fc24fe10635.html"
@@ -28810,7 +28790,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "word-spacing is less than 0.16 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -28896,7 +28876,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "line-height is at least 1.5 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -31321,7 +31301,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
         }
       },
       "subject": {
@@ -32516,7 +32496,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "letter-spacing is at least 0.12 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -32602,7 +32582,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "word-spacing is less than 0.16 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -36179,7 +36159,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "word-spacing is less than 0.16 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -36265,7 +36245,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "line-height is less than 1.5 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -39739,7 +39719,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "word-spacing is at least 0.16 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -39825,7 +39805,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "line-height is at least 1.5 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -41771,17 +41751,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `<meta>` element does not restrict the ability to zoom",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/head[1]/meta[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/b4f0c3/dc6c5a33d7f24964195701ffb835f1978fedc446.html"
@@ -42512,7 +42482,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "letter-spacing is at least 0.12 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -42674,7 +42644,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "line-height is at least 1.5 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -44398,7 +44368,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
         }
       },
       "subject": {
@@ -45207,7 +45177,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "letter-spacing is less than 0.12 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -45293,7 +45263,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "word-spacing is at least 0.16 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -45379,7 +45349,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "line-height is less than 1.5 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -47736,7 +47706,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "letter-spacing is at least 0.12 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -47898,7 +47868,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "line-height is less than 1.5 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -49855,7 +49825,17 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The highest possible contrast of the text is 21:1 which is\n        above the required contrast of 4.5:1",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/div[1]/text()[1]"
+        }
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/afw4f7/778de4bebc6fc6e3086f5acec2749b697146bead.html"
@@ -50144,7 +50124,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "letter-spacing is less than 0.12 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -50306,7 +50286,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "line-height is less than 1.5 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -52284,7 +52264,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "word-spacing is less than 0.16 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -52370,7 +52350,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "line-height is less than 1.5 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -53830,7 +53810,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Bad",
+        "info": "letter-spacing is less than 0.12 times the font-size",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -53992,7 +53972,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "line-height is at least 1.5 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -55029,7 +55009,17 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The highest possible contrast of the text is 21:1 which is\n        above the required contrast of 7:1",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/div[1]/text()[1]"
+        }
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/09o5cg/239b4c6cb6a24144823891ca13426de354d8fe42.html"
@@ -56540,7 +56530,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "line-height is at least 1.5 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -57364,7 +57354,17 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The highest possible contrast of the text is 21:1 which is\n        above the required contrast of 4.5:1",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/button[1]/text()[1]"
+        }
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/afw4f7/ae9c5ac945546b60ea8bb7bba64680da26dfe7e4.html"
@@ -58284,7 +58284,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "Good",
+        "info": "line-height is at least 1.5 times the font-size",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -61230,7 +61230,17 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The highest possible contrast of the text is 21:1 which is\n        above the required contrast of 7:1",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/button[1]/text()[1]"
+        }
       },
       "subject": {
         "@id": "https://act-rules.github.io/testcases/09o5cg/7acf59add8c6fd0cb580a1f6e72c200731acebc0.html"
