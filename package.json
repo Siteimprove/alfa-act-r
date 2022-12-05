@@ -30,6 +30,7 @@
   },
   "ava": {
     "verbose": true,
+    "environmentVariables": { "NODE_OPTIONS": "" },
     "files": [
       "test/**/*.spec.js"
     ]
