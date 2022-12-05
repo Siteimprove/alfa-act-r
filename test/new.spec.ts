@@ -91,7 +91,7 @@ test("2ee8b8", (t) =>
       "244e61",
       // the text is rendered as icon (non-text) due to the Material Icons fonts
       // but Alfa ignores it
-      // https://github.com/Siteimprove/alfa/issues/926
+      // https://github.com/Siteimprove/alfa/issues/1015
       "200f91",
     ],
   }));
