@@ -82,7 +82,7 @@ async function fetch(tests, out) {
 
     await makeDir(directory);
 
-    errors.push(...(await foo(scraper, directory, tests)));
+    errors.push(...(await getTestCases(scraper, directory, tests)));
 
     console.groupEnd(directory);
   }
@@ -97,7 +97,7 @@ async function fetch(tests, out) {
     const stillErrors = [];
     for (const { directory, ...test } of errors) {
       console.log(test);
-      stillErrors.push(...(await foo(scraper, directory, [test])));
+      stillErrors.push(...(await getTestCases(scraper, directory, [test])));
     }
     scraper.close();
 
@@ -115,7 +115,7 @@ function digest(data) {
   return crypto.createHash("sha256").update(data).digest("hex");
 }
 
-async function foo(scraper, directory, tests) {
+async function getTestCases(scraper, directory, tests) {
   const errors = [];
   for (const { id, filename, url, outcome } of tests) {
     console.time(filename);
