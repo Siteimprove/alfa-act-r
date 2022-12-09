@@ -241,7 +241,14 @@ test("7d6734", (t) => fixture(t, Rules.get("R43")));
 
 test("b33eff", (t) => fixture(t, Rules.get("R44")));
 
-test("a25f45", (t) => fixture(t, Rules.get("R45")));
+test("a25f45", (t) =>
+  fixture(t, Rules.get("R45"), {
+    skip: [
+      // Alfa hasn't yet implemented
+      // https://github.com/act-rules/act-rules.github.io/pull/1968
+      "224050",
+    ],
+  }));
 
 test("d0f69e", (t) =>
   fixture(t, Rules.get("R46"), {
