@@ -21,7 +21,7 @@ Installing Alfa packages need authentication to the Github repository for the `@
 
 ### Update test cases
 
-To download the latest version of the test cases:
+To download the latest version of the test cases, build the project then:
 
 ```shell
 $ yarn fixtures [old | new]
