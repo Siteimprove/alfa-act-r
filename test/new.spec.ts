@@ -569,5 +569,4 @@ test("bisz58", (t) =>
 // R108 is SI only
 
 // R109 always has questions in expectation, review flow not currently handled
-// R109 is experimental
 // test.skip("ucwvc8", (t) => fixture(t, Rules.get("R109")));
