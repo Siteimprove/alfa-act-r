@@ -6,14 +6,16 @@
     "clean": "tsc --build --clean",
     "test": "ava",
     "strict": "ava -- --strict",
-    "fixtures": "node scripts/fixtures.js"
+    "fixtures": "node scripts/scrape.js"
   },
   "dependencies": {
     "jsonld": "^8.1.0"
   },
   "devDependencies": {
     "@siteimprove/alfa-act": "^0.53.0",
+    "@siteimprove/alfa-array": "^0.53.0",
     "@siteimprove/alfa-json-ld": "^0.53.0",
+    "@siteimprove/alfa-map": "^0.53.0",
     "@siteimprove/alfa-option": "^0.53.0",
     "@siteimprove/alfa-rules": "^0.53.0",
     "@siteimprove/alfa-scraper": "^0.53.0",

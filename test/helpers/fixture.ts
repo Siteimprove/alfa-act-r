@@ -1,41 +1,37 @@
-import * as path from "path";
-import * as fs from "fs";
-
-import { ExecutionContext } from "ava";
-
-import { Audit, Rule, Outcome } from "@siteimprove/alfa-act";
+import { Array } from "@siteimprove/alfa-array";
+import { Audit, Outcome, Rule } from "@siteimprove/alfa-act";
+import { Map } from "@siteimprove/alfa-map";
 import { Option } from "@siteimprove/alfa-option";
 import { Page } from "@siteimprove/alfa-web";
 
-import { Context } from "./context";
+import { ExecutionContext } from "ava";
+import * as fs from "fs";
+import * as path from "path";
 
-export interface FixtureAnswer {
-  target: string;
-  type: "boolean";
-  question: string;
-  answer: boolean;
-}
+import { Fixture } from "../../common/fixture";
 
-export interface FixtureOptions {
-  // Alfa is known to not match the implementation mapping
-  skip?: Array<string>;
-  // The test is known to need an oracle
-  manual?: Array<string>;
-  // Alfa is known to have a Inapplicable/Passed discrepancy with ACT-R
-  lax?: Array<string>;
-  answers?: {
-    [fixture: string]: Array<FixtureAnswer>;
-  };
-}
+import { Context, Test } from "./context";
 
 const strict = process.argv.slice(2).includes("--strict");
+
+function readFixtures(directory: string): Array<Fixture.Fixture> {
+  return fs
+    .readdirSync(directory)
+    .filter((filename) => filename.endsWith(".json"))
+    .map(
+      (filename) =>
+        JSON.parse(
+          fs.readFileSync(path.join(directory, filename), "utf8")
+        ) as Fixture.Fixture
+    );
+}
 
 export function fixture(
   dir: string
 ): <T, Q, S>(
   t: ExecutionContext<Context<Page, T, Q, S>>,
   rule: Option<Rule<Page, T, Q, S>>,
-  options?: FixtureOptions
+  options?: Fixture.Options
 ) => Promise<void> {
   return async (t, rule, options = {}) => {
     if (!rule.isSome()) {
@@ -44,32 +40,34 @@ export function fixture(
 
     const fixture = t.title;
 
-    const directory = path.join("test", "fixtures", dir, fixture);
-
-    const flags: Array<string> = (options.skip || [])
+    // Record which option has been used to report the unused ones.
+    let seen = (options.skip || [])
       .concat(options.lax || [])
-      .concat(options.manual || []);
-    const seen: { [id: string]: boolean } = {};
-    for (const flag of flags) {
-      seen[flag] = false;
-    }
+      .concat(options.manual || [])
+      .reduce((map, cur) => map.set(cur, false), Map.empty<string, boolean>());
 
-    const tests = fs
-      .readdirSync(directory)
-      .filter((filename) => filename.endsWith(".json"))
-      .map((filename) =>
-        JSON.parse(fs.readFileSync(path.join(directory, filename), "utf8"))
-      );
+    // Read all test cases for a given rule
+    const tests = readFixtures(path.join("test", "fixtures", dir, fixture));
 
     t.plan(tests.length);
 
     for (const test of tests) {
+      // If test has an unsupported type, just push it to the context as Ignored.
+      if (test.type === "xml") {
+        t.context.outcomes.push({
+          kind: Test.Kind.Ignored,
+          url: test.url,
+          rule: rule.get(),
+        });
+        t.pass(test.id);
+        continue;
+      }
+
       const page = Page.from(test.page);
 
-      const skip = options.skip !== undefined && options.skip.includes(test.id);
-      const manual =
-        options.manual !== undefined && options.manual.includes(test.id);
-      const lax = options.lax !== undefined && options.lax.includes(test.id);
+      const skip = options.skip?.includes(test.id) ?? false;
+      const manual = options.manual?.includes(test.id) ?? false;
+      const lax = options.lax?.includes(test.id) ?? false;
       const testID = `${fixture} / ${test.id}`;
 
       if (skip === manual ? skip : lax) {
@@ -78,12 +76,12 @@ export function fixture(
         );
       }
 
-      seen[test.id] = true;
+      seen = seen.set(test.id, true);
 
       const outcome = await Audit.of(page, [rule.get()])
         .evaluate()
         .map((outcomes) =>
-          [...outcomes]
+          Array.from(outcomes)
             .filter((outcome) => outcome.rule === rule.get())
             .reduce((outcome, candidate) => {
               if (Outcome.isFailed(outcome)) {
@@ -107,88 +105,110 @@ export function fixture(
         );
 
       const expected = test.outcome;
-      const actual = outcome.toJSON().outcome;
-
+      const outcomeJSON = outcome.toJSON();
+      const actual = outcomeJSON.outcome as Fixture.Outcome;
       const result = mapping(actual, expected);
 
-      switch (result) {
-        case "ok": // Alfa and ACT-R perfectly agree
-          // In strict mode for marked cases, fail and investigate why it is marked
-          if (strict && (skip || manual || lax)) {
-            t.fail(test.id);
-            t.log("Outcome", outcome.toJSON());
-            t.log("Test", test);
-          } else {
-            t.pass(test.id);
-            // Display warnings if the case was registered as imperfect match
-            if (skip) {
-              t.log(
-                `Test case ${testID} matches but is incorrectly marked as skipped`
-              );
-            }
-            if (manual) {
-              t.log(
-                `Test case ${testID} matches but is incorrectly marked as manual`
-              );
-            }
-            if (lax) {
-              t.log(
-                `Test case ${testID} matches but is incorrectly marked as lax`
-              );
-            }
-          }
-          break;
-        case "error":
-          if (skip) {
-            t.fail.skip(test.id);
-          } else {
-            t.fail(test.id);
-            t.log("Outcome", outcome.toJSON());
-            t.log("Test", test);
-          }
-          break;
-        case "lax":
-          // If the case is known to be a non strict match between Alfa and ACT-R, everything is fine.
-          // Otherwise, emit a warning or an error depending on test mode.
-          if (!lax) {
-            if (strict) {
-              t.fail(test.id);
-              t.log("Outcome", outcome.toJSON());
-              t.log("Test", test);
-            } else {
-              t.pass(test.id);
-              t.log(
-                `Test case ${testID} doesn't match perfectly, investigate and mark as lax.`
-              );
-            }
-          } else {
-            t.pass(test.id);
-          }
-          break;
-        case "manual":
-          // If the case is known to need an oracle, everything is fine.
-          // Otherwise, emit a warning.
-          t.pass(test.id);
-          if (!manual) {
-            t.log(
-              `Test case ${testID} has no or incomplete oracle, mark as manual.`
-            );
-          }
-          break;
-      }
+      report(t, result, fixture, test, outcomeJSON, [skip, manual, lax]);
 
-      t.context.outcomes.push([page, outcome]);
+      t.context.outcomes.push({
+        kind: Test.Kind.Result,
+        input: page,
+        outcome: outcome,
+      });
     }
 
-    const notSeen = Object.entries(seen)
-      .filter(([_, value]) => !value)
-      .map(([id, _]) => id);
+    const notSeen = Array.from(seen.reject((value) => value).keys());
     if (notSeen.length > 0) {
       t.log(
         `Test cases ${fixture} / [${notSeen}] have been deleted upstream. Remove flags.`
       );
     }
   };
+}
+
+type Mapping = "ok" | "error" | "lax" | "manual";
+
+/**
+ * Compare Alfa's outcome with the expected one,
+ * report any problem,
+ * pass or fail the test.
+ */
+function report<T, Q, S>(
+  t: ExecutionContext<Context<Page, T, Q, S>>,
+  result: Mapping,
+  fixtureID: string,
+  test: Fixture.Fixture,
+  outcome: Outcome.JSON,
+  [skip, manual, lax]: [boolean, boolean, boolean]
+): void {
+  const fullTestId = `${fixtureID} / ${test.id}`;
+
+  switch (result) {
+    case "ok": // Alfa and ACT-R perfectly agree
+      // In strict mode for marked cases, fail and investigate why it is marked
+      if (strict && (skip || manual || lax)) {
+        t.fail(test.id);
+        t.log("Outcome", outcome);
+        t.log("Test", test);
+      } else {
+        t.pass(test.id);
+        // Display warnings if the case was registered as imperfect match
+        if (skip) {
+          t.log(
+            `Test case ${fullTestId} matches but is incorrectly marked as skipped`
+          );
+        }
+        if (manual) {
+          t.log(
+            `Test case ${fullTestId} matches but is incorrectly marked as manual`
+          );
+        }
+        if (lax) {
+          t.log(
+            `Test case ${fullTestId} matches but is incorrectly marked as lax`
+          );
+        }
+      }
+      break;
+    case "error":
+      if (skip) {
+        t.fail.skip(test.id);
+      } else {
+        t.fail(test.id);
+        t.log("Outcome", outcome);
+        t.log("Test", test);
+      }
+      break;
+    case "lax":
+      // If the case is known to be a non-strict match between Alfa and ACT-R, everything is fine.
+      // Otherwise, emit a warning or an error depending on test mode.
+      if (!lax) {
+        if (strict) {
+          t.fail(test.id);
+          t.log("Outcome", outcome);
+          t.log("Test", test);
+        } else {
+          t.pass(test.id);
+          t.log(
+            `Test case ${fullTestId} doesn't match perfectly, investigate and mark as lax.`
+          );
+        }
+      } else {
+        t.pass(test.id);
+      }
+      break;
+    case "manual":
+      // If the case is known to need an oracle, everything is fine.
+      // Otherwise, emit a warning.
+      t.pass(test.id);
+      if (!manual) {
+        t.log(
+          `Test case ${fullTestId} has no or incomplete oracle, mark as manual.`
+        );
+      }
+      break;
+  }
 }
 
 /**
@@ -208,10 +228,7 @@ export function fixture(
  *  CantTell      | OK (manual)  | OK (manual) | OK (manual)
  *                | Warning      | Warning     | Warning
  */
-function mapping(
-  actual: string,
-  expected: string
-): "ok" | "error" | "lax" | "manual" {
+function mapping(actual: Fixture.Outcome, expected: Fixture.Outcome): Mapping {
   switch (actual) {
     case "inapplicable":
       switch (expected) {
