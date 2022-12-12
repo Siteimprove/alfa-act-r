@@ -12,6 +12,14 @@
     "target": "es2018",
     "types": ["node"]
   },
-  "files": [],
-  "references": [{ "path": "test" }, { "path": "scripts" }]
+  "files": [
+    "common/fixtures.ts",
+    "scripts/fixtures.ts",
+    "scripts/helpers/headers.ts",
+    "test/helpers/context.ts",
+    "test/helpers/fixture.ts",
+    "test/helpers/report.ts",
+    "test/new.spec.ts",
+    "test/old.spec.ts"
+  ]
 }
