@@ -39,16 +39,7 @@ test("23a2a8", (t) =>
 
 test("3ea0c8", (t) => fixture(t, Rules.get("R3")));
 
-test("b5c3f8", (t) =>
-  fixture(t, Rules.get("R4"), {
-    skip: [
-      // This is an XML file, but when grabbing it we actually scrape the
-      // HTML page that browser build to show is 🙈
-      // This page has no `lang` attribute, so we fail it.
-      // Additionally, we do not really have support for XML
-      "e64115",
-    ],
-  }));
+test("b5c3f8", (t) => fixture(t, Rules.get("R4")));
 
 test("bf051a", (t) => fixture(t, Rules.get("R5")));
 

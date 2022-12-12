@@ -1,10 +1,9 @@
+import { Document } from "@siteimprove/alfa-json-ld";
+import { Page } from "@siteimprove/alfa-web";
 import * as fs from "fs";
 import * as jsonld from "jsonld";
 
-import { Document } from "@siteimprove/alfa-json-ld";
-import { Page } from "@siteimprove/alfa-web";
-
-import { Context } from "./context";
+import { Context, Test } from "./context";
 
 export async function report<T, Q, S>(
   context: Context<Page, T, Q, S>,
@@ -12,20 +11,12 @@ export async function report<T, Q, S>(
 ) {
   const graph: Array<Document> = [];
 
-  for (const [page, outcome] of context.outcomes) {
-    const subject = page.toEARL();
-
-    graph.push(subject);
-
-    const assertion = outcome.toEARL();
-
-    assertion["earl:test"] = outcome.rule.toEARL();
-
-    assertion["earl:subject"] = {
-      "@id": subject["@id"],
-    };
-
-    graph.push(assertion);
+  for (const test of context.outcomes) {
+    if (test.kind === Test.Kind.Ignored) {
+      recordIgnoredCase(graph, test);
+    } else {
+      recordCase(graph, test);
+    }
   }
 
   const compact = await jsonld.compact(
@@ -34,6 +25,58 @@ export async function report<T, Q, S>(
   );
 
   fs.writeFileSync(out, JSON.stringify(compact, null, 2));
+}
+
+function recordCase<T, Q, S>(
+  graph: Array<Document>,
+  test: Test.Result<Page, T, Q, S>
+): void {
+  const { input: page, outcome } = test;
+
+  const subject = page.toEARL();
+
+  graph.push(subject);
+
+  const assertion = outcome.toEARL();
+
+  assertion["earl:test"] = outcome.rule.toEARL();
+
+  assertion["earl:subject"] = {
+    "@id": subject["@id"],
+  };
+
+  graph.push(assertion);
+}
+
+function recordIgnoredCase<I, T, Q, S>(
+  graph: Array<Document>,
+  test: Test.Ignored<I, T, Q, S>
+): void {
+  const subject = {
+    "@context": {
+      earl: "http://www.w3.org/ns/earl#",
+    },
+    "@id": test.url,
+    source: test.url,
+    "@type": ["earl:TestSubject"],
+    url: test.url,
+  };
+  const assertion = {
+    "@context": {
+      earl: "http://www.w3.org/ns/earl#",
+    },
+    "@type": "earl:Assertion",
+    "earl:subject": { "@id": test.url },
+    "earl:result": {
+      "@type": "earl:TestResult",
+      "earl:outcome": {
+        "@id": "earl:cantTell",
+      },
+    },
+    "earl:test": test.rule.toEARL(),
+  };
+
+  graph.push(subject, assertion);
 }
 
 /**

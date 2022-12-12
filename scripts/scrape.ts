@@ -50,9 +50,7 @@ if (fetchW3C) {
 
 async function cleanAndFetch(source: Source) {
   const { tests, out } = testCases[source];
-  console.log(`Cleaning ${out}`);
   fs.rmSync(out, { recursive: true, force: true });
-  console.log(`Fetching…`);
   await fetch(tests, out);
 }
 
@@ -147,51 +145,49 @@ async function getTestCases(
   for (const { id, filename, url, outcome } of tests) {
     console.time(filename);
 
-    if (!url.endsWith(".xml")) {
+    if (url.endsWith(".xml")) {
+      const foo = await axios.get(url, {
+        headers: {
+          "Accept-Encoding": "application/xml",
+        },
+      });
+
+      const fixture = JSON.stringify(
+        { type: "xml", id, url, data: foo.data },
+        undefined,
+        2
+      );
+      fs.writeFileSync(path.join(directory, filename), fixture + "\n");
       continue;
     }
 
-    const foo = await axios.get(url, {
-      headers: {
-        "Accept-Encoding": "application/xml",
-      },
-    });
-    console.log(foo.data);
+    const result = await scraper
+      .scrape(url)
+      .then((page) => page.map((page) => page.toJSON()));
 
-    const fixture = JSON.stringify(
-      { type: "xml", id, url, data: foo.data },
-      undefined,
-      2
-    );
-    fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+    if (result.isErr()) {
+      console.error("%s: %s (%s)", filename, result.getErr(), url);
+      errors.push({ directory, id, filename, url, outcome });
+    }
 
-    // const result = await scraper
-    //   .scrape(url)
-    //   .then((page) => page.map((page) => page.toJSON()));
-    //
-    // if (result.isErr()) {
-    //   console.error("%s: %s (%s)", filename, result.getErr(), url);
-    //   errors.push({ directory, id, filename, url, outcome });
-    // }
-    //
-    // for (const page of result) {
-    //   page.request.headers = filterHeaders(page.request.headers);
-    //   page.response.headers = filterHeaders(page.response.headers);
-    //
-    //   const fixture = JSON.stringify(
-    //     {
-    //       id,
-    //       outcome,
-    //       page,
-    //     },
-    //     undefined,
-    //     2
-    //   );
-    //
-    //   fs.writeFileSync(path.join(directory, filename), fixture + "\n");
-    // }
-    //
-    // console.timeEnd(filename);
+    for (const page of result) {
+      page.request.headers = filterHeaders(page.request.headers);
+      page.response.headers = filterHeaders(page.response.headers);
+
+      const fixture = JSON.stringify(
+        {
+          id,
+          outcome,
+          page,
+        },
+        undefined,
+        2
+      );
+
+      fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+    }
+
+    console.timeEnd(filename);
   }
 
   return errors;

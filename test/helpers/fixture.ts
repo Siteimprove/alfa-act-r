@@ -1,49 +1,37 @@
-import * as path from "path";
-import * as fs from "fs";
-
-import { ExecutionContext } from "ava";
-
-import { Audit, Rule, Outcome } from "@siteimprove/alfa-act";
+import { Array } from "@siteimprove/alfa-array";
+import { Audit, Outcome, Rule } from "@siteimprove/alfa-act";
+import { Map } from "@siteimprove/alfa-map";
 import { Option } from "@siteimprove/alfa-option";
 import { Page } from "@siteimprove/alfa-web";
 
-import { Context } from "./context";
+import { ExecutionContext } from "ava";
+import * as fs from "fs";
+import * as path from "path";
 
-export interface FixtureAnswer {
-  target: string;
-  type: "boolean";
-  question: string;
-  answer: boolean;
-}
+import { Fixture } from "../../common/fixture";
 
-export interface FixtureOptions {
-  // Alfa is known to not match the implementation mapping
-  skip?: Array<string>;
-  // The test is known to need an oracle
-  manual?: Array<string>;
-  // Alfa is known to have a Inapplicable/Passed discrepancy with ACT-R
-  lax?: Array<string>;
-  answers?: {
-    [fixture: string]: Array<FixtureAnswer>;
-  };
-}
-
-type OutcomeType = "inapplicable" | "passed" | "failed" | "cantTell";
-
-interface Fixture {
-  id: string;
-  outcome: OutcomeType;
-  page: Page.JSON;
-}
+import { Context, Test } from "./context";
 
 const strict = process.argv.slice(2).includes("--strict");
+
+function readFixtures(directory: string): Array<Fixture.Fixture> {
+  return fs
+    .readdirSync(directory)
+    .filter((filename) => filename.endsWith(".json"))
+    .map(
+      (filename) =>
+        JSON.parse(
+          fs.readFileSync(path.join(directory, filename), "utf8")
+        ) as Fixture.Fixture
+    );
+}
 
 export function fixture(
   dir: string
 ): <T, Q, S>(
   t: ExecutionContext<Context<Page, T, Q, S>>,
   rule: Option<Rule<Page, T, Q, S>>,
-  options?: FixtureOptions
+  options?: Fixture.Options
 ) => Promise<void> {
   return async (t, rule, options = {}) => {
     if (!rule.isSome()) {
@@ -52,31 +40,29 @@ export function fixture(
 
     const fixture = t.title;
 
-    const directory = path.join("test", "fixtures", dir, fixture);
-
-    const flags: Array<string> = (options.skip || [])
+    // Record which option has been used to report the unused ones.
+    let seen = (options.skip || [])
       .concat(options.lax || [])
-      .concat(options.manual || []);
-    const seen: { [id: string]: boolean } = {};
-    for (const flag of flags) {
-      seen[flag] = false;
-    }
+      .concat(options.manual || [])
+      .reduce((map, cur) => map.set(cur, false), Map.empty<string, boolean>());
 
-    const tests = fs
-      .readdirSync(directory)
-      .filter((filename) => filename.endsWith(".json"))
-      .map(
-        (filename) =>
-          JSON.parse(
-            fs.readFileSync(path.join(directory, filename), "utf8")
-          ) as Fixture
-      );
+    // Read all test cases for a given rule
+    const tests = readFixtures(path.join("test", "fixtures", dir, fixture));
 
     t.plan(tests.length);
 
     for (const test of tests) {
-      // TODO if test has a "type" that is unsupported (currently: xml), just push
-      // it to the context as Ignored.
+      // If test has an unsupported type, just push it to the context as Ignored.
+      if (test.type === "xml") {
+        t.context.outcomes.push({
+          kind: Test.Kind.Ignored,
+          url: test.url,
+          rule: rule.get(),
+        });
+        t.pass(test.id);
+        continue;
+      }
+
       const page = Page.from(test.page);
 
       const skip = options.skip?.includes(test.id) ?? false;
@@ -90,12 +76,12 @@ export function fixture(
         );
       }
 
-      seen[test.id] = true;
+      seen = seen.set(test.id, true);
 
       const outcome = await Audit.of(page, [rule.get()])
         .evaluate()
         .map((outcomes) =>
-          [...outcomes]
+          Array.from(outcomes)
             .filter((outcome) => outcome.rule === rule.get())
             .reduce((outcome, candidate) => {
               if (Outcome.isFailed(outcome)) {
@@ -120,18 +106,19 @@ export function fixture(
 
       const expected = test.outcome;
       const outcomeJSON = outcome.toJSON();
-      const actual = outcomeJSON.outcome as OutcomeType;
+      const actual = outcomeJSON.outcome as Fixture.Outcome;
       const result = mapping(actual, expected);
 
       report(t, result, fixture, test, outcomeJSON, [skip, manual, lax]);
 
-      // TODO add the correct kind to the result.
-      t.context.outcomes.push([page, outcome]);
+      t.context.outcomes.push({
+        kind: Test.Kind.Result,
+        input: page,
+        outcome: outcome,
+      });
     }
 
-    const notSeen = Object.entries(seen)
-      .filter(([_, value]) => !value)
-      .map(([id, _]) => id);
+    const notSeen = Array.from(seen.reject((value) => value).keys());
     if (notSeen.length > 0) {
       t.log(
         `Test cases ${fixture} / [${notSeen}] have been deleted upstream. Remove flags.`
@@ -151,7 +138,7 @@ function report<T, Q, S>(
   t: ExecutionContext<Context<Page, T, Q, S>>,
   result: Mapping,
   fixtureID: string,
-  test: Fixture,
+  test: Fixture.Fixture,
   outcome: Outcome.JSON,
   [skip, manual, lax]: [boolean, boolean, boolean]
 ): void {
@@ -194,7 +181,7 @@ function report<T, Q, S>(
       }
       break;
     case "lax":
-      // If the case is known to be a non strict match between Alfa and ACT-R, everything is fine.
+      // If the case is known to be a non-strict match between Alfa and ACT-R, everything is fine.
       // Otherwise, emit a warning or an error depending on test mode.
       if (!lax) {
         if (strict) {
@@ -241,7 +228,7 @@ function report<T, Q, S>(
  *  CantTell      | OK (manual)  | OK (manual) | OK (manual)
  *                | Warning      | Warning     | Warning
  */
-function mapping(actual: OutcomeType, expected: OutcomeType): Mapping {
+function mapping(actual: Fixture.Outcome, expected: Fixture.Outcome): Mapping {
   switch (actual) {
     case "inapplicable":
       switch (expected) {
