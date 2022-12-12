@@ -5,7 +5,7 @@ import axios from "axios";
 
 import { Scraper } from "@siteimprove/alfa-scraper";
 
-import * as headers from "./helpers/headers";
+import { filterHeaders } from "./helpers/headers";
 
 interface TestCaseList {
   tests: string;
@@ -134,42 +134,64 @@ function digest(data: string) {
   return createHash("sha256").update(data).digest("hex");
 }
 
+interface ErrorDescription extends TestDescription {
+  directory: string;
+}
+
 async function getTestCases(
   scraper: Scraper,
   directory: string,
   tests: Array<TestDescription>
 ) {
-  const errors = [];
+  const errors: Array<ErrorDescription> = [];
   for (const { id, filename, url, outcome } of tests) {
     console.time(filename);
 
-    const result = await scraper
-      .scrape(url)
-      .then((page) => page.map((page) => page.toJSON()));
-
-    if (result.isErr()) {
-      console.error("%s: %s (%s)", filename, result.getErr(), url);
-      errors.push({ directory, id, filename, url, outcome });
+    if (!url.endsWith(".xml")) {
+      continue;
     }
 
-    for (const page of result) {
-      page.request.headers = headers.filter(page.request.headers);
-      page.response.headers = headers.filter(page.response.headers);
+    const foo = await axios.get(url, {
+      headers: {
+        "Accept-Encoding": "application/xml",
+      },
+    });
+    console.log(foo.data);
 
-      const fixture = JSON.stringify(
-        {
-          id,
-          outcome,
-          page,
-        },
-        undefined,
-        2
-      );
+    const fixture = JSON.stringify(
+      { type: "xml", id, url, data: foo.data },
+      undefined,
+      2
+    );
+    fs.writeFileSync(path.join(directory, filename), fixture + "\n");
 
-      fs.writeFileSync(path.join(directory, filename), fixture + "\n");
-    }
-
-    console.timeEnd(filename);
+    // const result = await scraper
+    //   .scrape(url)
+    //   .then((page) => page.map((page) => page.toJSON()));
+    //
+    // if (result.isErr()) {
+    //   console.error("%s: %s (%s)", filename, result.getErr(), url);
+    //   errors.push({ directory, id, filename, url, outcome });
+    // }
+    //
+    // for (const page of result) {
+    //   page.request.headers = filterHeaders(page.request.headers);
+    //   page.response.headers = filterHeaders(page.response.headers);
+    //
+    //   const fixture = JSON.stringify(
+    //     {
+    //       id,
+    //       outcome,
+    //       page,
+    //     },
+    //     undefined,
+    //     2
+    //   );
+    //
+    //   fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+    // }
+    //
+    // console.timeEnd(filename);
   }
 
   return errors;

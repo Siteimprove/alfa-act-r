@@ -6,7 +6,7 @@
     "clean": "tsc --build --clean",
     "test": "ava",
     "strict": "ava -- --strict",
-    "fixtures": "node scripts/fixtures.js"
+    "fixtures": "node scripts/scrape.js"
   },
   "dependencies": {
     "jsonld": "^8.1.0"
