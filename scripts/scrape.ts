@@ -61,6 +61,37 @@ interface TestDescription {
   outcome: string;
 }
 
+// Rules for which we do not have an implementation, do not plan to have one,
+// and therefore do not need to fetch test cases.
+const ignoredRules = [
+  // HTML images contain no text
+  "0va7u6",
+  // Link in context is descriptive
+  "5effbb",
+  // Device motion based changes to the content can also be created from the user interface
+  "7677a9",
+  // Focusable element has no keyboard trap
+  "80af7b",
+  // Content has alternative for visual reference
+  "9bd38c",
+  // Link is descriptive
+  "aizyf1",
+  // Device motion based changes to the content can be disabled
+  "c249d5",
+  // Attribute is not duplicated
+  "e6952f",
+  // Image not in the accessibility tree is decorative
+  "e88epe",
+  // Text content that changes automatically can be paused, stopped or hidden
+  "efbfc7",
+  // No keyboard shortcut uses only printable characters
+  "ffbc54",
+  // Image accessible name is descriptive
+  "qt1vmo",
+  // HTML page language subtag matches default language
+  "ucwvc8",
+];
+
 async function fetch(tests: string, out: string) {
   const { data } = await axios.get(tests, {
     headers: {
@@ -71,6 +102,10 @@ async function fetch(tests: string, out: string) {
   const rules = new Map<string, { tests: Array<TestDescription> }>();
 
   for (const test of data.testcases) {
+    if (ignoredRules.includes(test.ruleId)) {
+      continue;
+    }
+
     const directory = path.join(out, test.ruleId).toLowerCase();
     const url = new URL(test.url).href;
 
@@ -146,18 +181,21 @@ async function getTestCases(
     console.time(filename);
 
     if (url.endsWith(".xml")) {
-      const foo = await axios.get(url, {
+      const response = await axios.get(url, {
         headers: {
           "Accept-Encoding": "application/xml",
         },
       });
 
       const fixture = JSON.stringify(
-        { type: "xml", id, url, data: foo.data },
+        { type: "xml", id, url, data: response.data },
         undefined,
         2
       );
       fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+
+      console.timeEnd(filename);
+
       continue;
     }
 
