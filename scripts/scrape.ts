@@ -1,3 +1,4 @@
+import { None, Option } from "@siteimprove/alfa-option";
 import * as path from "path";
 import * as fs from "fs";
 import { createHash } from "crypto";
@@ -171,62 +172,88 @@ interface ErrorDescription extends TestDescription {
   directory: string;
 }
 
+// These cases have instant redirect, we cannot use the normal Scraper since
+// Puppeteer follows the redirect and we end up grabbing the wrong page.
+// TODO store the URL instead?
+const instantRedirect = [
+  ["bc659a", "2907c2"],
+  ["bc659a", "8adcea"],
+  ["bisz58", "12f9c8"],
+  ["bisz58", "e6fbb9"],
+] as const;
+
 async function getTestCases(
   scraper: Scraper,
   directory: string,
   tests: Array<TestDescription>
-) {
+): Promise<Array<ErrorDescription>> {
   const errors: Array<ErrorDescription> = [];
-  for (const { id, filename, url, outcome } of tests) {
-    console.time(filename);
+  for (const test of tests) {
+    console.time(test.filename);
 
-    if (url.endsWith(".xml")) {
-      const response = await axios.get(url, {
-        headers: {
-          "Accept-Encoding": "application/xml",
-        },
-      });
-
-      const fixture = JSON.stringify(
-        { type: "xml", id, url, data: response.data },
-        undefined,
-        2
+    if (test.url.endsWith(".xml")) {
+      // XML is not supported by Alfa. Store the data and mark as ignored.
+      scrapeXML(directory, test);
+    } else {
+      (await getTestCase(scraper, directory, test)).map((error) =>
+        errors.push(error)
       );
-      fs.writeFileSync(path.join(directory, filename), fixture + "\n");
-
-      console.timeEnd(filename);
-
-      continue;
     }
 
-    const result = await scraper
-      .scrape(url)
-      .then((page) => page.map((page) => page.toJSON()));
-
-    if (result.isErr()) {
-      console.error("%s: %s (%s)", filename, result.getErr(), url);
-      errors.push({ directory, id, filename, url, outcome });
-    }
-
-    for (const page of result) {
-      page.request.headers = filterHeaders(page.request.headers);
-      page.response.headers = filterHeaders(page.response.headers);
-
-      const fixture = JSON.stringify(
-        {
-          id,
-          outcome,
-          page,
-        },
-        undefined,
-        2
-      );
-
-      fs.writeFileSync(path.join(directory, filename), fixture + "\n");
-    }
-
-    console.timeEnd(filename);
+    console.timeEnd(test.filename);
   }
 
   return errors;
+}
+
+async function getTestCase(
+  scraper: Scraper,
+  directory: string,
+  { id, filename, url, outcome }: TestDescription
+): Promise<Option<ErrorDescription>> {
+  const result = await scraper
+    .scrape(url)
+    .then((page) => page.map((page) => page.toJSON()));
+
+  if (result.isErr()) {
+    console.error("%s: %s (%s)", filename, result.getErr(), url);
+    return Option.of({ directory, id, filename, url, outcome });
+  }
+
+  for (const page of result) {
+    page.request.headers = filterHeaders(page.request.headers);
+    page.response.headers = filterHeaders(page.response.headers);
+
+    const fixture = JSON.stringify(
+      {
+        type: "test",
+        id,
+        outcome,
+        page,
+      },
+      undefined,
+      2
+    );
+
+    fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+  }
+  return None;
+}
+
+async function scrapeXML(
+  directory: string,
+  { id, filename, url }: TestDescription
+) {
+  const response = await axios.get(url, {
+    headers: {
+      "Accept-Encoding": "application/xml",
+    },
+  });
+
+  const fixture = JSON.stringify(
+    { type: "xml", id, url, data: response.data },
+    undefined,
+    2
+  );
+  fs.writeFileSync(path.join(directory, filename), fixture + "\n");
 }
