@@ -10,18 +10,9 @@ import { Scraper } from "@siteimprove/alfa-scraper";
 
 import { filterHeaders } from "./helpers/headers";
 
-interface TestCaseList {
-  tests: string;
-}
-
 const testCases = {
-  old: {
-    tests: "https://act-rules.github.io/testcases.json",
-  } as TestCaseList,
-  new: {
-    tests:
-      "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json",
-  } as TestCaseList,
+  old: "https://act-rules.github.io/testcases.json",
+  new: "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json",
 } as const;
 
 type Source = keyof typeof testCases;
@@ -76,7 +67,7 @@ async function cleanAndFetch(source: Source) {
     console.warn(errors);
 
     const scraper = await Scraper.of();
-    const stillErrors = [];
+    const stillErrors: Array<TestDescription> = [];
     for (const test of errors) {
       console.log(test);
       stillErrors.push(...(await getTestCases(scraper, [test])));
@@ -127,8 +118,7 @@ const ignoredRules = [
 async function getTestDescriptions(
   source: Source
 ): Promise<Map<string, Array<TestDescription>>> {
-  const { tests } = testCases[source];
-  const { data } = await axios.get(tests, {
+  const { data } = await axios.get(testCases[source], {
     headers: { "Accept-Encoding": "application/json" },
   });
 
