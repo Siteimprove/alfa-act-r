@@ -12,18 +12,15 @@ import { filterHeaders } from "./helpers/headers";
 
 interface TestCaseList {
   tests: string;
-  out: string;
 }
 
 const testCases = {
   old: {
     tests: "https://act-rules.github.io/testcases.json",
-    out: path.join("test", "fixtures", "old"),
   } as TestCaseList,
   new: {
     tests:
       "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json",
-    out: path.join("test", "fixtures", "new"),
   } as TestCaseList,
 } as const;
 
@@ -52,34 +49,22 @@ if (fetchW3C) {
 }
 
 async function cleanAndFetch(source: Source) {
-  const { tests, out } = testCases[source];
-  fs.rmSync(out, { recursive: true, force: true });
-  await fetch(tests, out);
-}
+  fs.rmSync(path.join("test", "fixtures", source), {
+    recursive: true,
+    force: true,
+  });
 
-interface TestDescription {
-  id: string;
-  filename: string;
-  url: string;
-  outcome: string;
-}
-
-interface ErrorDescription extends TestDescription {
-  directory: string;
-}
-
-async function fetch(tests: string, out: string) {
-  const rules = await getTestDescriptions(tests, out);
+  const rules = await getTestDescriptions(source);
 
   const scraper = await Scraper.of();
-  const errors: Array<ErrorDescription> = [];
+  const errors: Array<TestDescription> = [];
 
   for (const [directory, tests] of rules) {
     console.group(directory);
 
     fs.mkdirSync(directory, { recursive: true });
 
-    errors.push(...(await getTestCases(scraper, directory, tests)));
+    errors.push(...(await getTestCases(scraper, tests)));
 
     console.groupEnd();
   }
@@ -92,9 +77,9 @@ async function fetch(tests: string, out: string) {
 
     const scraper = await Scraper.of();
     const stillErrors = [];
-    for (const { directory, ...test } of errors) {
+    for (const test of errors) {
       console.log(test);
-      stillErrors.push(...(await getTestCases(scraper, directory, [test])));
+      stillErrors.push(...(await getTestCases(scraper, [test])));
     }
     scraper.close();
 
@@ -140,9 +125,9 @@ const ignoredRules = [
 ];
 
 async function getTestDescriptions(
-  tests: string,
-  out: string
+  source: Source
 ): Promise<Map<string, Array<TestDescription>>> {
+  const { tests } = testCases[source];
   const { data } = await axios.get(tests, {
     headers: { "Accept-Encoding": "application/json" },
   });
@@ -150,26 +135,25 @@ async function getTestDescriptions(
   let rules = Map.empty<string, Array<TestDescription>>();
 
   for (const test of data.testcases) {
-    if (ignoredRules.includes(test.ruleId)) {
+    const { ruleId } = test;
+    if (ignoredRules.includes(ruleId)) {
       continue;
     }
 
-    const directory = path.join(out, test.ruleId).toLowerCase();
     const url = new URL(test.url).href;
-
     const id = digest(url).substring(0, 6);
-    const filename = id + ".json";
 
-    const testDescription: TestDescription = {
+    const testDescription = TestDescription.of(
+      ruleId,
       id,
-      filename,
       url,
-      outcome: test.expected,
-    };
+      source,
+      test.expected
+    );
 
     rules = rules.set(
-      directory,
-      Array.append(rules.get(directory).getOr([]), testDescription)
+      ruleId,
+      Array.append(rules.get(ruleId).getOr([]), testDescription)
     );
   }
 
@@ -192,20 +176,17 @@ const instantRedirect = [
 
 async function getTestCases(
   scraper: Scraper,
-  directory: string,
   tests: Array<TestDescription>
-): Promise<Array<ErrorDescription>> {
-  const errors: Array<ErrorDescription> = [];
+): Promise<Array<TestDescription>> {
+  const errors: Array<TestDescription> = [];
   for (const test of tests) {
     console.time(test.filename);
 
     if (test.url.endsWith(".xml")) {
       // XML is not supported by Alfa. Store the data and mark as ignored.
-      scrapeXML(directory, test);
+      scrapeXML(test);
     } else {
-      (await getTestCase(scraper, directory, test)).map((error) =>
-        errors.push(error)
-      );
+      (await getTestCase(scraper, test)).map((error) => errors.push(error));
     }
 
     console.timeEnd(test.filename);
@@ -216,16 +197,15 @@ async function getTestCases(
 
 async function getTestCase(
   scraper: Scraper,
-  directory: string,
-  { id, filename, url, outcome }: TestDescription
-): Promise<Option<ErrorDescription>> {
+  test: TestDescription
+): Promise<Option<TestDescription>> {
   const result = await scraper
-    .scrape(url)
+    .scrape(test.url)
     .then((page) => page.map((page) => page.toJSON()));
 
   if (result.isErr()) {
-    console.error("%s: %s (%s)", filename, result.getErr(), url);
-    return Option.of({ directory, id, filename, url, outcome });
+    console.error("%s: %s (%s)", test.filename, result.getErr(), test.url);
+    return Option.of(test);
   }
 
   for (const page of result) {
@@ -233,35 +213,97 @@ async function getTestCase(
     page.response.headers = filterHeaders(page.response.headers);
 
     const fixture = JSON.stringify(
-      {
-        type: "test",
-        id,
-        outcome,
-        page,
-      },
+      { type: "test", id: test.id, outcome: test.outcome, page },
       undefined,
       2
     );
-
-    fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+    fs.writeFileSync(path.join(test.directory, test.filename), fixture + "\n");
   }
+
   return None;
 }
 
-async function scrapeXML(
-  directory: string,
-  { id, filename, url }: TestDescription
-) {
-  const response = await axios.get(url, {
-    headers: {
-      "Accept-Encoding": "application/xml",
-    },
+async function scrapeXML(test: TestDescription) {
+  const response = await axios.get(test.url, {
+    headers: { "Accept-Encoding": "application/xml" },
   });
 
   const fixture = JSON.stringify(
-    { type: "xml", id, url, data: response.data },
+    { type: "xml", id: test.id, url: test.url, data: response.data },
     undefined,
     2
   );
-  fs.writeFileSync(path.join(directory, filename), fixture + "\n");
+  fs.writeFileSync(path.join(test.directory, test.filename), fixture + "\n");
+}
+
+class TestDescription {
+  public static of(
+    ruleId: string,
+    id: string,
+    url: string,
+    source: Source,
+    outcome: string
+  ): TestDescription {
+    return new TestDescription(ruleId, id, url, source, outcome);
+  }
+
+  // The 6 chars rule ID provided by ACT rules
+  private readonly _ruleId: string;
+  // The 6 chars test ID computed here
+  private readonly _id: string;
+  // The URL of the test case provided by ACT rules
+  private readonly _url: string;
+  // The tests set (new/old) this is part of
+  private readonly _source: Source;
+  // The expected outcome of the test case
+  private readonly _outcome: string;
+  // The directory where the case is persisted
+  private readonly _directory: string;
+  // The filename storing the case
+  private readonly _filename: string;
+
+  private constructor(
+    ruleId: string,
+    id: string,
+    url: string,
+    source: Source,
+    outcome: string
+  ) {
+    this._ruleId = ruleId;
+    this._id = id;
+    this._url = url;
+    this._source = source;
+    this._outcome = outcome;
+
+    this._directory = path.join("test", "fixtures", this._source, this._ruleId);
+    this._filename = `${id}.json`;
+  }
+
+  public get ruleId(): string {
+    return this._ruleId;
+  }
+
+  public get id(): string {
+    return this._id;
+  }
+
+  public get url(): string {
+    return this._url;
+  }
+
+  public get source(): string {
+    return this._source;
+  }
+
+  public get outcome(): string {
+    return this._outcome;
+  }
+
+  public get directory(): string {
+    return this._directory;
+  }
+
+  public get filename(): string {
+    return this._filename;
+  }
 }
