@@ -158,13 +158,12 @@ function digest(data: string) {
 
 // These cases have instant redirect, we cannot use the normal Scraper since
 // Puppeteer follows the redirect and we end up grabbing the wrong page.
-// TODO store the URL instead?
-const instantRedirect = [
-  ["bc659a", "2907c2"],
-  ["bc659a", "8adcea"],
-  ["bisz58", "12f9c8"],
-  ["bisz58", "e6fbb9"],
-] as const;
+function hasInstantRedirect(ruleId: string, testId: string): boolean {
+  return (
+    (ruleId === "bc659a" && ["2907c2", "8adcea"].includes(testId)) ||
+    (ruleId === "bisz58" && ["12f9c8", "e6fbb9"].includes(testId))
+  );
+}
 
 async function getTestCases(
   scraper: Scraper,
@@ -177,6 +176,8 @@ async function getTestCases(
     if (test.url.endsWith(".xml")) {
       // XML is not supported by Alfa. Store the data and mark as ignored.
       scrapeXML(test);
+    } else if (hasInstantRedirect(test.ruleId, test.id)) {
+      console.log(`Skipping ${test.ruleId} / ${test.id}`);
     } else {
       (await getTestCase(scraper, test)).map((error) => errors.push(error));
     }
