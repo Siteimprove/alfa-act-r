@@ -12908,6 +12908,47 @@
       }
     },
     {
+      "@id": "https://act-rules.github.io/testcases/b5c3f8/580a61d57084cdbbe6b27c3dc35d4cc51d078c41.xml",
+      "@type": "TestSubject"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell"
+      },
+      "subject": {
+        "@id": "https://act-rules.github.io/testcases/b5c3f8/580a61d57084cdbbe6b27c3dc35d4cc51d078c41.xml"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r4",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://act-rules.github.io/testcases/bf051a/73848bd985bde636a3d21962036d1541cad24a9e.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -16977,7 +17018,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/b5c3f8/580a61d57084cdbbe6b27c3dc35d4cc51d078c41.xml",
+      "@id": "https://act-rules.github.io/testcases/b5c3f8/190e6aec2df43e234c468b187d427c32d5d942c1.svg",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -16997,7 +17038,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/b5c3f8/580a61d57084cdbbe6b27c3dc35d4cc51d078c41.xml"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/b5c3f8/190e6aec2df43e234c468b187d427c32d5d942c1.svg"
         },
         {
           "@type": [
@@ -17010,40 +17051,30 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<math></math>"
+            "cnt:chars": "<svg xmlns=\"http://www.w3.org/2000/svg\"></svg>"
           },
           "http-vocab:headers": {
             "@list": [
               {
                 "@type": "http-vocab:MessageHeader",
                 "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "application/xml"
+                "http-vocab:fieldValue": "image/svg+xml"
               }
             ]
           },
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/b5c3f8/580a61d57084cdbbe6b27c3dc35d4cc51d078c41.xml"
+      "url": "https://act-rules.github.io/testcases/b5c3f8/190e6aec2df43e234c468b187d427c32d5d942c1.svg"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute is either missing, empty, or only whitespace",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/b5c3f8/580a61d57084cdbbe6b27c3dc35d4cc51d078c41.xml"
+        "@id": "https://act-rules.github.io/testcases/b5c3f8/190e6aec2df43e234c468b187d427c32d5d942c1.svg"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r4",
@@ -21093,7 +21124,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/b5c3f8/190e6aec2df43e234c468b187d427c32d5d942c1.svg",
+      "@id": "https://act-rules.github.io/testcases/b5c3f8/9e6fd0d4112ad490218f17263e36ec33f8adb8db.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -21113,7 +21144,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/b5c3f8/190e6aec2df43e234c468b187d427c32d5d942c1.svg"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/b5c3f8/9e6fd0d4112ad490218f17263e36ec33f8adb8db.html"
         },
         {
           "@type": [
@@ -21126,30 +21157,40 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<svg xmlns=\"http://www.w3.org/2000/svg\"></svg>"
+            "cnt:chars": "<!DOCTYPE html> <html lang=\"en\"></html>"
           },
           "http-vocab:headers": {
             "@list": [
               {
                 "@type": "http-vocab:MessageHeader",
                 "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "image/svg+xml"
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
               }
             ]
           },
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/b5c3f8/190e6aec2df43e234c468b187d427c32d5d942c1.svg"
+      "url": "https://act-rules.github.io/testcases/b5c3f8/9e6fd0d4112ad490218f17263e36ec33f8adb8db.html"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The `lang` attribute exists and is neither empty nor only whitespace",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]"
+        }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/b5c3f8/190e6aec2df43e234c468b187d427c32d5d942c1.svg"
+        "@id": "https://act-rules.github.io/testcases/b5c3f8/9e6fd0d4112ad490218f17263e36ec33f8adb8db.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r4",
@@ -25284,103 +25325,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
             "title": "Ensuring that id attributes are unique on a Web page"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://act-rules.github.io/testcases/b5c3f8/9e6fd0d4112ad490218f17263e36ec33f8adb8db.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/b5c3f8/9e6fd0d4112ad490218f17263e36ec33f8adb8db.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <html lang=\"en\"></html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://act-rules.github.io/testcases/b5c3f8/9e6fd0d4112ad490218f17263e36ec33f8adb8db.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute exists and is neither empty nor only whitespace",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://act-rules.github.io/testcases/b5c3f8/9e6fd0d4112ad490218f17263e36ec33f8adb8db.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r4",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:language-of-page",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Language of Page"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using the language attribute on the HTML element"
           }
         ]
       }
@@ -30694,6 +30638,28 @@
       }
     },
     {
+      "@id": "https://act-rules.github.io/testcases/6a7281/88b2def4afd3f627fc5ee33f40694c3f3126f83b.xml",
+      "@type": "TestSubject"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell"
+      },
+      "subject": {
+        "@id": "https://act-rules.github.io/testcases/6a7281/88b2def4afd3f627fc5ee33f40694c3f3126f83b.xml"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r19",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": []
+      }
+    },
+    {
       "@id": "https://act-rules.github.io/testcases/674b10/5f2fe96c4ca0e1778b07d3c05d14d9df3998ab40.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -34252,7 +34218,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/88b2def4afd3f627fc5ee33f40694c3f3126f83b.xml",
+      "@id": "https://act-rules.github.io/testcases/6a7281/0694d98f33527257b577a5cdf7fa93bfa509e7b2.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -34272,7 +34238,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/88b2def4afd3f627fc5ee33f40694c3f3126f83b.xml"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/0694d98f33527257b577a5cdf7fa93bfa509e7b2.html"
         },
         {
           "@type": [
@@ -34285,30 +34251,40 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<math aria-hidden=\"true\"></math>"
+            "cnt:chars": "<!DOCTYPE html> <my-button role=\"button\" aria-expanded=\"collapsed\">My button</my-button>"
           },
           "http-vocab:headers": {
             "@list": [
               {
                 "@type": "http-vocab:MessageHeader",
                 "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "application/xml"
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
               }
             ]
           },
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/88b2def4afd3f627fc5ee33f40694c3f3126f83b.xml"
+      "url": "https://act-rules.github.io/testcases/6a7281/0694d98f33527257b577a5cdf7fa93bfa509e7b2.html"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The attribute does not have a valid value",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/my-button[1]/@aria-expanded"
+        }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/88b2def4afd3f627fc5ee33f40694c3f3126f83b.xml"
+        "@id": "https://act-rules.github.io/testcases/6a7281/0694d98f33527257b577a5cdf7fa93bfa509e7b2.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -37822,7 +37798,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/0694d98f33527257b577a5cdf7fa93bfa509e7b2.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/6e3ed1ee9967fad97492ec854b506cb07d4f5e63.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -37842,7 +37818,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/0694d98f33527257b577a5cdf7fa93bfa509e7b2.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/6e3ed1ee9967fad97492ec854b506cb07d4f5e63.html"
         },
         {
           "@type": [
@@ -37855,7 +37831,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <my-button role=\"button\" aria-expanded=\"collapsed\">My button</my-button>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"textbox\" aria-placeholder=\"MM-DD-YYYY\" aria-label=\"Your birthdate\">\n\tMM-DD-YYYY\n</div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -37869,14 +37845,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/0694d98f33527257b577a5cdf7fa93bfa509e7b2.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/6e3ed1ee9967fad97492ec854b506cb07d4f5e63.html"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The attribute does not have a valid value",
-        "outcome": "earl:failed",
+        "info": "The attribute has a valid value",
+        "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -37884,11 +37860,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/my-button[1]/@aria-expanded"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-placeholder"
         }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/0694d98f33527257b577a5cdf7fa93bfa509e7b2.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/6e3ed1ee9967fad97492ec854b506cb07d4f5e63.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -40231,6 +40207,36 @@
       }
     },
     {
+      "@id": "https://act-rules.github.io/testcases/5b7ae0/02d1b673b395a741734d8516491be54f74d8a783.xml",
+      "@type": "TestSubject"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell"
+      },
+      "subject": {
+        "@id": "https://act-rules.github.io/testcases/5b7ae0/02d1b673b395a741734d8516491be54f74d8a783.xml"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r6",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": {
+          "@id": "WCAG2:language-of-page",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Language of Page"
+        }
+      }
+    },
+    {
       "@id": "https://act-rules.github.io/testcases/de46e4/2c6ce29c2934936b9dd032e87695bffae9bc514e.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -41169,7 +41175,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/6e3ed1ee9967fad97492ec854b506cb07d4f5e63.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/23f69af205f3c0032d60d64288fe96c59e2b0fa2.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -41189,7 +41195,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/6e3ed1ee9967fad97492ec854b506cb07d4f5e63.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/23f69af205f3c0032d60d64288fe96c59e2b0fa2.html"
         },
         {
           "@type": [
@@ -41202,7 +41208,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"textbox\" aria-placeholder=\"MM-DD-YYYY\" aria-label=\"Your birthdate\">\n\tMM-DD-YYYY\n</div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"textbox\" aria-errormessage=\"my-error\" aria-label=\"A textbox\"></div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -41216,7 +41222,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/6e3ed1ee9967fad97492ec854b506cb07d4f5e63.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/23f69af205f3c0032d60d64288fe96c59e2b0fa2.html"
     },
     {
       "@type": "Assertion",
@@ -41231,11 +41237,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-placeholder"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-errormessage"
         }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/6e3ed1ee9967fad97492ec854b506cb07d4f5e63.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/23f69af205f3c0032d60d64288fe96c59e2b0fa2.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -42888,82 +42894,6 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/5b7ae0/02d1b673b395a741734d8516491be54f74d8a783.xml",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/5b7ae0/02d1b673b395a741734d8516491be54f74d8a783.xml"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<math xml:lang=\"en\"></math>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "application/xml"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://act-rules.github.io/testcases/5b7ae0/02d1b673b395a741734d8516491be54f74d8a783.xml"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://act-rules.github.io/testcases/5b7ae0/02d1b673b395a741734d8516491be54f74d8a783.xml"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r6",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "WCAG2:language-of-page",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Language of Page"
-        }
-      }
-    },
-    {
       "@id": "https://act-rules.github.io/testcases/de46e4/ca2f0f03e0dddd80cef6554814b919fac1666c02.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -43932,7 +43862,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/23f69af205f3c0032d60d64288fe96c59e2b0fa2.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/c17966ed8aaa0a049ff6bc1deffdb920fbc87c84.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -43952,7 +43882,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/23f69af205f3c0032d60d64288fe96c59e2b0fa2.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/c17966ed8aaa0a049ff6bc1deffdb920fbc87c84.html"
         },
         {
           "@type": [
@@ -43965,7 +43895,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"textbox\" aria-errormessage=\"my-error\" aria-label=\"A textbox\"></div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"spinbutton\" aria-valuemin=\"1.0\" aria-valuemax=\"2.0\" aria-valuenow=\"1.5\" aria-label=\"Select a value\"></div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -43979,7 +43909,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/23f69af205f3c0032d60d64288fe96c59e2b0fa2.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/c17966ed8aaa0a049ff6bc1deffdb920fbc87c84.html"
     },
     {
       "@type": "Assertion",
@@ -43994,11 +43924,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-errormessage"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-valuemin"
         }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/23f69af205f3c0032d60d64288fe96c59e2b0fa2.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/c17966ed8aaa0a049ff6bc1deffdb920fbc87c84.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -46546,7 +46476,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/c17966ed8aaa0a049ff6bc1deffdb920fbc87c84.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/f62aa620f2747aa0b37013bdee40e1b9913dff7c.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -46566,7 +46496,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/c17966ed8aaa0a049ff6bc1deffdb920fbc87c84.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/f62aa620f2747aa0b37013bdee40e1b9913dff7c.html"
         },
         {
           "@type": [
@@ -46579,7 +46509,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"spinbutton\" aria-valuemin=\"1.0\" aria-valuemax=\"2.0\" aria-valuenow=\"1.5\" aria-label=\"Select a value\"></div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"checkbox\" aria-checked>Accept terms and conditions</div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -46593,26 +46523,16 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/c17966ed8aaa0a049ff6bc1deffdb920fbc87c84.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/f62aa620f2747aa0b37013bdee40e1b9913dff7c.html"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The attribute has a valid value",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-valuemin"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/c17966ed8aaa0a049ff6bc1deffdb920fbc87c84.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/f62aa620f2747aa0b37013bdee40e1b9913dff7c.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -48954,7 +48874,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/f62aa620f2747aa0b37013bdee40e1b9913dff7c.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/995accefb5d704169f628c3fb872e993f29d3b88.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -48974,7 +48894,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/f62aa620f2747aa0b37013bdee40e1b9913dff7c.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/995accefb5d704169f628c3fb872e993f29d3b88.html"
         },
         {
           "@type": [
@@ -48987,7 +48907,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"checkbox\" aria-checked>Accept terms and conditions</div>"
+            "cnt:chars": "<!DOCTYPE html> <h1>Shopping list</h1>\n<div role=\"list\" aria-owns=\"item1 item2\"></div>\n<div id=\"item1\">Apples</div>\n<div id=\"item2\">Bananas</div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -49001,16 +48921,26 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/f62aa620f2747aa0b37013bdee40e1b9913dff7c.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/995accefb5d704169f628c3fb872e993f29d3b88.html"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The attribute has a valid value",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-owns"
+        }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/f62aa620f2747aa0b37013bdee40e1b9913dff7c.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/995accefb5d704169f628c3fb872e993f29d3b88.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -51230,7 +51160,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/995accefb5d704169f628c3fb872e993f29d3b88.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/3f9ac0f8dc5b4cd79edff2dcd7be186a9b73a386.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -51250,7 +51180,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/995accefb5d704169f628c3fb872e993f29d3b88.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/3f9ac0f8dc5b4cd79edff2dcd7be186a9b73a386.html"
         },
         {
           "@type": [
@@ -51263,7 +51193,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <h1>Shopping list</h1>\n<div role=\"list\" aria-owns=\"item1 item2\"></div>\n<div id=\"item1\">Apples</div>\n<div id=\"item2\">Bananas</div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"textbox\" aria-required=\"true\" aria-label=\"A required textbox\"></div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -51277,7 +51207,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/995accefb5d704169f628c3fb872e993f29d3b88.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/3f9ac0f8dc5b4cd79edff2dcd7be186a9b73a386.html"
     },
     {
       "@type": "Assertion",
@@ -51292,11 +51222,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-owns"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-required"
         }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/995accefb5d704169f628c3fb872e993f29d3b88.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/3f9ac0f8dc5b4cd79edff2dcd7be186a9b73a386.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -53015,7 +52945,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/3f9ac0f8dc5b4cd79edff2dcd7be186a9b73a386.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/b3e2646e94763d54d6835eb319e67bc28467cc7c.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -53035,7 +52965,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/3f9ac0f8dc5b4cd79edff2dcd7be186a9b73a386.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/b3e2646e94763d54d6835eb319e67bc28467cc7c.html"
         },
         {
           "@type": [
@@ -53048,7 +52978,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"textbox\" aria-required=\"true\" aria-label=\"A required textbox\"></div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"spinbutton\" aria-valuemin=\"one\" aria-valuemax=\"three\" aria-valuenow=\"two\" aria-label=\"Choose a value\"></div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -53062,14 +52992,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/3f9ac0f8dc5b4cd79edff2dcd7be186a9b73a386.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/b3e2646e94763d54d6835eb319e67bc28467cc7c.html"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The attribute has a valid value",
-        "outcome": "earl:passed",
+        "info": "The attribute does not have a valid value",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -53077,11 +53007,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-required"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-valuemin"
         }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/3f9ac0f8dc5b4cd79edff2dcd7be186a9b73a386.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/b3e2646e94763d54d6835eb319e67bc28467cc7c.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -54676,7 +54606,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/b3e2646e94763d54d6835eb319e67bc28467cc7c.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/d7dc0dd8b814d770eb1cdfd34490e68fa8bd1d54.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -54696,7 +54626,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/b3e2646e94763d54d6835eb319e67bc28467cc7c.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/d7dc0dd8b814d770eb1cdfd34490e68fa8bd1d54.html"
         },
         {
           "@type": [
@@ -54709,7 +54639,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"spinbutton\" aria-valuemin=\"one\" aria-valuemax=\"three\" aria-valuenow=\"two\" aria-label=\"Choose a value\"></div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"button\" aria-expanded=\"mixed\">A button</div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -54723,7 +54653,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/b3e2646e94763d54d6835eb319e67bc28467cc7c.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/d7dc0dd8b814d770eb1cdfd34490e68fa8bd1d54.html"
     },
     {
       "@type": "Assertion",
@@ -54738,11 +54668,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-valuemin"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-expanded"
         }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/b3e2646e94763d54d6835eb319e67bc28467cc7c.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/d7dc0dd8b814d770eb1cdfd34490e68fa8bd1d54.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -55917,7 +55847,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/d7dc0dd8b814d770eb1cdfd34490e68fa8bd1d54.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/3864ac960ac2a96e5653179704489bca50b314c8.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -55937,7 +55867,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/d7dc0dd8b814d770eb1cdfd34490e68fa8bd1d54.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/3864ac960ac2a96e5653179704489bca50b314c8.html"
         },
         {
           "@type": [
@@ -55950,7 +55880,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"button\" aria-expanded=\"mixed\">A button</div>"
+            "cnt:chars": "<!DOCTYPE html> <div>Some Content</div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -55964,26 +55894,16 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/d7dc0dd8b814d770eb1cdfd34490e68fa8bd1d54.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/3864ac960ac2a96e5653179704489bca50b314c8.html"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The attribute does not have a valid value",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-expanded"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/d7dc0dd8b814d770eb1cdfd34490e68fa8bd1d54.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/3864ac960ac2a96e5653179704489bca50b314c8.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -56966,7 +56886,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/3864ac960ac2a96e5653179704489bca50b314c8.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/bf41d0a50294a19a36af273c8a1a2f0d3e2129f2.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -56986,7 +56906,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/3864ac960ac2a96e5653179704489bca50b314c8.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/bf41d0a50294a19a36af273c8a1a2f0d3e2129f2.html"
         },
         {
           "@type": [
@@ -56999,7 +56919,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div>Some Content</div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"button\">Some Content</div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -57013,7 +56933,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/3864ac960ac2a96e5653179704489bca50b314c8.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/bf41d0a50294a19a36af273c8a1a2f0d3e2129f2.html"
     },
     {
       "@type": "Assertion",
@@ -57022,7 +56942,7 @@
         "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/3864ac960ac2a96e5653179704489bca50b314c8.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/bf41d0a50294a19a36af273c8a1a2f0d3e2129f2.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -57886,7 +57806,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/bf41d0a50294a19a36af273c8a1a2f0d3e2129f2.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/4fc8b76db54a23dcffd1f5532be291c439e6d50a.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -57906,7 +57826,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/bf41d0a50294a19a36af273c8a1a2f0d3e2129f2.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/4fc8b76db54a23dcffd1f5532be291c439e6d50a.html"
         },
         {
           "@type": [
@@ -57919,7 +57839,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"button\">Some Content</div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"gridcell\" aria-rowindex=\"2\">Fred</div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -57933,16 +57853,26 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/bf41d0a50294a19a36af273c8a1a2f0d3e2129f2.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/4fc8b76db54a23dcffd1f5532be291c439e6d50a.html"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The attribute has a valid value",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-rowindex"
+        }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/bf41d0a50294a19a36af273c8a1a2f0d3e2129f2.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/4fc8b76db54a23dcffd1f5532be291c439e6d50a.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -58508,7 +58438,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/4fc8b76db54a23dcffd1f5532be291c439e6d50a.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/f7e71f8c61755a5b8dd634f52bade704e2870233.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -58528,7 +58458,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/4fc8b76db54a23dcffd1f5532be291c439e6d50a.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/f7e71f8c61755a5b8dd634f52bade704e2870233.html"
         },
         {
           "@type": [
@@ -58541,7 +58471,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"gridcell\" aria-rowindex=\"2\">Fred</div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"button\" aria-pressed=\"mixed\">An other button</div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -58555,7 +58485,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/4fc8b76db54a23dcffd1f5532be291c439e6d50a.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/f7e71f8c61755a5b8dd634f52bade704e2870233.html"
     },
     {
       "@type": "Assertion",
@@ -58570,11 +58500,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-rowindex"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-pressed"
         }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/4fc8b76db54a23dcffd1f5532be291c439e6d50a.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/f7e71f8c61755a5b8dd634f52bade704e2870233.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -59130,7 +59060,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/f7e71f8c61755a5b8dd634f52bade704e2870233.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/f4057693e8bc785bc79eea906fe2c74f8859ab37.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -59150,7 +59080,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/f7e71f8c61755a5b8dd634f52bade704e2870233.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/f4057693e8bc785bc79eea906fe2c74f8859ab37.html"
         },
         {
           "@type": [
@@ -59163,7 +59093,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"button\" aria-pressed=\"mixed\">An other button</div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"textbox\" aria-errormessage=\"error1 error2\" aria-label=\"A textbox with an error\"></div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -59177,14 +59107,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/f7e71f8c61755a5b8dd634f52bade704e2870233.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/f4057693e8bc785bc79eea906fe2c74f8859ab37.html"
     },
     {
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The attribute has a valid value",
-        "outcome": "earl:passed",
+        "info": "The attribute does not have a valid value",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -59192,11 +59122,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-pressed"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-errormessage"
         }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/f7e71f8c61755a5b8dd634f52bade704e2870233.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/f4057693e8bc785bc79eea906fe2c74f8859ab37.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -59572,7 +59502,7 @@
       }
     },
     {
-      "@id": "https://act-rules.github.io/testcases/6a7281/f4057693e8bc785bc79eea906fe2c74f8859ab37.html",
+      "@id": "https://act-rules.github.io/testcases/6a7281/ead87e89d34a0e570d34a03656b59df660ac8c6c.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -59592,7 +59522,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/f4057693e8bc785bc79eea906fe2c74f8859ab37.html"
+          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/ead87e89d34a0e570d34a03656b59df660ac8c6c.html"
         },
         {
           "@type": [
@@ -59605,7 +59535,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"textbox\" aria-errormessage=\"error1 error2\" aria-label=\"A textbox with an error\"></div>"
+            "cnt:chars": "<!DOCTYPE html> <div role=\"main\" aria-live=\"nope\"></div>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -59619,7 +59549,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://act-rules.github.io/testcases/6a7281/f4057693e8bc785bc79eea906fe2c74f8859ab37.html"
+      "url": "https://act-rules.github.io/testcases/6a7281/ead87e89d34a0e570d34a03656b59df660ac8c6c.html"
     },
     {
       "@type": "Assertion",
@@ -59634,11 +59564,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-errormessage"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-live"
         }
       },
       "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/f4057693e8bc785bc79eea906fe2c74f8859ab37.html"
+        "@id": "https://act-rules.github.io/testcases/6a7281/ead87e89d34a0e570d34a03656b59df660ac8c6c.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -59935,84 +59865,6 @@
             "title": "Providing link text that describes the purpose of a link"
           }
         ]
-      }
-    },
-    {
-      "@id": "https://act-rules.github.io/testcases/6a7281/ead87e89d34a0e570d34a03656b59df660ac8c6c.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://act-rules.github.io/testcases/6a7281/ead87e89d34a0e570d34a03656b59df660ac8c6c.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html> <div role=\"main\" aria-live=\"nope\"></div>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://act-rules.github.io/testcases/6a7281/ead87e89d34a0e570d34a03656b59df660ac8c6c.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "info": "The attribute does not have a valid value",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-live"
-        }
-      },
-      "subject": {
-        "@id": "https://act-rules.github.io/testcases/6a7281/ead87e89d34a0e570d34a03656b59df660ac8c6c.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r19",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
       }
     },
     {
