@@ -50,8 +50,9 @@ async function cleanAndFetch(source: Source) {
   const scraper = await Scraper.of();
   const errors: Array<TestDescription> = [];
 
+  let i = 1;
   for (const [directory, tests] of rules) {
-    console.group(directory);
+    console.group(`${directory} (${i}/${rules.size})`);
 
     fs.mkdirSync(path.join("test", "fixtures", source, directory), {
       recursive: true,
@@ -60,6 +61,7 @@ async function cleanAndFetch(source: Source) {
     errors.push(...(await getTestCases(scraper, tests)));
 
     console.groupEnd();
+    i++;
   }
 
   scraper.close();
@@ -170,8 +172,10 @@ async function getTestCases(
   tests: Array<TestDescription>
 ): Promise<Array<TestDescription>> {
   const errors: Array<TestDescription> = [];
+  let i = 1;
   for (const test of tests) {
-    console.time(test.filename);
+    const label = `${test.filename} (${i} / ${tests.length})`;
+    console.time(label);
 
     if (test.url.endsWith(".xml")) {
       // XML is not supported by Alfa. Store the data and mark as ignored.
@@ -182,7 +186,8 @@ async function getTestCases(
       (await getTestCase(scraper, test)).map((error) => errors.push(error));
     }
 
-    console.timeEnd(test.filename);
+    console.timeEnd(label);
+    i++;
   }
 
   return errors;
