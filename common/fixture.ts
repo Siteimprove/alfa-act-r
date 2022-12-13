@@ -14,7 +14,7 @@ export namespace Fixture {
    * An actual test fixture
    */
   interface Test {
-    type: "test";
+    type: "test" | "redirect";
     id: string;
     outcome: Outcome;
     page: Page.JSON;

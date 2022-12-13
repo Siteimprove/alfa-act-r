@@ -49,15 +49,7 @@ test("de46e4", (t) => fixture(t, Rules.get("R7")));
 
 test("e086e5", (t) => fixture(t, Rules.get("R8")));
 
-test("bc659a", (t) =>
-  fixture(t, Rules.get("R9"), {
-    lax: [
-      // These cases can't currently be tested due to instant redirects.
-      // When scraping the page, we scrape it after the redirect.
-      "2907c2",
-      "8adcea",
-    ],
-  }));
+test("bc659a", (t) => fixture(t, Rules.get("R9")));
 
 test("73f2c2", (t) => fixture(t, Rules.get("R10")));
 
@@ -529,14 +521,7 @@ test("akn7bn", (t) =>
     ],
   }));
 
-test("bisz58", (t) =>
-  fixture(t, Rules.get("R96"), {
-    lax: [
-      // These cases can't currently be tested due to instant redirects.
-      "12f9c8",
-      "e6fbb9",
-    ],
-  }));
+test("bisz58", (t) => fixture(t, Rules.get("R96")));
 
 // R97 is not implemented yet (part of R58)
 // test("3e12e1", t => fixture(t, Rules.get("R97")));
