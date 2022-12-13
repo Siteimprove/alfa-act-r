@@ -186,11 +186,11 @@ async function getTestCases(
 
     if (test.url.endsWith(".xml")) {
       // XML is not supported by Alfa. Store the data and mark as ignored.
-      // await scrapeXML(test);
+      await scrapeXML(test);
     } else if (hasInstantRedirect(test.ruleId, test.id)) {
       await scrapeInstantRedirect(test);
     } else {
-      // (await getTestCase(scraper, test)).map((error) => errors.push(error));
+      (await getTestCase(scraper, test)).map((error) => errors.push(error));
     }
 
     console.timeEnd(label);
