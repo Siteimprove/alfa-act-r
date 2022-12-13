@@ -75,7 +75,7 @@ async function cleanAndFetch(source: Source) {
 
   if (errors.length > 0) {
     console.group("Some files could not be fetched — retrying");
-    console.warn(errors);
+    console.warn(errors.map((error) => `${error.ruleId} / ${error.id}`));
 
     const scraper = await Scraper.of();
     const stillErrors: Array<TestDescription> = [];
@@ -89,7 +89,9 @@ async function cleanAndFetch(source: Source) {
 
     if (stillErrors.length > 0) {
       console.error("Still failing after two attempts");
-      console.error(stillErrors);
+      console.error(
+        stillErrors.map((error) => `${error.ruleId} / ${error.id}`)
+      );
       process.exitCode = 1;
     }
   }
@@ -165,15 +167,6 @@ function digest(data: string) {
   return createHash("sha256").update(data).digest("hex");
 }
 
-// These cases have instant redirect, we cannot use the normal Scraper since
-// Puppeteer follows the redirect and we end up grabbing the wrong page.
-function hasInstantRedirect(ruleId: string, testId: string): boolean {
-  return (
-    (ruleId === "bc659a" && ["2907c2", "8adcea"].includes(testId)) ||
-    (ruleId === "bisz58" && ["12f9c8", "e6fbb9"].includes(testId))
-  );
-}
-
 async function getTestCases(
   scraper: Scraper,
   tests: Array<TestDescription>
@@ -239,6 +232,16 @@ async function scrapeXML(test: TestDescription) {
     2
   );
   fs.writeFileSync(path.join(test.directory, test.filename), fixture + "\n");
+}
+
+// These cases have instant redirect, we cannot use the normal Scraper since
+// Puppeteer follows the redirect and we end up grabbing the wrong page.
+// Fortunately, these do not use Javascript, so a simple GET is enough.
+function hasInstantRedirect(ruleId: string, testId: string): boolean {
+  return (
+    (ruleId === "bc659a" && ["2907c2", "8adcea"].includes(testId)) ||
+    (ruleId === "bisz58" && ["12f9c8", "e6fbb9"].includes(testId))
+  );
 }
 
 async function scrapeInstantRedirect(test: TestDescription) {
