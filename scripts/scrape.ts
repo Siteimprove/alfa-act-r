@@ -53,7 +53,9 @@ async function cleanAndFetch(source: Source) {
   for (const [directory, tests] of rules) {
     console.group(directory);
 
-    fs.mkdirSync(directory, { recursive: true });
+    fs.mkdirSync(path.join("test", "fixtures", source, directory), {
+      recursive: true,
+    });
 
     errors.push(...(await getTestCases(scraper, tests)));
 
