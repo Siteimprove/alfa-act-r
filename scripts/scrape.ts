@@ -94,38 +94,7 @@ const ignoredRules = [
 ];
 
 async function fetch(tests: string, out: string) {
-  const { data } = await axios.get(tests, {
-    headers: {
-      "Accept-Encoding": "application/json",
-    },
-  });
-
-  const rules = new Map<string, { tests: Array<TestDescription> }>();
-
-  for (const test of data.testcases) {
-    if (ignoredRules.includes(test.ruleId)) {
-      continue;
-    }
-
-    const directory = path.join(out, test.ruleId).toLowerCase();
-    const url = new URL(test.url).href;
-
-    const id = digest(url).substring(0, 6);
-    const filename = id + ".json";
-
-    const testDescription: TestDescription = {
-      id,
-      filename,
-      url,
-      outcome: test.expected,
-    };
-
-    if (rules.has(directory)) {
-      rules.get(directory)!.tests.push(testDescription);
-    } else {
-      rules.set(directory, { tests: [testDescription] });
-    }
-  }
+  const rules = await getTestDescriptions(tests, out);
 
   const scraper = await Scraper.of();
   const errors = [];
@@ -162,6 +131,44 @@ async function fetch(tests: string, out: string) {
       process.exitCode = 1;
     }
   }
+}
+
+async function getTestDescriptions(
+  tests: string,
+  out: string
+): Promise<Map<string, { tests: Array<TestDescription> }>> {
+  const { data } = await axios.get(tests, {
+    headers: { "Accept-Encoding": "application/json" },
+  });
+
+  const rules = new Map<string, { tests: Array<TestDescription> }>();
+
+  for (const test of data.testcases) {
+    if (ignoredRules.includes(test.ruleId)) {
+      continue;
+    }
+
+    const directory = path.join(out, test.ruleId).toLowerCase();
+    const url = new URL(test.url).href;
+
+    const id = digest(url).substring(0, 6);
+    const filename = id + ".json";
+
+    const testDescription: TestDescription = {
+      id,
+      filename,
+      url,
+      outcome: test.expected,
+    };
+
+    if (rules.has(directory)) {
+      rules.get(directory)!.tests.push(testDescription);
+    } else {
+      rules.set(directory, { tests: [testDescription] });
+    }
+  }
+
+  return rules;
 }
 
 function digest(data: string) {
