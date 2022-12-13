@@ -1,12 +1,19 @@
-import * as path from "path";
-import * as fs from "fs";
-import { createHash } from "crypto";
 import axios from "axios";
+import { createHash } from "crypto";
+import * as fs from "fs";
+import * as jsdom from "jsdom";
+import * as path from "path";
 
 import { Array } from "@siteimprove/alfa-array";
+import { Document } from "@siteimprove/alfa-dom";
+import { Device } from "@siteimprove/alfa-device";
+import { Request, Response } from "@siteimprove/alfa-http";
 import { Map } from "@siteimprove/alfa-map";
 import { None, Option } from "@siteimprove/alfa-option";
 import { Scraper } from "@siteimprove/alfa-scraper";
+import { Page } from "@siteimprove/alfa-web";
+
+import * as dom from "@siteimprove/alfa-dom/native";
 
 import { filterHeaders } from "./helpers/headers";
 
@@ -179,11 +186,11 @@ async function getTestCases(
 
     if (test.url.endsWith(".xml")) {
       // XML is not supported by Alfa. Store the data and mark as ignored.
-      scrapeXML(test);
+      // await scrapeXML(test);
     } else if (hasInstantRedirect(test.ruleId, test.id)) {
-      console.log(`Skipping ${test.ruleId} / ${test.id}`);
+      await scrapeInstantRedirect(test);
     } else {
-      (await getTestCase(scraper, test)).map((error) => errors.push(error));
+      // (await getTestCase(scraper, test)).map((error) => errors.push(error));
     }
 
     console.timeEnd(label);
@@ -228,6 +235,44 @@ async function scrapeXML(test: TestDescription) {
 
   const fixture = JSON.stringify(
     { type: "xml", id: test.id, url: test.url, data: response.data },
+    undefined,
+    2
+  );
+  fs.writeFileSync(path.join(test.directory, test.filename), fixture + "\n");
+}
+
+async function scrapeInstantRedirect(test: TestDescription) {
+  const response = await axios.get(test.url, {
+    headers: { "Accept-Encoding": "text/html" },
+  });
+
+  const bar = new jsdom.JSDOM(response.data);
+  const nodeJSON = dom.Native.fromNode(bar.window.document) as Document.JSON;
+
+  const page: Page.JSON = {
+    device: Device.standard().toJSON(),
+    document: nodeJSON,
+    request: {
+      method: "GET",
+      url: test.url,
+      headers: [],
+      body: "",
+    },
+    response: {
+      url: test.url,
+      status: response.status,
+      headers: [{ name: "content-type", value: "text/html; charset=utf-8" }],
+      body: response.data,
+    },
+  };
+
+  const fixture = JSON.stringify(
+    {
+      type: "redirect",
+      id: test.id,
+      outcome: test.outcome,
+      page,
+    },
     undefined,
     2
   );
