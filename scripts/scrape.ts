@@ -1,9 +1,11 @@
-import { None, Option } from "@siteimprove/alfa-option";
 import * as path from "path";
 import * as fs from "fs";
 import { createHash } from "crypto";
 import axios from "axios";
 
+import { Array } from "@siteimprove/alfa-array";
+import { Map } from "@siteimprove/alfa-map";
+import { None, Option } from "@siteimprove/alfa-option";
 import { Scraper } from "@siteimprove/alfa-scraper";
 
 import { filterHeaders } from "./helpers/headers";
@@ -62,44 +64,17 @@ interface TestDescription {
   outcome: string;
 }
 
-// Rules for which we do not have an implementation, do not plan to have one,
-// and therefore do not need to fetch test cases.
-const ignoredRules = [
-  // HTML images contain no text
-  "0va7u6",
-  // Link in context is descriptive
-  "5effbb",
-  // Device motion based changes to the content can also be created from the user interface
-  "7677a9",
-  // Focusable element has no keyboard trap
-  "80af7b",
-  // Content has alternative for visual reference
-  "9bd38c",
-  // Link is descriptive
-  "aizyf1",
-  // Device motion based changes to the content can be disabled
-  "c249d5",
-  // Attribute is not duplicated
-  "e6952f",
-  // Image not in the accessibility tree is decorative
-  "e88epe",
-  // Text content that changes automatically can be paused, stopped or hidden
-  "efbfc7",
-  // No keyboard shortcut uses only printable characters
-  "ffbc54",
-  // Image accessible name is descriptive
-  "qt1vmo",
-  // HTML page language subtag matches default language
-  "ucwvc8",
-];
+interface ErrorDescription extends TestDescription {
+  directory: string;
+}
 
 async function fetch(tests: string, out: string) {
   const rules = await getTestDescriptions(tests, out);
 
   const scraper = await Scraper.of();
-  const errors = [];
+  const errors: Array<ErrorDescription> = [];
 
-  for (const [directory, { tests }] of rules) {
+  for (const [directory, tests] of rules) {
     console.group(directory);
 
     fs.mkdirSync(directory, { recursive: true });
@@ -133,15 +108,46 @@ async function fetch(tests: string, out: string) {
   }
 }
 
+// Rules for which we do not have an implementation, do not plan to have one,
+// and therefore do not need to fetch test cases.
+const ignoredRules = [
+  // HTML images contain no text
+  "0va7u6",
+  // Link in context is descriptive
+  "5effbb",
+  // Device motion based changes to the content can also be created from the user interface
+  "7677a9",
+  // Focusable element has no keyboard trap
+  "80af7b",
+  // Content has alternative for visual reference
+  "9bd38c",
+  // Link is descriptive
+  "aizyf1",
+  // Device motion based changes to the content can be disabled
+  "c249d5",
+  // Attribute is not duplicated
+  "e6952f",
+  // Image not in the accessibility tree is decorative
+  "e88epe",
+  // Text content that changes automatically can be paused, stopped or hidden
+  "efbfc7",
+  // No keyboard shortcut uses only printable characters
+  "ffbc54",
+  // Image accessible name is descriptive
+  "qt1vmo",
+  // HTML page language subtag matches default language
+  "ucwvc8",
+];
+
 async function getTestDescriptions(
   tests: string,
   out: string
-): Promise<Map<string, { tests: Array<TestDescription> }>> {
+): Promise<Map<string, Array<TestDescription>>> {
   const { data } = await axios.get(tests, {
     headers: { "Accept-Encoding": "application/json" },
   });
 
-  const rules = new Map<string, { tests: Array<TestDescription> }>();
+  let rules = Map.empty<string, Array<TestDescription>>();
 
   for (const test of data.testcases) {
     if (ignoredRules.includes(test.ruleId)) {
@@ -161,11 +167,10 @@ async function getTestDescriptions(
       outcome: test.expected,
     };
 
-    if (rules.has(directory)) {
-      rules.get(directory)!.tests.push(testDescription);
-    } else {
-      rules.set(directory, { tests: [testDescription] });
-    }
+    rules = rules.set(
+      directory,
+      Array.append(rules.get(directory).getOr([]), testDescription)
+    );
   }
 
   return rules;
@@ -173,10 +178,6 @@ async function getTestDescriptions(
 
 function digest(data: string) {
   return createHash("sha256").update(data).digest("hex");
-}
-
-interface ErrorDescription extends TestDescription {
-  directory: string;
 }
 
 // These cases have instant redirect, we cannot use the normal Scraper since
