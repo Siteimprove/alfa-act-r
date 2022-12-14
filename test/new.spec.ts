@@ -404,7 +404,6 @@ test("fd3a94", (t) =>
   }));
 
 // R82 always has questions in expectation, review flow not currently handled
-// R82 is experimental, so should be imported from elsewhere
 // test.skip("36b590", (t) => fixture(t, Rules.get("R82")));
 
 test("59br37", (t) =>
