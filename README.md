@@ -34,11 +34,17 @@ If non argument is provided, both will be downloaded.
 To run Alfa against the test cases:
 
 ```shell
-$ yarn test ["**/old*" | "**/new*"]
+$ yarn test
 ```
 
-If no argument is provided, both will be tested. The selection is done automatically by `ava` (the testing library) using glob patterns… 
-
-This generates a report for each set of test cases. Committing the report and pushing it upstream will update the implementation report on the corresponding website.
+This generates a report for the set of test cases. Committing the report and pushing it upstream will update the implementation report on the corresponding website.
 
 Using `yarn strict` instead of `yarn test` will fail the tests (and generate errors) for benign mismatches (e.g. "Passed" vs "Inapplicable"). This can be useful for investigating and marking these correctly…
+
+In order to test the old test cases, use
+
+```shell
+$ yarn ava "**/old*" [-- --strict]
+```
+
+this is mostly deprecated now and only the new test cases should matter.

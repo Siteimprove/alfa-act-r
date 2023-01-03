@@ -284,18 +284,7 @@ test.skip("be4d0c", (t) => fixture(t, Rules.get("R62")));
 
 test("8fc3b6", (t) =>
   fixture(t, Rules.get("R63"), {
-    skip: [
-      // Alfa does not look at the MIME type of embedded content
-      // https://github.com/Siteimprove/alfa/issues/522
-      "a2ba3a",
-      // Alfa is too strict in its inclusion in the accessibility tree check
-      // https://github.com/Siteimprove/alfa/issues/1285
-      "cfa8a2",
-    ],
     lax: [
-      // Alfa does not look at the MIME type of embedded content
-      // https://github.com/Siteimprove/alfa/issues/522
-      "990a0a",
       // Alfa does not check the presence of an explicit role
       "6d6a37",
     ],
@@ -310,7 +299,7 @@ test("oj04fd", (t) =>
 
 test("09o5cg", (t) =>
   fixture(t, Rules.get("R66"), {
-    manual: ["2b137a", "2eeb7d", "939e0b"],
+    manual: ["2b137a", "2eeb7d"],
     skip: [
       // Alfa assumes that non-human language text is marked as presentational
       "e778ed",
@@ -347,7 +336,7 @@ test("afw4f7", (t) =>
       // Alfa does not yet disregard impossible foreground/background combinations
       "92452d",
     ],
-    manual: ["0616f2", "416921", "7004f1", "e5c024"],
+    manual: ["416921", "7004f1", "e5c024"],
   }));
 
 // R70 is Siteimprove only
@@ -455,10 +444,6 @@ test("307n5z", (t) => fixture(t, Rules.get("R90")));
 
 test("24afc2", (t) =>
   fixture(t, Rules.get("R91"), {
-    skip: [
-      // Alfa doesn't consider top: -999em as invisible
-      "e69989",
-    ],
     lax: [
       // Alfa has adopted newer version of rule, targeting the text nodes
       "636658",
@@ -470,10 +455,6 @@ test("24afc2", (t) =>
 
 test("9e45ec", (t) =>
   fixture(t, Rules.get("R92"), {
-    skip: [
-      // Alfa doesn't consider top: -999em as invisible
-      "9cbf79",
-    ],
     lax: [
       // Alfa has adopted newer version of rule, targeting the text nodes
       "290162",
@@ -486,8 +467,6 @@ test("9e45ec", (t) =>
 test("78fd32", (t) =>
   fixture(t, Rules.get("R93"), {
     skip: [
-      // Alfa does not consider `top: -999em` as offscreen.
-      "f56e26",
       // Alfa does not have a layout system and does not detect that the text
       // is in a wide scrolling element; instead it considers that any element
       // with a role of paragraph is a block of text.
