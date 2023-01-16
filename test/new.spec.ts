@@ -1,10 +1,10 @@
-import { Hashable } from "@siteimprove/alfa-hash";
-
 import * as path from "path";
 
 import ava, { TestFn } from "ava";
 
-import { Question, Rules } from "@siteimprove/alfa-rules";
+import { Hashable } from "@siteimprove/alfa-hash";
+import { Option } from "@siteimprove/alfa-option";
+import { experimentalRules, Question, Rules } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
 import { Context } from "./helpers/context";
@@ -106,14 +106,7 @@ test("6cfa84", (t) =>
     ],
   }));
 
-test("5c01ea", (t) =>
-  fixture(t, Rules.get("R18"), {
-    skip: [
-      // Alfa does not support prohibited attributes
-      // https://github.com/Siteimprove/alfa/issues/1205
-      "33995b",
-    ],
-  }));
+test("5c01ea", (t) => fixture(t, Option.of(experimentalRules.ER18)));
 
 test("6a7281", (t) =>
   fixture(t, Rules.get("R19"), {
