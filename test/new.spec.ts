@@ -1,3 +1,5 @@
+import { Hashable } from "@siteimprove/alfa-hash";
+
 import * as path from "path";
 
 import ava, { TestFn } from "ava";
@@ -10,7 +12,7 @@ import { fixture as factory } from "./helpers/fixture";
 import { report } from "./helpers/report";
 
 const fixture = factory("new");
-const test = ava as TestFn<Context<Page, unknown, Question.Metadata, unknown>>;
+const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
 
 test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
@@ -94,13 +96,7 @@ test("4b1c6c", (t) =>
     ],
   }));
 
-test("4e8ab6", (t) =>
-  fixture(t, Rules.get("R16"), {
-    skip: [
-      // `combobox` requires only `aria-expanded` in ARIA 1.3 which Alfa follows.
-      "d61580",
-    ],
-  }));
+test("4e8ab6", (t) => fixture(t, Rules.get("R16")));
 
 test("6cfa84", (t) =>
   fixture(t, Rules.get("R17"), {

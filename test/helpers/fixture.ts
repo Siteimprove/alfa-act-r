@@ -1,5 +1,6 @@
 import { Array } from "@siteimprove/alfa-array";
 import { Audit, Outcome, Rule } from "@siteimprove/alfa-act";
+import { Hashable } from "@siteimprove/alfa-hash";
 import { Map } from "@siteimprove/alfa-map";
 import { Option } from "@siteimprove/alfa-option";
 import { Page } from "@siteimprove/alfa-web";
@@ -28,7 +29,7 @@ function readFixtures(directory: string): Array<Fixture.Fixture> {
 
 export function fixture(
   dir: string
-): <T, Q, S>(
+): <T extends Hashable, Q, S>(
   t: ExecutionContext<Context<Page, T, Q, S>>,
   rule: Option<Rule<Page, T, Q, S>>,
   options?: Fixture.Options
@@ -134,7 +135,7 @@ type Mapping = "ok" | "error" | "lax" | "manual";
  * report any problem,
  * pass or fail the test.
  */
-function report<T, Q, S>(
+function report<T extends Hashable, Q, S>(
   t: ExecutionContext<Context<Page, T, Q, S>>,
   result: Mapping,
   fixtureID: string,
