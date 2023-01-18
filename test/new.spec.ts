@@ -2,7 +2,9 @@ import * as path from "path";
 
 import ava, { TestFn } from "ava";
 
-import { Question, Rules } from "@siteimprove/alfa-rules";
+import { Hashable } from "@siteimprove/alfa-hash";
+import { Option } from "@siteimprove/alfa-option";
+import { experimentalRules, Question, Rules } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
 import { Context } from "./helpers/context";
@@ -10,7 +12,7 @@ import { fixture as factory } from "./helpers/fixture";
 import { report } from "./helpers/report";
 
 const fixture = factory("new");
-const test = ava as TestFn<Context<Page, unknown, Question.Metadata, unknown>>;
+const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
 
 test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
@@ -94,13 +96,7 @@ test("4b1c6c", (t) =>
     ],
   }));
 
-test("4e8ab6", (t) =>
-  fixture(t, Rules.get("R16"), {
-    skip: [
-      // `combobox` requires only `aria-expanded` in ARIA 1.3 which Alfa follows.
-      "d61580",
-    ],
-  }));
+test("4e8ab6", (t) => fixture(t, Rules.get("R16")));
 
 test("6cfa84", (t) =>
   fixture(t, Rules.get("R17"), {
@@ -110,14 +106,7 @@ test("6cfa84", (t) =>
     ],
   }));
 
-test("5c01ea", (t) =>
-  fixture(t, Rules.get("R18"), {
-    skip: [
-      // Alfa does not support prohibited attributes
-      // https://github.com/Siteimprove/alfa/issues/1205
-      "33995b",
-    ],
-  }));
+test("5c01ea", (t) => fixture(t, Option.of(experimentalRules.ER18)));
 
 test("6a7281", (t) =>
   fixture(t, Rules.get("R19"), {

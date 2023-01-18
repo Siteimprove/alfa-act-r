@@ -1,3 +1,4 @@
+import { Hashable } from "@siteimprove/alfa-hash";
 import { Document } from "@siteimprove/alfa-json-ld";
 import { Page } from "@siteimprove/alfa-web";
 import * as fs from "fs";
@@ -5,7 +6,7 @@ import * as jsonld from "jsonld";
 
 import { Context, Test } from "./context";
 
-export async function report<T, Q, S>(
+export async function report<T extends Hashable, Q, S>(
   context: Context<Page, T, Q, S>,
   out: string
 ) {
@@ -27,7 +28,7 @@ export async function report<T, Q, S>(
   fs.writeFileSync(out, JSON.stringify(compact, null, 2));
 }
 
-function recordCase<T, Q, S>(
+function recordCase<T extends Hashable, Q, S>(
   graph: Array<Document>,
   test: Test.Result<Page, T, Q, S>
 ): void {
@@ -48,7 +49,7 @@ function recordCase<T, Q, S>(
   graph.push(assertion);
 }
 
-function recordIgnoredCase<I, T, Q, S>(
+function recordIgnoredCase<I, T extends Hashable, Q, S>(
   graph: Array<Document>,
   test: Test.Ignored<I, T, Q, S>
 ): void {
