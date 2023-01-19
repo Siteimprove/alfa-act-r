@@ -219,10 +219,12 @@ test("d0f69e", (t) =>
   fixture(t, Rules.get("R46"), {
     skip: [
       // Alfa does not yet consider ARIA grids
+      // https://github.com/act-rules/act-rules.github.io/pull/1971
       "08a84b",
     ],
     lax: [
       // Alfa does not consider ARIA tables
+      // https://github.com/act-rules/act-rules.github.io/pull/1971
       "a56128",
     ],
   }));
@@ -230,7 +232,7 @@ test("d0f69e", (t) =>
 test("b4f0c3", (t) =>
   fixture(t, Rules.get("R47"), {
     lax: [
-      // ACt rules is not clear in its definition
+      // ACT rules is not clear in its definition
       // https://github.com/act-rules/act-rules.github.io/issues/1982
       "ee8640",
     ],
