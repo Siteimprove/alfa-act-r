@@ -27,7 +27,7 @@ To download the latest version of the test cases, build the project then:
 $ yarn fixtures [old | new]
 ```
 
-If non argument is provided, both will be downloaded.
+If no argument is provided, both will be downloaded.
 
 ### Generate report
 
