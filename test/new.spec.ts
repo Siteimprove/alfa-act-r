@@ -108,23 +108,11 @@ test("6cfa84", (t) =>
 
 test("5c01ea", (t) => fixture(t, Option.of(experimentalRules.ER18)));
 
-test("6a7281", (t) =>
-  fixture(t, Rules.get("R19"), {
-    skip: [
-      // Alfa does not yet check ID and ID reference attributes
-      "36cf05",
-    ],
-  }));
+test("6a7281", (t) => fixture(t, Rules.get("R19")));
 
 test("5f99a7", (t) => fixture(t, Rules.get("R20")));
 
-test("674b10", (t) =>
-  fixture(t, Rules.get("R21"), {
-    skip: [
-      // Alfa requires that all roles be valid.
-      "ba33a5",
-    ],
-  }));
+// R21 is Siteimprove only
 
 // R22 has questions in applicability, review flow not currently handled
 test.skip("f51b46", (t) => fixture(t, Rules.get("R22")));
@@ -517,3 +505,5 @@ test("bisz58", (t) => fixture(t, Rules.get("R96")));
 
 // R109 always has questions in expectation, review flow not currently handled
 // test.skip("ucwvc8", (t) => fixture(t, Rules.get("R109")));
+
+test("674b10", (t) => fixture(t, Rules.get("R110")));
