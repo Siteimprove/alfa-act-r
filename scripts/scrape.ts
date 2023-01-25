@@ -25,6 +25,8 @@ if (process.argv.length > 2 && process.argv.slice(2).includes("old")) {
   destination = "old_fixtures";
 }
 
+console.log(`Grabbing test cases from ${source}.`);
+
 cleanAndFetch();
 
 async function cleanAndFetch() {
