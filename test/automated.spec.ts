@@ -19,7 +19,10 @@ test.before("Initialise context", (t) => {
 });
 
 test.after("Write report", (t) => {
-  report(t.context, path.join(__dirname, "..", "reports", "alfa-report.json"));
+  report(
+    t.context,
+    path.join(__dirname, "..", "reports", "alfa-automated-report.json")
+  );
 });
 
 test("2779a5", (t) => fixture(t, Rules.get("R1")));
