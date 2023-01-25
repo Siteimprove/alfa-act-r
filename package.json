@@ -4,8 +4,11 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "test": "ava \"**/automated*\"",
-    "strict": "ava \"**/automated*\" -- --strict",
+    "test": "ava \"**/automated*\" \"**/assisted*\"",
+    "testAssisted": "ava \"**/assisted*\"",
+    "strictAssisted": "ava \"**/assisted*\" -- --strict",
+    "testAutomated": "ava \"**/automated*\"",
+    "strictAutomated": "ava \"**/automated*\" -- --strict",
     "fixtures": "node scripts/scrape.js"
   },
   "dependencies": {
