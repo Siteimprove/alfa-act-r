@@ -106,11 +106,10 @@ export function fixture(
         );
 
       const expected = test.outcome;
-      const outcomeJSON = outcome.toJSON();
-      const actual = outcomeJSON.outcome as Fixture.Outcome;
+      const actual = outcome.outcome;
       const result = mapping(actual, expected);
 
-      report(t, result, fixture, test, outcomeJSON, [skip, manual, lax]);
+      report(t, result, fixture, test, outcome.toJSON(), [skip, manual, lax]);
 
       t.context.outcomes.push({
         kind: Test.Kind.Result,
