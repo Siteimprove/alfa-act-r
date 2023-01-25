@@ -1,0 +1,412 @@
+{
+  "type": "test",
+  "id": "0ce324",
+  "outcome": "passed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/758c009716931b1a14a1215eda5d4f9d72135aaa.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/758c009716931b1a14a1215eda5d4f9d72135aaa.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>The Three Kingdoms, Chapter 1</title>\n\t</head>\n\t<body>\n\t\t<nav id=\"local-navigation\">\n\t\t\t<a href=\"#bio-translator\">Skip to translator's biography</a>\n\t\t\t<a href=\"#about-book\">Skip to information about the book</a>\n\t\t\t<a href=\"#main\">Skip to main content</a>\n\t\t</nav>\n\n\t\t<aside id=\"bio-translator\">\n\t\t\t<p>Yu Sumei is a professor of English at East China Normal University.</p>\n\t\t</aside>\n\t\t<aside id=\"about-book\">\n\t\t\t<p>The Romance of the Three Kingdoms is a 14th century historical novel.</p>\n\t\t</aside>\n\n\t\t<div id=\"main\">\n\t\t\t<p>\n\t\t\t\tUnity succeeds division and division follows unity. One is bound to be replaced by the other after a long span\n\t\t\t\tof time.\n\t\t\t</p>\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/chapter2.html\">Read Chapter 2</a>\n\t\t</div>\n\t</body>\n</html>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "children": [
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "The Three Kingdoms, Chapter 1"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n\t"
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Skip to translator's biography"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "a",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "href",
+                          "value": "#bio-translator"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Skip to information about the book"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "a",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "href",
+                          "value": "#about-book"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Skip to main content"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "a",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "href",
+                          "value": "#main"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "nav",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "local-navigation"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Yu Sumei is a professor of English at East China Normal University."
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "aside",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "bio-translator"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "The Romance of the Three Kingdoms is a 14th century historical novel."
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "aside",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "about-book"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t\tUnity succeeds division and division follows unity. One is bound to be replaced by the other after a long span\n\t\t\t\tof time.\n\t\t\t"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Read Chapter 2"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "a",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "href",
+                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/chapter2.html"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "main"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}

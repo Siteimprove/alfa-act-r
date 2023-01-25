@@ -1,0 +1,173 @@
+{
+  "type": "test",
+  "id": "a011cb",
+  "outcome": "passed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://act-rules.github.io/testcases/b49b2e/ffb1127189b433a4d64fe895c24db7a8e3816080.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://act-rules.github.io/testcases/b49b2e/ffb1127189b433a4d64fe895c24db7a8e3816080.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html> <html lang=\"en\">\n\t<span role=\"heading\" aria-level=\"1\" style=\"position: absolute; top: -9999px; left: -9999px;\">Opening Hours</span>\n\t<p>\n\t\tWe are open Monday through Friday from 10 to 16\n\t</p>\n</html>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "children": [
+            {
+              "type": "element",
+              "children": [],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Opening Hours"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "span",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "heading"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-level",
+                      "value": "1"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "style",
+                      "value": "position: absolute; top: -9999px; left: -9999px;"
+                    }
+                  ],
+                  "style": [
+                    {
+                      "name": "position",
+                      "value": "absolute",
+                      "important": false
+                    },
+                    {
+                      "name": "top",
+                      "value": "-9999px",
+                      "important": false
+                    },
+                    {
+                      "name": "left",
+                      "value": "-9999px",
+                      "important": false
+                    }
+                  ],
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\tWe are open Monday through Friday from 10 to 16\n\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}

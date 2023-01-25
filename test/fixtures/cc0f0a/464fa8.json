@@ -1,0 +1,167 @@
+{
+  "type": "test",
+  "id": "464fa8",
+  "outcome": "passed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/39a5a085f5d5455d67ba73e192d936b2fc9b366e.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/39a5a085f5d5455d67ba73e192d936b2fc9b366e.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p id=\"label_fname\" aria-hidden=\"true\">First name:</p>\n\t<input aria-labelledby=\"label_fname\" type=\"text\" name=\"fname\" />\n</html>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "children": [
+            {
+              "type": "element",
+              "children": [],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "First name:"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "label_fname"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-hidden",
+                      "value": "true"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "input",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-labelledby",
+                      "value": "label_fname"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "type",
+                      "value": "text"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "name",
+                      "value": "fname"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}

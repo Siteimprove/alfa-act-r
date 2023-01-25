@@ -24,10 +24,14 @@ Installing Alfa packages need authentication to the Github repository for the `@
 To download the latest version of the test cases, build the project then:
 
 ```shell
-$ yarn fixtures [old | new]
+$ yarn fixtures
 ```
 
-If no argument is provided, both will be downloaded.
+To download the old test cases, use instead
+
+```shell
+$ yarn fixtures old
+```
 
 ### Generate report
 
