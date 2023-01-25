@@ -1895,15 +1895,6 @@
         ],
         "isPartOf": [
           {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
               "TestCriterion",
@@ -2823,15 +2814,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -5920,8 +5902,8 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The attribute has a valid value",
-        "outcome": "earl:passed",
+        "info": "The attribute does not have a valid value",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -6076,7 +6058,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The element does not have a valid role",
+        "info": "The element does not have at least one valid role",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -6098,15 +6080,6 @@
           "TestCase"
         ],
         "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
@@ -6649,7 +6622,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[2]/@headers"
         }
       },
       "subject": {
@@ -7016,15 +6989,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -10233,15 +10197,6 @@
         ],
         "isPartOf": [
           {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
               "TestCriterion",
@@ -11140,15 +11095,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -14380,7 +14326,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The element has a valid role",
+        "info": "The element has only valid roles",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -14402,15 +14348,6 @@
           "TestCase"
         ],
         "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
@@ -15330,15 +15267,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -18110,8 +18038,8 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The element has all required states and properties",
-        "outcome": "earl:passed",
+        "info": "The element does not have all required states and properties",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -18537,15 +18465,6 @@
           "TestCase"
         ],
         "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
@@ -19436,15 +19355,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -22255,8 +22165,8 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The element has all required states and properties",
-        "outcome": "earl:passed",
+        "info": "The element does not have all required states and properties",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -22680,7 +22590,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The element has a valid role",
+        "info": "The element has only valid roles",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -22702,15 +22612,6 @@
           "TestCase"
         ],
         "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
@@ -23620,15 +23521,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -26767,7 +26659,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The element does not have a valid role",
+        "info": "The element does not have at least one valid role",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -26789,15 +26681,6 @@
           "TestCase"
         ],
         "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
@@ -27707,15 +27590,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -30639,15 +30513,6 @@
         ],
         "isPartOf": [
           {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
               "TestCriterion",
@@ -31180,7 +31045,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
         }
       },
       "subject": {
@@ -31557,15 +31422,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -34264,15 +34120,6 @@
         ],
         "isPartOf": [
           {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
               "TestCriterion",
@@ -35182,15 +35029,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -37810,7 +37648,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The element does not have a valid role",
+        "info": "The element does not have at least one valid role",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -37832,15 +37670,6 @@
           "TestCase"
         ],
         "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
             "@type": [
@@ -38770,15 +38599,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
@@ -41802,15 +41622,6 @@
             "title": "Info and Relationships"
           },
           {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
-          },
-          {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
             "@type": [
               "TestCriterion",
@@ -44441,15 +44252,6 @@
             "title": "Info and Relationships"
           },
           {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
-          },
-          {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
             "@type": [
               "TestCriterion",
@@ -46931,15 +46733,6 @@
             "title": "Info and Relationships"
           },
           {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
-          },
-          {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
             "@type": [
               "TestCriterion",
@@ -49349,15 +49142,6 @@
             "title": "Info and Relationships"
           },
           {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
-          },
-          {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
             "@type": [
               "TestCriterion",
@@ -51536,15 +51320,6 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Info and Relationships"
-          },
-          {
-            "@id": "WCAG2:headings-and-labels",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Headings and Labels"
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H42",
