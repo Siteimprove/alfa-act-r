@@ -1,0 +1,454 @@
+{
+  "type": "test",
+  "id": "77699c",
+  "outcome": "passed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/29ea904ef03f14401a7b43a5ffc9b30271697bc7.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/29ea904ef03f14401a7b43a5ffc9b30271697bc7.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<head>\n\t\t<style>\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div id=\"video-container\">\n\t\t\t<!-- Video -->\n\t\t\t<video id=\"video\" autoplay>\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t\t</video>\n\t\t\t<!-- Video Controls -->\n\t\t\t<div id=\"video-controls\">\n\t\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\">Play</button>\n\t\t\t\t<button type=\"button\" id=\"mute\">Mute</button>\n\t\t\t</div>\n\t\t</div>\n\t\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n\t</body>\n</body>\n</html>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "children": [
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Passed Example 3"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n"
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "style",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\n\t\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "comment",
+                      "data": " Video "
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t\t"
+                        },
+                        {
+                          "type": "element",
+                          "children": [],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "source",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "src",
+                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "type",
+                              "value": "video/mp4"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t\t"
+                        },
+                        {
+                          "type": "element",
+                          "children": [],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "source",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "src",
+                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "type",
+                              "value": "video/webm"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "video",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "id",
+                          "value": "video"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "autoplay",
+                          "value": ""
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "comment",
+                      "data": " Video Controls "
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t\t"
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "Play"
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "button",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "type",
+                              "value": "button"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "id",
+                              "value": "play-pause"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "play"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t\t"
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "Mute"
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "button",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "type",
+                              "value": "button"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "id",
+                              "value": "mute"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "id",
+                          "value": "video-controls"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "video-container"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "script",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\n\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": [
+        {
+          "rules": [
+            {
+              "type": "style",
+              "selector": "button",
+              "style": [
+                {
+                  "name": "color",
+                  "value": "rgb(0, 0, 0)",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "button:hover",
+              "style": [
+                {
+                  "name": "cursor",
+                  "value": "pointer",
+                  "important": false
+                },
+                {
+                  "name": "background-color",
+                  "value": "grey",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "white",
+                  "important": false
+                }
+              ]
+            }
+          ],
+          "disabled": false,
+          "condition": null
+        }
+      ]
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}

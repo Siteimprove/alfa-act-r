@@ -1,0 +1,467 @@
+{
+  "type": "test",
+  "id": "c8892b",
+  "outcome": "passed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<table role=\"grid\">\n\t\t<thead>\n\t\t\t<tr role=\"row\">\n\t\t\t\t<td></td>\n\t\t\t\t<th scope=\"col\" role=\"columnheader\">Breakfast</th>\n\t\t\t\t<th scope=\"col\" role=\"columnheader\">Lunch</th>\n\t\t\t\t<th scope=\"col\" role=\"columnheader\">Dinner</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr role=\"row\">\n\t\t\t\t<th scope=\"row\" role=\"rowheader\">Day 1</th>\n\t\t\t\t<td>8:00</td>\n\t\t\t\t<td>13:00</td>\n\t\t\t\t<td>18:00</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n</body>\n</html>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "children": [
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Passed Example 4"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n"
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t"
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\t"
+                            },
+                            {
+                              "type": "element",
+                              "children": [],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "td",
+                              "attributes": [],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\t"
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "Breakfast"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "th",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "scope",
+                                  "value": "col"
+                                },
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "role",
+                                  "value": "columnheader"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\t"
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "Lunch"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "th",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "scope",
+                                  "value": "col"
+                                },
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "role",
+                                  "value": "columnheader"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\t"
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "Dinner"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "th",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "scope",
+                                  "value": "col"
+                                },
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "role",
+                                  "value": "columnheader"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t"
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "tr",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "role",
+                              "value": "row"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\t\t"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "thead",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t"
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\t"
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "Day 1"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "th",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "scope",
+                                  "value": "row"
+                                },
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "role",
+                                  "value": "rowheader"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\t"
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "8:00"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "td",
+                              "attributes": [],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\t"
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "13:00"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "td",
+                              "attributes": [],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t\t"
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "18:00"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "td",
+                              "attributes": [],
+                              "style": null,
+                              "shadow": null,
+                              "content": null
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n\t\t\t"
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "tr",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "role",
+                              "value": "row"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\t\t"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "tbody",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "table",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "grid"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            }
+          ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
+          "shadow": null,
+          "content": null
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": []
+    }
+  }
+}

@@ -7,7 +7,6 @@ import * as path from "path";
 import { Array } from "@siteimprove/alfa-array";
 import { Document } from "@siteimprove/alfa-dom";
 import { Device } from "@siteimprove/alfa-device";
-import { Request, Response } from "@siteimprove/alfa-http";
 import { Map } from "@siteimprove/alfa-map";
 import { None, Option } from "@siteimprove/alfa-option";
 import { Scraper } from "@siteimprove/alfa-scraper";
@@ -17,42 +16,26 @@ import * as dom from "@siteimprove/alfa-dom/native";
 
 import { filterHeaders } from "./helpers/headers";
 
-const testCases = {
-  old: "https://act-rules.github.io/testcases.json",
-  new: "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json",
-} as const;
+let source =
+  "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json";
+let destination = "fixtures";
 
-type Source = keyof typeof testCases;
-
-// If no extra argument is provided, download both ACT and W3C cases
-// #1: node; #2 : this file; #3-…: actual arguments
-const fetchACT =
-  process.argv.length < 3 || process.argv.slice(2).includes("old");
-const fetchW3C =
-  process.argv.length < 3 || process.argv.slice(2).includes("new");
-
-if (!fetchACT && !fetchW3C) {
-  console.error('Wrong argument, use either "old", or "new", or none');
-  process.exit(1);
+if (process.argv.length > 2 && process.argv.slice(2).includes("old")) {
+  source = "https://act-rules.github.io/testcases.json";
+  destination = "old_fixtures";
 }
 
-if (fetchACT) {
-  console.log("Fetching ACT-R ('old') test cases");
-  cleanAndFetch("old");
-}
+console.log(`Grabbing test cases from ${source}.`);
 
-if (fetchW3C) {
-  console.log("Fetching WAI ('new') test cases");
-  cleanAndFetch("new");
-}
+cleanAndFetch();
 
-async function cleanAndFetch(source: Source) {
-  fs.rmSync(path.join("test", "fixtures", source), {
+async function cleanAndFetch() {
+  fs.rmSync(path.join("test", destination), {
     recursive: true,
     force: true,
   });
 
-  const rules = await getTestDescriptions(source);
+  const rules = await getTestDescriptions();
 
   const scraper = await Scraper.of();
   const errors: Array<TestDescription> = [];
@@ -61,7 +44,7 @@ async function cleanAndFetch(source: Source) {
   for (const [directory, tests] of rules) {
     console.group(`${directory} (${i}/${rules.size})`);
 
-    fs.mkdirSync(path.join("test", "fixtures", source, directory), {
+    fs.mkdirSync(path.join("test", destination, directory), {
       recursive: true,
     });
 
@@ -128,10 +111,10 @@ const ignoredRules = [
   "ucwvc8",
 ];
 
-async function getTestDescriptions(
-  source: Source
-): Promise<Map<string, Array<TestDescription>>> {
-  const { data } = await axios.get(testCases[source], {
+async function getTestDescriptions(): Promise<
+  Map<string, Array<TestDescription>>
+> {
+  const { data } = await axios.get(source, {
     headers: { "Accept-Encoding": "application/json" },
   });
 
@@ -150,7 +133,7 @@ async function getTestDescriptions(
       ruleId,
       id,
       url,
-      source,
+      destination,
       test.expected
     );
 
@@ -287,10 +270,10 @@ class TestDescription {
     ruleId: string,
     id: string,
     url: string,
-    source: Source,
+    destination: string,
     outcome: string
   ): TestDescription {
-    return new TestDescription(ruleId, id, url, source, outcome);
+    return new TestDescription(ruleId, id, url, destination, outcome);
   }
 
   // The 6 chars rule ID provided by ACT rules
@@ -299,8 +282,6 @@ class TestDescription {
   private readonly _id: string;
   // The URL of the test case provided by ACT rules
   private readonly _url: string;
-  // The tests set (new/old) this is part of
-  private readonly _source: Source;
   // The expected outcome of the test case
   private readonly _outcome: string;
   // The directory where the case is persisted
@@ -312,16 +293,15 @@ class TestDescription {
     ruleId: string,
     id: string,
     url: string,
-    source: Source,
+    destination: string,
     outcome: string
   ) {
     this._ruleId = ruleId;
     this._id = id;
     this._url = url;
-    this._source = source;
     this._outcome = outcome;
 
-    this._directory = path.join("test", "fixtures", this._source, this._ruleId);
+    this._directory = path.join("test", destination, this._ruleId);
     this._filename = `${id}.json`;
   }
 
@@ -335,10 +315,6 @@ class TestDescription {
 
   public get url(): string {
     return this._url;
-  }
-
-  public get source(): string {
-    return this._source;
   }
 
   public get outcome(): string {

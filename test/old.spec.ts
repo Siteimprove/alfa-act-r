@@ -11,7 +11,7 @@ import { Context } from "./helpers/context";
 import { fixture as factory } from "./helpers/fixture";
 import { report } from "./helpers/report";
 
-const fixture = factory("old");
+const fixture = factory("old_fixtures");
 const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
 
 test.before("Initialise context", (t) => {

@@ -48,7 +48,7 @@ export function fixture(
       .reduce((map, cur) => map.set(cur, false), Map.empty<string, boolean>());
 
     // Read all test cases for a given rule
-    const tests = readFixtures(path.join("test", "fixtures", dir, fixture));
+    const tests = readFixtures(path.join("test", dir, fixture));
 
     t.plan(tests.length);
 
