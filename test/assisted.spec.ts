@@ -83,17 +83,17 @@ test("2ee8b8", (t) =>
 
 test("4b1c6c", (t) =>
   fixture(t, Rules.get("R15"), {
-    // manual: [
-    //   "1e31a1",
-    //   "3e4fb4",
-    //   "4490a0",
-    //   "4f46ed",
-    //   "84c7a3",
-    //   "8d7ac7",
-    //   "d7c06c",
-    //   "d7dce5",
-    //   "e4f6fd",
-    // ],
+    answers: {
+      "1e31a1": { "reference-equivalent-resources": true },
+      "3e4fb4": { "reference-equivalent-resources": false },
+      "4490a0": { "reference-equivalent-resources": true },
+      "4f46ed": { "reference-equivalent-resources": true },
+      "84c7a3": { "reference-equivalent-resources": false },
+      "8d7ac7": { "reference-equivalent-resources": true },
+      d7c06c: { "reference-equivalent-resources": false },
+      d7dce5: { "reference-equivalent-resources": false },
+      e4f6fd: { "reference-equivalent-resources": true },
+    },
   }));
 
 test("4e8ab6", (t) => fixture(t, Rules.get("R16")));
@@ -171,21 +171,21 @@ test.skip("9eb3f6", (t) => fixture(t, Rules.get("R39")));
 
 test("b20e66", (t) =>
   fixture(t, Rules.get("R41"), {
-    manual: [
-      "01b3fc",
-      "1e15dd",
-      "2cd6ce",
-      "35dc57",
-      "675f10",
-      "7babd7",
-      "812cd2",
-      "8557f3",
-      "918293",
-      "9b6335",
-      "a98dc5",
-      "b52fce",
-      "ee0f09",
-    ],
+    // manual: [
+    //   "01b3fc",
+    //   "1e15dd",
+    //   "2cd6ce",
+    //   "35dc57",
+    //   "675f10",
+    //   "7babd7",
+    //   "812cd2",
+    //   "8557f3",
+    //   "918293",
+    //   "9b6335",
+    //   "a98dc5",
+    //   "b52fce",
+    //   "ee0f09",
+    // ],
   }));
 
 test("ff89c9", (t) =>

@@ -1,8 +1,10 @@
 import * as act from "@siteimprove/alfa-act";
+import { Node } from "@siteimprove/alfa-dom";
 import { Future } from "@siteimprove/alfa-future";
 import { Hashable } from "@siteimprove/alfa-hash";
+import { Iterable } from "@siteimprove/alfa-iterable";
 import { None, Option } from "@siteimprove/alfa-option";
-import { Question } from "@siteimprove/alfa-rules";
+import { Group, Question } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 import { ExecutionContext } from "ava/entrypoints/main";
 import { Context } from "./context";
@@ -18,12 +20,16 @@ export function oracle<I, T extends Hashable, S>(
     [URI in keyof Question.Metadata]: Question.Metadata[URI][1];
   }>,
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
-  testId: string
+  url: string
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
     // Check if we do have an answer for this question.
     if (answers[question.uri] === undefined) {
-      t.log(`${testId} is asking ${question.uri} for ${question.subject}`);
+      t.log(
+        `${url} is asking ${question.uri} for ${subjectToString(
+          question.subject
+        )}`
+      );
       return dontKnow;
     }
 
@@ -54,4 +60,19 @@ export function oracle<I, T extends Hashable, S>(
         return wrapper(answers[question.uri]!);
     }
   };
+}
+
+function subjectToString(subject: unknown): string {
+  if (Node.isNode(subject)) {
+    return subject.path();
+  }
+
+  if (Group.isGroup(subject) && subject.size > 0) {
+    const subjects = [...subject];
+    if (Node.isNode(subjects[0])) {
+      return `${(subjects as Array<Node>).map((node) => node.path())}`;
+    }
+  }
+
+  return "Unknown subject type";
 }

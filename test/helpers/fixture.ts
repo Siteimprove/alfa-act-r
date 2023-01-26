@@ -86,7 +86,13 @@ export function fixture(
       const outcome = await Audit.of(
         page,
         [rule.get()],
-        manual ? undefined : oracle(options.answers?.[test.id] ?? {}, t, testID)
+        manual
+          ? undefined
+          : oracle(
+              options.answers?.[test.id] ?? {},
+              t,
+              page.request.url.toString()
+            )
       )
         .evaluate()
         .map((outcomes) =>
