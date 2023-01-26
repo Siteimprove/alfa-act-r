@@ -11,7 +11,7 @@ import { Context } from "./helpers/context";
 import { fixture as factory } from "./helpers/fixture";
 import { report } from "./helpers/report";
 
-const fixture = factory("fixtures");
+const fixture = factory("fixtures", true);
 const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
 
 test.before("Initialise context", (t) => {
@@ -83,17 +83,17 @@ test("2ee8b8", (t) =>
 
 test("4b1c6c", (t) =>
   fixture(t, Rules.get("R15"), {
-    manual: [
-      "1e31a1",
-      "3e4fb4",
-      "4490a0",
-      "4f46ed",
-      "84c7a3",
-      "8d7ac7",
-      "d7c06c",
-      "d7dce5",
-      "e4f6fd",
-    ],
+    // manual: [
+    //   "1e31a1",
+    //   "3e4fb4",
+    //   "4490a0",
+    //   "4f46ed",
+    //   "84c7a3",
+    //   "8d7ac7",
+    //   "d7c06c",
+    //   "d7dce5",
+    //   "e4f6fd",
+    // ],
   }));
 
 test("4e8ab6", (t) => fixture(t, Rules.get("R16")));

@@ -1,3 +1,4 @@
+import { Question } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
 /**
@@ -32,14 +33,6 @@ export namespace Fixture {
 
   export type Fixture = Test | Ignored;
 
-  // TODO for semi-automated cases.
-  interface FixtureAnswer {
-    // target: string;
-    // type: "boolean";
-    // question: string;
-    // answer: boolean;
-  }
-
   /**
    * Options to pass with each rule.
    */
@@ -50,8 +43,12 @@ export namespace Fixture {
     manual?: Array<string>;
     // Alfa is known to have a Inapplicable/Passed discrepancy with ACT-R
     lax?: Array<string>;
+    // Answers for the oracle, this assume that each test case only asks
+    // each question once (so, notably, only has one target).
     answers?: {
-      [fixture: string]: Array<FixtureAnswer>;
+      [fixture: string]: Partial<{
+        [URI in keyof Question.Metadata]: Question.Metadata[URI][1];
+      }>;
     };
   }
 }
