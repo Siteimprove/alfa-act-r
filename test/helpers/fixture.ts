@@ -89,6 +89,7 @@ export function fixture(
       }
 
       seen = seen.set(test.id, true);
+      const usedAnswers: Array<keyof Question.Metadata> = [];
 
       const outcome = await Audit.of(
         page,
@@ -96,7 +97,7 @@ export function fixture(
         manual
           ? undefined
           : answers !== undefined
-          ? oracle(answers, t, page.request.url.toString())
+          ? oracle(answers, t, page.request.url.toString(), usedAnswers)
           : answersWithPath !== undefined
           ? oracleWithPaths(answersWithPath, t, page.request.url.toString())
           : undefined
@@ -129,6 +130,12 @@ export function fixture(
       const expected = test.outcome;
       const actual = outcome.outcome;
       const result = mapping(actual, expected);
+
+      for (const uri in answers ?? []) {
+        if (!usedAnswers.includes(uri as keyof Question.Metadata)) {
+          t.log(`Test ${testID} has unused oracle for ${uri}`);
+        }
+      }
 
       report(
         t,

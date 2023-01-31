@@ -20,7 +20,8 @@ export function oracle<I, T extends Hashable, S>(
     [URI in keyof Question.Metadata]: Question.Metadata[URI][1];
   }>,
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
-  url: string
+  url: string,
+  used: Array<keyof Question.Metadata>
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
     // Check if we do have an answer for this question.
@@ -32,6 +33,8 @@ export function oracle<I, T extends Hashable, S>(
       );
       return dontKnow;
     }
+
+    used.push(question.uri);
 
     // * We use a switch with no default case to ensure exhaustive matching at
     //   the type level. This also fails type checking if a Question.Type is
