@@ -13,7 +13,7 @@ import * as path from "path";
 import { Fixture } from "../../common/fixture";
 
 import { Context, Test } from "./context";
-import { oracle } from "./oracle";
+import { oracle, oracleWithPaths } from "./oracle";
 
 const strict = process.argv.slice(2).includes("--strict");
 
@@ -81,6 +81,13 @@ export function fixture(
         );
       }
 
+      const answers = options.answers?.[test.id];
+      const answersWithPath = options.answersWithPath?.[test.id];
+
+      if (answers !== undefined && answersWithPath !== undefined) {
+        t.log(`At most one kind of oracle should be set for ${testID}.`);
+      }
+
       seen = seen.set(test.id, true);
 
       const outcome = await Audit.of(
@@ -88,11 +95,11 @@ export function fixture(
         [rule.get()],
         manual
           ? undefined
-          : oracle(
-              options.answers?.[test.id] ?? {},
-              t,
-              page.request.url.toString()
-            )
+          : answers !== undefined
+          ? oracle(answers, t, page.request.url.toString())
+          : answersWithPath !== undefined
+          ? oracleWithPaths(answersWithPath, t, page.request.url.toString())
+          : undefined
       )
         .evaluate()
         .map((outcomes) =>
