@@ -1,3 +1,4 @@
+import { Hex, RGB } from "@siteimprove/alfa-css";
 import * as path from "path";
 
 import ava, { TestFn } from "ava";
@@ -13,6 +14,11 @@ import { report } from "./helpers/report";
 
 const fixture = factory("fixtures", true);
 const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
+
+function hex(col: string): RGB {
+  const color = Hex.of(parseInt(`${col}ff`, 16));
+  return RGB.of(color.red, color.green, color.blue, color.alpha);
+}
 
 test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
@@ -171,21 +177,21 @@ test.skip("9eb3f6", (t) => fixture(t, Rules.get("R39")));
 
 test("b20e66", (t) =>
   fixture(t, Rules.get("R41"), {
-    // manual: [
-    //   "01b3fc",
-    //   "1e15dd",
-    //   "2cd6ce",
-    //   "35dc57",
-    //   "675f10",
-    //   "7babd7",
-    //   "812cd2",
-    //   "8557f3",
-    //   "918293",
-    //   "9b6335",
-    //   "a98dc5",
-    //   "b52fce",
-    //   "ee0f09",
-    // ],
+    answers: {
+      "01b3fc": { "reference-equivalent-resources": true },
+      "1e15dd": { "reference-equivalent-resources": true },
+      "2cd6ce": { "reference-equivalent-resources": false },
+      "35dc57": { "reference-equivalent-resources": true },
+      "675f10": { "reference-equivalent-resources": true },
+      "7babd7": { "reference-equivalent-resources": true },
+      "812cd2": { "reference-equivalent-resources": false },
+      "8557f3": { "reference-equivalent-resources": false },
+      "918293": { "reference-equivalent-resources": false },
+      "9b6335": { "reference-equivalent-resources": false },
+      a98dc5: { "reference-equivalent-resources": true },
+      b52fce: { "reference-equivalent-resources": false },
+      ee0f09: { "reference-equivalent-resources": true },
+    },
   }));
 
 test("ff89c9", (t) =>
@@ -273,12 +279,37 @@ test("ffd0e9", (t) => fixture(t, Rules.get("R64")));
 
 test("oj04fd", (t) =>
   fixture(t, Rules.get("R65"), {
-    manual: ["7ac2f2", "c80b3c", "f228e7"],
+    answers: {
+      "7ac2f2": { "has-focus-indicator": false },
+      f228e7: { "has-focus-indicator": true },
+    },
+    answersWithPath: {
+      c80b3c: {
+        "has-focus-indicator": {
+          "/html[1]/body[1]/a[1]": true,
+          "/html[1]/body[1]/a[2]": true,
+          "/html[1]/body[1]/a[3]": true,
+        },
+      },
+    },
   }));
+
+// This image is used in several test cases.
+// Only selecting some colors of the image, including the brightest and
+// the darkest.
+const blackHoleSunColors = [
+  hex("0a0605"),
+  hex("fbf9d2"),
+  hex("a52001"),
+  hex("fbae2c"),
+];
 
 test("09o5cg", (t) =>
   fixture(t, Rules.get("R66"), {
-    manual: ["2b137a", "2eeb7d"],
+    answers: {
+      "2b137a": { "background-colors": blackHoleSunColors },
+      "2eeb7d": { "background-colors": blackHoleSunColors },
+    },
     skip: [
       // Alfa assumes that non-human language text is marked as presentational
       "e778ed",
