@@ -50,5 +50,12 @@ export namespace Fixture {
         [URI in keyof Question.Metadata]: Question.Metadata[URI][1];
       }>;
     };
+    answersWithPath?: {
+      [fixture: string]: Partial<{
+        [URI in keyof Question.Metadata]: {
+          [subjectPath: string]: Question.Metadata[URI][1];
+        };
+      }>;
+    };
   }
 }
