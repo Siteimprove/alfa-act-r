@@ -346,7 +346,14 @@ test("afw4f7", (t) =>
       // Alfa does not yet disregard impossible foreground/background combinations
       "92452d",
     ],
-    manual: ["416921", "7004f1", "e5c024"],
+    answers: {
+      "416921": { "background-colors": blackHoleSunColors },
+      "7004f1": { "background-colors": [hex("979797"), hex("686868")] },
+      // In this case, the text is not above the brightest parts of the image.
+      e5c024: {
+        "background-colors": [hex("9c1a00"), hex("4a0800"), hex("c64e00")],
+      },
+    },
   }));
 
 // R70 is Siteimprove only
@@ -374,18 +381,23 @@ test("afw4f7", (t) =>
 // R81 has questions in expectation, review flow not currently handled
 test("fd3a94", (t) =>
   fixture(t, Rules.get("R81"), {
-    manual: [
-      "10c991",
-      "144556",
-      "5041c9",
-      "65aaf1",
-      "75e59a",
-      "80824c",
-      "8d6fa9",
-      "b7dc66",
-      "c16600",
-      "ce860d",
-      "e0ec0a",
+    answers: {
+      "10c991": { "reference-equivalent-resources": true },
+      "144556": { "reference-equivalent-resources": false },
+      "5041c9": { "reference-equivalent-resources": false },
+      "65aaf1": { "reference-equivalent-resources": false },
+      "75e59a": { "reference-equivalent-resources": true },
+      "80824c": { "reference-equivalent-resources": true },
+      "8d6fa9": { "reference-equivalent-resources": false },
+      b7dc66: { "reference-equivalent-resources": false },
+      c16600: { "reference-equivalent-resources": true },
+      ce860d: { "reference-equivalent-resources": true },
+      e0ec0a: { "reference-equivalent-resources": true },
+      e9979a: { "reference-equivalent-resources": false },
+    },
+    skip: [
+      // Alfa does not consider `<div>` in the link context
+      // https://github.com/Siteimprove/alfa/issues/767
       "e9979a",
     ],
     lax: [
