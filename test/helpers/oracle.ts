@@ -62,6 +62,66 @@ export function oracle<I, T extends Hashable, S>(
   };
 }
 
+export function oracleWithPaths<I, T extends Hashable, S>(
+  answers: Partial<{
+    [URI in keyof Question.Metadata]: {
+      [subjectPath: string]: Question.Metadata[URI][1];
+    };
+  }>,
+  t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
+  url: string
+): act.Oracle<I, T, Question.Metadata, S> {
+  return (_, question) => {
+    if (!Node.isNode(question.subject)) {
+      t.log(
+        `${url} is asking ${question.uri} for ${subjectToString(
+          question.subject
+        )} which is not a node`
+      );
+      return dontKnow;
+    }
+
+    const subjectPath = question.subject.path();
+
+    // Check if we do have an answer for this question.
+    if (answers[question.uri]?.[subjectPath] === undefined) {
+      t.log(
+        `${url} is asking ${question.uri} for ${subjectToString(
+          question.subject
+        )}`
+      );
+      return dontKnow;
+    }
+
+    // * We use a switch with no default case to ensure exhaustive matching at
+    //   the type level. This also fails type checking if a Question.Type is
+    //   not used by any question.
+    // * We can't pre-compute `wrapper` or even `answers[question.uri]` because
+    //   we first need to narrow by question type to ensure the answer has the
+    //   expected type.
+    // * Thanks to the initial test, we know that answers[question.uri] exists.
+    switch (question.type) {
+      case "boolean":
+        return wrapper(answers[question.uri]![subjectPath]);
+
+      case "node":
+        return wrapper(answers[question.uri]![subjectPath]);
+
+      case "node[]":
+        return wrapper(answers[question.uri]![subjectPath]);
+
+      case "color[]":
+        return wrapper(answers[question.uri]![subjectPath]);
+
+      case "string":
+        return wrapper(answers[question.uri]![subjectPath]);
+
+      case "string[]":
+        return wrapper(answers[question.uri]![subjectPath]);
+    }
+  };
+}
+
 function subjectToString(subject: unknown): string {
   if (Node.isNode(subject)) {
     return subject.path();
