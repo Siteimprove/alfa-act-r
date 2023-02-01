@@ -2,7 +2,6 @@ import * as act from "@siteimprove/alfa-act";
 import { Node } from "@siteimprove/alfa-dom";
 import { Future } from "@siteimprove/alfa-future";
 import { Hashable } from "@siteimprove/alfa-hash";
-import { Iterable } from "@siteimprove/alfa-iterable";
 import { None, Option } from "@siteimprove/alfa-option";
 import { Group, Question } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
@@ -17,11 +16,14 @@ const dontKnow = Future.now(None);
 
 export function oracle<I, T extends Hashable, S>(
   answers: Partial<{
-    [URI in keyof Question.Metadata]: Question.Metadata[URI][1];
+    [URI in keyof Question.Metadata]: Question.Metadata[URI][0] extends "node"
+      ? (page: Page) => Option<Node>
+      : Question.Metadata[URI][1];
   }>,
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
   url: string,
-  used: Array<keyof Question.Metadata>
+  used: Array<keyof Question.Metadata>,
+  page: Page
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
     // Check if we do have an answer for this question.
@@ -48,7 +50,7 @@ export function oracle<I, T extends Hashable, S>(
         return wrapper(answers[question.uri]!);
 
       case "node":
-        return wrapper(answers[question.uri]!);
+        return wrapper(answers[question.uri]!(page));
 
       case "node[]":
         return wrapper(answers[question.uri]!);
