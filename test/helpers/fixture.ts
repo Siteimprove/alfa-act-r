@@ -49,6 +49,7 @@ export function fixture(
     let seen = (options.skip || [])
       .concat(options.lax || [])
       .concat(options.manual || [])
+
       .reduce((map, cur) => map.set(cur, false), Map.empty<string, boolean>());
 
     // Read all test cases for a given rule

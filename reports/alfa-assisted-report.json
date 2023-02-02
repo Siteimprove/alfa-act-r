@@ -47810,7 +47810,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -47830,7 +47830,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html"
         },
         {
           "@type": [
@@ -47843,25 +47843,41 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<head>\n\t\t<meta http-equiv=\"refresh\" content=\"0; https://w3.org\" />\n\t\t<meta http-equiv=\"refresh\" content=\"30; https://w3.org\" />\n\t</head>\n</body>\n</html>"
           },
           "http-vocab:headers": {
-            "@list": []
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
           },
-          "http-vocab:statusCodeValue": 304
+          "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The refresh or redirect happens immediately",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/meta[1]"
+        }
       },
       "subject": {
-        "@id": "https://www.w3.org/"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r96",

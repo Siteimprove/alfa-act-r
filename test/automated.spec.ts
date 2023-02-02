@@ -278,7 +278,7 @@ test("oj04fd", (t) =>
 
 test("09o5cg", (t) =>
   fixture(t, Rules.get("R66"), {
-    manual: ["2b137a", "2eeb7d"],
+    manual: ["2eeb7d", "f32863"],
     skip: [
       // Alfa assumes that non-human language text is marked as presentational
       "e778ed",

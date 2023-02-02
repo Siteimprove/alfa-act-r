@@ -1141,7 +1141,6 @@ const blackHoleSunColors = [
 test("09o5cg", (t) =>
   fixture(t, Rules.get("R66"), {
     answers: {
-      "2b137a": { "background-colors": blackHoleSunColors },
       "2eeb7d": { "background-colors": blackHoleSunColors },
       f32863: {
         // In this case, the text is not above the brightest parts of the image.
