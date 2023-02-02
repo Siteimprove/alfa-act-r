@@ -62,7 +62,7 @@
   },
   "@graph": [
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ac63f6ffcb1831a5614e525627822e7a6f15343d.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/dbc6a8459d78e618aab31e7051b4ce69b59c7f2f.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -82,7 +82,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ac63f6ffcb1831a5614e525627822e7a6f15343d.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/dbc6a8459d78e618aab31e7051b4ce69b59c7f2f.html"
         },
         {
           "@type": [
@@ -95,7 +95,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<p>This is a paragraph.</p>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<p lang=\"en\">\n\t\tThe Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test rules.\n\t\tThese test rules can be used for developing automated testing tools and manual testing methodologies. It provides a\n\t\tcommon format that allows any party involved in accessibility testing to document and share their testing procedures\n\t\tin a robust and understandable manner. This enables transparency and harmonization of testing methods, including\n\t\tmethods implemented by accessibility test tools.\n\t</p>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -109,7 +109,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ac63f6ffcb1831a5614e525627822e7a6f15343d.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/dbc6a8459d78e618aab31e7051b4ce69b59c7f2f.html"
     },
     {
       "@type": "Assertion",
@@ -119,27 +119,38 @@
         "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ac63f6ffcb1831a5614e525627822e7a6f15343d.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/dbc6a8459d78e618aab31e7051b4ce69b59c7f2f.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": {
-          "@id": "WCAG2:error-identification",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Error Identification"
-        }
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e76345ab4164567a24c0dc9dece56cee1794dc0c.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -159,7 +170,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e76345ab4164567a24c0dc9dece56cee1794dc0c.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html"
         },
         {
           "@type": [
@@ -172,7 +183,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 3</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" value=\"0\" />\n\t\t<span id=\"error\" style=\"display: none;\">Invalid value for age. Age must be at least 1.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" aria-describedby=\"error\" />\n\t</form>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"fr\">\n\t<head>\n\t\t<title>Paul put dire comment on tape</title>\n\t</head>\n\t<body>\n\t\t<p>Paul put dire comment on tape</p>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -186,14 +197,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e76345ab4164567a24c0dc9dece56cee1794dc0c.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "At least one error indicator identifies the form field, but the error indicator is not perceivable\nAt least one error indicator describes the cause of the error or how to resolve it, but the error indicator is not perceivable",
+        "info": "The document has no identifiable natural language",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -202,31 +213,42 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+          "ptr:expression": "/"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e76345ab4164567a24c0dc9dece56cee1794dc0c.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": {
-          "@id": "WCAG2:error-identification",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Error Identification"
-        }
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -246,7 +268,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html"
         },
         {
           "@type": [
@@ -259,7 +281,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<form>\n\t\t<p id=\"error\">\n\t\t\t<strong>\n\t\t\t\tName and color cannot be empty. Please complete all required fields.\n\t\t\t</strong>\n\t\t</p>\n\t\t<fieldset>\n\t\t\t<legend>Shipping</legend>\n\t\t\t<label for=\"name\">Name (required)</label>\n\t\t\t<input type=\"text\" id=\"name\" required />\n\t\t\t<br />\n\t\t\t<label for=\"address\">Address</label>\n\t\t\t<input type=\"text\" id=\"address\" />\n\t\t</fieldset>\n\t\t<fieldset>\n\t\t\t<legend>Pick a color (required)</legend>\n\t\t\t<label><input type=\"radio\" name=\"color\" value=\"blue\" required />Blue</label>\n\t\t\t<label><input type=\"radio\" name=\"color\" value=\"yellow\" />Yellow</label>\n\t\t</fieldset>\n\t\t<input type=\"button\" value=\"Submit\" aria-describedby=\"error\" />\n\t</form>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Gelukkig</title>\n\t</head>\n\t<body>\n\t\t<p>The Dutch word \"gelukkig\" has no equivalent in English.</p>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -273,14 +295,386 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "At least one error indicator that is perceivable identifies the form field\nAt least one error indicator that is perceivable describes the cause of the error or how to resolve it",
+        "info": "The document's `lang` attribute (nl) does not match its language (en)",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/0f73e7179e17f050380f0ea350d2551611820fd5.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/0f73e7179e17f050380f0ea350d2551611820fd5.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"eng\">\n\t<body>\n\t\t<p lang=\"en\">I love ACT rules!</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/0f73e7179e17f050380f0ea350d2551611820fd5.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/0f73e7179e17f050380f0ea350d2551611820fd5.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<svg xmlns=\"http://www.w3.org/2000/svg\" lang=\"fr\"></svg>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "image/svg+xml"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"da\">\n\t<head>\n\t\t<title>ACT Rules Format 1.0 - Abstract</title>\n\t</head>\n\t<body>\n\t\t<p>\n\t\t\tThe Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test\n\t\t\trules. These test rules can be used for developing automated testing tools and manual testing methodologies. It\n\t\t\tprovides a common format that allows any party involved in accessibility testing to document and share their\n\t\t\ttesting procedures in a robust and understandable manner. This enables transparency and harmonization of testing\n\t\t\tmethods, including methods implemented by accessibility test tools.\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "The document's `lang` attribute (da) does not match its language (en)",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/96785fb73282803fa4ca791ffdc0c3bc46b90702.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/96785fb73282803fa4ca791ffdc0c3bc46b90702.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>ACT Rules Format 1.0 - Abstract</title>\n\t</head>\n\t<body>\n\t\t<p>\n\t\t\tThe Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test\n\t\t\trules. These test rules can be used for developing automated testing tools and manual testing methodologies. It\n\t\t\tprovides a common format that allows any party involved in accessibility testing to document and share their\n\t\t\ttesting procedures in a robust and understandable manner. This enables transparency and harmonization of testing\n\t\t\tmethods, including methods implemented by accessibility test tools.\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/96785fb73282803fa4ca791ffdc0c3bc46b90702.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "The document's `lang` attribute (en) matches its language (en)",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -289,31 +683,42 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/form[1]/fieldset[1]/input[1]"
+          "ptr:expression": "/"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/96785fb73282803fa4ca791ffdc0c3bc46b90702.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": {
-          "@id": "WCAG2:error-identification",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Error Identification"
-        }
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/3bb6b76d2dd823e02cace7c6be2a7ebe535d1d97.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/941efb7368e46b27b937d34b07fc4d41da01b002.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -333,7 +738,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/3bb6b76d2dd823e02cace7c6be2a7ebe535d1d97.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/941efb7368e46b27b937d34b07fc4d41da01b002.html"
         },
         {
           "@type": [
@@ -346,7 +751,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<form>\n\t\t<div id=\"error\">Please fill the field correctly.</div>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" />\n\t\t<label for=\"name\">Name</label>\n\t\t<input type=\"text\" id=\"name\" />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html></html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -360,14 +765,102 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/3bb6b76d2dd823e02cace7c6be2a7ebe535d1d97.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/941efb7368e46b27b937d34b07fc4d41da01b002.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/941efb7368e46b27b937d34b07fc4d41da01b002.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Paris</title>\n\t</head>\n\t<body>\n\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" aria-labelledby=\"caption\" />\n\t\t<p lang=\"en\" id=\"caption\" hidden>\n\t\t\tFireworks over Paris!\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "None of the error indicators identify the form field\nNone of the error indicators describe the cause of the error or how to resolve it",
+        "info": "The document's `lang` attribute (nl) does not match its language (en)",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -376,31 +869,42 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+          "ptr:expression": "/"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/3bb6b76d2dd823e02cace7c6be2a7ebe535d1d97.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": {
-          "@id": "WCAG2:error-identification",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Error Identification"
-        }
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -420,7 +924,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html"
         },
         {
           "@type": [
@@ -433,7 +937,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" />\n\t\t<span id=\"error\">Please enter the correct text.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Fireworks over Paris</title>\n\t</head>\n\t<body>\n\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t<p lang=\"nl\">\n\t\t\tGelukkig nieuwjaar!\n\t\t</p>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -447,14 +951,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "None of the error indicators describe the cause of the error or how to resolve it",
+        "info": "The document's `lang` attribute (nl) does not match its language (en)",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -463,31 +967,42 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+          "ptr:expression": "/"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": {
-          "@id": "WCAG2:error-identification",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Error Identification"
-        }
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/d7863608ff2aab99c43663cb3701c65c28b75c23.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -507,7 +1022,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/d7863608ff2aab99c43663cb3701c65c28b75c23.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html"
         },
         {
           "@type": [
@@ -520,7 +1035,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 5</title>\n</head>\n<body>\n\t<form>\n\t\t<fieldset>\n\t\t\t<legend>Shipping</legend>\n\t\t\t<label for=\"shippingName\">Name</label>\n\t\t\t<input type=\"text\" id=\"shippingName\" required />\n\t\t\t<label for=\"shippingAddress\">Address</label>\n\t\t\t<input type=\"text\" id=\"shippingAddress\" required />\n\t\t</fieldset>\n\t\t<fieldset>\n\t\t\t<legend>Billing</legend>\n\t\t\t<label for=\"billingName\">Name</label>\n\t\t\t<input type=\"text\" id=\"billingName\" />\n\t\t\t<label for=\"billingAddress\">Address</label>\n\t\t\t<input type=\"text\" id=\"billingAddress\" />\n\t\t</fieldset>\n\t\t<span id=\"error\">All required fields must be filled.<br />Please fill Name.<br />Please fill Address</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Met de kippen op stok</title>\n\t</head>\n\t<body>\n\t\t<blockquote>\n\t\t\t<p>\"Hij ging met de kippen op stok\"</p>\n\t\t</blockquote>\n\t\t<p lang=\"en\">\n\t\t\tThis Dutch phrase literally translates into \"He went to roost with the chickens\", but it means that he went to bed\n\t\t\tearly.\n\t\t</p>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -534,14 +1049,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/d7863608ff2aab99c43663cb3701c65c28b75c23.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "None of the error indicators identify the form field",
+        "info": "The document's `lang` attribute (en) does not match its language (nl)",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -550,31 +1065,42 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/form[1]/fieldset[1]/input[1]"
+          "ptr:expression": "/"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/d7863608ff2aab99c43663cb3701c65c28b75c23.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": {
-          "@id": "WCAG2:error-identification",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Error Identification"
-        }
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ddcd6a3065a711139251df4ab4777ae096856c58.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/cd7898c9fcd7d06565cd55393310c2600ffc070f.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -594,7 +1120,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ddcd6a3065a711139251df4ab4777ae096856c58.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/cd7898c9fcd7d06565cd55393310c2600ffc070f.html"
         },
         {
           "@type": [
@@ -607,7 +1133,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" value=\"0\" />\n\t\t<span id=\"error\" aria-hidden=\"true\">Invalid value for age. Age must be at least 1.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"EN\">\n\t<head>\n\t\t<title>Gelukkig</title>\n\t</head>\n\t<body>\n\t\t<p>The Dutch word \"gelukkig\" has no equivalent in English.</p>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -621,101 +1147,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ddcd6a3065a711139251df4ab4777ae096856c58.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/cd7898c9fcd7d06565cd55393310c2600ffc070f.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "At least one error indicator identifies the form field, but the error indicator is not perceivable\nAt least one error indicator describes the cause of the error or how to resolve it, but the error indicator is not perceivable",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ddcd6a3065a711139251df4ab4777ae096856c58.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "WCAG2:error-identification",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Error Identification"
-        }
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"filter\">Product filter</label>\n\t\t<input type=\"text\" id=\"filter\" />\n\t\t<input type=\"button\" value=\"filter\" />\n\t\t<p>To see all products, leave the field empty.</p>\n\t</form>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The form field has no error indicator\nThe form field has no error indicator",
+        "info": "The document's `lang` attribute (en) matches its language (en)",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -724,31 +1163,42 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+          "ptr:expression": "/"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/cd7898c9fcd7d06565cd55393310c2600ffc070f.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": {
-          "@id": "WCAG2:error-identification",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Error Identification"
-        }
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e2cc934a42be5a597106214fa0fbcefd6ceac599.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/5f654ecf0b7a0af4d0ba120a5cd1db2761ffa79c.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -768,7 +1218,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e2cc934a42be5a597106214fa0fbcefd6ceac599.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/5f654ecf0b7a0af4d0ba120a5cd1db2761ffa79c.html"
         },
         {
           "@type": [
@@ -781,7 +1231,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" aria-describedby=\"error\" value=\"0\" />\n\t\t<span id=\"error\">Invalid value for age. Age must be at least 1.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Met de kippen op stok</title>\n\t</head>\n\t<body>\n\t\t<blockquote>\n\t\t\t<p>\"Hij ging met de kippen op stok\"</p>\n\t\t</blockquote>\n\t\t<p lang=\"en\">\n\t\t\tThis Dutch phrase literally translates into \"He went to roost with the chickens\", but it means that he went to bed\n\t\t\tearly.\n\t\t</p>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -795,14 +1245,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e2cc934a42be5a597106214fa0fbcefd6ceac599.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/5f654ecf0b7a0af4d0ba120a5cd1db2761ffa79c.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "At least one error indicator that is perceivable identifies the form field\nAt least one error indicator that is perceivable describes the cause of the error or how to resolve it",
+        "info": "The document's `lang` attribute (nl) matches its language (nl)",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -811,27 +1261,224 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+          "ptr:expression": "/"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e2cc934a42be5a597106214fa0fbcefd6ceac599.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/5f654ecf0b7a0af4d0ba120a5cd1db2761ffa79c.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": {
-          "@id": "WCAG2:error-identification",
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
           "@type": [
-            "TestCriterion",
-            "TestRequirement"
+            "http-vocab:Message",
+            "http-vocab:Request"
           ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Error Identification"
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"i-lux\">\n\t<body>\n\t\t<p lang=\"lb\">Lëtzebuerg ass e Land an Europa.</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
         }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/a67210a4d3e4db840309518c1ec557459b709206.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/a67210a4d3e4db840309518c1ec557459b709206.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Fireworks over Paris</title>\n\t</head>\n\t<body>\n\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t<p lang=\"nl\">\n\t\t\tGelukkig nieuwjaar!\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/a67210a4d3e4db840309518c1ec557459b709206.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "The document's `lang` attribute (en) matches its language (en)",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/a67210a4d3e4db840309518c1ec557459b709206.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:language-of-page",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Language of Page"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H57",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using the language attribute on the HTML element"
+          }
+        ]
       }
     }
   ]

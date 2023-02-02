@@ -1449,6 +1449,24 @@ test.after("Write report", (t) => {
 //
 // // R108 is SI only
 //
-test("ucwvc8", (t) => fixture(t, Option.of(experimentalRules.R109)));
+test("ucwvc8", (t) =>
+  fixture(t, Option.of(experimentalRules.R109), {
+    answers: {
+      "0dc883": { "document-language": "no identified language" },
+      "185b49": { "document-language": "en" },
+      "58e65a": { "document-language": "en" },
+      "722fd3": { "document-language": "en" },
+      cf6190: { "document-language": "en" },
+      d7c89f: { "document-language": "en" },
+      dcad97: { "document-language": "nl" },
+      e32447: { "document-language": "en" },
+      eb42cf: { "document-language": "nl" },
+      f522a6: { "document-language": "en" },
+    },
+    skip: [
+      // Alfa currently fails pages with no detected language
+      "0dc883",
+    ],
+  }));
 
 // test("674b10", (t) => fixture(t, Rules.get("R110")));
