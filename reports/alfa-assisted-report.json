@@ -62,7 +62,7 @@
   },
   "@graph": [
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/3e93253107ce18a6170206bb287f03b1e3497c40.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -82,7 +82,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/3e93253107ce18a6170206bb287f03b1e3497c40.html"
         },
         {
           "@type": [
@@ -95,7 +95,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-incorrect-transcript.txt\">Transcript</a>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<video autoplay controls>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -109,14 +109,188 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/3e93253107ce18a6170206bb287f03b1e3497c40.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<audio>` element does not have a transcript",
+        "info": "The `<video>` element has a mechanism to pause or stop audio and the mechanism is perceivable",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/video[1]"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/3e93253107ce18a6170206bb287f03b1e3497c40.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/f9af87d3dbc0303b261e0552b32067a7513263cb.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/f9af87d3dbc0303b261e0552b32067a7513263cb.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<head>\n\t\t<style>\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div id=\"video-container\">\n\t\t\t<!-- Video -->\n\t\t\t<video id=\"video\" autoplay>\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t\t</video>\n\t\t\t<!-- Video Controls -->\n\t\t\t<div id=\"video-controls\">\n\t\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\">Pause</button>\n\t\t\t\t<button type=\"button\" id=\"mute\">Mute</button>\n\t\t\t</div>\n\t\t</div>\n\t\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n\t</body>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/f9af87d3dbc0303b261e0552b32067a7513263cb.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "The `<video>` element has a mechanism to pause or stop audio and the mechanism is perceivable",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/div[1]/video[1]"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/f9af87d3dbc0303b261e0552b32067a7513263cb.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" autoplay></audio>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "The `<audio>` element does not have a mechanism to pause or stop audio",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -129,19 +303,27 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": []
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/07965ba721519d8e4c53bc91692db1f97b8d7575.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -161,7 +343,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/07965ba721519d8e4c53bc91692db1f97b8d7575.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html"
         },
         {
           "@type": [
@@ -174,7 +356,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">`\n<video controls>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/transcript.html\">Transcript</a>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<video autoplay>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -188,112 +370,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/07965ba721519d8e4c53bc91692db1f97b8d7575.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<video>` element has a link that is perceivable",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/07965ba721519d8e4c53bc91692db1f97b8d7575.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r24",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:media-alternative-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Media Alternative (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G69",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing an alternative for time based media"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video controls>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t</video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The visual information of the `<video>` element is not available through audio",
+        "info": "The `<video>` element does not have a mechanism to pause or stop audio",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -306,47 +390,27 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r25",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a movie with extended audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G173",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a version of a movie with audio descriptions"
-          }
-        ]
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/095d586472a567660c95d2954f9fc65275c159fe.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -366,7 +430,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/095d586472a567660c95d2954f9fc65275c159fe.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html"
         },
         {
           "@type": [
@@ -379,7 +443,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tNot being able to use your computer because your mouse doesn't work, is frustrating. Either through preference or\n\t\tcircumstance. This is solved by keyboard compatibility. Keyboard compatibility is described in WCAG. See the video\n\t\tbelow to watch the same information again in video form.\n\t</p>\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video-with-captions-silent.mp4\" controls></video>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<video autoplay muted>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -393,965 +457,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/095d586472a567660c95d2954f9fc65275c159fe.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element has no text alternative",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/095d586472a567660c95d2954f9fc65275c159fe.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r26",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/9f640c8743b6ebee3942fc833f106984b5ee49bb.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/9f640c8743b6ebee3942fc833f106984b5ee49bb.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video.mp4\" controls>\n\t\t<track src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-caption.vtt\" kind=\"captions\" />\n\t</video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/9f640c8743b6ebee3942fc833f106984b5ee49bb.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element has a text alternative for its audio content",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/9f640c8743b6ebee3942fc833f106984b5ee49bb.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r27",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:captions-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Captions (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G87",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing closed captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G93",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing open (always visible) captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H95",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using the track element to provide captions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n\t<p>\n\t\tThe above audio contains the following speech: We choose to go to the cheese in this decade and do the other things,\n\t\tnot because they are easy, but because they are hard, because that goal will serve to organize and measure the best\n\t\tof our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to\n\t\tpostpone, and one which we intend to win, and the others, too.\n\t</p>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<audio>` element does not have a transcript",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/audio[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/50ee346de986982007936f25602b28bf6929ea5d.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/50ee346de986982007936f25602b28bf6929ea5d.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">`\n<video controls>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/incorrect-transcript.html\">Transcript</a>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/50ee346de986982007936f25602b28bf6929ea5d.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element does not have a transcript",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/50ee346de986982007936f25602b28bf6929ea5d.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r24",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:media-alternative-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Media Alternative (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G69",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing an alternative for time based media"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/4095c53d7b6550e5af6a9edf43ec7c803bc1e462.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/4095c53d7b6550e5af6a9edf43ec7c803bc1e462.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video controls>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.webm\" type=\"video/webm\" />\n\t</video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/4095c53d7b6550e5af6a9edf43ec7c803bc1e462.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The visual information of the `<video>` element is not available through audio",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/4095c53d7b6550e5af6a9edf43ec7c803bc1e462.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r25",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a movie with extended audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G173",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a version of a movie with audio descriptions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/10ce0d34bb2e94f7cf3551d566d10e8f5e21c9f3.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/10ce0d34bb2e94f7cf3551d566d10e8f5e21c9f3.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the\n\t\tkeyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.\n\t\tKeyboard compatibility is described in WCAG.\n\t</p>\n\t<p style=\"display: none;\">\n\t\tSee the video below to watch the same information again in video form.\n\t</p>\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video-with-captions-silent.mp4\" controls></video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/10ce0d34bb2e94f7cf3551d566d10e8f5e21c9f3.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element is not labelled as an alternative for text",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/10ce0d34bb2e94f7cf3551d566d10e8f5e21c9f3.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r26",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/47dd719ce35a9aef8dddd58fc3b1c08956d92889.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/47dd719ce35a9aef8dddd58fc3b1c08956d92889.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tWeb Accessibility Perspectives: Keyboard Accessibility. Not being able to use your computer because your mouse\n\t\tdoesn't work, is frustrating. Many people use only the keyboard to navigate websites. Either through preference or\n\t\tcircumstance. This is solved by keyboard compatibility. Keyboard compatibility is described in WCAG. See the video\n\t\tbelow to watch the same information again in video form.\n\t</p>\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video.mp4\" controls></video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/47dd719ce35a9aef8dddd58fc3b1c08956d92889.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element has a text alternative for its audio content",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/47dd719ce35a9aef8dddd58fc3b1c08956d92889.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r27",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:captions-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Captions (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G87",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing closed captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G93",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing open (always visible) captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H95",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using the track element to provide captions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3910043a0a8d9aff05d926b7bf9757b8b2ee98da.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3910043a0a8d9aff05d926b7bf9757b8b2ee98da.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" autoplay></audio>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-transcript.txt\">Transcript</a>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3910043a0a8d9aff05d926b7bf9757b8b2ee98da.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<audio>` element has a link that is perceivable",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/audio[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3910043a0a8d9aff05d926b7bf9757b8b2ee98da.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/8ebc51b6599b22345051dc57d2c7649724f58f0b.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/8ebc51b6599b22345051dc57d2c7649724f58f0b.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">`\n<video controls>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<p>The above video shows a giant fat rabbit climbing out of a hole in the ground.\nHe stretches, yaws, and then starts walking.\nThen he stops to scratch his bottom.</p>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/8ebc51b6599b22345051dc57d2c7649724f58f0b.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element has a transcript that is perceivable",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/8ebc51b6599b22345051dc57d2c7649724f58f0b.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r24",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:media-alternative-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Media Alternative (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G69",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing an alternative for time based media"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/c98f35f1ae4f08f277beef585a48a7d7dfaa35ac.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/c98f35f1ae4f08f277beef585a48a7d7dfaa35ac.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.min.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-skin/highlights-blue.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/transcript.css\" />\n\n\t<figure id=\"ozplayer-1-container\" class=\"ozplayer-container\">\n\t\t<div data-controls=\"stack\" class=\"ozplayer\" id=\"ozplayer-1\">\n\t\t\t<video controls=\"controls\" preload=\"none\">\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t</video>\n\t\t\t<audio data-default=\"default\" preload=\"none\">\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/incorrect-audio-description.mp3\" type=\"audio/mp3\" />\n\t\t\t</audio>\n\t\t</div>\n\t</figure>\n\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/mediaelement.min.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.free.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-lang/en.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/config.js\"></script>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/c98f35f1ae4f08f277beef585a48a7d7dfaa35ac.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The visual information of the `<video>` element is not available through audio",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/figure[1]/div[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/c98f35f1ae4f08f277beef585a48a7d7dfaa35ac.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r25",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a movie with extended audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G173",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a version of a movie with audio descriptions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/410798f8a3fb14f6dd3f6a47c50f52d7bb7ff739.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/410798f8a3fb14f6dd3f6a47c50f52d7bb7ff739.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the\n\t\tkeyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.\n\t\tKeyboard compatibility is described in WCAG. See the video below to watch the same information again in video form.\n\t</p>\n\t<video\n\t\tsrc=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video-with-captions-silent.mp4\"\n\t\tcontrols\n\t\tstyle=\"display: none;\"\n\t></video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/410798f8a3fb14f6dd3f6a47c50f52d7bb7ff739.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html"
     },
     {
       "@type": "Assertion",
@@ -1361,19 +467,27 @@
         "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/410798f8a3fb14f6dd3f6a47c50f52d7bb7ff739.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r26",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": []
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/4b86a2baaa324f721a4bf646b87993be599b82a1.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -1393,7 +507,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/4b86a2baaa324f721a4bf646b87993be599b82a1.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html"
         },
         {
           "@type": [
@@ -1406,7 +520,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tNot being able to use your computer because your mouse doesn't work, is frustrating. Either through preference or\n\t\tcircumstance. This is solved by keyboard compatibility. Keyboard compatibility is described in WCAG. See the video\n\t\tbelow to watch the same information again in video form.\n\t</p>\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video.mp4\" controls></video>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 3</title>\n</head>\n<body>\n\t<head>\n\t\t<style>\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div id=\"video-container\">\n\t\t\t<!-- Video -->\n\t\t\t<video id=\"video\" autoplay>\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t\t</video>\n\t\t\t<!-- Video Controls -->\n\t\t\t<div id=\"video-controls\">\n\t\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\">Pause</button>\n\t\t\t\t<button type=\"button\" id=\"mute\">Mute</button>\n\t\t\t</div>\n\t\t</div>\n\t\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n\t</body>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -1420,14 +534,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/4b86a2baaa324f721a4bf646b87993be599b82a1.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<video>` element has no text alternative for its audio content",
+        "info": "The `<video>` element has a mechanism to pause or stop audio but the mechanism is not perceivable",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -1436,60 +550,31 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
+          "ptr:expression": "/html[1]/body[1]/div[1]/video[1]"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/4b86a2baaa324f721a4bf646b87993be599b82a1.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r27",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:captions-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Captions (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G87",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing closed captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G93",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing open (always visible) captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H95",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using the track element to provide captions"
-          }
-        ]
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/06b6ada6383efa2ffeaf67370b177090dfcdf5e1.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -1509,7 +594,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/06b6ada6383efa2ffeaf67370b177090dfcdf5e1.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html"
         },
         {
           "@type": [
@@ -1522,7 +607,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n\t<p style=\"text-indent: -9999px;\">\n\t\tThe above audio contains the following speech: We choose to go to the moon in this decade and do the other things,\n\t\tnot because they are easy, but because they are hard, because that goal will serve to organize and measure the best\n\t\tof our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to\n\t\tpostpone, and one which we intend to win, and the others, too.\n\t</p>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<head>\n\t\t<style>\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div id=\"video-container\">\n\t\t\t<!-- Video -->\n\t\t\t<video id=\"video\" autoplay>\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t\t</video>\n\t\t\t<!-- Video Controls -->\n\t\t\t<div id=\"video-controls\">\n\t\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\"></button>\n\t\t\t\t<button type=\"button\" id=\"mute\"></button>\n\t\t\t</div>\n\t\t</div>\n\t\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n\t</body>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -1536,14 +621,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/06b6ada6383efa2ffeaf67370b177090dfcdf5e1.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<audio>` element does not have a transcript",
+        "info": "The `<video>` element has a mechanism to pause or stop audio but the mechanism is not perceivable",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -1552,23 +637,31 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/audio[1]"
+          "ptr:expression": "/html[1]/body[1]/div[1]/video[1]"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/06b6ada6383efa2ffeaf67370b177090dfcdf5e1.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": []
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/5f361cfcf29c6c37a88c0fcdb4246fd8ec0a65c1.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -1588,7 +681,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/5f361cfcf29c6c37a88c0fcdb4246fd8ec0a65c1.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html"
         },
         {
           "@type": [
@@ -1601,7 +694,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">`\n<video controls>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<p>The above video shows a giant fat dog climbing out of a hole in the ground.\nHe stretches, yaws, and then starts walking.\nThen he stops to scratch his bottom.</p>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 5</title>\n</head>\n<body>\n\t<head>\n\t\t<style>\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div id=\"video-container\">\n\t\t\t<!-- Video -->\n\t\t\t<video id=\"video\" autoplay>\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t\t</video>\n\t\t\t<!-- Video Controls -->\n\t\t\t<div id=\"video-controls\" aria-hidden=\"true\">\n\t\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\">Play</button>\n\t\t\t\t<button type=\"button\" id=\"mute\">Mute</button>\n\t\t\t</div>\n\t\t</div>\n\t\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n\t</body>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -1615,14 +708,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/5f361cfcf29c6c37a88c0fcdb4246fd8ec0a65c1.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<video>` element does not have a transcript",
+        "info": "The `<video>` element has a mechanism to pause or stop audio but the mechanism is not perceivable",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -1631,42 +724,31 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
+          "ptr:expression": "/html[1]/body[1]/div[1]/video[1]"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/5f361cfcf29c6c37a88c0fcdb4246fd8ec0a65c1.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r24",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:media-alternative-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Media Alternative (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G69",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing an alternative for time based media"
-          }
-        ]
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/1b605662e74aa7411e29dc56dfa4530efe95ae67.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -1686,7 +768,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/1b605662e74aa7411e29dc56dfa4530efe95ae67.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html"
         },
         {
           "@type": [
@@ -1699,7 +781,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video controls style=\"display: none;\">\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t</video>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -1713,7 +795,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/1b605662e74aa7411e29dc56dfa4530efe95ae67.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html"
     },
     {
       "@type": "Assertion",
@@ -1723,47 +805,27 @@
         "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/1b605662e74aa7411e29dc56dfa4530efe95ae67.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r25",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a movie with extended audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G173",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a version of a movie with audio descriptions"
-          }
-        ]
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/91f5189004dff8c702eefb7214486bd18868fee1.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b712209d068fff2878cceadf40efe21a3ec4f6d8.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -1783,7 +845,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/91f5189004dff8c702eefb7214486bd18868fee1.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b712209d068fff2878cceadf40efe21a3ec4f6d8.html"
         },
         {
           "@type": [
@@ -1796,7 +858,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the\n\t\tkeyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.\n\t\tKeyboard compatibility is described in WCAG. See the video below to watch the same information again in video form.\n\t</p>\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video.mp4\" controls></video>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<video autoplay>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -1810,824 +872,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/91f5189004dff8c702eefb7214486bd18868fee1.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b712209d068fff2878cceadf40efe21a3ec4f6d8.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/91f5189004dff8c702eefb7214486bd18868fee1.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r26",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/4663502bcb6da984af2f46bbc105cb5b70d5a2b2.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/4663502bcb6da984af2f46bbc105cb5b70d5a2b2.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video-silent.mp4\" controls></video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/4663502bcb6da984af2f46bbc105cb5b70d5a2b2.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/4663502bcb6da984af2f46bbc105cb5b70d5a2b2.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r27",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:captions-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Captions (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G87",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing closed captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G93",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing open (always visible) captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H95",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using the track element to provide captions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/f470186843fb28ba9b45dd1efc85b53c92b11c05.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/f470186843fb28ba9b45dd1efc85b53c92b11c05.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" autoplay></audio>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-incorrect-transcript.txt\">Transcript</a>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/f470186843fb28ba9b45dd1efc85b53c92b11c05.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<audio>` element does not have a transcript",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/audio[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/f470186843fb28ba9b45dd1efc85b53c92b11c05.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/1594b82a7acb107fc96345b864d4c1fe92f4b165.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/1594b82a7acb107fc96345b864d4c1fe92f4b165.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">`\n<video controls style=\"display: none;\">\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/transcript.html\">Transcript</a>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/1594b82a7acb107fc96345b864d4c1fe92f4b165.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/1594b82a7acb107fc96345b864d4c1fe92f4b165.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r24",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:media-alternative-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Media Alternative (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G69",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing an alternative for time based media"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/ecb1f00a8995a65865048e694d27515a7d7fc138.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/ecb1f00a8995a65865048e694d27515a7d7fc138.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.min.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-skin/highlights-blue.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/transcript.css\" />\n\n\t<figure id=\"ozplayer-1-container\" class=\"ozplayer-container\">\n\t\t<div data-controls=\"stack\" class=\"ozplayer\" id=\"ozplayer-1\">\n\t\t\t<video controls=\"controls\" preload=\"none\">\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t</video>\n\t\t\t<audio data-default=\"default\" preload=\"none\">\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/audio-description.mp3\" type=\"audio/mp3\" />\n\t\t\t</audio>\n\t\t</div>\n\t</figure>\n\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/mediaelement.min.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.free.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-lang/en.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/config.js\"></script>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/ecb1f00a8995a65865048e694d27515a7d7fc138.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The visual information of the `<video>` element is available through audio",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/figure[1]/div[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/ecb1f00a8995a65865048e694d27515a7d7fc138.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r25",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a movie with extended audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G173",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a version of a movie with audio descriptions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/481e55b81376491b363aab5c622e58fe6b63bace.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/481e55b81376491b363aab5c622e58fe6b63bace.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the\n\t\tkeyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.\n\t\tKeyboard compatibility is described in WCAG. See the video below to watch the same information again in video form.\n\t</p>\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video-with-captions-silent.mp4\" controls></video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/481e55b81376491b363aab5c622e58fe6b63bace.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element has a text alternative that is perceivable\nThe `<video>` element is labelled as an alternative for text and the label is perceivable",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/481e55b81376491b363aab5c622e58fe6b63bace.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r26",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/13431678b898bf6d148b326375b719f4234cb741.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/13431678b898bf6d148b326375b719f4234cb741.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video.mp4\" controls style=\"display: none;\"></video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/13431678b898bf6d148b326375b719f4234cb741.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/13431678b898bf6d148b326375b719f4234cb741.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r27",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:captions-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Captions (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G87",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing closed captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G93",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing open (always visible) captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H95",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using the track element to provide captions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/381f800e41c8f1e72f1164ff0877bbb8446dc55d.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/381f800e41c8f1e72f1164ff0877bbb8446dc55d.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls style=\"display: none;\"></audio>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/381f800e41c8f1e72f1164ff0877bbb8446dc55d.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/381f800e41c8f1e72f1164ff0877bbb8446dc55d.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/830584542b47beaac2df52e84ceff7530be043fb.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/830584542b47beaac2df52e84ceff7530be043fb.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video controls>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-voiceover.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-voiceover.webm\" type=\"video/webm\" />\n\t</video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/830584542b47beaac2df52e84ceff7530be043fb.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The visual information of the `<video>` element is available through audio",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/830584542b47beaac2df52e84ceff7530be043fb.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r25",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a movie with extended audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G173",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a version of a movie with audio descriptions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/0f884e5935b0e6b1bd809d550738772e32f439c5.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/0f884e5935b0e6b1bd809d550738772e32f439c5.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the\n\t\tkeyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.\n\t\tKeyboard compatibility is described in WCAG.\n\t</p>\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video-with-captions-silent.mp4\" controls></video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/0f884e5935b0e6b1bd809d550738772e32f439c5.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element is not labelled as an alternative for text",
+        "info": "The `<video>` element does not have a mechanism to pause or stop audio",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -2640,19 +892,27 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/0f884e5935b0e6b1bd809d550738772e32f439c5.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b712209d068fff2878cceadf40efe21a3ec4f6d8.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r26",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": []
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+        }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/67da88481f2c979c57d48e085146a39938d6221a.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/0d2dcde8931a9083e590034768ae2e0af747491c.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -2672,7 +932,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/67da88481f2c979c57d48e085146a39938d6221a.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/0d2dcde8931a9083e590034768ae2e0af747491c.html"
         },
         {
           "@type": [
@@ -2685,7 +945,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video.mp4\" controls></video>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" autoplay controls></audio>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -2699,375 +959,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/67da88481f2c979c57d48e085146a39938d6221a.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/0d2dcde8931a9083e590034768ae2e0af747491c.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<video>` element has no text alternative for its audio content",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/eac66b/67da88481f2c979c57d48e085146a39938d6221a.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r27",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:captions-prerecorded",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Captions (Prerecorded)"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G87",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing closed captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G93",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing open (always visible) captions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H95",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using the track element to provide captions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\"></audio>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/8664da01669e891e6f0aa73cd85e71277961cc4c.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/8664da01669e891e6f0aa73cd85e71277961cc4c.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video controls>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.webm\" type=\"video/webm\" />\n\t</video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/8664da01669e891e6f0aa73cd85e71277961cc4c.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/8664da01669e891e6f0aa73cd85e71277961cc4c.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r25",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a movie with extended audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a second, user-selectable, audio track that includes audio descriptions"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G173",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Providing a version of a movie with audio descriptions"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/cc09b4256a230ce3b1c7992316e2adb405f88de6.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/cc09b4256a230ce3b1c7992316e2adb405f88de6.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p style=\"display: none;\">\n\t\tNot being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the\n\t\tkeyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.\n\t\tKeyboard compatibility is described in WCAG. See the video below to watch the same information again in video form.\n\t</p>\n\t<video src=\"/WAI/content-assets/wcag-act-rules/test-assets/perspective-video/perspective-video-with-captions-silent.mp4\" controls></video>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/cc09b4256a230ce3b1c7992316e2adb405f88de6.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element has no text alternative\nThe `<video>` element is not labelled as an alternative for text",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd26cf/cc09b4256a230ce3b1c7992316e2adb405f88de6.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r26",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-transcript.txt\">Transcript</a>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<audio>` element has a link that is perceivable",
+        "info": "The `<audio>` element has a mechanism to pause or stop audio and the mechanism is perceivable",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -3080,252 +979,23 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/0d2dcde8931a9083e590034768ae2e0af747491c.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
+        "isPartOf": {
+          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
           "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
+            "TestCriterion",
+            "TestRequirement"
           ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n\t<p>\n\t\tThe above audio contains the following speech: We choose to go to the moon in this decade and do the other things,\n\t\tnot because they are easy, but because they are hard, because that goal will serve to organize and measure the best\n\t\tof our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to\n\t\tpostpone, and one which we intend to win, and the others, too.\n\t</p>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
         }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<audio>` element has a transcript that is perceivable",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/audio[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/d58c6252f96771666f71a65d199316108e709edd.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/d58c6252f96771666f71a65d199316108e709edd.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n\t<p aria-hidden=\"true\">\n\t\tThe above audio contains the following speech: We choose to go to the moon in this decade and do the other things,\n\t\tnot because they are easy, but because they are hard, because that goal will serve to organize and measure the best\n\t\tof our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to\n\t\tpostpone, and one which we intend to win, and the others, too.\n\t</p>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/d58c6252f96771666f71a65d199316108e709edd.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<audio>` element has a transcript that is not perceivable",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/audio[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/d58c6252f96771666f71a65d199316108e709edd.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7cdf59c28089794dbbd75d81f29fb9adb9327cb2.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7cdf59c28089794dbbd75d81f29fb9adb9327cb2.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7cdf59c28089794dbbd75d81f29fb9adb9327cb2.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<audio>` element does not have a transcript",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/audio[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7cdf59c28089794dbbd75d81f29fb9adb9327cb2.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r23",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": []
       }
     }
   ]

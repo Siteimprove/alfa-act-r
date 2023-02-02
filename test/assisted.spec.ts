@@ -177,265 +177,717 @@ test.after("Write report", (t) => {
 //     },
 //   }));
 //
-test("2eb176", (t) =>
-  fixture(t, Rules.get("R23"), {
-    answers: {
-      "283528": {
-        "is-audio-streaming": false,
-        "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
-        transcript: none,
-        // The transcript is incorrect (moon/cheese)
-        "transcript-link": none,
-      },
-      "2973eb": {
-        "is-audio-streaming": false,
-        "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
-        // The transcript is incorrect (moon/cheese)
-        transcript: none,
-        "transcript-link": none,
-      },
-      "32cd0c": {
-        "is-audio-streaming": false,
-        "is-playing": true,
-        transcript: none,
-        "transcript-link": first("a"),
-      },
-      "376f8d": {
-        "is-audio-streaming": false,
-        "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
-        transcript: none,
-        "transcript-link": none,
-      },
-      "4a8645": {
-        "is-audio-streaming": false,
-        "is-playing": true,
-        transcript: none,
-        // The transcript is incorrect (moon/cheese)
-        "transcript-link": none,
-      },
-      "65f9c0": {
-        "is-audio-streaming": false,
-        "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
-        transcript: none,
-        "transcript-link": first("a"),
-      },
-      c68096: {
-        "is-audio-streaming": false,
-        "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
-        transcript: first("p"),
-      },
-      e12d00: {
-        "is-audio-streaming": false,
-        "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
-        transcript: first("p"),
-      },
-      e85d6f: {
-        "is-audio-streaming": false,
-        "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
-        transcript: none,
-        "transcript-link": none,
-      },
-    },
-  }));
-
-test("1a02b0", (t) =>
-  fixture(t, Rules.get("R24"), {
-    answers: {
-      "2b8c15": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        transcript: none,
-        "transcript-link": first("a"),
-      },
-      "516864": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        transcript: none,
-        // The transcript is incorrect (rabbit/dog)
-        "transcript-link": none,
-      },
-      "5e5762": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        transcript: first("p"),
-      },
-      d72727: {
-        "is-video-streaming": false,
-        "has-audio": true,
-        // The transcript is incorrect (rabbit/dog)
-        transcript: none,
-        "transcript-link": none,
-      },
-    },
-  }));
-
-test("1ea59c", (t) =>
-  fixture(t, Rules.get("R25"), {
-    answers: {
-      "1ad085": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        // There is no description
-        "has-description": false,
-      },
-      "270b3e": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        // The description is incorrect (rabbit/dog)
-        "has-description": false,
-      },
-      "290a4b": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        // The description is incorrect (rabbit/dog)
-        "has-description": false,
-      },
-      "632d76": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        "has-description": true,
-      },
-      "66631c": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        "has-description": true,
-      },
-      de54bf: { "is-video-streaming": false, "has-audio": false },
-    },
-  }));
-
-test("fd26cf", (t) =>
-  fixture(t, Rules.get("R26"), {
-    answers: {
-      "35a1c0": {
-        "is-video-streaming": false,
-        "has-audio": false,
-        label: first("p"),
-        // The transcript is incorrect (missing second sentence)
-        "text-alternative": none,
-      },
-      "498798": {
-        "is-video-streaming": false,
-        "has-audio": false,
-        label: none,
-        "text-alternative": first("p"),
-      },
-      "714f23": {
-        "is-video-streaming": false,
-        "has-audio": true,
-      },
-      "971120": {
-        "is-video-streaming": false,
-        "has-audio": false,
-        label: first("p"),
-        "text-alternative": first("p"),
-      },
-      dfbf7a: {
-        "is-video-streaming": false,
-        "has-audio": false,
-        label: none,
-        "text-alternative": first("p"),
-      },
-      fc22f3: {
-        "is-video-streaming": false,
-        "has-audio": false,
-        label: none,
-        "text-alternative": none,
-      },
-    },
-  }));
-
-test("eac66b", (t) =>
-  fixture(t, Rules.get("R27"), {
-    answers: {
-      "07d25d": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        label: none,
-        "text-alternative": none,
-        "has-captions": true,
-      },
-      "3fe6f1": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        label: first("p"),
-        "text-alternative": first("p"),
-        "has-captions": false,
-      },
-      "58b2a2": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        label: first("p"),
-        // Transcript is incorrect (missing second sentence)
-        "text-alternative": none,
-        "has-captions": false,
-      },
-      abf5aa: { "is-video-streaming": false, "has-audio": false },
-      e6ea12: {
-        "is-video-streaming": false,
-        "has-audio": true,
-        label: none,
-        "text-alternative": none,
-        "has-captions": false,
-      },
-    },
-  }));
-
+// test("2eb176", (t) =>
+//   fixture(t, Rules.get("R23"), {
+//     answers: {
+//       "283528": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         transcript: none,
+//         // The transcript is incorrect (Moon/cheese)
+//         "transcript-link": none,
+//       },
+//       "2973eb": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         // The transcript is incorrect (Moon/cheese)
+//         transcript: none,
+//         "transcript-link": none,
+//       },
+//       "32cd0c": {
+//         "is-audio-streaming": false,
+//         "is-playing": true,
+//         transcript: none,
+//         "transcript-link": first("a"),
+//       },
+//       "376f8d": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         transcript: none,
+//         "transcript-link": none,
+//       },
+//       "4a8645": {
+//         "is-audio-streaming": false,
+//         "is-playing": true,
+//         transcript: none,
+//         // The transcript is incorrect (Moon/cheese)
+//         "transcript-link": none,
+//       },
+//       "65f9c0": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         transcript: none,
+//         "transcript-link": first("a"),
+//       },
+//       c68096: {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         transcript: first("p"),
+//       },
+//       e12d00: {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         transcript: first("p"),
+//       },
+//       e85d6f: {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         transcript: none,
+//         "transcript-link": none,
+//       },
+//     },
+//   }));
+//
+// test("1a02b0", (t) =>
+//   fixture(t, Rules.get("R24"), {
+//     answers: {
+//       "2b8c15": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: none,
+//         "transcript-link": first("a"),
+//       },
+//       "516864": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: none,
+//         // The transcript is incorrect (rabbit/dog)
+//         "transcript-link": none,
+//       },
+//       "5e5762": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: first("p"),
+//       },
+//       d72727: {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         // The transcript is incorrect (rabbit/dog)
+//         transcript: none,
+//         "transcript-link": none,
+//       },
+//     },
+//   }));
+//
+// test("1ea59c", (t) =>
+//   fixture(t, Rules.get("R25"), {
+//     answers: {
+//       "1ad085": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         // There is no description
+//         "has-description": false,
+//       },
+//       "270b3e": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         // The description is incorrect (rabbit/dog)
+//         "has-description": false,
+//       },
+//       "290a4b": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         // The description is incorrect (rabbit/dog)
+//         "has-description": false,
+//       },
+//       "632d76": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         "has-description": true,
+//       },
+//       "66631c": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         "has-description": true,
+//       },
+//       de54bf: { "is-video-streaming": false, "has-audio": false },
+//     },
+//   }));
+//
+// test("fd26cf", (t) =>
+//   fixture(t, Rules.get("R26"), {
+//     answers: {
+//       "35a1c0": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         label: first("p"),
+//         // The transcript is incorrect (missing second sentence)
+//         "text-alternative": none,
+//       },
+//       "498798": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         label: none,
+//         "text-alternative": first("p"),
+//       },
+//       "714f23": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//       },
+//       "971120": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         label: first("p"),
+//         "text-alternative": first("p"),
+//       },
+//       dfbf7a: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         label: none,
+//         "text-alternative": first("p"),
+//       },
+//       fc22f3: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         label: none,
+//         "text-alternative": none,
+//       },
+//     },
+//   }));
+//
+// test("eac66b", (t) =>
+//   fixture(t, Rules.get("R27"), {
+//     answers: {
+//       "07d25d": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         label: none,
+//         "text-alternative": none,
+//         "has-captions": true,
+//       },
+//       "3fe6f1": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         label: first("p"),
+//         "text-alternative": first("p"),
+//         "has-captions": false,
+//       },
+//       "58b2a2": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         label: first("p"),
+//         // Transcript is incorrect (missing second sentence)
+//         "text-alternative": none,
+//         "has-captions": false,
+//       },
+//       abf5aa: { "is-video-streaming": false, "has-audio": false },
+//       e6ea12: {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         label: none,
+//         "text-alternative": none,
+//         "has-captions": false,
+//       },
+//     },
+//   }));
+//
 // test("59796f", (t) => fixture(t, Rules.get("R28")));
 //
-// // R29 has questions in applicability, review flow not currently handled
-// test.skip("afb423", (t) => fixture(t, Rules.get("R29")));
+// test("afb423", (t) =>
+//   fixture(t, Rules.get("R29"), {
+//     answers: {
+//       "014b50": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         label: nodeWithPath("/html[1]/body[1]/p[2]"),
+//         "text-alternative": first("p"),
+//       },
+//       "03879f": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         label: none,
+//         "text-alternative": first("p"),
+//       },
+//       "4628b5": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         label: nodeWithPath("/html[1]/body[1]/p[2]"),
+//         // The transcript is incomplete (stops after two sentences)
+//         "text-alternative": none,
+//       },
+//       "6ecc06": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         "play-button": none,
+//       },
+//       "71fb3f": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         label: none,
+//         "text-alternative": first("p"),
+//       },
+//       "7cfc9c": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         label: nodeWithPath("/html[1]/body[1]/p[2]"),
+//         "text-alternative": first("p"),
+//       },
+//     },
+//   }));
 //
-// // R30 has questions in applicability, review flow not currently handled
-// test.skip("e7aa44", (t) => fixture(t, Rules.get("R30")));
+// test("e7aa44", (t) =>
+//   fixture(t, Rules.get("R30"), {
+//     answers: {
+//       "12db69": {
+//         "is-audio-streaming": false,
+//         "is-playing": true,
+//         label: none,
+//         "text-alternative": none,
+//         transcript: first("p"),
+//       },
+//       "47d0f4": {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         label: nodeWithPath("/html[1]/body[1]/p[2]"),
+//         "text-alternative": first("p"),
+//         transcript: none,
+//         "transcript-link": none,
+//       },
+//       "53d912": {
+//         "is-audio-streaming": false,
+//         "is-playing": true,
+//         label: nodeWithPath("/html[1]/body[1]/p[2]"),
+//         "text-alternative": first("p"),
+//         transcript: none,
+//         "transcript-link": none,
+//       },
+//       bf7577: {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         "play-button": none,
+//       },
+//       c79ee0: {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         label: none,
+//         "text-alternative": none,
+//         transcript: first("p"),
+//       },
+//       f709c0: {
+//         "is-audio-streaming": false,
+//         "is-playing": false,
+//         // The play button is embedded with the control
+//         // https://github.com/Siteimprove/alfa/issues/1326
+//         "play-button": first("audio"),
+//         label: none,
+//         "text-alternative": none,
+//         // The transcript is incorrect (Moon/North Pole)
+//         transcript: none,
+//         "transcript-link": none,
+//       },
+//     },
+//   }));
 //
-// // R31 has questions in applicfability, review flow not currently handled
-// test.skip("ab4d13", (t) => fixture(t, Rules.get("R31")));
+// test("ab4d13", (t) =>
+//   fixture(t, Rules.get("R31"), {
+//     answers: {
+//       "1c42cb": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         label: none,
+//         "text-alternative": first("p"),
+//       },
+//       "35c11f": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         label: nodeWithPath("/html[1]/body[1]/p[2]"),
+//         "text-alternative": first("p"),
+//       },
+//       "9b10e2": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         label: first("p"),
+//         "text-alternative": first("p"),
+//       },
+//       b920fb: {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         label: first("p"),
+//         "text-alternative": first("p"),
+//       },
+//       dd95b9: { "is-video-streaming": false, "has-audio": false },
+//       f83b8a: {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         label: first("p"),
+//         // Missing second sentence
+//         "text-alternative": none,
+//       },
+//     },
+//   }));
 //
-// // R32 has questions in applicability, review flow not currently handled
-// test.skip("d7ba54", (t) => fixture(t, Rules.get("R32")));
+// test("d7ba54", (t) =>
+//   fixture(t, Rules.get("R32"), {
+//     answers: {
+//       "404977": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         "has-audio-track": true,
+//       },
+//       "448fb0": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         "has-audio-track": false,
+//       },
+//       d8d541: { "is-video-streaming": false, "has-audio": true },
+//       f63c1f: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         // Incorrect description (rabbit/dog)
+//         "has-audio-track": false,
+//       },
+//     },
+//   }));
 //
-// // R33 has questions in applicability, review flow not currently handled
-// test.skip("ee13b5", (t) => fixture(t, Rules.get("R33")));
+// test("ee13b5", (t) =>
+//   fixture(t, Rules.get("R33"), {
+//     answers: {
+//       "2b46ca": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: none,
+//         "transcript-link": none,
+//       },
+//       "2b68ac": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: first("p"),
+//       },
+//       "631539": { "is-video-streaming": false, "has-audio": true },
+//       "9c862c": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: none,
+//         // Transcript is incorrect (rabbit/dog)
+//         "transcript-link": none,
+//       },
+//       b1661f: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         // Transcript is incorrect (rabbit/dog)
+//         transcript: none,
+//         "transcript-link": none,
+//       },
+//       db4c3c: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: first("p"),
+//       },
+//       e3ab0a: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: none,
+//         "transcript-link": first("a"),
+//       },
+//     },
+//   }));
 //
-// // R34 has questions in applicability, review flow not currently handled
-// test.skip("ac7dc6", (t) => fixture(t, Rules.get("R34")));
+// test("ac7dc6", (t) =>
+//   fixture(t, Rules.get("R34"), {
+//     answers: {
+//       "789d7a": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         "track-describes-video": true,
+//       },
+//       b71e75: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         // Incorrect description track
+//         "track-describes-video": false,
+//       },
+//       c2cb9f: { "is-video-streaming": false, "has-audio": true },
+//     },
+//   }));
 //
-// // R35 has questions in applicability, review flow not currently handled
-// test.skip("c3232f", (t) => fixture(t, Rules.get("R35")));
+// test("c3232f", (t) =>
+//   fixture(t, Rules.get("R35"), {
+//     answers: {
+//       "0e99dc": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: none,
+//         "transcript-link": none,
+//         label: none,
+//         "text-alternative": none,
+//         "has-audio-track": false,
+//         "track-describes-video": true,
+//       },
+//       "350dd8": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: none,
+//         // Transcript is incorrect (rabbit/dog)
+//         "transcript-link": none,
+//         label: none,
+//         "text-alternative": none,
+//         "has-audio-track": false,
+//       },
+//       "8f95a1": {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: none,
+//         "transcript-link": none,
+//         label: first("p"),
+//         "text-alternative": first("p"),
+//         "has-audio-track": false,
+//       },
+//       b35c88: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: none,
+//         "transcript-link": none,
+//         label: none,
+//         "text-alternative": none,
+//         // Audio description is incorrect (rabbit/dog)
+//         "has-audio-track": false,
+//       },
+//       b7bd83: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: none,
+//         "transcript-link": none,
+//         label: none,
+//         "text-alternative": none,
+//         "has-audio-track": true,
+//       },
+//       d4a4db: { "is-video-streaming": false, "has-audio": true },
+//       d6101c: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: none,
+//         "transcript-link": none,
+//         label: none,
+//         "text-alternative": first("p"),
+//         "has-audio-track": false,
+//       },
+//       dac9ee: {
+//         "is-video-streaming": false,
+//         "has-audio": false,
+//         transcript: first("p"),
+//         label: none,
+//         "text-alternative": none,
+//         "has-audio-track": false,
+//       },
+//     },
+//     skip: [
+//       // Alfa still accepts description tracks
+//       // https://github.com/Siteimprove/alfa/issues/1092
+//       "0e99dc",
+//     ],
+//   }));
 //
-// // R36 has questions in applicability, review flow not currently handled
-// test.skip("f196ce", (t) => fixture(t, Rules.get("R36")));
+// test("f196ce", (t) =>
+//   fixture(t, Rules.get("R36"), {
+//     answers: {
+//       "2d9c2d": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         "track-describes-video": false,
+//       },
+//       "5df966": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         "track-describes-video": true,
+//       },
+//       f9e176: { "is-video-streaming": false, "has-audio": false },
+//     },
+//   }));
 //
-// // R37 has questions in applicability, review flow not currently handled
-// test.skip("1ec09b", (t) => fixture(t, Rules.get("R37")));
+// test("1ec09b", (t) =>
+//   fixture(t, Rules.get("R37"), {
+//     answers: {
+//       "04667b": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         "has-description": false,
+//         "text-alternative": none,
+//         label: none,
+//       },
+//       "0ec33a": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         // The Audio description is incorrect (rabbit/dog)
+//         "has-description": false,
+//         "text-alternative": none,
+//         label: none,
+//       },
+//       "5a6e2a": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         "has-description": false,
+//         "text-alternative": first("p"),
+//         label: first("p"),
+//       },
+//       "91f1a8": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         "has-description": true,
+//         "text-alternative": none,
+//         label: none,
+//       },
+//       a4a496: {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         "has-description": false,
+//         "text-alternative": none,
+//         label: none,
+//         "track-describes-video": true,
+//       },
+//       be53b8: { "is-video-streaming": false, "has-audio": false },
+//     },
+//     skip: [
+//       // Alfa still accepts description tracks
+//       // https://github.com/Siteimprove/alfa/issues/1092
+//       "a4a496",
+//     ],
+//   }));
 //
-// // R38 has questions in applicability, review flow not currently handled
-// test.skip("c5a4ea", (t) => fixture(t, Rules.get("R38")));
+// test("c5a4ea", (t) =>
+//   fixture(t, Rules.get("R38"), {
+//     answers: {
+//       "00ff74": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: none,
+//         // Transcript is incorrect (rabbit/dog)
+//         "transcript-link": none,
+//         "has-description": false,
+//         "text-alternative": none,
+//         label: none,
+//       },
+//       "12dbd2": { "is-video-streaming": false, "has-audio": false },
+//       "5dbfe0": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: none,
+//         "transcript-link": none,
+//         "has-description": true,
+//         "text-alternative": none,
+//         label: none,
+//       },
+//       "73cdf1": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: none,
+//         "transcript-link": first("a"),
+//         "has-description": false,
+//         "text-alternative": none,
+//         label: none,
+//       },
+//       "813ea7": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: none,
+//         "transcript-link": none,
+//         "has-description": false,
+//         // Content is incomplete (missing second sentence)
+//         "text-alternative": none,
+//         label: first("p"),
+//       },
+//       "96b29b": {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: none,
+//         "transcript-link": none,
+//         "has-description": false,
+//         "text-alternative": none,
+//         label: none,
+//         "track-describes-video": true,
+//       },
+//       adb7c3: {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: none,
+//         "transcript-link": none,
+//         "has-description": false,
+//         "text-alternative": first("p"),
+//         label: first("p"),
+//       },
+//       d8b1b2: {
+//         "is-video-streaming": false,
+//         "has-audio": true,
+//         transcript: none,
+//         "transcript-link": none,
+//         // Description is incorrect (rabbit/dog)
+//         "has-description": false,
+//         "text-alternative": none,
+//         label: none,
+//       },
+//     },
+//     skip: [
+//       // Alfa still accepts description tracks
+//       // https://github.com/Siteimprove/alfa/issues/1092
+//       "96b29b",
+//     ],
+//   }));
 //
-// // R39 always has questions in each expectation, review flow not currently handled
-// test.skip("9eb3f6", (t) => fixture(t, Rules.get("R39")));
+// test("9eb3f6", (t) =>
+//   fixture(t, Rules.get("R39"), {
+//     answers: {
+//       "287e05": { "name-describes-purpose": false },
+//       "2dc98e": { "name-describes-purpose": false },
+//       "4b1b0e": { "name-describes-purpose": true },
+//       "4d18f8": { "name-describes-purpose": true },
+//       "96078d": { "name-describes-purpose": false },
+//       "96ee77": { "name-describes-purpose": true },
+//       cad8ac: { "name-describes-purpose": true },
+//       ded8c6: { "name-describes-purpose": false },
+//     },
+//     lax: [
+//       // Alfa doesn't look into `<picture>` elements or srcset attributes
+//       // We're unlikely to fix that given the rule is deprecated in ACT rules.
+//       "7275b8",
+//       "c9820b",
+//     ],
+//     skip: [
+//       // Alfa doesn't look into `<picture>` elements or srcset attributes
+//       // We're unlikely to fix that given the rule is deprecated in ACT rules.
+//       "d421cb",
+//     ],
+//   }));
 //
 // // R40 is Siteimprove rule
 //
@@ -496,15 +948,90 @@ test("eac66b", (t) =>
 //     ],
 //   }));
 //
-// // R48 has questions in applicability, review flow not currently handled
-// test.skip("aaa1bf", (t) => fixture(t, Rules.get("R48")));
+// test("aaa1bf", (t) =>
+//   fixture(t, Rules.get("R48"), {
+//     answers: {
+//       "089083": {
+//         "is-above-duration-threshold": true,
+//         "is-below-audio-duration-threshold": false,
+//       },
+//       "68300c": {
+//         // The full audio last more than 3s, only 3s are autoplayed.
+//         "is-above-duration-threshold": true,
+//         "is-below-audio-duration-threshold": true,
+//       },
+//       "9847ba": {
+//         "has-audio": true,
+//         "is-above-duration-threshold": true,
+//         "is-below-audio-duration-threshold": false,
+//       },
+//       b57759: { "has-audio": false },
+//       c05a91: {
+//         "has-audio": true,
+//         // The full video last more than 3s, only 3s are autoplayed.
+//         "is-above-duration-threshold": true,
+//         "is-below-audio-duration-threshold": true,
+//       },
+//     },
+//   }));
 //
-// // R49 has questions in applicability, review flow not currently handled
-// test.skip("4c31df", (t) => fixture(t, Rules.get("R49")));
+// test("4c31df", (t) =>
+//   fixture(t, Rules.get("R49"), {
+//     answers: {
+//       "0faddf": { "has-audio": true, "is-above-duration-threshold": true },
+//       "26698c": {
+//         "has-audio": true,
+//         "is-above-duration-threshold": true,
+//         "audio-control-mechanism": nodeWithPath(
+//           "/html[1]/body[1]/div[1]/div[1]/button[1]"
+//         ),
+//       },
+//       "74bb4f": {
+//         "is-above-duration-threshold": true,
+//         "audio-control-mechanism": none,
+//       },
+//       "7786cc": {
+//         "has-audio": true,
+//         "is-above-duration-threshold": true,
+//         "audio-control-mechanism": none,
+//       },
+//       bc00f7: {
+//         "has-audio": true,
+//         "is-above-duration-threshold": true,
+//         "audio-control-mechanism": nodeWithPath(
+//           "/html[1]/body[1]/div[1]/div[1]/button[1]"
+//         ),
+//       },
+//       c55751: {
+//         "has-audio": true,
+//         "is-above-duration-threshold": true,
+//         "audio-control-mechanism": nodeWithPath(
+//           "/html[1]/body[1]/div[1]/div[1]/button[1]"
+//         ),
+//       },
+//       dd78cd: {
+//         "has-audio": true,
+//         "is-above-duration-threshold": true,
+//         "audio-control-mechanism": nodeWithPath(
+//           "/html[1]/body[1]/div[1]/div[1]/button[1]"
+//         ),
+//       },
+//       e50022: {
+//         "has-audio": true,
+//         "is-above-duration-threshold": true,
+//         "audio-control-mechanism": none,
+//       },
+//       ee7ad9: { "is-above-duration-threshold": true },
+//     },
+//     skip: [
+//       // The ACT rules example uses the wrong file.
+//       // https://github.com/act-rules/act-rules.github.io/issues/2023
+//       "7786cc",
+//     ],
+//   }));
 //
-// // R50 has questions in applicability, review flow not currently handled
-// test.skip("80f0bf", (t) => fixture(t, Rules.get("R50")));
-//
+test("80f0bf", (t) => fixture(t, Rules.get("R50")));
+
 // // R51 is Siteimprove only
 //
 // // R52 is Siteimprove only
