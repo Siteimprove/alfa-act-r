@@ -1449,6 +1449,6 @@ test.after("Write report", (t) => {
 //
 // // R108 is SI only
 //
-test("ucwvc8", (t) => fixture(t, Rules.get("R109")));
+test("ucwvc8", (t) => fixture(t, Option.of(experimentalRules.R109)));
 
 // test("674b10", (t) => fixture(t, Rules.get("R110")));

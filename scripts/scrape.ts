@@ -107,8 +107,6 @@ const ignoredRules = [
   "ffbc54",
   // Image accessible name is descriptive
   "qt1vmo",
-  // HTML page language subtag matches default language
-  "ucwvc8",
 ];
 
 async function getTestDescriptions(): Promise<
