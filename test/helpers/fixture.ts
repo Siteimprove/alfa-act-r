@@ -46,10 +46,11 @@ export function fixture(
     const fixture = t.title;
 
     // Record which option has been used to report the unused ones.
-    let seen = (options.skip || [])
-      .concat(options.lax || [])
-      .concat(options.manual || [])
-
+    let seen = (options.skip ?? [])
+      .concat(options.lax ?? [])
+      .concat(options.manual ?? [])
+      .concat(Object.keys(options.answers ?? {}))
+      .concat(Object.keys(options.answersWithPath ?? {}))
       .reduce((map, cur) => map.set(cur, false), Map.empty<string, boolean>());
 
     // Read all test cases for a given rule
