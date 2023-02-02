@@ -99,7 +99,13 @@ export function fixture(
           : answers !== undefined
           ? oracle(answers, t, page.request.url.toString(), usedAnswers, page)
           : answersWithPath !== undefined
-          ? oracleWithPaths(answersWithPath, t, page.request.url.toString())
+          ? oracleWithPaths(
+              answersWithPath,
+              t,
+              page.request.url.toString(),
+              usedAnswers,
+              page
+            )
           : undefined
       )
         .evaluate()

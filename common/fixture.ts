@@ -1,3 +1,4 @@
+import { Array } from "@siteimprove/alfa-array";
 import { Node } from "@siteimprove/alfa-dom";
 import { Option } from "@siteimprove/alfa-option";
 import { Question } from "@siteimprove/alfa-rules";
@@ -52,13 +53,23 @@ export namespace Fixture {
       [fixture: string]: Partial<{
         [URI in keyof Question.Metadata]: Question.Metadata[URI][0] extends "node"
           ? (page: Page) => Option<Node>
+          : Question.Metadata[URI][0] extends "node[]"
+          ? // We could just use a Page => Array<Node>, but tests are much
+            // easier to write that way…
+            Array<(page: Page) => Option<Node>>
           : Question.Metadata[URI][1];
       }>;
     };
     answersWithPath?: {
       [fixture: string]: Partial<{
         [URI in keyof Question.Metadata]: {
-          [subjectPath: string]: Question.Metadata[URI][1];
+          [subjectPath: string]: Question.Metadata[URI][0] extends "node"
+            ? (page: Page) => Option<Node>
+            : Question.Metadata[URI][0] extends "node[]"
+            ? // We could just use a Page => Array<Node>, but tests are much
+              // easier to write that way…
+              Array<(page: Page) => Option<Node>>
+            : Question.Metadata[URI][1];
         };
       }>;
     };

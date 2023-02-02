@@ -62,7 +62,7 @@
   },
   "@graph": [
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/3e93253107ce18a6170206bb287f03b1e3497c40.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ac63f6ffcb1831a5614e525627822e7a6f15343d.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -82,7 +82,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/3e93253107ce18a6170206bb287f03b1e3497c40.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ac63f6ffcb1831a5614e525627822e7a6f15343d.html"
         },
         {
           "@type": [
@@ -95,7 +95,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<video autoplay controls>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<p>This is a paragraph.</p>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -109,355 +109,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/3e93253107ce18a6170206bb287f03b1e3497c40.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element has a mechanism to pause or stop audio and the mechanism is perceivable",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/3e93253107ce18a6170206bb287f03b1e3497c40.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
-        }
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/f9af87d3dbc0303b261e0552b32067a7513263cb.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/f9af87d3dbc0303b261e0552b32067a7513263cb.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<head>\n\t\t<style>\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div id=\"video-container\">\n\t\t\t<!-- Video -->\n\t\t\t<video id=\"video\" autoplay>\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t\t</video>\n\t\t\t<!-- Video Controls -->\n\t\t\t<div id=\"video-controls\">\n\t\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\">Pause</button>\n\t\t\t\t<button type=\"button\" id=\"mute\">Mute</button>\n\t\t\t</div>\n\t\t</div>\n\t\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n\t</body>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/f9af87d3dbc0303b261e0552b32067a7513263cb.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element has a mechanism to pause or stop audio and the mechanism is perceivable",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/f9af87d3dbc0303b261e0552b32067a7513263cb.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
-        }
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" autoplay></audio>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<audio>` element does not have a mechanism to pause or stop audio",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/audio[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/968b12b14eb008b424f050ab74277426b2ea81bf.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
-        }
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<video autoplay>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element does not have a mechanism to pause or stop audio",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
-        }
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<video autoplay muted>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ac63f6ffcb1831a5614e525627822e7a6f15343d.html"
     },
     {
       "@type": "Assertion",
@@ -467,27 +119,27 @@
         "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ac63f6ffcb1831a5614e525627822e7a6f15343d.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
         "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@id": "WCAG2:error-identification",
           "@type": [
             "TestCriterion",
             "TestRequirement"
           ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
         }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e76345ab4164567a24c0dc9dece56cee1794dc0c.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -507,7 +159,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e76345ab4164567a24c0dc9dece56cee1794dc0c.html"
         },
         {
           "@type": [
@@ -520,7 +172,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 3</title>\n</head>\n<body>\n\t<head>\n\t\t<style>\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div id=\"video-container\">\n\t\t\t<!-- Video -->\n\t\t\t<video id=\"video\" autoplay>\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t\t</video>\n\t\t\t<!-- Video Controls -->\n\t\t\t<div id=\"video-controls\">\n\t\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\">Pause</button>\n\t\t\t\t<button type=\"button\" id=\"mute\">Mute</button>\n\t\t\t</div>\n\t\t</div>\n\t\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n\t</body>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 3</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" value=\"0\" />\n\t\t<span id=\"error\" style=\"display: none;\">Invalid value for age. Age must be at least 1.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" aria-describedby=\"error\" />\n\t</form>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -534,14 +186,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e76345ab4164567a24c0dc9dece56cee1794dc0c.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<video>` element has a mechanism to pause or stop audio but the mechanism is not perceivable",
+        "info": "At least one error indicator identifies the form field, but the error indicator is not perceivable\nAt least one error indicator describes the cause of the error or how to resolve it, but the error indicator is not perceivable",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -550,31 +202,31 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/video[1]"
+          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/53b7029c408c7c90f96555b1380dc40c01b8065e.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e76345ab4164567a24c0dc9dece56cee1794dc0c.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
         "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@id": "WCAG2:error-identification",
           "@type": [
             "TestCriterion",
             "TestRequirement"
           ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
         }
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -594,7 +246,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html"
         },
         {
           "@type": [
@@ -607,7 +259,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<head>\n\t\t<style>\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div id=\"video-container\">\n\t\t\t<!-- Video -->\n\t\t\t<video id=\"video\" autoplay>\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t\t</video>\n\t\t\t<!-- Video Controls -->\n\t\t\t<div id=\"video-controls\">\n\t\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\"></button>\n\t\t\t\t<button type=\"button\" id=\"mute\"></button>\n\t\t\t</div>\n\t\t</div>\n\t\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n\t</body>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<form>\n\t\t<p id=\"error\">\n\t\t\t<strong>\n\t\t\t\tName and color cannot be empty. Please complete all required fields.\n\t\t\t</strong>\n\t\t</p>\n\t\t<fieldset>\n\t\t\t<legend>Shipping</legend>\n\t\t\t<label for=\"name\">Name (required)</label>\n\t\t\t<input type=\"text\" id=\"name\" required />\n\t\t\t<br />\n\t\t\t<label for=\"address\">Address</label>\n\t\t\t<input type=\"text\" id=\"address\" />\n\t\t</fieldset>\n\t\t<fieldset>\n\t\t\t<legend>Pick a color (required)</legend>\n\t\t\t<label><input type=\"radio\" name=\"color\" value=\"blue\" required />Blue</label>\n\t\t\t<label><input type=\"radio\" name=\"color\" value=\"yellow\" />Yellow</label>\n\t\t</fieldset>\n\t\t<input type=\"button\" value=\"Submit\" aria-describedby=\"error\" />\n\t</form>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -621,352 +273,14 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html"
     },
     {
       "@type": "Assertion",
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<video>` element has a mechanism to pause or stop audio but the mechanism is not perceivable",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7304f139186bd32c195aac6201d64174c0063c64.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
-        }
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 5</title>\n</head>\n<body>\n\t<head>\n\t\t<style>\n\t\t\tbutton {\n\t\t\t\tcolor: #000;\n\t\t\t}\n\t\t\tbutton:hover {\n\t\t\t\tcursor: pointer;\n\t\t\t\tcursor: pointer;\n\t\t\t\tbackground-color: grey;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<div id=\"video-container\">\n\t\t\t<!-- Video -->\n\t\t\t<video id=\"video\" autoplay>\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t\t</video>\n\t\t\t<!-- Video Controls -->\n\t\t\t<div id=\"video-controls\" aria-hidden=\"true\">\n\t\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\">Play</button>\n\t\t\t\t<button type=\"button\" id=\"mute\">Mute</button>\n\t\t\t</div>\n\t\t</div>\n\t\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n\t</body>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element has a mechanism to pause or stop audio but the mechanism is not perceivable",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7c96453dfa5053b4a1b9ee1ed1270167522b1c37.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
-        }
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b5c74f9ddba668623e33e33e3b8f773776f3177f.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
-        }
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b712209d068fff2878cceadf40efe21a3ec4f6d8.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b712209d068fff2878cceadf40efe21a3ec4f6d8.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<video autoplay>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b712209d068fff2878cceadf40efe21a3ec4f6d8.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<video>` element does not have a mechanism to pause or stop audio",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/video[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/b712209d068fff2878cceadf40efe21a3ec4f6d8.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
-        }
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/0d2dcde8931a9083e590034768ae2e0af747491c.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/0d2dcde8931a9083e590034768ae2e0af747491c.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" autoplay controls></audio>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/0d2dcde8931a9083e590034768ae2e0af747491c.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:mode": "earl:semiAuto",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `<audio>` element has a mechanism to pause or stop audio and the mechanism is perceivable",
+        "info": "At least one error indicator that is perceivable identifies the form field\nAt least one error indicator that is perceivable describes the cause of the error or how to resolve it",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -975,26 +289,548 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/audio[1]"
+          "ptr:expression": "/html[1]/body[1]/form[1]/fieldset[1]/input[1]"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/0d2dcde8931a9083e590034768ae2e0af747491c.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html"
       },
       "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r49",
+        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
         "@type": [
           "TestCriterion",
           "TestCase"
         ],
         "isPartOf": {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
+          "@id": "WCAG2:error-identification",
           "@type": [
             "TestCriterion",
             "TestRequirement"
           ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Providing a control near the beginning of the Web page that turns off sounds that"
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
+        }
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/3bb6b76d2dd823e02cace7c6be2a7ebe535d1d97.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/3bb6b76d2dd823e02cace7c6be2a7ebe535d1d97.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<form>\n\t\t<div id=\"error\">Please fill the field correctly.</div>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" />\n\t\t<label for=\"name\">Name</label>\n\t\t<input type=\"text\" id=\"name\" />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/3bb6b76d2dd823e02cace7c6be2a7ebe535d1d97.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "None of the error indicators identify the form field\nNone of the error indicators describe the cause of the error or how to resolve it",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/3bb6b76d2dd823e02cace7c6be2a7ebe535d1d97.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": {
+          "@id": "WCAG2:error-identification",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
+        }
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" />\n\t\t<span id=\"error\">Please enter the correct text.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "None of the error indicators describe the cause of the error or how to resolve it",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": {
+          "@id": "WCAG2:error-identification",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
+        }
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/d7863608ff2aab99c43663cb3701c65c28b75c23.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/d7863608ff2aab99c43663cb3701c65c28b75c23.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 5</title>\n</head>\n<body>\n\t<form>\n\t\t<fieldset>\n\t\t\t<legend>Shipping</legend>\n\t\t\t<label for=\"shippingName\">Name</label>\n\t\t\t<input type=\"text\" id=\"shippingName\" required />\n\t\t\t<label for=\"shippingAddress\">Address</label>\n\t\t\t<input type=\"text\" id=\"shippingAddress\" required />\n\t\t</fieldset>\n\t\t<fieldset>\n\t\t\t<legend>Billing</legend>\n\t\t\t<label for=\"billingName\">Name</label>\n\t\t\t<input type=\"text\" id=\"billingName\" />\n\t\t\t<label for=\"billingAddress\">Address</label>\n\t\t\t<input type=\"text\" id=\"billingAddress\" />\n\t\t</fieldset>\n\t\t<span id=\"error\">All required fields must be filled.<br />Please fill Name.<br />Please fill Address</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/d7863608ff2aab99c43663cb3701c65c28b75c23.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "None of the error indicators identify the form field",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/form[1]/fieldset[1]/input[1]"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/d7863608ff2aab99c43663cb3701c65c28b75c23.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": {
+          "@id": "WCAG2:error-identification",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
+        }
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ddcd6a3065a711139251df4ab4777ae096856c58.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ddcd6a3065a711139251df4ab4777ae096856c58.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" value=\"0\" />\n\t\t<span id=\"error\" aria-hidden=\"true\">Invalid value for age. Age must be at least 1.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ddcd6a3065a711139251df4ab4777ae096856c58.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "At least one error indicator identifies the form field, but the error indicator is not perceivable\nAt least one error indicator describes the cause of the error or how to resolve it, but the error indicator is not perceivable",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/ddcd6a3065a711139251df4ab4777ae096856c58.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": {
+          "@id": "WCAG2:error-identification",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
+        }
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"filter\">Product filter</label>\n\t\t<input type=\"text\" id=\"filter\" />\n\t\t<input type=\"button\" value=\"filter\" />\n\t\t<p>To see all products, leave the field empty.</p>\n\t</form>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "The form field has no error indicator\nThe form field has no error indicator",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": {
+          "@id": "WCAG2:error-identification",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
+        }
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e2cc934a42be5a597106214fa0fbcefd6ceac599.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e2cc934a42be5a597106214fa0fbcefd6ceac599.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" aria-describedby=\"error\" value=\"0\" />\n\t\t<span id=\"error\">Invalid value for age. Age must be at least 1.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e2cc934a42be5a597106214fa0fbcefd6ceac599.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:mode": "earl:semiAuto",
+      "result": {
+        "@type": "TestResult",
+        "info": "At least one error indicator that is perceivable identifies the form field\nAt least one error indicator that is perceivable describes the cause of the error or how to resolve it",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/form[1]/input[1]"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e2cc934a42be5a597106214fa0fbcefd6ceac599.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r82",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": {
+          "@id": "WCAG2:error-identification",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
         }
       }
     }

@@ -1,4 +1,5 @@
 import * as act from "@siteimprove/alfa-act";
+import { Array } from "@siteimprove/alfa-array";
 import { Node } from "@siteimprove/alfa-dom";
 import { Future } from "@siteimprove/alfa-future";
 import { Hashable } from "@siteimprove/alfa-hash";
@@ -18,6 +19,10 @@ export function oracle<I, T extends Hashable, S>(
   answers: Partial<{
     [URI in keyof Question.Metadata]: Question.Metadata[URI][0] extends "node"
       ? (page: Page) => Option<Node>
+      : Question.Metadata[URI][0] extends "node[]"
+      ? // We could just use a Page => Array<Node>, but tests are much
+        // easier to write that way…
+        Array<(page: Page) => Option<Node>>
       : Question.Metadata[URI][1];
   }>,
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
@@ -53,7 +58,7 @@ export function oracle<I, T extends Hashable, S>(
         return wrapper(answers[question.uri]!(page));
 
       case "node[]":
-        return wrapper(answers[question.uri]!);
+        return wrapper(Array.collect(answers[question.uri]!, (fn) => fn(page)));
 
       case "color[]":
         return wrapper(answers[question.uri]!);
@@ -70,14 +75,22 @@ export function oracle<I, T extends Hashable, S>(
 export function oracleWithPaths<I, T extends Hashable, S>(
   answers: Partial<{
     [URI in keyof Question.Metadata]: {
-      [subjectPath: string]: Question.Metadata[URI][1];
+      [subjectPath: string]: Question.Metadata[URI][0] extends "node"
+        ? (page: Page) => Option<Node>
+        : Question.Metadata[URI][0] extends "node[]"
+        ? // We could just use a Page => Array<Node>, but tests are much
+          // easier to write that way…
+          Array<(page: Page) => Option<Node>>
+        : Question.Metadata[URI][1];
     };
   }>,
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
-  url: string
+  url: string,
+  used: Array<keyof Question.Metadata>,
+  page: Page
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
-    if (!Node.isNode(question.subject)) {
+    if (!Node.isNode(question.subject) && !Node.isNode(question.context)) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
           question.subject
@@ -86,10 +99,17 @@ export function oracleWithPaths<I, T extends Hashable, S>(
       return dontKnow;
     }
 
-    const subjectPath = question.subject.path();
+    used.push(question.uri);
+
+    // We prefer using subject path as it is normally more precise, but default
+    // to context path otherwise.
+    const path = Node.isNode(question.subject)
+      ? question.subject.path()
+      : // The cast is guarded by the previous if
+        (question.context as any as Node).path();
 
     // Check if we do have an answer for this question.
-    if (answers[question.uri]?.[subjectPath] === undefined) {
+    if (answers[question.uri]?.[path] === undefined) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
           question.subject
@@ -107,22 +127,24 @@ export function oracleWithPaths<I, T extends Hashable, S>(
     // * Thanks to the initial test, we know that answers[question.uri] exists.
     switch (question.type) {
       case "boolean":
-        return wrapper(answers[question.uri]![subjectPath]);
+        return wrapper(answers[question.uri]![path]);
 
       case "node":
-        return wrapper(answers[question.uri]![subjectPath]);
+        return wrapper(answers[question.uri]![path](page));
 
       case "node[]":
-        return wrapper(answers[question.uri]![subjectPath]);
+        return wrapper(
+          Array.collect(answers[question.uri]![path], (fn) => fn(page))
+        );
 
       case "color[]":
-        return wrapper(answers[question.uri]![subjectPath]);
+        return wrapper(answers[question.uri]![path]);
 
       case "string":
-        return wrapper(answers[question.uri]![subjectPath]);
+        return wrapper(answers[question.uri]![path]);
 
       case "string[]":
-        return wrapper(answers[question.uri]![subjectPath]);
+        return wrapper(answers[question.uri]![path]);
     }
   };
 }

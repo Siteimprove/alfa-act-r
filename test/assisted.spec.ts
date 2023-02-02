@@ -1,5 +1,5 @@
 import { Hex, RGB } from "@siteimprove/alfa-css";
-import { h, Node } from "@siteimprove/alfa-dom";
+import { Element, h, Node } from "@siteimprove/alfa-dom";
 import * as path from "path";
 
 import ava, { TestFn } from "ava";
@@ -35,6 +35,14 @@ function first(element: string): (page: Page) => Option<Node> {
 }
 
 const none = Option.empty;
+
+function elementWithId(id: string): (page: Page) => Option<Node> {
+  return (page) =>
+    page.document
+      .inclusiveDescendants()
+      .filter(Element.isElement)
+      .find(Element.hasId(id));
+}
 
 test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
@@ -1030,8 +1038,43 @@ test.after("Write report", (t) => {
 //     ],
 //   }));
 //
-test("80f0bf", (t) => fixture(t, Rules.get("R50")));
-
+// test("80f0bf", (t) =>
+//   fixture(t, Rules.get("R50"), {
+//     answers: {
+//       "515d43": {
+//         "has-audio": true,
+//         "is-above-duration-threshold": true,
+//         "is-below-audio-duration-threshold": false,
+//         "audio-control-mechanism": none,
+//       },
+//       "54e307": {
+//         "is-above-duration-threshold": true,
+//         "is-below-audio-duration-threshold": false,
+//       },
+//       "77699c": {
+//         "has-audio": true,
+//         "is-above-duration-threshold": true,
+//         "is-below-audio-duration-threshold": false,
+//         "audio-control-mechanism": nodeWithPath(
+//           "/html[1]/body[1]/div[1]/div[1]/button[1]"
+//         ),
+//       },
+//       b62f05: {
+//         "has-audio": true,
+//         // The full video last more than 3s, only 3s are autoplayed.
+//         "is-above-duration-threshold": true,
+//         "is-below-audio-duration-threshold": true,
+//         "audio-control-mechanism": none,
+//       },
+//       bf4d12: { "has-audio": false },
+//       d92431: {
+//         "is-above-duration-threshold": true,
+//         "is-below-audio-duration-threshold": false,
+//         "audio-control-mechanism": none,
+//       },
+//     },
+//   }));
+//
 // // R51 is Siteimprove only
 //
 // // R52 is Siteimprove only
@@ -1198,8 +1241,77 @@ test("80f0bf", (t) => fixture(t, Rules.get("R50")));
 //     ],
 //   }));
 //
-// // R82 always has questions in expectation, review flow not currently handled
-// // test.skip("36b590", (t) => fixture(t, Rules.get("R82")));
+// test("36b590", (t) =>
+//   fixture(t, Option.of(experimentalRules.R82), {
+//     answers: {
+//       "5aaae1": {
+//         "error-indicators": [elementWithId("error")],
+//         "error-indicator-identifying-form-field": elementWithId("error"),
+//         "error-indicator-describing-resolution": elementWithId("error"),
+//       },
+//       "9bb340": {
+//         // Both input fields are sharing the same error indicator
+//         "error-indicators": [elementWithId("error")],
+//         "error-indicator-identifying-form-field": none,
+//         "error-indicator-describing-resolution": none,
+//       },
+//       "9c23a5": {
+//         "error-indicators": [elementWithId("error")],
+//         "error-indicator-identifying-form-field": elementWithId("error"),
+//         "error-indicator-describing-resolution": none,
+//       },
+//       ca8775: {
+//         // All four fields are sharing the same error indicator
+//         "error-indicators": [elementWithId("error")],
+//         "error-indicator-identifying-form-field": none,
+//         "error-indicator-describing-resolution": elementWithId("error"),
+//       },
+//       de054f: {
+//         "error-indicators": [elementWithId("error")],
+//         "error-indicator-identifying-form-field": elementWithId("error"),
+//         "error-indicator-describing-resolution": elementWithId("error"),
+//       },
+//       e2891d: { "error-indicators": [] },
+//       e311ea: {
+//         "error-indicators": [elementWithId("error")],
+//         "error-indicator-identifying-form-field": elementWithId("error"),
+//         "error-indicator-describing-resolution": elementWithId("error"),
+//       },
+//     },
+//     answersWithPath: {
+//       "98d2f0": {
+//         "error-indicators": {
+//           "/html[1]/body[1]/form[1]/fieldset[1]/input[1]": [
+//             elementWithId("error"),
+//           ],
+//           "/html[1]/body[1]/form[1]/fieldset[1]/input[2]": [],
+//           "/html[1]/body[1]/form[1]/fieldset[2]/label[1]/input[1]": [
+//             elementWithId("error"),
+//           ],
+//           "/html[1]/body[1]/form[1]/fieldset[2]/label[2]/input[1]": [
+//             elementWithId("error"),
+//           ],
+//         },
+//         "error-indicator-identifying-form-field": {
+//           "/html[1]/body[1]/form[1]/fieldset[1]/input[1]":
+//             elementWithId("error"),
+//           "/html[1]/body[1]/form[1]/fieldset[2]/label[1]/input[1]":
+//             elementWithId("error"),
+//           "/html[1]/body[1]/form[1]/fieldset[2]/label[2]/input[1]":
+//             elementWithId("error"),
+//         },
+//
+//         "error-indicator-describing-resolution": {
+//           "/html[1]/body[1]/form[1]/fieldset[1]/input[1]":
+//             elementWithId("error"),
+//           "/html[1]/body[1]/form[1]/fieldset[2]/label[1]/input[1]":
+//             elementWithId("error"),
+//           "/html[1]/body[1]/form[1]/fieldset[2]/label[2]/input[1]":
+//             elementWithId("error"),
+//         },
+//       },
+//     },
+//   }));
 //
 // test("59br37", (t) =>
 //   fixture(t, Rules.get("R83"), {
@@ -1337,7 +1449,6 @@ test("80f0bf", (t) => fixture(t, Rules.get("R50")));
 //
 // // R108 is SI only
 //
-// // R109 always has questions in expectation, review flow not currently handled
-// // test.skip("ucwvc8", (t) => fixture(t, Rules.get("R109")));
-//
+test("ucwvc8", (t) => fixture(t, Rules.get("R109")));
+
 // test("674b10", (t) => fixture(t, Rules.get("R110")));
