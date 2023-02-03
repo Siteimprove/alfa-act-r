@@ -3,6 +3,7 @@ import { Audit, Outcome, Rule } from "@siteimprove/alfa-act";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { Map } from "@siteimprove/alfa-map";
 import { Option } from "@siteimprove/alfa-option";
+import { Question } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
 import { ExecutionContext } from "ava";
@@ -12,6 +13,7 @@ import * as path from "path";
 import { Fixture } from "../../common/fixture";
 
 import { Context, Test } from "./context";
+import { oracle, oracleWithPaths } from "./oracle";
 
 const strict = process.argv.slice(2).includes("--strict");
 
@@ -28,10 +30,12 @@ function readFixtures(directory: string): Array<Fixture.Fixture> {
 }
 
 export function fixture(
-  dir: string
-): <T extends Hashable, Q, S>(
-  t: ExecutionContext<Context<Page, T, Q, S>>,
-  rule: Option<Rule<Page, T, Q, S>>,
+  dir: string,
+  // If true, treat cantTell outcomes as non-strict matches.
+  assisted: boolean = false
+): <T extends Hashable, S>(
+  t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
+  rule: Option<Rule<Page, T, Question.Metadata, S>>,
   options?: Fixture.Options
 ) => Promise<void> {
   return async (t, rule, options = {}) => {
@@ -42,9 +46,11 @@ export function fixture(
     const fixture = t.title;
 
     // Record which option has been used to report the unused ones.
-    let seen = (options.skip || [])
-      .concat(options.lax || [])
-      .concat(options.manual || [])
+    let seen = (options.skip ?? [])
+      .concat(options.lax ?? [])
+      .concat(options.manual ?? [])
+      .concat(Object.keys(options.answers ?? {}))
+      .concat(Object.keys(options.answersWithPath ?? {}))
       .reduce((map, cur) => map.set(cur, false), Map.empty<string, boolean>());
 
     // Read all test cases for a given rule
@@ -77,9 +83,33 @@ export function fixture(
         );
       }
 
-      seen = seen.set(test.id, true);
+      const answers = options.answers?.[test.id];
+      const answersWithPath = options.answersWithPath?.[test.id];
 
-      const outcome = await Audit.of(page, [rule.get()])
+      if (answers !== undefined && answersWithPath !== undefined) {
+        t.log(`At most one kind of oracle should be set for ${testID}.`);
+      }
+
+      seen = seen.set(test.id, true);
+      const usedAnswers: Array<keyof Question.Metadata> = [];
+
+      const outcome = await Audit.of(
+        page,
+        [rule.get()],
+        manual
+          ? undefined
+          : answers !== undefined
+          ? oracle(answers, t, page.request.url.toString(), usedAnswers, page)
+          : answersWithPath !== undefined
+          ? oracleWithPaths(
+              answersWithPath,
+              t,
+              page.request.url.toString(),
+              usedAnswers,
+              page
+            )
+          : undefined
+      )
         .evaluate()
         .map((outcomes) =>
           Array.from(outcomes)
@@ -106,11 +136,24 @@ export function fixture(
         );
 
       const expected = test.outcome;
-      const outcomeJSON = outcome.toJSON();
-      const actual = outcomeJSON.outcome as Fixture.Outcome;
+      const actual = outcome.outcome;
       const result = mapping(actual, expected);
 
-      report(t, result, fixture, test, outcomeJSON, [skip, manual, lax]);
+      for (const uri in answers ?? []) {
+        if (!usedAnswers.includes(uri as keyof Question.Metadata)) {
+          t.log(`Test ${testID} has unused oracle for ${uri}`);
+        }
+      }
+
+      report(
+        t,
+        result,
+        fixture,
+        test,
+        outcome.toJSON(),
+        [skip, manual, lax],
+        assisted
+      );
 
       t.context.outcomes.push({
         kind: Test.Kind.Result,
@@ -141,7 +184,8 @@ function report<T extends Hashable, Q, S>(
   fixtureID: string,
   test: Fixture.Fixture,
   outcome: Outcome.JSON,
-  [skip, manual, lax]: [boolean, boolean, boolean]
+  [skip, manual, lax]: [boolean, boolean, boolean],
+  assisted: boolean = false
 ): void {
   const fullTestId = `${fixtureID} / ${test.id}`;
 
@@ -200,13 +244,26 @@ function report<T extends Hashable, Q, S>(
       }
       break;
     case "manual":
-      // If the case is known to need an oracle, everything is fine.
-      // Otherwise, emit a warning.
-      t.pass(test.id);
-      if (!manual) {
-        t.log(
-          `Test case ${fullTestId} has no or incomplete oracle, mark as manual.`
-        );
+      if (!assisted) {
+        // This is an automated implementation, cantTell results are expected.
+        t.pass(test.id);
+        // If the case is known to need an oracle, everything is fine.
+        // Otherwise, emit a warning.
+        if (!manual) {
+          t.log(
+            `Test case ${fullTestId} cannot be checked automatically, mark as manual.`
+          );
+        }
+      } else {
+        // This is an assisted implementation, cantTell results are supsicious
+        if (strict) {
+          t.fail(test.id);
+          t.log("Outcome", outcome);
+          t.log("Test", test);
+        } else {
+          t.pass(test.id);
+          t.log(`Test case ${fullTestId} has incomplete oracle.`);
+        }
       }
       break;
   }

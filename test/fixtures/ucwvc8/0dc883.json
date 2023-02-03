@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "1955e0",
-  "outcome": "failed",
+  "id": "0dc883",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4e1ec35a2908dbb52d9d50bb60b9110316584799.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4e1ec35a2908dbb52d9d50bb60b9110316584799.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 7</title>\n</head>\n<body>\n\t<p style=\"color: rgba(0,0,0,.6); background: #FFF\">\n\t\tSome text in English\n\t</p>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"fr\">\n\t<head>\n\t\t<title>Paul put dire comment on tape</title>\n\t</head>\n\t<body>\n\t\t<p>Paul put dire comment on tape</p>\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -37,14 +37,14 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 7"
+                      "data": "Paul put dire comment on tape"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -57,7 +57,7 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\t"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -70,98 +70,34 @@
             },
             {
               "type": "text",
-              "data": "\n"
+              "data": "\n\t"
             },
             {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\tSome text in English\n\t"
+                      "data": "Paul put dire comment on tape"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "p",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "style",
-                      "value": "color: rgba(0,0,0,.6); background: #FFF"
-                    }
-                  ],
-                  "style": [
-                    {
-                      "name": "color",
-                      "value": "rgba(0, 0, 0, 0.6)",
-                      "important": false
-                    },
-                    {
-                      "name": "background-image",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-position-x",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-position-y",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-size",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-x",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-y",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-attachment",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-origin",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-clip",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-color",
-                      "value": "rgb(255, 255, 255)",
-                      "important": false
-                    }
-                  ],
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },
                 {
                   "type": "text",
-                  "data": "\n\n"
+                  "data": "\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -182,7 +118,7 @@
               "namespace": null,
               "prefix": null,
               "name": "lang",
-              "value": "en"
+              "value": "fr"
             }
           ],
           "style": null,

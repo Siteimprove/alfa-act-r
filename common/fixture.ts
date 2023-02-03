@@ -1,3 +1,7 @@
+import { Array } from "@siteimprove/alfa-array";
+import { Node } from "@siteimprove/alfa-dom";
+import { Option } from "@siteimprove/alfa-option";
+import { Question } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
 /**
@@ -32,14 +36,6 @@ export namespace Fixture {
 
   export type Fixture = Test | Ignored;
 
-  // TODO for semi-automated cases.
-  interface FixtureAnswer {
-    // target: string;
-    // type: "boolean";
-    // question: string;
-    // answer: boolean;
-  }
-
   /**
    * Options to pass with each rule.
    */
@@ -50,8 +46,32 @@ export namespace Fixture {
     manual?: Array<string>;
     // Alfa is known to have a Inapplicable/Passed discrepancy with ACT-R
     lax?: Array<string>;
+    // Answers for the oracle, this assume that each test case only asks
+    // each question once (so, notably, only has one target).
+    // For "node" answers, we provide a way to find the node in the page.
     answers?: {
-      [fixture: string]: Array<FixtureAnswer>;
+      [fixture: string]: Partial<{
+        [URI in keyof Question.Metadata]: Question.Metadata[URI][0] extends "node"
+          ? (page: Page) => Option<Node>
+          : Question.Metadata[URI][0] extends "node[]"
+          ? // We could just use a Page => Array<Node>, but tests are much
+            // easier to write that way…
+            Array<(page: Page) => Option<Node>>
+          : Question.Metadata[URI][1];
+      }>;
+    };
+    answersWithPath?: {
+      [fixture: string]: Partial<{
+        [URI in keyof Question.Metadata]: {
+          [subjectPath: string]: Question.Metadata[URI][0] extends "node"
+            ? (page: Page) => Option<Node>
+            : Question.Metadata[URI][0] extends "node[]"
+            ? // We could just use a Page => Array<Node>, but tests are much
+              // easier to write that way…
+              Array<(page: Page) => Option<Node>>
+            : Question.Metadata[URI][1];
+        };
+      }>;
     };
   }
 }

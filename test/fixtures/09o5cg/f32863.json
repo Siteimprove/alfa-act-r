@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "09a8df",
-  "outcome": "failed",
+  "id": "f32863",
+  "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/1882d796de0dcb4b85924f3abfbf565eeef2d963.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/1882d796de0dcb4b85924f3abfbf565eeef2d963.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 10</title>\n</head>\n<body>\n\t<style>\n\t\t#backgroundSplit {\n\t\t\tcolor: rgba(90, 90, 90, 0.9);\n\t\t\tbackground-position: top 0 left 0;\n\t\t\tbackground-image: linear-gradient(90deg, transparent, transparent 3.3em, black 3.3em, black 6em);\n\t\t\tpadding: 0 1em;\n\t\t}\n\t</style>\n\t<span id=\"backgroundSplit\">\n\t\tHello world\n\t</span>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<style>\n\t\tp {\n\t\t\tcolor: #fff;\n\t\t\theight: 50px;\n\t\t\tpadding-top: 15px;\n\t\t\tbackground: #000 no-repeat -20px -20px url('/WAI/content-assets/wcag-act-rules/test-assets/contrast/black-hole.jpeg');\n\t\t\ttext-shadow: 0px 0px 2px black;\n\t\t}\n\t</style>\n\t<p>Black hole sun</p>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 10"
+                      "data": "Passed Example 3"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -84,7 +84,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\t#backgroundSplit {\n\t\t\tcolor: rgba(90, 90, 90, 0.9);\n\t\t\tbackground-position: top 0 left 0;\n\t\t\tbackground-image: linear-gradient(90deg, transparent, transparent 3.3em, black 3.3em, black 6em);\n\t\t\tpadding: 0 1em;\n\t\t}\n\t"
+                      "data": "\n\t\tp {\n\t\t\tcolor: #fff;\n\t\t\theight: 50px;\n\t\t\tpadding-top: 15px;\n\t\t\tbackground: #000 no-repeat -20px -20px url('/WAI/content-assets/wcag-act-rules/test-assets/contrast/black-hole.jpeg');\n\t\t\ttext-shadow: 0px 0px 2px black;\n\t\t}\n\t"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -104,21 +104,13 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\tHello world\n\t"
+                      "data": "Black hole sun"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "span",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "id",
-                      "value": "backgroundSplit"
-                    }
-                  ],
+                  "name": "p",
+                  "attributes": [],
                   "style": null,
                   "shadow": null,
                   "content": null
@@ -159,46 +151,76 @@
           "rules": [
             {
               "type": "style",
-              "selector": "#backgroundSplit",
+              "selector": "p",
               "style": [
                 {
                   "name": "color",
-                  "value": "rgba(90, 90, 90, 0.9)",
+                  "value": "rgb(255, 255, 255)",
                   "important": false
                 },
                 {
-                  "name": "background-position-x",
-                  "value": "left 0px",
-                  "important": false
-                },
-                {
-                  "name": "background-position-y",
-                  "value": "top 0px",
-                  "important": false
-                },
-                {
-                  "name": "background-image",
-                  "value": "linear-gradient(90deg, transparent, transparent 3.3em, black 3.3em, black 6em)",
+                  "name": "height",
+                  "value": "50px",
                   "important": false
                 },
                 {
                   "name": "padding-top",
-                  "value": "0px",
+                  "value": "15px",
                   "important": false
                 },
                 {
-                  "name": "padding-right",
-                  "value": "1em",
+                  "name": "background-image",
+                  "value": "url(\"/WAI/content-assets/wcag-act-rules/test-assets/contrast/black-hole.jpeg\")",
                   "important": false
                 },
                 {
-                  "name": "padding-bottom",
-                  "value": "0px",
+                  "name": "background-position-x",
+                  "value": "-20px",
                   "important": false
                 },
                 {
-                  "name": "padding-left",
-                  "value": "1em",
+                  "name": "background-position-y",
+                  "value": "-20px",
+                  "important": false
+                },
+                {
+                  "name": "background-size",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-repeat-x",
+                  "value": "no-repeat",
+                  "important": false
+                },
+                {
+                  "name": "background-repeat-y",
+                  "value": "no-repeat",
+                  "important": false
+                },
+                {
+                  "name": "background-attachment",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-origin",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-clip",
+                  "value": "initial",
+                  "important": false
+                },
+                {
+                  "name": "background-color",
+                  "value": "rgb(0, 0, 0)",
+                  "important": false
+                },
+                {
+                  "name": "text-shadow",
+                  "value": "black 0px 0px 2px",
                   "important": false
                 }
               ]

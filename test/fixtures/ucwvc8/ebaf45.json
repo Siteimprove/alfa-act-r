@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "bb1e7c",
-  "outcome": "failed",
+  "id": "ebaf45",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<a href=\"#\">Link 1</a>\n\t<button onblur=\"setTimeout(() => this.focus(), 10)\">\n\t\tButton1\n\t</button>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"i-lux\">\n\t<body>\n\t\t<p lang=\"lb\">Lëtzebuerg ass e Land an Europa.</p>\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,32 +34,7 @@
           "children": [
             {
               "type": "element",
-              "children": [
-                {
-                  "type": "text",
-                  "data": "\n\t"
-                },
-                {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Failed Example 1"
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n"
-                }
-              ],
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
@@ -69,34 +44,30 @@
               "content": null
             },
             {
-              "type": "text",
-              "data": "\n"
-            },
-            {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "Link 1"
+                      "data": "Lëtzebuerg ass e Land an Europa."
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "a",
+                  "name": "p",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "href",
-                      "value": "#"
+                      "name": "lang",
+                      "value": "lb"
                     }
                   ],
                   "style": null,
@@ -105,35 +76,7 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\t"
-                },
-                {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t\tButton1\n\t"
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "button",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "onblur",
-                      "value": "setTimeout(() => this.focus(), 10)"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n\n"
+                  "data": "\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -154,7 +97,7 @@
               "namespace": null,
               "prefix": null,
               "name": "lang",
-              "value": "en"
+              "value": "i-lux"
             }
           ],
           "style": null,

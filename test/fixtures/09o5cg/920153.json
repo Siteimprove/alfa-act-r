@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "1955e0",
+  "id": "920153",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4e1ec35a2908dbb52d9d50bb60b9110316584799.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/eaf0a926896f045a498073da42ea6263a4d6d36c.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4e1ec35a2908dbb52d9d50bb60b9110316584799.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/eaf0a926896f045a498073da42ea6263a4d6d36c.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 7</title>\n</head>\n<body>\n\t<p style=\"color: rgba(0,0,0,.6); background: #FFF\">\n\t\tSome text in English\n\t</p>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<p style=\"color: #AAA; background: white;\">\n\t\tSome text in English\n\t</p>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 7"
+                      "data": "Failed Example 4"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -96,13 +96,13 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "style",
-                      "value": "color: rgba(0,0,0,.6); background: #FFF"
+                      "value": "color: #AAA; background: white;"
                     }
                   ],
                   "style": [
                     {
                       "name": "color",
-                      "value": "rgba(0, 0, 0, 0.6)",
+                      "value": "rgb(170, 170, 170)",
                       "important": false
                     },
                     {
@@ -152,7 +152,7 @@
                     },
                     {
                       "name": "background-color",
-                      "value": "rgb(255, 255, 255)",
+                      "value": "white",
                       "important": false
                     }
                   ],

@@ -19,7 +19,10 @@ test.before("Initialise context", (t) => {
 });
 
 test.after("Write report", (t) => {
-  report(t.context, path.join(__dirname, "..", "reports", "alfa-report.json"));
+  report(
+    t.context,
+    path.join(__dirname, "..", "reports", "alfa-automated-report.json")
+  );
 });
 
 test("2779a5", (t) => fixture(t, Rules.get("R1")));
@@ -275,7 +278,7 @@ test("oj04fd", (t) =>
 
 test("09o5cg", (t) =>
   fixture(t, Rules.get("R66"), {
-    manual: ["2b137a", "2eeb7d"],
+    manual: ["2eeb7d", "f32863"],
     skip: [
       // Alfa assumes that non-human language text is marked as presentational
       "e778ed",

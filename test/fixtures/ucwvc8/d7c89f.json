@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "4f6c2e",
+  "id": "d7c89f",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<head>\n\t\t<meta http-equiv=\"refresh\" content=\"72001\" />\n\t</head>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Fireworks over Paris</title>\n\t</head>\n\t<body>\n\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t<p lang=\"nl\">\n\t\t\tGelukkig nieuwjaar!\n\t\t</p>\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -37,14 +37,14 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 1"
+                      "data": "Fireworks over Paris"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -57,7 +57,7 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\t"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -70,35 +70,35 @@
             },
             {
               "type": "text",
-              "data": "\n"
+              "data": "\n\t"
             },
             {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t\n\t\t"
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
                   "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "meta",
+                  "name": "img",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "http-equiv",
-                      "value": "refresh"
+                      "name": "src",
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "content",
-                      "value": "72001"
+                      "name": "alt",
+                      "value": "Fireworks over Paris"
                     }
                   ],
                   "style": null,
@@ -107,7 +107,35 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\t\n\n"
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\tGelukkig nieuwjaar!\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "lang",
+                      "value": "nl"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -128,7 +156,7 @@
               "namespace": null,
               "prefix": null,
               "name": "lang",
-              "value": "en"
+              "value": "nl"
             }
           ],
           "style": null,

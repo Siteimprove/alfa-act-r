@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 8</title>\n</head>\n<body>\n\t<p style=\"color: #666; background: #fff;\" id=\"p\"></p>\n\t<script>\n\t\tconst shadowRoot = document.getElementById('p').attachShadow({ mode: 'open' })\n\t\tshadowRoot.textContent = 'Some text in English'\n\t</script>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 9</title>\n</head>\n<body>\n\t<p style=\"color: #666; background: #fff;\" id=\"p\"></p>\n\t<script>\n\t\tconst shadowRoot = document.getElementById('p').attachShadow({ mode: 'open' })\n\t\tshadowRoot.textContent = 'Some text in English'\n\t</script>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 8"
+                      "data": "Failed Example 9"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",

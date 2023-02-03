@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "1955e0",
+  "id": "63178e",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4e1ec35a2908dbb52d9d50bb60b9110316584799.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4e1ec35a2908dbb52d9d50bb60b9110316584799.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 7</title>\n</head>\n<body>\n\t<p style=\"color: rgba(0,0,0,.6); background: #FFF\">\n\t\tSome text in English\n\t</p>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<div role=\"checkbox\" aria-not-checked=\"true\">All conditions are met</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 7"
+                      "data": "Failed Example 1"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -84,78 +84,29 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\tSome text in English\n\t"
+                      "data": "All conditions are met"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "p",
+                  "name": "div",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "style",
-                      "value": "color: rgba(0,0,0,.6); background: #FFF"
+                      "name": "role",
+                      "value": "checkbox"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-not-checked",
+                      "value": "true"
                     }
                   ],
-                  "style": [
-                    {
-                      "name": "color",
-                      "value": "rgba(0, 0, 0, 0.6)",
-                      "important": false
-                    },
-                    {
-                      "name": "background-image",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-position-x",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-position-y",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-size",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-x",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-y",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-attachment",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-origin",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-clip",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-color",
-                      "value": "rgb(255, 255, 255)",
-                      "important": false
-                    }
-                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null
                 },

@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "649d79",
+  "id": "cf6190",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<ul>\n\t\t<li role=\"menuitemcheckbox\" aria-not-checked=\"true\">List Item</li>\n\t</ul>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Paris</title>\n\t</head>\n\t<body>\n\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" aria-labelledby=\"caption\" />\n\t\t<p lang=\"en\" id=\"caption\" hidden>\n\t\t\tFireworks over Paris!\n\t\t</p>\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -37,14 +37,14 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 1"
+                      "data": "Paris"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -57,7 +57,7 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\t"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -70,69 +70,86 @@
             },
             {
               "type": "text",
-              "data": "\n"
+              "data": "\n\t"
             },
             {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t\t"
-                    },
-                    {
-                      "type": "element",
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "List Item"
-                        }
-                      ],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "li",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "role",
-                          "value": "menuitemcheckbox"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "aria-not-checked",
-                          "value": "true"
-                        }
-                      ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    }
-                  ],
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "ul",
-                  "attributes": [],
+                  "name": "img",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-labelledby",
+                      "value": "caption"
+                    }
+                  ],
                   "style": null,
                   "shadow": null,
                   "content": null
                 },
                 {
                   "type": "text",
-                  "data": "\n\n"
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\tFireworks over Paris!\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "lang",
+                      "value": "en"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "caption"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "hidden",
+                      "value": ""
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -153,7 +170,7 @@
               "namespace": null,
               "prefix": null,
               "name": "lang",
-              "value": "en"
+              "value": "nl"
             }
           ],
           "style": null,

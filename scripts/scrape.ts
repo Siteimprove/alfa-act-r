@@ -107,8 +107,6 @@ const ignoredRules = [
   "ffbc54",
   // Image accessible name is descriptive
   "qt1vmo",
-  // HTML page language subtag matches default language
-  "ucwvc8",
 ];
 
 async function getTestDescriptions(): Promise<
@@ -223,7 +221,7 @@ async function scrapeXML(test: TestDescription) {
 function hasInstantRedirect(ruleId: string, testId: string): boolean {
   return (
     (ruleId === "bc659a" && ["2907c2", "8adcea"].includes(testId)) ||
-    (ruleId === "bisz58" && ["12f9c8", "e6fbb9"].includes(testId))
+    (ruleId === "bisz58" && ["12f9c8", "8a5f5a"].includes(testId))
   );
 }
 
