@@ -3,13 +3,15 @@ import { Hashable } from "@siteimprove/alfa-hash";
 import { Document } from "@siteimprove/alfa-json-ld";
 import { Set } from "@siteimprove/alfa-set";
 import { Page } from "@siteimprove/alfa-web";
+
 import * as fs from "fs";
 import * as jsonld from "jsonld";
 
 import { Context, Test } from "./context";
 
-// const AlfaVersion = fs.readFileSync()
-const AlfaVersion = process.env.npm_package_version;
+const AlfaVersion = JSON.parse(
+  fs.readFileSync(process.env.npm_package_json ?? "", "utf8")
+).dependencies["@siteimprove/alfa-rules"].replace("^", "");
 
 export async function report<T extends Hashable, Q, S>(
   context: Context<Page, T, Q, S>,
@@ -99,8 +101,9 @@ const assertorAlfa = {
     earl: "http://www.w3.org/ns/earl#",
     doap: "http://usefulinc.com/ns/doap#",
   },
-  "@type": "earl:Assertor",
+  "@type": ["earl:Assertor", "@earl:Software"],
   "@id": "Alfa",
+  "doap:url": "https://alfa.siteimprove.com",
   "doap:name": "Alfa",
   "doap:release": {
     "@type": "Version",
