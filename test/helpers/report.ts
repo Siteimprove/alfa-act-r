@@ -1,23 +1,37 @@
+import { Rule } from "@siteimprove/alfa-act";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { Document } from "@siteimprove/alfa-json-ld";
+import { Set } from "@siteimprove/alfa-set";
 import { Page } from "@siteimprove/alfa-web";
+
 import * as fs from "fs";
 import * as jsonld from "jsonld";
 
 import { Context, Test } from "./context";
 
+const AlfaVersion = JSON.parse(
+  fs.readFileSync(process.env.npm_package_json ?? "", "utf8")
+).dependencies["@siteimprove/alfa-rules"].replace("^", "");
+
 export async function report<T extends Hashable, Q, S>(
   context: Context<Page, T, Q, S>,
   out: string
 ) {
-  const graph: Array<Document> = [];
+  const graph: Array<Document> = [assertorAlfa];
+  let rules = Set.empty<Rule<Page, T, Q, S>>();
 
   for (const test of context.outcomes) {
     if (test.kind === Test.Kind.Ignored) {
       recordIgnoredCase(graph, test);
     } else {
-      recordCase(graph, test);
+      // The graph is modified by side effect while the rules set is explicitly
+      // updated. This is pretty hacky…
+      rules = recordCase(graph, rules, test);
     }
+  }
+
+  for (const rule of rules) {
+    graph.push(rule.toEARL());
   }
 
   const compact = await jsonld.compact(
@@ -30,8 +44,9 @@ export async function report<T extends Hashable, Q, S>(
 
 function recordCase<T extends Hashable, Q, S>(
   graph: Array<Document>,
+  rules: Set<Rule<Page, T, Q, S>>,
   test: Test.Result<Page, T, Q, S>
-): void {
+): Set<Rule<Page, T, Q, S>> {
   const { input: page, outcome } = test;
 
   const subject = page.toEARL();
@@ -40,13 +55,14 @@ function recordCase<T extends Hashable, Q, S>(
 
   const assertion = outcome.toEARL();
 
-  assertion["earl:test"] = outcome.rule.toEARL();
-
   assertion["earl:subject"] = {
     "@id": subject["@id"],
   };
+  assertion["earl:assertedBy"] = "Alfa";
 
   graph.push(assertion);
+
+  return rules.add(outcome.rule);
 }
 
 function recordIgnoredCase<I, T extends Hashable, Q, S>(
@@ -79,6 +95,21 @@ function recordIgnoredCase<I, T extends Hashable, Q, S>(
 
   graph.push(subject, assertion);
 }
+
+const assertorAlfa = {
+  "@context": {
+    earl: "http://www.w3.org/ns/earl#",
+    doap: "http://usefulinc.com/ns/doap#",
+  },
+  "@type": ["earl:Assertor", "@earl:Software"],
+  "@id": "Alfa",
+  "doap:url": "https://alfa.siteimprove.com",
+  "doap:name": "Alfa",
+  "doap:release": {
+    "@type": "Version",
+    "doap:revision": AlfaVersion ?? "no version found",
+  },
+};
 
 /**
  * The JSON-LD context used by ACT rules CG
