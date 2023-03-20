@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "65f9c0",
-  "outcome": "passed",
+  "id": "797a7b",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6000a70ba2da9a828fa9c817ae6a0d2c092522fb.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6000a70ba2da9a828fa9c817ae6a0d2c092522fb.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-transcript.txt\">Transcript</a>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<span role=\"heading\" aria-level=\"1\" style=\"position: absolute; top: -9999px; left: -9999px;\">Weather</span>\n\t<p>\n\t\tWe are open Monday through Friday from 10 to 16\n\t</p>\n</html>"
     },
     "document": {
       "type": "document",
@@ -48,27 +48,55 @@
               "children": [
                 {
                   "type": "element",
-                  "children": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Weather"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "audio",
+                  "name": "span",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "src",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3"
+                      "name": "role",
+                      "value": "heading"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "controls",
-                      "value": ""
+                      "name": "aria-level",
+                      "value": "1"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "style",
+                      "value": "position: absolute; top: -9999px; left: -9999px;"
                     }
                   ],
-                  "style": null,
+                  "style": [
+                    {
+                      "name": "position",
+                      "value": "absolute",
+                      "important": false
+                    },
+                    {
+                      "name": "top",
+                      "value": "-9999px",
+                      "important": false
+                    },
+                    {
+                      "name": "left",
+                      "value": "-9999px",
+                      "important": false
+                    }
+                  ],
                   "shadow": null,
                   "content": null
                 },
@@ -81,21 +109,13 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Transcript"
+                      "data": "\n\t\tWe are open Monday through Friday from 10 to 16\n\t"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "a",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "href",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-transcript.txt"
-                    }
-                  ],
+                  "name": "p",
+                  "attributes": [],
                   "style": null,
                   "shadow": null,
                   "content": null

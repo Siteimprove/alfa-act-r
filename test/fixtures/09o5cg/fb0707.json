@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "e7186c",
-  "outcome": "failed",
+  "id": "fb0707",
+  "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/ef219fca0c3c2558d18be113e628752c108e89c3.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/ef219fca0c3c2558d18be113e628752c108e89c3.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<span role=\"heading\" style=\"position: absolute; top: -9999px; left: -9999px;\">Weather</span>\n\t<p>\n\t\tWe are open Monday through Friday from 10 to 16\n\t</p>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 9</title>\n</head>\n<body>\n\t<a href=\"https://w3c.org/\">W3C</a>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,65 +34,7 @@
           "children": [
             {
               "type": "element",
-              "children": [],
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
-              "shadow": null,
-              "content": null
-            },
-            {
-              "type": "element",
               "children": [
-                {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Weather"
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "span",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "role",
-                      "value": "heading"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "style",
-                      "value": "position: absolute; top: -9999px; left: -9999px;"
-                    }
-                  ],
-                  "style": [
-                    {
-                      "name": "position",
-                      "value": "absolute",
-                      "important": false
-                    },
-                    {
-                      "name": "top",
-                      "value": "-9999px",
-                      "important": false
-                    },
-                    {
-                      "name": "left",
-                      "value": "-9999px",
-                      "important": false
-                    }
-                  ],
-                  "shadow": null,
-                  "content": null
-                },
                 {
                   "type": "text",
                   "data": "\n\t"
@@ -102,12 +44,12 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\tWe are open Monday through Friday from 10 to 16\n\t"
+                      "data": "Passed Example 9"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "p",
+                  "name": "title",
                   "attributes": [],
                   "style": null,
                   "shadow": null,
@@ -116,6 +58,54 @@
                 {
                   "type": "text",
                   "data": "\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n"
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "W3C"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "a",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "href",
+                      "value": "https://w3c.org/"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",

@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "7275b8",
-  "outcome": "passed",
+  "id": "40424b",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/b278b4d6641d2c526dcc5c1bc07df5e9797807be.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/ff5548c1341eb4edc32a87d9a018d425a5a065e3.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/b278b4d6641d2c526dcc5c1bc07df5e9797807be.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/ff5548c1341eb4edc32a87d9a018d425a5a065e3.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<img\n\t\tsrc=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg\"\n\t\tsrcset=\"\n\t\t\t/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn 1.5x,\n\t\t\t/test-assets/image-filename-as-accessible-name-9eb3f6/paris  2x\n\t\t\"\n\t\talt=\"Nyhavn\"\n\t/>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" autoplay></audio>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-incorrect-transcript.html\">Transcript</a>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,28 +51,49 @@
                   "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "img",
+                  "name": "audio",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
                       "name": "src",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg"
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "srcset",
-                      "value": "\n\t\t\t/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn 1.5x,\n\t\t\t/test-assets/image-filename-as-accessible-name-9eb3f6/paris  2x\n\t\t"
-                    },
+                      "name": "autoplay",
+                      "value": ""
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Transcript"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "a",
+                  "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "alt",
-                      "value": "Nyhavn"
+                      "name": "href",
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-incorrect-transcript.html"
                     }
                   ],
                   "style": null,

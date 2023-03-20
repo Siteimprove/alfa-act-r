@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "2dc98e",
+  "id": "b30b78",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/74b04ed600b42949e74c43d4405658d704080603.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3a018f7d638bd2993d176f341edaee79fda3d55a.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/74b04ed600b42949e74c43d4405658d704080603.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3a018f7d638bd2993d176f341edaee79fda3d55a.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<img\n\t\tsrc=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/94251e110d24a4c2b6e6ce76e7203374\"\n\t\talt=\"94251e110d24a4c2b6e6ce76e7203374\"\n\t/>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" controls></audio>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-incorrect-transcript.html\">Transcript</a>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,21 +51,49 @@
                   "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "img",
+                  "name": "audio",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
                       "name": "src",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/94251e110d24a4c2b6e6ce76e7203374"
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "alt",
-                      "value": "94251e110d24a4c2b6e6ce76e7203374"
+                      "name": "controls",
+                      "value": ""
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Transcript"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "a",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "href",
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-incorrect-transcript.html"
                     }
                   ],
                   "style": null,

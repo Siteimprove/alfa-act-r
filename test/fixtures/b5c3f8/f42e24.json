@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "96078d",
+  "id": "f42e24",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/50275690fd38aa83f817b3f6f20862778ec8c306.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/50275690fd38aa83f817b3f6f20862778ec8c306.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/paris\" alt=\"Paris\" />\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\" \">\n\t<body>\n\t\tThe quick brown fox jumps over the lazy dog.\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -47,34 +47,8 @@
               "type": "element",
               "children": [
                 {
-                  "type": "element",
-                  "children": [],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "img",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "src",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/paris"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "alt",
-                      "value": "Paris"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null
-                },
-                {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\t\tThe quick brown fox jumps over the lazy dog.\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -95,7 +69,7 @@
               "namespace": null,
               "prefix": null,
               "name": "lang",
-              "value": "en"
+              "value": " "
             }
           ],
           "style": null,

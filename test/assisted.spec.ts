@@ -188,7 +188,7 @@ test("f51b46", (t) =>
 test("2eb176", (t) =>
   fixture(t, Rules.get("R23"), {
     answers: {
-      "283528": {
+      b30b78: {
         "is-audio-streaming": false,
         "is-playing": false,
         // The play button is embedded with the control
@@ -208,7 +208,7 @@ test("2eb176", (t) =>
         transcript: none,
         "transcript-link": none,
       },
-      "32cd0c": {
+      "424c7d": {
         "is-audio-streaming": false,
         "is-playing": true,
         transcript: none,
@@ -223,14 +223,14 @@ test("2eb176", (t) =>
         transcript: none,
         "transcript-link": none,
       },
-      "4a8645": {
+      "40424b": {
         "is-audio-streaming": false,
         "is-playing": true,
         transcript: none,
         // The transcript is incorrect (Moon/cheese)
         "transcript-link": none,
       },
-      "65f9c0": {
+      cc4a44: {
         "is-audio-streaming": false,
         "is-playing": false,
         // The play button is embedded with the control
@@ -632,23 +632,7 @@ test("ee13b5", (t) =>
     },
   }));
 
-test("ac7dc6", (t) =>
-  fixture(t, Rules.get("R34"), {
-    answers: {
-      "789d7a": {
-        "is-video-streaming": false,
-        "has-audio": false,
-        "track-describes-video": true,
-      },
-      b71e75: {
-        "is-video-streaming": false,
-        "has-audio": false,
-        // Incorrect description track
-        "track-describes-video": false,
-      },
-      c2cb9f: { "is-video-streaming": false, "has-audio": true },
-    },
-  }));
+// R34 has been deprecated
 
 test("c3232f", (t) =>
   fixture(t, Rules.get("R35"), {
@@ -727,22 +711,7 @@ test("c3232f", (t) =>
     ],
   }));
 
-test("f196ce", (t) =>
-  fixture(t, Rules.get("R36"), {
-    answers: {
-      "2d9c2d": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        "track-describes-video": false,
-      },
-      "5df966": {
-        "is-video-streaming": false,
-        "has-audio": true,
-        "track-describes-video": true,
-      },
-      f9e176: { "is-video-streaming": false, "has-audio": false },
-    },
-  }));
+// R36 has been deprecated
 
 test("1ec09b", (t) =>
   fixture(t, Rules.get("R37"), {
@@ -872,30 +841,7 @@ test("c5a4ea", (t) =>
     ],
   }));
 
-test("9eb3f6", (t) =>
-  fixture(t, Rules.get("R39"), {
-    answers: {
-      "287e05": { "name-describes-purpose": false },
-      "2dc98e": { "name-describes-purpose": false },
-      "4b1b0e": { "name-describes-purpose": true },
-      "4d18f8": { "name-describes-purpose": true },
-      "96078d": { "name-describes-purpose": false },
-      "96ee77": { "name-describes-purpose": true },
-      cad8ac: { "name-describes-purpose": true },
-      ded8c6: { "name-describes-purpose": false },
-    },
-    lax: [
-      // Alfa doesn't look into `<picture>` elements or srcset attributes
-      // We're unlikely to fix that given the rule is deprecated in ACT rules.
-      "7275b8",
-      "c9820b",
-    ],
-    skip: [
-      // Alfa doesn't look into `<picture>` elements or srcset attributes
-      // We're unlikely to fix that given the rule is deprecated in ACT rules.
-      "d421cb",
-    ],
-  }));
+// R39 has been deprecated upstream
 
 // R40 is Siteimprove rule
 
@@ -929,7 +875,15 @@ test("ff89c9", (t) =>
 
 test("7d6734", (t) => fixture(t, Rules.get("R43")));
 
-test("b33eff", (t) => fixture(t, Rules.get("R44")));
+test("b33eff", (t) =>
+  fixture(t, Rules.get("R44"), {
+    // Alfa doesn't look yet at the rotate property
+    // https://github.com/Siteimprove/alfa/issues/1378
+    skip: ["dd6c57"],
+    // Alfa doesn't look yet at the rotate property
+    // https://github.com/Siteimprove/alfa/issues/1378
+    lax: ["4d88fd"],
+  }));
 
 test("a25f45", (t) => fixture(t, Rules.get("R45")));
 
@@ -1184,7 +1138,7 @@ test("afw4f7", (t) =>
       "92452d",
     ],
     answers: {
-      "416921": { "background-colors": blackHoleSunColors },
+      "9939c7": { "background-colors": blackHoleSunColors },
       "7004f1": { "background-colors": [hex("979797"), hex("686868")] },
       e5c024: {
         // In this case, the text is not above the brightest parts of the image.

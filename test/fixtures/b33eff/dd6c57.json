@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "ea039f",
-  "outcome": "passed",
+  "id": "dd6c57",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 9</title>\n</head>\n<body>\n\t<button>My button!</button>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 90deg;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -37,14 +37,14 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 9"
+                      "data": "Page with some content"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -57,7 +57,27 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 90deg;\n\t\t\t\t}\n\t\t\t}\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "style",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -70,34 +90,14 @@
             },
             {
               "type": "text",
-              "data": "\n"
+              "data": "\n\t"
             },
             {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
-                },
-                {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "My button!"
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "button",
-                  "attributes": [],
-                  "style": null,
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n\n"
+                  "data": "\n\t\tPage Content\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -126,7 +126,25 @@
           "content": null
         }
       ],
-      "style": []
+      "style": [
+        {
+          "rules": [
+            {
+              "type": "media",
+              "rules": [
+                {
+                  "type": "style",
+                  "selector": "html",
+                  "style": []
+                }
+              ],
+              "condition": "(orientation: portrait)"
+            }
+          ],
+          "disabled": false,
+          "condition": null
+        }
+      ]
     },
     "device": {
       "type": "screen",

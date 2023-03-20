@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "4b1b0e",
+  "id": "424c7d",
   "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/c45ac9a2b8c8a35f149e210bd983c034b7fd8568.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3d78bf5e3f2b717595db4df064b0ec542bae0d9b.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/c45ac9a2b8c8a35f149e210bd983c034b7fd8568.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3d78bf5e3f2b717595db4df064b0ec542bae0d9b.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"fr\">\n\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/pain\" alt=\"pain\" />\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<audio src=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3\" autoplay></audio>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-transcript.html\">Transcript</a>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,21 +51,49 @@
                   "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "img",
+                  "name": "audio",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
                       "name": "src",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/pain"
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech.mp3"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "alt",
-                      "value": "pain"
+                      "name": "autoplay",
+                      "value": ""
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Transcript"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "a",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "href",
+                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-transcript.html"
                     }
                   ],
                   "style": null,
@@ -95,7 +123,7 @@
               "namespace": null,
               "prefix": null,
               "name": "lang",
-              "value": "fr"
+              "value": "en"
             }
           ],
           "style": null,

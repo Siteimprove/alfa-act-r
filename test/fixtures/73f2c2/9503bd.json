@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "ded8c6",
-  "outcome": "failed",
+  "id": "9503bd",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/516d5e4c0c6b286c18be2830e9866e4eb0f7c74c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/516d5e4c0c6b286c18be2830e9866e4eb0f7c74c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<input type=\"image\" src=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/login.png\" alt=\"login.png\" />\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 8</title>\n</head>\n<body>\n\t<input type=\"submit\" autocomplete=\"email\"/>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,7 +34,32 @@
           "children": [
             {
               "type": "element",
-              "children": [],
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Inapplicable Example 8"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
@@ -44,8 +69,16 @@
               "content": null
             },
             {
+              "type": "text",
+              "data": "\n"
+            },
+            {
               "type": "element",
               "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
                 {
                   "type": "element",
                   "children": [],
@@ -58,21 +91,14 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "type",
-                      "value": "image"
+                      "value": "submit"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "src",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/login.png"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "alt",
-                      "value": "login.png"
+                      "name": "autocomplete",
+                      "value": "email"
                     }
                   ],
                   "style": null,
@@ -81,7 +107,7 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",

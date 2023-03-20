@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "96ee77",
-  "outcome": "passed",
+  "id": "0f349e",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/84ed84bb6a93a382e2258258d6c27e6eb7bb11e4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/84ed84bb6a93a382e2258258d6c27e6eb7bb11e4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<input type=\"image\" src=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/login\" alt=\"login\" />\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"\">\n\t<body>\n\t\tThe quick brown fox jumps over the lazy dog.\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -47,41 +47,8 @@
               "type": "element",
               "children": [
                 {
-                  "type": "element",
-                  "children": [],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "input",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "type",
-                      "value": "image"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "src",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/login"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "alt",
-                      "value": "login"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null
-                },
-                {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\t\tThe quick brown fox jumps over the lazy dog.\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -102,7 +69,7 @@
               "namespace": null,
               "prefix": null,
               "name": "lang",
-              "value": "en"
+              "value": ""
             }
           ],
           "style": null,

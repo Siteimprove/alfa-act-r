@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "d65900",
-  "outcome": "passed",
+  "id": "2baddb",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/ba0b707c149d4eadacd2bab8ce1352f05e53542d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/ba0b707c149d4eadacd2bab8ce1352f05e53542d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<span role=\"heading\">Opening Hours</span>\n\t<p>We are open Monday through Friday from 10 to 16</p>\n</html>"
+      "body": "<!DOCTYPE html>\n<html xml:lang=\"en\">\n\t<body>\n\t\tThe quick brown fox jumps over the lazy dog.\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -47,52 +47,8 @@
               "type": "element",
               "children": [
                 {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Opening Hours"
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "span",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "role",
-                      "value": "heading"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null
-                },
-                {
                   "type": "text",
-                  "data": "\n\t"
-                },
-                {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "We are open Monday through Friday from 10 to 16"
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "p",
-                  "attributes": [],
-                  "style": null,
-                  "shadow": null,
-                  "content": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n"
+                  "data": "\n\t\tThe quick brown fox jumps over the lazy dog.\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -112,7 +68,7 @@
               "type": "attribute",
               "namespace": null,
               "prefix": null,
-              "name": "lang",
+              "name": "xml:lang",
               "value": "en"
             }
           ],

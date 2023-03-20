@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "cad8ac",
-  "outcome": "passed",
+  "id": "bf8a87",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/28ff5fc7b1b6bc9e1b10b71c776449283479f50a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/28ff5fc7b1b6bc9e1b10b71c776449283479f50a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg\" download\n\t\t>Download <img src=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg\" alt=\"nyhavn.jpeg\"\n\t/></a>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 9</title>\n</head>\n<body>\n\t<input type=\"hidden\" autocomplete=\"transaction-amount\" value=\"100.00\">\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,7 +34,32 @@
           "children": [
             {
               "type": "element",
-              "children": [],
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Inapplicable Example 9"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
@@ -44,59 +69,43 @@
               "content": null
             },
             {
+              "type": "text",
+              "data": "\n"
+            },
+            {
               "type": "element",
               "children": [
                 {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
                   "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Download "
-                    },
-                    {
-                      "type": "element",
-                      "children": [],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "img",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "alt",
-                          "value": "nyhavn.jpeg"
-                        }
-                      ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null
-                    }
-                  ],
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "a",
+                  "name": "input",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "href",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg"
+                      "name": "type",
+                      "value": "hidden"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "download",
-                      "value": ""
+                      "name": "autocomplete",
+                      "value": "transaction-amount"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "value",
+                      "value": "100.00"
                     }
                   ],
                   "style": null,
@@ -105,7 +114,7 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",

@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "287e05",
+  "id": "15346d",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5ca9a034544ae02b83dba27ed9beb61626c8eedf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5ca9a034544ae02b83dba27ed9beb61626c8eedf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg\" alt=\"nyhavn.jpeg\" />\n</html>"
+      "body": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\tThe quick brown fox jumps over the lazy dog.\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -47,34 +47,8 @@
               "type": "element",
               "children": [
                 {
-                  "type": "element",
-                  "children": [],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "img",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "src",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/image-filename-as-accessible-name-9eb3f6/nyhavn.jpeg"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "alt",
-                      "value": "nyhavn.jpeg"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null
-                },
-                {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\t\tThe quick brown fox jumps over the lazy dog.\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -89,15 +63,7 @@
           "namespace": "http://www.w3.org/1999/xhtml",
           "prefix": null,
           "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
+          "attributes": [],
           "style": null,
           "shadow": null,
           "content": null

@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "5554e2",
+  "id": "bca865",
   "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/3ab7de594473cac4745adce5edac1b4143aff701.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/3ab7de594473cac4745adce5edac1b4143aff701.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<h1 aria-hidden=\"true\">Opening Hours</h1>\n\t<p>We are open Monday through Friday from 10 to 16</p>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 9</title>\n</head>\n<body>\n\t<label>\n\t\tPassword\n\t\t<input type=\"password\" autocomplete=\"current-password webauthn\" />\n\t</label>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,42 +34,7 @@
           "children": [
             {
               "type": "element",
-              "children": [],
-              "namespace": "http://www.w3.org/1999/xhtml",
-              "prefix": null,
-              "name": "head",
-              "attributes": [],
-              "style": null,
-              "shadow": null,
-              "content": null
-            },
-            {
-              "type": "element",
               "children": [
-                {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Opening Hours"
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "h1",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "aria-hidden",
-                      "value": "true"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null
-                },
                 {
                   "type": "text",
                   "data": "\n\t"
@@ -79,12 +44,12 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "We are open Monday through Friday from 10 to 16"
+                      "data": "Passed Example 9"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "p",
+                  "name": "title",
                   "attributes": [],
                   "style": null,
                   "shadow": null,
@@ -93,6 +58,76 @@
                 {
                   "type": "text",
                   "data": "\n"
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null
+            },
+            {
+              "type": "text",
+              "data": "\n"
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\tPassword\n\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "input",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "type",
+                          "value": "password"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "autocomplete",
+                          "value": "current-password webauthn"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "label",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
