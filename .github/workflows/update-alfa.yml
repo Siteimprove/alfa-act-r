@@ -1,6 +1,10 @@
 name: Update Alfa
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    # Run daily, 5:00 UTC - an hour before the WAI site checks for updates
+    - cron: '0 5 * * *'
 
 jobs:
   update-alfa:
@@ -20,7 +24,7 @@ jobs:
           npmScopes.siteimprove.npmAuthToken
           ${{ secrets.GITHUB_TOKEN }}
       - run: yarn install --immutable
-      - run: yarn upgrade @siteimprove/alfa-*
+      - run: yarn up @siteimprove/alfa-*
       - run: yarn dedupe
       - run: yarn build
       - run: yarn test
