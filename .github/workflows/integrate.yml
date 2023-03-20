@@ -1,4 +1,5 @@
 name: Integrate
+
 on:
   push:
     branches:
@@ -6,6 +7,7 @@ on:
   pull_request:
     branches:
       - "*"
+
 jobs:
   build:
     name: Build
@@ -27,7 +29,3 @@ jobs:
       - run: yarn dedupe --check
       - run: yarn build
       - run: yarn test
-      - uses: actions/upload-artifact@v3
-        with:
-          name: report.json
-          path: test/report.json
