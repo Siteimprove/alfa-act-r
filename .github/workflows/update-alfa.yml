@@ -1,0 +1,26 @@
+name: Update Alfa
+
+on: workflow_dispatch
+
+jobs:
+  update-alfa:
+    name: Update Alfa
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: actions/cache@v3
+        with:
+          path: .yarn/cache
+          key: yarn-${{ hashFiles('yarn.lock') }}
+      - run: >
+          yarn config set
+          npmScopes.siteimprove.npmAuthToken
+          ${{ secrets.GITHUB_TOKEN }}
+      - run: yarn install --immutable
+      - run: yarn upgrade @siteimprove/alfa-*
+      - run: yarn dedupe
+      - run: yarn build
+      - run: yarn test
