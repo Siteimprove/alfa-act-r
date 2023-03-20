@@ -1409,7 +1409,7 @@ test("bisz58", (t) => fixture(t, Rules.get("R96")));
 test("ucwvc8", (t) =>
   fixture(t, Option.of(experimentalRules.R109), {
     answers: {
-      "0dc883": { "document-language": "no identified language" },
+      "0dc883": { "document-language": "fr" },
       "185b49": { "document-language": "en" },
       "58e65a": { "document-language": "en" },
       "722fd3": { "document-language": "en" },
@@ -1420,8 +1420,9 @@ test("ucwvc8", (t) =>
       eb42cf: { "document-language": "nl" },
       f522a6: { "document-language": "en" },
     },
-    skip: [
-      // Alfa currently fails pages with no detected language
+    lax: [
+      // This page could be either in two languages one of them matches `lang`,
+      // ACT rules makes it Inapplicable, but Alfa accepts it.
       "0dc883",
     ],
   }));
