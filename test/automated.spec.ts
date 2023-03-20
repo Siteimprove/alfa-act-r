@@ -149,14 +149,12 @@ test.skip("d7ba54", (t) => fixture(t, Rules.get("R32")));
 // R33 has questions in applicability, review flow not currently handled
 test.skip("ee13b5", (t) => fixture(t, Rules.get("R33")));
 
-// R34 has questions in applicability, review flow not currently handled
-test.skip("ac7dc6", (t) => fixture(t, Rules.get("R34")));
+// R34 has been deprecated
 
 // R35 has questions in applicability, review flow not currently handled
 test.skip("c3232f", (t) => fixture(t, Rules.get("R35")));
 
-// R36 has questions in applicability, review flow not currently handled
-test.skip("f196ce", (t) => fixture(t, Rules.get("R36")));
+// R36 has been deprecated
 
 // R37 has questions in applicability, review flow not currently handled
 test.skip("1ec09b", (t) => fixture(t, Rules.get("R37")));
@@ -199,7 +197,15 @@ test("ff89c9", (t) =>
 
 test("7d6734", (t) => fixture(t, Rules.get("R43")));
 
-test("b33eff", (t) => fixture(t, Rules.get("R44")));
+test("b33eff", (t) =>
+  fixture(t, Rules.get("R44"), {
+    // Alfa doesn't look yet at the rotate property
+    // https://github.com/Siteimprove/alfa/issues/1378
+    skip: ["dd6c57"],
+    // Alfa doesn't look yet at the rotate property
+    // https://github.com/Siteimprove/alfa/issues/1378
+    lax: ["4d88fd"],
+  }));
 
 test("a25f45", (t) => fixture(t, Rules.get("R45")));
 
@@ -315,7 +321,7 @@ test("afw4f7", (t) =>
       // Alfa does not yet disregard impossible foreground/background combinations
       "92452d",
     ],
-    manual: ["416921", "7004f1", "e5c024"],
+    manual: ["7004f1", "9939c7", "e5c024"],
   }));
 
 // R70 is Siteimprove only
