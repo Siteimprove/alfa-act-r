@@ -35,9 +35,10 @@ jobs:
 
       # If we made it thus far, commit changes to the repository
       - run: |
+          git config --local core.filemode false
           # See https://github.com/orgs/community/discussions/26560
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - run: git add test/fixtures reports
       # Check if changes have been made
       - run: git diff-index --quiet HEAD || git commit -m "Update ACT test cases" --no-verify
