@@ -1,0 +1,49 @@
+name: Update Test cases
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run weekly, on Monday morning at 05:00 UTC.
+    # Problems are reported to the latest editor of the script,
+    # currently https://github.com/Jym77
+    - cron: '0 5 * * 1'
+
+jobs:
+  update-act:
+    name: Update ACT rules test cases
+    runs-on: ubuntu-latest
+    steps:
+      # Set up repository and code
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: actions/cache@v3
+        with:
+          path: .yarn/cache
+          key: yarn-${{ hashFiles('yarn.lock') }}
+      - run: >
+          yarn config set
+          npmScopes.siteimprove.npmAuthToken
+          ${{ secrets.GITHUB_TOKEN }}
+      - run: yarn install --immutable
+      - run: yarn dedupe
+      # Update test cases, run tests
+      - run: yarn fixtures
+      - run: yarn build
+      - run: yarn test
+
+      # If we made it thus far, commit changes to the repository
+      - run: |
+          # See https://github.com/orgs/community/discussions/26560
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - run: git add test/fixtures reports
+      # Check if changes have been made
+      - run: git diff-index --quiet HEAD || git commit -m "Update ACT test cases" --no-verify
+      - run: git push
+
+      # If we made it thus far, run tests in strict mode to trigger an error and call for
+      # action on updating the exceptions
+      - run: yarn strict
+
