@@ -28,9 +28,9 @@ jobs:
           ${{ secrets.GITHUB_TOKEN }}
       - run: yarn install --immutable
       - run: yarn dedupe
+      - run: yarn build
       # Update test cases, run tests
       - run: yarn fixtures
-      - run: yarn build
       - run: yarn test
 
       # If we made it thus far, commit changes to the repository
