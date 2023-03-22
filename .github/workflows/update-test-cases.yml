@@ -3,7 +3,7 @@ name: Update Test cases
 on:
   workflow_dispatch:
   schedule:
-    # Run weekly, on Monday morning at 05:00 UTC.
+    # Run weekly, on Monday morning at 05:00 UTC, 3h after updating Alfa.
     # Problems are reported to the latest editor of the script,
     # currently https://github.com/Jym77
     - cron: '0 5 * * 1'

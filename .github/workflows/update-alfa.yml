@@ -3,14 +3,17 @@ name: Update Alfa
 on:
   workflow_dispatch:
   schedule:
-    # Run daily, 5:00 UTC - an hour before the WAI site checks for updates
-    - cron: '0 5 * * *'
+    # Run weekly, on Monday morning at 02:00 UTC, 3 hours before updating test cases
+    # Problems are reported to the latest editor of the script,
+    # currently https://github.com/Jym77
+    - cron: '0 2 * * 1'
 
 jobs:
   update-alfa:
     name: Update Alfa
     runs-on: ubuntu-latest
     steps:
+      # Set up repository and code
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -24,8 +27,25 @@ jobs:
           npmScopes.siteimprove.npmAuthToken
           ${{ secrets.GITHUB_TOKEN }}
       - run: yarn install --immutable
+
+      # Update Alfa to latest version, check that everything still works.
       - run: yarn up @siteimprove/alfa-*
       - run: yarn dedupe
       - run: yarn build
       - run: yarn test
-      - run: echo "Everything is awesome!"
+
+      # If we made it thus far, commit changes to the repository
+      - run: |
+          git config --local core.filemode false
+          # See https://api.github.com/users/github-actions%5Bbot%5D
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      # Only these two files should be affected by the change.
+      - run: git add package.json yarn.lock
+      # Check if changes have been made, commit and push
+      - run: git diff-index --quiet HEAD || git commit -m "Update Alfa" --no-verify
+      - run: git push
+
+      # If we made it thus far, run tests in strict mode to trigger an error and call for
+      # action on updating the exceptions
+      - run: yarn strict
