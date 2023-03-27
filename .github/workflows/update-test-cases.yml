@@ -39,8 +39,9 @@ jobs:
           # See https://api.github.com/users/github-actions%5Bbot%5D
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      # .yarnrc.yml got the AuthToken added, which we need to totally ignore
+      - run: git checkout -- .yarnrc.yml
       - run: git add test/fixtures reports
-      - run: git status
       # Check if changes have been made, commit and push
       - run: git diff-index --quiet HEAD || git commit -m "Update ACT test cases" --no-verify
       - run: git push
