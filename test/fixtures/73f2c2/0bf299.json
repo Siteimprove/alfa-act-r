@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "2a25f5",
-  "outcome": "passed",
+  "id": "0bf299",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/dd651de8f984bc2bc5d791eceedf16e70cca0cdc.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/dd651de8f984bc2bc5d791eceedf16e70cca0cdc.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<object title=\"Rabbit animated short\" data=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\"></object>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 9</title>\n</head>\n<body>\n\t<label>Password<input type=\"password\" autocomplete=\"current-password webauthn invalid\"/></label>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 2"
+                      "data": "Failed Example 9"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -81,68 +81,45 @@
                 },
                 {
                   "type": "element",
-                  "children": [],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "object",
-                  "attributes": [
+                  "children": [
                     {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "title",
-                      "value": "Rabbit animated short"
+                      "type": "text",
+                      "data": "Password"
                     },
                     {
-                      "type": "attribute",
-                      "namespace": null,
+                      "type": "element",
+                      "children": [],
+                      "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "data",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4"
+                      "name": "input",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "type",
+                          "value": "password"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "autocomplete",
+                          "value": "current-password webauthn invalid"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null
                     }
                   ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "label",
+                  "attributes": [],
                   "style": null,
                   "shadow": null,
-                  "content": {
-                    "type": "document",
-                    "children": [
-                      {
-                        "type": "element",
-                        "children": [
-                          {
-                            "type": "element",
-                            "children": [],
-                            "namespace": "http://www.w3.org/1999/xhtml",
-                            "prefix": null,
-                            "name": "head",
-                            "attributes": [],
-                            "style": null,
-                            "shadow": null,
-                            "content": null
-                          },
-                          {
-                            "type": "element",
-                            "children": [],
-                            "namespace": "http://www.w3.org/1999/xhtml",
-                            "prefix": null,
-                            "name": "body",
-                            "attributes": [],
-                            "style": null,
-                            "shadow": null,
-                            "content": null
-                          }
-                        ],
-                        "namespace": "http://www.w3.org/1999/xhtml",
-                        "prefix": null,
-                        "name": "html",
-                        "attributes": [],
-                        "style": null,
-                        "shadow": null,
-                        "content": null
-                      }
-                    ],
-                    "style": []
-                  }
+                  "content": null
                 },
                 {
                   "type": "text",
