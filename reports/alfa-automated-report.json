@@ -70,7 +70,7 @@
       "name": "Alfa",
       "release": {
         "@type": "Version",
-        "revision": "0.59.0"
+        "revision": "0.62.0"
       },
       "doap:url": "https://alfa.siteimprove.com"
     },
@@ -980,17 +980,7 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `<iframe>` does not have an accessible name",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/iframe[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html"

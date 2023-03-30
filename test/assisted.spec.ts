@@ -1,5 +1,5 @@
 import { Hex, RGB } from "@siteimprove/alfa-css";
-import { Element, h, Node } from "@siteimprove/alfa-dom";
+import { Element, Node } from "@siteimprove/alfa-dom";
 import * as path from "path";
 
 import ava, { TestFn } from "ava";

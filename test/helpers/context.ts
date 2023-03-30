@@ -1,7 +1,7 @@
-import { Outcome, Rule } from "@siteimprove/alfa-act";
+import { Outcome, Question, Rule } from "@siteimprove/alfa-act";
 import { Hashable } from "@siteimprove/alfa-hash";
 
-export type Context<I, T extends Hashable, Q, S> = {
+export type Context<I, T extends Hashable, Q extends Question.Metadata, S> = {
   outcomes: Array<Test.Result<I, T, Q, S> | Test.Ignored<I, T, Q, S>>;
 };
 
@@ -14,13 +14,23 @@ export namespace Test {
     Ignored,
   }
 
-  export interface Result<I, T extends Hashable, Q, S> {
+  export interface Result<
+    I,
+    T extends Hashable,
+    Q extends Question.Metadata,
+    S
+  > {
     kind: Kind.Result;
     input: I;
     outcome: Outcome<I, T, Q, S>;
   }
 
-  export interface Ignored<I, T extends Hashable, Q, S> {
+  export interface Ignored<
+    I,
+    T extends Hashable,
+    Q extends Question.Metadata,
+    S
+  > {
     kind: Kind.Ignored;
     url: string;
     rule: Rule<I, T, Q, S>;
