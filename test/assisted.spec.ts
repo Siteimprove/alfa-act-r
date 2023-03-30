@@ -89,14 +89,7 @@ test("c487ae", (t) => fixture(t, Rules.get("R11")));
 
 test("97a4e1", (t) => fixture(t, Rules.get("R12")));
 
-test("cae760", (t) =>
-  fixture(t, Rules.get("R13"), {
-    skip: [
-      // Alfa consider all iframe, not restricting to sequential tab navigation
-      // and isTabbable actually skip iframe as they redirect focus.
-      "0cb8cb",
-    ],
-  }));
+test("cae760", (t) => fixture(t, Rules.get("R13")));
 
 test("2ee8b8", (t) =>
   fixture(t, Rules.get("R14"), {
