@@ -1,6 +1,5 @@
-import { Outcome, Rule } from "@siteimprove/alfa-act";
+import { Outcome, Question, Rule } from "@siteimprove/alfa-act";
 import { Hashable } from "@siteimprove/alfa-hash";
-import { Question } from "@siteimprove/alfa-rules";
 
 export type Context<I, T extends Hashable, Q extends Question.Metadata, S> = {
   outcomes: Array<Test.Result<I, T, Q, S> | Test.Ignored<I, T, Q, S>>;

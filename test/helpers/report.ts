@@ -1,7 +1,6 @@
-import { Rule } from "@siteimprove/alfa-act";
+import { Question, Rule } from "@siteimprove/alfa-act";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { Document } from "@siteimprove/alfa-json-ld";
-import { Question } from "@siteimprove/alfa-rules";
 import { Set } from "@siteimprove/alfa-set";
 import { Page } from "@siteimprove/alfa-web";
 
