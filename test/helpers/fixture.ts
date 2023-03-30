@@ -178,7 +178,7 @@ type Mapping = "ok" | "error" | "lax" | "manual";
  * report any problem,
  * pass or fail the test.
  */
-function report<T extends Hashable, Q, S>(
+function report<T extends Hashable, Q extends Question.Metadata, S>(
   t: ExecutionContext<Context<Page, T, Q, S>>,
   result: Mapping,
   fixtureID: string,

@@ -1,6 +1,7 @@
 import { Rule } from "@siteimprove/alfa-act";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { Document } from "@siteimprove/alfa-json-ld";
+import { Question } from "@siteimprove/alfa-rules";
 import { Set } from "@siteimprove/alfa-set";
 import { Page } from "@siteimprove/alfa-web";
 
@@ -13,10 +14,11 @@ const AlfaVersion = JSON.parse(
   fs.readFileSync(process.env.npm_package_json ?? "", "utf8")
 ).dependencies["@siteimprove/alfa-rules"].replace("^", "");
 
-export async function report<T extends Hashable, Q, S>(
-  context: Context<Page, T, Q, S>,
-  out: string
-) {
+export async function report<
+  T extends Hashable,
+  Q extends Question.Metadata,
+  S
+>(context: Context<Page, T, Q, S>, out: string) {
   const graph: Array<Document> = [assertorAlfa];
   let rules = Set.empty<Rule<Page, T, Q, S>>();
 
@@ -42,7 +44,7 @@ export async function report<T extends Hashable, Q, S>(
   fs.writeFileSync(out, JSON.stringify(compact, null, 2));
 }
 
-function recordCase<T extends Hashable, Q, S>(
+function recordCase<T extends Hashable, Q extends Question.Metadata, S>(
   graph: Array<Document>,
   rules: Set<Rule<Page, T, Q, S>>,
   test: Test.Result<Page, T, Q, S>
@@ -65,10 +67,12 @@ function recordCase<T extends Hashable, Q, S>(
   return rules.add(outcome.rule);
 }
 
-function recordIgnoredCase<I, T extends Hashable, Q, S>(
-  graph: Array<Document>,
-  test: Test.Ignored<I, T, Q, S>
-): void {
+function recordIgnoredCase<
+  I,
+  T extends Hashable,
+  Q extends Question.Metadata,
+  S
+>(graph: Array<Document>, test: Test.Ignored<I, T, Q, S>): void {
   const subject = {
     "@context": {
       earl: "http://www.w3.org/ns/earl#",
