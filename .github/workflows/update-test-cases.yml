@@ -15,6 +15,8 @@ jobs:
     steps:
       # Set up repository and code
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.A11Y_PUBLIC_GITHUB_TOKEN }}
       - uses: actions/setup-node@v3
         with:
           node-version: 16
@@ -36,9 +38,9 @@ jobs:
       # If we made it thus far, commit changes to the repository
       - run: |
           git config --local core.filemode false
-          # See https://api.github.com/users/github-actions%5Bbot%5D
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # See https://api.github.com/users/siteimprove-builduser
+          git config --local user.name "siteimprove-builduser"
+          git config --local user.email "8577410+siteimprove-builduser@users.noreply.github.com"
       # .yarnrc.yml got the AuthToken added, which we need to totally ignore
       - run: git checkout -- .yarnrc.yml
       - run: git add test/fixtures reports
