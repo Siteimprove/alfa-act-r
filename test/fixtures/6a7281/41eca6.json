@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "9a1699",
+  "id": "41eca6",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b78f507edd1866cc5b1a7fae8b530da964b470fb.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b78f507edd1866cc5b1a7fae8b530da964b470fb.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<div role=\"textbox\" aria-errormessage=\"error1 error2\" aria-label=\"A textbox with an error\"></div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 7</title>\n</head>\n<body>\n\t<div role=\"alert\" aria-relevant=\"text always\"></div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 4"
+                      "data": "Failed Example 7"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -91,21 +91,14 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "role",
-                      "value": "textbox"
+                      "value": "alert"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "aria-errormessage",
-                      "value": "error1 error2"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "aria-label",
-                      "value": "A textbox with an error"
+                      "name": "aria-relevant",
+                      "value": "text always"
                     }
                   ],
                   "style": null,

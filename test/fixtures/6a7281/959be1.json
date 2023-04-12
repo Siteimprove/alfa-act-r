@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "3fb99d",
-  "outcome": "passed",
+  "id": "959be1",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0b90f166412e03fa01b460aa1c8e68f722a47434.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0b90f166412e03fa01b460aa1c8e68f722a47434.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<div role=\"textbox\" aria-required=\"true\" aria-label=\"A required textbox\"></div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<div role=\"alert\" aria-live>Remember to be awesome!</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 1"
+                      "data": "Inapplicable Example 3"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -81,7 +81,12 @@
                 },
                 {
                   "type": "element",
-                  "children": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Remember to be awesome!"
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -91,21 +96,14 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "role",
-                      "value": "textbox"
+                      "value": "alert"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "aria-required",
-                      "value": "true"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "aria-label",
-                      "value": "A required textbox"
+                      "name": "aria-live",
+                      "value": ""
                     }
                   ],
                   "style": null,

@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "87ed2d",
-  "outcome": "passed",
+  "id": "75e1eb",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/88ff0942922e48b686413cf12cd0fd3510a8b29f.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/88ff0942922e48b686413cf12cd0fd3510a8b29f.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<div role=\"button\" aria-pressed=\"mixed\">An other button</div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 6</title>\n</head>\n<body>\n\t<div role=\"main\" aria-live=\"page\"></div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 3"
+                      "data": "Failed Example 6"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -81,12 +81,7 @@
                 },
                 {
                   "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "An other button"
-                    }
-                  ],
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -96,14 +91,14 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "role",
-                      "value": "button"
+                      "value": "main"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "aria-pressed",
-                      "value": "mixed"
+                      "name": "aria-live",
+                      "value": "page"
                     }
                   ],
                   "style": null,

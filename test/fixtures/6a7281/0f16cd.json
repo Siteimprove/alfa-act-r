@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "400143",
+  "id": "0f16cd",
   "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/38b0160bfc6c056fa0d02affbc02e49dce284467.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/38b0160bfc6c056fa0d02affbc02e49dce284467.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 8</title>\n</head>\n<body>\n\t<div role=\"textbox\" aria-placeholder=\"MM-DD-YYYY\" aria-label=\"Your birthdate\">\n\t\tMM-DD-YYYY\n\t</div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<div role=\"button\" aria-pressed=\"mixed\">Partially pressed button</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 8"
+                      "data": "Passed Example 4"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -84,7 +84,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\tMM-DD-YYYY\n\t"
+                      "data": "Partially pressed button"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -96,21 +96,14 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "role",
-                      "value": "textbox"
+                      "value": "button"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "aria-placeholder",
-                      "value": "MM-DD-YYYY"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "aria-label",
-                      "value": "Your birthdate"
+                      "name": "aria-pressed",
+                      "value": "mixed"
                     }
                   ],
                   "style": null,
