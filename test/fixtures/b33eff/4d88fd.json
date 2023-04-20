@@ -155,7 +155,13 @@
                 {
                   "type": "style",
                   "selector": "html",
-                  "style": []
+                  "style": [
+                    {
+                      "name": "rotate",
+                      "value": "0turn",
+                      "important": false
+                    }
+                  ]
                 }
               ],
               "condition": "(orientation: portrait)"

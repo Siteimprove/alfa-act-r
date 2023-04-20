@@ -868,15 +868,7 @@ test("ff89c9", (t) =>
 
 test("7d6734", (t) => fixture(t, Rules.get("R43")));
 
-test("b33eff", (t) =>
-  fixture(t, Rules.get("R44"), {
-    // Alfa doesn't look yet at the rotate property
-    // https://github.com/Siteimprove/alfa/issues/1378
-    skip: ["dd6c57"],
-    // Alfa doesn't look yet at the rotate property
-    // https://github.com/Siteimprove/alfa/issues/1378
-    lax: ["4d88fd"],
-  }));
+test("b33eff", (t) => fixture(t, Rules.get("R44")));
 
 test("a25f45", (t) => fixture(t, Rules.get("R45")));
 

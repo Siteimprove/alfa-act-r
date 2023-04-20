@@ -135,7 +135,13 @@
                 {
                   "type": "style",
                   "selector": "html",
-                  "style": []
+                  "style": [
+                    {
+                      "name": "rotate",
+                      "value": "90deg",
+                      "important": false
+                    }
+                  ]
                 }
               ],
               "condition": "(orientation: portrait)"
