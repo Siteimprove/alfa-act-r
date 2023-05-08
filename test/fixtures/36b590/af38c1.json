@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "9c23a5",
+  "id": "af38c1",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/a51e05dc7b64d927ff25bc493bb0aa069c963d29.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/a51e05dc7b64d927ff25bc493bb0aa069c963d29.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" />\n\t\t<span id=\"error\">Please enter the correct text.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" />\n\t\t<span id=\"error\">Invalid value for age.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -149,7 +149,7 @@
                       "children": [
                         {
                           "type": "text",
-                          "data": "Please enter the correct text."
+                          "data": "Invalid value for age."
                         }
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
