@@ -1197,7 +1197,7 @@ test("36b590", (t) =>
         "error-indicator-identifying-form-field": none,
         "error-indicator-describing-resolution": none,
       },
-      "9c23a5": {
+      "af38c1": {
         "error-indicators": [elementWithId("error")],
         "error-indicator-identifying-form-field": elementWithId("error"),
         "error-indicator-describing-resolution": none,
