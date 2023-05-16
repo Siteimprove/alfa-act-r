@@ -17,9 +17,18 @@
       "matchPackagePrefixes": ["@siteimprove/alfa"]
     },
     {
-      "groupName": "Other deps",
+      "groupName": "Other deps (major)",
       "matchPackagePatterns": ["*"],
-      "excludePackagePrefixes": ["@siteimprove/alfa"]
+      "excludePackagePrefixes": ["@siteimprove/alfa"],
+    "schedule": ["before 3am on Monday"]
+    },
+    {
+      "groupName": "Other deps (minor/patch)",
+      "matchPackagePatterns": ["*"],
+      "excludePackagePrefixes": ["@siteimprove/alfa"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
     }
   ],
   "extends": ["config:base"]
