@@ -99,7 +99,7 @@ test("6cfa84", (t) =>
     ],
   }));
 
-test("5c01ea", (t) => fixture(t, Option.of(experimentalRules.ER18)));
+test("5c01ea", (t) => fixture(t, Rules.get("R18")));
 
 test("6a7281", (t) => fixture(t, Rules.get("R19")));
 

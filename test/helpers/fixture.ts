@@ -75,7 +75,7 @@ export function fixture(
         continue;
       }
 
-      const page = Page.from(test.page);
+      const page = Page.from(test.page).getUnsafe();
 
       const skip = options.skip?.includes(test.id) ?? false;
       const manual = options.manual?.includes(test.id) ?? false;
