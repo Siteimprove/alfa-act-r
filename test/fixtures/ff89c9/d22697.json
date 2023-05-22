@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "a0a895",
+  "id": "d22697",
   "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3457868b79bad5b8cf2320c88cd5f542f9388cda.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3457868b79bad5b8cf2320c88cd5f542f9388cda.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 5</title>\n</head>\n<body>\n\t<p>\n\t\t<img scr=\"/WAI/content-assets/wcag-act-rules/test-assets/contrast/example.png\" alt=\"example\" />\n\t</p>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 4</title>\n</head>\n<body>\n\t<div role=\"heading\" aria-level=\"1\">Hello!</div>\n\t<p>Welcome to my homepage!</p>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Inapplicable Example 5"
+                      "data": "Inapplicable Example 4"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -84,37 +84,42 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\t"
+                      "data": "Hello!"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "heading"
                     },
                     {
-                      "type": "element",
-                      "children": [],
-                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "type": "attribute",
+                      "namespace": null,
                       "prefix": null,
-                      "name": "img",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "scr",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/contrast/example.png"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "alt",
-                          "value": "example"
-                        }
-                      ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null
-                    },
+                      "name": "aria-level",
+                      "value": "1"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
                     {
                       "type": "text",
-                      "data": "\n\t"
+                      "data": "Welcome to my homepage!"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
