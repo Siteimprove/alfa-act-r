@@ -129,7 +129,7 @@ test("6cfa84", (t) =>
     ],
   }));
 
-test("5c01ea", (t) => fixture(t, Option.of(experimentalRules.ER18)));
+test("5c01ea", (t) => fixture(t, Rules.get("R18")));
 
 test("6a7281", (t) => fixture(t, Rules.get("R19")));
 
@@ -1197,7 +1197,7 @@ test("36b590", (t) =>
         "error-indicator-identifying-form-field": none,
         "error-indicator-describing-resolution": none,
       },
-      "af38c1": {
+      af38c1: {
         "error-indicators": [elementWithId("error")],
         "error-indicator-identifying-form-field": elementWithId("error"),
         "error-indicator-describing-resolution": none,
