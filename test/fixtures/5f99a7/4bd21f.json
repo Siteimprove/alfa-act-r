@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "62bf9e",
+  "id": "4bd21f",
   "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<label for=\"spinbutton\">Enter a number between 0 and 100:</label>\n\t<input\n\t\tid=\"spinbutton\"\n\t\trole=\"spinbutton\"\n\t\taria-valuemax=\"100\"\n\t\taria-valuemin=\"0\"\n\t\taria-valuenow=\"25\"\n\t\ttype=\"number\"\n\t\tvalue=\"25\"\n\t/>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<label for=\"spinbutton\">Enter a number between 0 and 100:</label>\n\t<input id=\"spinbutton\" aria-valuemax=\"100\" aria-valuemin=\"0\" aria-valuenow=\"25\" type=\"number\" value=\"25\" />\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -119,13 +119,6 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "id",
-                      "value": "spinbutton"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "role",
                       "value": "spinbutton"
                     },
                     {
