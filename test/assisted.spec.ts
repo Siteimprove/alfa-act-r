@@ -638,7 +638,6 @@ test("c3232f", (t) =>
         label: none,
         "text-alternative": none,
         "has-audio-track": false,
-        "track-describes-video": true,
       },
       "350dd8": {
         "is-video-streaming": false,
@@ -697,11 +696,6 @@ test("c3232f", (t) =>
         "has-audio-track": false,
       },
     },
-    skip: [
-      // Alfa still accepts description tracks
-      // https://github.com/Siteimprove/alfa/issues/1092
-      "0e99dc",
-    ],
   }));
 
 // R36 has been deprecated
@@ -744,15 +738,9 @@ test("1ec09b", (t) =>
         "has-description": false,
         "text-alternative": none,
         label: none,
-        "track-describes-video": true,
       },
       be53b8: { "is-video-streaming": false, "has-audio": false },
     },
-    skip: [
-      // Alfa still accepts description tracks
-      // https://github.com/Siteimprove/alfa/issues/1092
-      "a4a496",
-    ],
   }));
 
 test("c5a4ea", (t) =>
@@ -805,7 +793,6 @@ test("c5a4ea", (t) =>
         "has-description": false,
         "text-alternative": none,
         label: none,
-        "track-describes-video": true,
       },
       adb7c3: {
         "is-video-streaming": false,
@@ -827,11 +814,6 @@ test("c5a4ea", (t) =>
         label: none,
       },
     },
-    skip: [
-      // Alfa still accepts description tracks
-      // https://github.com/Siteimprove/alfa/issues/1092
-      "96b29b",
-    ],
   }));
 
 // R39 has been deprecated upstream
