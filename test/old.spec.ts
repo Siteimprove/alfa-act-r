@@ -179,14 +179,12 @@ test.skip("d7ba54", (t) => fixture(t, Rules.get("R32")));
 // R33 has questions in applicability, review flow not currently handled
 test.skip("ee13b5", (t) => fixture(t, Rules.get("R33")));
 
-// R34 has questions in applicability, review flow not currently handled
-test.skip("ac7dc6", (t) => fixture(t, Rules.get("R34")));
+// R34 has been deprecated
 
 // R35 has questions in applicability, review flow not currently handled
 test.skip("c3232f", (t) => fixture(t, Rules.get("R35")));
 
-// R36 has questions in applicability, review flow not currently handled
-test.skip("f196ce", (t) => fixture(t, Rules.get("R36")));
+// R36 has been deprecated
 
 // R37 has questions in applicability, review flow not currently handled
 test.skip("1ec09b", (t) => fixture(t, Rules.get("R37")));
