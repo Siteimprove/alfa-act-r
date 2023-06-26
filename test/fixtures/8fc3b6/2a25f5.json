@@ -111,7 +111,34 @@
                         "children": [
                           {
                             "type": "element",
-                            "children": [],
+                            "children": [
+                              {
+                                "type": "element",
+                                "children": [],
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "prefix": null,
+                                "name": "meta",
+                                "attributes": [
+                                  {
+                                    "type": "attribute",
+                                    "namespace": null,
+                                    "prefix": null,
+                                    "name": "name",
+                                    "value": "viewport"
+                                  },
+                                  {
+                                    "type": "attribute",
+                                    "namespace": null,
+                                    "prefix": null,
+                                    "name": "content",
+                                    "value": "width=device-width"
+                                  }
+                                ],
+                                "style": null,
+                                "shadow": null,
+                                "content": null
+                              }
+                            ],
                             "namespace": "http://www.w3.org/1999/xhtml",
                             "prefix": null,
                             "name": "head",
@@ -122,7 +149,68 @@
                           },
                           {
                             "type": "element",
-                            "children": [],
+                            "children": [
+                              {
+                                "type": "element",
+                                "children": [
+                                  {
+                                    "type": "element",
+                                    "children": [],
+                                    "namespace": "http://www.w3.org/1999/xhtml",
+                                    "prefix": null,
+                                    "name": "source",
+                                    "attributes": [
+                                      {
+                                        "type": "attribute",
+                                        "namespace": null,
+                                        "prefix": null,
+                                        "name": "src",
+                                        "value": "https://www.w3.org/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4"
+                                      },
+                                      {
+                                        "type": "attribute",
+                                        "namespace": null,
+                                        "prefix": null,
+                                        "name": "type",
+                                        "value": "video/mp4"
+                                      }
+                                    ],
+                                    "style": null,
+                                    "shadow": null,
+                                    "content": null
+                                  }
+                                ],
+                                "namespace": "http://www.w3.org/1999/xhtml",
+                                "prefix": null,
+                                "name": "video",
+                                "attributes": [
+                                  {
+                                    "type": "attribute",
+                                    "namespace": null,
+                                    "prefix": null,
+                                    "name": "controls",
+                                    "value": ""
+                                  },
+                                  {
+                                    "type": "attribute",
+                                    "namespace": null,
+                                    "prefix": null,
+                                    "name": "autoplay",
+                                    "value": ""
+                                  },
+                                  {
+                                    "type": "attribute",
+                                    "namespace": null,
+                                    "prefix": null,
+                                    "name": "name",
+                                    "value": "media"
+                                  }
+                                ],
+                                "style": null,
+                                "shadow": null,
+                                "content": null
+                              }
+                            ],
                             "namespace": "http://www.w3.org/1999/xhtml",
                             "prefix": null,
                             "name": "body",
