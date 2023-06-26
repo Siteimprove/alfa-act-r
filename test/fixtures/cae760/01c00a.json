@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "0cb8cb",
+  "id": "01c00a",
   "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<iframe tabindex=\"-1\" src=\"/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html\"> </iframe>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<iframe tabindex=\"-1\" src=\"/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html\" style=\"height: 250px\"> </iframe>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -104,9 +104,22 @@
                       "prefix": null,
                       "name": "src",
                       "value": "/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "style",
+                      "value": "height: 250px"
                     }
                   ],
-                  "style": null,
+                  "style": [
+                    {
+                      "name": "height",
+                      "value": "250px",
+                      "important": false
+                    }
+                  ],
                   "shadow": null,
                   "content": {
                     "type": "document",
