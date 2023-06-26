@@ -59,7 +59,15 @@ test("c487ae", (t) => fixture(t, Rules.get("R11")));
 
 test("97a4e1", (t) => fixture(t, Rules.get("R12")));
 
-test("cae760", (t) => fixture(t, Rules.get("R13")));
+test("cae760", (t) =>
+  fixture(t, Rules.get("R13"), {
+    skip: [
+      // Alfa doesn't ignore iframe with explicit role of none/presentation
+      // because they are considered as focusable and trigger the conflict.
+      // https://github.com/Siteimprove/sanshikan/issues/219
+      "4bd742",
+    ],
+  }));
 
 test("2ee8b8", (t) =>
   fixture(t, Rules.get("R14"), {
