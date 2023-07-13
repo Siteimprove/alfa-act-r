@@ -51,7 +51,7 @@ test.before("Initialise context", (t) => {
 test.after("Write report", (t) => {
   report(
     t.context,
-    path.join(__dirname, "..", "reports", "alfa-assisted-report.json")
+    path.join(__dirname, "..", "reports", "alfa-assisted-report.json"),
   );
 });
 
@@ -89,15 +89,7 @@ test("c487ae", (t) => fixture(t, Rules.get("R11")));
 
 test("97a4e1", (t) => fixture(t, Rules.get("R12")));
 
-test("cae760", (t) =>
-  fixture(t, Rules.get("R13"), {
-    skip: [
-      // Alfa doesn't ignore iframe with explicit role of none/presentation
-      // because they are considered as focusable and trigger the conflict.
-      // https://github.com/Siteimprove/sanshikan/issues/219
-      "4bd742",
-    ],
-  }));
+test("cae760", (t) => fixture(t, Rules.get("R13")));
 
 test("2ee8b8", (t) =>
   fixture(t, Rules.get("R14"), {
@@ -920,7 +912,7 @@ test("4c31df", (t) =>
         "has-audio": true,
         "is-above-duration-threshold": true,
         "audio-control-mechanism": nodeWithPath(
-          "/html[1]/body[1]/div[1]/div[1]/button[1]"
+          "/html[1]/body[1]/div[1]/div[1]/button[1]",
         ),
       },
       "74bb4f": {
@@ -936,21 +928,21 @@ test("4c31df", (t) =>
         "has-audio": true,
         "is-above-duration-threshold": true,
         "audio-control-mechanism": nodeWithPath(
-          "/html[1]/body[1]/div[1]/div[1]/button[1]"
+          "/html[1]/body[1]/div[1]/div[1]/button[1]",
         ),
       },
       c55751: {
         "has-audio": true,
         "is-above-duration-threshold": true,
         "audio-control-mechanism": nodeWithPath(
-          "/html[1]/body[1]/div[1]/div[1]/button[1]"
+          "/html[1]/body[1]/div[1]/div[1]/button[1]",
         ),
       },
       dd78cd: {
         "has-audio": true,
         "is-above-duration-threshold": true,
         "audio-control-mechanism": nodeWithPath(
-          "/html[1]/body[1]/div[1]/div[1]/button[1]"
+          "/html[1]/body[1]/div[1]/div[1]/button[1]",
         ),
       },
       e50022: {
@@ -985,7 +977,7 @@ test("80f0bf", (t) =>
         "is-above-duration-threshold": true,
         "is-below-audio-duration-threshold": false,
         "audio-control-mechanism": nodeWithPath(
-          "/html[1]/body[1]/div[1]/div[1]/button[1]"
+          "/html[1]/body[1]/div[1]/div[1]/button[1]",
         ),
       },
       b62f05: {
