@@ -75,7 +75,8 @@ test("b5c3f8", (t) => fixture(t, Rules.get("R4")));
 
 test("bf051a", (t) => fixture(t, Rules.get("R5")));
 
-test("5b7ae0", (t) => fixture(t, Rules.get("R6")));
+// The rule has been deprecated upstream
+// test("5b7ae0", (t) => fixture(t, Rules.get("R6")));
 
 test("de46e4", (t) => fixture(t, Rules.get("R7")));
 
@@ -131,7 +132,19 @@ test("6cfa84", (t) =>
 
 test("5c01ea", (t) => fixture(t, Rules.get("R18")));
 
+// R19 corresponds to two separate rules upstream.
+// The second rule has a fairly more focused Applicability which causes some
+// Inapplicable/Passed differences.
 test("6a7281", (t) => fixture(t, Rules.get("R19")));
+test("in6db8", (t) =>
+  fixture(t, Rules.get("R19"), {
+    lax: [
+      // R19 applies to all aria-attribute, while the ACT rules focused on `aria-control`
+      // on some roles.
+      "694c17" /* not a role requiring aria-control */,
+      "08c6c4" /* not an expanded combobox */,
+    ],
+  }));
 
 test("5f99a7", (t) => fixture(t, Rules.get("R20")));
 
