@@ -75,7 +75,8 @@ test("b5c3f8", (t) => fixture(t, Rules.get("R4")));
 
 test("bf051a", (t) => fixture(t, Rules.get("R5")));
 
-test("5b7ae0", (t) => fixture(t, Rules.get("R6")));
+// The rule has been deprecated upstream
+// test("5b7ae0", (t) => fixture(t, Rules.get("R6")));
 
 test("de46e4", (t) => fixture(t, Rules.get("R7")));
 
