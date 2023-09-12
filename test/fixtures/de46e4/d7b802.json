@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "5b04b9",
+  "id": "d7b802",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/5636ffbff7668ca38610e36905889df90a92f485.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/5636ffbff7668ca38610e36905889df90a92f485.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\" \"></html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"dutch\">\n\t\t\tZij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.\n\t\t</article>\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -52,7 +52,47 @@
             },
             {
               "type": "element",
-              "children": [],
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\tZij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "article",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "lang",
+                      "value": "dutch"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 8,
+                    "width": 1264,
+                    "height": 18
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\n"
+                }
+              ],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "body",
@@ -65,7 +105,7 @@
                 "x": 8,
                 "y": 8,
                 "width": 1264,
-                "height": 0
+                "height": 18
               }
             }
           ],
@@ -78,7 +118,7 @@
               "namespace": null,
               "prefix": null,
               "name": "lang",
-              "value": " "
+              "value": "es"
             }
           ],
           "style": null,
@@ -89,7 +129,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 8
+            "height": 34
           }
         }
       ],

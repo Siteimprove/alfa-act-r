@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "f213c0",
-  "outcome": "inapplicable",
+  "id": "cbc881",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a05aeffa53890c3ed9fd9cefa544eb1071497de5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a05aeffa53890c3ed9fd9cefa544eb1071497de5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta http-equiv=\"refresh\" content=\"0: https://w3.org\" />\n</head>\n<body>\n\t<p>This page does not redirect.</p>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"english\">\n\t\t\t<p aria-hidden=\"true\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</p>\n\t\t</article>\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,49 +34,7 @@
           "children": [
             {
               "type": "element",
-              "children": [
-                {
-                  "type": "text",
-                  "data": "\n\t"
-                },
-                {
-                  "type": "element",
-                  "children": [],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "meta",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "http-equiv",
-                      "value": "refresh"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "content",
-                      "value": "0: https://w3.org"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null,
-                  "box": {
-                    "type": "rectangle",
-                    "x": 0,
-                    "y": 0,
-                    "width": 0,
-                    "height": 0
-                  }
-                },
-                {
-                  "type": "text",
-                  "data": "\n"
-                }
-              ],
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
@@ -93,28 +51,67 @@
               }
             },
             {
-              "type": "text",
-              "data": "\n"
-            },
-            {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "This page does not redirect."
+                      "data": "\n\t\t\t"
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t"
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "p",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "aria-hidden",
+                          "value": "true"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 16,
+                        "width": 1264,
+                        "height": 18
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "p",
-                  "attributes": [],
+                  "name": "article",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "lang",
+                      "value": "english"
+                    }
+                  ],
                   "style": null,
                   "shadow": null,
                   "content": null,
@@ -128,7 +125,7 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\n"
+                  "data": "\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -156,7 +153,7 @@
               "namespace": null,
               "prefix": null,
               "name": "lang",
-              "value": "en"
+              "value": "es"
             }
           ],
           "style": null,

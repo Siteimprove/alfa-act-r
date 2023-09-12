@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<head>\n\t\t<meta http-equiv=\"refresh\" content=\"72001; URL='https://w3.org'\" />\n\t</head>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta http-equiv=\"refresh\" content=\"72001; URL='https://w3.org'\" />\n</head>\n</html>"
     },
     "document": {
       "type": "document",
@@ -41,16 +41,26 @@
                 },
                 {
                   "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Failed Example 2"
-                    }
-                  ],
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "title",
-                  "attributes": [],
+                  "name": "meta",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "http-equiv",
+                      "value": "refresh"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "content",
+                      "value": "72001; URL='https://w3.org'"
+                    }
+                  ],
                   "style": null,
                   "shadow": null,
                   "content": null,
@@ -88,49 +98,7 @@
             },
             {
               "type": "element",
-              "children": [
-                {
-                  "type": "text",
-                  "data": "\n\t\n\t\t"
-                },
-                {
-                  "type": "element",
-                  "children": [],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "meta",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "http-equiv",
-                      "value": "refresh"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "content",
-                      "value": "72001; URL='https://w3.org'"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null,
-                  "box": {
-                    "type": "rectangle",
-                    "x": 0,
-                    "y": 0,
-                    "width": 0,
-                    "height": 0
-                  }
-                },
-                {
-                  "type": "text",
-                  "data": "\n\t\n\n"
-                }
-              ],
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "body",

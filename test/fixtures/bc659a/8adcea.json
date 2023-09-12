@@ -60,15 +60,25 @@
                   "type": "element",
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": [],
-                  "children": [
+                  "name": "meta",
+                  "attributes": [
                     {
-                      "type": "text",
-                      "data": "Passed Example 1"
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "http-equiv",
+                      "value": "refresh"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "content",
+                      "value": "0; URL='https://github.com'"
                     }
                   ],
+                  "style": [],
+                  "children": [],
                   "shadow": null,
                   "content": null,
                   "box": {
@@ -105,49 +115,7 @@
               "name": "body",
               "attributes": [],
               "style": [],
-              "children": [
-                {
-                  "type": "text",
-                  "data": "\n\t\n\t\t"
-                },
-                {
-                  "type": "element",
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "meta",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "http-equiv",
-                      "value": "refresh"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "content",
-                      "value": "0; URL='https://github.com'"
-                    }
-                  ],
-                  "style": [],
-                  "children": [],
-                  "shadow": null,
-                  "content": null,
-                  "box": {
-                    "type": "rectangle",
-                    "x": 0,
-                    "y": 0,
-                    "width": 0,
-                    "height": 0
-                  }
-                },
-                {
-                  "type": "text",
-                  "data": "\n\t\n\n"
-                }
-              ],
+              "children": [],
               "shadow": null,
               "content": null,
               "box": {
@@ -187,7 +155,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<head>\n\t\t<meta http-equiv=\"refresh\" content=\"0; URL='https://github.com'\" />\n\t</head>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta http-equiv=\"refresh\" content=\"0; URL='https://github.com'\" />\n</head>\n</html>"
     }
   }
 }

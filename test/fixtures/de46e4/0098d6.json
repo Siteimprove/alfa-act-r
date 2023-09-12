@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "5dbccd",
-  "outcome": "failed",
+  "id": "0098d6",
+  "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4885abc44ca092b3d07a3f8e855dbcbf33f6c66b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/034e1e1a46cfa6d3fe3bcc69ac45ffb6c5d55148.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4885abc44ca092b3d07a3f8e855dbcbf33f6c66b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/034e1e1a46cfa6d3fe3bcc69ac45ffb6c5d55148.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html xml:lang=\"en\"></html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"fr\">\n\t<body>\n\t\t<p lang=\"en-US-GB\">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</p>\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -52,7 +52,47 @@
             },
             {
               "type": "element",
-              "children": [],
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "lang",
+                      "value": "en-US-GB"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 16,
+                    "width": 1264,
+                    "height": 18
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\n"
+                }
+              ],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "body",
@@ -63,9 +103,9 @@
               "box": {
                 "type": "rectangle",
                 "x": 8,
-                "y": 8,
+                "y": 16,
                 "width": 1264,
-                "height": 0
+                "height": 18
               }
             }
           ],
@@ -77,8 +117,8 @@
               "type": "attribute",
               "namespace": null,
               "prefix": null,
-              "name": "xml:lang",
-              "value": "en"
+              "name": "lang",
+              "value": "fr"
             }
           ],
           "style": null,
@@ -89,7 +129,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 8
+            "height": 50
           }
         }
       ],
