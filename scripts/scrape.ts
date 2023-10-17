@@ -25,15 +25,15 @@ if (process.argv.length > 2 && process.argv.slice(2).includes("old")) {
   destination = "old_fixtures";
 }
 
+const fixturesDir = path.join("test", destination);
+
 console.log(`Grabbing test cases from ${source}.`);
 
 cleanAndFetch();
 
 async function cleanAndFetch() {
-  fs.rmSync(path.join("test", destination), {
-    recursive: true,
-    force: true,
-  });
+  fs.rmSync(fixturesDir, { recursive: true, force: true });
+  fs.mkdirSync(fixturesDir);
 
   const rules = await getTestDescriptions();
 
@@ -44,7 +44,7 @@ async function cleanAndFetch() {
   for (const [directory, tests] of rules) {
     console.group(`${directory} (${i}/${rules.size})`);
 
-    fs.mkdirSync(path.join("test", destination, directory), {
+    fs.mkdirSync(path.join(fixturesDir, directory), {
       recursive: true,
     });
 
@@ -73,7 +73,7 @@ async function cleanAndFetch() {
     if (stillErrors.length > 0) {
       console.error("Still failing after two attempts");
       console.error(
-        stillErrors.map((error) => `${error.ruleId} / ${error.id}`)
+        stillErrors.map((error) => `${error.ruleId} / ${error.id}`),
       );
       process.exitCode = 1;
     }
@@ -116,6 +116,12 @@ async function getTestDescriptions(): Promise<
     headers: { "Accept-Encoding": "application/json" },
   });
 
+  fs.writeFileSync(
+    path.join(fixturesDir, "testcases.json"),
+    JSON.stringify(data, undefined, 2),
+    "utf-8",
+  );
+
   let rules = Map.empty<string, Array<TestDescription>>();
 
   for (const test of data.testcases) {
@@ -132,12 +138,12 @@ async function getTestDescriptions(): Promise<
       id,
       url,
       destination,
-      test.expected
+      test.expected,
     );
 
     rules = rules.set(
       ruleId,
-      Array.append(rules.get(ruleId).getOr([]), testDescription)
+      Array.append(rules.get(ruleId).getOr([]), testDescription),
     );
   }
 
@@ -150,7 +156,7 @@ function digest(data: string) {
 
 async function getTestCases(
   scraper: Scraper,
-  tests: Array<TestDescription>
+  tests: Array<TestDescription>,
 ): Promise<Array<TestDescription>> {
   const errors: Array<TestDescription> = [];
   let i = 1;
@@ -176,7 +182,7 @@ async function getTestCases(
 
 async function getTestCase(
   scraper: Scraper,
-  test: TestDescription
+  test: TestDescription,
 ): Promise<Option<TestDescription>> {
   const result = await scraper
     .scrape(test.url)
@@ -194,7 +200,7 @@ async function getTestCase(
     const fixture = JSON.stringify(
       { type: "test", id: test.id, outcome: test.outcome, page },
       undefined,
-      2
+      2,
     );
     fs.writeFileSync(path.join(test.directory, test.filename), fixture + "\n");
   }
@@ -210,7 +216,7 @@ async function scrapeXML(test: TestDescription) {
   const fixture = JSON.stringify(
     { type: "xml", id: test.id, url: test.url, data: response.data },
     undefined,
-    2
+    2,
   );
   fs.writeFileSync(path.join(test.directory, test.filename), fixture + "\n");
 }
@@ -258,7 +264,7 @@ async function scrapeInstantRedirect(test: TestDescription) {
       page,
     },
     undefined,
-    2
+    2,
   );
   fs.writeFileSync(path.join(test.directory, test.filename), fixture + "\n");
 }
@@ -269,7 +275,7 @@ class TestDescription {
     id: string,
     url: string,
     destination: string,
-    outcome: string
+    outcome: string,
   ): TestDescription {
     return new TestDescription(ruleId, id, url, destination, outcome);
   }
@@ -292,7 +298,7 @@ class TestDescription {
     id: string,
     url: string,
     destination: string,
-    outcome: string
+    outcome: string,
   ) {
     this._ruleId = ruleId;
     this._id = id;
