@@ -33,7 +33,7 @@ To download the old test cases, use instead
 $ yarn fixtures old
 ```
 
-### Generate report
+### Generate summary
 
 To run Alfa against the test cases:
 
@@ -41,7 +41,7 @@ To run Alfa against the test cases:
 $ yarn test
 ```
 
-This generates a report for both the automated and assisted implementations. Committing the report and pushing it upstream will update the implementation report on the corresponding website.
+This generates a summary for both the automated and assisted implementations. Committing the summary and pushing it upstream will update the implementation summary on the corresponding website.
 
 To run test for a single implementation (often useful for debugging), use:
 

@@ -10,7 +10,8 @@
     "strictAssisted": "ava \"**/assisted*\" -- --strict",
     "testAutomated": "ava \"**/automated*\"",
     "strictAutomated": "ava \"**/automated*\" -- --strict",
-    "fixtures": "node scripts/scrape.js"
+    "fixtures": "node scripts/scrape.js",
+    "summary": "node scripts/summary.js"
   },
   "dependencies": {
     "@siteimprove/alfa-act": "^0.67.0",
