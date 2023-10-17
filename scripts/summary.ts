@@ -91,7 +91,11 @@ async function summary(flavor: "automated" | "assisted") {
       false,
     );
 
-  fs.writeFileSync(`summary-${flavor}.md`, output, "utf-8");
+  fs.writeFileSync(
+    path.join(".", "reports", `summary-${flavor}.md`),
+    output,
+    "utf-8",
+  );
 }
 
 function mappingTable(
@@ -100,7 +104,7 @@ function mappingTable(
   withCoverage: boolean,
 ): string {
   let content =
-    heading +
+    heading + ` (${rules.length})` +
     "\n\n" +
     "| Id | Name | Alfa | Consistency |" +
     (withCoverage

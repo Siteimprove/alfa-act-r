@@ -31,9 +31,10 @@ jobs:
       - run: yarn install --immutable
       - run: yarn dedupe
       - run: yarn build
-      # Update test cases, run tests
+      # Update test cases, run tests (update reports), update summaries
       - run: yarn fixtures
       - run: yarn test
+      - run: yarn summary
 
       # If we made it thus far, commit changes to the repository
       - run: |
