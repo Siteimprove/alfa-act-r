@@ -112,7 +112,7 @@ function mappingTable(
       : "\n") +
     "| --- | --- | --- | --- |" +
     (withCoverage ? " --- | --- | --- | --- | --- |\n" : "\n");
-  for (const rule of rules) {
+  for (const rule of rules.sort(compare)) {
     const { covered, untested, cantTell, testCaseTotal } = rule.coverage ?? {
       covered: 0,
       untested: 0,
@@ -133,4 +133,13 @@ function mappingTable(
   content += "\n";
 
   return content;
+}
+
+function compare(rule1: ActProcedureSet, rule2: ActProcedureSet): number {
+  if (rule1.procedureNames.length === 0 || rule2.procedureNames.length === 0) {
+    return rule1.ruleName.localeCompare(rule2.ruleName)
+  } else {
+    // Mapping SIA <-> ACT rule should be one-to-one.
+    return rule1.procedureNames[0].localeCompare(rule2.procedureNames[0])
+  }
 }
