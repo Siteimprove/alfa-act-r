@@ -39,7 +39,8 @@ test("23a2a8", (t) =>
     ],
   }));
 
-test("3ea0c8", (t) => fixture(t, Rules.get("R3")));
+// The rule has been deprecated upstream
+// test("3ea0c8", (t) => fixture(t, Rules.get("R3")));
 
 test("b5c3f8", (t) => fixture(t, Rules.get("R4")));
 
@@ -436,16 +437,7 @@ test("24afc2", (t) =>
     ],
   }));
 
-test("9e45ec", (t) =>
-  fixture(t, Rules.get("R92"), {
-    lax: [
-      // Alfa has adopted newer version of rule, targeting the text nodes
-      "290162",
-      "98534d",
-      "ab16a8",
-      "cd8394",
-    ],
-  }));
+test("9e45ec", (t) => fixture(t, Rules.get("R92")));
 
 test("78fd32", (t) =>
   fixture(t, Rules.get("R93"), {
@@ -454,13 +446,6 @@ test("78fd32", (t) =>
       // is in a wide scrolling element; instead it considers that any element
       // with a role of paragraph is a block of text.
       "61778d",
-    ],
-    lax: [
-      // Alfa has adopted newer version of rule, targeting the text nodes
-      "4e240d",
-      "55c5d4",
-      "c6d6cd",
-      "d155ad",
     ],
   }));
 
@@ -472,6 +457,12 @@ test("akn7bn", (t) =>
       // The 1×1 iframe is visible, its content isn't.
       // Alfa does consider the descendant of visible 1×1 elements as visible.
       "90818c",
+      // Alfa does not handle inert attribute
+      // https://github.com/Siteimprove/alfa/issues/1140
+      "475939",
+      // Alfa doesn't handle iframe made inert by an open modal
+      // https://github.com/Siteimprove/alfa/issues/1140#issuecomment-1807872577
+      "88d384",
     ],
   }));
 
