@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "b62f05",
-  "outcome": "passed",
+  "id": "bc3d40",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/e4d78b5074773ab0cbd8c72732e948c4608f5c9d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0128de1beb7862298366680f6920bd3b3874d752.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80f0bf/e4d78b5074773ab0cbd8c72732e948c4608f5c9d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0128de1beb7862298366680f6920bd3b3874d752.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<video autoplay>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4#t=8,10\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm#t=8,10\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<div style=\"line-height: 0.1em !important;\"></div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 2"
+                      "data": "Inapplicable Example 2"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -83,87 +83,26 @@
                 },
                 {
                   "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n\t\t"
-                    },
-                    {
-                      "type": "element",
-                      "children": [],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "source",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4#t=8,10"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "type",
-                          "value": "video/mp4"
-                        }
-                      ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null,
-                      "box": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t\t"
-                    },
-                    {
-                      "type": "element",
-                      "children": [],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "source",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm#t=8,10"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "type",
-                          "value": "video/webm"
-                        }
-                      ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null,
-                      "box": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t"
-                    }
-                  ],
+                  "children": [],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "video",
+                  "name": "div",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "autoplay",
-                      "value": ""
+                      "name": "style",
+                      "value": "line-height: 0.1em !important;"
                     }
                   ],
-                  "style": null,
+                  "style": [
+                    {
+                      "name": "line-height",
+                      "value": "0.1em",
+                      "important": true
+                    }
+                  ],
                   "shadow": null,
                   "content": null,
                   "box": null
@@ -203,7 +142,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 260
+            "height": 8
           }
         }
       ],
