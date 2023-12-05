@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "5dbfe0",
+  "id": "4c6b30",
   "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/830584542b47beaac2df52e84ceff7530be043fb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/9280b9961f4e24943080fabb67c041b65036f69c.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/830584542b47beaac2df52e84ceff7530be043fb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/9280b9961f4e24943080fabb67c041b65036f69c.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<video controls>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-voiceover.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-voiceover.webm\" type=\"video/webm\" />\n\t</video>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 8</title>\n</head>\n<body>\n\t<div style=\"line-height: 1em !important\">\n\t\t<p style=\"line-height: 1.5em !important; max-width: 200px;\">\n\t\t\tThe toy brought back fond memories of being lost in the rain forest.\n\t\t</p>\n\t</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,7 +34,33 @@
           "children": [
             {
               "type": "element",
-              "children": [],
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Passed Example 8"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
@@ -45,8 +71,16 @@
               "box": null
             },
             {
+              "type": "text",
+              "data": "\n"
+            },
+            {
               "type": "element",
               "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
                 {
                   "type": "element",
                   "children": [
@@ -56,58 +90,36 @@
                     },
                     {
                       "type": "element",
-                      "children": [],
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\tThe toy brought back fond memories of being lost in the rain forest.\n\t\t"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "source",
+                      "name": "p",
                       "attributes": [
                         {
                           "type": "attribute",
                           "namespace": null,
                           "prefix": null,
-                          "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-voiceover.mp4"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "type",
-                          "value": "video/mp4"
+                          "name": "style",
+                          "value": "line-height: 1.5em !important; max-width: 200px;"
                         }
                       ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null,
-                      "box": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t\t"
-                    },
-                    {
-                      "type": "element",
-                      "children": [],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "source",
-                      "attributes": [
+                      "style": [
                         {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-voiceover.webm"
+                          "name": "max-width",
+                          "value": "200px",
+                          "important": false
                         },
                         {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "type",
-                          "value": "video/webm"
+                          "name": "line-height",
+                          "value": "1.5em",
+                          "important": true
                         }
                       ],
-                      "style": null,
                       "shadow": null,
                       "content": null,
                       "box": null
@@ -119,24 +131,30 @@
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "video",
+                  "name": "div",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "controls",
-                      "value": ""
+                      "name": "style",
+                      "value": "line-height: 1em !important"
                     }
                   ],
-                  "style": null,
+                  "style": [
+                    {
+                      "name": "line-height",
+                      "value": "1em",
+                      "important": true
+                    }
+                  ],
                   "shadow": null,
                   "content": null,
                   "box": null
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -169,7 +187,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 170
+            "height": 104
           }
         }
       ],
