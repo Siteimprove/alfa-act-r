@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "516864",
-  "outcome": "failed",
+  "id": "4c6b30",
+  "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/50ee346de986982007936f25602b28bf6929ea5d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/9280b9961f4e24943080fabb67c041b65036f69c.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/50ee346de986982007936f25602b28bf6929ea5d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/9280b9961f4e24943080fabb67c041b65036f69c.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">`\n<video controls>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\"></source>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\"></source>\n</video>\n<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/incorrect-transcript.html\">Transcript</a>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 8</title>\n</head>\n<body>\n\t<div style=\"line-height: 1em !important\">\n\t\t<p style=\"line-height: 1.5em !important; max-width: 200px;\">\n\t\t\tThe toy brought back fond memories of being lost in the rain forest.\n\t\t</p>\n\t</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,7 +34,33 @@
           "children": [
             {
               "type": "element",
-              "children": [],
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t"
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Passed Example 8"
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                }
+              ],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
@@ -45,131 +71,90 @@
               "box": null
             },
             {
+              "type": "text",
+              "data": "\n"
+            },
+            {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "`\n"
+                  "data": "\n\t"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n  "
+                      "data": "\n\t\t"
                     },
                     {
                       "type": "element",
-                      "children": [],
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "\n\t\t\tThe toy brought back fond memories of being lost in the rain forest.\n\t\t"
+                        }
+                      ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "source",
+                      "name": "p",
                       "attributes": [
                         {
                           "type": "attribute",
                           "namespace": null,
                           "prefix": null,
-                          "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "type",
-                          "value": "video/mp4"
+                          "name": "style",
+                          "value": "line-height: 1.5em !important; max-width: 200px;"
                         }
                       ],
-                      "style": null,
+                      "style": [
+                        {
+                          "name": "max-width",
+                          "value": "200px",
+                          "important": false
+                        },
+                        {
+                          "name": "line-height",
+                          "value": "1.5em",
+                          "important": true
+                        }
+                      ],
                       "shadow": null,
                       "content": null,
                       "box": null
                     },
                     {
                       "type": "text",
-                      "data": "\n  "
-                    },
-                    {
-                      "type": "element",
-                      "children": [],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "source",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "type",
-                          "value": "video/webm"
-                        }
-                      ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null,
-                      "box": null
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n"
+                      "data": "\n\t"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "video",
+                  "name": "div",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "controls",
-                      "value": ""
+                      "name": "style",
+                      "value": "line-height: 1em !important"
                     }
                   ],
-                  "style": null,
+                  "style": [
+                    {
+                      "name": "line-height",
+                      "value": "1em",
+                      "important": true
+                    }
+                  ],
                   "shadow": null,
                   "content": null,
                   "box": null
                 },
                 {
                   "type": "text",
-                  "data": "\n"
-                },
-                {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Transcript"
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "a",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "href",
-                      "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/incorrect-transcript.html"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null,
-                  "box": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n"
+                  "data": "\n\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -202,7 +187,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 260
+            "height": 104
           }
         }
       ],
