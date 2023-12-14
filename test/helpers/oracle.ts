@@ -28,15 +28,15 @@ export function oracle<I, T extends Hashable, S>(
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
   url: string,
   used: Array<keyof Question.Metadata>,
-  page: Page
+  page: Page,
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
     // Check if we do have an answer for this question.
     if (answers[question.uri] === undefined) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
-          question.subject
-        )}`
+          question.subject,
+        )}`,
       );
       return dontKnow;
     }
@@ -65,9 +65,6 @@ export function oracle<I, T extends Hashable, S>(
 
       case "string":
         return wrapper(answers[question.uri]!);
-
-      case "string[]":
-        return wrapper(answers[question.uri]!);
     }
   };
 }
@@ -87,14 +84,14 @@ export function oracleWithPaths<I, T extends Hashable, S>(
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
   url: string,
   used: Array<keyof Question.Metadata>,
-  page: Page
+  page: Page,
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
     if (!Node.isNode(question.subject) && !Node.isNode(question.context)) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
-          question.subject
-        )} which is not a node`
+          question.subject,
+        )} which is not a node`,
       );
       return dontKnow;
     }
@@ -105,15 +102,15 @@ export function oracleWithPaths<I, T extends Hashable, S>(
     // to context path otherwise.
     const path = Node.isNode(question.subject)
       ? question.subject.path()
-      : // The cast is guarded by the previous if
+      : // The assertion is guarded by the previous if
         (question.context as any as Node).path();
 
     // Check if we do have an answer for this question.
     if (answers[question.uri]?.[path] === undefined) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
-          question.subject
-        )}`
+          question.subject,
+        )}`,
       );
       return dontKnow;
     }
@@ -134,16 +131,13 @@ export function oracleWithPaths<I, T extends Hashable, S>(
 
       case "node[]":
         return wrapper(
-          Array.collect(answers[question.uri]![path], (fn) => fn(page))
+          Array.collect(answers[question.uri]![path], (fn) => fn(page)),
         );
 
       case "color[]":
         return wrapper(answers[question.uri]![path]);
 
       case "string":
-        return wrapper(answers[question.uri]![path]);
-
-      case "string[]":
         return wrapper(answers[question.uri]![path]);
     }
   };
