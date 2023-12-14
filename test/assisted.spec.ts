@@ -1084,6 +1084,7 @@ test("09o5cg", (t) =>
     },
     skip: [
       // Alfa assumes that non-human language text is marked as presentational
+      // https://github.com/Siteimprove/alfa/issues/1166
       "e778ed",
 
       // Alfa does not yet disregard impossible foreground/background combinations
@@ -1113,6 +1114,7 @@ test("afw4f7", (t) =>
     skip: [
       // Alfa intentionally diverges on these cases
       // -> Alfa assumes that non-human language text is marked as presentational
+      // https://github.com/Siteimprove/alfa/issues/1166
       "12198b",
 
       // Alfa does not yet disregard impossible foreground/background combinations
