@@ -198,9 +198,6 @@ test("2eb176", (t) =>
       b30b78: {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         transcript: none,
         // The transcript is incorrect (Moon/cheese)
         "transcript-link": none,
@@ -208,31 +205,23 @@ test("2eb176", (t) =>
       "2973eb": {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         // The transcript is incorrect (Moon/cheese)
         transcript: none,
         "transcript-link": none,
       },
       "424c7d": {
         "is-audio-streaming": false,
-        "is-playing": true,
         transcript: none,
         "transcript-link": first("a"),
       },
       "376f8d": {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         transcript: none,
         "transcript-link": none,
       },
       "40424b": {
         "is-audio-streaming": false,
-        "is-playing": true,
         transcript: none,
         // The transcript is incorrect (Moon/cheese)
         "transcript-link": none,
@@ -240,34 +229,22 @@ test("2eb176", (t) =>
       cc4a44: {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         transcript: none,
         "transcript-link": first("a"),
       },
       c68096: {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         transcript: first("p"),
       },
       e12d00: {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         transcript: first("p"),
       },
       e85d6f: {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         transcript: none,
         "transcript-link": none,
       },
@@ -425,27 +402,18 @@ test("afb423", (t) =>
       "014b50": {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         label: nodeWithPath("/html[1]/body[1]/p[2]"),
         "text-alternative": first("p"),
       },
       "03879f": {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         label: none,
         "text-alternative": first("p"),
       },
       "4628b5": {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         label: nodeWithPath("/html[1]/body[1]/p[2]"),
         // The transcript is incomplete (stops after two sentences)
         "text-alternative": none,
@@ -458,18 +426,12 @@ test("afb423", (t) =>
       "71fb3f": {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         label: none,
         "text-alternative": first("p"),
       },
       "7cfc9c": {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         label: nodeWithPath("/html[1]/body[1]/p[2]"),
         "text-alternative": first("p"),
       },
@@ -481,7 +443,6 @@ test("e7aa44", (t) =>
     answers: {
       "12db69": {
         "is-audio-streaming": false,
-        "is-playing": true,
         label: none,
         "text-alternative": none,
         transcript: first("p"),
@@ -489,9 +450,6 @@ test("e7aa44", (t) =>
       "47d0f4": {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         label: nodeWithPath("/html[1]/body[1]/p[2]"),
         "text-alternative": first("p"),
         transcript: none,
@@ -499,7 +457,6 @@ test("e7aa44", (t) =>
       },
       "53d912": {
         "is-audio-streaming": false,
-        "is-playing": true,
         label: nodeWithPath("/html[1]/body[1]/p[2]"),
         "text-alternative": first("p"),
         transcript: none,
@@ -513,9 +470,6 @@ test("e7aa44", (t) =>
       c79ee0: {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         label: none,
         "text-alternative": none,
         transcript: first("p"),
@@ -523,9 +477,6 @@ test("e7aa44", (t) =>
       f709c0: {
         "is-audio-streaming": false,
         "is-playing": false,
-        // The play button is embedded with the control
-        // https://github.com/Siteimprove/alfa/issues/1326
-        "play-button": first("audio"),
         label: none,
         "text-alternative": none,
         // The transcript is incorrect (Moon/North Pole)
