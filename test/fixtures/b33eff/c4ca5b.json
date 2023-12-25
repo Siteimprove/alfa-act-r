@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "a67f3a",
+  "id": "c4ca5b",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\ttransform: rotate(1.5708rad);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\tbody {\n\t\t\t\ttransform: rotate(2.5deg);\n\t\t\t\tpadding: 2rem;\n\t\t\t\twidth: min(100vw, 100vh);\n\t\t\t\theight: min(100vw, 100vh);\n\t\t\t}\n\n\t\t\t@media (orientation: landscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: rotate(92.5deg);\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\tright: 0px;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -65,7 +65,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\ttransform: rotate(1.5708rad);\n\t\t\t\t}\n\t\t\t}\n\t\t"
+                      "data": "\n\t\t\tbody {\n\t\t\t\ttransform: rotate(2.5deg);\n\t\t\t\tpadding: 2rem;\n\t\t\t\twidth: min(100vw, 100vh);\n\t\t\t\theight: min(100vw, 100vh);\n\t\t\t}\n\n\t\t\t@media (orientation: landscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: rotate(92.5deg);\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\tright: 0px;\n\t\t\t\t}\n\t\t\t}\n\t\t"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -132,8 +132,8 @@
             "type": "rectangle",
             "x": 0,
             "y": 0,
-            "width": 1280,
-            "height": 34
+            "width": 1289,
+            "height": 0
           }
         }
       ],
@@ -141,21 +141,72 @@
         {
           "rules": [
             {
+              "type": "style",
+              "selector": "body",
+              "style": [
+                {
+                  "name": "transform",
+                  "value": "rotate(2.5deg)",
+                  "important": false
+                },
+                {
+                  "name": "padding-top",
+                  "value": "2rem",
+                  "important": false
+                },
+                {
+                  "name": "padding-right",
+                  "value": "2rem",
+                  "important": false
+                },
+                {
+                  "name": "padding-bottom",
+                  "value": "2rem",
+                  "important": false
+                },
+                {
+                  "name": "padding-left",
+                  "value": "2rem",
+                  "important": false
+                },
+                {
+                  "name": "width",
+                  "value": "min(100vw, 100vh)",
+                  "important": false
+                },
+                {
+                  "name": "height",
+                  "value": "min(100vw, 100vh)",
+                  "important": false
+                }
+              ]
+            },
+            {
               "type": "media",
               "rules": [
                 {
                   "type": "style",
-                  "selector": "html",
+                  "selector": "body",
                   "style": [
                     {
                       "name": "transform",
-                      "value": "rotate(1.5708rad)",
+                      "value": "rotate(92.5deg)",
+                      "important": false
+                    },
+                    {
+                      "name": "position",
+                      "value": "absolute",
+                      "important": false
+                    },
+                    {
+                      "name": "right",
+                      "value": "0px",
                       "important": false
                     }
                   ]
                 }
               ],
-              "condition": "(orientation: portrait)"
+              "condition": "(orientation: landscape)"
             }
           ],
           "disabled": false,
@@ -166,8 +217,8 @@
     "device": {
       "type": "screen",
       "viewport": {
-        "width": 1280,
-        "height": 720,
+        "width": 1289,
+        "height": 809,
         "orientation": "landscape"
       },
       "display": {

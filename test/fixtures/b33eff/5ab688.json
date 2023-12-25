@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "dd6c57",
+  "id": "5ab688",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 90deg;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 90deg;\n\t\t\t\t\twidth: min(100vw, 100vh);\n\t\t\t\t\theight: min(100vw, 100vh);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -65,7 +65,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 90deg;\n\t\t\t\t}\n\t\t\t}\n\t\t"
+                      "data": "\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 90deg;\n\t\t\t\t\twidth: min(100vw, 100vh);\n\t\t\t\t\theight: min(100vw, 100vh);\n\t\t\t\t}\n\t\t\t}\n\t\t"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -150,6 +150,16 @@
                     {
                       "name": "rotate",
                       "value": "90deg",
+                      "important": false
+                    },
+                    {
+                      "name": "width",
+                      "value": "min(100vw, 100vh)",
+                      "important": false
+                    },
+                    {
+                      "name": "height",
+                      "value": "min(100vw, 100vh)",
                       "important": false
                     }
                   ]
