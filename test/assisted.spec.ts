@@ -1258,17 +1258,7 @@ test.skip("8a213c", (t) => fixture(t, Rules.get("R87")));
 
 test("307n5z", (t) => fixture(t, Rules.get("R90")));
 
-test("24afc2", (t) =>
-  fixture(t, Rules.get("R91"), {
-    lax: [
-      // Test cases seem to be incorrectly generated as "passed" instead of
-      // inapplicable
-      "636658",
-      "684f60",
-      "6a1af0",
-      "b61b09",
-    ],
-  }));
+test("24afc2", (t) => fixture(t, Rules.get("R91")));
 
 test("9e45ec", (t) => fixture(t, Rules.get("R92")));
 
