@@ -98,11 +98,14 @@ test("2ee8b8", (t) =>
     skip: [
       // The text 'X' is considered as non-text content by the rule, not by Alfa
       // https://github.com/Siteimprove/alfa/issues/926
-      "244e61",
+      "91a7e7",
       // the text is rendered as icon (non-text) due to the Material Icons fonts
       // but Alfa ignores it
       // https://github.com/Siteimprove/alfa/issues/1015
       "200f91",
+      // Alfa discards hyphen instead of replacing it by space.
+      // https://github.com/Siteimprove/alfa/issues/1558
+      "3889b4",
     ],
   }));
 
