@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "4bee9f",
+  "id": "91a7e7",
   "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<div role=\"button\" aria-label=\"OK\">✓</div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 5</title>\n</head>\n<body>\n\t<button aria-label=\"anything\">X</button>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 4"
+                      "data": "Passed Example 5"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -86,26 +86,19 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "✓"
+                      "data": "X"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "div",
+                  "name": "button",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "role",
-                      "value": "button"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
                       "name": "aria-label",
-                      "value": "OK"
+                      "value": "anything"
                     }
                   ],
                   "style": null,
@@ -148,7 +141,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 35
+            "height": 37
           }
         }
       ],

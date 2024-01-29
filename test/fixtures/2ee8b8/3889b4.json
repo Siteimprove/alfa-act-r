@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "4bee9f",
-  "outcome": "passed",
+  "id": "3889b4",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<div role=\"button\" aria-label=\"OK\">✓</div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<a href=\"#\" aria-label=\"non-standard\">nonstandard</a>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 4"
+                      "data": "Failed Example 4"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -86,26 +86,26 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "✓"
+                      "data": "nonstandard"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "div",
+                  "name": "a",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "role",
-                      "value": "button"
+                      "name": "href",
+                      "value": "#"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
                       "name": "aria-label",
-                      "value": "OK"
+                      "value": "non-standard"
                     }
                   ],
                   "style": null,
@@ -148,7 +148,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 35
+            "height": 34
           }
         }
       ],

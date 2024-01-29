@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "4bee9f",
-  "outcome": "passed",
+  "id": "5d2b87",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<div role=\"button\" aria-label=\"OK\">✓</div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 5</title>\n</head>\n<body>\n\t<a aria-label=\"1 2 3. 4 5 6. 7 8 9 0\" href=\"tel:1234567890\">123.456.7890</a>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 4"
+                      "data": "Failed Example 5"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -86,26 +86,26 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "✓"
+                      "data": "123.456.7890"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "div",
+                  "name": "a",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "role",
-                      "value": "button"
+                      "name": "aria-label",
+                      "value": "1 2 3. 4 5 6. 7 8 9 0"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "aria-label",
-                      "value": "OK"
+                      "name": "href",
+                      "value": "tel:1234567890"
                     }
                   ],
                   "style": null,
@@ -148,7 +148,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 35
+            "height": 34
           }
         }
       ],
