@@ -281,7 +281,7 @@ test("ffd0e9", (t) => fixture(t, Rules.get("R64")));
 
 test("oj04fd", (t) =>
   fixture(t, Rules.get("R65"), {
-    manual: ["7ac2f2", "c80b3c", "f228e7"],
+    manual: ["1ee18e", "7ac2f2", "c80b3c", "f228e7"],
   }));
 
 test("09o5cg", (t) =>
@@ -411,6 +411,7 @@ test("0ssw9k", (t) =>
       // Alfa does not consider the exact layout when determining scrollability
       // so elements that are big enough are incorrectly deemed scrollable
       // https://github.com/Siteimprove/alfa/issues/183
+      "4f3837",
       "977af1",
     ],
   }));
@@ -456,6 +457,7 @@ test("akn7bn", (t) =>
       "475939",
       // Alfa doesn't handle iframe made inert by an open modal
       // https://github.com/Siteimprove/alfa/issues/1140#issuecomment-1807872577
+      "08cfc1",
       "88d384",
     ],
   }));
