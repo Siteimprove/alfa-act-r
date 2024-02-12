@@ -1288,7 +1288,7 @@ test("akn7bn", (t) =>
       "475939",
       // Alfa doesn't handle iframe made inert by an open modal
       // https://github.com/Siteimprove/alfa/issues/1140#issuecomment-1807872577
-      "88d384",
+      "08cfc1",
     ],
   }));
 
