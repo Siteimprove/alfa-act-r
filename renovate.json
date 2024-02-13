@@ -2,15 +2,8 @@
   "reviewers": ["team:alfa-owners"],
   "dependencyDashboard": true,
   "npmrc": "@siteimprove:registry=https://npm.pkg.github.com/",
-  "packageRules": [
-    {
-      "groupName": "Alfa",
-      "matchPackagePrefixes": ["@siteimprove/alfa"]
-    }
-  ],
   "extends": [
     "config:base",
-    "github>siteimprove/renovate-config:npm",
     "github>siteimprove/alfa:config/alfa-renovate"
   ]
 }
