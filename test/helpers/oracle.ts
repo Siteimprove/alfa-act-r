@@ -6,7 +6,7 @@ import { Hashable } from "@siteimprove/alfa-hash";
 import { None, Option } from "@siteimprove/alfa-option";
 import { Group, Question } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
-import { ExecutionContext } from "ava/entrypoints/main";
+import { ExecutionContext } from "ava";
 import { Context } from "./context";
 
 function wrapper<ANSWER>(answer: ANSWER): Future<Option<ANSWER>> {
@@ -28,15 +28,15 @@ export function oracle<I, T extends Hashable, S>(
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
   url: string,
   used: Array<keyof Question.Metadata>,
-  page: Page,
+  page: Page
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
     // Check if we do have an answer for this question.
     if (answers[question.uri] === undefined) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
-          question.subject,
-        )}`,
+          question.subject
+        )}`
       );
       return dontKnow;
     }
@@ -84,14 +84,14 @@ export function oracleWithPaths<I, T extends Hashable, S>(
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
   url: string,
   used: Array<keyof Question.Metadata>,
-  page: Page,
+  page: Page
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
     if (!Node.isNode(question.subject) && !Node.isNode(question.context)) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
-          question.subject,
-        )} which is not a node`,
+          question.subject
+        )} which is not a node`
       );
       return dontKnow;
     }
@@ -109,8 +109,8 @@ export function oracleWithPaths<I, T extends Hashable, S>(
     if (answers[question.uri]?.[path] === undefined) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
-          question.subject,
-        )}`,
+          question.subject
+        )}`
       );
       return dontKnow;
     }
@@ -131,7 +131,7 @@ export function oracleWithPaths<I, T extends Hashable, S>(
 
       case "node[]":
         return wrapper(
-          Array.collect(answers[question.uri]![path], (fn) => fn(page)),
+          Array.collect(answers[question.uri]![path], (fn) => fn(page))
         );
 
       case "color[]":
