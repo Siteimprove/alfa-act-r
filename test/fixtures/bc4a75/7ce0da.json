@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "f782bd",
+  "id": "7ce0da",
   "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/d05f912754cdcfbf5f79b346d1418275e31fb8d5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/854ec3db8780fe5be957fc1c29f279a3e5fc7969.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/d05f912754cdcfbf5f79b346d1418275e31fb8d5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/854ec3db8780fe5be957fc1c29f279a3e5fc7969.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<table role=\"grid\">\n\t\t<tr role=\"row\">\n\t\t\t<td role=\"cell\">Item 1</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<table role=\"grid\">\n\t\t<tr role=\"row\">\n\t\t\t<td role=\"gridcell\">Item 1</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -115,7 +115,7 @@
                                   "namespace": null,
                                   "prefix": null,
                                   "name": "role",
-                                  "value": "cell"
+                                  "value": "gridcell"
                                 }
                               ],
                               "style": null,
