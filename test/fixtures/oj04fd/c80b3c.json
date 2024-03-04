@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<link rel=\"stylesheet\" href=\"/WAI/content-assets/wcag-act-rules/test-assets/focus-visible-oj04fd/styles.css\" />\n\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/focus-visible-oj04fd/script.js\"></script>\n\t\n\t<span id=\"indicator-act\" class=\"indicator solid\"></span>\n\t<a\n\t\tid=\"act\"\n\t\tclass=\"no-focus-default\"\n\t\tonfocus=\"toggleActivation('indicator-act'); toggleActivation('indicator-wcag')\"\n\t\tonblur=\"toggleActivation('indicator-act'); toggleActivation('indicator-wcag')\"\n\t\thref=\"https://act-rules.github.io/\"\n\t\t>ACT rules</a\n\t>\n\t<span id=\"indicator-wcag\" class=\"indicator solid\"></span>\n\t<a\n\t\tid=\"wcag\"\n\t\tclass=\"no-focus-default\"\n\t\tonfocus=\"toggleActivation('indicator-wcag'); toggleActivation('indicator-w3c')\"\n\t\tonblur=\"toggleActivation('indicator-wcag'); toggleActivation('indicator-w3c')\"\n\t\thref=\"https://www.w3.org/TR/WCAG21/\"\n\t\t>WCAG</a\n\t>\n\t<span id=\"indicator-w3c\" class=\"indicator solid\"></span>\n\t<a\n\t\tid=\"w3c\"\n\t\tclass=\"no-focus-default\"\n\t\tonfocus=\"toggleActivation('indicator-w3c'); toggleActivation('indicator-final')\"\n\t\tonblur=\"toggleActivation('indicator-w3c'); toggleActivation('indicator-final')\"\n\t\thref=\"https://www.w3.org/\"\n\t\t>WCAG</a\n\t>\n\t<span id=\"indicator-final\" class=\"indicator solid\"></span>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<link rel=\"stylesheet\" href=\"/WAI/content-assets/wcag-act-rules/test-assets/focus-visible-oj04fd/styles.css\" />\n\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/focus-visible-oj04fd/script.js\"></script>\n\t\n\t<span id=\"indicator-act\" class=\"indicator solid\"></span>\n\t<a\n\t\tid=\"act\"\n\t\tclass=\"no-focus-default\"\n\t\tonfocus=\"toggleActivation('indicator-act'); toggleActivation('indicator-wcag')\"\n\t\tonblur=\"toggleActivation('indicator-act'); toggleActivation('indicator-wcag')\"\n\t\thref=\"https://act-rules.github.io/\"\n\t\t>ACT rules</a\n\t>\n\t<span id=\"indicator-wcag\" class=\"indicator solid\"></span>\n\t<a\n\t\tid=\"wcag\"\n\t\tclass=\"no-focus-default\"\n\t\tonfocus=\"toggleActivation('indicator-wcag'); toggleActivation('indicator-w3c')\"\n\t\tonblur=\"toggleActivation('indicator-wcag'); toggleActivation('indicator-w3c')\"\n\t\thref=\"https://www.w3.org/TR/WCAG21/\"\n\t\t>WCAG</a\n\t>\n\t<span id=\"indicator-w3c\" class=\"indicator solid\"></span>\n\t<a\n\t\tid=\"w3c\"\n\t\tclass=\"no-focus-default\"\n\t\tonfocus=\"toggleActivation('indicator-w3c'); toggleActivation('indicator-final')\"\n\t\tonblur=\"toggleActivation('indicator-w3c'); toggleActivation('indicator-final')\"\n\t\thref=\"https://www.w3.org/\"\n\t\t>WCAG</a\n\t>\n\t<span id=\"indicator-final\" class=\"indicator solid\"></span>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"85ef72e51e02e264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -420,6 +420,58 @@
                       "prefix": null,
                       "name": "class",
                       "value": "indicator solid"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "script",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "defer",
+                      "value": ""
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "integrity",
+                      "value": "sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "data-cf-beacon",
+                      "value": "{\"rayId\":\"85ef72e51e02e264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "crossorigin",
+                      "value": "anonymous"
                     }
                   ],
                   "style": null,

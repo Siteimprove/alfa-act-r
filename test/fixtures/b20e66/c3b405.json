@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 11</title>\n</head>\n<body>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html\">Contact us</a>\n\tall the time.\n\t\n\t<div id=\"host\">\n\t\t<span\n\t\t\t><a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html\"\n\t\t\t\t>Contact us</a\n\t\t\t>\n\t\t\tfrom the light.</span\n\t\t>\n\t</div>\n\t\n\t<script>\n\t\tconst host = document.getElementById('host')\n\t\tconst shadowRoot = host.attachShadow({ mode: 'open' })\n\t\n\t\tshadowRoot.innerHTML =\n\t\t\t'<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html\">Contact us</a> from the shadow.'\n\t</script>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 11</title>\n</head>\n<body>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html\">Contact us</a>\n\tall the time.\n\t\n\t<div id=\"host\">\n\t\t<span\n\t\t\t><a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html\"\n\t\t\t\t>Contact us</a\n\t\t\t>\n\t\t\tfrom the light.</span\n\t\t>\n\t</div>\n\t\n\t<script>\n\t\tconst host = document.getElementById('host')\n\t\tconst shadowRoot = host.attachShadow({ mode: 'open' })\n\t\n\t\tshadowRoot.innerHTML =\n\t\t\t'<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html\">Contact us</a> from the shadow.'\n\t</script>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"85ef73ecf9e9e264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -232,6 +232,58 @@
                   "prefix": null,
                   "name": "script",
                   "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "script",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "defer",
+                      "value": ""
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "integrity",
+                      "value": "sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "data-cf-beacon",
+                      "value": "{\"rayId\":\"85ef73ecf9e9e264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "crossorigin",
+                      "value": "anonymous"
+                    }
+                  ],
                   "style": null,
                   "shadow": null,
                   "content": null,

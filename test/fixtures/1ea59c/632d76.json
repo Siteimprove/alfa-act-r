@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.min.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-skin/highlights-blue.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/transcript.css\" />\n\n\t<figure id=\"ozplayer-1-container\" class=\"ozplayer-container\">\n\t\t<div data-controls=\"stack\" class=\"ozplayer\" id=\"ozplayer-1\">\n\t\t\t<video controls=\"controls\" preload=\"none\">\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t</video>\n\t\t\t<audio data-default=\"default\" preload=\"none\">\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/audio-description.mp3\" type=\"audio/mp3\" />\n\t\t\t</audio>\n\t\t</div>\n\t</figure>\n\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/mediaelement.min.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.free.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-lang/en.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/config.js\"></script>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.min.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-skin/highlights-blue.css\" />\n\t<link rel=\"stylesheet\" href=\"https://ozplayer.global.ssl.fastly.net/3.3/transcript.css\" />\n\n\t<figure id=\"ozplayer-1-container\" class=\"ozplayer-container\">\n\t\t<div data-controls=\"stack\" class=\"ozplayer\" id=\"ozplayer-1\">\n\t\t\t<video controls=\"controls\" preload=\"none\">\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t</video>\n\t\t\t<audio data-default=\"default\" preload=\"none\">\n\t\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/audio-description.mp3\" type=\"audio/mp3\" />\n\t\t\t</audio>\n\t\t</div>\n\t</figure>\n\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/mediaelement.min.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.free.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-lang/en.js\"></script>\n\t<script src=\"https://ozplayer.global.ssl.fastly.net/3.3/config.js\"></script>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"85ef72cf1e6de264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}' crossorigin=\"anonymous\"></script>\n</html>"
     },
     "document": {
       "type": "document",
@@ -1991,6 +1991,58 @@
                       "prefix": null,
                       "name": "src",
                       "value": "https://ozplayer.global.ssl.fastly.net/3.3/config.js"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": null
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "script",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "defer",
+                      "value": ""
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "src",
+                      "value": "https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "integrity",
+                      "value": "sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "data-cf-beacon",
+                      "value": "{\"rayId\":\"85ef72cf1e6de264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "crossorigin",
+                      "value": "anonymous"
                     }
                   ],
                   "style": null,
