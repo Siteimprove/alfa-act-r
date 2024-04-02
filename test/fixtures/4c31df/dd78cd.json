@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<style>\n\t\tbutton {\n\t\t\tcolor: #000;\n\t\t}\n\t\tbutton:hover {\n\t\t\tcursor: pointer;\n\t\t\tcursor: pointer;\n\t\t\tbackground-color: grey;\n\t\t\tcolor: white;\n\t\t}\n\t</style>\n</head>\n<body>\n\t<div id=\"video-container\">\n\t\t<!-- Video -->\n\t\t<video id=\"video\" autoplay>\n\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t</video>\n\t\t<!-- Video Controls -->\n\t\t<div id=\"video-controls\" aria-hidden=\"true\">\n\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\">Play</button>\n\t\t\t<button type=\"button\" id=\"mute\">Mute</button>\n\t\t</div>\n\t</div>\n\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"85ef714a492ee264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<style>\n\t\tbutton {\n\t\t\tcolor: #000;\n\t\t}\n\t\tbutton:hover {\n\t\t\tcursor: pointer;\n\t\t\tcursor: pointer;\n\t\t\tbackground-color: grey;\n\t\t\tcolor: white;\n\t\t}\n\t</style>\n</head>\n<body>\n\t<div id=\"video-container\">\n\t\t<!-- Video -->\n\t\t<video id=\"video\" autoplay>\n\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.mp4\" type=\"video/mp4\" />\n\t\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video.webm\" type=\"video/webm\" />\n\t\t</video>\n\t\t<!-- Video Controls -->\n\t\t<div id=\"video-controls\" aria-hidden=\"true\">\n\t\t\t<button type=\"button\" id=\"play-pause\" class=\"play\">Play</button>\n\t\t\t<button type=\"button\" id=\"mute\">Mute</button>\n\t\t</div>\n\t</div>\n\t<script src=\"/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js\"></script>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -352,58 +352,6 @@
                       "prefix": null,
                       "name": "src",
                       "value": "/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null,
-                  "box": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n"
-                },
-                {
-                  "type": "element",
-                  "children": [],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "script",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "defer",
-                      "value": ""
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "src",
-                      "value": "https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "integrity",
-                      "value": "sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "data-cf-beacon",
-                      "value": "{\"rayId\":\"85ef714a492ee264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "crossorigin",
-                      "value": "anonymous"
                     }
                   ],
                   "style": null,
