@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<div\n\t\tid=\"sampleModal\"\n\t\trole=\"dialog\"\n\t\taria-label=\"Sample Modal\"\n\t\taria-modal=\"true\"\n\t\tstyle=\"border: solid black 1px; padding: 1rem;\"\n\t>\n\t\t<label>First and last name <input id=\"dialogFirst\"/></label><br />\n\t\t<button id=\"closeButton\">Close button</button>\n\t</div>\n\t<div aria-hidden=\"true\">\n\t\t<a href=\"#\" id=\"sentinelAfter\" style=\"position:absolute; top:-999em\"\n\t\t\t>Upon receiving focus, this focus sentinel should wrap focus to the top of the modal</a\n\t\t>\n\t</div>\n\t<script>\n\t\tdocument.getElementById('sentinelAfter').addEventListener('focus', () => {\n\t\t\tdocument.getElementById('dialogFirst').focus()\n\t\t})\n\t\tdocument.getElementById('closeButton').addEventListener('click', () => {\n\t\t\tdocument.getElementById('sampleModal').style.display = 'none'\n\t\t})\n\t</script>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"85ef7195bc96e264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<div\n\t\tid=\"sampleModal\"\n\t\trole=\"dialog\"\n\t\taria-label=\"Sample Modal\"\n\t\taria-modal=\"true\"\n\t\tstyle=\"border: solid black 1px; padding: 1rem;\"\n\t>\n\t\t<label>First and last name <input id=\"dialogFirst\"/></label><br />\n\t\t<button id=\"closeButton\">Close button</button>\n\t</div>\n\t<div aria-hidden=\"true\">\n\t\t<a href=\"#\" id=\"sentinelAfter\" style=\"position:absolute; top:-999em\"\n\t\t\t>Upon receiving focus, this focus sentinel should wrap focus to the top of the modal</a\n\t\t>\n\t</div>\n\t<script>\n\t\tdocument.getElementById('sentinelAfter').addEventListener('focus', () => {\n\t\t\tdocument.getElementById('dialogFirst').focus()\n\t\t})\n\t\tdocument.getElementById('closeButton').addEventListener('click', () => {\n\t\t\tdocument.getElementById('sampleModal').style.display = 'none'\n\t\t})\n\t</script>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -421,58 +421,6 @@
                   "prefix": null,
                   "name": "script",
                   "attributes": [],
-                  "style": null,
-                  "shadow": null,
-                  "content": null,
-                  "box": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n"
-                },
-                {
-                  "type": "element",
-                  "children": [],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "script",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "defer",
-                      "value": ""
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "src",
-                      "value": "https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "integrity",
-                      "value": "sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "data-cf-beacon",
-                      "value": "{\"rayId\":\"85ef7195bc96e264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "crossorigin",
-                      "value": "anonymous"
-                    }
-                  ],
                   "style": null,
                   "shadow": null,
                   "content": null,

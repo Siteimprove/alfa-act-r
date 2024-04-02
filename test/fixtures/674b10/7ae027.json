@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<style>\n\t\t.ref {\n\t\t\tcolor: #0000ee;\n\t\t\ttext-decoration: underline;\n\t\t\tcursor: pointer;\n\t\t}\n\t</style>\n\tSee [<span class=\"ref\" onclick=\"location.href='https://act-rules.github.io/'\" role=\"bibliographic-reference lnik\"\n\t\t>ACT rules</span\n\t>].\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317\" integrity=\"sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==\" data-cf-beacon='{\"rayId\":\"85ef70bd0f5ce264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}' crossorigin=\"anonymous\"></script>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<style>\n\t\t.ref {\n\t\t\tcolor: #0000ee;\n\t\t\ttext-decoration: underline;\n\t\t\tcursor: pointer;\n\t\t}\n\t</style>\n\tSee [<span class=\"ref\" onclick=\"location.href='https://act-rules.github.io/'\" role=\"bibliographic-reference lnik\"\n\t\t>ACT rules</span\n\t>].\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -143,59 +143,7 @@
                 },
                 {
                   "type": "text",
-                  "data": "].\n"
-                },
-                {
-                  "type": "element",
-                  "children": [],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "script",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "defer",
-                      "value": ""
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "src",
-                      "value": "https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "integrity",
-                      "value": "sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "data-cf-beacon",
-                      "value": "{\"rayId\":\"85ef70bd0f5ce264\",\"b\":1,\"version\":\"2024.2.4\",\"token\":\"fc3883dff5a945e6add18f15eb2c3b97\"}"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "crossorigin",
-                      "value": "anonymous"
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null,
-                  "box": null
-                },
-                {
-                  "type": "text",
-                  "data": "\n\n"
+                  "data": "].\n\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
