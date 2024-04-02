@@ -290,6 +290,7 @@ test("09o5cg", (t) =>
     skip: [
       // Alfa assumes that non-human language text is marked as presentational
       "e778ed",
+      "c96cd5",
 
       // Alfa does not yet disregard impossible foreground/background combinations
       "09a8df",
@@ -319,6 +320,7 @@ test("afw4f7", (t) =>
       // Alfa intentionally diverges on these cases
       // -> Alfa assumes that non-human language text is marked as presentational
       "12198b",
+      "d477f6",
 
       // Alfa does not yet disregard impossible foreground/background combinations
       "92452d",
