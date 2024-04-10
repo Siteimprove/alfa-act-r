@@ -1115,24 +1115,31 @@ test("afw4f7", (t) =>
 
 // R80 is Siteimprove only
 
-// R81 has questions in expectation, review flow not currently handled
 test("fd3a94", (t) =>
   fixture(t, Rules.get("R81"), {
     answers: {
+      '019e4f': { 'reference-equivalent-resources': false },
       "10c991": { "reference-equivalent-resources": true },
-      "144556": { "reference-equivalent-resources": false },
-      "5041c9": { "reference-equivalent-resources": false },
-      "65aaf1": { "reference-equivalent-resources": false },
+      '1a4d92': { 'reference-equivalent-resources': false },
+      '5a04d4': { 'reference-equivalent-resources': false },
+      '5af120': { 'reference-equivalent-resources': false },
       "75e59a": { "reference-equivalent-resources": true },
       "80824c": { "reference-equivalent-resources": true },
       "8d6fa9": { "reference-equivalent-resources": false },
-      b7dc66: { "reference-equivalent-resources": false },
       c16600: { "reference-equivalent-resources": true },
+      'c2497f': { 'reference-equivalent-resources': false },
+      'c755ec': { 'reference-equivalent-resources': false },
       ce860d: { "reference-equivalent-resources": true },
+      'dac0c8': { 'reference-equivalent-resources': false },
       e0ec0a: { "reference-equivalent-resources": true },
       e9979a: { "reference-equivalent-resources": false },
     },
     skip: [
+      // ACT Rules example is incorrect
+      // https://github.com/act-rules/act-rules.github.io/issues/2175
+      "709a75",
+      // Alfa does not have an exception for "ambiguous to users in general"
+      "8d6fa9",
       // Alfa does not consider `<div>` in the link context
       // https://github.com/Siteimprove/alfa/issues/767
       "e9979a",

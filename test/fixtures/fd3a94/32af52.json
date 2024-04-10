@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "5041c9",
-  "outcome": "failed",
+  "id": "32af52",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9abd9bcfa7c5eb5000df1bd7e72440c6233566a5.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9abd9bcfa7c5eb5000df1bd7e72440c6233566a5.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<div>\n\t\tLearn more (<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html\"\n\t\t\t>Contact us</a\n\t\t>) and get in touch (\n\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html\"\n\t\t\t>Contact us</a\n\t\t>)\n\t</div>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tWe are on social media:\n\t\t<a href=\"https://act-rules.github.io/\">ACT rules</a>\n\t\t<a aria-hidden=\"true\" href=\"https://www.w3.org/community/act-r/\">ACT rules</a>\n\t</p>\n</html>"
     },
     "document": {
       "type": "document",
@@ -52,14 +52,14 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\tLearn more ("
+                      "data": "\n\t\tWe are on social media:\n\t\t"
                     },
                     {
                       "type": "element",
                       "children": [
                         {
                           "type": "text",
-                          "data": "Contact us"
+                          "data": "ACT rules"
                         }
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
@@ -71,7 +71,7 @@
                           "namespace": null,
                           "prefix": null,
                           "name": "href",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html"
+                          "value": "https://act-rules.github.io/"
                         }
                       ],
                       "style": null,
@@ -81,14 +81,14 @@
                     },
                     {
                       "type": "text",
-                      "data": ") and get in touch (\n\t\t"
+                      "data": "\n\t\t"
                     },
                     {
                       "type": "element",
                       "children": [
                         {
                           "type": "text",
-                          "data": "Contact us"
+                          "data": "ACT rules"
                         }
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
@@ -99,8 +99,15 @@
                           "type": "attribute",
                           "namespace": null,
                           "prefix": null,
+                          "name": "aria-hidden",
+                          "value": "true"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
                           "name": "href",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html"
+                          "value": "https://www.w3.org/community/act-r/"
                         }
                       ],
                       "style": null,
@@ -110,12 +117,12 @@
                     },
                     {
                       "type": "text",
-                      "data": ")\n\t"
+                      "data": "\n\t"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "div",
+                  "name": "p",
                   "attributes": [],
                   "style": null,
                   "shadow": null,
@@ -157,7 +164,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 34
+            "height": 50
           }
         }
       ],

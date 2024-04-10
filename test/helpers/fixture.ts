@@ -198,9 +198,9 @@ function report<T extends Hashable, Q extends actQuestion.Metadata, S>(
     case "ok": // Alfa and ACT-R perfectly agree
       // In strict mode for marked cases, fail and investigate why it is marked
       if (strict && (skip || manual || lax)) {
-        t.fail(test.id);
         t.log("Outcome", outcome);
         t.log("Test", test);
+        t.fail(`${test.id} produces correct result, but is marked as ${skip ? "skipped" : manual ? "manual" : "lax"}`);
       } else {
         t.pass(test.id);
         // Display warnings if the case was registered as imperfect match
@@ -225,9 +225,9 @@ function report<T extends Hashable, Q extends actQuestion.Metadata, S>(
       if (skip) {
         t.fail.skip(test.id);
       } else {
-        t.fail(test.id);
         t.log("Outcome", outcome);
         t.log("Test", test);
+        t.fail(`${test.id} produces incorrect result.`);
       }
       break;
     case "lax":
@@ -235,9 +235,9 @@ function report<T extends Hashable, Q extends actQuestion.Metadata, S>(
       // Otherwise, emit a warning or an error depending on test mode.
       if (!lax) {
         if (strict) {
-          t.fail(test.id);
           t.log("Outcome", outcome);
           t.log("Test", test);
+          t.fail(`${test.id} is a non-strict match (inapplicable/passed).`);
         } else {
           t.pass(test.id);
           t.log(
@@ -260,11 +260,11 @@ function report<T extends Hashable, Q extends actQuestion.Metadata, S>(
           );
         }
       } else {
-        // This is an assisted implementation, cantTell results are supsicious
+        // This is an assisted implementation, cantTell results are suspicious
         if (strict) {
-          t.fail(test.id);
           t.log("Outcome", outcome);
           t.log("Test", test);
+          t.fail(`${test.id} has incomplete oracle`);
         } else {
           t.pass(test.id);
           t.log(`Test case ${fullTestId} has incomplete oracle.`);
