@@ -354,19 +354,19 @@ test("afw4f7", (t) =>
 test("fd3a94", (t) =>
   fixture(t, Rules.get("R81"), {
     manual: [
-      "019e4f",
       "10c991",
+      "18cbb0",
       "1a4d92",
-      "5a04d4",
-      "5af120",
+      "4ba181",
+      "5bdc24",
+      "70f41b",
       "75e59a",
       "80824c",
       "8d6fa9",
+      "aa0dce",
+      "c02459",
       "c16600",
-      "c2497f",
-      "c755ec",
       "ce860d",
-      "dac0c8",
       "e0ec0a",
       "e9979a",
     ],
@@ -378,8 +378,8 @@ test("fd3a94", (t) =>
     skip: [
       // ACT Rules example is incorrect
       // https://github.com/act-rules/act-rules.github.io/issues/2175
-      "709a75"
-    ]
+      "709a75",
+    ],
   }));
 
 // R82 always has questions in expectation, review flow not currently handled
