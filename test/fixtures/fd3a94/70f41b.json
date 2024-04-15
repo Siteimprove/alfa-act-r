@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "dac0c8",
+  "id": "70f41b",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/35fffc5189dce0022ebb0795bf3fa5a26735b5c2.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9ceacbea5df44a14dc17df2089edb134f22decd3.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/35fffc5189dce0022ebb0795bf3fa5a26735b5c2.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9ceacbea5df44a14dc17df2089edb134f22decd3.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tTo get in touch with us, you can either <a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1\">contact us</a> via chat or <a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2\">contact us</a> by phone.\n\t</p>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\tTo get in touch with us, you can either\n\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1\"\n\t\t\t>contact us</a\n\t\t>\n\t\tvia chat or\n\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2\"\n\t\t\t>contact us</a\n\t\t>\n\t\tby phone.\n\t</p>\n</html>"
     },
     "document": {
       "type": "document",
@@ -52,7 +52,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\tTo get in touch with us, you can either "
+                      "data": "\n\t\tTo get in touch with us, you can either\n\t\t"
                     },
                     {
                       "type": "element",
@@ -81,7 +81,7 @@
                     },
                     {
                       "type": "text",
-                      "data": " via chat or "
+                      "data": "\n\t\tvia chat or\n\t\t"
                     },
                     {
                       "type": "element",
@@ -110,7 +110,7 @@
                     },
                     {
                       "type": "text",
-                      "data": " by phone.\n\t"
+                      "data": "\n\t\tby phone.\n\t"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",

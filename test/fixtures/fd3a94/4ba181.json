@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "5a04d4",
+  "id": "4ba181",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0747261988867c23323b93f2c2a3f48db0f38f7e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/07d22448c8eee64414dd9444263ae4039a0a2d79.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0747261988867c23323b93f2c2a3f48db0f38f7e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/07d22448c8eee64414dd9444263ae4039a0a2d79.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\t<span style=\"text-align:center;\">Contact us</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/chat.png\" alt=\"Chat\" style=\"width:50%;\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/phone.png\" alt=\"Phone\" style=\"width:50%;\">\n\t\t</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html\">Contact Us</a>\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html\">Contact Us</a>\n\t\t</span>\n\t</p>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<div>\n\t\t<span style=\"text-align:center;\">Contact us</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/chat.png\" alt=\"Chat\" style=\"width:50%;\" />\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/phone.png\" alt=\"Phone\" style=\"width:50%;\" />\n\t\t</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<span\n\t\t\t\trole=\"link\"\n\t\t\t\ttabindex=\"0\"\n\t\t\t\tonclick=\"location='/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1'\"\n\t\t\t\t>Contact Us</span\n\t\t\t>\n\t\t\t<span\n\t\t\t\trole=\"link\"\n\t\t\t\ttabindex=\"0\"\n\t\t\t\tonclick=\"location='/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2'\"\n\t\t\t\t>Contact Us</span\n\t\t\t>\n\t\t</span>\n\t</div>\n</html>"
     },
     "document": {
       "type": "document",
@@ -234,14 +234,28 @@
                           ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
-                          "name": "a",
+                          "name": "span",
                           "attributes": [
                             {
                               "type": "attribute",
                               "namespace": null,
                               "prefix": null,
-                              "name": "href",
-                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"
+                              "name": "role",
+                              "value": "link"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "tabindex",
+                              "value": "0"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "onclick",
+                              "value": "location='/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1'"
                             }
                           ],
                           "style": null,
@@ -263,14 +277,28 @@
                           ],
                           "namespace": "http://www.w3.org/1999/xhtml",
                           "prefix": null,
-                          "name": "a",
+                          "name": "span",
                           "attributes": [
                             {
                               "type": "attribute",
                               "namespace": null,
                               "prefix": null,
-                              "name": "href",
-                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html"
+                              "name": "role",
+                              "value": "link"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "tabindex",
+                              "value": "0"
+                            },
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "onclick",
+                              "value": "location='/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2'"
                             }
                           ],
                           "style": null,
@@ -318,7 +346,7 @@
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "p",
+                  "name": "div",
                   "attributes": [],
                   "style": null,
                   "shadow": null,
@@ -360,7 +388,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 706.015625
+            "height": 690.015625
           }
         }
       ],

@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "c2497f",
+  "id": "aa0dce",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/ea34f740055ca12e4363bdd3046536a0016b6f1d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/b016056025da8b4c5a08c0b72adc7cd2ab65a545.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/ea34f740055ca12e4363bdd3046536a0016b6f1d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/b016056025da8b4c5a08c0b72adc7cd2ab65a545.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<div>\n\t\t<span style=\"text-align:center;\">Contact us</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/chat.png\" alt=\"Chat\" style=\"width:50%;\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/phone.png\" alt=\"Phone\" style=\"width:50%;\">\n\t\t</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=60e950cff70bf1ec60a702086748ab4dec361514\">Contact Us</a>\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=c1d4e0f067462f4b28716f028d9213a25eb82f28\">Contact Us</a>\n\t\t</span>\n\t</div>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\t<span style=\"text-align:center;\">Contact us</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/chat.png\" alt=\"Chat\" style=\"width:50%;\" />\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/phone.png\" alt=\"Phone\" style=\"width:50%;\" />\n\t\t</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html\">Contact Us</a>\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html\">Contact Us</a>\n\t\t</span>\n\t</p>\n</html>"
     },
     "document": {
       "type": "document",
@@ -241,7 +241,7 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "href",
-                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=60e950cff70bf1ec60a702086748ab4dec361514"
+                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"
                             }
                           ],
                           "style": null,
@@ -270,7 +270,7 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "href",
-                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=c1d4e0f067462f4b28716f028d9213a25eb82f28"
+                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html"
                             }
                           ],
                           "style": null,
@@ -318,7 +318,7 @@
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "div",
+                  "name": "p",
                   "attributes": [],
                   "style": null,
                   "shadow": null,
@@ -360,7 +360,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 690.015625
+            "height": 706.015625
           }
         }
       ],
