@@ -394,7 +394,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 191
+            "height": 281
           }
         }
       ],
@@ -453,7 +453,24 @@
       "scripting": {
         "enabled": true
       },
-      "preferences": []
+      "preferences": [
+        {
+          "name": "prefers-reduced-motion",
+          "value": "no-preference"
+        },
+        {
+          "name": "prefers-color-scheme",
+          "value": "light"
+        },
+        {
+          "name": "prefers-contrast",
+          "value": "no-preference"
+        },
+        {
+          "name": "forced-colors",
+          "value": "none"
+        }
+      ]
     }
   }
 }

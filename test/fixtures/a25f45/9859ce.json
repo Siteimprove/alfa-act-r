@@ -340,7 +340,24 @@
       "scripting": {
         "enabled": true
       },
-      "preferences": []
+      "preferences": [
+        {
+          "name": "prefers-reduced-motion",
+          "value": "no-preference"
+        },
+        {
+          "name": "prefers-color-scheme",
+          "value": "light"
+        },
+        {
+          "name": "prefers-contrast",
+          "value": "no-preference"
+        },
+        {
+          "name": "forced-colors",
+          "value": "none"
+        }
+      ]
     }
   }
 }

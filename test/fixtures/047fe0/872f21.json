@@ -363,7 +363,7 @@
       "type": "screen",
       "viewport": {
         "width": 1280,
-        "height": 1183,
+        "height": 720,
         "orientation": "landscape"
       },
       "display": {
@@ -373,7 +373,24 @@
       "scripting": {
         "enabled": true
       },
-      "preferences": []
+      "preferences": [
+        {
+          "name": "prefers-reduced-motion",
+          "value": "no-preference"
+        },
+        {
+          "name": "prefers-color-scheme",
+          "value": "light"
+        },
+        {
+          "name": "prefers-contrast",
+          "value": "no-preference"
+        },
+        {
+          "name": "forced-colors",
+          "value": "none"
+        }
+      ]
     }
   }
 }
