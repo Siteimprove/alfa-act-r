@@ -208,8 +208,8 @@ async function scrapeInstantRedirect(test: TestDescription) {
     headers: { "Accept-Encoding": "text/html" },
   });
 
-  const bar = new jsdom.JSDOM(response.data);
-  const nodeJSON = dom.Native.fromNode(bar.window.document) as Document.JSON;
+  const document = new jsdom.JSDOM(response.data);
+  const nodeJSON = await dom.Native.fromNode(document.window.document) as Document.JSON;
 
   const page: Page.JSON = {
     device: Device.standard().toJSON(),
