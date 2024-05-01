@@ -887,11 +887,6 @@ test("4c31df", (t) =>
         "is-above-duration-threshold": true,
         "audio-control-mechanism": none,
       },
-      "7786cc": {
-        "has-audio": true,
-        "is-above-duration-threshold": true,
-        "audio-control-mechanism": none,
-      },
       bc00f7: {
         "has-audio": true,
         "is-above-duration-threshold": true,
@@ -920,11 +915,6 @@ test("4c31df", (t) =>
       },
       ee7ad9: { "is-above-duration-threshold": true },
     },
-    skip: [
-      // The ACT rules example uses the wrong file.
-      // https://github.com/act-rules/act-rules.github.io/issues/2023
-      "7786cc",
-    ],
   }));
 
 test("80f0bf", (t) =>

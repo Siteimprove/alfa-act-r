@@ -54,7 +54,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -68,7 +74,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "text",
@@ -106,7 +118,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -130,7 +148,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -161,7 +185,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 8,
+                    "width": 16,
+                    "height": 16
+                  }
                 },
                 {
                   "type": "text",
@@ -218,7 +248,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 27.125,
+                    "y": 10,
+                    "width": 66.8125,
+                    "height": 17
+                  }
                 },
                 {
                   "type": "text",
@@ -249,7 +285,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 97.9375,
+                    "y": 8,
+                    "width": 16,
+                    "height": 16
+                  }
                 },
                 {
                   "type": "text",
@@ -306,7 +348,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 117.65625,
+                    "y": 10,
+                    "width": 48.890625,
+                    "height": 17
+                  }
                 },
                 {
                   "type": "text",
@@ -337,7 +385,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 170.546875,
+                    "y": 8,
+                    "width": 16,
+                    "height": 16
+                  }
                 },
                 {
                   "type": "text",
@@ -394,7 +448,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 190.265625,
+                    "y": 10,
+                    "width": 48.890625,
+                    "height": 17
+                  }
                 },
                 {
                   "type": "text",
@@ -425,7 +485,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 243.15625,
+                    "y": 8,
+                    "width": 16,
+                    "height": 16
+                  }
                 },
                 {
                   "type": "text",
@@ -439,7 +505,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 8,
+                "width": 1264,
+                "height": 20
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",
@@ -506,88 +578,8 @@
               "selector": ".border.active",
               "style": [
                 {
-                  "name": "border-top-width",
-                  "value": "medium",
-                  "important": false
-                },
-                {
-                  "name": "border-right-width",
-                  "value": "medium",
-                  "important": false
-                },
-                {
-                  "name": "border-bottom-width",
-                  "value": "medium",
-                  "important": false
-                },
-                {
-                  "name": "border-left-width",
-                  "value": "medium",
-                  "important": false
-                },
-                {
-                  "name": "border-top-style",
-                  "value": "solid",
-                  "important": false
-                },
-                {
-                  "name": "border-right-style",
-                  "value": "solid",
-                  "important": false
-                },
-                {
-                  "name": "border-bottom-style",
-                  "value": "solid",
-                  "important": false
-                },
-                {
-                  "name": "border-left-style",
-                  "value": "solid",
-                  "important": false
-                },
-                {
-                  "name": "border-top-color",
-                  "value": "navy",
-                  "important": false
-                },
-                {
-                  "name": "border-right-color",
-                  "value": "navy",
-                  "important": false
-                },
-                {
-                  "name": "border-bottom-color",
-                  "value": "navy",
-                  "important": false
-                },
-                {
-                  "name": "border-left-color",
-                  "value": "navy",
-                  "important": false
-                },
-                {
-                  "name": "border-image-source",
-                  "value": "initial",
-                  "important": false
-                },
-                {
-                  "name": "border-image-slice",
-                  "value": "initial",
-                  "important": false
-                },
-                {
-                  "name": "border-image-width",
-                  "value": "initial",
-                  "important": false
-                },
-                {
-                  "name": "border-image-outset",
-                  "value": "initial",
-                  "important": false
-                },
-                {
-                  "name": "border-image-repeat",
-                  "value": "initial",
+                  "name": "border",
+                  "value": "medium solid navy",
                   "important": false
                 }
               ]
@@ -597,18 +589,8 @@
               "selector": ".no-focus-default:focus",
               "style": [
                 {
-                  "name": "outline-color",
-                  "value": "initial",
-                  "important": false
-                },
-                {
-                  "name": "outline-style",
+                  "name": "outline",
                   "value": "none",
-                  "important": false
-                },
-                {
-                  "name": "outline-width",
-                  "value": "initial",
                   "important": false
                 }
               ]

@@ -54,7 +54,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -75,7 +81,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -89,7 +101,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "text",
@@ -110,7 +128,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 389.3755798339844,
+                "y": -10.624411582946777,
+                "width": 910.248779296875,
+                "height": 910.248779296875
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",
@@ -150,22 +174,7 @@
                   "important": false
                 },
                 {
-                  "name": "padding-top",
-                  "value": "2rem",
-                  "important": false
-                },
-                {
-                  "name": "padding-right",
-                  "value": "2rem",
-                  "important": false
-                },
-                {
-                  "name": "padding-bottom",
-                  "value": "2rem",
-                  "important": false
-                },
-                {
-                  "name": "padding-left",
+                  "name": "padding",
                   "value": "2rem",
                   "important": false
                 },

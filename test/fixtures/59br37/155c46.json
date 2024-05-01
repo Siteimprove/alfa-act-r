@@ -54,7 +54,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -68,7 +74,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "text",
@@ -96,7 +108,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -125,7 +143,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 8,
+                    "width": 1264,
+                    "height": 16
+                  }
                 },
                 {
                   "type": "text",
@@ -154,7 +178,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 24,
+                    "width": 134.203125,
+                    "height": 17
+                  }
                 },
                 {
                   "type": "text",
@@ -168,7 +198,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 8,
+                "width": 1264,
+                "height": 34
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",
@@ -203,12 +239,7 @@
               "selector": ".wordClip",
               "style": [
                 {
-                  "name": "overflow-x",
-                  "value": "hidden",
-                  "important": false
-                },
-                {
-                  "name": "overflow-y",
+                  "name": "overflow",
                   "value": "hidden",
                   "important": false
                 },
