@@ -54,7 +54,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -68,7 +74,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "text",
@@ -96,7 +108,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -117,7 +135,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 16,
+                    "width": 1264,
+                    "height": 65
+                  }
                 },
                 {
                   "type": "text",
@@ -131,7 +155,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 16,
+                "width": 1264,
+                "height": 65
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",
@@ -181,53 +211,8 @@
                   "important": false
                 },
                 {
-                  "name": "background-image",
-                  "value": "url(\"/WAI/content-assets/wcag-act-rules/test-assets/contrast/black-hole.jpeg\")",
-                  "important": false
-                },
-                {
-                  "name": "background-position-x",
-                  "value": "-20px",
-                  "important": false
-                },
-                {
-                  "name": "background-position-y",
-                  "value": "-20px",
-                  "important": false
-                },
-                {
-                  "name": "background-size",
-                  "value": "initial",
-                  "important": false
-                },
-                {
-                  "name": "background-repeat-x",
-                  "value": "no-repeat",
-                  "important": false
-                },
-                {
-                  "name": "background-repeat-y",
-                  "value": "no-repeat",
-                  "important": false
-                },
-                {
-                  "name": "background-attachment",
-                  "value": "initial",
-                  "important": false
-                },
-                {
-                  "name": "background-origin",
-                  "value": "initial",
-                  "important": false
-                },
-                {
-                  "name": "background-clip",
-                  "value": "initial",
-                  "important": false
-                },
-                {
-                  "name": "background-color",
-                  "value": "rgb(0, 0, 0)",
+                  "name": "background",
+                  "value": "url(\"/WAI/content-assets/wcag-act-rules/test-assets/contrast/black-hole.jpeg\") -20px -20px no-repeat rgb(0, 0, 0)",
                   "important": false
                 },
                 {

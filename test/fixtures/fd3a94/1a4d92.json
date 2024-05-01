@@ -42,7 +42,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "element",
@@ -62,7 +68,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 19.90625,
+                    "width": 1264,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "element",
@@ -79,7 +91,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 19.90625,
+                    "width": 1264,
+                    "height": 27
+                  }
                 },
                 {
                   "type": "text",
@@ -119,79 +137,25 @@
                       "important": false
                     },
                     {
-                      "name": "background-image",
-                      "value": "url(\"/WAI/content-assets/wcag-act-rules/test-assets/shared/chat.png\")",
+                      "name": "background",
+                      "value": "url(\"/WAI/content-assets/wcag-act-rules/test-assets/shared/chat.png\") 0px center / 40px no-repeat",
                       "important": false
                     },
                     {
-                      "name": "background-position-x",
-                      "value": "0px",
-                      "important": false
-                    },
-                    {
-                      "name": "background-position-y",
-                      "value": "center",
-                      "important": false
-                    },
-                    {
-                      "name": "background-size",
-                      "value": "40px",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-x",
-                      "value": "no-repeat",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-y",
-                      "value": "no-repeat",
-                      "important": false
-                    },
-                    {
-                      "name": "background-attachment",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-origin",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-clip",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-color",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-top",
-                      "value": "20px",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-right",
-                      "value": "0px",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-bottom",
-                      "value": "20px",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-left",
-                      "value": "50px",
+                      "name": "padding",
+                      "value": "20px 0px 20px 50px",
                       "important": false
                     }
                   ],
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 66.8125,
+                    "width": 121.546875,
+                    "height": 58
+                  }
                 },
                 {
                   "type": "text",
@@ -231,73 +195,13 @@
                       "important": false
                     },
                     {
-                      "name": "background-image",
-                      "value": "url(\"/WAI/content-assets/wcag-act-rules/test-assets/shared/phone.png\")",
+                      "name": "background",
+                      "value": "url(\"/WAI/content-assets/wcag-act-rules/test-assets/shared/phone.png\") 0px center / 40px no-repeat",
                       "important": false
                     },
                     {
-                      "name": "background-position-x",
-                      "value": "0px",
-                      "important": false
-                    },
-                    {
-                      "name": "background-position-y",
-                      "value": "center",
-                      "important": false
-                    },
-                    {
-                      "name": "background-size",
-                      "value": "40px",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-x",
-                      "value": "no-repeat",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-y",
-                      "value": "no-repeat",
-                      "important": false
-                    },
-                    {
-                      "name": "background-attachment",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-origin",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-clip",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-color",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-top",
-                      "value": "20px",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-right",
-                      "value": "0px",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-bottom",
-                      "value": "20px",
-                      "important": false
-                    },
-                    {
-                      "name": "padding-left",
-                      "value": "50px",
+                      "name": "padding",
+                      "value": "20px 0px 20px 50px",
                       "important": false
                     },
                     {
@@ -308,7 +212,13 @@
                   ],
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 173.546875,
+                    "y": 66.8125,
+                    "width": 121.546875,
+                    "height": 58
+                  }
                 },
                 {
                   "type": "text",
@@ -324,7 +234,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 140.8125,
+                    "width": 1264,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -338,7 +254,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 19.90625,
+                "width": 1264,
+                "height": 104.90625
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",

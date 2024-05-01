@@ -54,7 +54,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -75,7 +81,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -89,7 +101,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "text",
@@ -117,7 +135,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 710,
+                    "y": 24,
+                    "width": 18,
+                    "height": 704
+                  }
                 },
                 {
                   "type": "text",
@@ -131,7 +155,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 8,
+                "width": 736,
+                "height": 736
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",
@@ -181,22 +211,7 @@
                   "important": false
                 },
                 {
-                  "name": "padding-top",
-                  "value": "1rem",
-                  "important": false
-                },
-                {
-                  "name": "padding-right",
-                  "value": "1rem",
-                  "important": false
-                },
-                {
-                  "name": "padding-bottom",
-                  "value": "1rem",
-                  "important": false
-                },
-                {
-                  "name": "padding-left",
+                  "name": "padding",
                   "value": "1rem",
                   "important": false
                 }

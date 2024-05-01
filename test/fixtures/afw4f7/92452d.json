@@ -54,7 +54,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -68,7 +74,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "text",
@@ -96,7 +108,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -125,7 +143,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 8,
+                    "width": 108.875,
+                    "height": 17
+                  }
                 },
                 {
                   "type": "text",
@@ -139,7 +163,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 8,
+                "width": 1264,
+                "height": 18
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",
@@ -179,13 +209,8 @@
                   "important": false
                 },
                 {
-                  "name": "background-position-x",
-                  "value": "left 0px",
-                  "important": false
-                },
-                {
-                  "name": "background-position-y",
-                  "value": "top 0px",
+                  "name": "background-position",
+                  "value": "left 0px top 0px",
                   "important": false
                 },
                 {
@@ -194,23 +219,8 @@
                   "important": false
                 },
                 {
-                  "name": "padding-top",
-                  "value": "0px",
-                  "important": false
-                },
-                {
-                  "name": "padding-right",
-                  "value": "1em",
-                  "important": false
-                },
-                {
-                  "name": "padding-bottom",
-                  "value": "0px",
-                  "important": false
-                },
-                {
-                  "name": "padding-left",
-                  "value": "1em",
+                  "name": "padding",
+                  "value": "0px 1em",
                   "important": false
                 }
               ]

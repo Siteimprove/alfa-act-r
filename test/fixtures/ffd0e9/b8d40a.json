@@ -54,7 +54,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -68,7 +74,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "text",
@@ -112,29 +124,20 @@
                   ],
                   "style": [
                     {
-                      "name": "border-top-style",
-                      "value": "solid",
-                      "important": false
-                    },
-                    {
-                      "name": "border-right-style",
-                      "value": "solid",
-                      "important": false
-                    },
-                    {
-                      "name": "border-bottom-style",
-                      "value": "solid",
-                      "important": false
-                    },
-                    {
-                      "name": "border-left-style",
+                      "name": "border-style",
                       "value": "solid",
                       "important": false
                     }
                   ],
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 8,
+                    "width": 1264,
+                    "height": 6
+                  }
                 },
                 {
                   "type": "text",
@@ -148,7 +151,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 8,
+                "width": 1264,
+                "height": 6
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",

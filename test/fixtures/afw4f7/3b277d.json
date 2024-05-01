@@ -54,7 +54,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -68,7 +74,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "text",
@@ -118,59 +130,20 @@
                       "important": false
                     },
                     {
-                      "name": "background-image",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-position-x",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-position-y",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-size",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-x",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-repeat-y",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-attachment",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-origin",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-clip",
-                      "value": "initial",
-                      "important": false
-                    },
-                    {
-                      "name": "background-color",
+                      "name": "background",
                       "value": "rgb(102, 102, 102)",
                       "important": false
                     }
                   ],
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 18.65625,
+                    "width": 1264,
+                    "height": 22
+                  }
                 },
                 {
                   "type": "text",
@@ -184,7 +157,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 18.65625,
+                "width": 1264,
+                "height": 22
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",

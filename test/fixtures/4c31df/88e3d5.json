@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "7786cc",
+  "id": "88e3d5",
   "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7d3d7214d9fca81a8a09a819665871a474f85548.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7d3d7214d9fca81a8a09a819665871a474f85548.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<video autoplay>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<video autoplay>\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\" />\n\t\t<source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.webm\" type=\"video/webm\" />\n\t</video>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -54,7 +54,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "text",
@@ -68,7 +74,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "text",
@@ -100,7 +112,7 @@
                           "namespace": null,
                           "prefix": null,
                           "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.mp4"
+                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.mp4"
                         },
                         {
                           "type": "attribute",
@@ -113,7 +125,13 @@
                       "style": null,
                       "shadow": null,
                       "content": null,
-                      "box": null
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
                     },
                     {
                       "type": "text",
@@ -131,7 +149,7 @@
                           "namespace": null,
                           "prefix": null,
                           "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/video-with-incorrect-voiceover.webm"
+                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.webm"
                         },
                         {
                           "type": "attribute",
@@ -144,7 +162,13 @@
                       "style": null,
                       "shadow": null,
                       "content": null,
-                      "box": null
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
                     },
                     {
                       "type": "text",
@@ -166,7 +190,13 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": null
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 8,
+                    "width": 300,
+                    "height": 150
+                  }
                 },
                 {
                   "type": "text",
@@ -180,7 +210,13 @@
               "style": null,
               "shadow": null,
               "content": null,
-              "box": null
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 8,
+                "width": 1264,
+                "height": 154
+              }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",
