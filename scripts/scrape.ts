@@ -133,6 +133,8 @@ async function getTestCases(
   const errors: Array<TestDescription> = [];
   let i = 1;
   for (const test of tests) {
+    // wait 1.5s between fetches.
+    await wait(1500);
     const label = `${test.filename} (${i} / ${tests.length})`;
     console.time(label);
 
@@ -209,7 +211,9 @@ async function scrapeInstantRedirect(test: TestDescription) {
   });
 
   const document = new jsdom.JSDOM(response.data);
-  const nodeJSON = await dom.Native.fromNode(document.window.document) as Document.JSON;
+  const nodeJSON = (await dom.Native.fromNode(
+    document.window.document,
+  )) as Document.JSON;
 
   const page: Page.JSON = {
     device: Device.standard().toJSON(),
@@ -304,4 +308,16 @@ class TestDescription {
   public get filename(): string {
     return this._filename;
   }
+}
+
+/**
+ * W3C / Cloudflare return Captcha pages if hit more than once
+ * per second, so we had delays between the calls. This is not ideal
+ * since it really slows down the process, but it's the best we can
+ * do.
+ */
+async function wait(ms: number): Promise<void> {
+  return new Promise((resolve, _) => {
+    setTimeout(() => resolve(), ms);
+  });
 }
