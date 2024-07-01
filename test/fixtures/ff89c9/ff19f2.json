@@ -11,14 +11,14 @@
     },
     "response": {
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/44afe364fc9417fd5663599145f670552f507ab0.html",
-      "status": 200,
+      "status": 520,
       "headers": [
         {
           "name": "content-type",
-          "value": "text/html; charset=utf-8"
+          "value": "text/html; charset=UTF-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<ul>\n\t\t<div role=\"listitem\">List item 1</div>\n\t\t<div role=\"listitem\">List item 2</div>\n\t</ul>\n</body>\n</html>"
+      "body": ""
     },
     "document": {
       "type": "document",
@@ -30,21 +30,41 @@
           "systemId": null
         },
         {
+          "type": "comment",
+          "data": "[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]"
+        },
+        {
+          "type": "comment",
+          "data": "[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]"
+        },
+        {
+          "type": "comment",
+          "data": "[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]"
+        },
+        {
+          "type": "comment",
+          "data": "[if gt IE 8]><!"
+        },
+        {
           "type": "element",
           "children": [
+            {
+              "type": "comment",
+              "data": "<![endif]"
+            },
             {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\n\n"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 2"
+                      "data": "www.w3.org | 520: Web server is returning an unknown error"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -65,6 +85,228 @@
                 {
                   "type": "text",
                   "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "meta",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "charset",
+                      "value": "UTF-8"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "meta",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "http-equiv",
+                      "value": "Content-Type"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "content",
+                      "value": "text/html; charset=UTF-8"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "meta",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "http-equiv",
+                      "value": "X-UA-Compatible"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "content",
+                      "value": "IE=Edge"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "meta",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "name",
+                      "value": "robots"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "content",
+                      "value": "noindex, nofollow"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "meta",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "name",
+                      "value": "viewport"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "content",
+                      "value": "width=device-width,initial-scale=1"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "link",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "rel",
+                      "value": "stylesheet"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "cf_styles-css"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "href",
+                      "value": "/cdn-cgi/styles/main.css"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -91,21 +333,2115 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\t"
+                      "data": "\n    "
                     },
                     {
                       "type": "element",
                       "children": [
                         {
                           "type": "text",
-                          "data": "List item 1"
+                          "data": "\n        "
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "\n            "
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "\n              "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "Web server is returning an unknown error"
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "inline-block"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 160,
+                                    "y": 40,
+                                    "width": 952,
+                                    "height": 150
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\n              "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "Error code 520"
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "code-label"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 160,
+                                    "y": 220.5,
+                                    "width": 104.734375,
+                                    "height": 22
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\n            "
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "h1",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null,
+                              "box": {
+                                "type": "rectangle",
+                                "x": 160,
+                                "y": 40,
+                                "width": 952,
+                                "height": 227.5
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n            "
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "\n               Visit "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "cloudflare.com"
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "a",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "href",
+                                      "value": "https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=www.w3.org"
+                                    },
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "target",
+                                      "value": "_blank"
+                                    },
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "rel",
+                                      "value": "noopener noreferrer"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 199.1875,
+                                    "y": 267.5,
+                                    "width": 118.546875,
+                                    "height": 19
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": " for more information.\n            "
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "div",
+                              "attributes": [],
+                              "style": null,
+                              "shadow": null,
+                              "content": null,
+                              "box": {
+                                "type": "rectangle",
+                                "x": 160,
+                                "y": 267.5,
+                                "width": 960,
+                                "height": 19
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n            "
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "2024-07-01 05:30:54 UTC"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "div",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "mt-3"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null,
+                              "box": {
+                                "type": "rectangle",
+                                "x": 160,
+                                "y": 298.5,
+                                "width": 960,
+                                "height": 19
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n        "
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "header",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null,
+                          "box": {
+                            "type": "rectangle",
+                            "x": 160,
+                            "y": 0,
+                            "width": 960,
+                            "height": 317.5
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n        "
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "\n            "
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "\n                "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "\n                  \n"
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "\n    \n    "
+                                            },
+                                            {
+                                              "type": "element",
+                                              "children": [],
+                                              "namespace": "http://www.w3.org/1999/xhtml",
+                                              "prefix": null,
+                                              "name": "span",
+                                              "attributes": [
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "class",
+                                                  "value": "cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"
+                                                }
+                                              ],
+                                              "style": null,
+                                              "shadow": null,
+                                              "content": null,
+                                              "box": {
+                                                "type": "rectangle",
+                                                "x": 160,
+                                                "y": 409.5,
+                                                "width": 319.984375,
+                                                "height": 80
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "data": "\n    "
+                                            },
+                                            {
+                                              "type": "element",
+                                              "children": [],
+                                              "namespace": "http://www.w3.org/1999/xhtml",
+                                              "prefix": null,
+                                              "name": "span",
+                                              "attributes": [
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "class",
+                                                  "value": "cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"
+                                                }
+                                              ],
+                                              "style": null,
+                                              "shadow": null,
+                                              "content": null,
+                                              "box": {
+                                                "type": "rectangle",
+                                                "x": 295.984375,
+                                                "y": 457.5,
+                                                "width": 48,
+                                                "height": 48
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "data": "\n    \n  "
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "div",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "relative mb-10 md:m-0"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 160,
+                                            "y": 409.5,
+                                            "width": 319.984375,
+                                            "height": 80
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "You"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "span",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "md:block w-full truncate"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 306.203125,
+                                            "y": 529.5,
+                                            "width": 27.578125,
+                                            "height": 19
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "\n    \n    Browser\n    \n  "
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "h3",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 160,
+                                            "y": 560.5,
+                                            "width": 319.984375,
+                                            "height": 31.1875
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "Working"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "span",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "leading-1.3 text-2xl text-green-success"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 271.046875,
+                                            "y": 592.6875,
+                                            "width": 97.890625,
+                                            "height": 28
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "div",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "id",
+                                          "value": "cf-browser-status"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": " relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 160,
+                                        "y": 349.5,
+                                        "width": 319.984375,
+                                        "height": 333.375
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n\n"
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "\n    "
+                                            },
+                                            {
+                                              "type": "element",
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "data": "\n    "
+                                                },
+                                                {
+                                                  "type": "element",
+                                                  "children": [],
+                                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                                  "prefix": null,
+                                                  "name": "span",
+                                                  "attributes": [
+                                                    {
+                                                      "type": "attribute",
+                                                      "namespace": null,
+                                                      "prefix": null,
+                                                      "name": "class",
+                                                      "value": "cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"
+                                                    }
+                                                  ],
+                                                  "style": null,
+                                                  "shadow": null,
+                                                  "content": null,
+                                                  "box": {
+                                                    "type": "rectangle",
+                                                    "x": 479.984375,
+                                                    "y": 409.5,
+                                                    "width": 319.984375,
+                                                    "height": 80
+                                                  }
+                                                },
+                                                {
+                                                  "type": "text",
+                                                  "data": "\n    "
+                                                },
+                                                {
+                                                  "type": "element",
+                                                  "children": [],
+                                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                                  "prefix": null,
+                                                  "name": "span",
+                                                  "attributes": [
+                                                    {
+                                                      "type": "attribute",
+                                                      "namespace": null,
+                                                      "prefix": null,
+                                                      "name": "class",
+                                                      "value": "cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"
+                                                    }
+                                                  ],
+                                                  "style": null,
+                                                  "shadow": null,
+                                                  "content": null,
+                                                  "box": {
+                                                    "type": "rectangle",
+                                                    "x": 615.96875,
+                                                    "y": 457.5,
+                                                    "width": 48,
+                                                    "height": 48
+                                                  }
+                                                },
+                                                {
+                                                  "type": "text",
+                                                  "data": "\n    "
+                                                }
+                                              ],
+                                              "namespace": "http://www.w3.org/1999/xhtml",
+                                              "prefix": null,
+                                              "name": "a",
+                                              "attributes": [
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "href",
+                                                  "value": "https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=www.w3.org"
+                                                },
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "target",
+                                                  "value": "_blank"
+                                                },
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "rel",
+                                                  "value": "noopener noreferrer"
+                                                }
+                                              ],
+                                              "style": null,
+                                              "shadow": null,
+                                              "content": null,
+                                              "box": {
+                                                "type": "rectangle",
+                                                "x": 479.984375,
+                                                "y": 409.5,
+                                                "width": 319.984375,
+                                                "height": 80
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "data": "\n  "
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "div",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "relative mb-10 md:m-0"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 479.984375,
+                                            "y": 409.5,
+                                            "width": 319.984375,
+                                            "height": 80
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "San Jose"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "span",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "md:block w-full truncate"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 606.03125,
+                                            "y": 529.5,
+                                            "width": 67.875,
+                                            "height": 19
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "\n    "
+                                            },
+                                            {
+                                              "type": "element",
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "data": "\n    Cloudflare\n    "
+                                                }
+                                              ],
+                                              "namespace": "http://www.w3.org/1999/xhtml",
+                                              "prefix": null,
+                                              "name": "a",
+                                              "attributes": [
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "href",
+                                                  "value": "https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=www.w3.org"
+                                                },
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "target",
+                                                  "value": "_blank"
+                                                },
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "rel",
+                                                  "value": "noopener noreferrer"
+                                                }
+                                              ],
+                                              "style": null,
+                                              "shadow": null,
+                                              "content": null,
+                                              "box": {
+                                                "type": "rectangle",
+                                                "x": 578.734375,
+                                                "y": 561.5,
+                                                "width": 122.484375,
+                                                "height": 28
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "data": "\n  "
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "h3",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 479.984375,
+                                            "y": 560.5,
+                                            "width": 319.984375,
+                                            "height": 31.1875
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "Working"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "span",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "leading-1.3 text-2xl text-green-success"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 591.03125,
+                                            "y": 592.6875,
+                                            "width": 97.890625,
+                                            "height": 28
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "div",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "id",
+                                          "value": "cf-cloudflare-status"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": " relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 479.984375,
+                                        "y": 349.5,
+                                        "width": 319.984375,
+                                        "height": 333.375
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n\n"
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "\n    \n    "
+                                            },
+                                            {
+                                              "type": "element",
+                                              "children": [],
+                                              "namespace": "http://www.w3.org/1999/xhtml",
+                                              "prefix": null,
+                                              "name": "span",
+                                              "attributes": [
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "class",
+                                                  "value": "cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"
+                                                }
+                                              ],
+                                              "style": null,
+                                              "shadow": null,
+                                              "content": null,
+                                              "box": {
+                                                "type": "rectangle",
+                                                "x": 799.96875,
+                                                "y": 409.5,
+                                                "width": 319.984375,
+                                                "height": 80
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "data": "\n    "
+                                            },
+                                            {
+                                              "type": "element",
+                                              "children": [],
+                                              "namespace": "http://www.w3.org/1999/xhtml",
+                                              "prefix": null,
+                                              "name": "span",
+                                              "attributes": [
+                                                {
+                                                  "type": "attribute",
+                                                  "namespace": null,
+                                                  "prefix": null,
+                                                  "name": "class",
+                                                  "value": "cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"
+                                                }
+                                              ],
+                                              "style": null,
+                                              "shadow": null,
+                                              "content": null,
+                                              "box": {
+                                                "type": "rectangle",
+                                                "x": 935.953125,
+                                                "y": 457.5,
+                                                "width": 48,
+                                                "height": 48
+                                              }
+                                            },
+                                            {
+                                              "type": "text",
+                                              "data": "\n    \n  "
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "div",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "relative mb-10 md:m-0"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 799.96875,
+                                            "y": 409.5,
+                                            "width": 319.984375,
+                                            "height": 80
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "www.w3.org"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "span",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "md:block w-full truncate"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 911.21875,
+                                            "y": 529.5,
+                                            "width": 97.46875,
+                                            "height": 19
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "\n    \n    Host\n    \n  "
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "h3",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 799.96875,
+                                            "y": 560.5,
+                                            "width": 319.984375,
+                                            "height": 31.1875
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n  "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "Error"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "span",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "class",
+                                              "value": "leading-1.3 text-2xl text-red-error"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 930.703125,
+                                            "y": 592.6875,
+                                            "width": 58.5,
+                                            "height": 28
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "\n"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "div",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "id",
+                                          "value": "cf-host-status"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 799.96875,
+                                        "y": 349.5,
+                                        "width": 319.984375,
+                                        "height": 333.375
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n\n                "
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "div",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "clearfix md:px-8"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 160,
+                                    "y": 349.5,
+                                    "width": 960,
+                                    "height": 333.375
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\n            "
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "div",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "w-240 lg:w-full mx-auto"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null,
+                              "box": {
+                                "type": "rectangle",
+                                "x": 160,
+                                "y": 349.5,
+                                "width": 960,
+                                "height": 333.375
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n        "
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "div",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "my-8 bg-gradient-gray"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null,
+                          "box": {
+                            "type": "rectangle",
+                            "x": 0,
+                            "y": 349.5,
+                            "width": 1280,
+                            "height": 333.375
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\n        "
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "\n            "
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "\n                "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "\n                    "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "What happened?"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "h2",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "text-3xl font-normal leading-1.3 mb-4"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 160,
+                                        "y": 714.875,
+                                        "width": 456,
+                                        "height": 39
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n                    "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed."
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "p",
+                                      "attributes": [],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 160,
+                                        "y": 769.875,
+                                        "width": 456,
+                                        "height": 78
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n                "
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "div",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 160,
+                                    "y": 714.875,
+                                    "width": 480,
+                                    "height": 133
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\n                "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "\n                    "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "What can I do?"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "h2",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "text-3xl font-normal leading-1.3 mb-4"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 640,
+                                        "y": 714.875,
+                                        "width": 480,
+                                        "height": 39
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n                          "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "If you are a visitor of this website:"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "h3",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "text-15 font-semibold mb-2"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 640,
+                                        "y": 769.875,
+                                        "width": 480,
+                                        "height": 24.375
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n      "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "Please try again in a few minutes."
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "p",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "mb-6"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 640,
+                                        "y": 802.25,
+                                        "width": 480,
+                                        "height": 26
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n\n      "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "If you are the owner of this website:"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "h3",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "text-15 font-semibold mb-2"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 640,
+                                        "y": 852.25,
+                                        "width": 480,
+                                        "height": 24.375
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n      "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page)."
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "span",
+                                          "attributes": [],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 640,
+                                            "y": 887.625,
+                                            "width": 477.5625,
+                                            "height": 175
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": " "
+                                        },
+                                        {
+                                          "type": "element",
+                                          "children": [
+                                            {
+                                              "type": "text",
+                                              "data": "Additional troubleshooting resources"
+                                            }
+                                          ],
+                                          "namespace": "http://www.w3.org/1999/xhtml",
+                                          "prefix": null,
+                                          "name": "a",
+                                          "attributes": [
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "rel",
+                                              "value": "noopener noreferrer"
+                                            },
+                                            {
+                                              "type": "attribute",
+                                              "namespace": null,
+                                              "prefix": null,
+                                              "name": "href",
+                                              "value": "https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520"
+                                            }
+                                          ],
+                                          "style": null,
+                                          "shadow": null,
+                                          "content": null,
+                                          "box": {
+                                            "type": "rectangle",
+                                            "x": 696.390625,
+                                            "y": 1043.625,
+                                            "width": 293.984375,
+                                            "height": 19
+                                          }
+                                        },
+                                        {
+                                          "type": "text",
+                                          "data": "."
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "p",
+                                      "attributes": [],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 640,
+                                        "y": 884.625,
+                                        "width": 480,
+                                        "height": 182
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n                "
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "div",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "w-1/2 md:w-full float-left leading-relaxed"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 640,
+                                    "y": 714.875,
+                                    "width": 480,
+                                    "height": 351.75
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\n            "
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "div",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "clearfix"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null,
+                              "box": {
+                                "type": "rectangle",
+                                "x": 160,
+                                "y": 714.875,
+                                "width": 960,
+                                "height": 351.75
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n        "
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "div",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "w-240 lg:w-full mx-auto mb-8 lg:px-8"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null,
+                          "box": {
+                            "type": "rectangle",
+                            "x": 160,
+                            "y": 714.875,
+                            "width": 960,
+                            "height": 351.75
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\n        "
+                        },
+                        {
+                          "type": "element",
+                          "children": [
+                            {
+                              "type": "text",
+                              "data": "\n  "
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "\n    "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "Cloudflare Ray ID: "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "89c401baad709834"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "strong",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "font-semibold"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 419.0625,
+                                        "y": 1139.625,
+                                        "width": 143.375,
+                                        "height": 15
+                                      }
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "cf-footer-item sm:block sm:mb-1"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 297.6875,
+                                    "y": 1139.625,
+                                    "width": 264.75,
+                                    "height": 15
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\n    "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "•"
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "cf-footer-separator sm:hidden"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 566.578125,
+                                    "y": 1139.625,
+                                    "width": 7.671875,
+                                    "height": 15
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\n    "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "data": "\n      Your IP:\n      "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "Click to reveal"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "button",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "type",
+                                          "value": "button"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "id",
+                                          "value": "cf-footer-ip-reveal"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "cf-footer-ip-reveal-btn"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 630.46875,
+                                        "y": 1139.625,
+                                        "width": 92.625,
+                                        "height": 15
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n      "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "52.234.40.18"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "span",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "hidden"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "id",
+                                          "value": "cf-footer-ip"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 0,
+                                        "y": 0,
+                                        "width": 0,
+                                        "height": 0
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n      "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "•"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "span",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "class",
+                                          "value": "cf-footer-separator sm:hidden"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 727.234375,
+                                        "y": 1139.625,
+                                        "width": 7.671875,
+                                        "height": 15
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": "\n    "
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "id",
+                                      "value": "cf-footer-item-ip"
+                                    },
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "cf-footer-item sm:block sm:mb-1"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 578.390625,
+                                    "y": 1139.625,
+                                    "width": 160.65625,
+                                    "height": 15
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\n    "
+                                },
+                                {
+                                  "type": "element",
+                                  "children": [
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "Performance & security by"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "span",
+                                      "attributes": [],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 739.046875,
+                                        "y": 1139.625,
+                                        "width": 172.765625,
+                                        "height": 15
+                                      }
+                                    },
+                                    {
+                                      "type": "text",
+                                      "data": " "
+                                    },
+                                    {
+                                      "type": "element",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "data": "Cloudflare"
+                                        }
+                                      ],
+                                      "namespace": "http://www.w3.org/1999/xhtml",
+                                      "prefix": null,
+                                      "name": "a",
+                                      "attributes": [
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "rel",
+                                          "value": "noopener noreferrer"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "href",
+                                          "value": "https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=www.w3.org"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "id",
+                                          "value": "brand_link"
+                                        },
+                                        {
+                                          "type": "attribute",
+                                          "namespace": null,
+                                          "prefix": null,
+                                          "name": "target",
+                                          "value": "_blank"
+                                        }
+                                      ],
+                                      "style": null,
+                                      "shadow": null,
+                                      "content": null,
+                                      "box": {
+                                        "type": "rectangle",
+                                        "x": 915.953125,
+                                        "y": 1139.625,
+                                        "width": 66.359375,
+                                        "height": 15
+                                      }
+                                    }
+                                  ],
+                                  "namespace": "http://www.w3.org/1999/xhtml",
+                                  "prefix": null,
+                                  "name": "span",
+                                  "attributes": [
+                                    {
+                                      "type": "attribute",
+                                      "namespace": null,
+                                      "prefix": null,
+                                      "name": "class",
+                                      "value": "cf-footer-item sm:block sm:mb-1"
+                                    }
+                                  ],
+                                  "style": null,
+                                  "shadow": null,
+                                  "content": null,
+                                  "box": {
+                                    "type": "rectangle",
+                                    "x": 739.046875,
+                                    "y": 1139.625,
+                                    "width": 243.265625,
+                                    "height": 15
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "data": "\n    \n  "
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "p",
+                              "attributes": [
+                                {
+                                  "type": "attribute",
+                                  "namespace": null,
+                                  "prefix": null,
+                                  "name": "class",
+                                  "value": "text-13"
+                                }
+                              ],
+                              "style": null,
+                              "shadow": null,
+                              "content": null,
+                              "box": {
+                                "type": "rectangle",
+                                "x": 160,
+                                "y": 1139.625,
+                                "width": 960,
+                                "height": 15
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n  "
+                            },
+                            {
+                              "type": "element",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "data": "(function(){function d(){var b=a.getElementById(\"cf-footer-item-ip\"),c=a.getElementById(\"cf-footer-ip-reveal\");b&&\"classList\"in b&&(b.classList.remove(\"hidden\"),c.addEventListener(\"click\",function(){c.classList.add(\"hidden\");a.getElementById(\"cf-footer-ip\").classList.remove(\"hidden\")}))}var a=document;document.addEventListener&&a.addEventListener(\"DOMContentLoaded\",d)})();"
+                                }
+                              ],
+                              "namespace": "http://www.w3.org/1999/xhtml",
+                              "prefix": null,
+                              "name": "script",
+                              "attributes": [],
+                              "style": null,
+                              "shadow": null,
+                              "content": null,
+                              "box": {
+                                "type": "rectangle",
+                                "x": 0,
+                                "y": 0,
+                                "width": 0,
+                                "height": 0
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "data": "\n"
+                            }
+                          ],
+                          "namespace": "http://www.w3.org/1999/xhtml",
+                          "prefix": null,
+                          "name": "div",
+                          "attributes": [
+                            {
+                              "type": "attribute",
+                              "namespace": null,
+                              "prefix": null,
+                              "name": "class",
+                              "value": "cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300"
+                            }
+                          ],
+                          "style": null,
+                          "shadow": null,
+                          "content": null,
+                          "box": {
+                            "type": "rectangle",
+                            "x": 160,
+                            "y": 1098.625,
+                            "width": 960,
+                            "height": 96
+                          }
+                        },
+                        {
+                          "type": "comment",
+                          "data": " /.error-footer "
+                        },
+                        {
+                          "type": "text",
+                          "data": "\n\n\n    "
                         }
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
@@ -116,43 +2452,15 @@
                           "type": "attribute",
                           "namespace": null,
                           "prefix": null,
-                          "name": "role",
-                          "value": "listitem"
-                        }
-                      ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null,
-                      "box": {
-                        "type": "rectangle",
-                        "x": 48,
-                        "y": 16,
-                        "width": 1224,
-                        "height": 18
-                      }
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t\t"
-                    },
-                    {
-                      "type": "element",
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "List item 2"
-                        }
-                      ],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "div",
-                      "attributes": [
+                          "name": "id",
+                          "value": "cf-error-details"
+                        },
                         {
                           "type": "attribute",
                           "namespace": null,
                           "prefix": null,
-                          "name": "role",
-                          "value": "listitem"
+                          "name": "class",
+                          "value": "p-0"
                         }
                       ],
                       "style": null,
@@ -160,35 +2468,43 @@
                       "content": null,
                       "box": {
                         "type": "rectangle",
-                        "x": 48,
-                        "y": 34,
-                        "width": 1224,
-                        "height": 18
+                        "x": 0,
+                        "y": 0,
+                        "width": 1280,
+                        "height": 1194.625
                       }
                     },
                     {
                       "type": "text",
-                      "data": "\n\t"
+                      "data": "\n"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "ul",
-                  "attributes": [],
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "cf-wrapper"
+                    }
+                  ],
                   "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
-                    "x": 8,
-                    "y": 16,
-                    "width": 1264,
-                    "height": 36
+                    "x": 0,
+                    "y": 0,
+                    "width": 1280,
+                    "height": 1194.625
                   }
                 },
                 {
                   "type": "text",
-                  "data": "\n\n"
+                  "data": "\n\n\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -200,10 +2516,10 @@
               "content": null,
               "box": {
                 "type": "rectangle",
-                "x": 8,
-                "y": 16,
-                "width": 1264,
-                "height": 36
+                "x": 0,
+                "y": 0,
+                "width": 1280,
+                "height": 1194.625
               }
             }
           ],
@@ -215,8 +2531,15 @@
               "type": "attribute",
               "namespace": null,
               "prefix": null,
+              "name": "class",
+              "value": "no-js"
+            },
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
               "name": "lang",
-              "value": "en"
+              "value": "en-US"
             }
           ],
           "style": null,
@@ -227,17 +2550,1901 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 68
+            "height": 1194.625
           }
         }
       ],
-      "style": []
+      "style": [
+        {
+          "rules": [
+            {
+              "type": "style",
+              "selector": ".container",
+              "style": [
+                {
+                  "name": "width",
+                  "value": "100%",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".bg-white",
+              "style": [
+                {
+                  "name": "--bg-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "background-color",
+                  "value": "rgba(255,255,255,var(--bg-opacity))",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".bg-center",
+              "style": [
+                {
+                  "name": "background-position",
+                  "value": "50% center",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".bg-no-repeat",
+              "style": [
+                {
+                  "name": "background-repeat",
+                  "value": "no-repeat",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".border-gray-300",
+              "style": [
+                {
+                  "name": "--border-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "border-color",
+                  "value": "rgba(235,235,235,var(--border-opacity))",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".rounded",
+              "style": [
+                {
+                  "name": "border-radius",
+                  "value": "0.25rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".border-solid",
+              "style": [
+                {
+                  "name": "border-style",
+                  "value": "solid",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".border-0",
+              "style": [
+                {
+                  "name": "border-width",
+                  "value": "0px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".border",
+              "style": [
+                {
+                  "name": "border-width",
+                  "value": "1px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".border-t",
+              "style": [
+                {
+                  "name": "border-top-width",
+                  "value": "1px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".cursor-pointer",
+              "style": [
+                {
+                  "name": "cursor",
+                  "value": "pointer",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".block",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "block",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".inline-block",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "inline-block",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".table",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "table",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".hidden",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "none",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".float-left",
+              "style": [
+                {
+                  "name": "float",
+                  "value": "left",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".clearfix::after",
+              "style": [
+                {
+                  "name": "content",
+                  "value": "\"\"",
+                  "important": false
+                },
+                {
+                  "name": "display",
+                  "value": "table",
+                  "important": false
+                },
+                {
+                  "name": "clear",
+                  "value": "both",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".font-mono",
+              "style": [
+                {
+                  "name": "font-family",
+                  "value": "monaco, courier, monospace",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".font-light",
+              "style": [
+                {
+                  "name": "font-weight",
+                  "value": "300",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".font-normal",
+              "style": [
+                {
+                  "name": "font-weight",
+                  "value": "400",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".font-semibold",
+              "style": [
+                {
+                  "name": "font-weight",
+                  "value": "600",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".h-12",
+              "style": [
+                {
+                  "name": "height",
+                  "value": "3rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".h-20",
+              "style": [
+                {
+                  "name": "height",
+                  "value": "5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-13",
+              "style": [
+                {
+                  "name": "font-size",
+                  "value": "13px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-15",
+              "style": [
+                {
+                  "name": "font-size",
+                  "value": "15px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-60",
+              "style": [
+                {
+                  "name": "font-size",
+                  "value": "60px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-2xl",
+              "style": [
+                {
+                  "name": "font-size",
+                  "value": "1.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-3xl",
+              "style": [
+                {
+                  "name": "font-size",
+                  "value": "1.875rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".leading-tight",
+              "style": [
+                {
+                  "name": "line-height",
+                  "value": "1.25",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".leading-normal",
+              "style": [
+                {
+                  "name": "line-height",
+                  "value": "1.5",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".leading-relaxed",
+              "style": [
+                {
+                  "name": "line-height",
+                  "value": "1.625",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".leading-1\\.3",
+              "style": [
+                {
+                  "name": "line-height",
+                  "value": "1.3",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".my-8",
+              "style": [
+                {
+                  "name": "margin-top",
+                  "value": "2rem",
+                  "important": false
+                },
+                {
+                  "name": "margin-bottom",
+                  "value": "2rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mx-auto",
+              "style": [
+                {
+                  "name": "margin-left",
+                  "value": "auto",
+                  "important": false
+                },
+                {
+                  "name": "margin-right",
+                  "value": "auto",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mr-2",
+              "style": [
+                {
+                  "name": "margin-right",
+                  "value": "0.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mb-2",
+              "style": [
+                {
+                  "name": "margin-bottom",
+                  "value": "0.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mt-3",
+              "style": [
+                {
+                  "name": "margin-top",
+                  "value": "0.75rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mb-4",
+              "style": [
+                {
+                  "name": "margin-bottom",
+                  "value": "1rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".ml-4",
+              "style": [
+                {
+                  "name": "margin-left",
+                  "value": "1rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mt-6",
+              "style": [
+                {
+                  "name": "margin-top",
+                  "value": "1.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mb-6",
+              "style": [
+                {
+                  "name": "margin-bottom",
+                  "value": "1.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mb-8",
+              "style": [
+                {
+                  "name": "margin-bottom",
+                  "value": "2rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mb-10",
+              "style": [
+                {
+                  "name": "margin-bottom",
+                  "value": "2.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".ml-10",
+              "style": [
+                {
+                  "name": "margin-left",
+                  "value": "2.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".mb-15",
+              "style": [
+                {
+                  "name": "margin-bottom",
+                  "value": "3.75rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".-ml-6",
+              "style": [
+                {
+                  "name": "margin-left",
+                  "value": "-1.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".overflow-hidden",
+              "style": [
+                {
+                  "name": "overflow",
+                  "value": "hidden",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".p-0",
+              "style": [
+                {
+                  "name": "padding",
+                  "value": "0px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".py-2",
+              "style": [
+                {
+                  "name": "padding-top",
+                  "value": "0.5rem",
+                  "important": false
+                },
+                {
+                  "name": "padding-bottom",
+                  "value": "0.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".px-4",
+              "style": [
+                {
+                  "name": "padding-left",
+                  "value": "1rem",
+                  "important": false
+                },
+                {
+                  "name": "padding-right",
+                  "value": "1rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".py-8",
+              "style": [
+                {
+                  "name": "padding-top",
+                  "value": "2rem",
+                  "important": false
+                },
+                {
+                  "name": "padding-bottom",
+                  "value": "2rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".py-10",
+              "style": [
+                {
+                  "name": "padding-top",
+                  "value": "2.5rem",
+                  "important": false
+                },
+                {
+                  "name": "padding-bottom",
+                  "value": "2.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".py-15",
+              "style": [
+                {
+                  "name": "padding-top",
+                  "value": "3.75rem",
+                  "important": false
+                },
+                {
+                  "name": "padding-bottom",
+                  "value": "3.75rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".pr-6",
+              "style": [
+                {
+                  "name": "padding-right",
+                  "value": "1.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".pt-10",
+              "style": [
+                {
+                  "name": "padding-top",
+                  "value": "2.5rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".absolute",
+              "style": [
+                {
+                  "name": "position",
+                  "value": "absolute",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".relative",
+              "style": [
+                {
+                  "name": "position",
+                  "value": "relative",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".left-1\\/2",
+              "style": [
+                {
+                  "name": "left",
+                  "value": "50%",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".-bottom-4",
+              "style": [
+                {
+                  "name": "bottom",
+                  "value": "-1rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".resize",
+              "style": [
+                {
+                  "name": "resize",
+                  "value": "both",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-center",
+              "style": [
+                {
+                  "name": "text-align",
+                  "value": "center",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-black-dark",
+              "style": [
+                {
+                  "name": "--text-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "rgba(64,64,64,var(--text-opacity))",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-gray-600",
+              "style": [
+                {
+                  "name": "--text-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "rgba(153,153,153,var(--text-opacity))",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-red-error",
+              "style": [
+                {
+                  "name": "--text-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "rgba(189,36,38,var(--text-opacity))",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".text-green-success",
+              "style": [
+                {
+                  "name": "--text-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "rgba(155,202,62,var(--text-opacity))",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".antialiased",
+              "style": [
+                {
+                  "name": "-webkit-font-smoothing",
+                  "value": "antialiased",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".truncate",
+              "style": [
+                {
+                  "name": "overflow",
+                  "value": "hidden",
+                  "important": false
+                },
+                {
+                  "name": "text-overflow",
+                  "value": "ellipsis",
+                  "important": false
+                },
+                {
+                  "name": "white-space",
+                  "value": "nowrap",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".w-12",
+              "style": [
+                {
+                  "name": "width",
+                  "value": "3rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".w-240",
+              "style": [
+                {
+                  "name": "width",
+                  "value": "60rem",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".w-1\\/2",
+              "style": [
+                {
+                  "name": "width",
+                  "value": "50%",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".w-1\\/3",
+              "style": [
+                {
+                  "name": "width",
+                  "value": "33.3333%",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".w-full",
+              "style": [
+                {
+                  "name": "width",
+                  "value": "100%",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".transition",
+              "style": [
+                {
+                  "name": "transition-property",
+                  "value": "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-transform",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "body, html",
+              "style": [
+                {
+                  "name": "--text-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "rgba(64,64,64,var(--text-opacity))",
+                  "important": false
+                },
+                {
+                  "name": "-webkit-font-smoothing",
+                  "value": "antialiased",
+                  "important": false
+                },
+                {
+                  "name": "font-family",
+                  "value": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+                  "important": false
+                },
+                {
+                  "name": "font-size",
+                  "value": "16px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "*, body, html",
+              "style": [
+                {
+                  "name": "margin",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "padding",
+                  "value": "0px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "*",
+              "style": [
+                {
+                  "name": "box-sizing",
+                  "value": "border-box",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "a",
+              "style": [
+                {
+                  "name": "--text-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "rgba(47,123,191,var(--text-opacity))",
+                  "important": false
+                },
+                {
+                  "name": "text-decoration",
+                  "value": "none",
+                  "important": false
+                },
+                {
+                  "name": "transition-property",
+                  "value": "all",
+                  "important": false
+                },
+                {
+                  "name": "transition-duration",
+                  "value": "0.15s",
+                  "important": false
+                },
+                {
+                  "name": "transition-timing-function",
+                  "value": "cubic-bezier(0, 0, 0.2, 1)",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "a:hover",
+              "style": [
+                {
+                  "name": "--text-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "rgba(246,139,31,var(--text-opacity))",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "img",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "block",
+                  "important": false
+                },
+                {
+                  "name": "width",
+                  "value": "100%",
+                  "important": false
+                },
+                {
+                  "name": "height",
+                  "value": "auto",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "#what-happened-section p",
+              "style": [
+                {
+                  "name": "font-size",
+                  "value": "15px",
+                  "important": false
+                },
+                {
+                  "name": "line-height",
+                  "value": "1.5",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "strong",
+              "style": [
+                {
+                  "name": "font-weight",
+                  "value": "600",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".bg-gradient-gray",
+              "style": [
+                {
+                  "name": "background-image",
+                  "value": "-webkit-linear-gradient(top, rgb(222, 222, 222), rgb(235, 235, 235) 3%, rgb(235, 235, 235) 97%, rgb(222, 222, 222))",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".cf-error-source::after",
+              "style": [
+                {
+                  "name": "position",
+                  "value": "absolute",
+                  "important": false
+                },
+                {
+                  "name": "--bg-opacity",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "background-color",
+                  "value": "rgba(255,255,255,var(--bg-opacity))",
+                  "important": false
+                },
+                {
+                  "name": "width",
+                  "value": "2.5rem",
+                  "important": false
+                },
+                {
+                  "name": "height",
+                  "value": "2.5rem",
+                  "important": false
+                },
+                {
+                  "name": "--transform-translate-x",
+                  "value": "0",
+                  "important": false
+                },
+                {
+                  "name": "--transform-translate-y",
+                  "value": "0",
+                  "important": false
+                },
+                {
+                  "name": "--transform-skew-x",
+                  "value": "0",
+                  "important": false
+                },
+                {
+                  "name": "--transform-skew-y",
+                  "value": "0",
+                  "important": false
+                },
+                {
+                  "name": "--transform-scale-x",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "--transform-scale-y",
+                  "value": "1",
+                  "important": false
+                },
+                {
+                  "name": "transform",
+                  "value": "translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))",
+                  "important": false
+                },
+                {
+                  "name": "--transform-rotate",
+                  "value": "45deg",
+                  "important": false
+                },
+                {
+                  "name": "content",
+                  "value": "\"\"",
+                  "important": false
+                },
+                {
+                  "name": "bottom",
+                  "value": "-1.75rem",
+                  "important": false
+                },
+                {
+                  "name": "left",
+                  "value": "50%",
+                  "important": false
+                },
+                {
+                  "name": "margin-left",
+                  "value": "-1.25rem",
+                  "important": false
+                },
+                {
+                  "name": "box-shadow",
+                  "value": "rgb(222, 222, 222) 0px 0px 4px 4px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "media",
+              "rules": [
+                {
+                  "type": "style",
+                  "selector": ".cf-error-source::after",
+                  "style": [
+                    {
+                      "name": "display",
+                      "value": "none",
+                      "important": false
+                    }
+                  ]
+                }
+              ],
+              "condition": "screen and (max-width: 720px)"
+            },
+            {
+              "type": "style",
+              "selector": ".cf-icon-browser",
+              "style": [
+                {
+                  "name": "background-image",
+                  "value": "url(\"/cdn-cgi/images/cf-icon-browser.png\")",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".cf-icon-cloud",
+              "style": [
+                {
+                  "name": "background-image",
+                  "value": "url(\"/cdn-cgi/images/cf-icon-cloud.png\")",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".cf-icon-server",
+              "style": [
+                {
+                  "name": "background-image",
+                  "value": "url(\"/cdn-cgi/images/cf-icon-server.png\")",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".cf-icon-ok",
+              "style": [
+                {
+                  "name": "background-image",
+                  "value": "url(\"/cdn-cgi/images/cf-icon-ok.png\")",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".cf-icon-error",
+              "style": [
+                {
+                  "name": "background-image",
+                  "value": "url(\"/cdn-cgi/images/cf-icon-error.png\")",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "#cf-wrapper .feedback-hidden",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "none",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "#cf-wrapper .feedback-success",
+              "style": [
+                {
+                  "name": "min-height",
+                  "value": "33px",
+                  "important": false
+                },
+                {
+                  "name": "line-height",
+                  "value": "33px",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "#cf-wrapper .cf-button",
+              "style": [
+                {
+                  "name": "color",
+                  "value": "rgb(0, 81, 195)",
+                  "important": false
+                },
+                {
+                  "name": "font-size",
+                  "value": "13px",
+                  "important": false
+                },
+                {
+                  "name": "border-color",
+                  "value": "rgb(0, 69, 166)",
+                  "important": false
+                },
+                {
+                  "name": "transition-timing-function",
+                  "value": "ease",
+                  "important": false
+                },
+                {
+                  "name": "transition-duration",
+                  "value": "0.2s",
+                  "important": false
+                },
+                {
+                  "name": "transition-property",
+                  "value": "background-color, border-color, color",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": "#cf-wrapper .cf-button:hover",
+              "style": [
+                {
+                  "name": "color",
+                  "value": "rgb(255, 255, 255)",
+                  "important": false
+                },
+                {
+                  "name": "background-color",
+                  "value": "rgb(0, 54, 129)",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".cf-error-footer .hidden",
+              "style": [
+                {
+                  "name": "display",
+                  "value": "none",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".cf-error-footer .cf-footer-ip-reveal-btn",
+              "style": [
+                {
+                  "name": "appearance",
+                  "value": "button",
+                  "important": false
+                },
+                {
+                  "name": "text-decoration",
+                  "value": "none",
+                  "important": false
+                },
+                {
+                  "name": "background",
+                  "value": "none",
+                  "important": false
+                },
+                {
+                  "name": "border",
+                  "value": "none",
+                  "important": false
+                },
+                {
+                  "name": "padding",
+                  "value": "0px",
+                  "important": false
+                },
+                {
+                  "name": "font",
+                  "value": "inherit",
+                  "important": false
+                },
+                {
+                  "name": "cursor",
+                  "value": "pointer",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "rgb(0, 81, 195)",
+                  "important": false
+                },
+                {
+                  "name": "transition",
+                  "value": "color 0.15s ease 0s",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".cf-error-footer .cf-footer-ip-reveal-btn:hover",
+              "style": [
+                {
+                  "name": "color",
+                  "value": "rgb(238, 115, 10)",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "style",
+              "selector": ".code-label",
+              "style": [
+                {
+                  "name": "background-color",
+                  "value": "rgb(217, 217, 217)",
+                  "important": false
+                },
+                {
+                  "name": "color",
+                  "value": "rgb(49, 49, 49)",
+                  "important": false
+                },
+                {
+                  "name": "font-weight",
+                  "value": "500",
+                  "important": false
+                },
+                {
+                  "name": "border-radius",
+                  "value": "1.25rem",
+                  "important": false
+                },
+                {
+                  "name": "font-size",
+                  "value": "0.75rem",
+                  "important": false
+                },
+                {
+                  "name": "line-height",
+                  "value": "4.5rem",
+                  "important": false
+                },
+                {
+                  "name": "padding",
+                  "value": "0.25rem 0.5rem",
+                  "important": false
+                },
+                {
+                  "name": "height",
+                  "value": "4.5rem",
+                  "important": false
+                },
+                {
+                  "name": "white-space",
+                  "value": "nowrap",
+                  "important": false
+                },
+                {
+                  "name": "vertical-align",
+                  "value": "middle",
+                  "important": false
+                }
+              ]
+            },
+            {
+              "type": "media",
+              "rules": [
+                {
+                  "type": "style",
+                  "selector": ".sm\\:block",
+                  "style": [
+                    {
+                      "name": "display",
+                      "value": "block",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".sm\\:hidden",
+                  "style": [
+                    {
+                      "name": "display",
+                      "value": "none",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".sm\\:mb-1",
+                  "style": [
+                    {
+                      "name": "margin-bottom",
+                      "value": "0.25rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".sm\\:mb-2",
+                  "style": [
+                    {
+                      "name": "margin-bottom",
+                      "value": "0.5rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".sm\\:py-4",
+                  "style": [
+                    {
+                      "name": "padding-top",
+                      "value": "1rem",
+                      "important": false
+                    },
+                    {
+                      "name": "padding-bottom",
+                      "value": "1rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".sm\\:px-8",
+                  "style": [
+                    {
+                      "name": "padding-left",
+                      "value": "2rem",
+                      "important": false
+                    },
+                    {
+                      "name": "padding-right",
+                      "value": "2rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".sm\\:text-left",
+                  "style": [
+                    {
+                      "name": "text-align",
+                      "value": "left",
+                      "important": false
+                    }
+                  ]
+                }
+              ],
+              "condition": "(max-width: 639px)"
+            },
+            {
+              "type": "media",
+              "rules": [
+                {
+                  "type": "style",
+                  "selector": ".md\\:border-gray-400",
+                  "style": [
+                    {
+                      "name": "--border-opacity",
+                      "value": "1",
+                      "important": false
+                    },
+                    {
+                      "name": "border-color",
+                      "value": "rgba(222,222,222,var(--border-opacity))",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:border-solid",
+                  "style": [
+                    {
+                      "name": "border-style",
+                      "value": "solid",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:border-0",
+                  "style": [
+                    {
+                      "name": "border-width",
+                      "value": "0px",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:border-b",
+                  "style": [
+                    {
+                      "name": "border-bottom-width",
+                      "value": "1px",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:block",
+                  "style": [
+                    {
+                      "name": "display",
+                      "value": "block",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:inline-block",
+                  "style": [
+                    {
+                      "name": "display",
+                      "value": "inline-block",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:hidden",
+                  "style": [
+                    {
+                      "name": "display",
+                      "value": "none",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:float-none",
+                  "style": [
+                    {
+                      "name": "float",
+                      "value": "none",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:text-3xl",
+                  "style": [
+                    {
+                      "name": "font-size",
+                      "value": "1.875rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:m-0",
+                  "style": [
+                    {
+                      "name": "margin",
+                      "value": "0px",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:mt-0",
+                  "style": [
+                    {
+                      "name": "margin-top",
+                      "value": "0px",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:mb-2",
+                  "style": [
+                    {
+                      "name": "margin-bottom",
+                      "value": "0.5rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:p-0",
+                  "style": [
+                    {
+                      "name": "padding",
+                      "value": "0px",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:py-8",
+                  "style": [
+                    {
+                      "name": "padding-top",
+                      "value": "2rem",
+                      "important": false
+                    },
+                    {
+                      "name": "padding-bottom",
+                      "value": "2rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:px-8",
+                  "style": [
+                    {
+                      "name": "padding-left",
+                      "value": "2rem",
+                      "important": false
+                    },
+                    {
+                      "name": "padding-right",
+                      "value": "2rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:pr-0",
+                  "style": [
+                    {
+                      "name": "padding-right",
+                      "value": "0px",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:pb-10",
+                  "style": [
+                    {
+                      "name": "padding-bottom",
+                      "value": "2.5rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:top-0",
+                  "style": [
+                    {
+                      "name": "top",
+                      "value": "0px",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:right-0",
+                  "style": [
+                    {
+                      "name": "right",
+                      "value": "0px",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:left-auto",
+                  "style": [
+                    {
+                      "name": "left",
+                      "value": "auto",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:text-left",
+                  "style": [
+                    {
+                      "name": "text-align",
+                      "value": "left",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".md\\:w-full",
+                  "style": [
+                    {
+                      "name": "width",
+                      "value": "100%",
+                      "important": false
+                    }
+                  ]
+                }
+              ],
+              "condition": "(max-width: 720px)"
+            },
+            {
+              "type": "media",
+              "rules": [
+                {
+                  "type": "style",
+                  "selector": ".lg\\:text-sm",
+                  "style": [
+                    {
+                      "name": "font-size",
+                      "value": "0.875rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".lg\\:text-2xl",
+                  "style": [
+                    {
+                      "name": "font-size",
+                      "value": "1.5rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".lg\\:text-4xl",
+                  "style": [
+                    {
+                      "name": "font-size",
+                      "value": "2.25rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".lg\\:leading-relaxed",
+                  "style": [
+                    {
+                      "name": "line-height",
+                      "value": "1.625",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".lg\\:px-8",
+                  "style": [
+                    {
+                      "name": "padding-left",
+                      "value": "2rem",
+                      "important": false
+                    },
+                    {
+                      "name": "padding-right",
+                      "value": "2rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".lg\\:pt-6",
+                  "style": [
+                    {
+                      "name": "padding-top",
+                      "value": "1.5rem",
+                      "important": false
+                    }
+                  ]
+                },
+                {
+                  "type": "style",
+                  "selector": ".lg\\:w-full",
+                  "style": [
+                    {
+                      "name": "width",
+                      "value": "100%",
+                      "important": false
+                    }
+                  ]
+                }
+              ],
+              "condition": "(max-width: 1023px)"
+            }
+          ],
+          "disabled": false,
+          "condition": null
+        }
+      ]
     },
     "device": {
       "type": "screen",
       "viewport": {
         "width": 1280,
-        "height": 720,
+        "height": 1195,
         "orientation": "landscape"
       },
       "display": {
