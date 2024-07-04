@@ -1,20 +1,26 @@
 import { Hex, RGB } from "@siteimprove/alfa-css";
 import { Element, Node } from "@siteimprove/alfa-dom";
-import * as path from "path";
+import url from "node:url";
+import path from "node:path";
 
-import ava, { TestFn } from "ava";
+import ava from "ava";
+import type { TestFn } from "ava";
 
 import { Hashable } from "@siteimprove/alfa-hash";
 import { None, Option } from "@siteimprove/alfa-option";
 import { experimentalRules, Question, Rules } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
-import { Context } from "./helpers/context";
-import { fixture as factory } from "./helpers/fixture";
-import { report } from "./helpers/report";
+import type { Context } from "./helpers/context.js";
+import { fixture as factory } from "./helpers/fixture.js";
+import { report } from "./helpers/report.js";
 
 const fixture = factory("fixtures", true);
 const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
+
+// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 function hex(col: string): RGB {
   const color = Hex.of(parseInt(`${col}ff`, 16));
@@ -1109,16 +1115,16 @@ test("fd3a94", (t) =>
   fixture(t, Rules.get("R81"), {
     answers: {
       "10c991": { "reference-equivalent-resources": true },
-      '1a4d92': { 'reference-equivalent-resources': false },
-      '18cbb0': { 'reference-equivalent-resources': false },
-      '4ba181': { 'reference-equivalent-resources': false },
+      "1a4d92": { "reference-equivalent-resources": false },
+      "18cbb0": { "reference-equivalent-resources": false },
+      "4ba181": { "reference-equivalent-resources": false },
       "5bdc24": { "reference-equivalent-resources": false },
       "70f41b": { "reference-equivalent-resources": false },
       "75e59a": { "reference-equivalent-resources": true },
       "80824c": { "reference-equivalent-resources": true },
       "8d6fa9": { "reference-equivalent-resources": false },
-      "aa0dce": { "reference-equivalent-resources": false },
-      "c02459": { "reference-equivalent-resources": false },
+      aa0dce: { "reference-equivalent-resources": false },
+      c02459: { "reference-equivalent-resources": false },
       c16600: { "reference-equivalent-resources": true },
       ce860d: { "reference-equivalent-resources": true },
       e0ec0a: { "reference-equivalent-resources": true },

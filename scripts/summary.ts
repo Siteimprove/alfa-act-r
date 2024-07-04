@@ -1,10 +1,10 @@
 import { getActImplementationReport } from "act-tools";
-import { ActProcedureSet } from "act-tools/dist/map-implementation/types";
+import type { ActProcedureSet } from "act-tools/dist/map-implementation/types.js";
 
 import * as fs from "fs";
 import * as path from "path";
 
-import { ignoredRules } from "../common/ignored-rules";
+import { ignoredRules } from "../common/ignored-rules.js";
 
 const pkg = JSON.parse(
   fs.readFileSync(path.join(".", "package.json"), "utf-8"),

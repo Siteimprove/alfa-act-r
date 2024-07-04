@@ -6,8 +6,9 @@ import { Hashable } from "@siteimprove/alfa-hash";
 import { None, Option } from "@siteimprove/alfa-option";
 import { Group, Question } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
-import { ExecutionContext } from "ava";
-import { Context } from "./context";
+import type { ExecutionContext } from "ava";
+
+import type { Context } from "./context.js";
 
 function wrapper<ANSWER>(answer: ANSWER): Future<Option<ANSWER>> {
   return Future.now(Option.of(answer));

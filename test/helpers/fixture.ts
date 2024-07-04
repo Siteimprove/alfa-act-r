@@ -11,14 +11,14 @@ import { Option } from "@siteimprove/alfa-option";
 import { Question } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
-import { ExecutionContext } from "ava";
-import * as fs from "fs";
-import * as path from "path";
+import type { ExecutionContext } from "ava";
+import fs from "node:fs";
+import path from "node:path";
 
-import { Fixture } from "../../common/fixture";
+import type { Fixture } from "../../common/fixture.js";
 
-import { Context, Test } from "./context";
-import { oracle, oracleWithPaths } from "./oracle";
+import { type Context, Test } from "./context.js";
+import { oracle, oracleWithPaths } from "./oracle.js";
 
 const strict = process.argv.slice(2).includes("--strict");
 
