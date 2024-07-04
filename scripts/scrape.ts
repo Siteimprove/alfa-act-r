@@ -1,8 +1,8 @@
 import axios from "axios";
 import { createHash } from "crypto";
-import * as fs from "fs";
-import * as jsdom from "jsdom";
-import * as path from "path";
+import fs from "node:fs";
+import jsdom from "jsdom";
+import path from "node:path";
 
 import { Array } from "@siteimprove/alfa-array";
 import { Document } from "@siteimprove/alfa-dom";
@@ -14,8 +14,8 @@ import { Page } from "@siteimprove/alfa-web";
 
 import * as dom from "@siteimprove/alfa-dom/native";
 
-import { ignoredRules } from "../common/ignored-rules";
-import { filterHeaders } from "./helpers/headers";
+import { ignoredRules } from "../common/ignored-rules.js";
+import { filterHeaders } from "./helpers/headers.js";
 
 let source =
   "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json";

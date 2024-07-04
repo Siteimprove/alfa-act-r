@@ -1,18 +1,22 @@
-import * as path from "path";
+import url from "node:url";
+import path from "node:path";
 
 import ava, { TestFn } from "ava";
 
 import { Hashable } from "@siteimprove/alfa-hash";
-import { Option } from "@siteimprove/alfa-option";
-import { experimentalRules, Question, Rules } from "@siteimprove/alfa-rules";
+import { Question, Rules } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
-import { Context } from "./helpers/context";
-import { fixture as factory } from "./helpers/fixture";
-import { report } from "./helpers/report";
+import { Context } from "./helpers/context.js";
+import { fixture as factory } from "./helpers/fixture.js";
+import { report } from "./helpers/report.js";
 
 const fixture = factory("fixtures");
 const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
+
+// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };
