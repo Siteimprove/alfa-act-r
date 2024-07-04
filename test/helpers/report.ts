@@ -1,13 +1,13 @@
 import { Question, Rule } from "@siteimprove/alfa-act";
 import { Hashable } from "@siteimprove/alfa-hash";
-import { Document } from "@siteimprove/alfa-json-ld";
+import type { Document } from "@siteimprove/alfa-json-ld";
 import { Set } from "@siteimprove/alfa-set";
 import { Page } from "@siteimprove/alfa-web";
 
 import fs from "node:fs";
 import jsonld from "jsonld";
 
-import { Context, Test } from "./context.js";
+import { type Context, Test } from "./context.js";
 
 const AlfaVersion = JSON.parse(
   fs.readFileSync(process.env.npm_package_json ?? "", "utf8"),

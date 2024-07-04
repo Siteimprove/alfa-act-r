@@ -2,13 +2,14 @@ import { Hashable } from "@siteimprove/alfa-hash";
 
 import path from "node:path";
 
-import ava, { TestFn } from "ava";
+import ava from "ava";
+import type { TestFn } from "ava";
 
 import { Question, Rules } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 import url from "node:url";
 
-import { Context } from "./helpers/context.js";
+import type { Context } from "./helpers/context.js";
 import { fixture as factory } from "./helpers/fixture.js";
 import { report } from "./helpers/report.js";
 

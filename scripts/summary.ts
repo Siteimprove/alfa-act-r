@@ -1,5 +1,5 @@
 import { getActImplementationReport } from "act-tools";
-import { ActProcedureSet } from "act-tools/dist/map-implementation/types.js";
+import type { ActProcedureSet } from "act-tools/dist/map-implementation/types.js";
 
 import * as fs from "fs";
 import * as path from "path";
