@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "5bdc24",
+  "id": "c35667",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9c4840c9caed7d6f2d8f585d6fe36ea2218998b0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/1379913f0770843f89d37ceaad3a63e36f07924e.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9c4840c9caed7d6f2d8f585d6fe36ea2218998b0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/1379913f0770843f89d37ceaad3a63e36f07924e.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<div>\n\t\t<span style=\"text-align:center;\">Contact us</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/chat.png\" alt=\"Chat\" style=\"width:50%;\" />\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/phone.png\" alt=\"Phone\" style=\"width:50%;\" />\n\t\t</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=3\"\n\t\t\t\t>Contact Us</a\n\t\t\t>\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=4\"\n\t\t\t\t>Contact Us</a\n\t\t\t>\n\t\t</span>\n\t</div>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<p>\n\t\t<span style=\"text-align:center;\">Contact us</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/chat.png\" alt=\"Chat\" style=\"max-width:50px;\" />\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/phone.png\" alt=\"Phone\" style=\"max-width:50px;\" />\n\t\t</span>\n\t\t<span style=\"display:flex; justify-content:space-around;\">\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html\">Contact Us</a>\n\t\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html\">Contact Us</a>\n\t\t</span>\n\t</p>\n</html>"
     },
     "document": {
       "type": "document",
@@ -92,7 +92,7 @@
                       "box": {
                         "type": "rectangle",
                         "x": 8,
-                        "y": 8,
+                        "y": 16,
                         "width": 68,
                         "height": 17
                       }
@@ -134,13 +134,13 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "style",
-                              "value": "width:50%;"
+                              "value": "max-width:50px;"
                             }
                           ],
                           "style": [
                             {
-                              "name": "width",
-                              "value": "50%",
+                              "name": "max-width",
+                              "value": "50px",
                               "important": false
                             }
                           ],
@@ -148,10 +148,10 @@
                           "content": null,
                           "box": {
                             "type": "rectangle",
-                            "x": 8,
-                            "y": 26,
-                            "width": 632,
-                            "height": 638.015625
+                            "x": 299,
+                            "y": 34,
+                            "width": 50,
+                            "height": 50.46875
                           }
                         },
                         {
@@ -184,13 +184,13 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "style",
-                              "value": "width:50%;"
+                              "value": "max-width:50px;"
                             }
                           ],
                           "style": [
                             {
-                              "name": "width",
-                              "value": "50%",
+                              "name": "max-width",
+                              "value": "50px",
                               "important": false
                             }
                           ],
@@ -198,10 +198,10 @@
                           "content": null,
                           "box": {
                             "type": "rectangle",
-                            "x": 640,
-                            "y": 26,
-                            "width": 632,
-                            "height": 638.015625
+                            "x": 931,
+                            "y": 34,
+                            "width": 50,
+                            "height": 50.46875
                           }
                         },
                         {
@@ -238,9 +238,9 @@
                       "box": {
                         "type": "rectangle",
                         "x": 8,
-                        "y": 26,
+                        "y": 34,
                         "width": 1264,
-                        "height": 638.015625
+                        "height": 50.46875
                       }
                     },
                     {
@@ -271,7 +271,7 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "href",
-                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=3"
+                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"
                             }
                           ],
                           "style": null,
@@ -280,7 +280,7 @@
                           "box": {
                             "type": "rectangle",
                             "x": 288.21875,
-                            "y": 664.015625,
+                            "y": 84.46875,
                             "width": 71.546875,
                             "height": 18
                           }
@@ -306,7 +306,7 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "href",
-                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=4"
+                              "value": "/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html"
                             }
                           ],
                           "style": null,
@@ -315,7 +315,7 @@
                           "box": {
                             "type": "rectangle",
                             "x": 920.21875,
-                            "y": 664.015625,
+                            "y": 84.46875,
                             "width": 71.546875,
                             "height": 18
                           }
@@ -354,7 +354,7 @@
                       "box": {
                         "type": "rectangle",
                         "x": 8,
-                        "y": 664.015625,
+                        "y": 84.46875,
                         "width": 1264,
                         "height": 18
                       }
@@ -366,7 +366,7 @@
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "div",
+                  "name": "p",
                   "attributes": [],
                   "style": null,
                   "shadow": null,
@@ -374,9 +374,9 @@
                   "box": {
                     "type": "rectangle",
                     "x": 8,
-                    "y": 8,
+                    "y": 16,
                     "width": 1264,
-                    "height": 674.015625
+                    "height": 86.46875
                   }
                 },
                 {
@@ -394,9 +394,9 @@
               "box": {
                 "type": "rectangle",
                 "x": 8,
-                "y": 8,
+                "y": 16,
                 "width": 1264,
-                "height": 674.015625
+                "height": 86.46875
               }
             }
           ],
@@ -420,7 +420,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 690.015625
+            "height": 118.46875
           }
         }
       ],
@@ -441,6 +441,10 @@
         "enabled": true
       },
       "preferences": [
+        {
+          "name": "prefers-reduced-transparency",
+          "value": "no-preference"
+        },
         {
           "name": "prefers-reduced-motion",
           "value": "no-preference"

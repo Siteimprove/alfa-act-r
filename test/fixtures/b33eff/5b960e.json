@@ -202,12 +202,12 @@
                 },
                 {
                   "name": "width",
-                  "value": "calc(min(100vw, 100vh) - 2rem)",
+                  "value": "calc(-2rem + min(100vw, 100vh))",
                   "important": false
                 },
                 {
                   "name": "height",
-                  "value": "calc(min(100vw, 100vh) - 2rem)",
+                  "value": "calc(-2rem + min(100vw, 100vh))",
                   "important": false
                 },
                 {
@@ -238,6 +238,10 @@
         "enabled": true
       },
       "preferences": [
+        {
+          "name": "prefers-reduced-transparency",
+          "value": "no-preference"
+        },
         {
           "name": "prefers-reduced-motion",
           "value": "no-preference"

@@ -2715,7 +2715,7 @@
               "style": [
                 {
                   "name": "transition",
-                  "value": "opacity 0.5s ease 0s",
+                  "value": "opacity 0.5s",
                   "important": true
                 }
               ]
@@ -3184,7 +3184,7 @@
               "style": [
                 {
                   "name": "transition",
-                  "value": "opacity 0.5s ease 0s",
+                  "value": "opacity 0.5s",
                   "important": true
                 }
               ]
@@ -5078,7 +5078,7 @@
                 },
                 {
                   "name": "transition",
-                  "value": "opacity 0.5s ease 0s",
+                  "value": "opacity 0.5s",
                   "important": true
                 }
               ]
@@ -7862,6 +7862,10 @@
         "enabled": true
       },
       "preferences": [
+        {
+          "name": "prefers-reduced-transparency",
+          "value": "no-preference"
+        },
         {
           "name": "prefers-reduced-motion",
           "value": "no-preference"

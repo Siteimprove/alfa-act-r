@@ -115,14 +115,14 @@
                   ],
                   "style": [
                     {
-                      "name": "max-width",
-                      "value": "200px",
-                      "important": false
-                    },
-                    {
                       "name": "line-height",
                       "value": "normal",
                       "important": true
+                    },
+                    {
+                      "name": "max-width",
+                      "value": "200px",
+                      "important": false
                     }
                   ],
                   "shadow": null,
@@ -197,6 +197,10 @@
         "enabled": true
       },
       "preferences": [
+        {
+          "name": "prefers-reduced-transparency",
+          "value": "no-preference"
+        },
         {
           "name": "prefers-reduced-motion",
           "value": "no-preference"
