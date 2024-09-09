@@ -11,8 +11,8 @@ Last generated: Mon Sep 09 2024
 | 2ee8b8 | Visible label is part of accessible name | sia-r14 | null | 15 | 12 | 0 | 0 | 3 |
 | 6cfa84 | Element with aria-hidden has no content in sequential focus navigation | sia-r17 | null | 15 | 14 | 0 | 0 | 1 |
 | 09o5cg | Text has enhanced contrast | sia-r66 | null | 35 | 32 | 0 | 0 | 3 |
-| afw4f7 | Text has minimum contrast | sia-r69 | null | 34 | 30 | 0 | 1 | 3 |
-| fd3a94 | Links with identical accessible names and same context serve equivalent purpose | sia-r81 | null | 24 | 16 | 0 | 5 | 3 |
+| afw4f7 | Text has minimum contrast | sia-r69 | null | 34 | 31 | 0 | 0 | 3 |
+| fd3a94 | Links with identical accessible names and same context serve equivalent purpose | sia-r81 | null | 24 | 21 | 0 | 0 | 3 |
 | 59br37 | Zoomed text node is not clipped with CSS overflow | sia-r83 | null | 14 | 8 | 0 | 0 | 6 |
 | 0ssw9k | Scrollable content can be reached with sequential focus navigation | sia-r84 | null | 14 | 12 | 0 | 0 | 2 |
 | 78fd32 | Important line height in style attributes is wide enough | sia-r93 | null | 24 | 23 | 0 | 0 | 1 |

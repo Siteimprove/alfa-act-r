@@ -330,7 +330,7 @@ test("afw4f7", (t) =>
       // Alfa does not yet disregard impossible foreground/background combinations
       "92452d",
     ],
-    manual: ["7004f1", "9939c7", "e5c024"],
+    manual: ["4c0de8", "7004f1", "9939c7", "e5c024"],
   }));
 
 // R70 is Siteimprove only
@@ -360,20 +360,20 @@ test("fd3a94", (t) =>
   fixture(t, Rules.get("R81"), {
     manual: [
       "10c991",
-      "18cbb0",
       "1a4d92",
-      "4ba181",
-      "5bdc24",
+      "2f044c",
+      "55d8b9",
       "70f41b",
       "75e59a",
       "80824c",
+      "857415",
       "8d6fa9",
-      "aa0dce",
-      "c02459",
       "c16600",
+      "c35667",
       "ce860d",
       "e0ec0a",
       "e9979a",
+      "fd8682",
     ],
     lax: [
       // Alfa does not consider `<div>` in the link context
