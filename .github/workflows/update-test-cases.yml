@@ -16,7 +16,7 @@ jobs:
       # Set up repository and code
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.A11Y_PUBLIC_GITHUB_TOKEN }}
+          token: ${{ secrets.BUILDUSER_GITHUB_WRITE }}
       - uses: actions/setup-node@v4
         with:
           node-version: 20
