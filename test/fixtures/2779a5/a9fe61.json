@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "4c0de8",
+  "id": "a9fe61",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b1e912183f72caaea7523d00b6762d220e3616f0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/9c5eeb535181f3709e13b548a04b9d0054532cdd.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b1e912183f72caaea7523d00b6762d220e3616f0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/9c5eeb535181f3709e13b548a04b9d0054532cdd.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 11</title>\n</head>\n<body>\n\t<p style=\"background: #fff; color: #666; text-shadow: #aaa 2px 2px 4px, #aaa -2px 2px 4px, #aaa 2px -2px 4px, #aaa -2px -2px 4px;\">\n\t    Some text in a human language\n\t  </p>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<template id=\"shadow-element\">\n\t\t\t<title>This is the page title</title>\n\t\t</template>\n\t\t<script>\n\t\t\tconst host = document.querySelector('body')\n\t\t\tconst shadow = host.attachShadow({ mode: 'open' })\n\t\t\tconst template = document.getElementById('shadow-element')\n\n\t\t\tshadow.appendChild(template.content)\n\t\t</script>\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,39 +34,7 @@
           "children": [
             {
               "type": "element",
-              "children": [
-                {
-                  "type": "text",
-                  "data": "\n\t"
-                },
-                {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "Failed Example 11"
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "title",
-                  "attributes": [],
-                  "style": null,
-                  "shadow": null,
-                  "content": null,
-                  "box": {
-                    "type": "rectangle",
-                    "x": 0,
-                    "y": 0,
-                    "width": 0,
-                    "height": 0
-                  }
-                },
-                {
-                  "type": "text",
-                  "data": "\n"
-                }
-              ],
+              "children": [],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
@@ -83,66 +51,68 @@
               }
             },
             {
-              "type": "text",
-              "data": "\n"
-            },
-            {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t\t"
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "template",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "shadow-element"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t\t"
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t    Some text in a human language\n\t  "
+                      "data": "\n\t\t\tconst host = document.querySelector('body')\n\t\t\tconst shadow = host.attachShadow({ mode: 'open' })\n\t\t\tconst template = document.getElementById('shadow-element')\n\n\t\t\tshadow.appendChild(template.content)\n\t\t"
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "p",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "style",
-                      "value": "background: #fff; color: #666; text-shadow: #aaa 2px 2px 4px, #aaa -2px 2px 4px, #aaa 2px -2px 4px, #aaa -2px -2px 4px;"
-                    }
-                  ],
-                  "style": [
-                    {
-                      "name": "background",
-                      "value": "rgb(255, 255, 255)",
-                      "important": false
-                    },
-                    {
-                      "name": "color",
-                      "value": "rgb(102, 102, 102)",
-                      "important": false
-                    },
-                    {
-                      "name": "text-shadow",
-                      "value": "rgb(170, 170, 170) 2px 2px 4px, rgb(170, 170, 170) -2px 2px 4px, rgb(170, 170, 170) 2px -2px 4px, rgb(170, 170, 170) -2px -2px 4px",
-                      "important": false
-                    }
-                  ],
+                  "name": "script",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
-                    "x": 8,
-                    "y": 16,
-                    "width": 1264,
-                    "height": 18
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
                   }
                 },
                 {
                   "type": "text",
-                  "data": "\n\n"
+                  "data": "\n\t\n"
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -150,29 +120,58 @@
               "name": "body",
               "attributes": [],
               "style": null,
-              "shadow": null,
+              "shadow": {
+                "type": "shadow",
+                "children": [
+                  {
+                    "type": "text",
+                    "data": "\n\t\t\t"
+                  },
+                  {
+                    "type": "element",
+                    "children": [
+                      {
+                        "type": "text",
+                        "data": "This is the page title"
+                      }
+                    ],
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "prefix": null,
+                    "name": "title",
+                    "attributes": [],
+                    "style": null,
+                    "shadow": null,
+                    "content": null,
+                    "box": {
+                      "type": "rectangle",
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "data": "\n\t\t"
+                  }
+                ],
+                "mode": "open",
+                "style": []
+              },
               "content": null,
               "box": {
                 "type": "rectangle",
                 "x": 8,
-                "y": 16,
+                "y": 8,
                 "width": 1264,
-                "height": 18
+                "height": 0
               }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",
           "prefix": null,
           "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
+          "attributes": [],
           "style": null,
           "shadow": null,
           "content": null,
@@ -181,7 +180,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 50
+            "height": 8
           }
         }
       ],
