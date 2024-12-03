@@ -1,8 +1,10 @@
 {
-  "reviewers": ["team:alfa-owners"],
+  "reviewers": [
+    "team:alfa-owners"
+  ],
   "dependencyDashboard": true,
   "extends": [
-    "config:base",
+    "config:recommended",
     "github>siteimprove/alfa//config/alfa-renovate"
   ]
 }
