@@ -3264,6 +3264,71 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/dbc6a8459d78e618aab31e7051b4ce69b59c7f2f.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/dbc6a8459d78e618aab31e7051b4ce69b59c7f2f.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<p lang=\"en\">\n\t\tThe Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test rules.\n\t\tThese test rules can be used for developing automated testing tools and manual testing methodologies. It provides a\n\t\tcommon format that allows any party involved in accessibility testing to document and share their testing procedures\n\t\tin a robust and understandable manner. This enables transparency and harmonization of testing methods, including\n\t\tmethods implemented by accessibility test tools.\n\t</p>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/dbc6a8459d78e618aab31e7051b4ce69b59c7f2f.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/dbc6a8459d78e618aab31e7051b4ce69b59c7f2f.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -6618,6 +6683,80 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r96"
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"fr\">\n\t<head>\n\t\t<title>Paul put dire comment on tape</title>\n\t</head>\n\t<body>\n\t\t<p>Paul put dire comment on tape</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/80e6225b051ac34c23c7c0ede7d28d426d1be084.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
       }
     },
     {
@@ -10016,6 +10155,80 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r96"
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Gelukkig</title>\n\t</head>\n\t<body>\n\t\t<p>The Dutch word \"gelukkig\" has no equivalent in English.</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/6616b9ffd712e7789c50b01da8420fd665786677.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
       }
     },
     {
@@ -13434,6 +13647,71 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r96"
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/0f73e7179e17f050380f0ea350d2551611820fd5.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/0f73e7179e17f050380f0ea350d2551611820fd5.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"eng\">\n\t<body>\n\t\t<p lang=\"en\">I love ACT rules!</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/0f73e7179e17f050380f0ea350d2551611820fd5.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/0f73e7179e17f050380f0ea350d2551611820fd5.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
       }
     },
     {
@@ -16856,6 +17134,71 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<svg xmlns=\"http://www.w3.org/2000/svg\" lang=\"fr\"></svg>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "image/svg+xml"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -20165,6 +20508,80 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"da\">\n\t<head>\n\t\t<title>ACT Rules Format 1.0 - Abstract</title>\n\t</head>\n\t<body>\n\t\t<p>\n\t\t\tThe Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test\n\t\t\trules. These test rules can be used for developing automated testing tools and manual testing methodologies. It\n\t\t\tprovides a common format that allows any party involved in accessibility testing to document and share their\n\t\t\ttesting procedures in a robust and understandable manner. This enables transparency and harmonization of testing\n\t\t\tmethods, including methods implemented by accessibility test tools.\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b1a2ce0c3435765e96d31a3262f1ed8c1d92f817.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -23398,6 +23815,80 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/96785fb73282803fa4ca791ffdc0c3bc46b90702.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/96785fb73282803fa4ca791ffdc0c3bc46b90702.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>ACT Rules Format 1.0 - Abstract</title>\n\t</head>\n\t<body>\n\t\t<p>\n\t\t\tThe Accessibility Conformance Testing (ACT) Rules Format 1.0 defines a format for writing accessibility test\n\t\t\trules. These test rules can be used for developing automated testing tools and manual testing methodologies. It\n\t\t\tprovides a common format that allows any party involved in accessibility testing to document and share their\n\t\t\ttesting procedures in a robust and understandable manner. This enables transparency and harmonization of testing\n\t\t\tmethods, including methods implemented by accessibility test tools.\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/96785fb73282803fa4ca791ffdc0c3bc46b90702.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/96785fb73282803fa4ca791ffdc0c3bc46b90702.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -26447,6 +26938,71 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/941efb7368e46b27b937d34b07fc4d41da01b002.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/941efb7368e46b27b937d34b07fc4d41da01b002.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html></html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/941efb7368e46b27b937d34b07fc4d41da01b002.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/941efb7368e46b27b937d34b07fc4d41da01b002.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -29479,6 +30035,80 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Paris</title>\n\t</head>\n\t<body>\n\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" aria-labelledby=\"caption\" />\n\t\t<p lang=\"en\" id=\"caption\" hidden>\n\t\t\tFireworks over Paris!\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/864ccfb9bdb2c7f797602c5e4f25d1a0ad2aad7c.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -32302,6 +32932,80 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Fireworks over Paris</title>\n\t</head>\n\t<body>\n\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t<p lang=\"nl\">\n\t\t\tGelukkig nieuwjaar!\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/c4eaf50df4fa37f931374c74ac369a018b780ec6.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -34910,6 +35614,80 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Met de kippen op stok</title>\n\t</head>\n\t<body>\n\t\t<blockquote>\n\t\t\t<p>\"Hij ging met de kippen op stok\"</p>\n\t\t</blockquote>\n\t\t<p lang=\"en\">\n\t\t\tThis Dutch phrase literally translates into \"He went to roost with the chickens\", but it means that he went to bed\n\t\t\tearly.\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/61b97f487132c7aca3dd9787e9ff1454903d45fb.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/174322a2ade5e022c611bdb8389419ce299e3267.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -37349,6 +38127,80 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/cd7898c9fcd7d06565cd55393310c2600ffc070f.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/cd7898c9fcd7d06565cd55393310c2600ffc070f.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"EN\">\n\t<head>\n\t\t<title>Gelukkig</title>\n\t</head>\n\t<body>\n\t\t<p>The Dutch word \"gelukkig\" has no equivalent in English.</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/cd7898c9fcd7d06565cd55393310c2600ffc070f.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/cd7898c9fcd7d06565cd55393310c2600ffc070f.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/f76f484c92eec764dbd1ee3e5ee3421f230a56d7.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -39716,6 +40568,80 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/5f654ecf0b7a0af4d0ba120a5cd1db2761ffa79c.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/5f654ecf0b7a0af4d0ba120a5cd1db2761ffa79c.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"nl\">\n\t<head>\n\t\t<title>Met de kippen op stok</title>\n\t</head>\n\t<body>\n\t\t<blockquote>\n\t\t\t<p>\"Hij ging met de kippen op stok\"</p>\n\t\t</blockquote>\n\t\t<p lang=\"en\">\n\t\t\tThis Dutch phrase literally translates into \"He went to roost with the chickens\", but it means that he went to bed\n\t\t\tearly.\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/5f654ecf0b7a0af4d0ba120a5cd1db2761ffa79c.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/5f654ecf0b7a0af4d0ba120a5cd1db2761ffa79c.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/fef9a3ad8b2f2a6beeaf44ef7dafce08e743ea67.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -41807,6 +42733,71 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"i-lux\">\n\t<body>\n\t\t<p lang=\"lb\">Lëtzebuerg ass e Land an Europa.</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/b0348c1e6fced2df1ebd93caef4d383f6c7a0461.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -43893,6 +44884,80 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r93"
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/a67210a4d3e4db840309518c1ec557459b709206.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/a67210a4d3e4db840309518c1ec557459b709206.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Fireworks over Paris</title>\n\t</head>\n\t<body>\n\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t<p lang=\"nl\">\n\t\t\tGelukkig nieuwjaar!\n\t\t</p>\n\t</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/a67210a4d3e4db840309518c1ec557459b709206.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:cantTell",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/a67210a4d3e4db840309518c1ec557459b709206.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r109"
       }
     },
     {
@@ -54301,6 +55366,33 @@
           "TestRequirement"
         ]
       }
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r109",
+      "@type": [
+        "TestCriterion",
+        "TestCase"
+      ],
+      "isPartOf": [
+        {
+          "@id": "WCAG2:language-of-page",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Language of Page"
+        },
+        {
+          "@id": "https://www.w3.org/WAI/WCAG22/Techniques/html/H57",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+          "title": "Using the language attribute on the HTML element"
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r92",

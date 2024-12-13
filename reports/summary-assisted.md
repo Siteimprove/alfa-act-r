@@ -18,7 +18,7 @@ Last generated: Fri Dec 13 2024
 | 78fd32 | Important line height in style attributes is wide enough | sia-r93 | null | 24 | 23 | 0 | 0 | 1 |
 | akn7bn | Iframe with interactive elements is not excluded from tab-order | sia-r95 | null | 9 | 6 | 0 | 0 | 3 |
 
-## Rules without implementation (6)
+## Rules without implementation (5)
 
 | Id | Name | Alfa | Consistency |
 | --- | --- | --- | --- |
@@ -27,7 +27,6 @@ Last generated: Fri Dec 13 2024
 | b40fd1 | Document has a landmark with non-repeated content |  | null | 
 | ye5d6e | Document has an instrument to move focus to non-repeated content |  | null | 
 | 047fe0 | Document has heading for non-repeated content |  | null | 
-| 2t702h | Summary element has non-empty accessible name |  | null | 
 
 ## Rules with a partial implementation (3)
 
@@ -37,7 +36,7 @@ Last generated: Fri Dec 13 2024
 | ffd0e9 | Heading has non-empty accessible name | sia-r64 | partial | 15 | 15 | 0 | 0 | 0 |
 | bc4a75 | ARIA required owned elements | sia-r68 | partial | 17 | 15 | 0 | 0 | 2 |
 
-## Rules with a complete implementation (52)
+## Rules with a complete implementation (53)
 
 | Id | Name | Alfa | Consistency | Total | Covered | untested | cantTell | incorrect |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -46,6 +45,7 @@ Last generated: Fri Dec 13 2024
 | ucwvc8 | HTML page language subtag matches default language | sia-r109 | complete | 15 | 15 | 0 | 0 | 0 |
 | c487ae | Link has non-empty accessible name | sia-r11 | complete | 28 | 28 | 0 | 0 | 0 |
 | 674b10 | Role attribute has valid value | sia-r110 | complete | 10 | 10 | 0 | 0 | 0 |
+| 2t702h | Summary element has non-empty accessible name | sia-r116 | complete | 12 | 12 | 0 | 0 | 0 |
 | 97a4e1 | Button has non-empty accessible name | sia-r12 | complete | 17 | 17 | 0 | 0 | 0 |
 | cae760 | Iframe element has non-empty accessible name | sia-r13 | complete | 11 | 11 | 0 | 0 | 0 |
 | 4b1c6c | Iframe elements with identical accessible names have equivalent purpose | sia-r15 | complete | 23 | 23 | 0 | 0 | 0 |

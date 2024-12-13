@@ -509,8 +509,22 @@ test("bisz58", (t) => fixture(t, Rules.get("R96")));
 
 // R108 is SI only
 
-// R109 always has questions in expectation, review flow not currently handled
-// test.skip("ucwvc8", (t) => fixture(t, Rules.get("R109")));
+test("ucwvc8", (t) =>
+  fixture(t, experimentalRules.R109, {
+    manual: [
+      "0dc883",
+      "185b49",
+      "58e65a",
+      "722fd3",
+      "cf6190",
+      "d7c89f",
+      "dcad97",
+      "e32447",
+      "eb42cf",
+      "f522a6",
+      "0dc883",
+    ],
+  }));
 
 test("674b10", (t) => fixture(t, Rules.get("R110")));
 

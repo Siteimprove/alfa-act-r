@@ -1340,7 +1340,7 @@ test("bisz58", (t) => fixture(t, Rules.get("R96")));
 // R108 is SI only
 
 test("ucwvc8", (t) =>
-  fixture(t, Option.of(experimentalRules.R109), {
+  fixture(t, experimentalRules.R109, {
     answers: {
       "0dc883": { "document-language": "fr" },
       "185b49": { "document-language": "en" },
