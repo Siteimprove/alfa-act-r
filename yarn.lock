@@ -891,22 +891,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@siteimprove/alfa-puppeteer@npm:^0.76.0":
-  version: 0.76.0
-  resolution: "@siteimprove/alfa-puppeteer@npm:0.76.0"
+"@siteimprove/alfa-puppeteer@npm:^0.76.1":
+  version: 0.76.1
+  resolution: "@siteimprove/alfa-puppeteer@npm:0.76.1"
   dependencies:
     "@siteimprove/alfa-device": "npm:^0.96.0"
     "@siteimprove/alfa-dom": "npm:^0.96.0"
     "@siteimprove/alfa-http": "npm:^0.96.0"
+    "@siteimprove/alfa-url": "npm:^0.96.0"
     "@siteimprove/alfa-web": "npm:^0.96.0"
     puppeteer: "npm:^23.0.0"
   peerDependencies:
     "@siteimprove/alfa-device": ^0.96.0
     "@siteimprove/alfa-dom": ^0.96.0
     "@siteimprove/alfa-http": ^0.96.0
+    "@siteimprove/alfa-url": ^0.96.0
     "@siteimprove/alfa-web": ^0.96.0
     puppeteer: ^23.0.0
-  checksum: 10c0/e4a8f9b1900d12c8dc54e5b2acc8e9c1297b57386731cbe8f5d5a362cef2578be42d10e5d6f007ac0b0915afe822ad34e00d28122f1bc3e20b3585e2e1bd6ea3
+  checksum: 10c0/db5583ef3e3c53a0aaebb0f5ba68297533312e6c1964edfff1445a1549240001cd8e693b3aefd1542eef14c0df4d691b3391d26922d3f77ae67388e83819583f
   languageName: node
   linkType: hard
 
@@ -1033,9 +1035,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@siteimprove/alfa-scraper@npm:^0.76.0":
-  version: 0.76.0
-  resolution: "@siteimprove/alfa-scraper@npm:0.76.0"
+"@siteimprove/alfa-scraper@npm:^0.76.1":
+  version: 0.76.1
+  resolution: "@siteimprove/alfa-scraper@npm:0.76.1"
   dependencies:
     "@siteimprove/alfa-array": "npm:^0.96.0"
     "@siteimprove/alfa-device": "npm:^0.96.0"
@@ -1047,7 +1049,7 @@ __metadata:
     "@siteimprove/alfa-mapper": "npm:^0.96.0"
     "@siteimprove/alfa-option": "npm:^0.96.0"
     "@siteimprove/alfa-promise": "npm:^0.96.0"
-    "@siteimprove/alfa-puppeteer": "npm:^0.76.0"
+    "@siteimprove/alfa-puppeteer": "npm:^0.76.1"
     "@siteimprove/alfa-result": "npm:^0.96.0"
     "@siteimprove/alfa-time": "npm:^0.96.0"
     "@siteimprove/alfa-url": "npm:^0.96.0"
@@ -1068,7 +1070,7 @@ __metadata:
     "@siteimprove/alfa-time": ^0.96.0
     "@siteimprove/alfa-url": ^0.96.0
     "@siteimprove/alfa-web": ^0.96.0
-  checksum: 10c0/eef051d984b52518e0cf4c0f96e3b5c770e82882fecfd4115344e79b1d3237af7ccf6599801dca5dd7cd105002f132a9a9519cdae6c0ec54b17a93c31cd170aa
+  checksum: 10c0/419c09c21e261ad6f05c425a364393d7cf988fbb0769916b4588a1943a39414946f2c0d2bd2202fca257e347c3b996e8d1fd6cd8a90d16d6ebbd78d733b640a4
   languageName: node
   linkType: hard
 
@@ -4612,7 +4614,7 @@ __metadata:
     "@siteimprove/alfa-map": "npm:^0.96.0"
     "@siteimprove/alfa-option": "npm:^0.96.0"
     "@siteimprove/alfa-rules": "npm:^0.96.0"
-    "@siteimprove/alfa-scraper": "npm:^0.76.0"
+    "@siteimprove/alfa-scraper": "npm:^0.76.1"
     "@siteimprove/alfa-set": "npm:^0.96.0"
     "@siteimprove/alfa-web": "npm:^0.96.0"
     "@types/jsdom": "npm:^21.0.0"
