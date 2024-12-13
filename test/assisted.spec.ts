@@ -1370,7 +1370,6 @@ test.skip("gi8qkf", (t) => fixture(t, Rules.get("R111")));
 // Not yet merged in ACT rules
 test.skip("5awcwe", (t) => fixture(t, Rules.get("R113")));
 
-// R114 ist not fetched yet
 test("c4a8a4", (t) =>
   fixture(t, experimentalRules.R114, {
     answers: {
@@ -1383,7 +1382,20 @@ test("c4a8a4", (t) =>
     },
   }));
 
-// R115 ist not fetched yet
-test.skip("b49b2e", (t) => fixture(t, experimentalRules.R115));
+test("b49b2e", (t) =>
+  fixture(t, experimentalRules.R115, {
+    answers: {
+      "15c774": { "is-heading-descriptive": false },
+      "2953e2": { "is-heading-descriptive": true },
+      "36c0f7": { "is-heading-descriptive": true },
+      "4f2e4c": { "is-heading-descriptive": false },
+      "797a7b": { "is-heading-descriptive": false },
+      "7a0738": { "is-heading-descriptive": true },
+      "7bb445": { "is-heading-descriptive": true },
+      d39623: { "is-heading-descriptive": true },
+      ecc4ce: { "is-heading-descriptive": true },
+      fef97a: { "is-heading-descriptive": false },
+    },
+  }));
 
 test("2t702h", (t) => fixture(t, Rules.get("R116")));

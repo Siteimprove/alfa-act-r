@@ -47,10 +47,12 @@ Last generated: Fri Dec 13 2024
 | ee13b5 | Video element visual-only content has transcript |  | null | 
 | fd26cf | Video element visual-only content is media alternative for text |  | null | 
 
-## Rules with a partial implementation (6)
+## Rules with a partial implementation (8)
 
 | Id | Name | Alfa | Consistency | Total | Covered | untested | cantTell | incorrect |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| c4a8a4 | HTML page title is descriptive | sia-r114 | partial | 7 | 1 | 0 | 6 | 0 |
+| b49b2e | Heading is descriptive | sia-r114 | partial | 14 | 4 | 0 | 10 | 0 |
 | 4b1c6c | Iframe elements with identical accessible names have equivalent purpose | sia-r15 | partial | 23 | 14 | 0 | 9 | 0 |
 | b20e66 | Links with identical accessible names have equivalent purpose | sia-r41 | partial | 21 | 8 | 0 | 13 | 0 |
 | d0f69e | Table header cell has assigned cells | sia-r46 | partial | 16 | 15 | 0 | 0 | 1 |
@@ -94,7 +96,7 @@ Last generated: Fri Dec 13 2024
 | m6b1q3 | Menuitem has non-empty accessible name | sia-r94 | complete | 8 | 8 | 0 | 0 | 0 |
 | bisz58 | Meta element has no refresh delay (no exception) | sia-r96 | complete | 13 | 13 | 0 | 0 | 0 |
 
-## Ignored rules (no implementation intended) (17)
+## Ignored rules (no implementation intended) (15)
 
 | Id | Name | Alfa | Consistency |
 | --- | --- | --- | --- |
@@ -105,10 +107,8 @@ Last generated: Fri Dec 13 2024
 | ebe86a | Focusable element has no keyboard trap via non-standard navigation |  | null | 
 | a1b64e | Focusable element has no keyboard trap via standard navigation |  | null | 
 | cc0f0a | Form field label is descriptive |  | null | 
-| b49b2e | Heading is descriptive |  | null | 
 | off6ek | HTML element language subtag matches language |  | null | 
 | 0va7u6 | HTML images contain no text |  | null | 
-| c4a8a4 | HTML page title is descriptive |  | null | 
 | qt1vmo | Image accessible name is descriptive |  | null | 
 | e88epe | Image not in the accessibility tree is decorative |  | null | 
 | 5effbb | Link in context is descriptive |  | null | 

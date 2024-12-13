@@ -28,15 +28,16 @@ Last generated: Fri Dec 13 2024
 | ye5d6e | Document has an instrument to move focus to non-repeated content |  | null | 
 | 047fe0 | Document has heading for non-repeated content |  | null | 
 
-## Rules with a partial implementation (3)
+## Rules with a partial implementation (4)
 
 | Id | Name | Alfa | Consistency | Total | Covered | untested | cantTell | incorrect |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| b49b2e | Heading is descriptive | sia-r114 | partial | 14 | 14 | 0 | 0 | 0 |
 | d0f69e | Table header cell has assigned cells | sia-r46 | partial | 16 | 15 | 0 | 0 | 1 |
 | ffd0e9 | Heading has non-empty accessible name | sia-r64 | partial | 15 | 15 | 0 | 0 | 0 |
 | bc4a75 | ARIA required owned elements | sia-r68 | partial | 17 | 15 | 0 | 0 | 2 |
 
-## Rules with a complete implementation (53)
+## Rules with a complete implementation (54)
 
 | Id | Name | Alfa | Consistency | Total | Covered | untested | cantTell | incorrect |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -45,6 +46,7 @@ Last generated: Fri Dec 13 2024
 | ucwvc8 | HTML page language subtag matches default language | sia-r109 | complete | 15 | 15 | 0 | 0 | 0 |
 | c487ae | Link has non-empty accessible name | sia-r11 | complete | 28 | 28 | 0 | 0 | 0 |
 | 674b10 | Role attribute has valid value | sia-r110 | complete | 10 | 10 | 0 | 0 | 0 |
+| c4a8a4 | HTML page title is descriptive | sia-r114 | complete | 7 | 7 | 0 | 0 | 0 |
 | 2t702h | Summary element has non-empty accessible name | sia-r116 | complete | 12 | 12 | 0 | 0 | 0 |
 | 97a4e1 | Button has non-empty accessible name | sia-r12 | complete | 17 | 17 | 0 | 0 | 0 |
 | cae760 | Iframe element has non-empty accessible name | sia-r13 | complete | 11 | 11 | 0 | 0 | 0 |
@@ -94,7 +96,7 @@ Last generated: Fri Dec 13 2024
 | m6b1q3 | Menuitem has non-empty accessible name | sia-r94 | complete | 8 | 8 | 0 | 0 | 0 |
 | bisz58 | Meta element has no refresh delay (no exception) | sia-r96 | complete | 13 | 13 | 0 | 0 | 0 |
 
-## Ignored rules (no implementation intended) (17)
+## Ignored rules (no implementation intended) (15)
 
 | Id | Name | Alfa | Consistency |
 | --- | --- | --- | --- |
@@ -105,10 +107,8 @@ Last generated: Fri Dec 13 2024
 | ebe86a | Focusable element has no keyboard trap via non-standard navigation |  | null | 
 | a1b64e | Focusable element has no keyboard trap via standard navigation |  | null | 
 | cc0f0a | Form field label is descriptive |  | null | 
-| b49b2e | Heading is descriptive |  | null | 
 | off6ek | HTML element language subtag matches language |  | null | 
 | 0va7u6 | HTML images contain no text |  | null | 
-| c4a8a4 | HTML page title is descriptive |  | null | 
 | qt1vmo | Image accessible name is descriptive |  | null | 
 | e88epe | Image not in the accessibility tree is decorative |  | null | 
 | 5effbb | Link in context is descriptive |  | null | 
