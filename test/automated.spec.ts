@@ -330,7 +330,7 @@ test("afw4f7", (t) =>
       // Alfa does not yet disregard impossible foreground/background combinations
       "92452d",
     ],
-    manual: ["4c0de8", "7004f1", "9939c7", "e5c024"],
+    manual: ["7004f1", "951c28", "9939c7", "e5c024"],
   }));
 
 // R70 is Siteimprove only
@@ -361,12 +361,12 @@ test("fd3a94", (t) =>
     manual: [
       "10c991",
       "1a4d92",
+      "1c14f0",
       "2f044c",
       "55d8b9",
       "70f41b",
       "75e59a",
       "80824c",
-      "857415",
       "8d6fa9",
       "c16600",
       "c35667",
