@@ -509,7 +509,7 @@ test("bisz58", (t) => fixture(t, Rules.get("R96")));
 
 // R108 is SI only
 
-test.skip("ucwvc8", (t) =>
+test("ucwvc8", (t) =>
   fixture(t, experimentalRules.R109, {
     manual: [
       "0dc883",
