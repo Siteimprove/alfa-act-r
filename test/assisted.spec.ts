@@ -1361,3 +1361,19 @@ test("ucwvc8", (t) =>
   }));
 
 test("674b10", (t) => fixture(t, Rules.get("R110")));
+
+// Not yet merged in ACT rules
+test.skip("gi8qkf", (t) => fixture(t, Rules.get("R111")));
+
+// R112 is not implemented yet
+
+// Not yet merged in ACT rules
+test.skip("5awcwe", (t) => fixture(t, Rules.get("R113")));
+
+// R114 ist not fetched yet
+test.skip("c4a8a4", (t) => fixture(t, experimentalRules.R114));
+
+// R115 ist not fetched yet
+test.skip("b49b2e", (t) => fixture(t, experimentalRules.R115));
+
+test("2t702h", (t) => fixture(t, Rules.get("R116")));
