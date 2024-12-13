@@ -312,7 +312,7 @@ class TestDescription {
 
 /**
  * W3C / Cloudflare return Captcha pages if hit more than once
- * per second, so we had delays between the calls. This is not ideal
+ * per second, so we add delays between the calls. This is not ideal
  * since it really slows down the process, but it's the best we can
  * do.
  */

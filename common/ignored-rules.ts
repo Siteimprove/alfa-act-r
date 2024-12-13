@@ -16,11 +16,11 @@ export const ignoredRules = [
   // Link is descriptive
   "aizyf1",
   // Heading is descriptive
-  "b49b2e",
+  // "b49b2e",
   // Device motion based changes to the content can be disabled
   "c249d5",
   // HTML page title is descriptive
-  "c4a8a4",
+  // "c4a8a4",
   // Form field label is descriptive
   "cc0f0a",
   // Attribute is not duplicated
