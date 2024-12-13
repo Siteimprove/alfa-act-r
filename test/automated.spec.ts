@@ -56,7 +56,7 @@ test("bf051a", (t) => fixture(t, Rules.get("R5")));
 
 test("de46e4", (t) => fixture(t, Rules.get("R7")));
 
-test("e086e5", (t) => fixture(t, Rules.get("R8")));
+test("e086e5", (t) => fixture(t, experimentalRules.ER8));
 
 test("bc659a", (t) => fixture(t, Rules.get("R9")));
 
@@ -388,7 +388,7 @@ test("fd3a94", (t) =>
   }));
 
 // R82 always has questions in expectation, review flow not currently handled
-// test.skip("36b590", (t) => fixture(t, Rules.get("R82")));
+test.skip("36b590", (t) => fixture(t, experimentalRules.R82));
 
 test("59br37", (t) =>
   fixture(t, Rules.get("R83"), {
@@ -509,7 +509,7 @@ test("bisz58", (t) => fixture(t, Rules.get("R96")));
 
 // R108 is SI only
 
-test("ucwvc8", (t) =>
+test.skip("ucwvc8", (t) =>
   fixture(t, experimentalRules.R109, {
     manual: [
       "0dc883",

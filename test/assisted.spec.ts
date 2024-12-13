@@ -87,7 +87,7 @@ test("bf051a", (t) => fixture(t, Rules.get("R5")));
 
 test("de46e4", (t) => fixture(t, Rules.get("R7")));
 
-test("e086e5", (t) => fixture(t, Rules.get("R8")));
+test("e086e5", (t) => fixture(t, experimentalRules.ER8));
 
 test("bc659a", (t) => fixture(t, Rules.get("R9")));
 
@@ -1149,7 +1149,7 @@ test("fd3a94", (t) =>
   }));
 
 test("36b590", (t) =>
-  fixture(t, Option.of(experimentalRules.R82), {
+  fixture(t, experimentalRules.R82, {
     answers: {
       "5aaae1": {
         "error-indicators": [elementWithId("error")],

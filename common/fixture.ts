@@ -44,6 +44,7 @@ export namespace Fixture {
     skip?: Array<string>;
     // The test is known to need an oracle
     manual?: Array<string>;
+    allManual?: boolean;
     // Alfa is known to have a Inapplicable/Passed discrepancy with ACT-R
     lax?: Array<string>;
     // Answers for the oracle, this assume that each test case only asks
