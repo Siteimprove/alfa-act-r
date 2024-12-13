@@ -536,10 +536,25 @@ test.skip("gi8qkf", (t) => fixture(t, Rules.get("R111")));
 // Not yet merged in ACT rules
 test.skip("5awcwe", (t) => fixture(t, Rules.get("R113")));
 
-// R114 ist not fetched yet
-test.skip("c4a8a4", (t) => fixture(t, experimentalRules.R114));
+test("c4a8a4", (t) =>
+  fixture(t, experimentalRules.R114, {
+    manual: ["086645", "097c44", "4656d1", "7ef35f", "9f1a76", "cb36ba"],
+  }));
 
-// R115 ist not fetched yet
-test.skip("b49b2e", (t) => fixture(t, experimentalRules.R115));
+test("b49b2e", (t) =>
+  fixture(t, experimentalRules.R115, {
+    manual: [
+      "15c774",
+      "2953e2",
+      "36c0f7",
+      "4f2e4c",
+      "797a7b",
+      "7a0738",
+      "7bb445",
+      "d39623",
+      "ecc4ce",
+      "fef97a",
+    ],
+  }));
 
 test("2t702h", (t) => fixture(t, Rules.get("R116")));

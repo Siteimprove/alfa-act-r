@@ -78,8 +78,7 @@ export function fixture(
         const page = Page.from(test.page).getUnsafe();
 
         const skip = options.skip?.includes(test.id) ?? false;
-        const manual =
-          options.allManual ?? options.manual?.includes(test.id) ?? false;
+        const manual = options.manual?.includes(test.id) ?? false;
         const lax = options.lax?.includes(test.id) ?? false;
         const testID = `${fixture} / ${test.id}`;
 
