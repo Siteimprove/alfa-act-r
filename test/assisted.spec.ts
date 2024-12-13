@@ -1371,7 +1371,17 @@ test.skip("gi8qkf", (t) => fixture(t, Rules.get("R111")));
 test.skip("5awcwe", (t) => fixture(t, Rules.get("R113")));
 
 // R114 ist not fetched yet
-test.skip("c4a8a4", (t) => fixture(t, experimentalRules.R114));
+test("c4a8a4", (t) =>
+  fixture(t, experimentalRules.R114, {
+    answers: {
+      "086645": { "is-title-descriptive": true },
+      "097c44": { "is-title-descriptive": false },
+      "4656d1": { "is-title-descriptive": true },
+      "7ef35f": { "is-title-descriptive": false },
+      "9f1a76": { "is-title-descriptive": false },
+      cb36ba: { "is-title-descriptive": true },
+    },
+  }));
 
 // R115 ist not fetched yet
 test.skip("b49b2e", (t) => fixture(t, experimentalRules.R115));
