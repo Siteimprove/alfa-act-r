@@ -1080,7 +1080,7 @@ test("afw4f7", (t) =>
       "92452d",
     ],
     answers: {
-      "4c0de8": { "background-colors": [hex("aaaaaa")] },
+      "951c28": { "background-colors": [hex("aaaaaa")] },
       "9939c7": { "background-colors": blackHoleSunColors },
       "7004f1": { "background-colors": [hex("979797"), hex("686868")] },
       e5c024: {
@@ -1117,12 +1117,12 @@ test("fd3a94", (t) =>
     answers: {
       "10c991": { "reference-equivalent-resources": true },
       "1a4d92": { "reference-equivalent-resources": false },
+      "1c14f0": { "reference-equivalent-resources": false },
       "2f044c": { "reference-equivalent-resources": false },
       "55d8b9": { "reference-equivalent-resources": false },
       "70f41b": { "reference-equivalent-resources": false },
       "75e59a": { "reference-equivalent-resources": true },
       "80824c": { "reference-equivalent-resources": true },
-      "857415": { "reference-equivalent-resources": false },
       "8d6fa9": { "reference-equivalent-resources": false },
       c16600: { "reference-equivalent-resources": true },
       c35667: { "reference-equivalent-resources": false },
