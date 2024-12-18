@@ -5,7 +5,7 @@ import ava from "ava";
 import type { TestFn } from "ava";
 
 import { Hashable } from "@siteimprove/alfa-hash";
-import { Question, Rules } from "@siteimprove/alfa-rules";
+import { experimentalRules, Question, Rules } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
 import type { Context } from "./helpers/context.js";
@@ -56,7 +56,7 @@ test("bf051a", (t) => fixture(t, Rules.get("R5")));
 
 test("de46e4", (t) => fixture(t, Rules.get("R7")));
 
-test("e086e5", (t) => fixture(t, Rules.get("R8")));
+test("e086e5", (t) => fixture(t, experimentalRules.ER8));
 
 test("bc659a", (t) => fixture(t, Rules.get("R9")));
 
@@ -388,7 +388,7 @@ test("fd3a94", (t) =>
   }));
 
 // R82 always has questions in expectation, review flow not currently handled
-// test.skip("36b590", (t) => fixture(t, Rules.get("R82")));
+test.skip("36b590", (t) => fixture(t, experimentalRules.R82));
 
 test("59br37", (t) =>
   fixture(t, Rules.get("R83"), {
@@ -509,7 +509,52 @@ test("bisz58", (t) => fixture(t, Rules.get("R96")));
 
 // R108 is SI only
 
-// R109 always has questions in expectation, review flow not currently handled
-// test.skip("ucwvc8", (t) => fixture(t, Rules.get("R109")));
+test("ucwvc8", (t) =>
+  fixture(t, experimentalRules.R109, {
+    manual: [
+      "0dc883",
+      "185b49",
+      "58e65a",
+      "722fd3",
+      "cf6190",
+      "d7c89f",
+      "dcad97",
+      "e32447",
+      "eb42cf",
+      "f522a6",
+      "0dc883",
+    ],
+  }));
 
 test("674b10", (t) => fixture(t, Rules.get("R110")));
+
+// Not yet merged in ACT rules
+test.skip("gi8qkf", (t) => fixture(t, Rules.get("R111")));
+
+// R112 is not implemented yet
+
+// Not yet merged in ACT rules
+test.skip("5awcwe", (t) => fixture(t, Rules.get("R113")));
+
+test("c4a8a4", (t) =>
+  fixture(t, experimentalRules.R114, {
+    manual: ["086645", "097c44", "4656d1", "7ef35f", "9f1a76", "cb36ba"],
+  }));
+
+test("b49b2e", (t) =>
+  fixture(t, experimentalRules.R115, {
+    manual: [
+      "15c774",
+      "2953e2",
+      "36c0f7",
+      "4f2e4c",
+      "797a7b",
+      "7a0738",
+      "7bb445",
+      "d39623",
+      "ecc4ce",
+      "fef97a",
+    ],
+  }));
+
+test("2t702h", (t) => fixture(t, Rules.get("R116")));

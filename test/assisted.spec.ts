@@ -87,7 +87,7 @@ test("bf051a", (t) => fixture(t, Rules.get("R5")));
 
 test("de46e4", (t) => fixture(t, Rules.get("R7")));
 
-test("e086e5", (t) => fixture(t, Rules.get("R8")));
+test("e086e5", (t) => fixture(t, experimentalRules.ER8));
 
 test("bc659a", (t) => fixture(t, Rules.get("R9")));
 
@@ -1149,7 +1149,7 @@ test("fd3a94", (t) =>
   }));
 
 test("36b590", (t) =>
-  fixture(t, Option.of(experimentalRules.R82), {
+  fixture(t, experimentalRules.R82, {
     answers: {
       "5aaae1": {
         "error-indicators": [elementWithId("error")],
@@ -1340,7 +1340,7 @@ test("bisz58", (t) => fixture(t, Rules.get("R96")));
 // R108 is SI only
 
 test("ucwvc8", (t) =>
-  fixture(t, Option.of(experimentalRules.R109), {
+  fixture(t, experimentalRules.R109, {
     answers: {
       "0dc883": { "document-language": "fr" },
       "185b49": { "document-language": "en" },
@@ -1361,3 +1361,41 @@ test("ucwvc8", (t) =>
   }));
 
 test("674b10", (t) => fixture(t, Rules.get("R110")));
+
+// Not yet merged in ACT rules
+test.skip("gi8qkf", (t) => fixture(t, Rules.get("R111")));
+
+// R112 is not implemented yet
+
+// Not yet merged in ACT rules
+test.skip("5awcwe", (t) => fixture(t, Rules.get("R113")));
+
+test("c4a8a4", (t) =>
+  fixture(t, experimentalRules.R114, {
+    answers: {
+      "086645": { "is-title-descriptive": true },
+      "097c44": { "is-title-descriptive": false },
+      "4656d1": { "is-title-descriptive": true },
+      "7ef35f": { "is-title-descriptive": false },
+      "9f1a76": { "is-title-descriptive": false },
+      cb36ba: { "is-title-descriptive": true },
+    },
+  }));
+
+test("b49b2e", (t) =>
+  fixture(t, experimentalRules.R115, {
+    answers: {
+      "15c774": { "is-heading-descriptive": false },
+      "2953e2": { "is-heading-descriptive": true },
+      "36c0f7": { "is-heading-descriptive": true },
+      "4f2e4c": { "is-heading-descriptive": false },
+      "797a7b": { "is-heading-descriptive": false },
+      "7a0738": { "is-heading-descriptive": true },
+      "7bb445": { "is-heading-descriptive": true },
+      d39623: { "is-heading-descriptive": true },
+      ecc4ce: { "is-heading-descriptive": true },
+      fef97a: { "is-heading-descriptive": false },
+    },
+  }));
+
+test("2t702h", (t) => fixture(t, Rules.get("R116")));
