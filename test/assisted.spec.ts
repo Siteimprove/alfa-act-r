@@ -1,10 +1,10 @@
 import { Hex, RGB } from "@siteimprove/alfa-css";
 import { Element, Node } from "@siteimprove/alfa-dom";
-import url from "node:url";
 import path from "node:path";
+import url from "node:url";
 
-import ava from "ava";
 import type { TestFn } from "ava";
+import ava from "ava";
 
 import { Hashable } from "@siteimprove/alfa-hash";
 import { None, Option } from "@siteimprove/alfa-option";
@@ -1234,10 +1234,6 @@ test("59br37", (t) =>
 
       // Alfa does not test the cases at the specified media query.
       "892465",
-
-      // Alfa does not consider the exact layout of the page.
-      // https://github.com/Siteimprove/alfa/issues/183
-      "26a642",
     ],
   }));
 
