@@ -58,7 +58,14 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Call us"
+                      "data": "Call us",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 8,
+                        "width": 44.890625,
+                        "height": 17
+                      }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -86,14 +93,28 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 52.890625,
+                    "y": 8,
+                    "width": 4,
+                    "height": 17
+                  }
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "Call us"
+                      "data": "Call us",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 56.890625,
+                        "y": 8,
+                        "width": 44.890625,
+                        "height": 17
+                      }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -121,7 +142,14 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",

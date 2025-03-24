@@ -55,7 +55,14 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t\t"
+                  "data": "\n\t\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "element",
@@ -85,14 +92,28 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\t\t"
+                  "data": "\n\t\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\t\tconst host = document.querySelector('body')\n\t\t\tconst shadow = host.attachShadow({ mode: 'open' })\n\t\t\tconst template = document.getElementById('shadow-element')\n\n\t\t\tshadow.appendChild(template.content)\n\t\t"
+                      "data": "\n\t\t\tconst host = document.querySelector('body')\n\t\t\tconst shadow = host.attachShadow({ mode: 'open' })\n\t\t\tconst template = document.getElementById('shadow-element')\n\n\t\t\tshadow.appendChild(template.content)\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -112,7 +133,14 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\t\n"
+                  "data": "\n\t\n",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
@@ -125,14 +153,28 @@
                 "children": [
                   {
                     "type": "text",
-                    "data": "\n\t\t\t"
+                    "data": "\n\t\t\t",
+                    "box": {
+                      "type": "rectangle",
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
                   },
                   {
                     "type": "element",
                     "children": [
                       {
                         "type": "text",
-                        "data": "This is the page title"
+                        "data": "This is the page title",
+                        "box": {
+                          "type": "rectangle",
+                          "x": 0,
+                          "y": 0,
+                          "width": 0,
+                          "height": 0
+                        }
                       }
                     ],
                     "namespace": "http://www.w3.org/1999/xhtml",
@@ -152,7 +194,14 @@
                   },
                   {
                     "type": "text",
-                    "data": "\n\t\t"
+                    "data": "\n\t\t",
+                    "box": {
+                      "type": "rectangle",
+                      "x": 0,
+                      "y": 0,
+                      "width": 0,
+                      "height": 0
+                    }
                   }
                 ],
                 "mode": "open",

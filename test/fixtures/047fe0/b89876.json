@@ -28,14 +28,28 @@
           "children": [
             {
               "type": "text",
-              "data": "\n  "
+              "data": "\n  ",
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             },
             {
               "type": "element",
               "children": [
                 {
                   "type": "text",
-                  "data": "This is an SVG"
+                  "data": "This is an SVG",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 }
               ],
               "namespace": "http://www.w3.org/2000/svg",
@@ -55,7 +69,14 @@
             },
             {
               "type": "text",
-              "data": "\n"
+              "data": "\n",
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
             }
           ],
           "namespace": "http://www.w3.org/2000/svg",

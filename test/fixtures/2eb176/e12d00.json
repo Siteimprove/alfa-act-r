@@ -88,14 +88,28 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\tThe above audio contains the following speech: We choose to go to the moon in this decade and do the other things,\n\t\tnot because they are easy, but because they are hard, because that goal will serve to organize and measure the best\n\t\tof our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to\n\t\tpostpone, and one which we intend to win, and the others, too.\n\t"
+                      "data": "\n\t\tThe above audio contains the following speech: We choose to go to the moon in this decade and do the other things,\n\t\tnot because they are easy, but because they are hard, because that goal will serve to organize and measure the best\n\t\tof our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to\n\t\tpostpone, and one which we intend to win, and the others, too.\n\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 82,
+                        "width": 1263.203125,
+                        "height": 53
+                      }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -123,7 +137,14 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",

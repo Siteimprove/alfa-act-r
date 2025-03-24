@@ -58,7 +58,14 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Opening Hours"
+                      "data": "Opening Hours",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 21.4375,
+                        "width": 210.71875,
+                        "height": 36
+                      }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -78,14 +85,28 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "We are open Monday through Friday from 10 to 16"
+                      "data": "We are open Monday through Friday from 10 to 16",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 79.875,
+                        "width": 327.984375,
+                        "height": 17
+                      }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -105,7 +126,14 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",

@@ -58,7 +58,14 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Reach out"
+                      "data": "Reach out",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 8,
+                        "width": 64.421875,
+                        "height": 17
+                      }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -86,14 +93,28 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n\t"
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 72.421875,
+                    "y": 8,
+                    "width": 4,
+                    "height": 17
+                  }
                 },
                 {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "Contact us"
+                      "data": "Contact us",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 76.421875,
+                        "y": 8,
+                        "width": 68,
+                        "height": 17
+                      }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
@@ -121,7 +142,14 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n"
+                  "data": "\n",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
                 }
               ],
               "namespace": "http://www.w3.org/1999/xhtml",
