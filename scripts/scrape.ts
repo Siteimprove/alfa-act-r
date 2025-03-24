@@ -1,12 +1,12 @@
 import axios from "axios";
 import { createHash } from "crypto";
-import fs from "node:fs";
 import jsdom from "jsdom";
+import fs from "node:fs";
 import path from "node:path";
 
 import { Array } from "@siteimprove/alfa-array";
-import { Document } from "@siteimprove/alfa-dom";
 import { Device } from "@siteimprove/alfa-device";
+import { Document } from "@siteimprove/alfa-dom";
 import { Map } from "@siteimprove/alfa-map";
 import { None, Option } from "@siteimprove/alfa-option";
 import { Scraper } from "@siteimprove/alfa-scraper";
@@ -211,6 +211,7 @@ async function scrapeInstantRedirect(test: TestDescription) {
   });
 
   const document = new jsdom.JSDOM(response.data);
+  globalThis.document = document.window.document; // `Native` from alfa-dom/native expects the global `document` to be available (for text layout).
   const nodeJSON = (await dom.Native.fromNode(
     document.window.document,
   )) as Document.JSON;
