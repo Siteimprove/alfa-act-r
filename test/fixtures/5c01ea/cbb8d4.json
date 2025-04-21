@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "f45104",
+  "id": "cbb8d4",
   "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2d40412f73292f3e93ce605ad5329f3ffed78ed3.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2d40412f73292f3e93ce605ad5329f3ffed78ed3.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<div role=\"region\">A region of content</div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<div role=\"group\">A group of content</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -133,12 +133,12 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "A region of content",
+                      "data": "A group of content",
                       "box": {
                         "type": "rectangle",
                         "x": 8,
                         "y": 8,
-                        "width": 123.96875,
+                        "width": 120.421875,
                         "height": 17
                       }
                     }
@@ -152,7 +152,7 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "role",
-                      "value": "region"
+                      "value": "group"
                     }
                   ],
                   "style": null,
