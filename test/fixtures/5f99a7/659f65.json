@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "224050",
-  "outcome": "inapplicable",
+  "id": "659f65",
+  "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 6</title>\n</head>\n<body>\n\t<table role=\"region\">\n\t\t<td id=\"self\" headers=\"self\">World</td>\n\t</table>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<div role=\"dialog\" aria-modal=\"true\" aria-label=\"Modal title\">Contains modal content...</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Inapplicable Example 6",
+                      "data": "Passed Example 2",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -133,120 +133,40 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\t",
+                      "data": "Contains modal content...",
                       "box": {
                         "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
-                      }
-                    },
-                    {
-                      "type": "element",
-                      "children": [
-                        {
-                          "type": "element",
-                          "children": [
-                            {
-                              "type": "element",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "data": "World",
-                                  "box": {
-                                    "type": "rectangle",
-                                    "x": 11,
-                                    "y": 11,
-                                    "width": 39.59375,
-                                    "height": 17
-                                  }
-                                }
-                              ],
-                              "namespace": "http://www.w3.org/1999/xhtml",
-                              "prefix": null,
-                              "name": "td",
-                              "attributes": [
-                                {
-                                  "type": "attribute",
-                                  "namespace": null,
-                                  "prefix": null,
-                                  "name": "id",
-                                  "value": "self"
-                                },
-                                {
-                                  "type": "attribute",
-                                  "namespace": null,
-                                  "prefix": null,
-                                  "name": "headers",
-                                  "value": "self"
-                                }
-                              ],
-                              "style": null,
-                              "shadow": null,
-                              "content": null,
-                              "box": {
-                                "type": "rectangle",
-                                "x": 10,
-                                "y": 10,
-                                "width": 41.59375,
-                                "height": 20
-                              }
-                            },
-                            {
-                              "type": "text",
-                              "data": "\n\t",
-                              "box": {
-                                "type": "rectangle",
-                                "x": 0,
-                                "y": 0,
-                                "width": 0,
-                                "height": 0
-                              }
-                            }
-                          ],
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "tr",
-                          "attributes": [],
-                          "style": null,
-                          "shadow": null,
-                          "content": null,
-                          "box": {
-                            "type": "rectangle",
-                            "x": 10,
-                            "y": 10,
-                            "width": 41.59375,
-                            "height": 20
-                          }
-                        }
-                      ],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "tbody",
-                      "attributes": [],
-                      "style": null,
-                      "shadow": null,
-                      "content": null,
-                      "box": {
-                        "type": "rectangle",
-                        "x": 10,
-                        "y": 10,
-                        "width": 41.59375,
-                        "height": 20
+                        "x": 8,
+                        "y": 8,
+                        "width": 163.984375,
+                        "height": 17
                       }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "table",
+                  "name": "div",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
                       "name": "role",
-                      "value": "region"
+                      "value": "dialog"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-modal",
+                      "value": "true"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-label",
+                      "value": "Modal title"
                     }
                   ],
                   "style": null,
@@ -256,8 +176,8 @@
                     "type": "rectangle",
                     "x": 8,
                     "y": 8,
-                    "width": 45.59375,
-                    "height": 24
+                    "width": 1264,
+                    "height": 18
                   }
                 },
                 {
@@ -284,7 +204,7 @@
                 "x": 8,
                 "y": 8,
                 "width": 1264,
-                "height": 24
+                "height": 18
               }
             }
           ],
@@ -308,7 +228,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 40
+            "height": 34
           }
         }
       ],
