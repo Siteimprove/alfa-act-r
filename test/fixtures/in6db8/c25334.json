@@ -1,0 +1,508 @@
+{
+  "type": "test",
+  "id": "c25334",
+  "outcome": "passed",
+  "page": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/2f505db707edd40237682c62199bf47c27678e07.html",
+      "headers": [],
+      "body": ""
+    },
+    "response": {
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/2f505db707edd40237682c62199bf47c27678e07.html",
+      "status": 200,
+      "headers": [
+        {
+          "name": "content-type",
+          "value": "text/html; charset=utf-8"
+        }
+      ],
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<label for=\"tag_combo\" id=\"tag_label\">Tag</label>\n\t<input\n\t\ttype=\"text\"\n\t\tid=\"tag_combo\"\n\t\trole=\"combobox\"\n\t\taria-expanded=\"true\"\n\t\taria-controls=\"popup_listbox\"\n\t\taria-activedescendant=\"selected_option\"\n\t/>\n\t<ul role=\"listbox\" id=\"popup_listbox\" aria-labelledby=\"tag_label\">\n\t\t<li role=\"option\">Zebra</li>\n\t\t<li role=\"option\" id=\"selected_option\">Zoom</li>\n\t</ul>\n</body>\n</html>"
+    },
+    "document": {
+      "type": "document",
+      "children": [
+        {
+          "type": "type",
+          "name": "html",
+          "publicId": null,
+          "systemId": null
+        },
+        {
+          "type": "element",
+          "children": [
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Passed Example 2",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "head",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null,
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
+            },
+            {
+              "type": "text",
+              "data": "\n",
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
+            },
+            {
+              "type": "element",
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Tag",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 9,
+                        "width": 23.765625,
+                        "height": 17
+                      }
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "label",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "for",
+                      "value": "tag_combo"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "tag_label"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 9,
+                    "width": 23.765625,
+                    "height": 17
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 31.765625,
+                    "y": 9,
+                    "width": 4,
+                    "height": 17
+                  }
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "input",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "type",
+                      "value": "text"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "tag_combo"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "combobox"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-expanded",
+                      "value": "true"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-controls",
+                      "value": "popup_listbox"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-activedescendant",
+                      "value": "selected_option"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 35.765625,
+                    "y": 8,
+                    "width": 185,
+                    "height": 21
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Zebra",
+                          "box": {
+                            "type": "rectangle",
+                            "x": 48,
+                            "y": 45,
+                            "width": 37.3125,
+                            "height": 17
+                          }
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "li",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "role",
+                          "value": "option"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 48,
+                        "y": 45,
+                        "width": 1224,
+                        "height": 18
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Zoom",
+                          "box": {
+                            "type": "rectangle",
+                            "x": 48,
+                            "y": 63,
+                            "width": 38.21875,
+                            "height": 17
+                          }
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "li",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "role",
+                          "value": "option"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "id",
+                          "value": "selected_option"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 48,
+                        "y": 63,
+                        "width": 1224,
+                        "height": 18
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "ul",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "listbox"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "id",
+                      "value": "popup_listbox"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-labelledby",
+                      "value": "tag_label"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 45,
+                    "width": 1264,
+                    "height": 36
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                }
+              ],
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "prefix": null,
+              "name": "body",
+              "attributes": [],
+              "style": null,
+              "shadow": null,
+              "content": null,
+              "box": {
+                "type": "rectangle",
+                "x": 8,
+                "y": 8,
+                "width": 1264,
+                "height": 73
+              }
+            }
+          ],
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "prefix": null,
+          "name": "html",
+          "attributes": [
+            {
+              "type": "attribute",
+              "namespace": null,
+              "prefix": null,
+              "name": "lang",
+              "value": "en"
+            }
+          ],
+          "style": null,
+          "shadow": null,
+          "content": null,
+          "box": {
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 97
+          }
+        }
+      ],
+      "style": []
+    },
+    "device": {
+      "type": "screen",
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "orientation": "landscape"
+      },
+      "display": {
+        "resolution": 1,
+        "scan": "progressive"
+      },
+      "scripting": {
+        "enabled": true
+      },
+      "preferences": [
+        {
+          "name": "prefers-reduced-transparency",
+          "value": "no-preference"
+        },
+        {
+          "name": "prefers-reduced-motion",
+          "value": "no-preference"
+        },
+        {
+          "name": "prefers-color-scheme",
+          "value": "light"
+        },
+        {
+          "name": "prefers-contrast",
+          "value": "no-preference"
+        },
+        {
+          "name": "forced-colors",
+          "value": "none"
+        }
+      ]
+    }
+  }
+}
