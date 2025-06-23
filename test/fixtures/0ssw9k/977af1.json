@@ -11,24 +11,18 @@
     },
     "response": {
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
-      "status": 200,
+      "status": 502,
       "headers": [
         {
           "name": "content-type",
-          "value": "text/html; charset=utf-8"
+          "value": "text/html"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<section style=\"height: 95px; width: 500px; overflow: auto;\">\n\t\t<p>\n\t\t\t<a href=\"https://www.w3.org/TR/WCAG21/#abstract\">\n\t\t\t\tWCAG 2.1 Abstract\n\t\t\t</a>\n\t\t</p>\n\t</section>\n</body>\n</html>"
+      "body": ""
     },
     "document": {
       "type": "document",
       "children": [
-        {
-          "type": "type",
-          "name": "html",
-          "publicId": null,
-          "systemId": null
-        },
         {
           "type": "element",
           "children": [
@@ -36,22 +30,11 @@
               "type": "element",
               "children": [
                 {
-                  "type": "text",
-                  "data": "\n\t",
-                  "box": {
-                    "type": "rectangle",
-                    "x": 0,
-                    "y": 0,
-                    "width": 0,
-                    "height": 0
-                  }
-                },
-                {
                   "type": "element",
                   "children": [
                     {
                       "type": "text",
-                      "data": "Inapplicable Example 2",
+                      "data": "502 Bad Gateway",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -68,17 +51,6 @@
                   "style": null,
                   "shadow": null,
                   "content": null,
-                  "box": {
-                    "type": "rectangle",
-                    "x": 0,
-                    "y": 0,
-                    "width": 0,
-                    "height": 0
-                  }
-                },
-                {
-                  "type": "text",
-                  "data": "\n",
                   "box": {
                     "type": "rectangle",
                     "x": 0,
@@ -119,7 +91,7 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t",
+                  "data": "\n",
                   "box": {
                     "type": "rectangle",
                     "x": 0,
@@ -132,83 +104,23 @@
                   "type": "element",
                   "children": [
                     {
-                      "type": "text",
-                      "data": "\n\t\t",
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
-                      }
-                    },
-                    {
                       "type": "element",
                       "children": [
                         {
                           "type": "text",
-                          "data": "\n\t\t\t",
+                          "data": "502 Bad Gateway",
                           "box": {
                             "type": "rectangle",
-                            "x": 0,
-                            "y": 0,
-                            "width": 0,
-                            "height": 0
-                          }
-                        },
-                        {
-                          "type": "element",
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "\n\t\t\t\tWCAG 2.1 Abstract\n\t\t\t",
-                              "box": {
-                                "type": "rectangle",
-                                "x": 8,
-                                "y": 24,
-                                "width": 130.203125,
-                                "height": 17
-                              }
-                            }
-                          ],
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "a",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "href",
-                              "value": "https://www.w3.org/TR/WCAG21/#abstract"
-                            }
-                          ],
-                          "style": null,
-                          "shadow": null,
-                          "content": null,
-                          "box": {
-                            "type": "rectangle",
-                            "x": 8,
-                            "y": 24,
-                            "width": 130.203125,
-                            "height": 17
-                          }
-                        },
-                        {
-                          "type": "text",
-                          "data": "\n\t\t",
-                          "box": {
-                            "type": "rectangle",
-                            "x": 0,
-                            "y": 0,
-                            "width": 0,
-                            "height": 0
+                            "x": 520,
+                            "y": 8,
+                            "width": 240,
+                            "height": 36
                           }
                         }
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "p",
+                      "name": "h1",
                       "attributes": [],
                       "style": null,
                       "shadow": null,
@@ -216,65 +128,89 @@
                       "box": {
                         "type": "rectangle",
                         "x": 8,
-                        "y": 24,
-                        "width": 500,
-                        "height": 18
-                      }
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t",
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
+                        "y": 8,
+                        "width": 1264,
+                        "height": 37
                       }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "section",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "style",
-                      "value": "height: 95px; width: 500px; overflow: auto;"
-                    }
-                  ],
-                  "style": [
-                    {
-                      "name": "height",
-                      "value": "95px",
-                      "important": false
-                    },
-                    {
-                      "name": "width",
-                      "value": "500px",
-                      "important": false
-                    },
-                    {
-                      "name": "overflow",
-                      "value": "auto",
-                      "important": false
-                    }
-                  ],
+                  "name": "center",
+                  "attributes": [],
+                  "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
                     "x": 8,
                     "y": 8,
-                    "width": 500,
-                    "height": 95
+                    "width": 1264,
+                    "height": 37
                   }
                 },
                 {
                   "type": "text",
-                  "data": "\n\n",
+                  "data": "\n",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "element",
+                  "children": [],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "hr",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 66.4375,
+                    "width": 1264,
+                    "height": 2
+                  }
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "cloudflare",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 607.5625,
+                        "y": 76.4375,
+                        "width": 64.859375,
+                        "height": 17
+                      }
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "center",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 76.4375,
+                    "width": 1264,
+                    "height": 18
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\n\n\n\n\n\n\n\n",
                   "box": {
                     "type": "rectangle",
                     "x": 0,
@@ -296,22 +232,14 @@
                 "x": 8,
                 "y": 8,
                 "width": 1264,
-                "height": 95
+                "height": 704
               }
             }
           ],
           "namespace": "http://www.w3.org/1999/xhtml",
           "prefix": null,
           "name": "html",
-          "attributes": [
-            {
-              "type": "attribute",
-              "namespace": null,
-              "prefix": null,
-              "name": "lang",
-              "value": "en"
-            }
-          ],
+          "attributes": [],
           "style": null,
           "shadow": null,
           "content": null,
@@ -320,8 +248,32 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 111
+            "height": 720
           }
+        },
+        {
+          "type": "comment",
+          "data": " a padding to disable MSIE and Chrome friendly error page "
+        },
+        {
+          "type": "comment",
+          "data": " a padding to disable MSIE and Chrome friendly error page "
+        },
+        {
+          "type": "comment",
+          "data": " a padding to disable MSIE and Chrome friendly error page "
+        },
+        {
+          "type": "comment",
+          "data": " a padding to disable MSIE and Chrome friendly error page "
+        },
+        {
+          "type": "comment",
+          "data": " a padding to disable MSIE and Chrome friendly error page "
+        },
+        {
+          "type": "comment",
+          "data": " a padding to disable MSIE and Chrome friendly error page "
         }
       ],
       "style": []
