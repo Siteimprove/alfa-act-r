@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "977af1",
-  "outcome": "inapplicable",
+  "id": "740e41",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ad7e2441b992318debdeec5a07f92b0241f80a14.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ad7e2441b992318debdeec5a07f92b0241f80a14.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<section style=\"height: 95px; width: 500px; overflow: auto;\">\n\t\t<p>\n\t\t\t<a href=\"https://www.w3.org/TR/WCAG21/#abstract\">\n\t\t\t\tWCAG 2.1 Abstract\n\t\t\t</a>\n\t\t</p>\n\t</section>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 5</title>\n</head>\n<body>\n\t<span role=\"img\" aria-label=\"some ASCII art\">****** This ASCII art ******* <a href=\"#\">contains a link.</a></span>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Inapplicable Example 2",
+                      "data": "Failed Example 5",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -133,13 +133,13 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\t",
+                      "data": "****** This ASCII art ******* ",
                       "box": {
                         "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
+                        "x": 8,
+                        "y": 8,
+                        "width": 209.9375,
+                        "height": 17
                       }
                     },
                     {
@@ -147,129 +147,68 @@
                       "children": [
                         {
                           "type": "text",
-                          "data": "\n\t\t\t",
+                          "data": "contains a link.",
                           "box": {
                             "type": "rectangle",
-                            "x": 0,
-                            "y": 0,
-                            "width": 0,
-                            "height": 0
-                          }
-                        },
-                        {
-                          "type": "element",
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "\n\t\t\t\tWCAG 2.1 Abstract\n\t\t\t",
-                              "box": {
-                                "type": "rectangle",
-                                "x": 8,
-                                "y": 24,
-                                "width": 130.203125,
-                                "height": 17
-                              }
-                            }
-                          ],
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "a",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "href",
-                              "value": "https://www.w3.org/TR/WCAG21/#abstract"
-                            }
-                          ],
-                          "style": null,
-                          "shadow": null,
-                          "content": null,
-                          "box": {
-                            "type": "rectangle",
-                            "x": 8,
-                            "y": 24,
-                            "width": 130.203125,
+                            "x": 217.9375,
+                            "y": 8,
+                            "width": 97.3125,
                             "height": 17
-                          }
-                        },
-                        {
-                          "type": "text",
-                          "data": "\n\t\t",
-                          "box": {
-                            "type": "rectangle",
-                            "x": 0,
-                            "y": 0,
-                            "width": 0,
-                            "height": 0
                           }
                         }
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "p",
-                      "attributes": [],
+                      "name": "a",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "href",
+                          "value": "#"
+                        }
+                      ],
                       "style": null,
                       "shadow": null,
                       "content": null,
                       "box": {
                         "type": "rectangle",
-                        "x": 8,
-                        "y": 24,
-                        "width": 500,
-                        "height": 18
-                      }
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t",
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
+                        "x": 217.9375,
+                        "y": 8,
+                        "width": 97.3125,
+                        "height": 17
                       }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "section",
+                  "name": "span",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "style",
-                      "value": "height: 95px; width: 500px; overflow: auto;"
-                    }
-                  ],
-                  "style": [
-                    {
-                      "name": "height",
-                      "value": "95px",
-                      "important": false
+                      "name": "role",
+                      "value": "img"
                     },
                     {
-                      "name": "width",
-                      "value": "500px",
-                      "important": false
-                    },
-                    {
-                      "name": "overflow",
-                      "value": "auto",
-                      "important": false
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-label",
+                      "value": "some ASCII art"
                     }
                   ],
+                  "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
                     "x": 8,
                     "y": 8,
-                    "width": 500,
-                    "height": 95
+                    "width": 307.25,
+                    "height": 17
                   }
                 },
                 {
@@ -296,7 +235,7 @@
                 "x": 8,
                 "y": 8,
                 "width": 1264,
-                "height": 95
+                "height": 18
               }
             }
           ],
@@ -320,7 +259,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 111
+            "height": 34
           }
         }
       ],

@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "977af1",
-  "outcome": "inapplicable",
+  "id": "07df3a",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/7bfb3a2d5783ade108f4f9fee10597a2343f8665.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/7bfb3a2d5783ade108f4f9fee10597a2343f8665.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<section style=\"height: 95px; width: 500px; overflow: auto;\">\n\t\t<p>\n\t\t\t<a href=\"https://www.w3.org/TR/WCAG21/#abstract\">\n\t\t\t\tWCAG 2.1 Abstract\n\t\t\t</a>\n\t\t</p>\n\t</section>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<ul role=\"tablist\">\n\t\t<li role=\"tab\">\n\t\t\t<a href=\"#\">Tab 1</a>\n\t\t</li>\n\t</ul>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Inapplicable Example 2",
+                      "data": "Failed Example 4",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -161,12 +161,12 @@
                           "children": [
                             {
                               "type": "text",
-                              "data": "\n\t\t\t\tWCAG 2.1 Abstract\n\t\t\t",
+                              "data": "Tab 1",
                               "box": {
                                 "type": "rectangle",
-                                "x": 8,
-                                "y": 24,
-                                "width": 130.203125,
+                                "x": 48,
+                                "y": 16,
+                                "width": 35.765625,
                                 "height": 17
                               }
                             }
@@ -180,7 +180,7 @@
                               "namespace": null,
                               "prefix": null,
                               "name": "href",
-                              "value": "https://www.w3.org/TR/WCAG21/#abstract"
+                              "value": "#"
                             }
                           ],
                           "style": null,
@@ -188,9 +188,9 @@
                           "content": null,
                           "box": {
                             "type": "rectangle",
-                            "x": 8,
-                            "y": 24,
-                            "width": 130.203125,
+                            "x": 48,
+                            "y": 16,
+                            "width": 35.765625,
                             "height": 17
                           }
                         },
@@ -208,16 +208,24 @@
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "p",
-                      "attributes": [],
+                      "name": "li",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "role",
+                          "value": "tab"
+                        }
+                      ],
                       "style": null,
                       "shadow": null,
                       "content": null,
                       "box": {
                         "type": "rectangle",
-                        "x": 8,
-                        "y": 24,
-                        "width": 500,
+                        "x": 48,
+                        "y": 16,
+                        "width": 1224,
                         "height": 18
                       }
                     },
@@ -235,41 +243,25 @@
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "section",
+                  "name": "ul",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "style",
-                      "value": "height: 95px; width: 500px; overflow: auto;"
+                      "name": "role",
+                      "value": "tablist"
                     }
                   ],
-                  "style": [
-                    {
-                      "name": "height",
-                      "value": "95px",
-                      "important": false
-                    },
-                    {
-                      "name": "width",
-                      "value": "500px",
-                      "important": false
-                    },
-                    {
-                      "name": "overflow",
-                      "value": "auto",
-                      "important": false
-                    }
-                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
                     "x": 8,
-                    "y": 8,
-                    "width": 500,
-                    "height": 95
+                    "y": 16,
+                    "width": 1264,
+                    "height": 18
                   }
                 },
                 {
@@ -294,9 +286,9 @@
               "box": {
                 "type": "rectangle",
                 "x": 8,
-                "y": 8,
+                "y": 16,
                 "width": 1264,
-                "height": 95
+                "height": 18
               }
             }
           ],
@@ -320,7 +312,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 111
+            "height": 50
           }
         }
       ],

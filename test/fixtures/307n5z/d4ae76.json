@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "977af1",
+  "id": "d4ae76",
   "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e687f56e16c718c737b2ebc096ab768bd9d87d50.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e687f56e16c718c737b2ebc096ab768bd9d87d50.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<section style=\"height: 95px; width: 500px; overflow: auto;\">\n\t\t<p>\n\t\t\t<a href=\"https://www.w3.org/TR/WCAG21/#abstract\">\n\t\t\t\tWCAG 2.1 Abstract\n\t\t\t</a>\n\t\t</p>\n\t</section>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<a href=\"https://w3.org\"><span tabindex=\"0\">W3C Website</span></a>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -132,144 +132,65 @@
                   "type": "element",
                   "children": [
                     {
-                      "type": "text",
-                      "data": "\n\t\t",
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
-                      }
-                    },
-                    {
                       "type": "element",
                       "children": [
                         {
                           "type": "text",
-                          "data": "\n\t\t\t",
-                          "box": {
-                            "type": "rectangle",
-                            "x": 0,
-                            "y": 0,
-                            "width": 0,
-                            "height": 0
-                          }
-                        },
-                        {
-                          "type": "element",
-                          "children": [
-                            {
-                              "type": "text",
-                              "data": "\n\t\t\t\tWCAG 2.1 Abstract\n\t\t\t",
-                              "box": {
-                                "type": "rectangle",
-                                "x": 8,
-                                "y": 24,
-                                "width": 130.203125,
-                                "height": 17
-                              }
-                            }
-                          ],
-                          "namespace": "http://www.w3.org/1999/xhtml",
-                          "prefix": null,
-                          "name": "a",
-                          "attributes": [
-                            {
-                              "type": "attribute",
-                              "namespace": null,
-                              "prefix": null,
-                              "name": "href",
-                              "value": "https://www.w3.org/TR/WCAG21/#abstract"
-                            }
-                          ],
-                          "style": null,
-                          "shadow": null,
-                          "content": null,
+                          "data": "W3C Website",
                           "box": {
                             "type": "rectangle",
                             "x": 8,
-                            "y": 24,
-                            "width": 130.203125,
+                            "y": 8,
+                            "width": 88.625,
                             "height": 17
-                          }
-                        },
-                        {
-                          "type": "text",
-                          "data": "\n\t\t",
-                          "box": {
-                            "type": "rectangle",
-                            "x": 0,
-                            "y": 0,
-                            "width": 0,
-                            "height": 0
                           }
                         }
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "p",
-                      "attributes": [],
+                      "name": "span",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "tabindex",
+                          "value": "0"
+                        }
+                      ],
                       "style": null,
                       "shadow": null,
                       "content": null,
                       "box": {
                         "type": "rectangle",
                         "x": 8,
-                        "y": 24,
-                        "width": 500,
-                        "height": 18
-                      }
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t",
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
+                        "y": 8,
+                        "width": 88.625,
+                        "height": 17
                       }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "section",
+                  "name": "a",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "style",
-                      "value": "height: 95px; width: 500px; overflow: auto;"
+                      "name": "href",
+                      "value": "https://w3.org"
                     }
                   ],
-                  "style": [
-                    {
-                      "name": "height",
-                      "value": "95px",
-                      "important": false
-                    },
-                    {
-                      "name": "width",
-                      "value": "500px",
-                      "important": false
-                    },
-                    {
-                      "name": "overflow",
-                      "value": "auto",
-                      "important": false
-                    }
-                  ],
+                  "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
                     "x": 8,
                     "y": 8,
-                    "width": 500,
-                    "height": 95
+                    "width": 88.625,
+                    "height": 17
                   }
                 },
                 {
@@ -296,7 +217,7 @@
                 "x": 8,
                 "y": 8,
                 "width": 1264,
-                "height": 95
+                "height": 18
               }
             }
           ],
@@ -320,7 +241,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 111
+            "height": 34
           }
         }
       ],
