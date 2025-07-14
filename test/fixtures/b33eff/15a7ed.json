@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "d6a643",
-  "outcome": "passed",
+  "id": "15a7ed",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3600a3d783678e384fec62211e854cb8a4d3d2d0.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3600a3d783678e384fec62211e854cb8a4d3d2d0.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 7</title>\n</head>\n<body>\n\t<ul>\n\t\t<li>Item 1</li>\n\t</ul>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: landscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: rotateZ(0, 0, 1, 270deg);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body style=\"display:none;\">\n\t\t<main>\n\t\t\tPage Content\n\t\t</main>\n\t</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -37,7 +37,7 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t",
+                  "data": "\n\t\t",
                   "box": {
                     "type": "rectangle",
                     "x": 0,
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 7",
+                      "data": "Page with some content",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -78,7 +78,48 @@
                 },
                 {
                   "type": "text",
-                  "data": "\n",
+                  "data": "\n\t\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\t\t@media (orientation: landscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: rotateZ(0, 0, 1, 270deg);\n\t\t\t\t}\n\t\t\t}\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "style",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t",
                   "box": {
                     "type": "rectangle",
                     "x": 0,
@@ -105,7 +146,7 @@
             },
             {
               "type": "text",
-              "data": "\n",
+              "data": "\n\t",
               "box": {
                 "type": "rectangle",
                 "x": 0,
@@ -119,7 +160,7 @@
               "children": [
                 {
                   "type": "text",
-                  "data": "\n\t",
+                  "data": "\n\t\t",
                   "box": {
                     "type": "rectangle",
                     "x": 0,
@@ -133,48 +174,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "\n\t\t",
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
-                      }
-                    },
-                    {
-                      "type": "element",
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Item 1",
-                          "box": {
-                            "type": "rectangle",
-                            "x": 48,
-                            "y": 16,
-                            "width": 41.328125,
-                            "height": 17
-                          }
-                        }
-                      ],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "li",
-                      "attributes": [],
-                      "style": null,
-                      "shadow": null,
-                      "content": null,
-                      "box": {
-                        "type": "rectangle",
-                        "x": 48,
-                        "y": 16,
-                        "width": 1224,
-                        "height": 18
-                      }
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n\t",
+                      "data": "\n\t\t\tPage Content\n\t\t",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -186,22 +186,22 @@
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "ul",
+                  "name": "main",
                   "attributes": [],
                   "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
-                    "x": 8,
-                    "y": 16,
-                    "width": 1264,
-                    "height": 18
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
                   }
                 },
                 {
                   "type": "text",
-                  "data": "\n\n",
+                  "data": "\n\t\n",
                   "box": {
                     "type": "rectangle",
                     "x": 0,
@@ -214,16 +214,30 @@
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "body",
-              "attributes": [],
-              "style": null,
+              "attributes": [
+                {
+                  "type": "attribute",
+                  "namespace": null,
+                  "prefix": null,
+                  "name": "style",
+                  "value": "display:none;"
+                }
+              ],
+              "style": [
+                {
+                  "name": "display",
+                  "value": "none",
+                  "important": false
+                }
+              ],
               "shadow": null,
               "content": null,
               "box": {
                 "type": "rectangle",
-                "x": 8,
-                "y": 16,
-                "width": 1264,
-                "height": 18
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
               }
             }
           ],
@@ -247,11 +261,29 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 50
+            "height": 0
           }
         }
       ],
-      "style": []
+      "style": [
+        {
+          "rules": [
+            {
+              "type": "media",
+              "rules": [
+                {
+                  "type": "style",
+                  "selector": "body",
+                  "style": []
+                }
+              ],
+              "condition": "(orientation: landscape)"
+            }
+          ],
+          "disabled": false,
+          "condition": null
+        }
+      ]
     },
     "device": {
       "type": "screen",

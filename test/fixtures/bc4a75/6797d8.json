@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "d6a643",
-  "outcome": "passed",
+  "id": "6797d8",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/8b65672c9aefc4957b09a338eb85ad7dff6e53de.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/8b65672c9aefc4957b09a338eb85ad7dff6e53de.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 7</title>\n</head>\n<body>\n\t<ul>\n\t\t<li>Item 1</li>\n\t</ul>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 10</title>\n</head>\n<body>\n\t<ul>\n\t\t<div></div>\n\t\t<div></div>\n\t</ul>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 7",
+                      "data": "Failed Example 10",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -144,22 +144,10 @@
                     },
                     {
                       "type": "element",
-                      "children": [
-                        {
-                          "type": "text",
-                          "data": "Item 1",
-                          "box": {
-                            "type": "rectangle",
-                            "x": 48,
-                            "y": 16,
-                            "width": 41.328125,
-                            "height": 17
-                          }
-                        }
-                      ],
+                      "children": [],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "li",
+                      "name": "div",
                       "attributes": [],
                       "style": null,
                       "shadow": null,
@@ -169,7 +157,36 @@
                         "x": 48,
                         "y": 16,
                         "width": 1224,
-                        "height": 18
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 48,
+                        "y": 16,
+                        "width": 1224,
+                        "height": 0
                       }
                     },
                     {
@@ -196,7 +213,7 @@
                     "x": 8,
                     "y": 16,
                     "width": 1264,
-                    "height": 18
+                    "height": 0
                   }
                 },
                 {
@@ -223,7 +240,7 @@
                 "x": 8,
                 "y": 16,
                 "width": 1264,
-                "height": 18
+                "height": 0
               }
             }
           ],
@@ -247,7 +264,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 50
+            "height": 16
           }
         }
       ],

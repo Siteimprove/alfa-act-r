@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "d6a643",
-  "outcome": "passed",
+  "id": "df7c61",
+  "outcome": "inapplicable",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/4c7f05a0c2de670e047b18857e91ebddeaebcf90.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/4c7f05a0c2de670e047b18857e91ebddeaebcf90.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 7</title>\n</head>\n<body>\n\t<ul>\n\t\t<li>Item 1</li>\n\t</ul>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<div role=\"list\" hidden>\n\t\t<div role=\"listitem\">Item 1</div>\n\t</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 7",
+                      "data": "Inapplicable Example 2",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -150,26 +150,34 @@
                           "data": "Item 1",
                           "box": {
                             "type": "rectangle",
-                            "x": 48,
-                            "y": 16,
-                            "width": 41.328125,
-                            "height": 17
+                            "x": 0,
+                            "y": 0,
+                            "width": 0,
+                            "height": 0
                           }
                         }
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "li",
-                      "attributes": [],
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "role",
+                          "value": "listitem"
+                        }
+                      ],
                       "style": null,
                       "shadow": null,
                       "content": null,
                       "box": {
                         "type": "rectangle",
-                        "x": 48,
-                        "y": 16,
-                        "width": 1224,
-                        "height": 18
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
                       }
                     },
                     {
@@ -186,17 +194,32 @@
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "ul",
-                  "attributes": [],
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "list"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "hidden",
+                      "value": ""
+                    }
+                  ],
                   "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
-                    "x": 8,
-                    "y": 16,
-                    "width": 1264,
-                    "height": 18
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
                   }
                 },
                 {
@@ -221,9 +244,9 @@
               "box": {
                 "type": "rectangle",
                 "x": 8,
-                "y": 16,
+                "y": 8,
                 "width": 1264,
-                "height": 18
+                "height": 0
               }
             }
           ],
@@ -247,7 +270,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 50
+            "height": 8
           }
         }
       ],

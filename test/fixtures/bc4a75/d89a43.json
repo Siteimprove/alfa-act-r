@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "d6a643",
+  "id": "d89a43",
   "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9b8254ecd2ab2ecca6bdc6e050f87f0f42f16c38.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9b8254ecd2ab2ecca6bdc6e050f87f0f42f16c38.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 7</title>\n</head>\n<body>\n\t<ul>\n\t\t<li>Item 1</li>\n\t</ul>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<div role=\"menu\">\n\t\t<div role=\"none\"></div>\n\t\t<div role=\"menuitem\">Item 1</div>\n\t\t<div role=\"menuitemradio\" aria-checked=\"false\">Item 2</div>\n\t\t<div role=\"menuitemcheckbox\" aria-checked=\"false\">Item 3</div>\n\t</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 7",
+                      "data": "Passed Example 3",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -144,14 +144,51 @@
                     },
                     {
                       "type": "element",
+                      "children": [],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "role",
+                          "value": "none"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 8,
+                        "width": 1264,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "element",
                       "children": [
                         {
                           "type": "text",
                           "data": "Item 1",
                           "box": {
                             "type": "rectangle",
-                            "x": 48,
-                            "y": 16,
+                            "x": 8,
+                            "y": 8,
                             "width": 41.328125,
                             "height": 17
                           }
@@ -159,16 +196,136 @@
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "li",
-                      "attributes": [],
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "role",
+                          "value": "menuitem"
+                        }
+                      ],
                       "style": null,
                       "shadow": null,
                       "content": null,
                       "box": {
                         "type": "rectangle",
-                        "x": 48,
-                        "y": 16,
-                        "width": 1224,
+                        "x": 8,
+                        "y": 8,
+                        "width": 1264,
+                        "height": 18
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Item 2",
+                          "box": {
+                            "type": "rectangle",
+                            "x": 8,
+                            "y": 26,
+                            "width": 41.328125,
+                            "height": 17
+                          }
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "role",
+                          "value": "menuitemradio"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "aria-checked",
+                          "value": "false"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 26,
+                        "width": 1264,
+                        "height": 18
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Item 3",
+                          "box": {
+                            "type": "rectangle",
+                            "x": 8,
+                            "y": 44,
+                            "width": 41.328125,
+                            "height": 17
+                          }
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "div",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "role",
+                          "value": "menuitemcheckbox"
+                        },
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "aria-checked",
+                          "value": "false"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 44,
+                        "width": 1264,
                         "height": 18
                       }
                     },
@@ -186,17 +343,25 @@
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "ul",
-                  "attributes": [],
+                  "name": "div",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "menu"
+                    }
+                  ],
                   "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
                     "x": 8,
-                    "y": 16,
+                    "y": 8,
                     "width": 1264,
-                    "height": 18
+                    "height": 54
                   }
                 },
                 {
@@ -221,9 +386,9 @@
               "box": {
                 "type": "rectangle",
                 "x": 8,
-                "y": 16,
+                "y": 8,
                 "width": 1264,
-                "height": 18
+                "height": 54
               }
             }
           ],
@@ -247,7 +412,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 50
+            "height": 70
           }
         }
       ],

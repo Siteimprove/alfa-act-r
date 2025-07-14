@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "d6a643",
-  "outcome": "passed",
+  "id": "bc7c12",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a50706ecd9b49e0f16b022668895c5e12cb2eeb5.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a50706ecd9b49e0f16b022668895c5e12cb2eeb5.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 7</title>\n</head>\n<body>\n\t<ul>\n\t\t<li>Item 1</li>\n\t</ul>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 8</title>\n</head>\n<body>\n\t<select role=\"menu\" aria-label=\"a test menu\">\n\t\t<option>Item 1</option>\n\t\t<option>Item 2</option>\n\t\t<option>Item 3</option>\n\t</select>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Passed Example 7",
+                      "data": "Failed Example 8",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -150,26 +150,108 @@
                           "data": "Item 1",
                           "box": {
                             "type": "rectangle",
-                            "x": 48,
-                            "y": 16,
-                            "width": 41.328125,
-                            "height": 17
+                            "x": 0,
+                            "y": 0,
+                            "width": 0,
+                            "height": 0
                           }
                         }
                       ],
                       "namespace": "http://www.w3.org/1999/xhtml",
                       "prefix": null,
-                      "name": "li",
+                      "name": "option",
                       "attributes": [],
                       "style": null,
                       "shadow": null,
                       "content": null,
                       "box": {
                         "type": "rectangle",
-                        "x": 48,
-                        "y": 16,
-                        "width": 1224,
-                        "height": 18
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Item 2",
+                          "box": {
+                            "type": "rectangle",
+                            "x": 0,
+                            "y": 0,
+                            "width": 0,
+                            "height": 0
+                          }
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "option",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "Item 3",
+                          "box": {
+                            "type": "rectangle",
+                            "x": 0,
+                            "y": 0,
+                            "width": 0,
+                            "height": 0
+                          }
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "option",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
                       }
                     },
                     {
@@ -186,17 +268,32 @@
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "ul",
-                  "attributes": [],
+                  "name": "select",
+                  "attributes": [
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "role",
+                      "value": "menu"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-label",
+                      "value": "a test menu"
+                    }
+                  ],
                   "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
                     "x": 8,
-                    "y": 16,
-                    "width": 1264,
-                    "height": 18
+                    "y": 8,
+                    "width": 60,
+                    "height": 19
                   }
                 },
                 {
@@ -221,9 +318,9 @@
               "box": {
                 "type": "rectangle",
                 "x": 8,
-                "y": 16,
+                "y": 8,
                 "width": 1264,
-                "height": 18
+                "height": 19
               }
             }
           ],
@@ -247,7 +344,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 50
+            "height": 35
           }
         }
       ],
