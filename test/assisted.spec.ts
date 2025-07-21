@@ -835,7 +835,10 @@ test("d0f69e", (t) =>
       // https://github.com/act-rules/act-rules.github.io/pull/1971
       "08a84b",
     ],
-    lax: ["5dcc5b"],
+    lax: [
+      // TODO: Investigate and explain or fix
+      "5dcc5b",
+    ],
   }));
 
 test("b4f0c3", (t) =>
