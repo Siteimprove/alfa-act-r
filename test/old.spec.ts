@@ -250,10 +250,6 @@ test("d0f69e", (t) =>
       // Alfa does not yet consider ARIA grids
       "d2fa5e",
     ],
-    lax: [
-      // Alfa does not consider ARIA tables
-      "30ecbb",
-    ],
   }));
 
 test("b4f0c3", (t) =>

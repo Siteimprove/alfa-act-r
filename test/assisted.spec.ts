@@ -835,11 +835,7 @@ test("d0f69e", (t) =>
       // https://github.com/act-rules/act-rules.github.io/pull/1971
       "08a84b",
     ],
-    lax: [
-      // Alfa does not consider ARIA tables
-      // https://github.com/act-rules/act-rules.github.io/pull/1971
-      "a56128",
-    ],
+    lax: ["5dcc5b"],
   }));
 
 test("b4f0c3", (t) =>
@@ -1060,10 +1056,6 @@ test("bc4a75", (t) =>
       // https://github.com/act-rules/act-rules.github.io/issues/1426
       "4af645",
       "6120d9",
-    ],
-    lax: [
-      // Alfa intentionally applies to elements whose role is implicit
-      "d6a643",
     ],
   }));
 
