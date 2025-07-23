@@ -1061,10 +1061,6 @@ test("bc4a75", (t) =>
       "4af645",
       "6120d9",
     ],
-    lax: [
-      // Alfa intentionally applies to elements whose role is implicit
-      "d6a643",
-    ],
   }));
 
 test("afw4f7", (t) =>
