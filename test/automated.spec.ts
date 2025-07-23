@@ -226,7 +226,7 @@ test("d0f69e", (t) =>
     lax: [
       // Alfa does not consider ARIA tables
       // https://github.com/act-rules/act-rules.github.io/pull/1971
-      "a56128",
+      "5dcc5b",
     ],
   }));
 
