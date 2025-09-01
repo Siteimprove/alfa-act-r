@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "5b788c",
+  "id": "686b91",
   "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5d1719662b77567eec3b9c37510f76a38f769deb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/b7736b7dffe6fc6924374d4542b0c5ce3b9456cf.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5d1719662b77567eec3b9c37510f76a38f769deb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/b7736b7dffe6fc6924374d4542b0c5ce3b9456cf.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 8</title>\n</head>\n<body>\n\t<div role=\"combobox\" aria-expanded=\"false\" aria-controls=\"\" aria-label=\"My combobox\">My combobox</div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 8</title>\n</head>\n<body>\n\t<div role=\"combobox\" aria-expanded=\"undefined\" aria-controls=\"id1\" aria-label=\"My combobox\">My combobox</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -159,14 +159,14 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "aria-expanded",
-                      "value": "false"
+                      "value": "undefined"
                     },
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
                       "name": "aria-controls",
-                      "value": ""
+                      "value": "id1"
                     },
                     {
                       "type": "attribute",
