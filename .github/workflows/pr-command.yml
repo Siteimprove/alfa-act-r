@@ -27,7 +27,7 @@ jobs:
         if: env.PR_COMMAND_WILL_RUN == 'true'
         uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
 
       - name: "Install dependencies"
         if: env.PR_COMMAND_WILL_RUN == 'true'
