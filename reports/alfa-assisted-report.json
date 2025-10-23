@@ -70,7 +70,7 @@
       "name": "Alfa",
       "release": {
         "@type": "Version",
-        "revision": "0.104.0"
+        "revision": "0.106.1"
       },
       "doap:url": "https://alfa.siteimprove.com"
     },
@@ -19867,6 +19867,13 @@
             ],
             "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
             "title": "Language of Page"
+          },
+          {
+            "@id": "./",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ]
           },
           {
             "@id": "https://www.w3.org/WAI/WCAG22/Techniques/html/H57",
@@ -68119,15 +68126,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:name-role-value",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Name, Role, Value"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:name-role-value",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Name, Role, Value"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r66",
@@ -68162,6 +68178,13 @@
           "title": "Non-text Content"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G94",
           "@type": [
             "TestCriterion",
@@ -68187,15 +68210,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:name-role-value",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Name, Role, Value"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:name-role-value",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Name, Role, Value"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r35",
@@ -68212,6 +68244,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Audio-only and Video-only (Prerecorded)"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G159",
@@ -68248,6 +68287,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Captions (Prerecorded)"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G87",
@@ -68329,6 +68375,20 @@
           "title": "Media Alternative (Prerecorded)"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G8",
           "@type": [
             "TestCriterion",
@@ -68397,6 +68457,13 @@
           "title": "Info and Relationships"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/html/H43",
           "@type": [
             "TestCriterion",
@@ -68413,15 +68480,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:error-identification",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Error Identification"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:error-identification",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Error Identification"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r8",
@@ -68429,15 +68505,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:name-role-value",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Name, Role, Value"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:name-role-value",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Name, Role, Value"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r19",
@@ -68470,6 +68555,13 @@
           "title": "Language of Page"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/html/H57",
           "@type": [
             "TestCriterion",
@@ -68486,15 +68578,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:text-spacing",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Text Spacing"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:text-spacing",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Text Spacing"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r4",
@@ -68513,6 +68614,13 @@
           "title": "Language of Page"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/html/H57",
           "@type": [
             "TestCriterion",
@@ -68529,15 +68637,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:name-role-value",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Name, Role, Value"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:name-role-value",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Name, Role, Value"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r33",
@@ -68580,6 +68697,13 @@
           "title": "Page Titled"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G88",
           "@type": [
             "TestCriterion",
@@ -68605,15 +68729,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:identify-input-purpose",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Identify Input Purpose"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:identify-input-purpose",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Identify Input Purpose"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r65",
@@ -68621,15 +68754,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:focus-visible",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Focus Visible"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:focus-visible",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Focus Visible"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r22",
@@ -68673,15 +68815,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:orientation",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Orientation"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:orientation",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Orientation"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r115",
@@ -68698,6 +68849,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Headings and Labels"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G130",
@@ -68725,6 +68883,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Audio Control"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G60",
@@ -68761,15 +68926,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:name-role-value",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Name, Role, Value"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:name-role-value",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Name, Role, Value"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r17",
@@ -68777,15 +68951,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:name-role-value",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Name, Role, Value"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:name-role-value",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Name, Role, Value"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r31",
@@ -68817,15 +69000,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:name-role-value",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Name, Role, Value"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:name-role-value",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Name, Role, Value"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r86",
@@ -68847,15 +69039,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:info-and-relationships",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Info and Relationships"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:info-and-relationships",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Info and Relationships"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r24",
@@ -68890,15 +69091,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:info-and-relationships",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Info and Relationships"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:info-and-relationships",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Info and Relationships"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r47",
@@ -68906,15 +69116,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:resize-text",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Resize Text"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize Text"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r83",
@@ -68965,6 +69184,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Change on Request"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G110",
@@ -69026,6 +69252,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Info and Relationships"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA4",
@@ -69098,15 +69331,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:text-spacing",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Text Spacing"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:text-spacing",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Text Spacing"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r14",
@@ -69123,6 +69365,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Label in Name"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G208",
@@ -69166,6 +69415,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Language of Page"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/html/H57",
@@ -69212,6 +69468,13 @@
           "title": "Keyboard (No Exception)"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G202",
           "@type": [
             "TestCriterion",
@@ -69245,6 +69508,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Info and Relationships"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/html/H43",
@@ -69281,6 +69551,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Link Purpose (Link Only)"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         }
       ]
     },
@@ -69290,15 +69567,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:name-role-value",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Name, Role, Value"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:name-role-value",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Name, Role, Value"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r93",
@@ -69306,15 +69592,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:text-spacing",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Text Spacing"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:text-spacing",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Text Spacing"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r63",
@@ -69322,15 +69617,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:non-text-content",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Non-text Content"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:non-text-content",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Non-text Content"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r49",
@@ -69363,6 +69667,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Language of Parts"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/html/H58",
@@ -69401,6 +69712,20 @@
           "title": "Name, Role, Value"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5",
           "@type": [
             "TestCriterion",
@@ -69428,6 +69753,13 @@
           "title": "Audio-only and Video-only (Prerecorded)"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G158",
           "@type": [
             "TestCriterion",
@@ -69453,6 +69785,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Info and Relationships"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/html/H42",
@@ -69489,6 +69828,20 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Name, Role, Value"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G94",
@@ -69545,6 +69898,20 @@
           "title": "Name, Role, Value"
         },
         {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        },
+        {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G91",
           "@type": [
             "TestCriterion",
@@ -69570,6 +69937,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Audio Description (Prerecorded)"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G8",
@@ -69624,6 +69998,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Contrast (Enhanced)"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         }
       ]
     },
@@ -69669,15 +70050,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:non-text-content",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Non-text Content"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:non-text-content",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Non-text Content"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r114",
@@ -69694,6 +70084,13 @@
           ],
           "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
           "title": "Page Titled"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
         },
         {
           "@id": "https://www.w3.org/WAI/WCAG22/Techniques/general/G88",
@@ -69721,15 +70118,24 @@
         "TestCriterion",
         "TestCase"
       ],
-      "isPartOf": {
-        "@id": "WCAG2:keyboard",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Keyboard"
-      }
+      "isPartOf": [
+        {
+          "@id": "WCAG2:keyboard",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Keyboard"
+        },
+        {
+          "@id": "./",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ]
+        }
+      ]
     }
   ]
 }
