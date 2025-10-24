@@ -17,7 +17,8 @@ updates:
         # We might want to run that for some time before actually enabling auto merging.
         # https://docs.github.com/en/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions#automatically-approving-a-pull-request
         dependency-type: production
-        exclude-patterns: "@siteimprove/alfa-*"
+        exclude-patterns:
+          - "@siteimprove/alfa-*"
         applies-to: version-updates
         update-types:
           - "patch"
