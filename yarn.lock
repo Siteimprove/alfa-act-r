@@ -4090,7 +4090,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonld@npm:^8.1.0, jsonld@npm:^8.1.1":
+"jsonld@npm:^8.1.1":
   version: 8.3.2
   resolution: "jsonld@npm:8.3.2"
   dependencies:
@@ -4099,6 +4099,18 @@ __metadata:
     lru-cache: "npm:^6.0.0"
     rdf-canonize: "npm:^3.4.0"
   checksum: 10c0/9c3596ffcde7e7ebeeaaa37f76b31f45f459552f4210adb16e9fc66781a94c4edf3d181cd6e5f758bd340c347f423c7c85a17387d60ef9d57a49a419cec6927e
+  languageName: node
+  linkType: hard
+
+"jsonld@npm:^8.3.3":
+  version: 8.3.3
+  resolution: "jsonld@npm:8.3.3"
+  dependencies:
+    "@digitalbazaar/http-client": "npm:^3.4.1"
+    canonicalize: "npm:^1.0.1"
+    lru-cache: "npm:^6.0.0"
+    rdf-canonize: "npm:^3.4.0"
+  checksum: 10c0/ca8c18f65a50c61deec2951533bf05b709fd8e937e2f0cb549683d7e9934df7649b6e2f6f99f0dafe7bf8dd6ae95a257306cdb37fb705ef5ee0a7439d85581c2
   languageName: node
   linkType: hard
 
@@ -5061,7 +5073,7 @@ __metadata:
     ava: "npm:^6.4.1"
     axios: "npm:^1.12.2"
     jsdom: "npm:^27.0.1"
-    jsonld: "npm:^8.1.0"
+    jsonld: "npm:^8.3.3"
     prettier: "npm:^3.6.2"
     source-map-support: "npm:^0.5.21"
     typescript: "npm:^5.9.3"
