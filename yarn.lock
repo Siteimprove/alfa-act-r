@@ -1876,9 +1876,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"act-tools@github:act-rules/act-tools":
+"act-tools@github:act-rules/act-tools#main":
   version: 1.0.0
-  resolution: "act-tools@https://github.com/act-rules/act-tools.git#commit=b611ae1ee2e2a0de5c7d0c1ff47dcda192b6e5eb"
+  resolution: "act-tools@https://github.com/act-rules/act-tools.git#commit=5c23373d82ea62948417f637bdb28817817635a4"
   dependencies:
     "@types/debug": "npm:^4.1.7"
     "@types/fs-extra": "npm:^9.0.13"
@@ -1909,7 +1909,7 @@ __metadata:
     ts-node: "npm:^10.1.0"
     typescript: "npm:^4.3.5"
     unified: "npm:^9.2.1"
-  checksum: 10c0/13f284e7d42cd7849cddc40123f556e05a2a6aabb6daf04303367b6d937cef6194c2ca18ca0f8cf31881fdf1e80cb78f0610ad30f8b1f9fd06bc0acc2a750292
+  checksum: 10c0/543bb85b5dfc4299c6cc4a4003b1937dd966c1f92f8cffe9f827e5c429e080d8ffa357ebaf257a538cba551b0ca26a9fae2c008a28572ce74edb855fde48d7ea
   languageName: node
   linkType: hard
 
@@ -5007,7 +5007,7 @@ __metadata:
     "@types/jsdom": "npm:^27.0.0"
     "@types/jsonld": "npm:^1.5.8"
     "@types/node": "npm:^24.9.1"
-    act-tools: "github:act-rules/act-tools"
+    act-tools: "github:act-rules/act-tools#main"
     ava: "npm:^6.4.1"
     axios: "npm:^1.12.2"
     jsdom: "npm:^27.0.1"
