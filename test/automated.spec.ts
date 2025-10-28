@@ -15,9 +15,7 @@ import { report } from "./helpers/report.js";
 const fixture = factory("fixtures");
 const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
 
-// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = import.meta.dirname;
 
 test.before("Initialise context", (t) => {
   t.context = { outcomes: [] };

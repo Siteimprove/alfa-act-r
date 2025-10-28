@@ -18,9 +18,7 @@ import { report } from "./helpers/report.js";
 const fixture = factory("fixtures", true);
 const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
 
-// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = import.meta.dirname;
 
 function hex(col: string): RGB {
   const color = Hex.of(parseInt(`${col}ff`, 16));
@@ -263,6 +261,12 @@ test("2eb176", (t) =>
 test("1a02b0", (t) =>
   fixture(t, Rules.get("R24"), {
     answers: {
+      "154cdc": {
+        "is-video-streaming": false,
+        "has-audio": true,
+        transcript: none,
+        "transcript-link": none,
+      },
       "2b8c15": {
         "is-video-streaming": false,
         "has-audio": true,
@@ -277,6 +281,21 @@ test("1a02b0", (t) =>
         "transcript-link": none,
       },
       "5e5762": {
+        "is-video-streaming": false,
+        "has-audio": true,
+        transcript: first("p"),
+      },
+      "75d3c5": {
+        "is-video-streaming": false,
+        "has-audio": true,
+        transcript: first("p"),
+      },
+      "830403": {
+        "is-video-streaming": false,
+        "has-audio": true,
+        transcript: first("p"),
+      },
+      a6c096: {
         "is-video-streaming": false,
         "has-audio": true,
         transcript: first("p"),
@@ -558,14 +577,23 @@ test("d7ba54", (t) =>
 
 test("ee13b5", (t) =>
   fixture(t, Rules.get("R33"), {
+    skip: [
+      // ACT Rules hasn't updated the example upon making other changes.
+      // https://github.com/act-rules/act-rules.github.io/pull/2367
+      "3254a5"
+    ],
     answers: {
-      "2b46ca": {
+      "2b68ac": {
         "is-video-streaming": false,
         "has-audio": false,
-        transcript: none,
-        "transcript-link": none,
+        transcript: first("p"),
       },
-      "2b68ac": {
+      "3254a5": {
+        "is-video-streaming": false,
+        "has-audio": false,
+        transcript: first("p"),
+      },
+      "33fa52":{
         "is-video-streaming": false,
         "has-audio": false,
         transcript: first("p"),
@@ -585,7 +613,7 @@ test("ee13b5", (t) =>
         transcript: none,
         "transcript-link": none,
       },
-      db4c3c: {
+      c6c8cf: {
         "is-video-streaming": false,
         "has-audio": false,
         transcript: first("p"),

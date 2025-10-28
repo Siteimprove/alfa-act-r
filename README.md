@@ -11,6 +11,22 @@ See a summary of the implementations reports:
 - for [Alfa fully automated](./reports/summary-automated.md);
 - for [Alfa semi-automated](./reports/summary-assisted.md).
 
+## Cloning
+
+This repository uses github submodules. Clone with
+
+```shell
+$ git clone --recursive git@github.com:Siteimprove/alfa-act-r.git
+```
+
+If you've already made a shallow clone, initialise submodules with
+
+```shell
+$ git submodule update --init
+```
+
+> **Remark:** We've seen problem with using the Github repository of `act-tools` as a dependency, using a git submodule smoothes it out.
+
 ## Installation
 
 ```shell
