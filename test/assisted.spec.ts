@@ -263,6 +263,12 @@ test("2eb176", (t) =>
 test("1a02b0", (t) =>
   fixture(t, Rules.get("R24"), {
     answers: {
+      "154cdc": {
+        "is-video-streaming": false,
+        "has-audio": true,
+        transcript: none,
+        "transcript-link": none,
+      },
       "2b8c15": {
         "is-video-streaming": false,
         "has-audio": true,
@@ -277,6 +283,11 @@ test("1a02b0", (t) =>
         "transcript-link": none,
       },
       "5e5762": {
+        "is-video-streaming": false,
+        "has-audio": true,
+        transcript: first("p"),
+      },
+      "75d3c5": {
         "is-video-streaming": false,
         "has-audio": true,
         transcript: first("p"),
@@ -558,14 +569,23 @@ test("d7ba54", (t) =>
 
 test("ee13b5", (t) =>
   fixture(t, Rules.get("R33"), {
+    skip: [
+      // ACT Rules hasn't updated the example upon making other changes.
+      // https://github.com/act-rules/act-rules.github.io/pull/2367
+      "3254a5"
+    ],
     answers: {
-      "2b46ca": {
+      "2b68ac": {
         "is-video-streaming": false,
         "has-audio": false,
-        transcript: none,
-        "transcript-link": none,
+        transcript: first("p"),
       },
-      "2b68ac": {
+      "3254a5": {
+        "is-video-streaming": false,
+        "has-audio": false,
+        transcript: first("p"),
+      },
+      "33fa52":{
         "is-video-streaming": false,
         "has-audio": false,
         transcript: first("p"),
@@ -584,11 +604,6 @@ test("ee13b5", (t) =>
         // Transcript is incorrect (rabbit/dog)
         transcript: none,
         "transcript-link": none,
-      },
-      db4c3c: {
-        "is-video-streaming": false,
-        "has-audio": false,
-        transcript: first("p"),
       },
       e3ab0a: {
         "is-video-streaming": false,
