@@ -292,6 +292,16 @@ test("1a02b0", (t) =>
         "has-audio": true,
         transcript: first("p"),
       },
+      "830403": {
+        "is-video-streaming": false,
+        "has-audio": true,
+        transcript: first("p"),
+      },
+      a6c096: {
+        "is-video-streaming": false,
+        "has-audio": true,
+        transcript: first("p"),
+      },
       d72727: {
         "is-video-streaming": false,
         "has-audio": true,
@@ -604,6 +614,11 @@ test("ee13b5", (t) =>
         // Transcript is incorrect (rabbit/dog)
         transcript: none,
         "transcript-link": none,
+      },
+      c6c8cf: {
+        "is-video-streaming": false,
+        "has-audio": false,
+        transcript: first("p"),
       },
       e3ab0a: {
         "is-video-streaming": false,
