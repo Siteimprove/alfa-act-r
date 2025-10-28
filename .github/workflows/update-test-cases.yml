@@ -17,6 +17,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           token: ${{ secrets.BUILDUSER_GITHUB_WRITE }}
+          submodules: 'true'
       - uses: actions/setup-node@v6
         with:
           node-version: 22
@@ -24,9 +25,11 @@ jobs:
         with:
           path: .yarn/cache
           key: yarn-${{ hashFiles('yarn.lock') }}
+
       - run: yarn install --immutable
       - run: yarn dedupe
       - run: yarn build
+
       # Update test cases, run tests (update reports), update summaries
       - run: yarn fixtures
       - run: yarn test
