@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "33995b",
-  "outcome": "failed",
+  "id": "16209b",
+  "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/8cf721f0f9490be4e2909caaa944cf3a32a43fc0.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/8cf721f0f9490be4e2909caaa944cf3a32a43fc0.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 3</title>\n</head>\n<body>\n\t<div aria-label=\"Bananas\"></div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<div role=\"heading\" aria-braillelabel=\"I like bananas\">\n\t\tI ❤️ Bananas\n\t</div>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 3",
+                      "data": "Passed Example 3",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -130,7 +130,19 @@
                 },
                 {
                   "type": "element",
-                  "children": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "\n\t\tI ❤️ Bananas\n\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 9,
+                        "width": 87.5,
+                        "height": 17
+                      }
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "div",
@@ -139,8 +151,15 @@
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "aria-label",
-                      "value": "Bananas"
+                      "name": "role",
+                      "value": "heading"
+                    },
+                    {
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-braillelabel",
+                      "value": "I like bananas"
                     }
                   ],
                   "style": null,
@@ -151,7 +170,7 @@
                     "x": 8,
                     "y": 8,
                     "width": 1264,
-                    "height": 0
+                    "height": 19
                   }
                 },
                 {
@@ -178,7 +197,7 @@
                 "x": 8,
                 "y": 8,
                 "width": 1264,
-                "height": 0
+                "height": 19
               }
             }
           ],
@@ -202,7 +221,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 8
+            "height": 35
           }
         }
       ],

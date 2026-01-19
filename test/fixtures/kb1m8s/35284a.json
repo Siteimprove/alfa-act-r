@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "ed784e",
+  "id": "35284a",
   "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/358fa0b821c3118de63adfbe37bd0e85a3bd6f8c.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/358fa0b821c3118de63adfbe37bd0e85a3bd6f8c.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<div role=\"paragraph\" aria-label=\"Bananas\"></div>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<h1 id=\"bananas\">I like bananas</h1>\n\t<p aria-labelledby=\"Bananas\">🧑 ❤️ 🍌🍌</p>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Failed Example 4",
+                      "data": "Failed Example 2",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -130,23 +130,77 @@
                 },
                 {
                   "type": "element",
-                  "children": [],
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "I like bananas",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 21.4375,
+                        "width": 192.078125,
+                        "height": 36
+                      }
+                    }
+                  ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "div",
+                  "name": "h1",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "role",
-                      "value": "paragraph"
-                    },
+                      "name": "id",
+                      "value": "bananas"
+                    }
+                  ],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 8,
+                    "y": 21.4375,
+                    "width": 1264,
+                    "height": 37
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "🧑 ❤️ 🍌🍌",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 80.875,
+                        "width": 87.875,
+                        "height": 17
+                      }
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "p",
+                  "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "aria-label",
+                      "name": "aria-labelledby",
                       "value": "Bananas"
                     }
                   ],
@@ -156,9 +210,9 @@
                   "box": {
                     "type": "rectangle",
                     "x": 8,
-                    "y": 8,
+                    "y": 79.875,
                     "width": 1264,
-                    "height": 0
+                    "height": 19
                   }
                 },
                 {
@@ -183,9 +237,9 @@
               "box": {
                 "type": "rectangle",
                 "x": 8,
-                "y": 8,
+                "y": 21.4375,
                 "width": 1264,
-                "height": 0
+                "height": 77.4375
               }
             }
           ],
@@ -209,7 +263,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 8
+            "height": 114.875
           }
         }
       ],
