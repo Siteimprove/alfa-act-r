@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "3254a5",
-  "outcome": "failed",
+  "id": "d70da5",
+  "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/ae9e9709911eaa328189f8ab354cba0bb840a6c9.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/ae9e9709911eaa328189f8ab354cba0bb840a6c9.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<video controls>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.mp4\" type=\"video/mp4\"></source>\n  <source src=\"/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.webm\" type=\"video/webm\"></source>\n</video>\n<p style=\"text-indent: -9999px;\">This video shows a giant fat rabbit climbing out of a hole in the ground.\nHe stretches, yawns, and then starts walking.\nThen he stops to scratch his bottom.</p>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<a href=\"#\" aria-label=\"Previously 100, now 1 euro\"> <s>€100</s> / <b>€1</b> </a>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -34,7 +34,60 @@
           "children": [
             {
               "type": "element",
-              "children": [],
+              "children": [
+                {
+                  "type": "text",
+                  "data": "\n\t",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "element",
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": "Passed Example 2",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    }
+                  ],
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "prefix": null,
+                  "name": "title",
+                  "attributes": [],
+                  "style": null,
+                  "shadow": null,
+                  "content": null,
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                },
+                {
+                  "type": "text",
+                  "data": "\n",
+                  "box": {
+                    "type": "rectangle",
+                    "x": 0,
+                    "y": 0,
+                    "width": 0,
+                    "height": 0
+                  }
+                }
+              ],
               "namespace": "http://www.w3.org/1999/xhtml",
               "prefix": null,
               "name": "head",
@@ -51,137 +104,22 @@
               }
             },
             {
+              "type": "text",
+              "data": "\n",
+              "box": {
+                "type": "rectangle",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+              }
+            },
+            {
               "type": "element",
               "children": [
                 {
-                  "type": "element",
-                  "children": [
-                    {
-                      "type": "text",
-                      "data": "\n  ",
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
-                      }
-                    },
-                    {
-                      "type": "element",
-                      "children": [],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "source",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.mp4"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "type",
-                          "value": "video/mp4"
-                        }
-                      ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null,
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
-                      }
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n  ",
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
-                      }
-                    },
-                    {
-                      "type": "element",
-                      "children": [],
-                      "namespace": "http://www.w3.org/1999/xhtml",
-                      "prefix": null,
-                      "name": "source",
-                      "attributes": [
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "src",
-                          "value": "/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/silent.webm"
-                        },
-                        {
-                          "type": "attribute",
-                          "namespace": null,
-                          "prefix": null,
-                          "name": "type",
-                          "value": "video/webm"
-                        }
-                      ],
-                      "style": null,
-                      "shadow": null,
-                      "content": null,
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
-                      }
-                    },
-                    {
-                      "type": "text",
-                      "data": "\n",
-                      "box": {
-                        "type": "rectangle",
-                        "x": 0,
-                        "y": 0,
-                        "width": 0,
-                        "height": 0
-                      }
-                    }
-                  ],
-                  "namespace": "http://www.w3.org/1999/xhtml",
-                  "prefix": null,
-                  "name": "video",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "controls",
-                      "value": ""
-                    }
-                  ],
-                  "style": null,
-                  "shadow": null,
-                  "content": null,
-                  "box": {
-                    "type": "rectangle",
-                    "x": 8,
-                    "y": 8,
-                    "width": 360,
-                    "height": 240
-                  }
-                },
-                {
                   "type": "text",
-                  "data": "\n",
+                  "data": "\n\t",
                   "box": {
                     "type": "rectangle",
                     "x": 0,
@@ -195,48 +133,131 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "This video shows a giant fat rabbit climbing out of a hole in the ground.\nHe stretches, yawns, and then starts walking.\nThen he stops to scratch his bottom.",
+                      "data": " ",
                       "box": {
                         "type": "rectangle",
-                        "x": -9991,
-                        "y": 268,
-                        "width": 985.75,
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "€100",
+                          "box": {
+                            "type": "rectangle",
+                            "x": 8,
+                            "y": 8,
+                            "width": 32,
+                            "height": 17
+                          }
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "s",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 8,
+                        "y": 8,
+                        "width": 32,
                         "height": 17
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": " / ",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 40,
+                        "y": 8,
+                        "width": 12.453125,
+                        "height": 17
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [
+                        {
+                          "type": "text",
+                          "data": "€1",
+                          "box": {
+                            "type": "rectangle",
+                            "x": 52.453125,
+                            "y": 8,
+                            "width": 16,
+                            "height": 17
+                          }
+                        }
+                      ],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "b",
+                      "attributes": [],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 52.453125,
+                        "y": 8,
+                        "width": 16,
+                        "height": 17
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": " ",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
                       }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "p",
+                  "name": "a",
                   "attributes": [
                     {
                       "type": "attribute",
                       "namespace": null,
                       "prefix": null,
-                      "name": "style",
-                      "value": "text-indent: -9999px;"
-                    }
-                  ],
-                  "style": [
+                      "name": "href",
+                      "value": "#"
+                    },
                     {
-                      "name": "text-indent",
-                      "value": "-9999px",
-                      "important": false
+                      "type": "attribute",
+                      "namespace": null,
+                      "prefix": null,
+                      "name": "aria-label",
+                      "value": "Previously 100, now 1 euro"
                     }
                   ],
+                  "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
                     "x": 8,
-                    "y": 268,
-                    "width": 1264,
-                    "height": 18
+                    "y": 8,
+                    "width": 60.453125,
+                    "height": 17
                   }
                 },
                 {
                   "type": "text",
-                  "data": "\n",
+                  "data": "\n\n",
                   "box": {
                     "type": "rectangle",
                     "x": 0,
@@ -258,7 +279,7 @@
                 "x": 8,
                 "y": 8,
                 "width": 1264,
-                "height": 278
+                "height": 18
               }
             }
           ],
@@ -282,7 +303,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 302
+            "height": 34
           }
         }
       ],
