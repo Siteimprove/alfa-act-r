@@ -1,7 +1,6 @@
-import { Hex, RGB } from "@siteimprove/alfa-css";
+import { CSS4Color } from "@siteimprove/alfa-css";
 import { Element, Node } from "@siteimprove/alfa-dom";
 import path from "node:path";
-import url from "node:url";
 
 import type { TestFn } from "ava";
 import ava from "ava";
@@ -20,9 +19,8 @@ const test = ava as TestFn<Context<Page, Hashable, Question.Metadata, unknown>>;
 
 const __dirname = import.meta.dirname;
 
-function hex(col: string): RGB {
-  const color = Hex.of(parseInt(`${col}ff`, 16));
-  return RGB.of(color.red, color.green, color.blue, color.alpha);
+function hex(col: `#${string}`): CSS4Color {
+  return CSS4Color.of(col).getUnsafe();
 }
 
 function nodeWithPath(path?: string): (page: Page) => Option<Node> {
@@ -577,23 +575,13 @@ test("d7ba54", (t) =>
 
 test("ee13b5", (t) =>
   fixture(t, Rules.get("R33"), {
-    skip: [
-      // ACT Rules hasn't updated the example upon making other changes.
-      // https://github.com/act-rules/act-rules.github.io/pull/2367
-      "3254a5"
-    ],
     answers: {
       "2b68ac": {
         "is-video-streaming": false,
         "has-audio": false,
         transcript: first("p"),
       },
-      "3254a5": {
-        "is-video-streaming": false,
-        "has-audio": false,
-        transcript: first("p"),
-      },
-      "33fa52":{
+      "33fa52": {
         "is-video-streaming": false,
         "has-audio": false,
         transcript: first("p"),
@@ -1052,10 +1040,10 @@ test("oj04fd", (t) =>
 // Only selecting some colors of the image, including the brightest and
 // the darkest.
 const blackHoleSunColors = [
-  hex("0a0605"),
-  hex("fbf9d2"),
-  hex("a52001"),
-  hex("fbae2c"),
+  hex("#0a0605"),
+  hex("#fbf9d2"),
+  hex("#a52001"),
+  hex("#fbae2c"),
 ];
 
 test("09o5cg", (t) =>
@@ -1064,7 +1052,7 @@ test("09o5cg", (t) =>
       "2eeb7d": { "background-colors": blackHoleSunColors },
       f32863: {
         // In this case, the text is not above the brightest parts of the image.
-        "background-colors": [hex("9c1a00"), hex("4a0800"), hex("c64e00")],
+        "background-colors": [hex("#9c1a00"), hex("#4a0800"), hex("#c64e00")],
       },
     },
     skip: [
@@ -1104,12 +1092,12 @@ test("afw4f7", (t) =>
       "92452d",
     ],
     answers: {
-      "951c28": { "background-colors": [hex("aaaaaa")] },
+      "951c28": { "background-colors": [hex("#aaaaaa")] },
       "9939c7": { "background-colors": blackHoleSunColors },
-      "7004f1": { "background-colors": [hex("979797"), hex("686868")] },
+      "7004f1": { "background-colors": [hex("#979797"), hex("#686868")] },
       e5c024: {
         // In this case, the text is not above the brightest parts of the image.
-        "background-colors": [hex("9c1a00"), hex("4a0800"), hex("c64e00")],
+        "background-colors": [hex("#9c1a00"), hex("#4a0800"), hex("#c64e00")],
       },
     },
   }));
