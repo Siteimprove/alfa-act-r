@@ -1,5 +1,8 @@
 name: Update Test cases
 
+permissions:
+  contents: write # Need to push back to the repository.
+
 on:
   workflow_dispatch:
   schedule:
