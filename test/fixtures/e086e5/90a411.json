@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "12cdb5",
-  "outcome": "inapplicable",
+  "id": "90a411",
+  "outcome": "passed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/341bc62ae116f74ee37f215b6272043f7f7706ee.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/341bc62ae116f74ee37f215b6272043f7f7706ee.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<button>Open the modal</button>\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 9</title>\n</head>\n<body>\n\t<label>\n\t\tFavorite color\n\t\t<input type=\"color\" />\n\t</label>\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Inapplicable Example 3",
+                      "data": "Passed Example 9",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -133,19 +133,56 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Open the modal",
+                      "data": "\n\t\tFavorite color\n\t\t",
                       "box": {
                         "type": "rectangle",
-                        "x": 16,
-                        "y": 11,
-                        "width": 94.84375,
-                        "height": 15
+                        "x": 8,
+                        "y": 15,
+                        "width": 94.203125,
+                        "height": 17
+                      }
+                    },
+                    {
+                      "type": "element",
+                      "children": [],
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "prefix": null,
+                      "name": "input",
+                      "attributes": [
+                        {
+                          "type": "attribute",
+                          "namespace": null,
+                          "prefix": null,
+                          "name": "type",
+                          "value": "color"
+                        }
+                      ],
+                      "style": null,
+                      "shadow": null,
+                      "content": null,
+                      "box": {
+                        "type": "rectangle",
+                        "x": 102.203125,
+                        "y": 8,
+                        "width": 50,
+                        "height": 27
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "data": "\n\t",
+                      "box": {
+                        "type": "rectangle",
+                        "x": 0,
+                        "y": 0,
+                        "width": 0,
+                        "height": 0
                       }
                     }
                   ],
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
-                  "name": "button",
+                  "name": "label",
                   "attributes": [],
                   "style": null,
                   "shadow": null,
@@ -153,9 +190,9 @@
                   "box": {
                     "type": "rectangle",
                     "x": 8,
-                    "y": 8,
-                    "width": 110.84375,
-                    "height": 21
+                    "y": 15,
+                    "width": 144.203125,
+                    "height": 17
                   }
                 },
                 {
@@ -182,7 +219,7 @@
                 "x": 8,
                 "y": 8,
                 "width": 1264,
-                "height": 21
+                "height": 27
               }
             }
           ],
@@ -206,7 +243,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 37
+            "height": 43
           }
         }
       ],

@@ -1,16 +1,16 @@
 {
   "type": "test",
-  "id": "08c6c4",
-  "outcome": "inapplicable",
+  "id": "06e5ad",
+  "outcome": "failed",
   "page": {
     "request": {
       "method": "GET",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ca835c48c5d554fbfaea6d022816e39cda25660a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html",
       "headers": [],
       "body": ""
     },
     "response": {
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ca835c48c5d554fbfaea6d022816e39cda25660a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html",
       "status": 200,
       "headers": [
         {
@@ -18,7 +18,7 @@
           "value": "text/html; charset=utf-8"
         }
       ],
-      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<label for=\"tag_combo\">Tag</label>\n\t<input type=\"text\" id=\"tag_combo\" role=\"combobox\" aria-expanded=\"false\" aria-controls=\"popup_listbox\" />\n</body>\n</html>"
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 9</title>\n</head>\n<body>\n\t<label>Date of birth</label> <input type=\"date\" />\n</body>\n</html>"
     },
     "document": {
       "type": "document",
@@ -51,7 +51,7 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Inapplicable Example 1",
+                      "data": "Failed Example 9",
                       "box": {
                         "type": "rectangle",
                         "x": 0,
@@ -133,12 +133,12 @@
                   "children": [
                     {
                       "type": "text",
-                      "data": "Tag",
+                      "data": "Date of birth",
                       "box": {
                         "type": "rectangle",
                         "x": 8,
-                        "y": 9,
-                        "width": 23.765625,
+                        "y": 9.15625,
+                        "width": 81.75,
                         "height": 17
                       }
                     }
@@ -146,33 +146,25 @@
                   "namespace": "http://www.w3.org/1999/xhtml",
                   "prefix": null,
                   "name": "label",
-                  "attributes": [
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "for",
-                      "value": "tag_combo"
-                    }
-                  ],
+                  "attributes": [],
                   "style": null,
                   "shadow": null,
                   "content": null,
                   "box": {
                     "type": "rectangle",
                     "x": 8,
-                    "y": 9,
-                    "width": 23.765625,
+                    "y": 9.15625,
+                    "width": 81.75,
                     "height": 17
                   }
                 },
                 {
                   "type": "text",
-                  "data": "\n\t",
+                  "data": " ",
                   "box": {
                     "type": "rectangle",
-                    "x": 31.765625,
-                    "y": 9,
+                    "x": 89.75,
+                    "y": 9.15625,
                     "width": 4,
                     "height": 17
                   }
@@ -189,35 +181,7 @@
                       "namespace": null,
                       "prefix": null,
                       "name": "type",
-                      "value": "text"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "id",
-                      "value": "tag_combo"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "role",
-                      "value": "combobox"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "aria-expanded",
-                      "value": "false"
-                    },
-                    {
-                      "type": "attribute",
-                      "namespace": null,
-                      "prefix": null,
-                      "name": "aria-controls",
-                      "value": "popup_listbox"
+                      "value": "date"
                     }
                   ],
                   "style": null,
@@ -225,10 +189,10 @@
                   "content": null,
                   "box": {
                     "type": "rectangle",
-                    "x": 35.765625,
+                    "x": 93.75,
                     "y": 8,
-                    "width": 185,
-                    "height": 21
+                    "width": 125.328125,
+                    "height": 21.328125
                   }
                 },
                 {
@@ -255,7 +219,7 @@
                 "x": 8,
                 "y": 8,
                 "width": 1264,
-                "height": 21
+                "height": 21.328125
               }
             }
           ],
@@ -279,7 +243,7 @@
             "x": 0,
             "y": 0,
             "width": 1280,
-            "height": 37
+            "height": 37.328125
           }
         }
       ],
