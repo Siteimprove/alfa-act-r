@@ -2722,6 +2722,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"act-tools@portal:./vendor/act-tools::locator=root-workspace-0b6124%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "act-tools@portal:./vendor/act-tools::locator=root-workspace-0b6124%40workspace%3A."
+  dependencies:
+    axios: "npm:^1.13.5"
+    commander: "npm:^14.0.3"
+    debug: "npm:^4.4.3"
+    fastmatter: "npm:^2.1.1"
+    globby: "npm:^11.0.4"
+    jsonld: "npm:^9.0.0"
+    markdown-table: "npm:2.0.0"
+    moment: "npm:^2.30.1"
+    outdent: "npm:^0.8.0"
+    rehype-stringify: "npm:8.0.0"
+    remark-frontmatter: "npm:^3.0.0"
+    remark-parse: "npm:^9.0.0"
+    remark-rehype: "npm:8.1.0"
+    rimraf: "npm:^6.1.2"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:^5.9.3"
+    unified: "npm:^9.2.1"
+  languageName: node
+  linkType: soft
+
 "act-tools@workspace:vendor/act-tools":
   version: 0.0.0-use.local
   resolution: "act-tools@workspace:vendor/act-tools"
@@ -7289,6 +7313,7 @@ __metadata:
     "@types/jsdom": "npm:^28.0.1"
     "@types/jsonld": "npm:^1.5.8"
     "@types/node": "npm:^24.9.1"
+    act-tools: "npm:*"
     ava: "npm:^7.0.0"
     axios: "npm:^1.13.4"
     jsdom: "npm:^29.0.1"
