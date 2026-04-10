@@ -136,7 +136,22 @@ test("6cfa84", (t) =>
     ],
   }));
 
+// R18 tests both for Allowed attributes (1st Expectation, 5c01ea) and Prohibited attributes (2nd Expectation, kb1m8s)
 test("5c01ea", (t) => fixture(t, Rules.get("R18")));
+test("kb1m8s", (t) =>
+  fixture(t, Rules.get("R18"), {
+    skip: [
+      // ACT rules incorrectly uses ARIA 1.3 attributes while explicitly targeting ARIA 1.2
+      // see https://github.com/act-rules/act-rules.github.io/issues/2400#issuecomment-4222264893
+      "0a068e",
+      "6f0b07",
+    ],
+    lax: [
+      // ACT rules incorrectly uses ARIA 1.3 attributes while explicitly targeting ARIA 1.2
+      // see https://github.com/act-rules/act-rules.github.io/issues/2400#issuecomment-4222264893
+      "16209b",
+    ],
+  }));
 
 test("6a7281", (t) => fixture(t, Rules.get("R19")));
 
