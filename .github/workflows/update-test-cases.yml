@@ -6,10 +6,11 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    # Run weekly, on Monday morning at 05:00 UTC.
+    # Run weekly, on Monday morning at 01:00 UTC.
+    # We want this to run before Dependabot updates, to avoid Dependabot PRs needing to be updated every time…
     # Problems are reported to the latest editor of the script,
     # currently https://github.com/Jym77
-    - cron: '0 5 * * 1'
+    - cron: '0 1 * * 1'
 
 jobs:
   update-act:
