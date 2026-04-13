@@ -5,6 +5,8 @@ updates:
     schedule:
       interval: "weekly"
       day: "monday"
+      # We want Dependabot to trigger after the automated test cases updates (workflows/update-test-cases.yml),
+      # because the later merges automatically, resuting in Dependabot branches needing to be updated every time…
       time: "05:00"
       timezone: "Europe/Copenhagen"
     labels:
