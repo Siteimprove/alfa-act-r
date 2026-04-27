@@ -1765,16 +1765,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@siteimprove/alfa-puppeteer@npm:^0.82.0":
-  version: 0.82.0
-  resolution: "@siteimprove/alfa-puppeteer@npm:0.82.0"
+"@siteimprove/alfa-puppeteer@npm:^0.82.1":
+  version: 0.82.1
+  resolution: "@siteimprove/alfa-puppeteer@npm:0.82.1"
   dependencies:
     "@siteimprove/alfa-device": "npm:^0.114.3"
     "@siteimprove/alfa-dom": "npm:^0.114.3"
     "@siteimprove/alfa-http": "npm:^0.114.3"
     "@siteimprove/alfa-url": "npm:^0.114.3"
     "@siteimprove/alfa-web": "npm:^0.114.3"
-    puppeteer: "npm:^24.40.0"
+    puppeteer: "npm:^24.42.0"
   peerDependencies:
     "@siteimprove/alfa-device": ^0.114.3
     "@siteimprove/alfa-dom": ^0.114.3
@@ -1782,7 +1782,7 @@ __metadata:
     "@siteimprove/alfa-url": ^0.114.3
     "@siteimprove/alfa-web": ^0.114.3
     puppeteer: ^24.0.0
-  checksum: 10c0/a48f18597e84012d51a780ecb446bf0409a84253a1c00d1c9c03e9cbdcac635acf30b565c6c15aba43d937e06d5b99797a718f95c0e78de0a1a81b8662e17ce1
+  checksum: 10c0/53305a802abd123af625ed46e85650470df3deba7f653ee63aa4ca364f56fa6884fdc60a05125a3696d96a7c369388131d414cf55d9d22385312b57d4c11d2a1
   languageName: node
   linkType: hard
 
@@ -1923,9 +1923,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@siteimprove/alfa-scraper@npm:^0.82.0":
-  version: 0.82.0
-  resolution: "@siteimprove/alfa-scraper@npm:0.82.0"
+"@siteimprove/alfa-scraper@npm:^0.82.1":
+  version: 0.82.1
+  resolution: "@siteimprove/alfa-scraper@npm:0.82.1"
   dependencies:
     "@siteimprove/alfa-array": "npm:^0.114.3"
     "@siteimprove/alfa-device": "npm:^0.114.3"
@@ -1937,12 +1937,12 @@ __metadata:
     "@siteimprove/alfa-mapper": "npm:^0.114.3"
     "@siteimprove/alfa-option": "npm:^0.114.3"
     "@siteimprove/alfa-promise": "npm:^0.114.3"
-    "@siteimprove/alfa-puppeteer": "npm:^0.82.0"
+    "@siteimprove/alfa-puppeteer": "npm:^0.82.1"
     "@siteimprove/alfa-result": "npm:^0.114.3"
     "@siteimprove/alfa-time": "npm:^0.114.3"
     "@siteimprove/alfa-url": "npm:^0.114.3"
     "@siteimprove/alfa-web": "npm:^0.114.3"
-    puppeteer: "npm:^24.40.0"
+    puppeteer: "npm:^24.42.0"
   peerDependencies:
     "@siteimprove/alfa-array": ^0.114.3
     "@siteimprove/alfa-device": ^0.114.3
@@ -1958,7 +1958,7 @@ __metadata:
     "@siteimprove/alfa-time": ^0.114.3
     "@siteimprove/alfa-url": ^0.114.3
     "@siteimprove/alfa-web": ^0.114.3
-  checksum: 10c0/81e40e210478fe12c8e93383feee7bffd2946b0b2c01f3c01c84835b9d370664186d87edf268e9fe0198aa1a7333f6d1d7e5e60dc876ef0ab9a92461ecc74a16
+  checksum: 10c0/1ca3172f6bf5ac4e3524143a07858f8b3e73861711374b356015bbafa3636101fc249456f641131d86a9a6677449d7012024243db8f2da637110cfbea8849e50
   languageName: node
   linkType: hard
 
@@ -3975,10 +3975,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"devtools-protocol@npm:0.0.1581282":
-  version: 0.0.1581282
-  resolution: "devtools-protocol@npm:0.0.1581282"
-  checksum: 10c0/8df3b3bccaa8e5ac8915c29bb6ebece350ca8781ec7689bec90dfa6a479682a1b389abd964fe7dc7610d91c96850311aa614c4414b478bee70cabd3cf154ac93
+"devtools-protocol@npm:0.0.1595872":
+  version: 0.0.1595872
+  resolution: "devtools-protocol@npm:0.0.1595872"
+  checksum: 10c0/8b076dc1bb4db1f23bf2e57898ed6b13e0849002af60d4efc2e3336dd095581a1c024f7f94f68ccde4b0be8b4b20bb70d58bec0664f81e24bc8a3e2fa7204231
   languageName: node
   linkType: hard
 
@@ -7057,34 +7057,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"puppeteer-core@npm:24.40.0":
-  version: 24.40.0
-  resolution: "puppeteer-core@npm:24.40.0"
+"puppeteer-core@npm:24.42.0":
+  version: 24.42.0
+  resolution: "puppeteer-core@npm:24.42.0"
   dependencies:
     "@puppeteer/browsers": "npm:2.13.0"
     chromium-bidi: "npm:14.0.0"
     debug: "npm:^4.4.3"
-    devtools-protocol: "npm:0.0.1581282"
+    devtools-protocol: "npm:0.0.1595872"
     typed-query-selector: "npm:^2.12.1"
     webdriver-bidi-protocol: "npm:0.4.1"
     ws: "npm:^8.19.0"
-  checksum: 10c0/f2b38407dfe428718efaa706315e9e1442d05178281b84ebc2ef5c8d00fa6856d43a4033afc39a5138d4f0ae56598d475de1856076188c3fc89bebeb8d9c2c2b
+  checksum: 10c0/a9fab6e417086f7d5ffb376fd47cc67baa3d2acb3a4736becdc94f6682632a6823d2f064efafe9965fc049a962a4b652ccfa42e1e635107da0d994ec7efc1b6a
   languageName: node
   linkType: hard
 
-"puppeteer@npm:^24.40.0":
-  version: 24.40.0
-  resolution: "puppeteer@npm:24.40.0"
+"puppeteer@npm:^24.42.0":
+  version: 24.42.0
+  resolution: "puppeteer@npm:24.42.0"
   dependencies:
     "@puppeteer/browsers": "npm:2.13.0"
     chromium-bidi: "npm:14.0.0"
     cosmiconfig: "npm:^9.0.0"
-    devtools-protocol: "npm:0.0.1581282"
-    puppeteer-core: "npm:24.40.0"
+    devtools-protocol: "npm:0.0.1595872"
+    puppeteer-core: "npm:24.42.0"
     typed-query-selector: "npm:^2.12.1"
   bin:
     puppeteer: lib/cjs/puppeteer/node/cli.js
-  checksum: 10c0/d39a4a322e235fd4a84bc2fe7555b7e511e56d5b707053dea79f5ef616b1abc82ebdf69c059ef318a839208592f4aa708231c2595e7bee3e8961ee938b2b780e
+  checksum: 10c0/abf15ee3cc3b3d61e4f16656c065b8627bac8a19b116781abf5a1655027ce31bb2c5a49c4fdb3618830624d1b8ce3eaace7c358f2a91fbf0fee10988959bad88
   languageName: node
   linkType: hard
 
@@ -7321,7 +7321,7 @@ __metadata:
     "@siteimprove/alfa-map": "npm:^0.114.0"
     "@siteimprove/alfa-option": "npm:^0.114.0"
     "@siteimprove/alfa-rules": "npm:^0.114.3"
-    "@siteimprove/alfa-scraper": "npm:^0.82.0"
+    "@siteimprove/alfa-scraper": "npm:^0.82.1"
     "@siteimprove/alfa-set": "npm:^0.114.0"
     "@siteimprove/alfa-web": "npm:^0.114.0"
     "@types/jsdom": "npm:^28.0.1"
