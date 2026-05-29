@@ -1235,22 +1235,8 @@ test("36b590", (t) =>
     },
   }));
 
-test("59br37", (t) =>
-  fixture(t, Rules.get("R83"), {
-    skip: [
-      // Alfa assumes that the text scale can be configured by the user, which
-      // would cause text clipping for this case.
-      "155c46",
-
-      // Alfa assumes that inline heights are controlled via JavaScript.
-      "146ced",
-      "a735e7",
-      "c051af",
-
-      // Alfa does not test the cases at the specified media query.
-      "892465",
-    ],
-  }));
+// R83 has been deprecated in Alfa as not accurate enough.
+// test("59br37", (t) => fixture(t, Rules.get("R83")));
 
 test("0ssw9k", (t) =>
   fixture(t, Rules.get("R84"), {
