@@ -21,11 +21,6 @@ let source =
   "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json";
 let destination = "fixtures";
 
-if (process.argv.length > 2 && process.argv.slice(2).includes("old")) {
-  source = "https://act-rules.github.io/testcases.json";
-  destination = "old_fixtures";
-}
-
 const fixturesDir = path.join("test", destination);
 
 console.log(`Grabbing test cases from ${source}.`);
