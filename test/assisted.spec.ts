@@ -1294,9 +1294,6 @@ test("akn7bn", (t) =>
       // The 1×1 iframe is visible, its content isn't.
       // Alfa does consider the descendant of visible 1×1 elements as visible.
       "90818c",
-      // Alfa does not handle inert attribute
-      // https://github.com/Siteimprove/alfa/issues/1140
-      "475939",
       // Alfa doesn't handle iframe made inert by an open modal
       // https://github.com/Siteimprove/alfa/issues/1140#issuecomment-1807872577
       "08cfc1",
