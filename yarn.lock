@@ -2724,6 +2724,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "act-tools@portal:./vendor/act-tools::locator=root-workspace-0b6124%40workspace%3A."
   dependencies:
+    "@types/debug": "npm:^4.1.12"
+    "@types/js-yaml": "npm:^4.0.2"
+    "@types/jsonld": "npm:^1.5.15"
+    "@types/markdown-table": "npm:2.0.0"
     axios: "npm:^1.13.5"
     commander: "npm:^14.0.3"
     debug: "npm:^4.4.3"
