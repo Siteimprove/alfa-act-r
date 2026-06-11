@@ -1,7 +1,6 @@
 import * as act from "@siteimprove/alfa-act";
 import { Array } from "@siteimprove/alfa-array";
 import { Node } from "@siteimprove/alfa-dom";
-import { Future } from "@siteimprove/alfa-future";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { None, Option } from "@siteimprove/alfa-option";
 import { Group, Question } from "@siteimprove/alfa-rules";
@@ -10,34 +9,34 @@ import type { ExecutionContext } from "ava";
 
 import type { Context } from "./context.js";
 
-function wrapper<ANSWER>(answer: ANSWER): Future<Option<ANSWER>> {
-  return Future.now(Option.of(answer));
+function wrapper<ANSWER>(answer: ANSWER): Promise<Option<ANSWER>> {
+  return Promise.resolve(Option.of(answer));
 }
 
-const dontKnow = Future.now(None);
+const dontKnow = Promise.resolve(None);
 
 export function oracle<I, T extends Hashable, S>(
   answers: Partial<{
     [URI in keyof Question.Metadata]: Question.Metadata[URI][0] extends "node"
       ? (page: Page) => Option<Node>
       : Question.Metadata[URI][0] extends "node[]"
-      ? // We could just use a Page => Array<Node>, but tests are much
-        // easier to write that way…
-        Array<(page: Page) => Option<Node>>
-      : Question.Metadata[URI][1];
+        ? // We could just use a Page => Array<Node>, but tests are much
+          // easier to write that way…
+          Array<(page: Page) => Option<Node>>
+        : Question.Metadata[URI][1];
   }>,
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
   url: string,
   used: Array<keyof Question.Metadata>,
-  page: Page
+  page: Page,
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
     // Check if we do have an answer for this question.
     if (answers[question.uri] === undefined) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
-          question.subject
-        )}`
+          question.subject,
+        )}`,
       );
       return dontKnow;
     }
@@ -76,23 +75,23 @@ export function oracleWithPaths<I, T extends Hashable, S>(
       [subjectPath: string]: Question.Metadata[URI][0] extends "node"
         ? (page: Page) => Option<Node>
         : Question.Metadata[URI][0] extends "node[]"
-        ? // We could just use a Page => Array<Node>, but tests are much
-          // easier to write that way…
-          Array<(page: Page) => Option<Node>>
-        : Question.Metadata[URI][1];
+          ? // We could just use a Page => Array<Node>, but tests are much
+            // easier to write that way…
+            Array<(page: Page) => Option<Node>>
+          : Question.Metadata[URI][1];
     };
   }>,
   t: ExecutionContext<Context<Page, T, Question.Metadata, S>>,
   url: string,
   used: Array<keyof Question.Metadata>,
-  page: Page
+  page: Page,
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (_, question) => {
     if (!Node.isNode(question.subject) && !Node.isNode(question.context)) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
-          question.subject
-        )} which is not a node`
+          question.subject,
+        )} which is not a node`,
       );
       return dontKnow;
     }
@@ -110,8 +109,8 @@ export function oracleWithPaths<I, T extends Hashable, S>(
     if (answers[question.uri]?.[path] === undefined) {
       t.log(
         `${url} is asking ${question.uri} for ${subjectToString(
-          question.subject
-        )}`
+          question.subject,
+        )}`,
       );
       return dontKnow;
     }
@@ -132,7 +131,7 @@ export function oracleWithPaths<I, T extends Hashable, S>(
 
       case "node[]":
         return wrapper(
-          Array.collect(answers[question.uri]![path], (fn) => fn(page))
+          Array.collect(answers[question.uri]![path], (fn) => fn(page)),
         );
 
       case "color[]":
