@@ -7,7 +7,7 @@ import {
 } from "@siteimprove/alfa-act";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { Map } from "@siteimprove/alfa-map";
-import { Maybe, Option } from "@siteimprove/alfa-option";
+import { Maybe } from "@siteimprove/alfa-option";
 import { Question } from "@siteimprove/alfa-rules";
 import { Page } from "@siteimprove/alfa-web";
 
@@ -122,7 +122,7 @@ export function fixture(
                 : undefined,
         )
           .evaluate()
-          .map((outcomes) =>
+          .then((outcomes) =>
             Array.from(outcomes)
               .filter((outcome) => outcome.rule === theRule)
               .reduce((outcome, candidate) => {
