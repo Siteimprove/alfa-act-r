@@ -94,3 +94,4 @@ $ yarn ava "**/old*" [-- --strict]
 ```
 
 this is mostly deprecated now and only the new test cases should matter.
+
